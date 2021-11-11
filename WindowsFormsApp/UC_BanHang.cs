@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class UC_Banhang : UserControl
+    public partial class UC_BanHang : UserControl
     {
-        public UC_Banhang()
+        public UC_BanHang()
         {
             InitializeComponent();
         }
