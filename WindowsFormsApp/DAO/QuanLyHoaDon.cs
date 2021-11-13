@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLySieuThi
+namespace WindowsFormsApp.DAO
 {
     class QuanLyHoaDon
     {
@@ -30,7 +30,7 @@ namespace QuanLySieuThi
 
             string query = String.Format("SELECT dbo.fn_Get_MaDonHang_Next( @MaHD )");
 
-            object madh_next = DataConnect.Instance.ExecuteScalar(query, new object[] { madh });
+            object madh_next = DataProvider.Instance.ExecuteScalar(query, new object[] { madh });
 
             if (madh_next.ToString() == "")
             {
@@ -43,7 +43,7 @@ namespace QuanLySieuThi
         {
             // Convert datetime to date SQL Server 
             string query = String.Format("insert into HoaDon values('{0}','{1}','{2}','{3}','{4}')", dh.MaHD, dh.MaKH, dh.NgayTao, dh.TenDangNhap, dh.TongTien);
-            int result = DataConnect.Instance.ExecuteNonQuery(query);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
 

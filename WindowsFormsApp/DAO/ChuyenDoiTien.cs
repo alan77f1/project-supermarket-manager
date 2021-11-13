@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLySieuThi
+namespace WindowsFormsApp.DAO
 {
-    class ConvertMoney
+    class ChuyenDoiTien
     {
-        private static ConvertMoney instance;
+        private static ChuyenDoiTien instance;
 
-        public ConvertMoney()
+        public ChuyenDoiTien()
         {
 
         }
-        public static ConvertMoney Instance
+        public static ChuyenDoiTien Instance
         {
-            get { if (instance == null) instance = new ConvertMoney(); return ConvertMoney.instance; }
-            private set { ConvertMoney.instance = value; }
+            get { if (instance == null) instance = new ChuyenDoiTien(); return ChuyenDoiTien.instance; }
+            private set { ChuyenDoiTien.instance = value; }
         }
 
         private string Chu(string gNumber)

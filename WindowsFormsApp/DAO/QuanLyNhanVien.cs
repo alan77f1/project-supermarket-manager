@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLySieuThi
+namespace WindowsFormsApp.DAO
 {
     class QuanLyNhanVien
     {
@@ -25,7 +25,7 @@ namespace QuanLySieuThi
         {
             string query = "SELECT * FROM NhanVien WHERE TenDangNhap = N'" + userName + "' AND MatKhau = N'" + passWord + "' ";
 
-            DataTable result = DataConnect.Instance.ExecuteQuery(query);
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
 
             return result.Rows.Count > 0;
         }
@@ -33,14 +33,15 @@ namespace QuanLySieuThi
         public Models.NhanVien getNVByID(string id)
         {
             string query = "SELECT * FROM NhanVien WHERE TenDangNhap = N'" + id + "'";
-            DataRow a = DataConnect.Instance.ExecuteQuery(query).Rows[0];
+            DataRow a = DataProvider.Instance.ExecuteQuery(query).Rows[0];
             return new Models.NhanVien(a);
         }
 
         public DataTable getListNV()
         {
             string query = "select * from NhanVien";
-            return DataConnect.Instance.ExecuteQuery(query);
+            return DataProvider.Instance.ExecuteQuery(query);
         }
+
     }
 }

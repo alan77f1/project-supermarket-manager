@@ -1,5 +1,5 @@
 ﻿
-namespace QuanLySieuThi
+namespace WindowsFormsApp
 {
     partial class UC_ThongKe
     {
@@ -36,25 +36,28 @@ namespace QuanLySieuThi
             this.btnHoadon = new System.Windows.Forms.Button();
             this.btnHanghoa = new System.Windows.Forms.Button();
             this.pnlButton = new System.Windows.Forms.Panel();
+            this.pnldichuyenphieunhap = new System.Windows.Forms.Panel();
+            this.pnldichuyenkhachhang = new System.Windows.Forms.Panel();
+            this.pnldichuyenhoadon = new System.Windows.Forms.Panel();
+            this.pnldichuyenHanghoa = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.pnldichuyenHanghoa = new System.Windows.Forms.Panel();
-            this.pnldichuyenhoadon = new System.Windows.Forms.Panel();
-            this.pnldichuyenkhachhang = new System.Windows.Forms.Panel();
-            this.pnldichuyenphieunhap = new System.Windows.Forms.Panel();
+            this.pnlThongke.SuspendLayout();
             this.pnlButton.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlThongke
             // 
-            this.pnlThongke.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlThongke.Location = new System.Drawing.Point(0, 101);
+            this.pnlThongke.Controls.Add(this.pnlButton);
+            this.pnlThongke.Controls.Add(this.flowLayoutPanel1);
+            this.pnlThongke.Location = new System.Drawing.Point(0, -82);
+            this.pnlThongke.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlThongke.Name = "pnlThongke";
-            this.pnlThongke.Size = new System.Drawing.Size(1451, 965);
+            this.pnlThongke.Size = new System.Drawing.Size(990, 690);
             this.pnlThongke.TabIndex = 22;
             // 
             // btnphieunhap
@@ -67,10 +70,11 @@ namespace QuanLySieuThi
             this.btnphieunhap.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnphieunhap.ForeColor = System.Drawing.Color.Black;
             this.btnphieunhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnphieunhap.Location = new System.Drawing.Point(899, 9);
+            this.btnphieunhap.Location = new System.Drawing.Point(729, 9);
+            this.btnphieunhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnphieunhap.Name = "btnphieunhap";
             this.btnphieunhap.Padding = new System.Windows.Forms.Padding(1);
-            this.btnphieunhap.Size = new System.Drawing.Size(263, 72);
+            this.btnphieunhap.Size = new System.Drawing.Size(157, 49);
             this.btnphieunhap.TabIndex = 24;
             this.btnphieunhap.Text = "  Phiếu nhập";
             this.btnphieunhap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -87,10 +91,11 @@ namespace QuanLySieuThi
             this.btnKhachhang.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhachhang.ForeColor = System.Drawing.Color.Black;
             this.btnKhachhang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachhang.Location = new System.Drawing.Point(612, 9);
+            this.btnKhachhang.Location = new System.Drawing.Point(484, 13);
+            this.btnKhachhang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnKhachhang.Name = "btnKhachhang";
             this.btnKhachhang.Padding = new System.Windows.Forms.Padding(1);
-            this.btnKhachhang.Size = new System.Drawing.Size(263, 72);
+            this.btnKhachhang.Size = new System.Drawing.Size(157, 49);
             this.btnKhachhang.TabIndex = 23;
             this.btnKhachhang.Text = "   Khách hàng";
             this.btnKhachhang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -107,10 +112,11 @@ namespace QuanLySieuThi
             this.btnHoadon.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoadon.ForeColor = System.Drawing.Color.Black;
             this.btnHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoadon.Location = new System.Drawing.Point(333, 9);
+            this.btnHoadon.Location = new System.Drawing.Point(37, 9);
+            this.btnHoadon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHoadon.Name = "btnHoadon";
             this.btnHoadon.Padding = new System.Windows.Forms.Padding(1);
-            this.btnHoadon.Size = new System.Drawing.Size(263, 72);
+            this.btnHoadon.Size = new System.Drawing.Size(157, 49);
             this.btnHoadon.TabIndex = 6;
             this.btnHoadon.Text = "   Hóa đơn";
             this.btnHoadon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -127,10 +133,11 @@ namespace QuanLySieuThi
             this.btnHanghoa.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHanghoa.ForeColor = System.Drawing.Color.Black;
             this.btnHanghoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHanghoa.Location = new System.Drawing.Point(49, 9);
+            this.btnHanghoa.Location = new System.Drawing.Point(265, 9);
+            this.btnHanghoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHanghoa.Name = "btnHanghoa";
             this.btnHanghoa.Padding = new System.Windows.Forms.Padding(1);
-            this.btnHanghoa.Size = new System.Drawing.Size(263, 72);
+            this.btnHanghoa.Size = new System.Drawing.Size(157, 49);
             this.btnHanghoa.TabIndex = 5;
             this.btnHanghoa.Text = "   Hàng hóa";
             this.btnHanghoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -141,24 +148,62 @@ namespace QuanLySieuThi
             // 
             this.pnlButton.BackColor = System.Drawing.Color.LightSteelBlue;
             this.pnlButton.Controls.Add(this.pnldichuyenphieunhap);
-            this.pnlButton.Controls.Add(this.pnldichuyenkhachhang);
-            this.pnlButton.Controls.Add(this.pnldichuyenhoadon);
-            this.pnlButton.Controls.Add(this.pnldichuyenHanghoa);
             this.pnlButton.Controls.Add(this.btnphieunhap);
-            this.pnlButton.Controls.Add(this.flowLayoutPanel1);
             this.pnlButton.Controls.Add(this.btnKhachhang);
             this.pnlButton.Controls.Add(this.btnHanghoa);
             this.pnlButton.Controls.Add(this.btnHoadon);
-            this.pnlButton.Location = new System.Drawing.Point(27, 11);
+            this.pnlButton.Controls.Add(this.pnldichuyenkhachhang);
+            this.pnlButton.Controls.Add(this.pnldichuyenhoadon);
+            this.pnlButton.Controls.Add(this.pnldichuyenHanghoa);
+            this.pnlButton.Location = new System.Drawing.Point(3, 84);
+            this.pnlButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlButton.Name = "pnlButton";
-            this.pnlButton.Size = new System.Drawing.Size(1390, 84);
+            this.pnlButton.Size = new System.Drawing.Size(974, 81);
             this.pnlButton.TabIndex = 23;
+            this.pnlButton.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlButton_Paint);
+            // 
+            // pnldichuyenphieunhap
+            // 
+            this.pnldichuyenphieunhap.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnldichuyenphieunhap.Location = new System.Drawing.Point(756, 62);
+            this.pnldichuyenphieunhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnldichuyenphieunhap.Name = "pnldichuyenphieunhap";
+            this.pnldichuyenphieunhap.Size = new System.Drawing.Size(130, 2);
+            this.pnldichuyenphieunhap.TabIndex = 6;
+            // 
+            // pnldichuyenkhachhang
+            // 
+            this.pnldichuyenkhachhang.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnldichuyenkhachhang.Location = new System.Drawing.Point(511, 62);
+            this.pnldichuyenkhachhang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnldichuyenkhachhang.Name = "pnldichuyenkhachhang";
+            this.pnldichuyenkhachhang.Size = new System.Drawing.Size(130, 2);
+            this.pnldichuyenkhachhang.TabIndex = 6;
+            // 
+            // pnldichuyenhoadon
+            // 
+            this.pnldichuyenhoadon.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnldichuyenhoadon.Location = new System.Drawing.Point(278, 62);
+            this.pnldichuyenhoadon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnldichuyenhoadon.Name = "pnldichuyenhoadon";
+            this.pnldichuyenhoadon.Size = new System.Drawing.Size(130, 2);
+            this.pnldichuyenhoadon.TabIndex = 6;
+            // 
+            // pnldichuyenHanghoa
+            // 
+            this.pnldichuyenHanghoa.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnldichuyenHanghoa.Location = new System.Drawing.Point(53, 62);
+            this.pnldichuyenHanghoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnldichuyenHanghoa.Name = "pnldichuyenHanghoa";
+            this.pnldichuyenHanghoa.Size = new System.Drawing.Size(130, 2);
+            this.pnldichuyenHanghoa.TabIndex = 5;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(100, 96);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 169);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(984, 601);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // guna2Elipse1
@@ -186,47 +231,16 @@ namespace QuanLySieuThi
             this.guna2Elipse5.BorderRadius = 15;
             this.guna2Elipse5.TargetControl = this.btnphieunhap;
             // 
-            // pnldichuyenHanghoa
+            // UC_ThongKe
             // 
-            this.pnldichuyenHanghoa.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pnldichuyenHanghoa.Location = new System.Drawing.Point(60, 78);
-            this.pnldichuyenHanghoa.Name = "pnldichuyenHanghoa";
-            this.pnldichuyenHanghoa.Size = new System.Drawing.Size(210, 3);
-            this.pnldichuyenHanghoa.TabIndex = 5;
-            // 
-            // pnldichuyenhoadon
-            // 
-            this.pnldichuyenhoadon.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pnldichuyenhoadon.Location = new System.Drawing.Point(343, 78);
-            this.pnldichuyenhoadon.Name = "pnldichuyenhoadon";
-            this.pnldichuyenhoadon.Size = new System.Drawing.Size(210, 3);
-            this.pnldichuyenhoadon.TabIndex = 6;
-            // 
-            // pnldichuyenkhachhang
-            // 
-            this.pnldichuyenkhachhang.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pnldichuyenkhachhang.Location = new System.Drawing.Point(625, 78);
-            this.pnldichuyenkhachhang.Name = "pnldichuyenkhachhang";
-            this.pnldichuyenkhachhang.Size = new System.Drawing.Size(210, 3);
-            this.pnldichuyenkhachhang.TabIndex = 6;
-            // 
-            // pnldichuyenphieunhap
-            // 
-            this.pnldichuyenphieunhap.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pnldichuyenphieunhap.Location = new System.Drawing.Point(910, 78);
-            this.pnldichuyenphieunhap.Name = "pnldichuyenphieunhap";
-            this.pnldichuyenphieunhap.Size = new System.Drawing.Size(210, 3);
-            this.pnldichuyenphieunhap.TabIndex = 6;
-            // 
-            // UC_Thongke
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.Controls.Add(this.pnlButton);
             this.Controls.Add(this.pnlThongke);
-            this.Name = "UC_Thongke";
-            this.Size = new System.Drawing.Size(1451, 1066);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "UC_ThongKe";
+            this.Size = new System.Drawing.Size(990, 690);
+            this.pnlThongke.ResumeLayout(false);
             this.pnlButton.ResumeLayout(false);
             this.ResumeLayout(false);
 

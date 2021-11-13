@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLySieuThi
+namespace WindowsFormsApp
 {
     public partial class UC_ThongKe : UserControl
     {
@@ -63,6 +63,11 @@ namespace QuanLySieuThi
             pnldichuyenphieunhap.BackColor = Color.Maroon;
             UC_ThongKePhieuNhap uC_Thongkephieunhap = new UC_ThongKePhieuNhap();
             addUC(uC_Thongkephieunhap);
+        }
+
+        private void pnlButton_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

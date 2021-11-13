@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLySieuThi
+namespace WindowsFormsApp
+{
     public partial class FormTrangChu : Form
     {
         //private string Taikhoan;
@@ -55,7 +56,7 @@ namespace QuanLySieuThi
 
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
-            DichuyenPanle(btnDangNhap);
+            DichuyenPanle(btnDangnhap);
             UC_Main uC_Main = new UC_Main();
             addUC(uC_Main);
         }
@@ -78,14 +79,14 @@ namespace QuanLySieuThi
 
         private void btnThongke_Click(object sender, EventArgs e)
         {
-            DichuyenPanle(btnThongKe);
+            DichuyenPanle(btnThongke);
             UC_Thongke uC_Thongke = new UC_Thongke();
             addUC(uC_Thongke);
         }
 
         private void btnNhanvien_Click(object sender, EventArgs e)
         {
-            DichuyenPanle(btnNhanVien);
+            DichuyenPanle(btnNhanvien);
             UC_Quanlynhanvien uC_Quanlynhanvien = new UC_Quanlynhanvien();
             addUC(uC_Quanlynhanvien);
         }
@@ -93,7 +94,7 @@ namespace QuanLySieuThi
         private void btnBanHang_Click(object sender, EventArgs e)
         {
             DichuyenPanle(btnBanHang);
-            UC_BanHang uC_Banhang = new UC_BanHang();
+            UC_Banhang uC_Banhang = new UC_Banhang();
             addUC(uC_Banhang);
         }
     }

@@ -7,20 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLySieuThi
+namespace WindowsFormsApp.DAO
 {
-    class DataConnect
+    class DataProvider
     {
-        private static DataConnect instance; // Ctrl + R + E
+        private static DataProvider instance; // Ctrl + R + E
 
-        public static DataConnect Instance
+        public static DataProvider Instance
         {
-            get { if (instance == null) instance = new DataConnect(); return DataConnect.instance; }
-            private set { DataConnect.instance = value; }
+            get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
+            private set { DataProvider.instance = value; }
         }
 
-        private DataConnect() { }
-        private string connectionSTR = @"Data Source=desktop-rnopi29;Initial Catalog=QLST;User ID=sa;Password=123";
+        private DataProvider() { }
+        private string connectionSTR = "Data Source=DESKTOP-E7SCDHU\\SQLEXPRESS;Initial Catalog=QuanLyCuaHangThoiTrang;Integrated Security=True";
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLySieuThi
+namespace WindowsFormsApp
 {
     class QuanLyHangHoa
     {
@@ -24,7 +24,7 @@ namespace QuanLySieuThi
         public List<Models.HangHoa> getListSanPham()
         {
             List<Models.HangHoa> list = new List<Models.HangHoa>();
-            DataTable data = DataConnect.Instance.ExecuteQuery("select * from HangHoa");
+            DataTable data = DataProvider.Instance.ExecuteQuery("select * from HangHoa");
             foreach (DataRow item in data.Rows)
             {
                 Models.HangHoa hangHoa = new Models.HangHoa(item);

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLySieuThi
+namespace WindowsFormsApp.DAO
 {
     class QuanLyNhaCC
     {
@@ -24,7 +24,7 @@ namespace QuanLySieuThi
         public DataTable getListNCC()
         {
             string query = "select * from NhaCungCap";
-            return DataConnect.Instance.ExecuteQuery(query);
+            return DataProvider.Instance.ExecuteQuery(query);
         }
     }
 }

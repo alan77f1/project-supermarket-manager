@@ -1,5 +1,5 @@
 ﻿
-namespace QuanLySieuThi
+namespace WindowsFormsApp
 {
     partial class UC_CaLamViec
     {
@@ -7,7 +7,7 @@ namespace QuanLySieuThi
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
+            
         /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
@@ -42,17 +42,16 @@ namespace QuanLySieuThi
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtCa = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnLamMoipgc = new System.Windows.Forms.Button();
-            this.btnXoapgc = new System.Windows.Forms.Button();
-            this.btnSuapgc = new System.Windows.Forms.Button();
-            this.btnThempgc = new System.Windows.Forms.Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnLamMoi = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanlypgc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -72,8 +71,8 @@ namespace QuanLySieuThi
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvQuanlypgc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvQuanlypgc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.dgvQuanlypgc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvQuanlypgc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvQuanlypgc.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -99,7 +98,7 @@ namespace QuanLySieuThi
             this.dgvQuanlypgc.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvQuanlypgc.EnableHeadersVisualStyles = false;
             this.dgvQuanlypgc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvQuanlypgc.Location = new System.Drawing.Point(13, 338);
+            this.dgvQuanlypgc.Location = new System.Drawing.Point(3, 294);
             this.dgvQuanlypgc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvQuanlypgc.Name = "dgvQuanlypgc";
             this.dgvQuanlypgc.ReadOnly = true;
@@ -107,7 +106,7 @@ namespace QuanLySieuThi
             this.dgvQuanlypgc.RowHeadersWidth = 62;
             this.dgvQuanlypgc.RowTemplate.Height = 28;
             this.dgvQuanlypgc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvQuanlypgc.Size = new System.Drawing.Size(1262, 342);
+            this.dgvQuanlypgc.Size = new System.Drawing.Size(941, 266);
             this.dgvQuanlypgc.TabIndex = 44;
             this.dgvQuanlypgc.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvQuanlypgc.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -136,7 +135,7 @@ namespace QuanLySieuThi
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 282);
+            this.label7.Location = new System.Drawing.Point(50, 219);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 29);
             this.label7.TabIndex = 43;
@@ -161,14 +160,14 @@ namespace QuanLySieuThi
             this.txtTimkiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.txtTimkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimkiem.HoverState.Parent = this.txtTimkiem;
-            this.txtTimkiem.Location = new System.Drawing.Point(192, 270);
+            this.txtTimkiem.Location = new System.Drawing.Point(197, 208);
             this.txtTimkiem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.PasswordChar = '\0';
             this.txtTimkiem.PlaceholderText = "";
             this.txtTimkiem.SelectedText = "";
             this.txtTimkiem.ShadowDecoration.Parent = this.txtTimkiem;
-            this.txtTimkiem.Size = new System.Drawing.Size(372, 40);
+            this.txtTimkiem.Size = new System.Drawing.Size(200, 40);
             this.txtTimkiem.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTimkiem.TabIndex = 42;
             this.txtTimkiem.TextChanged += new System.EventHandler(this.txtTimkiem_TextChanged);
@@ -208,27 +207,27 @@ namespace QuanLySieuThi
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(41, 97);
+            this.label2.Location = new System.Drawing.Point(39, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 29);
+            this.label2.Size = new System.Drawing.Size(140, 29);
             this.label2.TabIndex = 34;
-            this.label2.Text = "Mã phiếu:";
+            this.label2.Text = "Mã Ca làm việc:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(469, 15);
+            this.label1.Location = new System.Drawing.Point(333, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(295, 39);
+            this.label1.Size = new System.Drawing.Size(270, 39);
             this.label1.TabIndex = 33;
-            this.label1.Text = "QUẢN LÝ PHIẾU GIAO CA";
+            this.label1.Text = "QUẢN LÝ CA LÀM VIỆC";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 160);
+            this.label3.Location = new System.Drawing.Point(50, 148);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 29);
             this.label3.TabIndex = 46;
@@ -252,136 +251,33 @@ namespace QuanLySieuThi
             this.txtCa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.txtCa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCa.HoverState.Parent = this.txtCa;
-            this.txtCa.Location = new System.Drawing.Point(197, 148);
+            this.txtCa.Location = new System.Drawing.Point(197, 137);
             this.txtCa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCa.Name = "txtCa";
             this.txtCa.PasswordChar = '\0';
             this.txtCa.PlaceholderText = "";
             this.txtCa.SelectedText = "";
             this.txtCa.ShadowDecoration.Parent = this.txtCa;
-            this.txtCa.Size = new System.Drawing.Size(295, 40);
+            this.txtCa.Size = new System.Drawing.Size(200, 40);
             this.txtCa.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtCa.TabIndex = 47;
             this.txtCa.TextChanged += new System.EventHandler(this.txtCa_TextChanged);
             // 
-            // btnLamMoipgc
-            // 
-            this.btnLamMoipgc.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnLamMoipgc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLamMoipgc.FlatAppearance.BorderSize = 0;
-            this.btnLamMoipgc.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btnLamMoipgc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLamMoipgc.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLamMoipgc.ForeColor = System.Drawing.Color.Snow;
-            this.btnLamMoipgc.Image = global::quanlicoopmart_nam3_24_10_2021.Properties.Resources.làm_mới;
-            this.btnLamMoipgc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLamMoipgc.Location = new System.Drawing.Point(1104, 692);
-            this.btnLamMoipgc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLamMoipgc.Name = "btnLamMoipgc";
-            this.btnLamMoipgc.Padding = new System.Windows.Forms.Padding(1);
-            this.btnLamMoipgc.Size = new System.Drawing.Size(172, 58);
-            this.btnLamMoipgc.TabIndex = 41;
-            this.btnLamMoipgc.Text = "   Làm mới";
-            this.btnLamMoipgc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLamMoipgc.UseVisualStyleBackColor = false;
-            this.btnLamMoipgc.Click += new System.EventHandler(this.btnLamMoipgc_Click);
-            // 
-            // btnXoapgc
-            // 
-            this.btnXoapgc.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnXoapgc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoapgc.FlatAppearance.BorderSize = 0;
-            this.btnXoapgc.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btnXoapgc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoapgc.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoapgc.ForeColor = System.Drawing.Color.Snow;
-            this.btnXoapgc.Image = global::quanlicoopmart_nam3_24_10_2021.Properties.Resources.xoaxoa;
-            this.btnXoapgc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoapgc.Location = new System.Drawing.Point(917, 692);
-            this.btnXoapgc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnXoapgc.Name = "btnXoapgc";
-            this.btnXoapgc.Padding = new System.Windows.Forms.Padding(1);
-            this.btnXoapgc.Size = new System.Drawing.Size(172, 58);
-            this.btnXoapgc.TabIndex = 40;
-            this.btnXoapgc.Text = "   Xóa";
-            this.btnXoapgc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnXoapgc.UseVisualStyleBackColor = false;
-            this.btnXoapgc.Click += new System.EventHandler(this.btnXoapgc_Click);
-            // 
-            // btnSuapgc
-            // 
-            this.btnSuapgc.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnSuapgc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSuapgc.FlatAppearance.BorderSize = 0;
-            this.btnSuapgc.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btnSuapgc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuapgc.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuapgc.ForeColor = System.Drawing.Color.Snow;
-            this.btnSuapgc.Image = global::quanlicoopmart_nam3_24_10_2021.Properties.Resources.sửa;
-            this.btnSuapgc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuapgc.Location = new System.Drawing.Point(985, 266);
-            this.btnSuapgc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSuapgc.Name = "btnSuapgc";
-            this.btnSuapgc.Padding = new System.Windows.Forms.Padding(1);
-            this.btnSuapgc.Size = new System.Drawing.Size(172, 58);
-            this.btnSuapgc.TabIndex = 39;
-            this.btnSuapgc.Text = "   Sửa";
-            this.btnSuapgc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSuapgc.UseVisualStyleBackColor = false;
-            this.btnSuapgc.Click += new System.EventHandler(this.btnSuapgc_Click);
-            // 
-            // btnThempgc
-            // 
-            this.btnThempgc.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnThempgc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThempgc.FlatAppearance.BorderSize = 0;
-            this.btnThempgc.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btnThempgc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThempgc.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThempgc.ForeColor = System.Drawing.Color.Snow;
-            this.btnThempgc.Image = global::quanlicoopmart_nam3_24_10_2021.Properties.Resources.thêm;
-            this.btnThempgc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThempgc.Location = new System.Drawing.Point(807, 266);
-            this.btnThempgc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThempgc.Name = "btnThempgc";
-            this.btnThempgc.Padding = new System.Windows.Forms.Padding(1);
-            this.btnThempgc.Size = new System.Drawing.Size(172, 58);
-            this.btnThempgc.TabIndex = 38;
-            this.btnThempgc.Text = "   Thêm";
-            this.btnThempgc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnThempgc.UseVisualStyleBackColor = false;
-            this.btnThempgc.Click += new System.EventHandler(this.btnThempgc_Click);
-            // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 15;
-            this.guna2Elipse1.TargetControl = this.btnThempgc;
             // 
             // guna2Elipse2
             // 
             this.guna2Elipse2.BorderRadius = 15;
-            this.guna2Elipse2.TargetControl = this.btnSuapgc;
             // 
             // guna2Elipse3
             // 
             this.guna2Elipse3.BorderRadius = 15;
-            this.guna2Elipse3.TargetControl = this.btnXoapgc;
             // 
             // guna2Elipse4
             // 
             this.guna2Elipse4.BorderRadius = 15;
-            this.guna2Elipse4.TargetControl = this.btnLamMoipgc;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Sitka Banner", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(510, 162);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 28);
-            this.label4.TabIndex = 48;
-            this.label4.Text = "(*)";
             // 
             // label5
             // 
@@ -398,29 +294,84 @@ namespace QuanLySieuThi
             // 
             this.errorProvider1.ContainerControl = this.txtCa;
             // 
-            // UC_Quanlyphieugiaoca
+            // btnLamMoi
+            // 
+            this.btnLamMoi.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLamMoi.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLamMoi.ForeColor = System.Drawing.Color.White;
+            this.btnLamMoi.Image = global::WindowsFormsApp.Properties.Resources.LamMoi;
+            this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLamMoi.Location = new System.Drawing.Point(785, 617);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(124, 58);
+            this.btnLamMoi.TabIndex = 205;
+            this.btnLamMoi.Text = "    Làm Mới";
+            this.btnLamMoi.UseVisualStyleBackColor = false;
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnThem.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Image = global::WindowsFormsApp.Properties.Resources.Them;
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(314, 617);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(124, 58);
+            this.btnThem.TabIndex = 206;
+            this.btnThem.Text = "   Thêm";
+            this.btnThem.UseVisualStyleBackColor = false;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnXoa.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Image = global::WindowsFormsApp.Properties.Resources.Xoa;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(610, 617);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(124, 58);
+            this.btnXoa.TabIndex = 208;
+            this.btnXoa.Text = "  Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            // 
+            // btnSua
+            // 
+            this.btnSua.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnSua.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Image = global::WindowsFormsApp.Properties.Resources.Sua;
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(465, 617);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(124, 58);
+            this.btnSua.TabIndex = 217;
+            this.btnSua.Text = "  Sửa";
+            this.btnSua.UseVisualStyleBackColor = false;
+            // 
+            // UC_CaLamViec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnThem);
+            this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtCa);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.labelcanhbao);
             this.Controls.Add(this.dgvQuanlypgc);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtTimkiem);
-            this.Controls.Add(this.btnLamMoipgc);
-            this.Controls.Add(this.btnXoapgc);
-            this.Controls.Add(this.btnSuapgc);
-            this.Controls.Add(this.btnThempgc);
             this.Controls.Add(this.txtMapgc);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "UC_Quanlyphieugiaoca";
-            this.Size = new System.Drawing.Size(1290, 766);
+            this.Name = "UC_CaLamViec";
+            this.Size = new System.Drawing.Size(990, 690);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanlypgc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
@@ -434,10 +385,6 @@ namespace QuanLySieuThi
         private Guna.UI2.WinForms.Guna2DataGridView dgvQuanlypgc;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txtTimkiem;
-        private System.Windows.Forms.Button btnLamMoipgc;
-        private System.Windows.Forms.Button btnXoapgc;
-        private System.Windows.Forms.Button btnSuapgc;
-        private System.Windows.Forms.Button btnThempgc;
         private Guna.UI2.WinForms.Guna2TextBox txtMapgc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -447,8 +394,11 @@ namespace QuanLySieuThi
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button btnLamMoi;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
     }
 }

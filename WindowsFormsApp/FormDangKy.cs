@@ -1,4 +1,4 @@
-﻿using quanlicoopmart_nam3_24_10_2021.getdataaa;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,11 +10,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLySieuThi
+namespace WindowsFormsApp
 {
-    public partial class FormDangkynhanvien : Form
+    public partial class FormDangKy : Form
     {
-        public FormDangkynhanvien()
+        public FormDangKy()
         {
             InitializeComponent();
             txtMa.Text = Matudong();
