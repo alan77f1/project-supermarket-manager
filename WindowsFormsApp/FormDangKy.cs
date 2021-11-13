@@ -228,6 +228,11 @@ namespace WindowsFormsApp
             else
                 txtMatkhau.PasswordChar = '*';
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

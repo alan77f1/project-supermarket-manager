@@ -197,5 +197,10 @@ namespace WindowsFormsApp
             Form_ThemKH form = new Form_ThemKH(QuanLyKhachHang.Intance.loadMaKH(), txtInPutNumberPhone.Text, this);
             form.ShowDialog();
         }
+
+        private void lbTienBangSo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

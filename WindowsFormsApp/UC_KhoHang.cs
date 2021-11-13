@@ -30,5 +30,10 @@ namespace WindowsFormsApp
             Form_DVT tdvt = new Form_DVT();
             tdvt.ShowDialog();
         }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

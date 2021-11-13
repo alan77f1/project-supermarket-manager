@@ -1,5 +1,5 @@
 ﻿
-namespace QuanLySieuThi
+namespace WindowsFormsApp
 {
     partial class FormTrangChu
     {
@@ -195,7 +195,7 @@ namespace QuanLySieuThi
             // 
             // btnX
             // 
-            this.btnX.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnX.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnX.BackColor = System.Drawing.Color.Red;
             this.btnX.Cursor = System.Windows.Forms.Cursors.Hand;

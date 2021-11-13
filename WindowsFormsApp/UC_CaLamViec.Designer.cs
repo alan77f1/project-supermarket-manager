@@ -48,10 +48,10 @@ namespace WindowsFormsApp
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnLamMoi = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnLamMoi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanlypgc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -75,7 +75,7 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvQuanlypgc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvQuanlypgc.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.dgvQuanlypgc.BackgroundColor = System.Drawing.Color.White;
             this.dgvQuanlypgc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvQuanlypgc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvQuanlypgc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -98,7 +98,7 @@ namespace WindowsFormsApp
             this.dgvQuanlypgc.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvQuanlypgc.EnableHeadersVisualStyles = false;
             this.dgvQuanlypgc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvQuanlypgc.Location = new System.Drawing.Point(3, 294);
+            this.dgvQuanlypgc.Location = new System.Drawing.Point(17, 300);
             this.dgvQuanlypgc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvQuanlypgc.Name = "dgvQuanlypgc";
             this.dgvQuanlypgc.ReadOnly = true;
@@ -113,7 +113,7 @@ namespace WindowsFormsApp
             this.dgvQuanlypgc.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvQuanlypgc.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvQuanlypgc.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvQuanlypgc.ThemeStyle.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.dgvQuanlypgc.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.dgvQuanlypgc.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvQuanlypgc.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.SteelBlue;
             this.dgvQuanlypgc.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -153,7 +153,6 @@ namespace WindowsFormsApp
             this.txtTimkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTimkiem.DisabledState.Parent = this.txtTimkiem;
             this.txtTimkiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTimkiem.FillColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtTimkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTimkiem.FocusedState.Parent = this.txtTimkiem;
             this.txtTimkiem.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -183,7 +182,6 @@ namespace WindowsFormsApp
             this.txtMapgc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMapgc.DisabledState.Parent = this.txtMapgc;
             this.txtMapgc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMapgc.FillColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtMapgc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMapgc.FocusedState.Parent = this.txtMapgc;
             this.txtMapgc.Font = new System.Drawing.Font("Times New Roman", 13F);
@@ -244,7 +242,6 @@ namespace WindowsFormsApp
             this.txtCa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCa.DisabledState.Parent = this.txtCa;
             this.txtCa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCa.FillColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtCa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCa.FocusedState.Parent = this.txtCa;
             this.txtCa.Font = new System.Drawing.Font("Times New Roman", 13F);
@@ -294,33 +291,19 @@ namespace WindowsFormsApp
             // 
             this.errorProvider1.ContainerControl = this.txtCa;
             // 
-            // btnLamMoi
+            // btnSua
             // 
-            this.btnLamMoi.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnLamMoi.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.Image = global::WindowsFormsApp.Properties.Resources.LamMoi;
-            this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLamMoi.Location = new System.Drawing.Point(785, 617);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(124, 58);
-            this.btnLamMoi.TabIndex = 205;
-            this.btnLamMoi.Text = "    Làm Mới";
-            this.btnLamMoi.UseVisualStyleBackColor = false;
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnThem.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Image = global::WindowsFormsApp.Properties.Resources.Them;
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(314, 617);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(124, 58);
-            this.btnThem.TabIndex = 206;
-            this.btnThem.Text = "   Thêm";
-            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnSua.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnSua.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Image = global::WindowsFormsApp.Properties.Resources.Sua;
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(512, 617);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(114, 46);
+            this.btnSua.TabIndex = 217;
+            this.btnSua.Text = "  Sửa";
+            this.btnSua.UseVisualStyleBackColor = false;
             // 
             // btnXoa
             // 
@@ -329,32 +312,46 @@ namespace WindowsFormsApp
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Image = global::WindowsFormsApp.Properties.Resources.Xoa;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(610, 617);
+            this.btnXoa.Location = new System.Drawing.Point(663, 617);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(124, 58);
+            this.btnXoa.Size = new System.Drawing.Size(114, 46);
             this.btnXoa.TabIndex = 208;
             this.btnXoa.Text = "  Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
             // 
-            // btnSua
+            // btnThem
             // 
-            this.btnSua.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnSua.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Image = global::WindowsFormsApp.Properties.Resources.Sua;
-            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(465, 617);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(124, 58);
-            this.btnSua.TabIndex = 217;
-            this.btnSua.Text = "  Sửa";
-            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnThem.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnThem.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Image = global::WindowsFormsApp.Properties.Resources.Them;
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(355, 617);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(114, 46);
+            this.btnThem.TabIndex = 206;
+            this.btnThem.Text = "   Thêm";
+            this.btnThem.UseVisualStyleBackColor = false;
+            // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLamMoi.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLamMoi.ForeColor = System.Drawing.Color.White;
+            this.btnLamMoi.Image = global::WindowsFormsApp.Properties.Resources.LamMoi;
+            this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLamMoi.Location = new System.Drawing.Point(815, 617);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(114, 46);
+            this.btnLamMoi.TabIndex = 205;
+            this.btnLamMoi.Text = "    Làm Mới";
+            this.btnLamMoi.UseVisualStyleBackColor = false;
             // 
             // UC_CaLamViec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);

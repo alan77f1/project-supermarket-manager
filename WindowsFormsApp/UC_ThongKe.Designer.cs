@@ -31,12 +31,12 @@ namespace WindowsFormsApp
         {
             this.components = new System.ComponentModel.Container();
             this.pnlThongke = new System.Windows.Forms.Panel();
-            this.btnphieunhap = new System.Windows.Forms.Button();
-            this.btnKhachhang = new System.Windows.Forms.Button();
-            this.btnHoadon = new System.Windows.Forms.Button();
-            this.btnHanghoa = new System.Windows.Forms.Button();
             this.pnlButton = new System.Windows.Forms.Panel();
             this.pnldichuyenphieunhap = new System.Windows.Forms.Panel();
+            this.btnphieunhap = new System.Windows.Forms.Button();
+            this.btnKhachhang = new System.Windows.Forms.Button();
+            this.btnHanghoa = new System.Windows.Forms.Button();
+            this.btnHoadon = new System.Windows.Forms.Button();
             this.pnldichuyenkhachhang = new System.Windows.Forms.Panel();
             this.pnldichuyenhoadon = new System.Windows.Forms.Panel();
             this.pnldichuyenHanghoa = new System.Windows.Forms.Panel();
@@ -57,96 +57,12 @@ namespace WindowsFormsApp
             this.pnlThongke.Location = new System.Drawing.Point(0, -82);
             this.pnlThongke.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlThongke.Name = "pnlThongke";
-            this.pnlThongke.Size = new System.Drawing.Size(990, 690);
+            this.pnlThongke.Size = new System.Drawing.Size(987, 770);
             this.pnlThongke.TabIndex = 22;
-            // 
-            // btnphieunhap
-            // 
-            this.btnphieunhap.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnphieunhap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnphieunhap.FlatAppearance.BorderSize = 0;
-            this.btnphieunhap.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btnphieunhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnphieunhap.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnphieunhap.ForeColor = System.Drawing.Color.Black;
-            this.btnphieunhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnphieunhap.Location = new System.Drawing.Point(729, 9);
-            this.btnphieunhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnphieunhap.Name = "btnphieunhap";
-            this.btnphieunhap.Padding = new System.Windows.Forms.Padding(1);
-            this.btnphieunhap.Size = new System.Drawing.Size(157, 49);
-            this.btnphieunhap.TabIndex = 24;
-            this.btnphieunhap.Text = "  Phiếu nhập";
-            this.btnphieunhap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnphieunhap.UseVisualStyleBackColor = false;
-            this.btnphieunhap.Click += new System.EventHandler(this.btnphieunhap_Click);
-            // 
-            // btnKhachhang
-            // 
-            this.btnKhachhang.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnKhachhang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKhachhang.FlatAppearance.BorderSize = 0;
-            this.btnKhachhang.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btnKhachhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhachhang.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKhachhang.ForeColor = System.Drawing.Color.Black;
-            this.btnKhachhang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachhang.Location = new System.Drawing.Point(484, 13);
-            this.btnKhachhang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnKhachhang.Name = "btnKhachhang";
-            this.btnKhachhang.Padding = new System.Windows.Forms.Padding(1);
-            this.btnKhachhang.Size = new System.Drawing.Size(157, 49);
-            this.btnKhachhang.TabIndex = 23;
-            this.btnKhachhang.Text = "   Khách hàng";
-            this.btnKhachhang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnKhachhang.UseVisualStyleBackColor = false;
-            this.btnKhachhang.Click += new System.EventHandler(this.btnKhachhang_Click);
-            // 
-            // btnHoadon
-            // 
-            this.btnHoadon.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHoadon.FlatAppearance.BorderSize = 0;
-            this.btnHoadon.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btnHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoadon.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoadon.ForeColor = System.Drawing.Color.Black;
-            this.btnHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoadon.Location = new System.Drawing.Point(37, 9);
-            this.btnHoadon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnHoadon.Name = "btnHoadon";
-            this.btnHoadon.Padding = new System.Windows.Forms.Padding(1);
-            this.btnHoadon.Size = new System.Drawing.Size(157, 49);
-            this.btnHoadon.TabIndex = 6;
-            this.btnHoadon.Text = "   Hóa đơn";
-            this.btnHoadon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHoadon.UseVisualStyleBackColor = false;
-            this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click);
-            // 
-            // btnHanghoa
-            // 
-            this.btnHanghoa.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnHanghoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHanghoa.FlatAppearance.BorderSize = 0;
-            this.btnHanghoa.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btnHanghoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHanghoa.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHanghoa.ForeColor = System.Drawing.Color.Black;
-            this.btnHanghoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHanghoa.Location = new System.Drawing.Point(265, 9);
-            this.btnHanghoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnHanghoa.Name = "btnHanghoa";
-            this.btnHanghoa.Padding = new System.Windows.Forms.Padding(1);
-            this.btnHanghoa.Size = new System.Drawing.Size(157, 49);
-            this.btnHanghoa.TabIndex = 5;
-            this.btnHanghoa.Text = "   Hàng hóa";
-            this.btnHanghoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHanghoa.UseVisualStyleBackColor = false;
-            this.btnHanghoa.Click += new System.EventHandler(this.btnHanghoa_Click);
             // 
             // pnlButton
             // 
-            this.pnlButton.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnlButton.BackColor = System.Drawing.Color.SteelBlue;
             this.pnlButton.Controls.Add(this.pnldichuyenphieunhap);
             this.pnlButton.Controls.Add(this.btnphieunhap);
             this.pnlButton.Controls.Add(this.btnKhachhang);
@@ -170,6 +86,90 @@ namespace WindowsFormsApp
             this.pnldichuyenphieunhap.Name = "pnldichuyenphieunhap";
             this.pnldichuyenphieunhap.Size = new System.Drawing.Size(130, 2);
             this.pnldichuyenphieunhap.TabIndex = 6;
+            // 
+            // btnphieunhap
+            // 
+            this.btnphieunhap.BackColor = System.Drawing.Color.White;
+            this.btnphieunhap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnphieunhap.FlatAppearance.BorderSize = 0;
+            this.btnphieunhap.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnphieunhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnphieunhap.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnphieunhap.ForeColor = System.Drawing.Color.Black;
+            this.btnphieunhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnphieunhap.Location = new System.Drawing.Point(729, 9);
+            this.btnphieunhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnphieunhap.Name = "btnphieunhap";
+            this.btnphieunhap.Padding = new System.Windows.Forms.Padding(1);
+            this.btnphieunhap.Size = new System.Drawing.Size(157, 49);
+            this.btnphieunhap.TabIndex = 24;
+            this.btnphieunhap.Text = "  Phiếu nhập";
+            this.btnphieunhap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnphieunhap.UseVisualStyleBackColor = false;
+            this.btnphieunhap.Click += new System.EventHandler(this.btnphieunhap_Click);
+            // 
+            // btnKhachhang
+            // 
+            this.btnKhachhang.BackColor = System.Drawing.Color.White;
+            this.btnKhachhang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKhachhang.FlatAppearance.BorderSize = 0;
+            this.btnKhachhang.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnKhachhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKhachhang.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachhang.ForeColor = System.Drawing.Color.Black;
+            this.btnKhachhang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhachhang.Location = new System.Drawing.Point(484, 9);
+            this.btnKhachhang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnKhachhang.Name = "btnKhachhang";
+            this.btnKhachhang.Padding = new System.Windows.Forms.Padding(1);
+            this.btnKhachhang.Size = new System.Drawing.Size(157, 49);
+            this.btnKhachhang.TabIndex = 23;
+            this.btnKhachhang.Text = "   Khách hàng";
+            this.btnKhachhang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnKhachhang.UseVisualStyleBackColor = false;
+            this.btnKhachhang.Click += new System.EventHandler(this.btnKhachhang_Click);
+            // 
+            // btnHanghoa
+            // 
+            this.btnHanghoa.BackColor = System.Drawing.Color.White;
+            this.btnHanghoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHanghoa.FlatAppearance.BorderSize = 0;
+            this.btnHanghoa.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnHanghoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHanghoa.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHanghoa.ForeColor = System.Drawing.Color.Black;
+            this.btnHanghoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHanghoa.Location = new System.Drawing.Point(265, 9);
+            this.btnHanghoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHanghoa.Name = "btnHanghoa";
+            this.btnHanghoa.Padding = new System.Windows.Forms.Padding(1);
+            this.btnHanghoa.Size = new System.Drawing.Size(157, 49);
+            this.btnHanghoa.TabIndex = 5;
+            this.btnHanghoa.Text = "   Hàng hóa";
+            this.btnHanghoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHanghoa.UseVisualStyleBackColor = false;
+            this.btnHanghoa.Click += new System.EventHandler(this.btnHanghoa_Click);
+            // 
+            // btnHoadon
+            // 
+            this.btnHoadon.BackColor = System.Drawing.Color.White;
+            this.btnHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHoadon.FlatAppearance.BorderSize = 0;
+            this.btnHoadon.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoadon.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoadon.ForeColor = System.Drawing.Color.Black;
+            this.btnHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoadon.Location = new System.Drawing.Point(37, 9);
+            this.btnHoadon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHoadon.Name = "btnHoadon";
+            this.btnHoadon.Padding = new System.Windows.Forms.Padding(1);
+            this.btnHoadon.Size = new System.Drawing.Size(157, 49);
+            this.btnHoadon.TabIndex = 6;
+            this.btnHoadon.Text = "   Hóa đơn";
+            this.btnHoadon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHoadon.UseVisualStyleBackColor = false;
+            this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click);
             // 
             // pnldichuyenkhachhang
             // 
@@ -200,10 +200,11 @@ namespace WindowsFormsApp
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 169);
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 183);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(984, 601);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(963, 469);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // guna2Elipse1
@@ -235,7 +236,7 @@ namespace WindowsFormsApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pnlThongke);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC_ThongKe";

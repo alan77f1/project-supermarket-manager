@@ -1,5 +1,5 @@
 ﻿
-namespace QuanLySieuThi
+namespace WindowsFormsApp
 {
     partial class FormThemKhachHang
     {
