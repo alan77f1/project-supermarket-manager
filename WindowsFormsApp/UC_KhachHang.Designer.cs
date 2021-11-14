@@ -138,7 +138,7 @@ namespace WindowsFormsApp
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(305, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(318, 39);
+            this.label2.Size = new System.Drawing.Size(328, 40);
             this.label2.TabIndex = 183;
             this.label2.Text = "THÔNG TIN KHÁCH HÀNG";
             // 
@@ -363,13 +363,13 @@ namespace WindowsFormsApp
             this.guna2dgvThongTinKhachHang.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2dgvThongTinKhachHang.EnableHeadersVisualStyles = false;
             this.guna2dgvThongTinKhachHang.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2dgvThongTinKhachHang.Location = new System.Drawing.Point(35, 326);
+            this.guna2dgvThongTinKhachHang.Location = new System.Drawing.Point(35, 300);
             this.guna2dgvThongTinKhachHang.Name = "guna2dgvThongTinKhachHang";
             this.guna2dgvThongTinKhachHang.RowHeadersVisible = false;
             this.guna2dgvThongTinKhachHang.RowHeadersWidth = 51;
             this.guna2dgvThongTinKhachHang.RowTemplate.Height = 24;
             this.guna2dgvThongTinKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2dgvThongTinKhachHang.Size = new System.Drawing.Size(914, 246);
+            this.guna2dgvThongTinKhachHang.Size = new System.Drawing.Size(933, 300);
             this.guna2dgvThongTinKhachHang.TabIndex = 211;
             this.guna2dgvThongTinKhachHang.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2dgvThongTinKhachHang.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -436,7 +436,7 @@ namespace WindowsFormsApp
             this.btnSua.ForeColor = System.Drawing.Color.White;
             this.btnSua.Image = global::WindowsFormsApp.Properties.Resources.Sua;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(625, 604);
+            this.btnSua.Location = new System.Drawing.Point(683, 627);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(114, 46);
             this.btnSua.TabIndex = 216;
@@ -450,7 +450,7 @@ namespace WindowsFormsApp
             this.btnCapNhap.ForeColor = System.Drawing.Color.White;
             this.btnCapNhap.Image = global::WindowsFormsApp.Properties.Resources.LamMoi;
             this.btnCapNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhap.Location = new System.Drawing.Point(329, 604);
+            this.btnCapNhap.Location = new System.Drawing.Point(405, 627);
             this.btnCapNhap.Name = "btnCapNhap";
             this.btnCapNhap.Size = new System.Drawing.Size(114, 46);
             this.btnCapNhap.TabIndex = 204;
@@ -464,7 +464,7 @@ namespace WindowsFormsApp
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Image = global::WindowsFormsApp.Properties.Resources.Xoa;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(773, 604);
+            this.btnXoa.Location = new System.Drawing.Point(822, 627);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(114, 46);
             this.btnXoa.TabIndex = 203;
@@ -478,7 +478,7 @@ namespace WindowsFormsApp
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Image = global::WindowsFormsApp.Properties.Resources.Them;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(474, 604);
+            this.btnThem.Location = new System.Drawing.Point(546, 627);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(114, 46);
             this.btnThem.TabIndex = 201;

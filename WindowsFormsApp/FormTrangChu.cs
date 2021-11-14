@@ -14,39 +14,57 @@ namespace WindowsFormsApp
     {
         //private string Taikhoan;
 
-
+        int w;
+        bool check;
         public FormTrangChu()   // string Taikhoandn
         {
             InitializeComponent();
-            timertTrangchu.Start();
-            UC_Main uC_Main = new UC_Main();
-            addUC(uC_Main);
-            //this.Taikhoan = Taikhoandn;
-            //lblTaikhoan.Text = "";
-            //lblTaikhoan.Text = Taikhoan;
+            time.Start();
+            panelLeft.Width = panelLeft.Width - 145;
+            w = panelLeft.Width;
+            check = false;
+            UC_TrangChu tc = new UC_TrangChu();
+            themUC(tc);
+            phanQuyen();
+            lbNguoiDung.Text = FormDangNhap.tenHienThi;
         }
 
-
-
-        private void addUC(UserControl userControl)
+        void phanQuyen()
         {
-            userControl.Dock = DockStyle.Fill;
-            pnlTrangchu.Controls.Clear();
-            pnlTrangchu.Controls.Add(userControl);
-            userControl.BringToFront();
+            if (FormDangNhap.quyen != "admin")
+            {
+                btnNCC.Enabled = false;
+                btnKhoHang.Enabled = false;
+                btnNhanVien.Enabled = false;
+            }
         }
 
-        private void DichuyenPanle(Control control)
+        private void themUC(Control uc)
+        {
+            uc.Dock = DockStyle.Fill;
+            panelControl.Controls.Clear();
+            panelControl.Controls.Add(uc);
+            uc.BringToFront();
+        }
+
+        private void diChuyenPanel(Control control)
         {
             panelDichuyen.Top = control.Top;
             panelDichuyen.Height = control.Height;
         }
 
+        private void time_tick(object sender, EventArgs e)
+        {
+            DateTime dt = DateTime.Now;
+            lbTime.Text = dt.ToString("HH:MM:ss");
+        }
+
+
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
-            DichuyenPanle(btnKhachHang);
-            UC_Khachhang uC_Khachhang = new UC_Khachhang();
-            addUC(uC_Khachhang);
+            diChuyenPanel(btnKhachHang);
+            UC_KhachHang kh = new UC_KhachHang();
+            themUC(kh);
         }
 
         private void btnX_Click(object sender, EventArgs e)
@@ -56,46 +74,51 @@ namespace WindowsFormsApp
 
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
-            DichuyenPanle(btnDangnhap);
-            UC_Main uC_Main = new UC_Main();
-            addUC(uC_Main);
+            diChuyenPanel(btnTrangChu);
+            UC_TrangChu UC_TrangChu = new UC_TrangChu();
+            themUC(UC_TrangChu);
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            FormDangnhap formDangnhap = new FormDangnhap();
-            formDangnhap.Show();
+            FormDangNhap dn = new FormDangNhap();
+            dn.Show();
             this.Hide();
 
 
         }
 
-
-        private void timer_Trangchu(object sender, EventArgs e)
-        {
-            DateTime dt = DateTime.Now;
-            lblTime.Text = dt.ToString("HH:MM:ss");
-        }
-
         private void btnThongke_Click(object sender, EventArgs e)
         {
-            DichuyenPanle(btnThongke);
-            UC_Thongke uC_Thongke = new UC_Thongke();
-            addUC(uC_Thongke);
+            diChuyenPanel(btnThongKe);
+            UC_ThongKe tk = new UC_ThongKe();
+            themUC(tk);
         }
 
         private void btnNhanvien_Click(object sender, EventArgs e)
         {
-            DichuyenPanle(btnNhanvien);
-            UC_Quanlynhanvien uC_Quanlynhanvien = new UC_Quanlynhanvien();
-            addUC(uC_Quanlynhanvien);
+            diChuyenPanel(btnNhanVien);
+            UC_NhanVien nv = new UC_NhanVien();
+            themUC(nv);
         }
 
         private void btnBanHang_Click(object sender, EventArgs e)
         {
-            DichuyenPanle(btnBanHang);
-            UC_Banhang uC_Banhang = new UC_Banhang();
-            addUC(uC_Banhang);
+            diChuyenPanel(btnBanHang);
+            UC_BanHang bh = new UC_BanHang();
+            themUC(bh);
+        }
+
+        private void btnKhoHang_Click(object sender, EventArgs e)
+        {
+            diChuyenPanel(btnBanHang);
+            UC_KhoHang kh = new UC_KhoHang();
+            themUC(kh);
+        }
+
+        private void lbNguoiDung_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

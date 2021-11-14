@@ -1,5 +1,4 @@
-﻿using quanlicoopmart_nam3_24_10_2021.getdataaa;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

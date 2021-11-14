@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,7 +36,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvNCC = new System.Windows.Forms.DataGridView();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.guna2txtGioiTinh = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -150,10 +148,6 @@
             this.dgvNCC.Size = new System.Drawing.Size(928, 282);
             this.dgvNCC.TabIndex = 94;
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 30;
-            // 
             // guna2txtGioiTinh
             // 
             this.guna2txtGioiTinh.BorderColor = System.Drawing.Color.Black;
@@ -210,7 +204,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.SteelBlue;
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(0, 3);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(990, 56);
             this.panel3.TabIndex = 226;
@@ -220,9 +214,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(335, 0);
+            this.label4.Location = new System.Drawing.Point(319, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(298, 39);
+            this.label4.Size = new System.Drawing.Size(311, 40);
             this.label4.TabIndex = 183;
             this.label4.Text = "QUẢN LÝ NHÀ CUNG CẤP";
             // 
@@ -242,7 +236,7 @@
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(135, 183);
+            this.guna2TextBox1.Location = new System.Drawing.Point(145, 183);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
@@ -428,7 +422,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvNCC;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Guna.UI2.WinForms.Guna2TextBox guna2txtGioiTinh;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private System.Windows.Forms.Button btnCapNhap;

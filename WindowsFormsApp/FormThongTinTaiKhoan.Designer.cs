@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp
 {
-    partial class FormThemCaLamViec
+    partial class FormThongTinTaiKhoan
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,13 @@ namespace WindowsFormsApp
         {
             this.SuspendLayout();
             // 
-            // FormThemCaLamViec
+            // FormThongTinTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 540);
-            this.Name = "FormThemCaLamViec";
-            this.Text = "FormThemCaLamViec";
+            this.ClientSize = new System.Drawing.Size(812, 465);
+            this.Name = "FormThongTinTaiKhoan";
+            this.Text = "FormThongTinTaiKhoan";
             this.ResumeLayout(false);
 
         }

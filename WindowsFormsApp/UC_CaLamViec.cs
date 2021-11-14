@@ -1,5 +1,4 @@
 ﻿
-using quanlicoopmart_nam3_24_10_2021.getdataaa;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp.Models;
 
 namespace WindowsFormsApp
 {
@@ -20,13 +20,13 @@ namespace WindowsFormsApp
             Hienthi();
             txtMapgc.Text = Matudong();
         }
-        Phieugiaoca phieugiaoca = new Phieugiaoca();
+        CaLamViec clv = new CaLamViec();
         BLL bll = new BLL();
 
 
         private string Matudong()
         {
-            string query1 = "select Mapgc from Phieugiaoca";
+            string query1 = "select Mapgc from CaLamViec";
             DataTable dt = bll.ExcuQuery(query1);
             string ma = "";
             if (dt.Rows.Count <= 0)
@@ -61,7 +61,7 @@ namespace WindowsFormsApp
 
         private void Hienthi()
         {
-            string query1 = "select Mapgc as [Mã phiếu giao ca],Ca as [Ca làm việc] from Phieugiaoca";
+            string query1 = "select Mapgc as [Mã phiếu giao ca],Ca as [Ca làm việc] from CaLamViec";
             DataTable dt = bll.ExcuQuery(query1);
             dgvQuanlypgc.DataSource = dt;
         }
@@ -70,7 +70,7 @@ namespace WindowsFormsApp
         {
             if (check_data() == true)
             {
-                string query = "insert into Phieugiaoca (Mapgc,Ca) values (@Mapgc,@Ca)";
+                string query = "insert into CaLamViec (Mapgc,Ca) values (@Mapgc,@Ca)";
                 phieugiaoca.Mapgc = txtMapgc.Text;
                 phieugiaoca.Ca = txtCa.Text;
                 if (bll.Them_Sua_Xoa_PGC(phieugiaoca, query) == true)
@@ -91,7 +91,7 @@ namespace WindowsFormsApp
         {
             if (check_data() == true)
             {
-                string query = "delete Phieugiaoca where Mapgc = @Mapgc";
+                string query = "delete CaLamViec where Mapgc = @Mapgc";
                 phieugiaoca.Mapgc = txtMapgc.Text;
                 phieugiaoca.Ca = txtCa.Text;
                 if (bll.Them_Sua_Xoa_PGC(phieugiaoca, query) == true)
@@ -130,7 +130,7 @@ namespace WindowsFormsApp
         {
             if (check_data() == true)
             {
-                string query = "update Phieugiaoca set Mapgc = @Mapgc, Ca = @Ca where Mapgc = @Mapgc";
+                string query = "update CaLamViec set Mapgc = @Mapgc, Ca = @Ca where Mapgc = @Mapgc";
                 phieugiaoca.Mapgc = txtMapgc.Text;
                 phieugiaoca.Ca = txtCa.Text;
                 if (bll.Them_Sua_Xoa_PGC(phieugiaoca, query) == true)
@@ -162,7 +162,7 @@ namespace WindowsFormsApp
         private void txtTimkiem_TextChanged(object sender, EventArgs e)
         {
             string tk = txtTimkiem.Text;
-            string query = "select * from Phieugiaoca where Mapgc like N'%" + tk + "%' or  Ca like  N'%" + tk + "%'";
+            string query = "select * from CaLamViec where Mapgc like N'%" + tk + "%' or  Ca like  N'%" + tk + "%'";
             if (!string.IsNullOrEmpty(txtTimkiem.Text))
             {
                 DataTable dt = bll.ExecuteTimkiem(tk, query);

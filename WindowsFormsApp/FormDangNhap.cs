@@ -17,44 +17,114 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
         }
-        Chuoiketnoi chuoiketnoi = new Chuoiketnoi();
+        
 
+        public static string tenHienThi, quyen;
 
         private bool check_data()
         {
-            if (string.IsNullOrEmpty(txtTaikhoan.Text))
+            if (string.IsNullOrEmpty(txtTenDangNhap.Text))
             {
-                errtxtTaikhoan.SetError(txtTaikhoan, " ");
+                errtxtTaikhoan.SetError(txtTenDangNhap, " ");
                 lblCanhbao.Text = "Vui lòng nhập tài khoản";
                 lblCanhbao.ForeColor = Color.Brown;
                 return false;
             }
             else
-                errtxtTaikhoan.SetError(txtTaikhoan, null);
+                errtxtTaikhoan.SetError(txtTenDangNhap, null);
 
-            if (string.IsNullOrEmpty(txtMatkhau.Text))
+            if (string.IsNullOrEmpty(txtMatKhau.Text))
             {
-                errMatkhau.SetError(txtMatkhau, " ");
+                errMatkhau.SetError(txtMatKhau, " ");
                 lblCanhbao.Text = "";
                 lblCanhbao.Text = "Vui lòng nhập mật khẩu";
                 lblCanhbao.ForeColor = Color.Brown;
                 return false;
             }
             else
-                errtxtTaikhoan.SetError(txtMatkhau, null);
+                errtxtTaikhoan.SetError(txtMatKhau, null);
 
             return true;
         }
 
+        private void txtTenDangNhap_TextChanged(object sender, EventArgs e)
+        {
+            lblCanhbao.Text = "";
+        }
 
-        private void btnDangnhap_Click(object sender, EventArgs e)
+        private void txtMatKhau_TextChanged(object sender, EventArgs e)
+        {
+            lblCanhbao.Text = "";
+        }
+
+        private void chkHienThiMK_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHienthimatkhau.Checked == true)
+            {
+                txtMatKhau.PasswordChar = '\0';
+            }
+            else
+                txtMatKhau.PasswordChar = '*';
+        }
+
+
+
+
+
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            string tenDangNhap = guna2TextBox1.Text;
+            string passWord = guna2TextBox2.Text;
+            if (Login(tenDangNhap, passWord))
+            {
+                tenNgDung = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).TenNguoiDung;
+                quyen = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).Quyen;
+                Main f = new Main();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
+            }
+        }
+
+        bool Login(string userName, string passWord)
+        {
+            return QuanLyNhanVien.Intance.Login(userName, passWord);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
         {
             if (check_data() == true)
             {
                 SqlConnection con = chuoiketnoi.sqlConnection();
                 con.Open();
-                string tk = txtTaikhoan.Text;
-                string mk = txtMatkhau.Text;
+                string tk = txtTenDangNhap.Text;
+                string mk = txtMatKhau.Text;
                 string query = "select tendangnhap,matkhau from Nhanvien where tendangnhap = '" + tk + "' and matkhau = '" + mk + "' and Macv = 'NV'";
                 SqlCommand sqlCommand = new SqlCommand(query, con);
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
@@ -71,37 +141,20 @@ namespace WindowsFormsApp
             }
         }
 
-
-        private void chkHienthimatkhau_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkHienthimatkhau.Checked == true)
-            {
-                txtMatkhau.PasswordChar = '\0';
-            }
-            else
-                txtMatkhau.PasswordChar = '*';
-        }
-
-
-        private void lblThoat_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void lblAmind_Click(object sender, EventArgs e)
+        /*private void lblAmind_Click(object sender, EventArgs e)
         {
             if (check_data() == true)
             {
                 SqlConnection con = chuoiketnoi.sqlConnection();
                 con.Open();
-                string tk = txtTaikhoan.Text;
-                string mk = txtMatkhau.Text;
+                string tk = txtTenDangNhap.Text;
+                string mk = txtMatKhau.Text;
                 string query = "select tendangnhap,matkhau from Nhanvien where tendangnhap = '" + tk + "' and matkhau = '" + mk + "' and Macv = 'QL'";
                 SqlCommand sqlCommand = new SqlCommand(query, con);
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
                 if (sqlDataReader.Read() == true)
                 {
-                    FormTrangchu formTrangchu = new FormTrangchu(); // txt Taikhoan.text
+                    FormTrangChu formTrangchu = new FormTrangChu(); // txt Taikhoan.text
                     formTrangchu.Show();
                     this.Hide();
                 }
@@ -110,30 +163,32 @@ namespace WindowsFormsApp
                 lblCanhbao.ForeColor = Color.Brown;
                 con.Close();
             }
-        }
+        }*/
 
-        private void btnDangky_Click(object sender, EventArgs e)
+        private void btnDangKy_Click(object sender, EventArgs e)
         {
-            FormDangkynhanvien formDangkynhanvien = new FormDangkynhanvien();
-            formDangkynhanvien.Show();
+            FormDangKy FormDangKy = new FormDangKy();
+            FormDangKy.Show();
             this.Hide();
         }
 
-        private void lblMatkhau_Click(object sender, EventArgs e)
+        private void lbQuenMK_Click(object sender, EventArgs e)
         {
             FormSoDienThoai formSodienthoai = new FormSoDienThoai();
             formSodienthoai.Show();
             this.Hide();
         }
 
-        private void txtTaikhoan_TextChanged(object sender, EventArgs e)
+        private void lblThoat_Click(object sender, EventArgs e)
         {
-            lblCanhbao.Text = "";
+            Application.Exit();
         }
 
-        private void txtMatkhau_TextChanged(object sender, EventArgs e)
+  
+
+        private void btnX_Click(object sender, EventArgs e)
         {
-            lblCanhbao.Text = "";
+            Application.Exit();
         }
     }
 }

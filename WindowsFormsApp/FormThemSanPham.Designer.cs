@@ -41,10 +41,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.guna2txtMaKhachHang = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -63,7 +59,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.White;
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(778, 10);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(817, 10);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
@@ -73,11 +69,11 @@
             // 
             this.dgvDanhSachHHNhap.BackgroundColor = System.Drawing.Color.White;
             this.dgvDanhSachHHNhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDanhSachHHNhap.Location = new System.Drawing.Point(32, 274);
+            this.dgvDanhSachHHNhap.Location = new System.Drawing.Point(0, 283);
             this.dgvDanhSachHHNhap.Name = "dgvDanhSachHHNhap";
             this.dgvDanhSachHHNhap.RowHeadersWidth = 51;
             this.dgvDanhSachHHNhap.RowTemplate.Height = 24;
-            this.dgvDanhSachHHNhap.Size = new System.Drawing.Size(807, 258);
+            this.dgvDanhSachHHNhap.Size = new System.Drawing.Size(830, 258);
             this.dgvDanhSachHHNhap.TabIndex = 102;
             // 
             // label5
@@ -85,7 +81,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(54, 95);
+            this.label5.Location = new System.Drawing.Point(57, 105);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 23);
             this.label5.TabIndex = 98;
@@ -96,7 +92,7 @@
             this.cbbDVT.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbbDVT.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbDVT.FormattingEnabled = true;
-            this.cbbDVT.Location = new System.Drawing.Point(590, 152);
+            this.cbbDVT.Location = new System.Drawing.Point(593, 162);
             this.cbbDVT.Name = "cbbDVT";
             this.cbbDVT.Size = new System.Drawing.Size(132, 31);
             this.cbbDVT.TabIndex = 96;
@@ -111,7 +107,7 @@
             this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLamMoi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.Location = new System.Drawing.Point(499, 557);
+            this.btnLamMoi.Location = new System.Drawing.Point(502, 567);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(173, 49);
             this.btnLamMoi.TabIndex = 93;
@@ -130,7 +126,7 @@
             this.btnThemDVT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemDVT.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThemDVT.ForeColor = System.Drawing.Color.White;
-            this.btnThemDVT.Location = new System.Drawing.Point(743, 155);
+            this.btnThemDVT.Location = new System.Drawing.Point(746, 165);
             this.btnThemDVT.Name = "btnThemDVT";
             this.btnThemDVT.Size = new System.Drawing.Size(42, 29);
             this.btnThemDVT.TabIndex = 91;
@@ -147,7 +143,7 @@
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(314, 557);
+            this.btnXoa.Location = new System.Drawing.Point(317, 567);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(173, 49);
             this.btnXoa.TabIndex = 94;
@@ -166,7 +162,7 @@
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(685, 557);
+            this.btnLuu.Location = new System.Drawing.Point(688, 567);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(173, 49);
             this.btnLuu.TabIndex = 95;
@@ -180,7 +176,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(510, 155);
+            this.label3.Location = new System.Drawing.Point(513, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 23);
             this.label3.TabIndex = 81;
@@ -191,7 +187,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(84, 226);
+            this.label8.Location = new System.Drawing.Point(87, 236);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(55, 23);
             this.label8.TabIndex = 79;
@@ -202,7 +198,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(28, 181);
+            this.label6.Location = new System.Drawing.Point(31, 191);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(113, 23);
             this.label6.TabIndex = 82;
@@ -213,7 +209,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(490, 103);
+            this.label2.Location = new System.Drawing.Point(493, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 23);
             this.label2.TabIndex = 85;
@@ -224,48 +220,11 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 140);
+            this.label1.Location = new System.Drawing.Point(31, 150);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 23);
             this.label1.TabIndex = 84;
             this.label1.Text = "Mã Hàng :";
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.BackColor = System.Drawing.Color.SteelBlue;
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(864, 10);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(10, 614);
-            this.flowLayoutPanel3.TabIndex = 74;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(10, 624);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(864, 10);
-            this.flowLayoutPanel2.TabIndex = 75;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(28)))), ((int)(((byte)(36)))));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(10, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(864, 10);
-            this.flowLayoutPanel1.TabIndex = 76;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 634);
-            this.panel1.TabIndex = 77;
             // 
             // guna2txtMaKhachHang
             // 
@@ -407,9 +366,9 @@
             this.panel3.BackColor = System.Drawing.Color.SteelBlue;
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.guna2ControlBox1);
-            this.panel3.Location = new System.Drawing.Point(16, 10);
+            this.panel3.Location = new System.Drawing.Point(0, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(842, 56);
+            this.panel3.Size = new System.Drawing.Size(874, 56);
             this.panel3.TabIndex = 201;
             // 
             // label7
@@ -417,9 +376,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(303, 3);
+            this.label7.Location = new System.Drawing.Point(317, 7);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(215, 39);
+            this.label7.Size = new System.Drawing.Size(223, 40);
             this.label7.TabIndex = 183;
             this.label7.Text = "NHẬP HÀNG HÓA";
             // 
@@ -427,7 +386,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(874, 634);
+            this.ClientSize = new System.Drawing.Size(881, 655);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.guna2TextBox4);
             this.Controls.Add(this.guna2TextBox3);
@@ -446,10 +405,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.flowLayoutPanel3);
-            this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormThemSanPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -476,10 +431,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2TextBox guna2txtMaKhachHang;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;

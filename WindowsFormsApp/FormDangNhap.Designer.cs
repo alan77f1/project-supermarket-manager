@@ -30,7 +30,7 @@ namespace WindowsFormsApp
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panelChinh = new System.Windows.Forms.Panel();
+            this.panelTrangChu = new System.Windows.Forms.Panel();
             this.btnDangky = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -40,73 +40,72 @@ namespace WindowsFormsApp
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblAmind = new System.Windows.Forms.Label();
             this.lblCanhbao = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.lblThoat = new System.Windows.Forms.Label();
-            this.lblMatkhau = new System.Windows.Forms.Label();
+            this.lbQuenMK = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.chkHienthimatkhau = new System.Windows.Forms.CheckBox();
             this.btnDangnhap = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtMatkhau = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtTaikhoan = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTenDangNhap = new Guna.UI2.WinForms.Guna2TextBox();
             this.BoFormDangnhap = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Bopanelchinh = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.errtxtTaikhoan = new System.Windows.Forms.ErrorProvider(this.components);
             this.errMatkhau = new System.Windows.Forms.ErrorProvider(this.components);
-            this.panelChinh.SuspendLayout();
+            this.btnX = new System.Windows.Forms.Button();
+            this.panelTrangChu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errtxtTaikhoan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errMatkhau)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelChinh
+            // panelTrangChu
             // 
-            this.panelChinh.BackColor = System.Drawing.Color.White;
-            this.panelChinh.Controls.Add(this.btnDangky);
-            this.panelChinh.Controls.Add(this.label5);
-            this.panelChinh.Controls.Add(this.panel8);
-            this.panelChinh.Controls.Add(this.panel6);
-            this.panelChinh.Controls.Add(this.panel5);
-            this.panelChinh.Controls.Add(this.panel4);
-            this.panelChinh.Controls.Add(this.panel3);
-            this.panelChinh.Controls.Add(this.lblAmind);
-            this.panelChinh.Controls.Add(this.lblCanhbao);
-            this.panelChinh.Controls.Add(this.label4);
-            this.panelChinh.Controls.Add(this.lblThoat);
-            this.panelChinh.Controls.Add(this.lblMatkhau);
-            this.panelChinh.Controls.Add(this.panel1);
-            this.panelChinh.Controls.Add(this.chkHienthimatkhau);
-            this.panelChinh.Controls.Add(this.btnDangnhap);
-            this.panelChinh.Controls.Add(this.label3);
-            this.panelChinh.Controls.Add(this.txtMatkhau);
-            this.panelChinh.Controls.Add(this.label2);
-            this.panelChinh.Controls.Add(this.txtTaikhoan);
-            this.panelChinh.Location = new System.Drawing.Point(309, 62);
-            this.panelChinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelChinh.Name = "panelChinh";
-            this.panelChinh.Size = new System.Drawing.Size(505, 588);
-            this.panelChinh.TabIndex = 7;
+            this.panelTrangChu.BackColor = System.Drawing.Color.White;
+            this.panelTrangChu.Controls.Add(this.btnDangky);
+            this.panelTrangChu.Controls.Add(this.label5);
+            this.panelTrangChu.Controls.Add(this.panel8);
+            this.panelTrangChu.Controls.Add(this.panel6);
+            this.panelTrangChu.Controls.Add(this.panel5);
+            this.panelTrangChu.Controls.Add(this.panel4);
+            this.panelTrangChu.Controls.Add(this.panel3);
+            this.panelTrangChu.Controls.Add(this.lblAmind);
+            this.panelTrangChu.Controls.Add(this.lblCanhbao);
+            this.panelTrangChu.Controls.Add(this.lblThoat);
+            this.panelTrangChu.Controls.Add(this.lbQuenMK);
+            this.panelTrangChu.Controls.Add(this.panel1);
+            this.panelTrangChu.Controls.Add(this.chkHienthimatkhau);
+            this.panelTrangChu.Controls.Add(this.btnDangnhap);
+            this.panelTrangChu.Controls.Add(this.label3);
+            this.panelTrangChu.Controls.Add(this.txtMatKhau);
+            this.panelTrangChu.Controls.Add(this.label2);
+            this.panelTrangChu.Controls.Add(this.txtTenDangNhap);
+            this.panelTrangChu.Location = new System.Drawing.Point(309, 62);
+            this.panelTrangChu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelTrangChu.Name = "panelTrangChu";
+            this.panelTrangChu.Size = new System.Drawing.Size(505, 588);
+            this.panelTrangChu.TabIndex = 7;
             // 
             // btnDangky
             // 
             this.btnDangky.AutoSize = true;
             this.btnDangky.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangky.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnDangky.Location = new System.Drawing.Point(332, 480);
+            this.btnDangky.Location = new System.Drawing.Point(320, 484);
             this.btnDangky.Name = "btnDangky";
             this.btnDangky.Size = new System.Drawing.Size(89, 35);
             this.btnDangky.TabIndex = 34;
             this.btnDangky.Text = "Đăng ký";
-            this.btnDangky.Click += new System.EventHandler(this.btnDangky_Click);
+            this.btnDangky.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(92, 480);
+            this.label5.Location = new System.Drawing.Point(83, 484);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(224, 35);
             this.label5.TabIndex = 33;
@@ -162,7 +161,6 @@ namespace WindowsFormsApp
             this.lblAmind.Size = new System.Drawing.Size(80, 35);
             this.lblAmind.TabIndex = 27;
             this.lblAmind.Text = "Admin";
-            this.lblAmind.Click += new System.EventHandler(this.lblAmind_Click);
             // 
             // lblCanhbao
             // 
@@ -175,40 +173,29 @@ namespace WindowsFormsApp
             this.lblCanhbao.TabIndex = 26;
             this.lblCanhbao.Text = "Vui lòng kiểm tra tài khoản và mật khẩu của bạn";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Sitka Banner", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(38, 559);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(408, 40);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "@ 2017 Offical Singup Forms All Rights Reserved | Design by CongChi\r\n\r\n";
-            // 
             // lblThoat
             // 
             this.lblThoat.AutoSize = true;
             this.lblThoat.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThoat.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblThoat.Location = new System.Drawing.Point(322, 519);
+            this.lblThoat.Location = new System.Drawing.Point(341, 519);
             this.lblThoat.Name = "lblThoat";
             this.lblThoat.Size = new System.Drawing.Size(68, 35);
             this.lblThoat.TabIndex = 21;
             this.lblThoat.Text = "Thoát";
             this.lblThoat.Click += new System.EventHandler(this.lblThoat_Click);
             // 
-            // lblMatkhau
+            // lbQuenMK
             // 
-            this.lblMatkhau.AutoSize = true;
-            this.lblMatkhau.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatkhau.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblMatkhau.Location = new System.Drawing.Point(84, 519);
-            this.lblMatkhau.Name = "lblMatkhau";
-            this.lblMatkhau.Size = new System.Drawing.Size(201, 35);
-            this.lblMatkhau.TabIndex = 20;
-            this.lblMatkhau.Text = "Bạn quên mật khẩu?";
-            this.lblMatkhau.Click += new System.EventHandler(this.lblMatkhau_Click);
+            this.lbQuenMK.AutoSize = true;
+            this.lbQuenMK.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQuenMK.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lbQuenMK.Location = new System.Drawing.Point(83, 519);
+            this.lbQuenMK.Name = "lbQuenMK";
+            this.lbQuenMK.Size = new System.Drawing.Size(201, 35);
+            this.lbQuenMK.TabIndex = 20;
+            this.lbQuenMK.Text = "Bạn quên mật khẩu?";
+            this.lbQuenMK.Click += new System.EventHandler(this.lbQuenMK_Click);
             // 
             // panel1
             // 
@@ -243,7 +230,7 @@ namespace WindowsFormsApp
             this.chkHienthimatkhau.TabIndex = 15;
             this.chkHienthimatkhau.Text = "Hiển thị mật khẩu";
             this.chkHienthimatkhau.UseVisualStyleBackColor = true;
-            this.chkHienthimatkhau.CheckedChanged += new System.EventHandler(this.chkHienthimatkhau_CheckedChanged);
+            this.chkHienthimatkhau.CheckedChanged += new System.EventHandler(this.chkHienThiMK_CheckedChanged);
             // 
             // btnDangnhap
             // 
@@ -262,7 +249,7 @@ namespace WindowsFormsApp
             this.btnDangnhap.Size = new System.Drawing.Size(400, 58);
             this.btnDangnhap.TabIndex = 13;
             this.btnDangnhap.Text = "ĐĂNG NHẬP";
-            this.btnDangnhap.Click += new System.EventHandler(this.btnDangnhap_Click);
+            this.btnDangnhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // label3
             // 
@@ -274,35 +261,35 @@ namespace WindowsFormsApp
             this.label3.TabIndex = 12;
             this.label3.Text = "Mật khẩu";
             // 
-            // txtMatkhau
+            // txtMatKhau
             // 
-            this.txtMatkhau.BorderColor = System.Drawing.Color.Black;
-            this.txtMatkhau.BorderRadius = 10;
-            this.txtMatkhau.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMatkhau.DefaultText = "";
-            this.txtMatkhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMatkhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMatkhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMatkhau.DisabledState.Parent = this.txtMatkhau;
-            this.txtMatkhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMatkhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatkhau.FocusedState.Parent = this.txtMatkhau;
-            this.txtMatkhau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtMatkhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(92)))), ((int)(((byte)(86)))));
-            this.txtMatkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatkhau.HoverState.Parent = this.txtMatkhau;
-            this.txtMatkhau.Location = new System.Drawing.Point(42, 205);
-            this.txtMatkhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMatkhau.Name = "txtMatkhau";
-            this.txtMatkhau.PasswordChar = '*';
-            this.txtMatkhau.PlaceholderText = "";
-            this.txtMatkhau.SelectedText = "";
-            this.txtMatkhau.ShadowDecoration.BorderRadius = 10;
-            this.txtMatkhau.ShadowDecoration.Parent = this.txtMatkhau;
-            this.txtMatkhau.Size = new System.Drawing.Size(440, 50);
-            this.txtMatkhau.TabIndex = 11;
-            this.txtMatkhau.TextOffset = new System.Drawing.Point(15, 0);
-            this.txtMatkhau.TextChanged += new System.EventHandler(this.txtMatkhau_TextChanged);
+            this.txtMatKhau.BorderColor = System.Drawing.Color.Black;
+            this.txtMatKhau.BorderRadius = 10;
+            this.txtMatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMatKhau.DefaultText = "";
+            this.txtMatKhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatKhau.DisabledState.Parent = this.txtMatKhau;
+            this.txtMatKhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatKhau.FocusedState.Parent = this.txtMatKhau;
+            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtMatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(92)))), ((int)(((byte)(86)))));
+            this.txtMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatKhau.HoverState.Parent = this.txtMatKhau;
+            this.txtMatKhau.Location = new System.Drawing.Point(42, 205);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.PlaceholderText = "";
+            this.txtMatKhau.SelectedText = "";
+            this.txtMatKhau.ShadowDecoration.BorderRadius = 10;
+            this.txtMatKhau.ShadowDecoration.Parent = this.txtMatKhau;
+            this.txtMatKhau.Size = new System.Drawing.Size(440, 50);
+            this.txtMatKhau.TabIndex = 11;
+            this.txtMatKhau.TextOffset = new System.Drawing.Point(15, 0);
+            this.txtMatKhau.TextChanged += new System.EventHandler(this.txtMatKhau_TextChanged);
             // 
             // label2
             // 
@@ -314,35 +301,35 @@ namespace WindowsFormsApp
             this.label2.TabIndex = 10;
             this.label2.Text = "Tên đăng nhập";
             // 
-            // txtTaikhoan
+            // txtTenDangNhap
             // 
-            this.txtTaikhoan.BorderColor = System.Drawing.Color.Black;
-            this.txtTaikhoan.BorderRadius = 10;
-            this.txtTaikhoan.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTaikhoan.DefaultText = "";
-            this.txtTaikhoan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTaikhoan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTaikhoan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTaikhoan.DisabledState.Parent = this.txtTaikhoan;
-            this.txtTaikhoan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTaikhoan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTaikhoan.FocusedState.Parent = this.txtTaikhoan;
-            this.txtTaikhoan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTaikhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(92)))), ((int)(((byte)(86)))));
-            this.txtTaikhoan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTaikhoan.HoverState.Parent = this.txtTaikhoan;
-            this.txtTaikhoan.Location = new System.Drawing.Point(42, 112);
-            this.txtTaikhoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTaikhoan.Name = "txtTaikhoan";
-            this.txtTaikhoan.PasswordChar = '\0';
-            this.txtTaikhoan.PlaceholderText = "";
-            this.txtTaikhoan.SelectedText = "";
-            this.txtTaikhoan.ShadowDecoration.BorderRadius = 10;
-            this.txtTaikhoan.ShadowDecoration.Parent = this.txtTaikhoan;
-            this.txtTaikhoan.Size = new System.Drawing.Size(440, 50);
-            this.txtTaikhoan.TabIndex = 9;
-            this.txtTaikhoan.TextOffset = new System.Drawing.Point(15, 0);
-            this.txtTaikhoan.TextChanged += new System.EventHandler(this.txtTaikhoan_TextChanged);
+            this.txtTenDangNhap.BorderColor = System.Drawing.Color.Black;
+            this.txtTenDangNhap.BorderRadius = 10;
+            this.txtTenDangNhap.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTenDangNhap.DefaultText = "";
+            this.txtTenDangNhap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTenDangNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTenDangNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenDangNhap.DisabledState.Parent = this.txtTenDangNhap;
+            this.txtTenDangNhap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenDangNhap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenDangNhap.FocusedState.Parent = this.txtTenDangNhap;
+            this.txtTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTenDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(92)))), ((int)(((byte)(86)))));
+            this.txtTenDangNhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenDangNhap.HoverState.Parent = this.txtTenDangNhap;
+            this.txtTenDangNhap.Location = new System.Drawing.Point(42, 112);
+            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.PasswordChar = '\0';
+            this.txtTenDangNhap.PlaceholderText = "";
+            this.txtTenDangNhap.SelectedText = "";
+            this.txtTenDangNhap.ShadowDecoration.BorderRadius = 10;
+            this.txtTenDangNhap.ShadowDecoration.Parent = this.txtTenDangNhap;
+            this.txtTenDangNhap.Size = new System.Drawing.Size(440, 50);
+            this.txtTenDangNhap.TabIndex = 9;
+            this.txtTenDangNhap.TextOffset = new System.Drawing.Point(15, 0);
+            this.txtTenDangNhap.TextChanged += new System.EventHandler(this.txtTenDangNhap_TextChanged);
             // 
             // BoFormDangnhap
             // 
@@ -352,15 +339,38 @@ namespace WindowsFormsApp
             // Bopanelchinh
             // 
             this.Bopanelchinh.BorderRadius = 20;
-            this.Bopanelchinh.TargetControl = this.panelChinh;
+            this.Bopanelchinh.TargetControl = this.panelTrangChu;
             // 
             // errtxtTaikhoan
             // 
-            this.errtxtTaikhoan.ContainerControl = this.txtTaikhoan;
+            this.errtxtTaikhoan.ContainerControl = this.txtTenDangNhap;
             // 
             // errMatkhau
             // 
-            this.errMatkhau.ContainerControl = this.txtMatkhau;
+            this.errMatkhau.ContainerControl = this.txtMatKhau;
+            // 
+            // btnX
+            // 
+            this.btnX.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnX.BackColor = System.Drawing.Color.Red;
+            this.btnX.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnX.FlatAppearance.BorderSize = 0;
+            this.btnX.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnX.Font = new System.Drawing.Font("Sitka Banner", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnX.ForeColor = System.Drawing.Color.White;
+            this.btnX.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnX.Location = new System.Drawing.Point(1089, 11);
+            this.btnX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnX.Name = "btnX";
+            this.btnX.Padding = new System.Windows.Forms.Padding(1);
+            this.btnX.Size = new System.Drawing.Size(49, 41);
+            this.btnX.TabIndex = 20;
+            this.btnX.Text = "X";
+            this.btnX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnX.UseVisualStyleBackColor = false;
+            this.btnX.Click += new System.EventHandler(this.btnX_Click);
             // 
             // FormDangNhap
             // 
@@ -368,14 +378,15 @@ namespace WindowsFormsApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1150, 733);
-            this.Controls.Add(this.panelChinh);
+            this.Controls.Add(this.btnX);
+            this.Controls.Add(this.panelTrangChu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.panelChinh.ResumeLayout(false);
-            this.panelChinh.PerformLayout();
+            this.panelTrangChu.ResumeLayout(false);
+            this.panelTrangChu.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errtxtTaikhoan)).EndInit();
@@ -386,7 +397,7 @@ namespace WindowsFormsApp
 
         #endregion
 
-        private System.Windows.Forms.Panel panelChinh;
+        private System.Windows.Forms.Panel panelTrangChu;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
@@ -394,23 +405,23 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblAmind;
         private System.Windows.Forms.Label lblCanhbao;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblThoat;
-        private System.Windows.Forms.Label lblMatkhau;
+        private System.Windows.Forms.Label lbQuenMK;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox chkHienthimatkhau;
         private Guna.UI2.WinForms.Guna2GradientButton btnDangnhap;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox txtMatkhau;
+        private Guna.UI2.WinForms.Guna2TextBox txtMatKhau;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox txtTaikhoan;
+        private Guna.UI2.WinForms.Guna2TextBox txtTenDangNhap;
         private Guna.UI2.WinForms.Guna2Elipse BoFormDangnhap;
         private Guna.UI2.WinForms.Guna2Elipse Bopanelchinh;
         private System.Windows.Forms.ErrorProvider errtxtTaikhoan;
         private System.Windows.Forms.ErrorProvider errMatkhau;
         private System.Windows.Forms.Label btnDangky;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnX;
     }
 }
 

@@ -42,7 +42,6 @@
             this.txtInPutNumberPhone = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTenKH = new System.Windows.Forms.Label();
-            this.btnXoaMatHang = new System.Windows.Forms.Button();
             this.lvSanPhamBan = new System.Windows.Forms.ListView();
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -53,6 +52,7 @@
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.lbTienBangSo = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnXoaMatHang = new System.Windows.Forms.Button();
             this.cbbMaHang = new System.Windows.Forms.ComboBox();
             this.txtDonViTinh = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -172,7 +172,7 @@
             this.panelRight.Controls.Add(this.txtTenKH);
             this.panelRight.Controls.Add(this.lvSanPhamBan);
             this.panelRight.Controls.Add(this.panel4);
-            this.panelRight.Location = new System.Drawing.Point(469, 59);
+            this.panelRight.Location = new System.Drawing.Point(476, 59);
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(508, 628);
             this.panelRight.TabIndex = 8;
@@ -223,22 +223,6 @@
             this.txtTenKH.Size = new System.Drawing.Size(179, 26);
             this.txtTenKH.TabIndex = 7;
             this.txtTenKH.Text = "UNKNOW NAME";
-            // 
-            // btnXoaMatHang
-            // 
-            this.btnXoaMatHang.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnXoaMatHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoaMatHang.FlatAppearance.BorderSize = 0;
-            this.btnXoaMatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoaMatHang.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaMatHang.ForeColor = System.Drawing.Color.White;
-            this.btnXoaMatHang.Location = new System.Drawing.Point(26, 124);
-            this.btnXoaMatHang.Name = "btnXoaMatHang";
-            this.btnXoaMatHang.Size = new System.Drawing.Size(206, 62);
-            this.btnXoaMatHang.TabIndex = 2;
-            this.btnXoaMatHang.Text = "Xóa";
-            this.btnXoaMatHang.UseVisualStyleBackColor = false;
-            this.btnXoaMatHang.Click += new System.EventHandler(this.btnXoaMatHang_Click);
             // 
             // lvSanPhamBan
             // 
@@ -344,6 +328,22 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Tổng tiền :";
             // 
+            // btnXoaMatHang
+            // 
+            this.btnXoaMatHang.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnXoaMatHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoaMatHang.FlatAppearance.BorderSize = 0;
+            this.btnXoaMatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoaMatHang.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaMatHang.ForeColor = System.Drawing.Color.White;
+            this.btnXoaMatHang.Location = new System.Drawing.Point(26, 124);
+            this.btnXoaMatHang.Name = "btnXoaMatHang";
+            this.btnXoaMatHang.Size = new System.Drawing.Size(206, 62);
+            this.btnXoaMatHang.TabIndex = 2;
+            this.btnXoaMatHang.Text = "Xóa";
+            this.btnXoaMatHang.UseVisualStyleBackColor = false;
+            this.btnXoaMatHang.Click += new System.EventHandler(this.btnXoaMatHang_Click);
+            // 
             // cbbMaHang
             // 
             this.cbbMaHang.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -397,9 +397,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.SteelBlue;
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(498, 46);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(578, 56);
+            this.panel3.Size = new System.Drawing.Size(984, 56);
             this.panel3.TabIndex = 186;
             // 
             // label7
@@ -409,14 +409,14 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(363, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(246, 39);
+            this.label7.Size = new System.Drawing.Size(258, 40);
             this.label7.TabIndex = 183;
             this.label7.Text = "QUẢN LÝ BÁN HÀNG";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel1.Location = new System.Drawing.Point(461, 65);
+            this.panel1.Location = new System.Drawing.Point(468, 65);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2, 628);
             this.panel1.TabIndex = 187;
