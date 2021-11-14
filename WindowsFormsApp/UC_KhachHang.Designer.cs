@@ -126,9 +126,9 @@ namespace WindowsFormsApp
             // 
             this.panel3.BackColor = System.Drawing.Color.SteelBlue;
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(37, 10);
+            this.panel3.Location = new System.Drawing.Point(3, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(953, 56);
+            this.panel3.Size = new System.Drawing.Size(987, 56);
             this.panel3.TabIndex = 185;
             // 
             // label2

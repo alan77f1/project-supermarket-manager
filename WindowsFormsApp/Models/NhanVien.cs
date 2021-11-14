@@ -36,6 +36,11 @@ namespace WindowsFormsApp.Models
         [StringLength(50)]
         public string MatKhau { get; set; }
 
+
+        [StringLength(10)]
+        public string SDT { get; set; }
+
+
         [StringLength(20)]
         public string ChucVu { get; set; }
 
@@ -54,10 +59,14 @@ namespace WindowsFormsApp.Models
 
         public NhanVien(DataRow row)
         {
+            this.MaNV = row["MaNV"].ToString();
+            this.TenHienThi = row["TenNguoiDung"].ToString();
+            this.DiaChi = row["DiaChi"].ToString();
+            this.SDT = row["SDT"].ToString();
+            this.Quyen = row["Quyen"].ToString();
+            this.ChucVu = row["ChucVu"].ToString();
             this.TenDangNhap = row["TenDangNhap"].ToString();
             this.MatKhau = row["MatKhau"].ToString();
-            this.TenNguoiDung = row["TenNguoiDung"].ToString();
-            this.Quyen = row["Quyen"].ToString();
         }
     }
 }

@@ -18,7 +18,7 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
             Hienthi();
-            txtMapgc.Text = Matudong();
+            txtMaCLV.Text = Matudong();
         }
         CaLamViec clv = new CaLamViec();
         BLL bll = new BLL();
@@ -26,7 +26,7 @@ namespace WindowsFormsApp
 
         private string Matudong()
         {
-            string query1 = "select Mapgc from CaLamViec";
+            string query1 = "select MaCLV from CaLamViec";
             DataTable dt = bll.ExcuQuery(query1);
             string ma = "";
             if (dt.Rows.Count <= 0)
@@ -61,7 +61,7 @@ namespace WindowsFormsApp
 
         private void Hienthi()
         {
-            string query1 = "select Mapgc as [Mã phiếu giao ca],Ca as [Ca làm việc] from CaLamViec";
+            string query1 = "select MaCLV as [Mã phiếu giao ca],Ca as [Ca làm việc] from CaLamViec";
             DataTable dt = bll.ExcuQuery(query1);
             dgvQuanlypgc.DataSource = dt;
         }
@@ -70,13 +70,13 @@ namespace WindowsFormsApp
         {
             if (check_data() == true)
             {
-                string query = "insert into CaLamViec (Mapgc,Ca) values (@Mapgc,@Ca)";
-                phieugiaoca.Mapgc = txtMapgc.Text;
-                phieugiaoca.Ca = txtCa.Text;
-                if (bll.Them_Sua_Xoa_PGC(phieugiaoca, query) == true)
+                string query = "insert into CaLamViec (MaCLV,Ca) values (@MaCLV,@Ca)";
+                clv.MaCLV = txtMaCLV.Text;
+                clv.Ca = txtCa.Text;
+                if (bll.Them_Sua_Xoa_PGC(clv, query) == true)
                 {
                     Hienthi();
-                    txtMapgc.Text = Matudong();
+                    txtMaCLV.Text = Matudong();
                     Lammoi();
                     labelcanhbao.Text = "Thêm phiếu giao ca thành công";
                     labelcanhbao.ForeColor = Color.Brown;
@@ -91,10 +91,10 @@ namespace WindowsFormsApp
         {
             if (check_data() == true)
             {
-                string query = "delete CaLamViec where Mapgc = @Mapgc";
-                phieugiaoca.Mapgc = txtMapgc.Text;
-                phieugiaoca.Ca = txtCa.Text;
-                if (bll.Them_Sua_Xoa_PGC(phieugiaoca, query) == true)
+                string query = "delete CaLamViec where MaCLV = @MaCLV";
+                clv.MaCLV = txtMaCLV.Text;
+                clv.Ca = txtCa.Text;
+                if (bll.Them_Sua_Xoa_PGC(clv, query) == true)
                 {
                     Hienthi();
                     Lammoi();
@@ -107,7 +107,7 @@ namespace WindowsFormsApp
             }
         }
 
-        private void txtMapgc_TextChanged(object sender, EventArgs e)
+        private void txtMaCLV_TextChanged(object sender, EventArgs e)
         {
             labelcanhbao.Text = "";
         }
@@ -121,7 +121,7 @@ namespace WindowsFormsApp
         {
             int indexx;
             indexx = e.RowIndex;
-            txtMapgc.Text = dgvQuanlypgc.Rows[indexx].Cells[0].Value.ToString();
+            txtMaCLV.Text = dgvQuanlypgc.Rows[indexx].Cells[0].Value.ToString();
             txtCa.Text = dgvQuanlypgc.Rows[indexx].Cells[1].Value.ToString();
             labelcanhbao.Text = "";
         }
@@ -130,10 +130,10 @@ namespace WindowsFormsApp
         {
             if (check_data() == true)
             {
-                string query = "update CaLamViec set Mapgc = @Mapgc, Ca = @Ca where Mapgc = @Mapgc";
-                phieugiaoca.Mapgc = txtMapgc.Text;
-                phieugiaoca.Ca = txtCa.Text;
-                if (bll.Them_Sua_Xoa_PGC(phieugiaoca, query) == true)
+                string query = "update CaLamViec set MaCLV = @MaCLV, Ca = @Ca where MaCLV = @MaCLV";
+                clv.MaCLV = txtMaCLV.Text;
+                clv.Ca = txtCa.Text;
+                if (bll.Them_Sua_Xoa_PGC(clv, query) == true)
                 {
                     Hienthi();
                     Lammoi();
@@ -154,16 +154,16 @@ namespace WindowsFormsApp
 
         private void Lammoi()
         {
-            //txtMapgc.Text = "";
+            //txtMaCLV.Text = "";
             txtCa.Text = "";
-            txtMapgc.Text = Matudong();
+            txtMaCLV.Text = Matudong();
         }
 
         private void txtTimkiem_TextChanged(object sender, EventArgs e)
         {
-            string tk = txtTimkiem.Text;
-            string query = "select * from CaLamViec where Mapgc like N'%" + tk + "%' or  Ca like  N'%" + tk + "%'";
-            if (!string.IsNullOrEmpty(txtTimkiem.Text))
+            string tk = txtTimKiem.Text;
+            string query = "select * from CaLamViec where MaCLV like N'%" + tk + "%' or  Ca like  N'%" + tk + "%'";
+            if (!string.IsNullOrEmpty(txtTimKiem.Text))
             {
                 DataTable dt = bll.ExecuteTimkiem(tk, query);
                 dgvQuanlypgc.DataSource = dt;

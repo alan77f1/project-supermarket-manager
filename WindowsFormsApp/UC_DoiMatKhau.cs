@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp.Models;
 
 namespace WindowsFormsApp
 {
@@ -37,10 +38,10 @@ namespace WindowsFormsApp
             {
                 if (check_data() == true)
                 {
-                    Nhanvien nv = new Nhanvien();
-                    nv.Matkhau = txtxacnhan.Text;
-                    nv.Sdt = txtSđtnv.Text;
-                    string query = "update Nhanvien set Matkhau = @Matkhau where Sdt = @Sdt";
+                    NhanVien nv = new NhanVien();
+                    nv.MatKhau = txtxacnhan.Text;
+                    nv.SDT = txtSđtnv.Text;
+                    string query = "update NhanVien set Matkhau = @Matkhau where Sdt = @Sdt";
 
 
                     if (bll.Caplai_mk(nv, query) == true)

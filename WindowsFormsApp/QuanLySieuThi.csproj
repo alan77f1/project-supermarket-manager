@@ -278,7 +278,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyMatHang.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="UC_BanHang.cs">
       <SubType>UserControl</SubType>
