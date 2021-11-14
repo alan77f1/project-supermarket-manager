@@ -21,19 +21,16 @@ namespace WindowsFormsApp
 
         private void btnThemMatHangMoi_Click(object sender, EventArgs e)
         {
-            Form_ThemMoiSanPham tmsp = new Form_ThemMoiSanPham();
+            FormThemSanPham tmsp = new FormThemSanPham();
             tmsp.ShowDialog();
         }
 
         private void btnThemDVT_Click(object sender, EventArgs e)
         {
-            Form_DVT tdvt = new Form_DVT();
+            FormDonViTinh tdvt = new FormDonViTinh();
             tdvt.ShowDialog();
         }
 
-        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
     }
 }

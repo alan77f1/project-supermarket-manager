@@ -42,7 +42,7 @@ namespace WindowsFormsApp.DAO
         public bool LuuDonHang(Models.HoaDon dh)
         {
             // Convert datetime to date SQL Server 
-            string query = String.Format("insert into HoaDon values('{0}','{1}','{2}','{3}','{4}')", dh.MaHD, dh.MaKH, dh.NgayTao, dh.TenDangNhap, dh.TongTien);
+            string query = String.Format("insert into HoaDon values('{0}','{1}','{2}','{3}','{4}')", dh.MaHD, dh.MaKH, dh.NgayTao, dh.MaNV, dh.TongTien);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

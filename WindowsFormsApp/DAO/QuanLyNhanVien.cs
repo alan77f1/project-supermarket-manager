@@ -42,6 +42,5 @@ namespace WindowsFormsApp.DAO
             string query = "select * from NhanVien";
             return DataProvider.Instance.ExecuteQuery(query);
         }
-
     }
 }

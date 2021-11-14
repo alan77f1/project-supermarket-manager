@@ -20,7 +20,7 @@ namespace WindowsFormsApp.DAO
         }
 
         private DataProvider() { }
-        private string connectionSTR = "Data Source=DESKTOP-E7SCDHU\\SQLEXPRESS;Initial Catalog=QuanLyCuaHangThoiTrang;Integrated Security=True";
+        private string connectionSTR = @"Data Source=DESKTOP-RNOPI29;Initial Catalog=QLSieuThi;User ID=sa;Password=123";
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();

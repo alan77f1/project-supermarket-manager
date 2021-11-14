@@ -71,6 +71,14 @@ namespace WindowsFormsApp
             txtDiaChi.DataBindings.Clear();
             cmbChucVu.DataBindings.Clear();
         }
+
+        public void lamMoi()
+        {
+            txtMaNV.Text = "";
+            txtHoTen.Text = "";
+            txtSDT.Text = "";
+            txtDiaChi.Text = "";
+        }
         public bool check = true;
 
 
@@ -86,12 +94,9 @@ namespace WindowsFormsApp
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
-            dgvThongTinNhanVien.DataSource = EmployeeBUS.Intance.TimKiemNV(txtTimKiem.Text);
+            dgvThongTinNhanVien.DataSource = QuanLyNhanVien.Intance.TimKiemNV(txtTimKiem.Text);
         }
 
-     
-
-     
 
         private void btnCapNhap_Click(object sender, EventArgs e)
         {
@@ -117,7 +122,7 @@ namespace WindowsFormsApp
                 btnSua.Enabled = false;
                 btnXoa.Enabled = false;
                 btnThem.Text = "Lưu";
-                resetData();
+                lamMoi();
                 txtMaNV.Focus();
             }
             else
