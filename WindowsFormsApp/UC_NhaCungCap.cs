@@ -20,16 +20,16 @@ namespace WindowsFormsApp
         }
         void loadBinding()
         {
-            txtMaNCC.DataBindings.Add(new Binding("Text", dgvNCC.DataSource, "MaNCC", true, DataSourceUpdateMode.Never));
-            txtTenNCC.DataBindings.Add(new Binding("Text", dgvNCC.DataSource, "TenNCC", true, DataSourceUpdateMode.Never));
-            txtEmailNCC.DataBindings.Add(new Binding("Text", dgvNCC.DataSource, "Email", true, DataSourceUpdateMode.Never));
-            txtDienThoaiNCC.DataBindings.Add(new Binding("Text", dgvNCC.DataSource, "SDT", true, DataSourceUpdateMode.Never));
-            rtbDiaChiKhachNCC.DataBindings.Add(new Binding("Text", dgvNCC.DataSource, "DiaChi", true, DataSourceUpdateMode.Never));
+            txtMaNCC.DataBindings.Add(new Binding("Text", dgvThongTinNCC.DataSource, "MaNCC", true, DataSourceUpdateMode.Never));
+            txtTenNCC.DataBindings.Add(new Binding("Text", dgvThongTinNCC.DataSource, "TenNCC", true, DataSourceUpdateMode.Never));
+            txtDiaChi.DataBindings.Add(new Binding("Text", dgvThongTinNCC.DataSource, "DiaChi", true, DataSourceUpdateMode.Never));
+            txtSDT.DataBindings.Add(new Binding("Text", dgvThongTinNCC.DataSource, "SDT", true, DataSourceUpdateMode.Never));
+            txtEmail.DataBindings.Add(new Binding("Text", dgvThongTinNCC.DataSource, "Email", true, DataSourceUpdateMode.Never));
         }
         void LoadData()
         {
             ClearBinding();
-            dgvNCC.DataSource = QuanLyNhaCC.Intance.getListNCC();
+            dgvThongTinNCC.DataSource = QuanLyNhaCC.Intance.getListNCC();
             loadBinding();
         }
 
@@ -37,12 +37,32 @@ namespace WindowsFormsApp
         {
             txtMaNCC.DataBindings.Clear();
             txtTenNCC.DataBindings.Clear();
-            txtEmailNCC.DataBindings.Clear();
-            txtDienThoaiNCC.DataBindings.Clear();
-            rtbDiaChiKhachNCC.DataBindings.Clear();
+            txtDiaChi.DataBindings.Clear();
+            txtSDT.DataBindings.Clear();
+            txtEmail.DataBindings.Clear();
         }
 
         private void btnLuuNCC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
         {
 
         }

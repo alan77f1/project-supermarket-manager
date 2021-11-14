@@ -144,7 +144,6 @@ namespace WindowsFormsApp
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // labelThem
             // 
@@ -156,7 +155,6 @@ namespace WindowsFormsApp
             this.labelThem.Size = new System.Drawing.Size(136, 29);
             this.labelThem.TabIndex = 77;
             this.labelThem.Text = "Tên nhân viên:";
-            this.labelThem.Click += new System.EventHandler(this.labelThem_Click);
             // 
             // checkHienmatkhau
             // 
@@ -169,7 +167,6 @@ namespace WindowsFormsApp
             this.checkHienmatkhau.TabIndex = 78;
             this.checkHienmatkhau.Text = "Hiện thị mật khẩu";
             this.checkHienmatkhau.UseVisualStyleBackColor = true;
-            this.checkHienmatkhau.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label12
             // 
@@ -192,7 +189,6 @@ namespace WindowsFormsApp
             this.label10.Size = new System.Drawing.Size(34, 28);
             this.label10.TabIndex = 80;
             this.label10.Text = "(*)";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
@@ -258,7 +254,6 @@ namespace WindowsFormsApp
             this.btnQuaylai.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuaylai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnQuaylai.UseVisualStyleBackColor = false;
-            this.btnQuaylai.Click += new System.EventHandler(this.btnQuaylai_Click);
             // 
             // label4
             // 

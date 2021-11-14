@@ -31,7 +31,7 @@ namespace WindowsFormsApp
         {
             this.components = new System.ComponentModel.Container();
             this.panelTrangChu = new System.Windows.Forms.Panel();
-            this.btnDangky = new System.Windows.Forms.Label();
+            this.btnDangKy = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -44,8 +44,8 @@ namespace WindowsFormsApp
             this.lbQuenMK = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.chkHienthimatkhau = new System.Windows.Forms.CheckBox();
-            this.btnDangnhap = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.chkHienThiMK = new System.Windows.Forms.CheckBox();
+            this.btnDangNhap = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label3 = new System.Windows.Forms.Label();
             this.txtMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,7 +64,7 @@ namespace WindowsFormsApp
             // panelTrangChu
             // 
             this.panelTrangChu.BackColor = System.Drawing.Color.White;
-            this.panelTrangChu.Controls.Add(this.btnDangky);
+            this.panelTrangChu.Controls.Add(this.btnDangKy);
             this.panelTrangChu.Controls.Add(this.label5);
             this.panelTrangChu.Controls.Add(this.panel8);
             this.panelTrangChu.Controls.Add(this.panel6);
@@ -76,8 +76,8 @@ namespace WindowsFormsApp
             this.panelTrangChu.Controls.Add(this.lblThoat);
             this.panelTrangChu.Controls.Add(this.lbQuenMK);
             this.panelTrangChu.Controls.Add(this.panel1);
-            this.panelTrangChu.Controls.Add(this.chkHienthimatkhau);
-            this.panelTrangChu.Controls.Add(this.btnDangnhap);
+            this.panelTrangChu.Controls.Add(this.chkHienThiMK);
+            this.panelTrangChu.Controls.Add(this.btnDangNhap);
             this.panelTrangChu.Controls.Add(this.label3);
             this.panelTrangChu.Controls.Add(this.txtMatKhau);
             this.panelTrangChu.Controls.Add(this.label2);
@@ -88,17 +88,17 @@ namespace WindowsFormsApp
             this.panelTrangChu.Size = new System.Drawing.Size(505, 588);
             this.panelTrangChu.TabIndex = 7;
             // 
-            // btnDangky
+            // btnDangKy
             // 
-            this.btnDangky.AutoSize = true;
-            this.btnDangky.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangky.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnDangky.Location = new System.Drawing.Point(320, 484);
-            this.btnDangky.Name = "btnDangky";
-            this.btnDangky.Size = new System.Drawing.Size(89, 35);
-            this.btnDangky.TabIndex = 34;
-            this.btnDangky.Text = "Đăng ký";
-            this.btnDangky.Click += new System.EventHandler(this.btnDangKy_Click);
+            this.btnDangKy.AutoSize = true;
+            this.btnDangKy.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangKy.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnDangKy.Location = new System.Drawing.Point(320, 484);
+            this.btnDangKy.Name = "btnDangKy";
+            this.btnDangKy.Size = new System.Drawing.Size(89, 35);
+            this.btnDangKy.TabIndex = 34;
+            this.btnDangKy.Text = "Đăng ký";
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
             // label5
             // 
@@ -219,37 +219,37 @@ namespace WindowsFormsApp
             this.label1.TabIndex = 0;
             this.label1.Text = "ĐĂNG NHẬP HỆ THỐNG";
             // 
-            // chkHienthimatkhau
+            // chkHienThiMK
             // 
-            this.chkHienthimatkhau.AutoSize = true;
-            this.chkHienthimatkhau.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkHienthimatkhau.Location = new System.Drawing.Point(47, 273);
-            this.chkHienthimatkhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chkHienthimatkhau.Name = "chkHienthimatkhau";
-            this.chkHienthimatkhau.Size = new System.Drawing.Size(175, 33);
-            this.chkHienthimatkhau.TabIndex = 15;
-            this.chkHienthimatkhau.Text = "Hiển thị mật khẩu";
-            this.chkHienthimatkhau.UseVisualStyleBackColor = true;
-            this.chkHienthimatkhau.CheckedChanged += new System.EventHandler(this.chkHienThiMK_CheckedChanged);
+            this.chkHienThiMK.AutoSize = true;
+            this.chkHienThiMK.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHienThiMK.Location = new System.Drawing.Point(47, 273);
+            this.chkHienThiMK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkHienThiMK.Name = "chkHienThiMK";
+            this.chkHienThiMK.Size = new System.Drawing.Size(175, 33);
+            this.chkHienThiMK.TabIndex = 15;
+            this.chkHienThiMK.Text = "Hiển thị mật khẩu";
+            this.chkHienThiMK.UseVisualStyleBackColor = true;
+            this.chkHienThiMK.CheckedChanged += new System.EventHandler(this.chkHienThiMK_CheckedChanged);
             // 
-            // btnDangnhap
+            // btnDangNhap
             // 
-            this.btnDangnhap.BorderRadius = 15;
-            this.btnDangnhap.CheckedState.Parent = this.btnDangnhap;
-            this.btnDangnhap.CustomImages.Parent = this.btnDangnhap;
-            this.btnDangnhap.DisabledState.Parent = this.btnDangnhap;
-            this.btnDangnhap.FillColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnDangnhap.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
-            this.btnDangnhap.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangnhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangnhap.HoverState.Parent = this.btnDangnhap;
-            this.btnDangnhap.Location = new System.Drawing.Point(52, 326);
-            this.btnDangnhap.Name = "btnDangnhap";
-            this.btnDangnhap.ShadowDecoration.Parent = this.btnDangnhap;
-            this.btnDangnhap.Size = new System.Drawing.Size(400, 58);
-            this.btnDangnhap.TabIndex = 13;
-            this.btnDangnhap.Text = "ĐĂNG NHẬP";
-            this.btnDangnhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            this.btnDangNhap.BorderRadius = 15;
+            this.btnDangNhap.CheckedState.Parent = this.btnDangNhap;
+            this.btnDangNhap.CustomImages.Parent = this.btnDangNhap;
+            this.btnDangNhap.DisabledState.Parent = this.btnDangNhap;
+            this.btnDangNhap.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDangNhap.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
+            this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
+            this.btnDangNhap.HoverState.Parent = this.btnDangNhap;
+            this.btnDangNhap.Location = new System.Drawing.Point(52, 326);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.ShadowDecoration.Parent = this.btnDangNhap;
+            this.btnDangNhap.Size = new System.Drawing.Size(400, 58);
+            this.btnDangNhap.TabIndex = 13;
+            this.btnDangNhap.Text = "ĐĂNG NHẬP";
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // label3
             // 
@@ -409,8 +409,8 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Label lbQuenMK;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox chkHienthimatkhau;
-        private Guna.UI2.WinForms.Guna2GradientButton btnDangnhap;
+        private System.Windows.Forms.CheckBox chkHienThiMK;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDangNhap;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtMatKhau;
         private System.Windows.Forms.Label label2;
@@ -419,7 +419,7 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2Elipse Bopanelchinh;
         private System.Windows.Forms.ErrorProvider errtxtTaikhoan;
         private System.Windows.Forms.ErrorProvider errMatkhau;
-        private System.Windows.Forms.Label btnDangky;
+        private System.Windows.Forms.Label btnDangKy;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnX;
     }

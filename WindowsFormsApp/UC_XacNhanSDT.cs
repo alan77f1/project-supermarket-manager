@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,12 +12,9 @@ namespace WindowsFormsApp
 {
     public partial class UC_XacNhanSDT : UserControl
     {
-        public UC_XacNhanSDT(string mk)
+        public UC_XacNhanSDT()
         {
             InitializeComponent();
-            
         }
-
-       
     }
 }

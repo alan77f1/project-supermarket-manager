@@ -59,7 +59,7 @@ namespace WindowsFormsApp
 
         private void chkHienThiMK_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkHienthimatkhau.Checked == true)
+            if (chkHienThiMK.Checked == true)
             {
                 txtMatKhau.PasswordChar = '\0';
             }

@@ -1,4 +1,4 @@
-﻿namespace QuanLySieuThi
+﻿namespace WindowsFormsApp
 {
     partial class FormDonViTinh
     {

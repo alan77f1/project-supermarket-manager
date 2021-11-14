@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
 using WindowsFormsApp.DAO;
+using WindowsFormsApp.Models;
 
 namespace WindowsFormsApp
 {
@@ -20,9 +21,9 @@ namespace WindowsFormsApp
             InitializeComponent();
             list = QuanLyMatHang.Intance.getListSanPham();
             AutoCompleteStringCollection arrName = new AutoCompleteStringCollection();
-            foreach (Models.HangHoa item in list)
+            foreach (Models.MatHang item in list)
             {
-                arrName.Add(item.MaHang);
+                arrName.Add(item.MaMH);
             }
             cbbMaHang.AutoCompleteCustomSource = arrName;
             cbbMaHang.DataSource = list;
@@ -47,10 +48,10 @@ namespace WindowsFormsApp
 
         private void btnThemDVT_Click(object sender, EventArgs e)
         {
-            Form_DVT tdvt = new Form_DVT();
+            FormDonViTinh tdvt = new FormDonViTinh();
             tdvt.ShowDialog();
         }
-        List<Models.HangHoa> list;
+        List<Models.MatHang> list;
 
 
         Models.KhachHang khachHang = new Models.KhachHang()
@@ -77,7 +78,7 @@ namespace WindowsFormsApp
             if (cbbMaHang.SelectedIndex >= 0)
             {
                 i = cbbMaHang.SelectedIndex;
-                txtTenHang.Text = list[i].TenHang;
+                txtTenHang.Text = list[i].TenMH;
                 txtDonViTinh.Text = list[i].DonVi;
                 txtGia.Text = list[i].GiaBan.ToString();
             }
@@ -117,7 +118,7 @@ namespace WindowsFormsApp
                 }
                 tongTien += gia;
                 lbTienBangSo.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tongTien) + " VNĐ";
-                lbTienBangChu.Text = ConvertMoney.Instance.So_chu(tongTien);
+                lbTienBangChu.Text = ChuyenDoiTien.Instance.So_chu(tongTien);
                 resetInfoProduct();
             }
         }
@@ -141,7 +142,7 @@ namespace WindowsFormsApp
                     string tien = lvSanPhamBan.Items[i].SubItems[3].Text.ToString();
                     tongTien -= Int32.Parse(tien);
                     lbTienBangSo.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tongTien) + " VNĐ";
-                    lbTienBangChu.Text = ConvertMoney.Instance.So_chu(tongTien);
+                    lbTienBangChu.Text = ChuyenDoiTien.Instance.So_chu(tongTien);
                     lvSanPhamBan.Items[i].Remove();//xóa item đó đi
                     i--;
                 }
@@ -150,7 +151,7 @@ namespace WindowsFormsApp
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
-            if (lvSanPhamBan.Items.Count > 0)
+            /*if (lvSanPhamBan.Items.Count > 0)
             {
                 Models.HoaDon hoaDon = new Models.HoaDon();
                 hoaDon.MaHD = QuanLyHoaDon.Intance.LoadMaDHMoi();
@@ -162,11 +163,11 @@ namespace WindowsFormsApp
 
                 if (QuanLyHoaDon.Intance.LuuDonHang(hoaDon))
                 {
-                    Form_Report rp = new Form_Report(hoaDon.MaHD, ConvertMoney.Instance.So_chu(tongTien), txtTenKH.Text);
+                    FormReport rp = new FormReport(hoaDon.MaHD, ChuyenDoiTien.Instance.So_chu(tongTien), txtTenKH.Text);
                     foreach (ListViewItem item in lvSanPhamBan.Items)
                     {
-                        QuanLyCTHD.Intance.LuuDonHang(hoaDon.MaHD, item.SubItems[0].Text, Int32.Parse(item.SubItems[2].Text), Int32.Parse(item.SubItems[3].Text) / Int32.Parse(item.SubItems[2].Text));
-                        string query = "update hanghoa set SoLuong = SoLuong - " + Int32.Parse(item.SubItems[2].Text) + "where MaHang ='" + item.SubItems[0].Text + "'";
+                        QuanLyChiTietHD.Intance.LuuDonHang(hoaDon.MaHD, item.SubItems[0].Text, Int32.Parse(item.SubItems[2].Text), Int32.Parse(item.SubItems[3].Text) / Int32.Parse(item.SubItems[2].Text));
+                        string query = "update MatHang set SoLuong = SoLuong - " + Int32.Parse(item.SubItems[2].Text) + "where MaHang ='" + item.SubItems[0].Text + "'";
                         DataProvider.Instance.ExecuteNonQuery(query);
                     }
                     lvSanPhamBan.Items.Clear();
@@ -179,7 +180,7 @@ namespace WindowsFormsApp
                     rp.ShowDialog();
                 }
             }
-            else MessageBox.Show("Bạn chưa chọn sản phẩm nào!", "Thông báo");
+            else MessageBox.Show("Bạn chưa chọn sản phẩm nào!", "Thông báo");*/
 
         }
 
@@ -195,7 +196,7 @@ namespace WindowsFormsApp
 
         private void btnThemMoiKH_Click(object sender, EventArgs e)
         {
-            Form_ThemKH form = new Form_ThemKH(QuanLyKhachHang.Intance.loadMaKH(), txtInPutNumberPhone.Text, this);
+            FormThemKhachHang form = new FormThemKhachHang(QuanLyKhachHang.Intance.loadMaKH(), txtInPutNumberPhone.Text, this);
             form.ShowDialog();
         }
 
