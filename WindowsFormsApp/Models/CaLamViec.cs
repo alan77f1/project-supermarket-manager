@@ -21,7 +21,7 @@ namespace WindowsFormsApp.Models
 
         [Required]
         [StringLength(10)]
-        public string Buoi { get; set; }
+        public string Ca { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietCLV> ChiTietCLVs { get; set; }

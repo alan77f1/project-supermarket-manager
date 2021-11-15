@@ -27,7 +27,7 @@ namespace WindowsFormsApp.Models
         public DateTime NgayTao { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(20)]
         public string MaNV { get; set; }
 
         public int TongTien { get; set; }

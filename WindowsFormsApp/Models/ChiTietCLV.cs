@@ -16,7 +16,7 @@ namespace WindowsFormsApp.Models
 
         [Key]
         [Column(Order = 1)]
-        [StringLength(50)]
+        [StringLength(20)]
         public string MaNV { get; set; }
 
         [Column(TypeName = "date")]

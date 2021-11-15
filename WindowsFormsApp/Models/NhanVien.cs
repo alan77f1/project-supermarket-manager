@@ -7,6 +7,7 @@ namespace WindowsFormsApp.Models
     using System.Data.Entity.Spatial;
     using System.Data;
 
+
     [Table("NhanVien")]
     public partial class NhanVien
     {
@@ -19,14 +20,24 @@ namespace WindowsFormsApp.Models
         }
 
         [Key]
-        [StringLength(50)]
+        [StringLength(20)]
         public string MaNV { get; set; }
 
         [StringLength(50)]
         public string TenHienThi { get; set; }
 
+        public bool? GioiTinh { get; set; }
+
         [StringLength(50)]
         public string DiaChi { get; set; }
+
+        [Required]
+        [StringLength(10)]
+        public string SDT { get; set; }
+
+        [Required]
+        [StringLength(20)]
+        public string Quyen { get; set; }
 
         [Required]
         [StringLength(50)]
@@ -35,18 +46,6 @@ namespace WindowsFormsApp.Models
         [Required]
         [StringLength(50)]
         public string MatKhau { get; set; }
-
-
-        [StringLength(10)]
-        public string SDT { get; set; }
-
-
-        [StringLength(20)]
-        public string ChucVu { get; set; }
-
-        [Required]
-        [StringLength(20)]
-        public string Quyen { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietCLV> ChiTietCLVs { get; set; }
@@ -60,13 +59,12 @@ namespace WindowsFormsApp.Models
         public NhanVien(DataRow row)
         {
             this.MaNV = row["MaNV"].ToString();
-            this.TenHienThi = row["TenNguoiDung"].ToString();
-            this.DiaChi = row["DiaChi"].ToString();
+            this.TenHienThi = row["TenHienThi"].ToString();
             this.SDT = row["SDT"].ToString();
-            this.Quyen = row["Quyen"].ToString();
-            this.ChucVu = row["ChucVu"].ToString();
+            this.DiaChi = row["DiaChi"].ToString();
             this.TenDangNhap = row["TenDangNhap"].ToString();
             this.MatKhau = row["MatKhau"].ToString();
+            this.Quyen = row["Quyen"].ToString();
         }
     }
 }

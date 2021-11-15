@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp.DAO;
 
 namespace WindowsFormsApp
 {
@@ -74,13 +75,13 @@ namespace WindowsFormsApp
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            string tenDangNhap = guna2TextBox1.Text;
-            string passWord = guna2TextBox2.Text;
+            string tenDangNhap = txtTenDangNhap.Text;
+            string passWord = txtMatKhau.Text;
             if (Login(tenDangNhap, passWord))
             {
                 tenNgDung = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).TenNguoiDung;
                 quyen = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).Quyen;
-                Main f = new Main();
+                FormTrangChu f = new FormTrangChu();
                 this.Hide();
                 f.ShowDialog();
                 this.Show();
@@ -174,8 +175,8 @@ namespace WindowsFormsApp
 
         private void lbQuenMK_Click(object sender, EventArgs e)
         {
-            FormSoDienThoai formSodienthoai = new FormSoDienThoai();
-            formSodienthoai.Show();
+            FormSDT FormSDT = new FormSDT();
+            FormSDT.Show();
             this.Hide();
         }
 

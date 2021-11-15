@@ -8,7 +8,7 @@ namespace WindowsFormsApp.Models
     public partial class ModelDB : DbContext
     {
         public ModelDB()
-            : base("name=ModelDB")
+            : base("name=ModelDB1")
         {
         }
 
@@ -98,10 +98,6 @@ namespace WindowsFormsApp.Models
                 .HasMany(e => e.PhieuNhaps)
                 .WithRequired(e => e.NhaCungCap)
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<NhanVien>()
-                .Property(e => e.TenHienThi)
-                .IsUnicode(false);
 
             modelBuilder.Entity<NhanVien>()
                 .Property(e => e.TenDangNhap)

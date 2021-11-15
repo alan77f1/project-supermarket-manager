@@ -5,7 +5,6 @@ namespace WindowsFormsApp.Models
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
-    using System.Data;
 
     [Table("KhachHang")]
     public partial class KhachHang
@@ -38,14 +37,5 @@ namespace WindowsFormsApp.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HoaDon> HoaDons { get; set; }
-
-        public KhachHang(DataRow row)
-        {
-            this.MaKH = row["MaKH"].ToString();
-            this.TenKH = row["TenKH"].ToString();
-            this.DiaChi = row["DiaChi"].ToString();
-            this.SDT = row["SDT"].ToString();
-            this.Email = row["Email"].ToString();
-        }
     }
 }

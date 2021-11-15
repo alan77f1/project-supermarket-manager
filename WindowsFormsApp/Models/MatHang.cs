@@ -5,7 +5,6 @@ namespace WindowsFormsApp.Models
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
-    using System.Data;
 
     [Table("MatHang")]
     public partial class MatHang
@@ -39,10 +38,6 @@ namespace WindowsFormsApp.Models
 
         public long? GiaGoc { get; set; }
 
-        [Column(TypeName = "image")]
-        [Required]
-        public byte[] Anh { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietHD> ChiTietHDs { get; set; }
 
@@ -52,14 +47,5 @@ namespace WindowsFormsApp.Models
         public virtual DonViTinh DonViTinh { get; set; }
 
         public virtual QuayHang QuayHang { get; set; }
-
-        public MatHang(DataRow row)
-        {
-            this.MaMH = row["MaHang"].ToString();
-            this.TenMH = row["TenHang"].ToString();
-            this.SoLuong = (int)row["SoLuong"];
-            this.GiaBan = (int)row["GiaBan"];
-            this.DonVi = row["DonVi"].ToString();
-        }
     }
 }
