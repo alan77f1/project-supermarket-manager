@@ -44,13 +44,15 @@ namespace WindowsFormsApp
             txtDiaChi.DataBindings.Clear();
         }
 
-        private void btnLamMoiKhachHang_Click(object sender, EventArgs e)
+        public bool check = false;
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
         {
             ClearBinding();
             LoadListKH();
         }
-        public bool check = false;
-        private void btnThem_Click(object sender, EventArgs e)
+
+        private void btnThem_Click_1(object sender, EventArgs e)
         {
             check = !check;
             if (check == true)
@@ -94,7 +96,7 @@ namespace WindowsFormsApp
             }
         }
 
-        private void btnSuaKhachHang_Click(object sender, EventArgs e)
+        private void btnSua_Click(object sender, EventArgs e)
         {
             check = !check;
             if (check == true)
@@ -122,7 +124,7 @@ namespace WindowsFormsApp
             }
         }
 
-        private void btnXoaKhachHang_Click(object sender, EventArgs e)
+        private void btnXoa_Click(object sender, EventArgs e)
         {
             if (QuanLyKhachHang.Intance.xoaKH(txtMaKH.Text))
             {
@@ -132,7 +134,7 @@ namespace WindowsFormsApp
             }
         }
 
-        private void txtTimKiemKhachHang_TextChanged(object sender, EventArgs e)
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
             dgvThongTinKhachHang.DataSource = QuanLyKhachHang.Intance.TimKiemKH(txtTimKiem.Text);
             ClearBinding();

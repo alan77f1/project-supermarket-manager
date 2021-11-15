@@ -23,7 +23,7 @@ namespace WindowsFormsApp.DAO
 
         public bool Login(string userName, string passWord)
         {
-            string query = "SELECT * FROM NhanVien WHERE TenDangNhap = N'" + userName + "' AND MatKhau = N'" + passWord + "' ";
+            string query = "SELECT * FROM NhanVien WHERE TenDangNhap = N'" + userName + "' AND MatNVau = N'" + passWord + "' ";
 
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
 
@@ -41,6 +41,38 @@ namespace WindowsFormsApp.DAO
         {
             string query = "select * from NhanVien";
             return DataProvider.Instance.ExecuteQuery(query);
+        }
+
+
+
+        public bool suaNV(string maNV, string tenNV, string DiaChi, string SDT)
+        {
+            string query = String.Format("update NhanVien set TenHienThi = N'{0}', DiaChi = N'{1}', SDT = {2} where MaNV = '{3}'", tenNV, DiaChi, SDT, maNV);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
+
+        public bool xoaNV(string maNV)
+        {
+            string query = String.Format("delete from NhanVien where MaNV = '{0}'", maNV);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
+
+        public DataTable TimKiemNV(string name)
+        {
+            string query = string.Format("SELECT MaNV,TenHienThi, DiaChi, SDT FROM NhanVien WHERE dbo.GetUnsignString(NhanVien.TenHienThi) LIKE N'%' + dbo.GetUnsignString(N'{0}') + '%'", name);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            return data;
+        }
+
+        public string loadMaNV()
+        {
+            string maNVnext = "";
+            string query = "select top 1 MaNV from NhanVien order by MaNV desc";
+            DataRow data = DataProvider.Instance.ExecuteQuery(query).Rows[0];
+            maNVnext = data["MaNV"].ToString();
+            return maNVnext;
         }
     }
 }

@@ -79,7 +79,7 @@ namespace WindowsFormsApp
             string passWord = txtMatKhau.Text;
             if (Login(tenDangNhap, passWord))
             {
-                tenNgDung = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).TenNguoiDung;
+               /* tenNgDung = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).TenNguoiDung;*/
                 quyen = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).Quyen;
                 FormTrangChu f = new FormTrangChu();
                 this.Hide();
@@ -131,8 +131,8 @@ namespace WindowsFormsApp
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
                 if (sqlDataReader.Read() == true)
                 {
-                    FormQuyenNhanvien formQuyenNhanvien = new FormQuyenNhanvien();
-                    formQuyenNhanvien.Show();
+                    /*FormQuyenNhanvien formQuyenNhanvien = new FormQuyenNhanvien();
+                    formQuyenNhanvien.Show();*/
                     this.Hide();
                 }
                 else

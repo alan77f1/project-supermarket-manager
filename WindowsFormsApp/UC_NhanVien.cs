@@ -24,6 +24,7 @@ namespace WindowsFormsApp
             LoadData();
         }
 
+
         void loadBinding()
         {
             txtMaNV.DataBindings.Add(new Binding("Text", dgvThongTinNhanVien.DataSource, "MaNV", true, DataSourceUpdateMode.Never));
@@ -48,10 +49,10 @@ namespace WindowsFormsApp
                 txtMaNV.Focus();
                 return false;
             }
-            else if (guna2txtMatKhau.Text == "")
+            else if (txtSDT.Text == "")
             {
                 MessageBox.Show("Mật khẩu không được bỏ trống", "Thông báo");
-                guna2txtMatKhau.Focus();
+                txtSDT.Focus();
                 return false;
             }
             else if (txtHoTen.Text == "")
@@ -103,51 +104,21 @@ namespace WindowsFormsApp
             check = !check;
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
-            btnThem.Text = "Thêm";
             LoadData();
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
             txtMaNV.Text = "";
-            guna2txtMatKhau.Text = "";
+            txtSDT.Text = "";
             txtHoTen.Text = "";
         }
-
-        private void btnThem_Click_1(object sender, EventArgs e)
-        {
-            if (check == true)
-            {
-                check = !check;
-                btnSua.Enabled = false;
-                btnXoa.Enabled = false;
-                btnThem.Text = "Lưu";
-                lamMoi();
-                txtMaNV.Focus();
-            }
-            else
-            {
-                if (KiemTraNhap())
-                {
-                    check = !check;
-                    btnSua.Enabled = true;
-                    btnXoa.Enabled = true;
-                    btnThem.Text = "Thêm";
-                    if (EmployeeBUS.Intance.themNV(txtMaNV.Text, guna2txtMatKhau.Text, txtHoTen.Text, cmbChucVu.SelectedItem.ToString()))
-                    {
-                        MessageBox.Show("Thêm thành công!", "Thông báo");
-                        LoadData();
-                    }
-                }
-
-            }
-        }
-
+       
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (dgvThongTinNhanVien.SelectedCells.Count > 0)
             {
-                if (EmployeeBUS.Intance.suaNV(txtMaNV.Text, guna2txtMatKhau.Text, txtHoTen.Text, cmbChucVu.SelectedItem.ToString()))
+                if (QuanLyNhanVien.Intance.suaNV(txtMaNV.Text, txtHoTen.Text, txtDiaChi.Text, txtSDT.Text))
                 {
                     MessageBox.Show("Sửa thành công!", "Thông báo");
                     LoadData();
@@ -157,12 +128,10 @@ namespace WindowsFormsApp
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult dlr = MessageBox.Show("Bạn có muốn xóa không?",
-           "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dlr == DialogResult.Yes)
+            if (QuanLyNhanVien.Intance.xoaNV(txtMaNV.Text))
             {
-                EmployeeBUS.Intance.xoaNV(txtMaNV.Text);
                 MessageBox.Show("Xóa thành công!", "Thông báo");
+                ClearBinding();
                 LoadData();
             }
         }

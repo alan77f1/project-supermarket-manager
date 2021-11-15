@@ -1,6 +1,7 @@
 namespace WindowsFormsApp.Models
 {
     using System;
+    using System.Data;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
@@ -37,5 +38,14 @@ namespace WindowsFormsApp.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HoaDon> HoaDons { get; set; }
+        public KhachHang(DataRow row)
+        {
+            this.MaKH = row["MaKH"].ToString();
+            this.TenKH = row["TenKH"].ToString();
+            this.DiaChi = row["DiaChi"].ToString();
+            this.SDT = row["SDT"].ToString();
+            this.Email = row["Email"].ToString();
+        }
+
     }
 }
