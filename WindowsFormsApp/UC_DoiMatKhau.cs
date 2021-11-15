@@ -13,6 +13,30 @@ namespace WindowsFormsApp
 {
     public partial class UC_DoiMatKhau : UserControl
     {
+        public UC_DoiMatKhau(string thaydoi)
+        {
+            InitializeComponent();
+        }
+    }
+}
+
+
+/*
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using WindowsFormsApp.Models;
+
+namespace WindowsFormsApp
+{
+    public partial class UC_DoiMatKhau : UserControl
+    {
         private string xn;
         public UC_DoiMatKhau(string thaydoi)
         {
@@ -106,3 +130,4 @@ namespace WindowsFormsApp
 
     }
 }
+*/

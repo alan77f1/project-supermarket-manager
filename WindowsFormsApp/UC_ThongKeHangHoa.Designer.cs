@@ -129,7 +129,6 @@ namespace WindowsFormsApp
             this.btnTangTon.Text = "  ";
             this.btnTangTon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTangTon.UseVisualStyleBackColor = false;
-            this.btnTangTon.Click += new System.EventHandler(this.btnTangTon_Click);
             // 
             // label7
             // 
@@ -170,7 +169,6 @@ namespace WindowsFormsApp
             this.txtTimkiemhanghoa.Size = new System.Drawing.Size(372, 40);
             this.txtTimkiemhanghoa.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTimkiemhanghoa.TabIndex = 19;
-            this.txtTimkiemhanghoa.TextChanged += new System.EventHandler(this.txtTimkiem_TextChanged);
             // 
             // UC_ThongKeHangHoa
             // 

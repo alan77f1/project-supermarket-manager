@@ -23,7 +23,7 @@ namespace WindowsFormsApp.DAO
 
         public bool Login(string userName, string passWord)
         {
-            string query = "SELECT * FROM NhanVien WHERE TenDangNhap = N'" + userName + "' AND MatNVau = N'" + passWord + "' ";
+            string query = "SELECT * FROM NhanVien WHERE TenDangNhap = N'" + userName + "' AND MatKhau = N'" + passWord + "' ";
 
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
 

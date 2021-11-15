@@ -69,18 +69,14 @@ namespace WindowsFormsApp
         }
 
 
-
-
-
-
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            string tenDangNhap = txtTenDangNhap.Text;
+            string TenDangNhap = txtTenDangNhap.Text;
             string passWord = txtMatKhau.Text;
-            if (Login(tenDangNhap, passWord))
+            if (Login(TenDangNhap, passWord))
             {
-               /* tenNgDung = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).TenNguoiDung;*/
-                quyen = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).Quyen;
+               /* tenNgDung = QuanLyNhanVien.Intance.getNVByID(TenDangNhap).TenNguoiDung;*/
+                quyen = QuanLyNhanVien.Intance.getNVByID(TenDangNhap).Quyen;
                 FormTrangChu f = new FormTrangChu();
                 this.Hide();
                 f.ShowDialog();
@@ -97,60 +93,31 @@ namespace WindowsFormsApp
             return QuanLyNhanVien.Intance.Login(userName, passWord);
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        private void btnDangNhap_Click(object sender, EventArgs e)
+        private void lblAmind_Click_1(object sender, EventArgs e)
         {
-            if (check_data() == true)
+            string tenDangNhap = txtTenDangNhap.Text;
+            string passWord = txtMatKhau.Text;
+            if (Login(tenDangNhap, passWord))
             {
-                SqlConnection con = chuoiketnoi.sqlConnection();
-                con.Open();
-                string tk = txtTenDangNhap.Text;
-                string mk = txtMatKhau.Text;
-                string query = "select tendangnhap,matkhau from Nhanvien where tendangnhap = '" + tk + "' and matkhau = '" + mk + "' and Macv = 'NV'";
-                SqlCommand sqlCommand = new SqlCommand(query, con);
-                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-                if (sqlDataReader.Read() == true)
-                {
-                    /*FormQuyenNhanvien formQuyenNhanvien = new FormQuyenNhanvien();
-                    formQuyenNhanvien.Show();*/
-                    this.Hide();
-                }
-                else
-                    lblCanhbao.Text = "Sai tài khoản hoặc mật khẩu. Lưu ý đăng nhập là nhân viên!";
-                lblCanhbao.ForeColor = Color.Brown;
-                con.Close();
+                tenNgDung = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).TenHienThi;
+                quyen = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).Quyen;
+                UC_TrangChu f = new UC_TrangChu();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
             }
-        }
+            else
+            {
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
+            }
 
-        /*private void lblAmind_Click(object sender, EventArgs e)
-        {
-            if (check_data() == true)
+            /*if (check_data() == true)
             {
                 SqlConnection con = chuoiketnoi.sqlConnection();
                 con.Open();
                 string tk = txtTenDangNhap.Text;
                 string mk = txtMatKhau.Text;
-                string query = "select tendangnhap,matkhau from Nhanvien where tendangnhap = '" + tk + "' and matkhau = '" + mk + "' and Macv = 'QL'";
+                string query = "select TenDangNhap, MatKhau from NhanVien where TenDangNhap = '" + tk + "' and MatKhau = '" + mk + "' and Macv = 'QL'";
                 SqlCommand sqlCommand = new SqlCommand(query, con);
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
                 if (sqlDataReader.Read() == true)
@@ -163,8 +130,8 @@ namespace WindowsFormsApp
                     lblCanhbao.Text = "Sai tài khoản hoặc mật khẩu. Lưu ý đăng nhập là nhà quản lý!";
                 lblCanhbao.ForeColor = Color.Brown;
                 con.Close();
-            }
-        }*/
+            }*/
+        }
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
@@ -184,8 +151,6 @@ namespace WindowsFormsApp
         {
             Application.Exit();
         }
-
-  
 
         private void btnX_Click(object sender, EventArgs e)
         {

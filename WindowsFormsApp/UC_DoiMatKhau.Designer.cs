@@ -87,7 +87,6 @@ namespace WindowsFormsApp
             this.txtxacnhan.Size = new System.Drawing.Size(317, 46);
             this.txtxacnhan.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtxacnhan.TabIndex = 124;
-            this.txtxacnhan.TextChanged += new System.EventHandler(this.txtxacnhan_TextChanged);
             // 
             // label5
             // 
@@ -126,7 +125,6 @@ namespace WindowsFormsApp
             this.txtmatkhaumoi.Size = new System.Drawing.Size(317, 48);
             this.txtmatkhaumoi.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtmatkhaumoi.TabIndex = 119;
-            this.txtmatkhaumoi.TextChanged += new System.EventHandler(this.txtmatkhaumoi_TextChanged);
             // 
             // btnLuu
             // 
@@ -148,7 +146,6 @@ namespace WindowsFormsApp
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnQuaylai
             // 
@@ -170,7 +167,6 @@ namespace WindowsFormsApp
             this.btnQuaylai.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuaylai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnQuaylai.UseVisualStyleBackColor = false;
-            this.btnQuaylai.Click += new System.EventHandler(this.btnQuaylai_Click);
             // 
             // label8
             // 
@@ -299,7 +295,6 @@ namespace WindowsFormsApp
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC_DoiMatKhau";
             this.Size = new System.Drawing.Size(711, 360);
-            this.Load += new System.EventHandler(this.UC_Dangkymk_moi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);

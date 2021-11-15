@@ -16,6 +16,29 @@ namespace WindowsFormsApp
         public UC_ThongKeHoaDon()
         {
             InitializeComponent();
+        }
+    }
+}
+
+/*
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp
+{
+    public partial class UC_ThongKeHoaDon : UserControl
+    {
+        public UC_ThongKeHoaDon()
+        {
+            InitializeComponent();
             DateTime today = DateTime.Now;
             dpkNgaybd.Value = new DateTime(today.Year, today.Month, 1);
             dpkNgaykt.Value = dpkNgaybd.Value.AddMonths(1).AddDays(-1);
@@ -66,4 +89,4 @@ namespace WindowsFormsApp
             txtTongtienhoadon.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", Tongtien) + " VNĐ";
         }
     }
-}
+}*/

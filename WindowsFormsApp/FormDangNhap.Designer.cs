@@ -161,6 +161,7 @@ namespace WindowsFormsApp
             this.lblAmind.Size = new System.Drawing.Size(80, 35);
             this.lblAmind.TabIndex = 27;
             this.lblAmind.Text = "Admin";
+            this.lblAmind.Click += new System.EventHandler(this.lblAmind_Click_1);
             // 
             // lblCanhbao
             // 
@@ -249,7 +250,6 @@ namespace WindowsFormsApp
             this.btnDangNhap.Size = new System.Drawing.Size(400, 58);
             this.btnDangNhap.TabIndex = 13;
             this.btnDangNhap.Text = "ĐĂNG NHẬP";
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // label3
             // 

@@ -29,7 +29,7 @@ namespace WindowsFormsApp
             qrKH = "select count(*) AS [SoLuong] from HoaDon";
             kh = DataProvider.Instance.ExecuteQuery(qrKH);
             lbSoHoaDon.Text = kh.Rows[0]["SoLuong"].ToString();
-            qrKH = "select count(*) AS [SoLuong] from HangHoa";
+            qrKH = "select count(*) AS [SoLuong] from MatHang";
             kh = DataProvider.Instance.ExecuteQuery(qrKH);
             lbHangHoa.Text = kh.Rows[0]["SoLuong"].ToString();
         }

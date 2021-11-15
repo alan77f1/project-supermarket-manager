@@ -197,7 +197,6 @@ namespace WindowsFormsApp
             this.btnTang.Text = "  ";
             this.btnTang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTang.UseVisualStyleBackColor = false;
-            this.btnTang.Click += new System.EventHandler(this.btnTang_Click);
             // 
             // btnTangngay
             // 
@@ -218,7 +217,6 @@ namespace WindowsFormsApp
             this.btnTangngay.Text = "  ";
             this.btnTangngay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTangngay.UseVisualStyleBackColor = false;
-            this.btnTangngay.Click += new System.EventHandler(this.btnTangngay_Click);
             // 
             // btnXem
             // 
@@ -239,7 +237,6 @@ namespace WindowsFormsApp
             this.btnXem.Text = "  Xem";
             this.btnXem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXem.UseVisualStyleBackColor = false;
-            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
             // label7
             // 

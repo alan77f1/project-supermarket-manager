@@ -17,6 +17,28 @@ namespace WindowsFormsApp
         public UC_CaLamViec()
         {
             InitializeComponent();
+        }
+    }
+}
+/*
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using WindowsFormsApp.Models;
+
+namespace WindowsFormsApp
+{
+    public partial class UC_CaLamViec : UserControl
+    {
+        public UC_CaLamViec()
+        {
+            InitializeComponent();
             Hienthi();
             txtMaCLV.Text = Matudong();
         }
@@ -186,4 +208,4 @@ namespace WindowsFormsApp
             return true;
         }
     }
-}
+}*/

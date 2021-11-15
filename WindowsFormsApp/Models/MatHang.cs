@@ -5,6 +5,7 @@ namespace WindowsFormsApp.Models
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.Data;
 
     [Table("MatHang")]
     public partial class MatHang
@@ -47,5 +48,13 @@ namespace WindowsFormsApp.Models
         public virtual DonViTinh DonViTinh { get; set; }
 
         public virtual QuayHang QuayHang { get; set; }
+        public MatHang(DataRow row)
+        {
+            this.MaMH = row["MaMH"].ToString();
+            this.TenMH = row["TenMH"].ToString();
+            this.SoLuong = (int)row["SoLuong"];
+            this.GiaBan = (int)row["GiaBan"];
+            this.DonVi = row["DonVi"].ToString();
+        }
     }
 }

@@ -148,7 +148,6 @@ namespace WindowsFormsApp
             this.txtTimkiemkhachhang.Size = new System.Drawing.Size(372, 40);
             this.txtTimkiemkhachhang.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTimkiemkhachhang.TabIndex = 19;
-            this.txtTimkiemkhachhang.TextChanged += new System.EventHandler(this.txtTimkiemkhachhang_TextChanged);
             // 
             // UC_ThongKeKhachHang
             // 

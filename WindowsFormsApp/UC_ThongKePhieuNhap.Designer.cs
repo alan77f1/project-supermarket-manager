@@ -153,7 +153,6 @@ namespace WindowsFormsApp
             this.txtTimkiemphieunhap.Size = new System.Drawing.Size(188, 40);
             this.txtTimkiemphieunhap.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTimkiemphieunhap.TabIndex = 19;
-            this.txtTimkiemphieunhap.TextChanged += new System.EventHandler(this.txtTimkiemphieunhap_TextChanged);
             // 
             // label2
             // 
@@ -244,7 +243,6 @@ namespace WindowsFormsApp
             this.btnCong.Text = "  ";
             this.btnCong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCong.UseVisualStyleBackColor = false;
-            this.btnCong.Click += new System.EventHandler(this.btnCong_Click);
             // 
             // UC_ThongKePhieuNhap
             // 
