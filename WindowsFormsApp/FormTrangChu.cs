@@ -13,15 +13,10 @@ namespace WindowsFormsApp
     public partial class FormTrangChu : Form
     {
         //private string Taikhoan;
-        int w;
-        bool check;
         public FormTrangChu()   // string Taikhoandn
         {
             InitializeComponent();
             time.Start();
-            panelLeft.Width = panelLeft.Width - 145;
-            w = panelLeft.Width;
-            check = false;
             UC_TrangChu tc = new UC_TrangChu();
             themUC(tc);
             phanQuyen();
@@ -54,26 +49,7 @@ namespace WindowsFormsApp
 
         private void btnDanhMuc_Click(object sender, EventArgs e)
         {
-            if (check)
-            {
-                panelLeft.Width = panelLeft.Width - 150;
-                if (panelLeft.Width <= w)
-                {
-                    timer1.Stop();
-                    check = false;
-                    this.Refresh();
-                }
-            }
-            else
-            {
-                panelLeft.Width = panelLeft.Width + 150;
-                if (panelLeft.Width >= 65)
-                {
-                    timer1.Stop();
-                    check = true;
-                    this.Refresh();
-                }
-            }
+
         }
 
         private void time_tick(object sender, EventArgs e)
