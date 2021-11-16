@@ -34,12 +34,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtTenHang = new System.Windows.Forms.TextBox();
+            this.txtTenMH = new System.Windows.Forms.TextBox();
             this.txtGia = new System.Windows.Forms.TextBox();
-            this.btnThemMatHang = new System.Windows.Forms.Button();
+            this.btnThemMatMH = new System.Windows.Forms.Button();
             this.panelRight = new System.Windows.Forms.Panel();
             this.btnThemMoiKH = new System.Windows.Forms.Button();
-            this.txtInPutNumberPhone = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTenKH = new System.Windows.Forms.Label();
             this.lvSanPhamBan = new System.Windows.Forms.ListView();
@@ -52,9 +52,9 @@
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.lbTienBangSo = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnXoaMatHang = new System.Windows.Forms.Button();
-            this.cbbMaHang = new System.Windows.Forms.ComboBox();
-            this.txtDonViTinh = new System.Windows.Forms.TextBox();
+            this.btnXoaMH = new System.Windows.Forms.Button();
+            this.cmbMaMH = new System.Windows.Forms.ComboBox();
+            this.txtDVT = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -75,9 +75,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(14, 124);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 23);
+            this.label1.Size = new System.Drawing.Size(89, 23);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Mã Hàng :";
+            this.label1.Text = "Mã MH :";
             // 
             // label2
             // 
@@ -87,9 +87,9 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(14, 182);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 23);
+            this.label2.Size = new System.Drawing.Size(91, 23);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Tên Hàng :";
+            this.label2.Text = "Tên MH :";
             // 
             // label3
             // 
@@ -127,14 +127,14 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Giá :";
             // 
-            // txtTenHang
+            // txtTenMH
             // 
-            this.txtTenHang.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTenHang.ForeColor = System.Drawing.Color.Black;
-            this.txtTenHang.Location = new System.Drawing.Point(145, 179);
-            this.txtTenHang.Name = "txtTenHang";
-            this.txtTenHang.Size = new System.Drawing.Size(284, 32);
-            this.txtTenHang.TabIndex = 3;
+            this.txtTenMH.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTenMH.ForeColor = System.Drawing.Color.Black;
+            this.txtTenMH.Location = new System.Drawing.Point(145, 179);
+            this.txtTenMH.Name = "txtTenMH";
+            this.txtTenMH.Size = new System.Drawing.Size(284, 32);
+            this.txtTenMH.TabIndex = 3;
             // 
             // txtGia
             // 
@@ -145,29 +145,29 @@
             this.txtGia.Size = new System.Drawing.Size(284, 32);
             this.txtGia.TabIndex = 3;
             // 
-            // btnThemMatHang
+            // btnThemMatMH
             // 
-            this.btnThemMatHang.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnThemMatHang.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnThemMatHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThemMatHang.FlatAppearance.BorderSize = 0;
-            this.btnThemMatHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnThemMatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemMatHang.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemMatHang.ForeColor = System.Drawing.Color.Transparent;
-            this.btnThemMatHang.Location = new System.Drawing.Point(226, 459);
-            this.btnThemMatHang.Name = "btnThemMatHang";
-            this.btnThemMatHang.Size = new System.Drawing.Size(151, 44);
-            this.btnThemMatHang.TabIndex = 7;
-            this.btnThemMatHang.Text = "Thêm";
-            this.btnThemMatHang.UseVisualStyleBackColor = false;
-            this.btnThemMatHang.Click += new System.EventHandler(this.btnThemMatHang_Click);
+            this.btnThemMatMH.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnThemMatMH.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnThemMatMH.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemMatMH.FlatAppearance.BorderSize = 0;
+            this.btnThemMatMH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnThemMatMH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemMatMH.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemMatMH.ForeColor = System.Drawing.Color.Transparent;
+            this.btnThemMatMH.Location = new System.Drawing.Point(226, 459);
+            this.btnThemMatMH.Name = "btnThemMatMH";
+            this.btnThemMatMH.Size = new System.Drawing.Size(151, 44);
+            this.btnThemMatMH.TabIndex = 7;
+            this.btnThemMatMH.Text = "Thêm";
+            this.btnThemMatMH.UseVisualStyleBackColor = false;
+            this.btnThemMatMH.Click += new System.EventHandler(this.btnThemMatHang_Click);
             // 
             // panelRight
             // 
             this.panelRight.BackColor = System.Drawing.Color.White;
             this.panelRight.Controls.Add(this.btnThemMoiKH);
-            this.panelRight.Controls.Add(this.txtInPutNumberPhone);
+            this.panelRight.Controls.Add(this.txtSDT);
             this.panelRight.Controls.Add(this.label4);
             this.panelRight.Controls.Add(this.txtTenKH);
             this.panelRight.Controls.Add(this.lvSanPhamBan);
@@ -191,16 +191,16 @@
             this.btnThemMoiKH.UseVisualStyleBackColor = false;
             this.btnThemMoiKH.Click += new System.EventHandler(this.btnThemMoiKH_Click);
             // 
-            // txtInPutNumberPhone
+            // txtSDT
             // 
-            this.txtInPutNumberPhone.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtInPutNumberPhone.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtInPutNumberPhone.Location = new System.Drawing.Point(147, 27);
-            this.txtInPutNumberPhone.MaxLength = 10;
-            this.txtInPutNumberPhone.Name = "txtInPutNumberPhone";
-            this.txtInPutNumberPhone.Size = new System.Drawing.Size(225, 32);
-            this.txtInPutNumberPhone.TabIndex = 9;
-            this.txtInPutNumberPhone.TextChanged += new System.EventHandler(this.txtInPutNumberPhone_TextChanged_1);
+            this.txtSDT.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtSDT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtSDT.Location = new System.Drawing.Point(147, 27);
+            this.txtSDT.MaxLength = 10;
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(225, 32);
+            this.txtSDT.TabIndex = 9;
+            this.txtSDT.TextChanged += new System.EventHandler(this.txtInPutNumberPhone_TextChanged_1);
             // 
             // label4
             // 
@@ -268,7 +268,7 @@
             this.panel4.Controls.Add(this.btnThanhToan);
             this.panel4.Controls.Add(this.lbTienBangSo);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.btnXoaMatHang);
+            this.panel4.Controls.Add(this.btnXoaMH);
             this.panel4.Location = new System.Drawing.Point(3, 413);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(502, 212);
@@ -328,42 +328,42 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Tổng tiền :";
             // 
-            // btnXoaMatHang
+            // btnXoaMH
             // 
-            this.btnXoaMatHang.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnXoaMatHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoaMatHang.FlatAppearance.BorderSize = 0;
-            this.btnXoaMatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoaMatHang.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaMatHang.ForeColor = System.Drawing.Color.White;
-            this.btnXoaMatHang.Location = new System.Drawing.Point(26, 124);
-            this.btnXoaMatHang.Name = "btnXoaMatHang";
-            this.btnXoaMatHang.Size = new System.Drawing.Size(206, 62);
-            this.btnXoaMatHang.TabIndex = 2;
-            this.btnXoaMatHang.Text = "Xóa";
-            this.btnXoaMatHang.UseVisualStyleBackColor = false;
-            this.btnXoaMatHang.Click += new System.EventHandler(this.btnXoaMatHang_Click);
+            this.btnXoaMH.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnXoaMH.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoaMH.FlatAppearance.BorderSize = 0;
+            this.btnXoaMH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoaMH.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaMH.ForeColor = System.Drawing.Color.White;
+            this.btnXoaMH.Location = new System.Drawing.Point(26, 124);
+            this.btnXoaMH.Name = "btnXoaMH";
+            this.btnXoaMH.Size = new System.Drawing.Size(206, 62);
+            this.btnXoaMH.TabIndex = 2;
+            this.btnXoaMH.Text = "Xóa";
+            this.btnXoaMH.UseVisualStyleBackColor = false;
+            this.btnXoaMH.Click += new System.EventHandler(this.btnXoaMatHang_Click);
             // 
-            // cbbMaHang
+            // cmbMaMH
             // 
-            this.cbbMaHang.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbbMaHang.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbbMaHang.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.cbbMaHang.FormattingEnabled = true;
-            this.cbbMaHang.Location = new System.Drawing.Point(145, 116);
-            this.cbbMaHang.Name = "cbbMaHang";
-            this.cbbMaHang.Size = new System.Drawing.Size(284, 31);
-            this.cbbMaHang.TabIndex = 1;
-            this.cbbMaHang.SelectedIndexChanged += new System.EventHandler(this.cbbMaHang_SelectedIndexChanged);
+            this.cmbMaMH.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbMaMH.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbMaMH.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.cmbMaMH.FormattingEnabled = true;
+            this.cmbMaMH.Location = new System.Drawing.Point(145, 116);
+            this.cmbMaMH.Name = "cmbMaMH";
+            this.cmbMaMH.Size = new System.Drawing.Size(284, 31);
+            this.cmbMaMH.TabIndex = 1;
+            this.cmbMaMH.SelectedIndexChanged += new System.EventHandler(this.cbbMaHang_SelectedIndexChanged);
             // 
-            // txtDonViTinh
+            // txtDVT
             // 
-            this.txtDonViTinh.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDonViTinh.ForeColor = System.Drawing.Color.Black;
-            this.txtDonViTinh.Location = new System.Drawing.Point(145, 247);
-            this.txtDonViTinh.Name = "txtDonViTinh";
-            this.txtDonViTinh.Size = new System.Drawing.Size(284, 32);
-            this.txtDonViTinh.TabIndex = 92;
+            this.txtDVT.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDVT.ForeColor = System.Drawing.Color.Black;
+            this.txtDVT.Location = new System.Drawing.Point(145, 247);
+            this.txtDVT.Name = "txtDVT";
+            this.txtDVT.Size = new System.Drawing.Size(284, 32);
+            this.txtDVT.TabIndex = 92;
             // 
             // txtSoLuong
             // 
@@ -432,12 +432,12 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.txtSoLuong);
-            this.Controls.Add(this.txtDonViTinh);
-            this.Controls.Add(this.cbbMaHang);
+            this.Controls.Add(this.txtDVT);
+            this.Controls.Add(this.cmbMaMH);
             this.Controls.Add(this.panelRight);
-            this.Controls.Add(this.btnThemMatHang);
+            this.Controls.Add(this.btnThemMatMH);
             this.Controls.Add(this.txtGia);
-            this.Controls.Add(this.txtTenHang);
+            this.Controls.Add(this.txtTenMH);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -466,18 +466,18 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtTenHang;
+        private System.Windows.Forms.TextBox txtTenMH;
         private System.Windows.Forms.TextBox txtGia;
-        private System.Windows.Forms.Button btnThemMatHang;
+        private System.Windows.Forms.Button btnThemMatMH;
         private System.Windows.Forms.Panel panelRight;
-        private System.Windows.Forms.Button btnXoaMatHang;
+        private System.Windows.Forms.Button btnXoaMH;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.Label lbTienBangSo;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cbbMaHang;
+        private System.Windows.Forms.ComboBox cmbMaMH;
         private System.Windows.Forms.BindingSource hangHoaBindingSource;
-        private System.Windows.Forms.TextBox txtDonViTinh;
+        private System.Windows.Forms.TextBox txtDVT;
         private Guna.UI2.WinForms.Guna2NumericUpDown txtSoLuong;
         private System.Windows.Forms.ListView lvSanPhamBan;
         private System.Windows.Forms.ColumnHeader columnHeader5;
@@ -488,7 +488,7 @@
         private System.Windows.Forms.Label txtTenKH;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnThemMoiKH;
-        public System.Windows.Forms.TextBox txtInPutNumberPhone;
+        public System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;

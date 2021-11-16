@@ -95,7 +95,7 @@ namespace WindowsFormsApp
 
         private void lblAmind_Click_1(object sender, EventArgs e)
         {
-            string tenDangNhap = txtTenDangNhap.Text;
+            /*string tenDangNhap = txtTenDangNhap.Text;
             string passWord = txtMatKhau.Text;
             if (Login(tenDangNhap, passWord))
             {
@@ -109,28 +109,25 @@ namespace WindowsFormsApp
             else
             {
                 MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
-            }
+            }*/
 
-            /*if (check_data() == true)
+            if (check_data() == true)
             {
-                SqlConnection con = chuoiketnoi.sqlConnection();
-                con.Open();
-                string tk = txtTenDangNhap.Text;
-                string mk = txtMatKhau.Text;
-                string query = "select TenDangNhap, MatKhau from NhanVien where TenDangNhap = '" + tk + "' and MatKhau = '" + mk + "' and Macv = 'QL'";
-                SqlCommand sqlCommand = new SqlCommand(query, con);
-                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-                if (sqlDataReader.Read() == true)
+                string tenDangNhap = txtTenDangNhap.Text;
+                string passWord = txtMatKhau.Text;
+                if (Login(tenDangNhap, passWord))
                 {
-                    FormTrangChu formTrangchu = new FormTrangChu(); // txt Taikhoan.text
-                    formTrangchu.Show();
+                    tenHienThi = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).TenHienThi;
+                    quyen = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).Quyen;
+                    FormTrangChu f = new FormTrangChu();    
                     this.Hide();
+                    f.ShowDialog();
+                    this.Show();
                 }
                 else
                     lblCanhbao.Text = "Sai tài khoản hoặc mật khẩu. Lưu ý đăng nhập là nhà quản lý!";
                 lblCanhbao.ForeColor = Color.Brown;
-                con.Close();
-            }*/
+            }
         }
 
         private void btnDangKy_Click(object sender, EventArgs e)

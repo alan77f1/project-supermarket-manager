@@ -55,8 +55,8 @@ namespace WindowsFormsApp
                 if (QuanLyKhachHang.Intance.themKH(txtMaKH.Text, txtHoTen.Text, "", txtSDT.Text, ""))
                 {
                     MessageBox.Show("Thêm thành công!", "Thông báo");
-                    uc.txtInPutNumberPhone.Text = "";
-                    uc.txtInPutNumberPhone.Text = txtSDT.Text;
+                    uc.txtSDT.Text = "";
+                    uc.txtSDT.Text = txtSDT.Text;
                     this.Close();
                 }
             }

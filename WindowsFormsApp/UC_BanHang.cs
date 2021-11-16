@@ -26,10 +26,10 @@ namespace WindowsFormsApp
             {
                 arrName.Add(item.MaMH);
             }
-            cbbMaHang.AutoCompleteCustomSource = arrName;
-            cbbMaHang.DataSource = list;
-            cbbMaHang.DisplayMember = "MaHang";
-            cbbMaHang.ValueMember = "MaHang";
+            cmbMaMH.AutoCompleteCustomSource = arrName;
+            cmbMaMH.DataSource = list;
+            cmbMaMH.DisplayMember = "MaMH";
+            cmbMaMH.ValueMember = "MaMH";
 
             List<Models.KhachHang> listKH = new List<Models.KhachHang>();
             DataTable data2 = QuanLyKhachHang.Intance.getListKH();
@@ -43,7 +43,7 @@ namespace WindowsFormsApp
             {
                 arrName2.Add(itemKH.SDT);
             }
-            txtInPutNumberPhone.AutoCompleteCustomSource = arrName2;
+            txtSDT.AutoCompleteCustomSource = arrName2;
             resetInfoProduct();
         }
 
@@ -76,11 +76,11 @@ namespace WindowsFormsApp
         int i;
         private void cbbMaHang_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbbMaHang.SelectedIndex >= 0)
+            if (cmbMaMH.SelectedIndex >= 0)
             {
-                i = cbbMaHang.SelectedIndex;
-                txtTenHang.Text = list[i].TenMH;
-                txtDonViTinh.Text = list[i].DonVi;
+                i = cmbMaMH.SelectedIndex;
+                txtTenMH.Text = list[i].TenMH;
+                txtDVT.Text = list[i].DonVi;
                 txtGia.Text = list[i].GiaBan.ToString();
             }
         }
@@ -89,12 +89,12 @@ namespace WindowsFormsApp
 
         private void btnThemMatHang_Click(object sender, EventArgs e)
         {
-            if (cbbMaHang.SelectedIndex >= 0 && txtSoLuong.Value > 0)
+            if (cmbMaMH.SelectedIndex >= 0 && txtSoLuong.Value > 0)
             {
                 bool check = false;
                 foreach (ListViewItem item in lvSanPhamBan.Items)
                 {
-                    if (item.SubItems[0].Text == cbbMaHang.SelectedValue.ToString())
+                    if (item.SubItems[0].Text == cmbMaMH.SelectedValue.ToString())
                     {
                         check = true;
                     }
@@ -110,8 +110,8 @@ namespace WindowsFormsApp
                 if (!check)
                 {
                     string[] arr = new string[4];
-                    arr[0] = cbbMaHang.SelectedValue.ToString();
-                    arr[1] = txtTenHang.Text;
+                    arr[0] = cmbMaMH.SelectedValue.ToString();
+                    arr[1] = txtTenMH.Text;
                     arr[2] = txtSoLuong.Value.ToString();
                     arr[3] = gia.ToString();
                     ListViewItem listViewItem = new ListViewItem(arr);
@@ -126,10 +126,10 @@ namespace WindowsFormsApp
 
         private void resetInfoProduct()
         {
-            cbbMaHang.SelectedIndex = -1;
-            txtTenHang.Text = "";
+            cmbMaMH.SelectedIndex = -1;
+            txtTenMH.Text = "";
             txtSoLuong.Value = 1;
-            txtDonViTinh.Text = "";
+            txtDVT.Text = "";
             txtGia.Text = "";
         }
 
@@ -159,7 +159,7 @@ namespace WindowsFormsApp
                 hoaDon.MaKH = khachHang.MaKH;
                 DateTime oDate = DateTime.Now;
                 hoaDon.NgayTao = oDate;
-                hoaDon.TenDangNhap = "ADMIN";
+                hoaDon.MaNV = "AD";
                 hoaDon.TongTien = tongTien;
 
                 if (QuanLyHoaDon.Intance.LuuDonHang(hoaDon))
@@ -187,9 +187,9 @@ namespace WindowsFormsApp
 
         private void txtInPutNumberPhone_TextChanged_1(object sender, EventArgs e)
         {
-            khachHang = GetTenBySDT(txtInPutNumberPhone.Text);
+            khachHang = GetTenBySDT(txtSDT.Text);
             txtTenKH.Text = khachHang.TenKH;
-            if (txtInPutNumberPhone.Text.Length == 10 && txtTenKH.Text == "")
+            if (txtSDT.Text.Length == 10 && txtTenKH.Text == "")
             {
                 txtTenKH.Text = "Không Tìm Thấy";
             }
@@ -197,7 +197,7 @@ namespace WindowsFormsApp
 
         private void btnThemMoiKH_Click(object sender, EventArgs e)
         {
-            FormThemKhachHang form = new FormThemKhachHang(QuanLyKhachHang.Intance.loadMaKH(), txtInPutNumberPhone.Text, this);
+            FormThemKhachHang form = new FormThemKhachHang(QuanLyKhachHang.Intance.loadMaKH(), txtSDT.Text, this);
             form.ShowDialog();
         }
 
