@@ -43,7 +43,7 @@ namespace WindowsFormsApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(428, 0);
+            this.label1.Location = new System.Drawing.Point(326, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(308, 156);
             this.label1.TabIndex = 3;
@@ -158,9 +158,9 @@ namespace WindowsFormsApp
             this.Controls.Add(this.txtTimkiemkhachhang);
             this.Controls.Add(this.dgvThongkekh);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKeKhachHang";
-            this.Size = new System.Drawing.Size(990, 690);
+            this.Size = new System.Drawing.Size(1010, 662);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongkekh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

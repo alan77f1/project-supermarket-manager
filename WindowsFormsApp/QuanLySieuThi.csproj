@@ -436,6 +436,9 @@
     <EmbeddedResource Include="UC_TrangChu.resx">
       <DependentUpon>UC_TrangChu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_XacNhanSDT.resx">
+      <DependentUpon>UC_XacNhanSDT.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

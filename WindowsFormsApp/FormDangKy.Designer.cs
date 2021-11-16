@@ -80,7 +80,7 @@ namespace WindowsFormsApp
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.2F);
             this.label5.Location = new System.Drawing.Point(95, 247);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 26);
+            this.label5.Size = new System.Drawing.Size(109, 25);
             this.label5.TabIndex = 60;
             this.label5.Text = "Điện thoại:";
             // 
@@ -90,7 +90,7 @@ namespace WindowsFormsApp
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.2F);
             this.label3.Location = new System.Drawing.Point(105, 136);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 26);
+            this.label3.Size = new System.Drawing.Size(103, 25);
             this.label3.TabIndex = 56;
             this.label3.Text = "Họ và tên:";
             // 
@@ -100,7 +100,7 @@ namespace WindowsFormsApp
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(127, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 26);
+            this.label2.Size = new System.Drawing.Size(82, 25);
             this.label2.TabIndex = 54;
             this.label2.Text = "Mã NV:";
             // 
@@ -110,7 +110,7 @@ namespace WindowsFormsApp
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.2F);
             this.label1.Location = new System.Drawing.Point(53, 300);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 26);
+            this.label1.Size = new System.Drawing.Size(146, 25);
             this.label1.TabIndex = 70;
             this.label1.Text = "Tên đăng nhập:";
             // 
@@ -120,7 +120,7 @@ namespace WindowsFormsApp
             this.label7.Font = new System.Drawing.Font("Times New Roman", 13.2F);
             this.label7.Location = new System.Drawing.Point(105, 355);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(105, 26);
+            this.label7.Size = new System.Drawing.Size(101, 25);
             this.label7.TabIndex = 72;
             this.label7.Text = "Mật khẩu:";
             // 
@@ -155,6 +155,30 @@ namespace WindowsFormsApp
             this.labelThem.Size = new System.Drawing.Size(136, 29);
             this.labelThem.TabIndex = 77;
             this.labelThem.Text = "Tên nhân viên:";
+            // 
+            // erMa
+            // 
+            this.erMa.ContainerControl = this;
+            // 
+            // erTen
+            // 
+            this.erTen.ContainerControl = this;
+            // 
+            // erDiachi
+            // 
+            this.erDiachi.ContainerControl = this;
+            // 
+            // erSđt
+            // 
+            this.erSđt.ContainerControl = this;
+            // 
+            // ertaikhoan
+            // 
+            this.ertaikhoan.ContainerControl = this;
+            // 
+            // erMatkhau
+            // 
+            this.erMatkhau.ContainerControl = this;
             // 
             // checkHienmatkhau
             // 
@@ -261,7 +285,7 @@ namespace WindowsFormsApp
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.2F);
             this.label4.Location = new System.Drawing.Point(135, 194);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 26);
+            this.label4.Size = new System.Drawing.Size(82, 25);
             this.label4.TabIndex = 58;
             this.label4.Text = "Địa chỉ:\r\n";
             // 
@@ -271,7 +295,7 @@ namespace WindowsFormsApp
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13.2F);
             this.label6.Location = new System.Drawing.Point(32, 405);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(188, 26);
+            this.label6.Size = new System.Drawing.Size(179, 25);
             this.label6.TabIndex = 85;
             this.label6.Text = "Nhập lại mật khẩu:";
             // 
@@ -292,7 +316,7 @@ namespace WindowsFormsApp
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(274, 6);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(257, 39);
+            this.label9.Size = new System.Drawing.Size(269, 40);
             this.label9.TabIndex = 183;
             this.label9.Text = "ĐĂNG KÝ TÀI KHOẢN";
             // 

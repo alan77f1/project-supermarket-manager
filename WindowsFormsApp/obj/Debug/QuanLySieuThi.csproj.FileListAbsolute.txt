@@ -158,3 +158,4 @@ D:\C#\pj\store-manager\WindowsFormsApp\bin\Debug\zh-CHT\Microsoft.ReportViewer.W
 D:\C#\pj\store-manager\WindowsFormsApp\obj\Debug\QuanLySieuThi.csproj.CopyComplete
 D:\C#\pj\store-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
 D:\C#\pj\store-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
+D:\C#\pj\store-manager\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_XacNhanSDT.resources

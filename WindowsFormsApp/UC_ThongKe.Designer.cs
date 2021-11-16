@@ -55,9 +55,9 @@ namespace WindowsFormsApp
             this.pnlThongke.Controls.Add(this.pnlButton);
             this.pnlThongke.Controls.Add(this.flowLayoutPanel1);
             this.pnlThongke.Location = new System.Drawing.Point(0, -82);
-            this.pnlThongke.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlThongke.Margin = new System.Windows.Forms.Padding(4);
             this.pnlThongke.Name = "pnlThongke";
-            this.pnlThongke.Size = new System.Drawing.Size(987, 770);
+            this.pnlThongke.Size = new System.Drawing.Size(1010, 662);
             this.pnlThongke.TabIndex = 22;
             // 
             // pnlButton
@@ -89,13 +89,13 @@ namespace WindowsFormsApp
             // 
             // btnphieunhap
             // 
-            this.btnphieunhap.BackColor = System.Drawing.Color.White;
+            this.btnphieunhap.BackColor = System.Drawing.Color.SteelBlue;
             this.btnphieunhap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnphieunhap.FlatAppearance.BorderSize = 0;
             this.btnphieunhap.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.btnphieunhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnphieunhap.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnphieunhap.ForeColor = System.Drawing.Color.Black;
+            this.btnphieunhap.ForeColor = System.Drawing.Color.White;
             this.btnphieunhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnphieunhap.Location = new System.Drawing.Point(729, 9);
             this.btnphieunhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -110,13 +110,13 @@ namespace WindowsFormsApp
             // 
             // btnKhachhang
             // 
-            this.btnKhachhang.BackColor = System.Drawing.Color.White;
+            this.btnKhachhang.BackColor = System.Drawing.Color.SteelBlue;
             this.btnKhachhang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKhachhang.FlatAppearance.BorderSize = 0;
             this.btnKhachhang.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.btnKhachhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKhachhang.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKhachhang.ForeColor = System.Drawing.Color.Black;
+            this.btnKhachhang.ForeColor = System.Drawing.Color.White;
             this.btnKhachhang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKhachhang.Location = new System.Drawing.Point(484, 9);
             this.btnKhachhang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -131,13 +131,13 @@ namespace WindowsFormsApp
             // 
             // btnHanghoa
             // 
-            this.btnHanghoa.BackColor = System.Drawing.Color.White;
+            this.btnHanghoa.BackColor = System.Drawing.Color.SteelBlue;
             this.btnHanghoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHanghoa.FlatAppearance.BorderSize = 0;
             this.btnHanghoa.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.btnHanghoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHanghoa.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHanghoa.ForeColor = System.Drawing.Color.Black;
+            this.btnHanghoa.ForeColor = System.Drawing.Color.White;
             this.btnHanghoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHanghoa.Location = new System.Drawing.Point(265, 9);
             this.btnHanghoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -152,13 +152,13 @@ namespace WindowsFormsApp
             // 
             // btnHoadon
             // 
-            this.btnHoadon.BackColor = System.Drawing.Color.White;
+            this.btnHoadon.BackColor = System.Drawing.Color.SteelBlue;
             this.btnHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHoadon.FlatAppearance.BorderSize = 0;
             this.btnHoadon.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.btnHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHoadon.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoadon.ForeColor = System.Drawing.Color.Black;
+            this.btnHoadon.ForeColor = System.Drawing.Color.White;
             this.btnHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHoadon.Location = new System.Drawing.Point(37, 9);
             this.btnHoadon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -183,6 +183,7 @@ namespace WindowsFormsApp
             // pnldichuyenhoadon
             // 
             this.pnldichuyenhoadon.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnldichuyenhoadon.ForeColor = System.Drawing.Color.White;
             this.pnldichuyenhoadon.Location = new System.Drawing.Point(278, 62);
             this.pnldichuyenhoadon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnldichuyenhoadon.Name = "pnldichuyenhoadon";
@@ -192,6 +193,7 @@ namespace WindowsFormsApp
             // pnldichuyenHanghoa
             // 
             this.pnldichuyenHanghoa.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnldichuyenHanghoa.ForeColor = System.Drawing.Color.White;
             this.pnldichuyenHanghoa.Location = new System.Drawing.Point(53, 62);
             this.pnldichuyenHanghoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnldichuyenHanghoa.Name = "pnldichuyenHanghoa";
@@ -204,7 +206,7 @@ namespace WindowsFormsApp
             this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 183);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(963, 469);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(949, 456);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // guna2Elipse1

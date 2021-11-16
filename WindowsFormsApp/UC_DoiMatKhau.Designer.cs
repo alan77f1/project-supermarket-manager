@@ -292,7 +292,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnQuaylai);
             this.Controls.Add(this.label8);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_DoiMatKhau";
             this.Size = new System.Drawing.Size(711, 360);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

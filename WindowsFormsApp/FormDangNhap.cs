@@ -119,10 +119,9 @@ namespace WindowsFormsApp
                 {
                     tenHienThi = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).TenHienThi;
                     quyen = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).Quyen;
-                    FormTrangChu f = new FormTrangChu();    
+                    FormTrangChu f = new FormTrangChu();
+                    f.Show();
                     this.Hide();
-                    f.ShowDialog();
-                    this.Show();
                 }
                 else
                     lblCanhbao.Text = "Sai tài khoản hoặc mật khẩu. Lưu ý đăng nhập là nhà quản lý!";

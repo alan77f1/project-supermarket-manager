@@ -45,7 +45,7 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtTimKiem.Location = new System.Drawing.Point(752, 26);
+            this.txtTimKiem.Location = new System.Drawing.Point(768, 20);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(236, 32);
             this.txtTimKiem.TabIndex = 4;
@@ -60,7 +60,7 @@
             "ID",
             "Tên Sản Phẩm",
             "NSX"});
-            this.cbbTimKiem.Location = new System.Drawing.Point(632, 25);
+            this.cbbTimKiem.Location = new System.Drawing.Point(648, 19);
             this.cbbTimKiem.Name = "cbbTimKiem";
             this.cbbTimKiem.Size = new System.Drawing.Size(114, 31);
             this.cbbTimKiem.TabIndex = 3;
@@ -71,7 +71,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(520, 28);
+            this.label1.Location = new System.Drawing.Point(536, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 23);
             this.label1.TabIndex = 2;
@@ -80,9 +80,9 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.dgvMatHang);
-            this.panel3.Location = new System.Drawing.Point(10, 88);
+            this.panel3.Location = new System.Drawing.Point(10, 74);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(974, 596);
+            this.panel3.Size = new System.Drawing.Size(997, 585);
             this.panel3.TabIndex = 12;
             // 
             // dgvMatHang
@@ -98,7 +98,7 @@
             this.dgvMatHang.RowHeadersWidth = 51;
             this.dgvMatHang.RowTemplate.Height = 24;
             this.dgvMatHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMatHang.Size = new System.Drawing.Size(968, 580);
+            this.dgvMatHang.Size = new System.Drawing.Size(991, 568);
             this.dgvMatHang.TabIndex = 0;
             // 
             // panel2
@@ -111,8 +111,9 @@
             this.panel2.Controls.Add(this.btnThemMatHangMoi);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(994, 78);
+            this.panel2.Size = new System.Drawing.Size(1010, 67);
             this.panel2.TabIndex = 11;
             // 
             // btnThemDVT
@@ -125,7 +126,7 @@
             this.btnThemDVT.ForeColor = System.Drawing.Color.White;
             this.btnThemDVT.Location = new System.Drawing.Point(253, 0);
             this.btnThemDVT.Name = "btnThemDVT";
-            this.btnThemDVT.Size = new System.Drawing.Size(158, 78);
+            this.btnThemDVT.Size = new System.Drawing.Size(158, 67);
             this.btnThemDVT.TabIndex = 1;
             this.btnThemDVT.Text = "Thêm ĐVT";
             this.btnThemDVT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -142,7 +143,7 @@
             this.btnThemMatHangMoi.ForeColor = System.Drawing.Color.White;
             this.btnThemMatHangMoi.Location = new System.Drawing.Point(0, 0);
             this.btnThemMatHangMoi.Name = "btnThemMatHangMoi";
-            this.btnThemMatHangMoi.Size = new System.Drawing.Size(253, 78);
+            this.btnThemMatHangMoi.Size = new System.Drawing.Size(253, 67);
             this.btnThemMatHangMoi.TabIndex = 0;
             this.btnThemMatHangMoi.Text = "Thêm Mặt Hàng Mới";
             this.btnThemMatHangMoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -168,7 +169,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "UC_KhoHang";
-            this.Size = new System.Drawing.Size(994, 694);
+            this.Size = new System.Drawing.Size(1010, 662);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatHang)).EndInit();
             this.panel2.ResumeLayout(false);

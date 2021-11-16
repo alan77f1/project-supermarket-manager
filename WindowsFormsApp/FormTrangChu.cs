@@ -13,6 +13,8 @@ namespace WindowsFormsApp
     public partial class FormTrangChu : Form
     {
         //private string Taikhoan;
+
+
         public FormTrangChu()   // string Taikhoandn
         {
             InitializeComponent();
@@ -21,6 +23,7 @@ namespace WindowsFormsApp
             themUC(tc);
             phanQuyen();
             lbNguoiDung.Text = FormDangNhap.tenHienThi;
+
         }
 
         void phanQuyen()
@@ -47,58 +50,12 @@ namespace WindowsFormsApp
             panelDichuyen.Height = control.Height;
         }
 
-        private void btnDanhMuc_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void time_tick(object sender, EventArgs e)
-        {
-            DateTime dt = DateTime.Now;
-            lbTime.Text = dt.ToString("HH:MM:ss");
-        }
-
 
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
             diChuyenPanel(btnKhachHang);
             UC_KhachHang kh = new UC_KhachHang();
             themUC(kh);
-        }
-
-        private void btnX_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnDangnhap_Click(object sender, EventArgs e)
-        {
-            diChuyenPanel(btnTrangChu);
-            UC_TrangChu UC_TrangChu = new UC_TrangChu();
-            themUC(UC_TrangChu);
-        }
-
-        private void btnDangXuat_Click(object sender, EventArgs e)
-        {
-            FormDangNhap dn = new FormDangNhap();
-            dn.Show();
-            this.Hide();
-
-
-        }
-
-        private void btnThongke_Click(object sender, EventArgs e)
-        {
-            diChuyenPanel(btnThongKe);
-            UC_ThongKe tk = new UC_ThongKe();
-            themUC(tk);
-        }
-
-        private void btnNhanvien_Click(object sender, EventArgs e)
-        {
-            diChuyenPanel(btnNhanVien);
-            UC_NhanVien nv = new UC_NhanVien();
-            themUC(nv);
         }
 
         private void btnBanHang_Click(object sender, EventArgs e)
@@ -108,6 +65,35 @@ namespace WindowsFormsApp
             themUC(bh);
         }
 
+        private void btnNhanvien_Click(object sender, EventArgs e)
+        {
+            diChuyenPanel(btnNhanVien);
+            UC_NhanVien nv = new UC_NhanVien();
+            themUC(nv);
+        }
+
+        private void btnThongke_Click(object sender, EventArgs e)
+        {
+            diChuyenPanel(btnThongKe);
+            UC_ThongKe tk = new UC_ThongKe();
+            themUC(tk);
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnX_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void lblTime_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnKhoHang_Click(object sender, EventArgs e)
         {
             diChuyenPanel(btnBanHang);
@@ -115,11 +101,32 @@ namespace WindowsFormsApp
             themUC(kh);
         }
 
-        private void lbNguoiDung_Click(object sender, EventArgs e)
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {   
+            diChuyenPanel(btnTrangChu);
+            UC_TrangChu UC_TrangChu = new UC_TrangChu();
+            themUC(UC_TrangChu);
+        }
+
+        private void time_Tick(object sender, EventArgs e)
+        {
+            DateTime dt = DateTime.Now;
+            lbTime.Text = dt.ToString("HH:MM:ss");
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-    
+        private void panelControl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbNguoiDung_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
