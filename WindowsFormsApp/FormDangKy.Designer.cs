@@ -126,15 +126,15 @@ namespace WindowsFormsApp
             // 
             // btnLuu
             // 
-            this.btnLuu.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(66)))));
             this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLuu.FlatAppearance.BorderSize = 0;
             this.btnLuu.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Sitka Banner", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(555, 483);
+            this.btnLuu.Location = new System.Drawing.Point(548, 474);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Padding = new System.Windows.Forms.Padding(1);
@@ -260,15 +260,15 @@ namespace WindowsFormsApp
             // 
             // btnQuaylai
             // 
-            this.btnQuaylai.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnQuaylai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(66)))));
             this.btnQuaylai.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuaylai.FlatAppearance.BorderSize = 0;
             this.btnQuaylai.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.btnQuaylai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuaylai.Font = new System.Drawing.Font("Sitka Banner", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuaylai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnQuaylai.ForeColor = System.Drawing.Color.White;
             this.btnQuaylai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuaylai.Location = new System.Drawing.Point(69, 483);
+            this.btnQuaylai.Location = new System.Drawing.Point(51, 474);
             this.btnQuaylai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnQuaylai.Name = "btnQuaylai";
             this.btnQuaylai.Padding = new System.Windows.Forms.Padding(1);
