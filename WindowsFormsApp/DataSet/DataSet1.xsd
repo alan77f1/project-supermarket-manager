@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mapn" msprop:Generator_ColumnVarNameInTable="columnmapn" msprop:Generator_ColumnPropNameInRow="mapn" msprop:Generator_ColumnPropNameInTable="mapnColumn" msprop:Generator_UserColumnName="mapn" type="xs:string" minOccurs="0" />
+              <xs:element name="mamh" msprop:Generator_ColumnVarNameInTable="columnmamh" msprop:Generator_ColumnPropNameInRow="mamh" msprop:Generator_ColumnPropNameInTable="mamhColumn" msprop:Generator_UserColumnName="mamh" type="xs:string" minOccurs="0" />
+              <xs:element name="tenmh" msprop:Generator_ColumnVarNameInTable="columntenmh" msprop:Generator_ColumnPropNameInRow="tenmh" msprop:Generator_ColumnPropNameInTable="tenmhColumn" msprop:Generator_UserColumnName="tenmh" type="xs:string" minOccurs="0" />
+              <xs:element name="soluong" msprop:Generator_ColumnVarNameInTable="columnsoluong" msprop:Generator_ColumnPropNameInRow="soluong" msprop:Generator_ColumnPropNameInTable="soluongColumn" msprop:Generator_UserColumnName="soluong" type="xs:string" minOccurs="0" />
+              <xs:element name="dongia" msprop:Generator_ColumnVarNameInTable="columndongia" msprop:Generator_ColumnPropNameInRow="dongia" msprop:Generator_ColumnPropNameInTable="dongiaColumn" msprop:Generator_UserColumnName="dongia" type="xs:string" minOccurs="0" />
+              <xs:element name="manv" msprop:Generator_ColumnVarNameInTable="columnmanv" msprop:Generator_ColumnPropNameInRow="manv" msprop:Generator_ColumnPropNameInTable="manvColumn" msprop:Generator_UserColumnName="manv" type="xs:string" minOccurs="0" />
+              <xs:element name="tenhienthi" msprop:Generator_ColumnVarNameInTable="columntenhienthi" msprop:Generator_ColumnPropNameInRow="tenhienthi" msprop:Generator_ColumnPropNameInTable="tenhienthiColumn" msprop:Generator_UserColumnName="tenhienthi" type="xs:string" minOccurs="0" />
+              <xs:element name="quyen" msprop:Generator_ColumnVarNameInTable="columnquyen" msprop:Generator_ColumnPropNameInRow="quyen" msprop:Generator_ColumnPropNameInTable="quyenColumn" msprop:Generator_UserColumnName="quyen" type="xs:string" minOccurs="0" />
+              <xs:element name="mancc" msprop:Generator_ColumnVarNameInTable="columnmancc" msprop:Generator_ColumnPropNameInRow="mancc" msprop:Generator_ColumnPropNameInTable="manccColumn" msprop:Generator_UserColumnName="mancc" type="xs:string" minOccurs="0" />
+              <xs:element name="tenncc" msprop:Generator_ColumnVarNameInTable="columntenncc" msprop:Generator_ColumnPropNameInRow="tenncc" msprop:Generator_ColumnPropNameInTable="tennccColumn" msprop:Generator_UserColumnName="tenncc" type="xs:string" minOccurs="0" />
+              <xs:element name="ngaynhap" msprop:Generator_ColumnVarNameInTable="columnngaynhap" msprop:Generator_ColumnPropNameInRow="ngaynhap" msprop:Generator_ColumnPropNameInTable="ngaynhapColumn" msprop:Generator_UserColumnName="ngaynhap" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

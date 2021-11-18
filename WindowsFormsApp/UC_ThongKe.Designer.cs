@@ -29,8 +29,6 @@ namespace WindowsFormsApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.pnlThongke = new System.Windows.Forms.Panel();
             this.pnlButton = new System.Windows.Forms.Panel();
             this.pnldichuyenphieunhap = new System.Windows.Forms.Panel();
             this.btnphieunhap = new System.Windows.Forms.Button();
@@ -40,25 +38,11 @@ namespace WindowsFormsApp
             this.pnldichuyenkhachhang = new System.Windows.Forms.Panel();
             this.pnldichuyenhoadon = new System.Windows.Forms.Panel();
             this.pnldichuyenHanghoa = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.pnlThongke.SuspendLayout();
+            this.pnlTK = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlThongke = new System.Windows.Forms.Panel();
             this.pnlButton.SuspendLayout();
+            this.pnlThongke.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnlThongke
-            // 
-            this.pnlThongke.Controls.Add(this.pnlButton);
-            this.pnlThongke.Controls.Add(this.flowLayoutPanel1);
-            this.pnlThongke.Location = new System.Drawing.Point(0, -82);
-            this.pnlThongke.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlThongke.Name = "pnlThongke";
-            this.pnlThongke.Size = new System.Drawing.Size(1010, 662);
-            this.pnlThongke.TabIndex = 22;
             // 
             // pnlButton
             // 
@@ -71,12 +55,12 @@ namespace WindowsFormsApp
             this.pnlButton.Controls.Add(this.pnldichuyenkhachhang);
             this.pnlButton.Controls.Add(this.pnldichuyenhoadon);
             this.pnlButton.Controls.Add(this.pnldichuyenHanghoa);
-            this.pnlButton.Location = new System.Drawing.Point(3, 84);
-            this.pnlButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlButton.Location = new System.Drawing.Point(0, 0);
+            this.pnlButton.Margin = new System.Windows.Forms.Padding(4);
             this.pnlButton.Name = "pnlButton";
-            this.pnlButton.Size = new System.Drawing.Size(974, 81);
+            this.pnlButton.Size = new System.Drawing.Size(1010, 85);
             this.pnlButton.TabIndex = 23;
-            this.pnlButton.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlButton_Paint);
             // 
             // pnldichuyenphieunhap
             // 
@@ -200,71 +184,51 @@ namespace WindowsFormsApp
             this.pnldichuyenHanghoa.Size = new System.Drawing.Size(130, 2);
             this.pnldichuyenHanghoa.TabIndex = 5;
             // 
-            // flowLayoutPanel1
+            // pnlTK
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 183);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(949, 456);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.pnlTK.BackColor = System.Drawing.Color.White;
+            this.pnlTK.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlTK.Location = new System.Drawing.Point(0, 89);
+            this.pnlTK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlTK.Name = "pnlTK";
+            this.pnlTK.Size = new System.Drawing.Size(1010, 573);
+            this.pnlTK.TabIndex = 0;
             // 
-            // guna2Elipse1
+            // pnlThongke
             // 
-            this.guna2Elipse1.BorderRadius = 15;
-            this.guna2Elipse1.TargetControl = this.pnlButton;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 15;
-            this.guna2Elipse2.TargetControl = this.btnHanghoa;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.BorderRadius = 15;
-            this.guna2Elipse3.TargetControl = this.btnHoadon;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.BorderRadius = 15;
-            this.guna2Elipse4.TargetControl = this.btnKhachhang;
-            // 
-            // guna2Elipse5
-            // 
-            this.guna2Elipse5.BorderRadius = 15;
-            this.guna2Elipse5.TargetControl = this.btnphieunhap;
+            this.pnlThongke.Controls.Add(this.pnlButton);
+            this.pnlThongke.Controls.Add(this.pnlTK);
+            this.pnlThongke.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlThongke.Location = new System.Drawing.Point(0, 0);
+            this.pnlThongke.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlThongke.Name = "pnlThongke";
+            this.pnlThongke.Size = new System.Drawing.Size(1010, 662);
+            this.pnlThongke.TabIndex = 22;
             // 
             // UC_ThongKe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pnlThongke);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC_ThongKe";
-            this.Size = new System.Drawing.Size(990, 690);
-            this.pnlThongke.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(1010, 662);
             this.pnlButton.ResumeLayout(false);
+            this.pnlThongke.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnHanghoa;
-        private System.Windows.Forms.Panel pnlThongke;
-        private System.Windows.Forms.Button btnHoadon;
-        private System.Windows.Forms.Button btnKhachhang;
-        private System.Windows.Forms.Button btnphieunhap;
         private System.Windows.Forms.Panel pnlButton;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private System.Windows.Forms.Panel pnldichuyenphieunhap;
+        private System.Windows.Forms.Button btnphieunhap;
+        private System.Windows.Forms.Button btnKhachhang;
+        private System.Windows.Forms.Button btnHanghoa;
+        private System.Windows.Forms.Button btnHoadon;
         private System.Windows.Forms.Panel pnldichuyenkhachhang;
         private System.Windows.Forms.Panel pnldichuyenhoadon;
         private System.Windows.Forms.Panel pnldichuyenHanghoa;
+        private System.Windows.Forms.FlowLayoutPanel pnlTK;
+        private System.Windows.Forms.Panel pnlThongke;
     }
 }

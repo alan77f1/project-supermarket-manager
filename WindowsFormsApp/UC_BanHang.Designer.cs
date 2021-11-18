@@ -172,9 +172,9 @@
             this.panelRight.Controls.Add(this.txtTenKH);
             this.panelRight.Controls.Add(this.lvSanPhamBan);
             this.panelRight.Controls.Add(this.panel4);
-            this.panelRight.Location = new System.Drawing.Point(485, 65);
+            this.panelRight.Location = new System.Drawing.Point(485, 56);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(522, 597);
+            this.panelRight.Size = new System.Drawing.Size(522, 606);
             this.panelRight.TabIndex = 8;
             // 
             // btnThemMoiKH
@@ -183,7 +183,7 @@
             this.btnThemMoiKH.AutoSize = true;
             this.btnThemMoiKH.BackColor = System.Drawing.Color.SeaGreen;
             this.btnThemMoiKH.ForeColor = System.Drawing.Color.White;
-            this.btnThemMoiKH.Location = new System.Drawing.Point(415, 11);
+            this.btnThemMoiKH.Location = new System.Drawing.Point(441, 26);
             this.btnThemMoiKH.Name = "btnThemMoiKH";
             this.btnThemMoiKH.Size = new System.Drawing.Size(35, 33);
             this.btnThemMoiKH.TabIndex = 10;
@@ -198,7 +198,7 @@
             this.txtSDT.Location = new System.Drawing.Point(147, 27);
             this.txtSDT.MaxLength = 10;
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(225, 32);
+            this.txtSDT.Size = new System.Drawing.Size(273, 32);
             this.txtSDT.TabIndex = 9;
             this.txtSDT.TextChanged += new System.EventHandler(this.txtInPutNumberPhone_TextChanged_1);
             // 
@@ -207,7 +207,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(22, 46);
+            this.label4.Location = new System.Drawing.Point(24, 31);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 23);
             this.label4.TabIndex = 8;

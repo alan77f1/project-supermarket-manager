@@ -189,6 +189,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\Chuoiketnoi.cs" />
     <Compile Include="DAO\ChuyenDoiTien.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\QuanLyChiTietHD.cs" />
@@ -198,6 +199,11 @@
     <Compile Include="DAO\QuanLyNhaCC.cs" />
     <Compile Include="DAO\QuanLyNhanVien.cs" />
     <Compile Include="DAO\QuanLySanPham.cs" />
+    <Compile Include="DataSet\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,6 +263,12 @@
     </Compile>
     <Compile Include="FormTrangChu.Designer.cs">
       <DependentUpon>FormTrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportThongKe.Designer.cs">
+      <DependentUpon>FormReportThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\CaLamViec.cs" />
     <Compile Include="Models\ChiTietCLV.cs" />
@@ -381,6 +393,9 @@
     <EmbeddedResource Include="FormReport.resx">
       <DependentUpon>FormReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSDT.resx">
+      <DependentUpon>FormSDT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormThemCaLamViec.resx">
       <DependentUpon>FormThemCaLamViec.cs</DependentUpon>
     </EmbeddedResource>
@@ -393,10 +408,14 @@
     <EmbeddedResource Include="FormTrangChu.resx">
       <DependentUpon>FormTrangChu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormReportThongKe.resx">
+      <DependentUpon>FormReportThongKe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportXemchitietphieunhap.rdlc" />
     <EmbeddedResource Include="UC_BanHang.resx">
       <DependentUpon>UC_BanHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -439,6 +458,17 @@
     <EmbeddedResource Include="UC_XacNhanSDT.resx">
       <DependentUpon>UC_XacNhanSDT.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSet\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

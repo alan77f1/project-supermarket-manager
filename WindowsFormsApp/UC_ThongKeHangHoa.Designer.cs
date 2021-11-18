@@ -29,56 +29,49 @@ namespace WindowsFormsApp
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvThongkehh = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnTangTon = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTimkiemhanghoa = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnQuaylai = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongkehh)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Banner", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(361, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 78);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "THỐNG KÊ HÀNG HÓA\r\n\r\n";
             // 
             // dgvThongkehh
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvThongkehh.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvThongkehh.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvThongkehh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvThongkehh.BackgroundColor = System.Drawing.Color.White;
             this.dgvThongkehh.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvThongkehh.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvThongkehh.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvThongkehh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvThongkehh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvThongkehh.ColumnHeadersHeight = 35;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvThongkehh.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvThongkehh.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvThongkehh.EnableHeadersVisualStyles = false;
             this.dgvThongkehh.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvThongkehh.Location = new System.Drawing.Point(22, 74);
+            this.dgvThongkehh.Location = new System.Drawing.Point(16, 123);
             this.dgvThongkehh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvThongkehh.Name = "dgvThongkehh";
             this.dgvThongkehh.ReadOnly = true;
@@ -86,7 +79,7 @@ namespace WindowsFormsApp
             this.dgvThongkehh.RowHeadersWidth = 62;
             this.dgvThongkehh.RowTemplate.Height = 28;
             this.dgvThongkehh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvThongkehh.Size = new System.Drawing.Size(947, 539);
+            this.dgvThongkehh.Size = new System.Drawing.Size(979, 458);
             this.dgvThongkehh.TabIndex = 2;
             this.dgvThongkehh.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvThongkehh.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -134,7 +127,7 @@ namespace WindowsFormsApp
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(17, 629);
+            this.label7.Location = new System.Drawing.Point(20, 75);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 29);
             this.label7.TabIndex = 20;
@@ -144,7 +137,6 @@ namespace WindowsFormsApp
             // 
             this.txtTimkiemhanghoa.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.txtTimkiemhanghoa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTimkiemhanghoa.BorderThickness = 2;
             this.txtTimkiemhanghoa.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTimkiemhanghoa.DefaultText = "";
             this.txtTimkiemhanghoa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -155,46 +147,92 @@ namespace WindowsFormsApp
             this.txtTimkiemhanghoa.FillColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtTimkiemhanghoa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTimkiemhanghoa.FocusedState.Parent = this.txtTimkiemhanghoa;
-            this.txtTimkiemhanghoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimkiemhanghoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtTimkiemhanghoa.ForeColor = System.Drawing.Color.Black;
             this.txtTimkiemhanghoa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimkiemhanghoa.HoverState.Parent = this.txtTimkiemhanghoa;
-            this.txtTimkiemhanghoa.Location = new System.Drawing.Point(121, 618);
+            this.txtTimkiemhanghoa.Location = new System.Drawing.Point(114, 64);
             this.txtTimkiemhanghoa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTimkiemhanghoa.Name = "txtTimkiemhanghoa";
             this.txtTimkiemhanghoa.PasswordChar = '\0';
             this.txtTimkiemhanghoa.PlaceholderText = "";
             this.txtTimkiemhanghoa.SelectedText = "";
             this.txtTimkiemhanghoa.ShadowDecoration.Parent = this.txtTimkiemhanghoa;
-            this.txtTimkiemhanghoa.Size = new System.Drawing.Size(372, 40);
+            this.txtTimkiemhanghoa.Size = new System.Drawing.Size(305, 40);
             this.txtTimkiemhanghoa.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTimkiemhanghoa.TabIndex = 19;
+            this.txtTimkiemhanghoa.TextChanged += new System.EventHandler(this.txtTimkiemhanghoa_TextChanged);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1013, 62);
+            this.panel2.TabIndex = 185;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(332, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(284, 40);
+            this.label4.TabIndex = 226;
+            this.label4.Text = "THỐNG KÊ HÀNG HÓA";
+            // 
+            // btnQuaylai
+            // 
+            this.btnQuaylai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(66)))));
+            this.btnQuaylai.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuaylai.FlatAppearance.BorderSize = 0;
+            this.btnQuaylai.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnQuaylai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuaylai.Font = new System.Drawing.Font("Sitka Banner", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuaylai.ForeColor = System.Drawing.Color.White;
+            this.btnQuaylai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuaylai.Location = new System.Drawing.Point(829, 585);
+            this.btnQuaylai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnQuaylai.Name = "btnQuaylai";
+            this.btnQuaylai.Padding = new System.Windows.Forms.Padding(1);
+            this.btnQuaylai.Size = new System.Drawing.Size(166, 58);
+            this.btnQuaylai.TabIndex = 186;
+            this.btnQuaylai.Text = "  Quay lại";
+            this.btnQuaylai.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuaylai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQuaylai.UseVisualStyleBackColor = false;
+            this.btnQuaylai.Click += new System.EventHandler(this.btnQuaylai_Click);
             // 
             // UC_ThongKeHangHoa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Controls.Add(this.btnQuaylai);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtTimkiemhanghoa);
             this.Controls.Add(this.btnTangTon);
             this.Controls.Add(this.dgvThongkehh);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKeHangHoa";
-            this.Size = new System.Drawing.Size(990, 690);
+            this.Size = new System.Drawing.Size(1010, 662);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongkehh)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvThongkehh;
         private System.Windows.Forms.Button btnTangTon;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txtTimkiemhanghoa;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnQuaylai;
     }
 }

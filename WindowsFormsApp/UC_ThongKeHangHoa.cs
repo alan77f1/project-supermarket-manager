@@ -7,29 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-namespace WindowsFormsApp
-{
-    public partial class UC_ThongKeHangHoa : UserControl
-    {
-        public UC_ThongKeHangHoa()
-        {
-            InitializeComponent();
-        }
-    }
-}
-
-
-/*
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using WindowsFormsApp.DAO;
 
 namespace WindowsFormsApp
 {
@@ -40,33 +18,34 @@ namespace WindowsFormsApp
             InitializeComponent();
             Hienthi();
         }
-        BLL bll = new BLL();
+
 
         private void Hienthi()
         {
-            string query = "select Chitiethd.Mahh AS [Mã hàng hóa],Hanghoa.Tenhh AS [Tên hàng hóa],Hanghoa.Dongia AS [Đơn giá],(Chitietpn.Soluong - Hanghoa.Soluong) AS [Số lượng đã bán],Hanghoa.Soluong AS [Số lượng hàng tồn],Chitietpn.Soluong AS [Số lượng nhập],ĐVT AS [Đơn vị tính] from Hanghoa inner join Chitiethd on Hanghoa.Mahh = Chitiethd.Mahh inner join Chitietpn on Chitietpn.Mahh = Chitiethd.Mahh group by Chitiethd.Mahh, Hanghoa.Tenhh, Hanghoa.Dongia, Hanghoa.Soluong, Chitietpn.Soluong, ĐVT";
-            DataTable dt = bll.ExcuQuery(query);
+            string query = "USP_TKhanghoa";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             dgvThongkehh.DataSource = dt;
         }
 
-        private void btnTangTon_Click(object sender, EventArgs e)
-        {
-            string query1 = "select Chitiethd.Mahh AS [Mã hàng hóa],Hanghoa.Tenhh AS [Tên hàng hóa],Hanghoa.Dongia AS [Đơn giá],(Chitietpn.Soluong - Hanghoa.Soluong) AS [Số lượng đã bán],Hanghoa.Soluong AS [Số lượng hàng tồn],Chitietpn.Soluong AS [Số lượng nhập],ĐVT AS [Đơn vị tính] from Hanghoa inner join Chitiethd on Hanghoa.Mahh = Chitiethd.Mahh inner join Chitietpn on Chitietpn.Mahh = Chitiethd.Mahh group by Chitiethd.Mahh, Hanghoa.Tenhh, Hanghoa.Dongia, Hanghoa.Soluong, Chitietpn.Soluong, ĐVT order by Hanghoa.Soluong asc";
-            DataTable dt = bll.ExcuQuery(query1);
-            dgvThongkehh.DataSource = dt;
-        }
 
-        private void txtTimkiem_TextChanged(object sender, EventArgs e)
+        private void txtTimkiemhanghoa_TextChanged(object sender, EventArgs e)
         {
             string tk = txtTimkiemhanghoa.Text;
-            string query2 = "select Chitiethd.Mahh AS [Mã hàng hóa],Hanghoa.Tenhh AS [Tên hàng hóa],Hanghoa.Dongia AS [Đơn giá],(Chitietpn.Soluong - Hanghoa.Soluong) AS [Số lượng đã bán],Hanghoa.Soluong AS [Số lượng hàng tồn],Chitietpn.Soluong AS [Số lượng nhập],ĐVT AS [Đơn vị tính] from Hanghoa inner join Chitiethd on Hanghoa.Mahh = Chitiethd.Mahh inner join Chitietpn on Chitietpn.Mahh = Chitiethd.Mahh where Chitiethd.Mahh like '%" + tk + "%' or Hanghoa.Tenhh like N'%" + tk + "%' group by Chitiethd.Mahh, Hanghoa.Tenhh, Hanghoa.Dongia, Hanghoa.Soluong, Chitietpn.Soluong, ĐVT";
+            string query = "select MatHang.MaMH as [Mã hàng hóa],MatHang.TenMH as [Tên hàng hóa],DonViTinh.TenDVT as [Đơn vị tính],sum(ChitietPN.Soluong) as [Số lượng nhập],MatHang.SoLuong as [Số lượng tồn], (sum(ChitietPN.Soluong) - MatHang.SoLuong) as [Số lượng bán],MatHang.GiaBan as [Giá bán] from MatHang inner join ChiTietPN on MatHang.MaMH = ChiTietPN.MaMH inner join DonViTinh on DonViTinh.MaDVT = MatHang.DonVi where MatHang.TenMH like N'%" + tk + "%' or MatHang.MaMH like '%" + tk + "%'  group by MatHang.MaMH,MatHang.SoLuong,MatHang.TenMH,MatHang.DonVi,DonViTinh.TenDVT,MatHang.GiaBan";
             if (!string.IsNullOrEmpty(txtTimkiemhanghoa.Text))
             {
-                DataTable dt = bll.ExecuteTimkiem(tk, query2);
+                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
                 dgvThongkehh.DataSource = dt;
             }
             else
                 Hienthi();
         }
+
+        private void btnQuaylai_Click(object sender, EventArgs e)
+        {
+            UC_ThongKe tk = new UC_ThongKe();
+            tk.Show();
+            this.Hide();
+        }
     }
-}*/
+}

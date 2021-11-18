@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp.DAO;
 
 namespace WindowsFormsApp
 {
@@ -16,88 +17,47 @@ namespace WindowsFormsApp
         public UC_ThongKePhieuNhap()
         {
             InitializeComponent();
-        }
-    }
-}
-
-/*
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace WindowsFormsApp
-{
-    public partial class UC_ThongKePhieuNhap : UserControl
-    {
-        public UC_ThongKePhieuNhap()
-        {
-
-            InitializeComponent();
-            txtTien.ReadOnly = true;
             Hienthi();
-
         }
 
-
-        BLL bll = new BLL();
         private void Hienthi()
         {
-            string query = "select Chitietpn.Mapn as [Mã phiếu nhập],Tenhh as [Tên hàng hóa],Chitietpn.Soluong as [Số lượng nhập],Chitietpn.Dongia as [Đơn giá nhập],Ngaynhap as [Ngày nhập],Tenncc as [Nhà cung cấp],Tenk as [Tên kho], (Chitietpn.Dongia * Chitietpn.Soluong) as [Tổng tiền] from Phieunhap, Chitietpn, Hanghoa, Nhacungcap, Khohang where Phieunhap.Mapn = Chitietpn.Mapn and Chitietpn.Mahh = Hanghoa.Mahh and Phieunhap.Mancc = Nhacungcap.Mancc and Khohang.Mak = Phieunhap.Mak ";
-            DataTable dt = bll.ExcuQuery(query);
+            string query = "USP_tkPhieunhap";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             dgvThongkepn.DataSource = dt;
-            txtmapn.ForeColor = Color.Brown;
-            txtTien.ForeColor = Color.Brown;
-        }
-
-
-        private void Tongtien(string mapn)
-        {
-            try
-            {
-                int Tongtien = 0;
-                string query = "select Sum(Soluong * Dongia) as [Tongtien] from Chitietpn where Mapn = '" + mapn + "'";
-                DataTable dt = bll.ExcuQuery(query);
-                string tien = dt.Rows[0]["Tongtien"].ToString();
-                Tongtien = Int32.Parse(tien);
-                //txtTien.Text = dt.Rows[0]["Tongtien"].ToString();
-                txtTien.Text = txtmapn.Text + " tổng tiền nhập hàng là:  " + string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", Tongtien) + " VNĐ";
-            }
-            catch (Exception)
-            {
-                txtTien.Text = "Vui lòng nhập đúng mã phiếu nhập";
-                txtTien.ForeColor = Color.Brown;
-            }
-        }
-
-
-
-        private void btnCong_Click(object sender, EventArgs e)
-        {
-            string mapn = txtmapn.Text;
-            Tongtien(mapn);
-            txtmapn.Text = "";
         }
 
         private void txtTimkiemphieunhap_TextChanged(object sender, EventArgs e)
         {
             string tk = txtTimkiemphieunhap.Text;
-            string query = "select Chitietpn.Mapn as [Mã phiếu nhập],Tenhh as [Tên hàng hóa],Chitietpn.Soluong as [Số lượng nhập],Chitietpn.Dongia as [Đơn giá nhập],Ngaynhap as [Ngày nhập],Tenncc as [Nhà cung cấp],Tenk as [Tên kho], (Chitietpn.Dongia * Chitietpn.Soluong) as [Tổng tiền] from Phieunhap, Chitietpn, Hanghoa, Nhacungcap, Khohang where Phieunhap.Mapn = Chitietpn.Mapn and Chitietpn.Mahh = Hanghoa.Mahh and Phieunhap.Mancc = Nhacungcap.Mancc and Khohang.Mak = Phieunhap.Mak  and Hanghoa.Tenhh like N'%" + tk + "%";
+            string query = "select MaPN as [Mã phiểu nhập], NgayNhap as[ Ngày nhập hàng],TenNCC as [Nhà cung cấp],TenHienThi as [Nhân viên nhập] from PhieuNhap inner join NhaCungCap on PhieuNhap.MaNCC = NhaCungCap.MaNCC inner join NhanVien on PhieuNhap.MaNV = NhanVien.MaNV where MaPN like '%"+tk+"%' or TenNCC like N'%"+tk+ "%' or TenHienThi like N'%" + tk + "%' ";
             if (!string.IsNullOrEmpty(txtTimkiemphieunhap.Text))
             {
-                DataTable dt = bll.ExecuteTimkiem(tk, query);
+                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
                 dgvThongkepn.DataSource = dt;
             }
             else
                 Hienthi();
         }
+
+        private void dgvThongkepn_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index;
+            index = e.RowIndex;
+            txtmapn.Text = dgvThongkepn.Rows[index].Cells[0].Value.ToString();
+        }
+
+        private void btnXemchitietpn_Click(object sender, EventArgs e)
+        {
+            FormReportThongKe formXemchitietphieunhap = new FormReportThongKe(txtmapn.Text);
+            formXemchitietphieunhap.Show();
+        }
+
+        private void btnQuaylai_Click(object sender, EventArgs e)
+        {
+            UC_ThongKe tk = new UC_ThongKe();
+            tk.Show();
+            this.Hide();
+        }
     }
 }
-
-*/

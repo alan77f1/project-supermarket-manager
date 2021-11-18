@@ -74,5 +74,24 @@ namespace WindowsFormsApp.DAO
             maNVnext = data["MaNV"].ToString();
             return maNVnext;
         }
+
+
+        public bool themNV(string maNV, string tenNV,string Gioitinh, string DiaChi, string SDT, string Tendangnhap, string Matkhau)
+        {   
+            
+            string query = String.Format("insert into NhanVien(MaNV,TenHienThi,GioiTinh,DiaChi,SDT,TenDangNhap,MatKhau) values  ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", maNV,tenNV,Gioitinh, DiaChi,SDT,Tendangnhap,Matkhau);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
+
+
+        public bool capnhatmk(string mk, string sdt)
+        {
+            string query = String.Format("update NhanVien set MatKhau = '{0}' where SDT = '{1}'",mk,sdt);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
+
+
     }
 }

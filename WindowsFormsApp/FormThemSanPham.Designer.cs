@@ -69,7 +69,7 @@
             // 
             this.dgvDanhSachHHNhap.BackgroundColor = System.Drawing.Color.White;
             this.dgvDanhSachHHNhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDanhSachHHNhap.Location = new System.Drawing.Point(0, 283);
+            this.dgvDanhSachHHNhap.Location = new System.Drawing.Point(12, 277);
             this.dgvDanhSachHHNhap.Name = "dgvDanhSachHHNhap";
             this.dgvDanhSachHHNhap.RowHeadersWidth = 51;
             this.dgvDanhSachHHNhap.RowTemplate.Height = 24;

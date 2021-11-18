@@ -118,5 +118,30 @@ namespace WindowsFormsApp.DAO
 
             return data;
         }
+
+
+
+
+        //
+        // THỐNG KÊ 3 THAM SỐ
+        //
+        Chuoiketnoi chuoiketnoi = new Chuoiketnoi();
+        public DataTable Thongkehoadon(DateTime ngaybd, DateTime ngaykt, string query)
+        {
+            SqlConnection con = chuoiketnoi.sqlConnection();
+            con.Open();
+            SqlDataAdapter dta = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            dta.Fill(dt);
+            con.Close();
+            return dt;
+        }
+
+
+
+        
+
+
+
     }
 }
