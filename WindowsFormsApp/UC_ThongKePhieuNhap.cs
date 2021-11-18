@@ -19,6 +19,7 @@ namespace WindowsFormsApp
             InitializeComponent();
             Hienthi();
         }
+ 
 
         private void Hienthi()
         {
