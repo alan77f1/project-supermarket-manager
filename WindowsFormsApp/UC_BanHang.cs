@@ -20,7 +20,7 @@ namespace WindowsFormsApp
         public UC_BanHang()
         {
             InitializeComponent();
-            list = QuanLyMatHang.Intance.getListSanPham();
+            list = MatHangDAO.Intance.getListSanPham();
             AutoCompleteStringCollection arrName = new AutoCompleteStringCollection();
             foreach (Models.MatHang item in list)
             {

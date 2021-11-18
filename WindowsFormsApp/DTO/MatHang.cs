@@ -25,9 +25,9 @@ namespace WindowsFormsApp.Models
         [StringLength(50)]
         public string TenMH { get; set; }
 
-        [Required]
+       /* [Required]
         [StringLength(20)]
-        public string LoaiMH { get; set; }
+        public string LoaiMH { get; set; }*/
 
         [Required]
         [StringLength(10)]
@@ -52,9 +52,10 @@ namespace WindowsFormsApp.Models
         {
             this.MaMH = row["MaMH"].ToString();
             this.TenMH = row["TenMH"].ToString();
-            this.SoLuong = (int)row["SoLuong"];
-            this.GiaBan = (int)row["GiaBan"];
             this.DonVi = row["DonVi"].ToString();
+            this.GiaBan = (int)row["GiaBan"];
+            this.SoLuong = (int)row["SoLuong"];
+            this.GiaGoc = int.Parse(row["GiaGoc"].ToString());
         }
     }
 }

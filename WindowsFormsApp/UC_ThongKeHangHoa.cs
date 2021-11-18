@@ -22,7 +22,7 @@ namespace WindowsFormsApp
 
         private void Hienthi()
         {
-            string query = "USP_TKhanghoa";
+            string query = "USP_TKMatHang";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             dgvThongkehh.DataSource = dt;
         }
