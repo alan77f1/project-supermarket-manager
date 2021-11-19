@@ -7,33 +7,71 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp.DAO;
 
 namespace WindowsFormsApp
 {
     public partial class FormTrangChu : Form
     {
-      
-        public FormTrangChu()
+        private string tk;
+        public FormTrangChu(string tk)  // string tk
         {
             InitializeComponent();
             /*hiển thị trang chủ*/
             UC_TrangChu tc = new UC_TrangChu();
             themUC(tc);
-            PhanQuyen();
-            lbNguoiDung.Text = FormDangNhap.tenHienThi;
+            this.tk = tk;
+            lbNguoiDung.Text = tk;
+            Phanquyen();
+
+            TTnguoiban();
+                
+
 
         }
 
 
-        void PhanQuyen()
+        private void TTnguoiban()
         {
-            if (FormDangNhap.quyen != "admin")
+            string name = lbNguoiDung.Text;
+            string query = "select MaNV,TenHienThi from Nhanvien where TenDangNhap = '" + tk + "'";
+            if (!string.IsNullOrEmpty(lbNguoiDung.Text))
             {
-                btnNCC.Enabled = false;
-                btnKhoHang.Enabled = false;
-                btnNhanVien.Enabled = false;
+                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+                lblManv.Text = dt.Rows[0]["MaNV"].ToString();
+                lblTennv.Text = dt.Rows[0]["TenHienThi"].ToString();
             }
         }
+        private void Phanquyen()
+        {
+
+            string Name = lbNguoiDung.Text;
+            string query = "select Quyen as [Quyen] from NhanVien where TenDangNhap = N'" + Name + "'";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            lblQuyen.Text = dt.Rows[0]["Quyen"].ToString();
+
+            if (lblQuyen.Text == "Quản lý")
+            {
+
+            }
+            else if (lblQuyen.Text == "Thủ kho")
+            {
+                btnTrangChu.Enabled = false;
+                btnKhachHang.Enabled = false;
+                btnNhanVien.Enabled = false;
+                btnThongKe.Enabled = false;
+                btnBanHang.Enabled = false;
+            }
+            else if (lblQuyen.Text == "Bán hàng")
+            {
+                btnNhanVien.Enabled = false;
+                btnThongKe.Enabled = false;
+                btnKhoHang.Enabled = false;
+                btnNCC.Enabled = false;
+            }
+
+        }
+      
         private void themUC(Control uc)
         {
             uc.Dock = DockStyle.Fill;
@@ -83,7 +121,7 @@ namespace WindowsFormsApp
         private void btnBanHang_Click(object sender, EventArgs e)
         {
             movesidePannel(btnBanHang);
-            UC_BanHang bh = new UC_BanHang();
+            UC_BanHang bh = new UC_BanHang(lblManv.Text,lblTennv.Text);
             addControlsToPanel(bh);
         }
 
@@ -110,7 +148,9 @@ namespace WindowsFormsApp
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            FormDangNhap dn = new FormDangNhap();
+            dn.Show();
+            this.Hide();
         }
 
         private void btnTrangChu_Click(object sender, EventArgs e)

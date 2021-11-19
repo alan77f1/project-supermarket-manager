@@ -18,7 +18,7 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
         }
-        
+
 
         public static string tenHienThi, quyen;
 
@@ -69,65 +69,14 @@ namespace WindowsFormsApp
         }
 
 
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
-        {
-            string TenDangNhap = txtTenDangNhap.Text;
-            string passWord = txtMatKhau.Text;
-            if (Login(TenDangNhap, passWord))
-            {
-               /* tenNgDung = QuanLyNhanVien.Intance.getNVByID(TenDangNhap).TenNguoiDung;*/
-                quyen = QuanLyNhanVien.Intance.getNVByID(TenDangNhap).Quyen;
-                FormTrangChu f = new FormTrangChu();
-                this.Hide();
-                f.ShowDialog();
-                this.Show();
-            }
-            else
-            {
-                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
-            }
-        }
+
 
         bool Login(string userName, string passWord)
         {
             return QuanLyNhanVien.Intance.Login(userName, passWord);
         }
 
-        private void lblAmind_Click_1(object sender, EventArgs e)
-        {
-            /*string tenDangNhap = txtTenDangNhap.Text;
-            string passWord = txtMatKhau.Text;
-            if (Login(tenDangNhap, passWord))
-            {
-                tenNgDung = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).TenHienThi;
-                quyen = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).Quyen;
-                UC_TrangChu f = new UC_TrangChu();
-                this.Hide();
-                f.ShowDialog();
-                this.Show();
-            }
-            else
-            {
-                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
-            }*/
 
-            if (check_data() == true)
-            {
-                string tenDangNhap = txtTenDangNhap.Text;
-                string passWord = txtMatKhau.Text;
-                if (Login(tenDangNhap, passWord))
-                {
-                    tenHienThi = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).TenHienThi;
-                    quyen = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).Quyen;
-                    FormTrangChu f = new FormTrangChu();
-                    f.Show();
-                    this.Hide();
-                }
-                else
-                    lblCanhbao.Text = "Sai tài khoản hoặc mật khẩu. Lưu ý đăng nhập là nhà quản lý!";
-                lblCanhbao.ForeColor = Color.Brown;
-            }
-        }
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
@@ -147,6 +96,26 @@ namespace WindowsFormsApp
         private void lblThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            if (check_data() == true)
+            {
+                string tenDangNhap = txtTenDangNhap.Text;
+                string passWord = txtMatKhau.Text;
+                if (Login(tenDangNhap, passWord))
+                {
+                    tenHienThi = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).TenHienThi;
+                    quyen = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).Quyen;
+                    FormTrangChu f = new FormTrangChu(txtTenDangNhap.Text); // txtTenDangNhap.Text
+                    f.Show();
+                    this.Hide();
+                }
+                else
+                    lblCanhbao.Text = "Sai tài khoản hoặc mật khẩu!";
+                lblCanhbao.ForeColor = Color.Brown;
+            }
         }
 
         private void btnX_Click(object sender, EventArgs e)
