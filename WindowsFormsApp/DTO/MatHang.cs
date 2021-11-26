@@ -54,8 +54,8 @@ namespace WindowsFormsApp.Models
             this.TenMH = row["TenMH"].ToString();
             this.DonVi = row["DonVi"].ToString();
             this.GiaBan = (int)row["GiaBan"];
-            /*this.SoLuong = (int)row["SoLuong"];
-            this.GiaGoc = int.Parse(row["GiaGoc"].ToString());*/
+            this.SoLuong = (int)row["SoLuong"];
+            
         }
     }
 }

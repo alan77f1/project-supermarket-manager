@@ -36,7 +36,6 @@ namespace WindowsFormsApp
             dgvHangHoa.Columns[0].HeaderText = "Mã Mặt Hàng";
             dgvHangHoa.Columns["DonVi"].HeaderText = "Đơn Vị Tính";
             dgvHangHoa.Columns["SoLuong"].HeaderText = "Số Lượng";
-            dgvHangHoa.Columns["GiaGoc"].HeaderText = "Giá Gốc";
             dgvHangHoa.Columns["GiaBan"].HeaderText = "Giá Bán";
             dgvHangHoa.Columns[1].HeaderText = "Tên Mặt Hàng";
 
