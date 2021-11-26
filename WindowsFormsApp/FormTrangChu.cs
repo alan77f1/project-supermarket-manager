@@ -21,13 +21,11 @@ namespace WindowsFormsApp
             UC_TrangChu tc = new UC_TrangChu();
             themUC(tc);
             this.tk = tk;
-            lbNguoiDung.Text = tk;
+            lblNguoidung.Text = tk;
             Phanquyen();
 
             TTnguoiban();
                 
-
-
         }
 
 
@@ -45,7 +43,7 @@ namespace WindowsFormsApp
         private void Phanquyen()
         {
 
-            string Name = lbNguoiDung.Text;
+            string Name = lblNguoidung.Text;
             string query = "select Quyen as [Quyen] from NhanVien where TenDangNhap = N'" + Name + "'";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             lblQuyen.Text = dt.Rows[0]["Quyen"].ToString();
@@ -142,7 +140,7 @@ namespace WindowsFormsApp
         private void btnKhoHang_Click(object sender, EventArgs e)
         {
             movesidePannel(btnKhoHang);
-            UC_KhoHang kh = new UC_KhoHang();
+            UC_KhoHang kh = new UC_KhoHang(lblManv.Text, lblTennv.Text);
             addControlsToPanel(kh);
         }
 
@@ -167,6 +165,12 @@ namespace WindowsFormsApp
             addControlsToPanel(tk);
 
 
+        }
+
+        private void lblNguoidung_Click(object sender, EventArgs e)
+        {
+            FormThongTinNhanVien formThongTinNhanVien = new FormThongTinNhanVien(lblNguoidung.Text);
+            formThongTinNhanVien.Show();
         }
     }
 }

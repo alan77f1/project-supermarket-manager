@@ -48,9 +48,9 @@ namespace WindowsFormsApp.BUS
             return MatHangDAO.Intance.getSP(maSP);
         }
 
-        public bool suaHH(string MaHang, string TenHH, string DVT, int SoLuong, int GiaGoc, int GiaBan)
+        public bool suaHH(string MaHang, string TenHH, string DVT, int SoLuong, int GiaBan)
         {
-            return MatHangDAO.Intance.suaHH(MaHang, TenHH, DVT, SoLuong, GiaGoc, GiaBan);
+            return MatHangDAO.Intance.suaHH(MaHang, TenHH, DVT, SoLuong, GiaBan);
         }
 
         public bool kiemtraXoa(string maHang)

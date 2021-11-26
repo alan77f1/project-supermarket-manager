@@ -76,10 +76,10 @@ namespace WindowsFormsApp.DAO
         }
 
 
-        public bool themNV(string maNV, string tenNV,string Gioitinh, string DiaChi, string SDT, string Tendangnhap, string Matkhau)
-        {   
-            
-            string query = String.Format("insert into NhanVien(MaNV,TenHienThi,GioiTinh,DiaChi,SDT,TenDangNhap,MatKhau) values  ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", maNV,tenNV,Gioitinh, DiaChi,SDT,Tendangnhap,Matkhau);
+        public bool themNV(string maNV, string tenNV, string Gioitinh, string DiaChi, string SDT, string Tendangnhap, string Matkhau)
+        {
+
+            string query = String.Format("insert into NhanVien(MaNV,TenHienThi,GioiTinh,DiaChi,SDT,TenDangNhap,MatKhau) values  ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", maNV, tenNV, Gioitinh, DiaChi, SDT, Tendangnhap, Matkhau);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
@@ -87,11 +87,17 @@ namespace WindowsFormsApp.DAO
 
         public bool capnhatmk(string mk, string sdt)
         {
-            string query = String.Format("update NhanVien set MatKhau = '{0}' where SDT = '{1}'",mk,sdt);
+            string query = String.Format("update NhanVien set MatKhau = '{0}' where SDT = '{1}'", mk, sdt);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
 
 
+        public bool capnhatmk1(string mk, string tk)
+        {
+            string query = String.Format("update NhanVien set MatKhau = '{0}' where TenDangNhap = '{1}'", mk, tk);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
     }
 }

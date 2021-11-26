@@ -18,10 +18,16 @@ namespace WindowsFormsApp
 {
     public partial class UC_KhoHang : UserControl
     {
-        public UC_KhoHang()
+        private string manv, tennv;
+        private string luumanv, luutennv;
+        public UC_KhoHang(string manv, string tennv)
         {
             InitializeComponent();
             loadData();
+            this.manv = manv;
+            luumanv = manv;
+            this.tennv = tennv;
+            luutennv = tennv;
         }
 
         public void loadData()
@@ -56,7 +62,6 @@ namespace WindowsFormsApp
         {
             txtTenMH.Text = "";
             txtSoLuong.Text = "0";
-            txtGiaGoc.Text = "0";
             txtGiaBan.Text = "0";
             pcbHangHoa.Image = null;
         }
@@ -75,12 +80,6 @@ namespace WindowsFormsApp
             {
                 MessageBox.Show("Hãy chọn đơn vị tính", "Thông báo");
                 cbbDVT.Focus();
-                return false;
-            }
-            else if (!int.TryParse(txtGiaGoc.Text, out a))
-            {
-                MessageBox.Show("Giá gốc phải là một số", "Thông báo");
-                txtGiaGoc.Focus();
                 return false;
             }
             else if (!int.TryParse(txtGiaBan.Text, out a))
@@ -103,7 +102,6 @@ namespace WindowsFormsApp
             txtMaHang.DataBindings.Add(new Binding("Text", dgvHangHoa.DataSource, "MaMH", true, DataSourceUpdateMode.Never));
             txtTenMH.DataBindings.Add(new Binding("Text", dgvHangHoa.DataSource, "TenMH", true, DataSourceUpdateMode.Never));
             txtSoLuong.DataBindings.Add(new Binding("Text", dgvHangHoa.DataSource, "SoLuong", true, DataSourceUpdateMode.Never));
-            txtGiaGoc.DataBindings.Add(new Binding("Text", dgvHangHoa.DataSource, "GiaGoc", true, DataSourceUpdateMode.Never));
             txtGiaBan.DataBindings.Add(new Binding("Text", dgvHangHoa.DataSource, "GiaBan", true, DataSourceUpdateMode.Never));
         }
 
@@ -112,7 +110,6 @@ namespace WindowsFormsApp
             txtMaHang.DataBindings.Clear();
             txtTenMH.DataBindings.Clear();
             txtSoLuong.DataBindings.Clear();
-            txtGiaGoc.DataBindings.Clear();
             txtGiaBan.DataBindings.Clear();
         }
 
@@ -129,54 +126,14 @@ namespace WindowsFormsApp
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            txtMaHang.Text = MatHangBUS.Intance.loadMaHH();
-            if (check == true)
-            {
-                check = !check;
-                btnSua.Enabled = false;
-                btnXoa.Enabled = false;
-                btnThem.Text = "Lưu";
-                resetData();
-                txtTenMH.Enabled = true;
-                txtTenMH.Focus();
-                cbbDVT.Enabled = true;
-                txtSoLuong.Enabled = true;
-                txtGiaBan.Enabled = true;
-                txtGiaGoc.Enabled = true;
-            }
-            else
-            {
-                if (KiemTraNhap())
-                {
-                    check = !check;
-                    btnSua.Enabled = true;
-                    btnXoa.Enabled = true;
-                    btnThem.Text = "Thêm";
-                    MatHang data = new MatHang();
-                    data.MaMH = txtMaHang.Text;
-                    data.TenMH = txtTenMH.Text;
-                    data.SoLuong = int.Parse(txtSoLuong.Text);
-                    data.GiaBan = int.Parse(txtGiaBan.Text);
-                    data.GiaGoc = int.Parse(txtGiaGoc.Text);
-                    data.DonVi = cbbDVT.SelectedValue.ToString();
-                    if (MatHangBUS.Intance.temHH(data, imgLocation))
-                    {
-                        MessageBox.Show("Thêm Thành Công");
-                        imgLocation = Application.StartupPath + "\\Resources\\hanghoa.png";
-                        resetData();
-                        cbbDVT.SelectedValue = dgvHangHoa.Rows[0].Cells["DonVi"].Value;
-                        loadData();
-                    }
-                }
 
-            }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (dgvHangHoa.SelectedCells.Count > 0)
             {
-                if (MatHangBUS.Intance.suaHH(txtMaHang.Text, txtTenMH.Text, (string)cbbDVT.SelectedValue, int.Parse(txtSoLuong.Text), int.Parse(txtGiaGoc.Text), int.Parse(txtGiaBan.Text)))
+                if (MatHangBUS.Intance.suaHH(txtMaHang.Text, txtTenMH.Text, (string)cbbDVT.SelectedValue, int.Parse(txtSoLuong.Text), int.Parse(txtGiaBan.Text)))
                 {
                     if (imgLocation != Application.StartupPath + "\\Resources\\hanghoa.png")
                     {
@@ -215,7 +172,7 @@ namespace WindowsFormsApp
             check = !check;
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
-            btnThem.Text = "Thêm";
+            btnNhapHang.Text = "Thêm";
             loadData();
         }
 
@@ -264,6 +221,12 @@ namespace WindowsFormsApp
         {
             /*FormDVT form_DVT = new Form_DVT(this);
             form_DVT.ShowDialog();*/
+        }
+
+        private void btnNhapHang_Click(object sender, EventArgs e)
+        {
+            FormNhapHang formNhaphang = new FormNhapHang(luumanv, luutennv);
+            formNhaphang.Show();
         }
     }
 }

@@ -188,6 +188,7 @@ namespace WindowsFormsApp
                 tongTien += gia;
                 lbTienBangSo.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tongTien) + " VNĐ";
                 lbTienBangChu.Text = ChuyenDoiTien.Instance.So_chu(tongTien);
+                Tinhtienhoantra();
                 resetInfoProduct();
 
             }
@@ -212,12 +213,14 @@ namespace WindowsFormsApp
             {
                 if (lvSanPhamBan.Items[i].Checked)//nếu item đó dc check
                 {
-                    string tien = lvSanPhamBan.Items[i].SubItems[3].Text.ToString();
+                    string tien = lvSanPhamBan.Items[i].SubItems[4].Text.ToString();
                     tongTien -= Int32.Parse(tien);
                     lbTienBangSo.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tongTien) + " VNĐ";
                     lbTienBangChu.Text = ChuyenDoiTien.Instance.So_chu(tongTien);
                     lvSanPhamBan.Items[i].Remove();//xóa item đó đi
+                    Tinhtienhoantra();
                     i--;
+
                 }
             }
         }
@@ -226,6 +229,7 @@ namespace WindowsFormsApp
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
+
             if (string.IsNullOrEmpty(txtSDT.Text))
             {
                 MessageBox.Show("Chưa có thông tin của khách hàng");
@@ -253,7 +257,8 @@ namespace WindowsFormsApp
                         DataProvider.Instance.ExecuteQuery(query);
 
                     }
-
+                    FormInHoaDon formInHoaDon = new FormInHoaDon(txtMaHĐ.Text, txtTienkhachduafomart.Text, txtTienhoantra.Text);
+                    formInHoaDon.Show();
                     lvSanPhamBan.Items.Clear();
                     lbTienBangSo.Text = "0 VNĐ";
                     lbTienBangChu.Text = "Không đồng";                                            // làm mới tất cả 
@@ -313,6 +318,38 @@ namespace WindowsFormsApp
             {
                 txtTenKH.Text = "Khách hàng mới";
             }
+        }
+
+
+
+        private void btnok_Click(object sender, EventArgs e)
+        {
+            //int gia = Int32.Parse(txtGia.Text) * Int32.Parse(txtSoLuong.Value.ToString());
+            //tongTien += gia;
+            int tienkhachdua = Int32.Parse(txtTienkhachdua.Text);
+            int tienhoantra = tienkhachdua - tongTien;
+            txtTienhoantra.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tienhoantra) + " VNĐ";
+
+        }
+
+        private void txtTienkhachdua_TextChanged(object sender, EventArgs e)
+        {
+            Tinhtienhoantra();
+        }
+
+
+
+        private void Tinhtienhoantra()
+        {
+            if (!string.IsNullOrEmpty(txtTienkhachdua.Text))
+            {
+                int tienkhachdua = Int32.Parse(txtTienkhachdua.Text);
+                int tienhoantra = tienkhachdua - tongTien;
+                txtTienhoantra.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tienhoantra) + " VNĐ";
+                txtTienkhachduafomart.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tienkhachdua) + " VNĐ";
+            }
+            else
+                txtTienhoantra.Text = "";
         }
 
         private void btnThemMoiKH_Click(object sender, EventArgs e)
