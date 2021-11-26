@@ -19,8 +19,13 @@ namespace WindowsFormsApp.Models
         [StringLength(50)]
         public string MaMH { get; set; }
 
+        [Key]
+        [Column(Order = 2)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int SoLuong { get; set; }
 
+        [Key]
+        [Column(Order = 3)]
         public double DonGia { get; set; }
 
         public virtual HoaDon HoaDon { get; set; }

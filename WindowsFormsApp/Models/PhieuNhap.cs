@@ -9,6 +9,12 @@ namespace WindowsFormsApp.Models
     [Table("PhieuNhap")]
     public partial class PhieuNhap
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public PhieuNhap()
+        {
+            ChiTietPNs = new HashSet<ChiTietPN>();
+        }
+
         [Key]
         [StringLength(10)]
         public string MaPN { get; set; }
@@ -24,10 +30,11 @@ namespace WindowsFormsApp.Models
         [StringLength(20)]
         public string MaNV { get; set; }
 
-        public virtual ChiTietPN ChiTietPN { get; set; }
-
         public virtual NhaCungCap NhaCungCap { get; set; }
 
         public virtual NhanVien NhanVien { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ChiTietPN> ChiTietPNs { get; set; }
     }
 }

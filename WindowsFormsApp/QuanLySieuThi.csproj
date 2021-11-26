@@ -295,19 +295,18 @@
     <Compile Include="FormReportThongKe.Designer.cs">
       <DependentUpon>FormReportThongKe.cs</DependentUpon>
     </Compile>
-    <Compile Include="DTO\CaLamViec.cs" />
-    <Compile Include="DTO\ChiTietCLV.cs" />
-    <Compile Include="DTO\ChiTietHD.cs" />
-    <Compile Include="DTO\ChiTietPN.cs" />
-    <Compile Include="DTO\DonViTinh.cs" />
-    <Compile Include="DTO\HoaDon.cs" />
-    <Compile Include="DTO\KhachHang.cs" />
-    <Compile Include="DTO\MatHang.cs" />
-    <Compile Include="DTO\ModelDB.cs" />
-    <Compile Include="DTO\NhaCungCap.cs" />
-    <Compile Include="DTO\NhanVien.cs" />
-    <Compile Include="DTO\PhieuNhap.cs" />
-    <Compile Include="DTO\QuayHang.cs" />
+    <Compile Include="Models\CaLamViec.cs" />
+    <Compile Include="Models\ChiTietCLV.cs" />
+    <Compile Include="Models\ChiTietHD.cs" />
+    <Compile Include="Models\ChiTietPN.cs" />
+    <Compile Include="Models\DonViTinh.cs" />
+    <Compile Include="Models\HoaDon.cs" />
+    <Compile Include="Models\KhachHang.cs" />
+    <Compile Include="Models\MatHang.cs" />
+    <Compile Include="Models\ModelDB.cs" />
+    <Compile Include="Models\NhaCungCap.cs" />
+    <Compile Include="Models\NhanVien.cs" />
+    <Compile Include="Models\PhieuNhap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

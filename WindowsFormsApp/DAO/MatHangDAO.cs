@@ -117,7 +117,6 @@ namespace WindowsFormsApp.DAO
                 DataRow data = DataProvider.Instance.ExecuteQuery(query).Rows[0];
                 a.TenMH = data["TenHang"].ToString();
                 a.MaMH = maSP;
-                a.GiaGoc = int.Parse(data["GiaGoc"].ToString());
                 a.GiaBan = int.Parse(data["GiaBan"].ToString());
             }
             return a;
@@ -132,7 +131,7 @@ namespace WindowsFormsApp.DAO
 
             using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-RNOPI29;Initial Catalog=QLSieuThi;User ID=sa;Password=123"))
             {
-                string query = String.Format("Insert into MatHang Values('{0}', N'{1}', '{2}', {3}, {4}, {5}, @hinh) ", data.MaMH, data.TenMH, data.DonVi, data.GiaBan, data.SoLuong, data.GiaGoc);
+                string query = String.Format("Insert into MatHang Values('{0}', N'{1}', '{2}', {3}, {4}, {5}, @hinh) ", data.MaMH, data.TenMH, data.DonVi, data.GiaBan, data.SoLuong);
                 SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.Parameters.Add(new SqlParameter("@hinh", images));
 

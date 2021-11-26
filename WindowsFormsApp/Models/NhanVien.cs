@@ -7,7 +7,6 @@ namespace WindowsFormsApp.Models
     using System.Data.Entity.Spatial;
     using System.Data;
 
-
     [Table("NhanVien")]
     public partial class NhanVien
     {
@@ -26,7 +25,8 @@ namespace WindowsFormsApp.Models
         [StringLength(50)]
         public string TenHienThi { get; set; }
 
-        public bool? GioiTinh { get; set; }
+        [StringLength(20)]
+        public string GioiTinh { get; set; }
 
         [StringLength(50)]
         public string DiaChi { get; set; }
@@ -35,7 +35,6 @@ namespace WindowsFormsApp.Models
         [StringLength(10)]
         public string SDT { get; set; }
 
-        [Required]
         [StringLength(20)]
         public string Quyen { get; set; }
 
@@ -55,7 +54,6 @@ namespace WindowsFormsApp.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PhieuNhap> PhieuNhaps { get; set; }
-
         public NhanVien(DataRow row)
         {
             this.MaNV = row["MaNV"].ToString();

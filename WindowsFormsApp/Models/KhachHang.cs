@@ -1,11 +1,11 @@
 namespace WindowsFormsApp.Models
 {
     using System;
-    using System.Data;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.Data;
 
     [Table("KhachHang")]
     public partial class KhachHang
@@ -46,6 +46,5 @@ namespace WindowsFormsApp.Models
             this.SDT = row["SDT"].ToString();
             this.Email = row["Email"].ToString();
         }
-
     }
 }

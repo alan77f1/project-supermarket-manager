@@ -8,14 +8,12 @@ namespace WindowsFormsApp.Models
     public partial class ModelDB : DbContext
     {
         public ModelDB()
-            : base("name=ModelDB1")
+            : base("name=ModelDB2")
         {
         }
 
         public virtual DbSet<CaLamViec> CaLamViecs { get; set; }
         public virtual DbSet<ChiTietCLV> ChiTietCLVs { get; set; }
-        public virtual DbSet<ChiTietHD> ChiTietHDs { get; set; }
-        public virtual DbSet<ChiTietPN> ChiTietPNs { get; set; }
         public virtual DbSet<DonViTinh> DonViTinhs { get; set; }
         public virtual DbSet<HoaDon> HoaDons { get; set; }
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
@@ -23,7 +21,8 @@ namespace WindowsFormsApp.Models
         public virtual DbSet<NhaCungCap> NhaCungCaps { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<PhieuNhap> PhieuNhaps { get; set; }
-        public virtual DbSet<QuayHang> QuayHangs { get; set; }
+        public virtual DbSet<ChiTietHD> ChiTietHDs { get; set; }
+        public virtual DbSet<ChiTietPN> ChiTietPNs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -31,10 +30,6 @@ namespace WindowsFormsApp.Models
                 .HasMany(e => e.ChiTietCLVs)
                 .WithRequired(e => e.CaLamViec)
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<ChiTietPN>()
-                .Property(e => e.MaPN)
-                .IsFixedLength();
 
             modelBuilder.Entity<DonViTinh>()
                 .Property(e => e.MaDVT)
@@ -68,10 +63,6 @@ namespace WindowsFormsApp.Models
                 .WithRequired(e => e.KhachHang)
                 .WillCascadeOnDelete(false);
 
-            /*modelBuilder.Entity<MatHang>()
-                .Property(e => e.LoaiMH)
-                .IsUnicode(false);*/
-
             modelBuilder.Entity<MatHang>()
                 .Property(e => e.DonVi)
                 .IsUnicode(false);
@@ -82,9 +73,8 @@ namespace WindowsFormsApp.Models
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<MatHang>()
-                .HasMany(e => e.ChiTietPNs)
-                .WithRequired(e => e.MatHang)
-                .WillCascadeOnDelete(false);
+                .HasOptional(e => e.ChiTietPN)
+                .WithRequired(e => e.MatHang);
 
             modelBuilder.Entity<NhaCungCap>()
                 .Property(e => e.MaNCC)
@@ -130,19 +120,9 @@ namespace WindowsFormsApp.Models
                 .Property(e => e.MaNCC)
                 .IsFixedLength();
 
-            modelBuilder.Entity<PhieuNhap>()
-                .HasOptional(e => e.ChiTietPN)
-                .WithRequired(e => e.PhieuNhap);
-
-            modelBuilder.Entity<QuayHang>()
-                .Property(e => e.MaQH)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<QuayHang>()
-                .HasMany(e => e.MatHangs)
-                .WithRequired(e => e.QuayHang)
-               /* .HasForeignKey(e => e.LoaiMH)*/
-                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<ChiTietPN>()
+                .Property(e => e.MaPN)
+                .IsFixedLength();
         }
     }
 }

@@ -9,11 +9,10 @@ namespace WindowsFormsApp.Models
     [Table("ChiTietPN")]
     public partial class ChiTietPN
     {
-        [Key]
         [StringLength(10)]
         public string MaPN { get; set; }
 
-        [Required]
+        [Key]
         [StringLength(50)]
         public string MaMH { get; set; }
 
