@@ -1,18 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Drawing;
 using System.IO;
-using System.Data.SqlClient;
+using System.Windows.Forms;
 using WindowsFormsApp.BUS;
 using WindowsFormsApp.DAO;
-using WindowsFormsApp.Models;
 
 
 namespace WindowsFormsApp
@@ -29,8 +21,6 @@ namespace WindowsFormsApp
             luumanv = manv;
             this.tennv = tennv;
             luutennv = tennv;
-
-            
         }
 
         public void loadData()
@@ -46,21 +36,13 @@ namespace WindowsFormsApp
             dgvHangHoa.Columns.Add("Tổng tiền", 220);  // 4*/
 
 
-
-
             dgvHangHoa.DataSource = MatHangBUS.Intance.getListSanPham();
-            dgvHangHoa.Columns[0].HeaderText = "Mã Mặt Hàng";
-            dgvHangHoa.Columns["DonVi"].HeaderText = "Đơn Vị Tính";
-            dgvHangHoa.Columns["SoLuong"].HeaderText = "Số Lượng";
+            dgvHangHoa.Columns["MaMH"].HeaderText = "Mã Mặt Hàng";
+            dgvHangHoa.Columns["TenMH"].HeaderText = "Tên mặt hàng ";
+            dgvHangHoa.Columns["DonVi"].HeaderText = "Đơn Vị Tính";        
             dgvHangHoa.Columns["GiaBan"].HeaderText = "Giá Bán";
-            dgvHangHoa.Columns[1].HeaderText = "Tên Mặt Hàng";
+            dgvHangHoa.Columns["SoLuong"].HeaderText = "Số Lượng";
 
-
-
-            DataTable dataDVTinh = DataProvider.Instance.ExecuteQuery("select * from DonViTinh");
-            cbbDVT.DataSource = dataDVTinh;
-            cbbDVT.ValueMember = "MaDVT";
-            cbbDVT.DisplayMember = "TenDVT";
 
             dgvHangHoa.AllowUserToAddRows = false;
             dgvHangHoa.EditMode = DataGridViewEditMode.EditProgrammatically;
@@ -68,12 +50,6 @@ namespace WindowsFormsApp
             pcbHangHoa.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        private void btnThemMatHangMoi_Click(object sender, EventArgs e)
-        {
-            FormThemSanPham tmsp = new FormThemSanPham();
-            tmsp.ShowDialog();
-        }
-       
 
         public void resetData()
         {
@@ -124,22 +100,17 @@ namespace WindowsFormsApp
 
         void ClearBinding()
         {
-           /* txtMaHang.DataBindings.Clear();
+            txtMaHang.DataBindings.Clear();
             txtTenMH.DataBindings.Clear();
             txtSoLuong.DataBindings.Clear();
-            txtGiaBan.DataBindings.Clear();*/
+            txtGiaBan.DataBindings.Clear();
         }
-
-
-
    
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
             dgvHangHoa.DataSource = MatHangBUS.Intance.TimKiemHH(txtTimKiem.Text);
             dgvHangHoa.Columns["Anh"].Visible = false;
         }
-
-
 
         private void btnSua_Click(object sender, EventArgs e)
         {
@@ -179,10 +150,9 @@ namespace WindowsFormsApp
             }
         }
 
-
         private void dgvHangHoa_SelectionChanged_1(object sender, EventArgs e)
         {
-            if (dgvHangHoa.SelectedCells.Count > 0)
+            /*if (dgvHangHoa.SelectedCells.Count > 0)
             {
                 ClearBinding();
                 Binding();
@@ -203,15 +173,12 @@ namespace WindowsFormsApp
                 catch (Exception) { }
 
                 cbbDVT.SelectedValue = row.Cells["DonVi"].Value;
-            }
+            }*/
         }
 
         string imgLocation = Application.StartupPath + "\\Resources\\hanghoa.png";
 
-        private void dgvMatHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+    
 
         private void btnTaiAnh_Click(object sender, EventArgs e)
         {
@@ -225,7 +192,6 @@ namespace WindowsFormsApp
                 pcbHangHoa.Image = Image.FromFile(dlgOpen.FileName);
             }
         }
-
 
         private void btnNhapHang_Click(object sender, EventArgs e)
         {

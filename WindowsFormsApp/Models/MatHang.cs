@@ -13,7 +13,7 @@ namespace WindowsFormsApp.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public MatHang()
         {
-            ChiTietHDs = new HashSet<ChiTietHD>();
+            /*ChiTietHDs = new HashSet<ChiTietHD>();*/
         }
 
         [Key]
@@ -35,12 +35,11 @@ namespace WindowsFormsApp.Models
         [Column(TypeName = "image")]
         public byte[] Anh { get; set; }
 
-        public virtual DonViTinh DonViTinh { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChiTietHD> ChiTietHDs { get; set; }
+        /*public virtual ICollection<ChiTietHD> ChiTietHDs { get; set; }*/
 
-        public virtual ChiTietPN ChiTietPN { get; set; }
+        /*public virtual ChiTietPN ChiTietPN { get; set; }*/
         public MatHang(DataRow row)
         {
             this.MaMH = row["MaMH"].ToString();

@@ -490,3 +490,4 @@ C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\W
 C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormInHoaDon.resources
 C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormDoiMatKhauMoi.resources
 C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThongTinNhanVien.resources
+C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThongTinHangMoi.resources

@@ -27,7 +27,7 @@ namespace WindowsFormsApp.DAO
         public List<Models.MatHang> getListSanPham()
         {
             List<Models.MatHang> list = new List<Models.MatHang>();
-            DataTable data = DataProvider.Instance.ExecuteQuery("select * from MatHang");
+            DataTable data = DataProvider.Instance.ExecuteQuery("select MaMH, TenMH, DonVi, GiaBan, SoLuong from MatHang");
             foreach (DataRow item in data.Rows)
             {
                 Models.MatHang mathang = new Models.MatHang(item);

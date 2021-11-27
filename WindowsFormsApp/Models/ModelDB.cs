@@ -35,20 +35,14 @@ namespace WindowsFormsApp.Models
                 .Property(e => e.MaDVT)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<DonViTinh>()
-                .HasMany(e => e.MatHangs)
-                .WithRequired(e => e.DonViTinh)
-                .HasForeignKey(e => e.DonVi)
-                .WillCascadeOnDelete(false);
-
             modelBuilder.Entity<HoaDon>()
                 .Property(e => e.MaKH)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<HoaDon>()
+            /*modelBuilder.Entity<HoaDon>()
                 .HasMany(e => e.ChiTietHDs)
                 .WithRequired(e => e.HoaDon)
-                .WillCascadeOnDelete(false);
+                .WillCascadeOnDelete(false);*/
 
             modelBuilder.Entity<KhachHang>()
                 .Property(e => e.MaKH)
@@ -67,14 +61,14 @@ namespace WindowsFormsApp.Models
                 .Property(e => e.DonVi)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<MatHang>()
+           /* modelBuilder.Entity<MatHang>()
                 .HasMany(e => e.ChiTietHDs)
                 .WithRequired(e => e.MatHang)
-                .WillCascadeOnDelete(false);
+                .WillCascadeOnDelete(false);*/
 
-            modelBuilder.Entity<MatHang>()
+            /*modelBuilder.Entity<MatHang>()
                 .HasOptional(e => e.ChiTietPN)
-                .WithRequired(e => e.MatHang);
+                .WithRequired(e => e.MatHang);*/
 
             modelBuilder.Entity<NhaCungCap>()
                 .Property(e => e.MaNCC)
