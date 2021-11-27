@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp.DAO;
+using System.IO;
 using WindowsFormsApp.Models;
 
 namespace WindowsFormsApp
@@ -382,6 +383,21 @@ namespace WindowsFormsApp
         {
             string query = "update MatHang set SoLuong = 0,GiaBan = 0 where MaMH = '" + lblmasp.Text + "'";  // cập nhật lại số lượng 
             DataProvider.Instance.ExecuteQuery(query);
+        }
+
+        string imgLocation = Application.StartupPath + "\\Resources\\hanghoa.png";
+
+        private void btnTaiAnh_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlgOpen = new OpenFileDialog();
+            dlgOpen.Filter = "PNG files(*.png)|*.png|JPEG(*.jpg)|*.jpg|GIF(*.gif)|*.gif|All files(*.*)|*.*";
+            dlgOpen.FilterIndex = 2;
+            dlgOpen.Title = "Chọn ảnh minh hoạ cho sản phẩm";
+            if (dlgOpen.ShowDialog() == DialogResult.OK)
+            {
+                imgLocation = dlgOpen.FileName.ToString();
+                pcbHangHoa.Image = Image.FromFile(dlgOpen.FileName);
+            }
         }
     }
 }

@@ -29,11 +29,6 @@ namespace WindowsFormsApp
             cmbMaĐVT.SelectedIndex = -1;
             Lammoi();
 
-
-
-
-
-
         }
 
 
