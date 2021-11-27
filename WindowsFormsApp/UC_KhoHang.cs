@@ -152,7 +152,7 @@ namespace WindowsFormsApp
 
         private void dgvHangHoa_SelectionChanged_1(object sender, EventArgs e)
         {
-            /*if (dgvHangHoa.SelectedCells.Count > 0)
+            if (dgvHangHoa.SelectedCells.Count > 0)
             {
                 ClearBinding();
                 Binding();
@@ -173,12 +173,10 @@ namespace WindowsFormsApp
                 catch (Exception) { }
 
                 cbbDVT.SelectedValue = row.Cells["DonVi"].Value;
-            }*/
+            }
         }
 
         string imgLocation = Application.StartupPath + "\\Resources\\hanghoa.png";
-
-    
 
         private void btnTaiAnh_Click(object sender, EventArgs e)
         {

@@ -134,10 +134,6 @@ namespace WindowsFormsApp
         List<NhaCungCap> list1;
 
 
-        private void FormNhaphang_Load(object sender, EventArgs e)
-        {
-
-        }
 
         int i;
         private void cmbTensp_SelectedIndexChanged(object sender, EventArgs e)

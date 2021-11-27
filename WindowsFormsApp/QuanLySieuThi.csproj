@@ -357,12 +357,6 @@
     <Compile Include="UC_NhanVien.Designer.cs">
       <DependentUpon>UC_NhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_QuanLyNhanVien.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_QuanLyNhanVien.Designer.cs">
-      <DependentUpon>UC_QuanLyNhanVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="UC_ThongKe.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -419,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormInHoaDon.resx">
       <DependentUpon>FormInHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhapHang.resx">
+      <DependentUpon>FormNhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReport.resx">
       <DependentUpon>FormReport.cs</DependentUpon>

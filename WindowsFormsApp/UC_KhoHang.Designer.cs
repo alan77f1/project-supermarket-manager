@@ -46,7 +46,6 @@
             this.txtGiaBan = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.cbbDVT = new System.Windows.Forms.ComboBox();
-            this.pcbHangHoa = new System.Windows.Forms.PictureBox();
             this.btnNhapHang = new Guna.UI2.WinForms.Guna2Button();
             this.btnSua = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
@@ -54,11 +53,12 @@
             this.btnTaiAnh = new Guna.UI2.WinForms.Guna2Button();
             this.dgvHangHoa = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pcbHangHoa = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatHang)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbHangHoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHangHoa)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbHangHoa)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTimKiem
@@ -152,7 +152,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(399, 42);
+            this.label6.Location = new System.Drawing.Point(399, 33);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 23);
             this.label6.TabIndex = 6;
@@ -161,7 +161,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(399, 97);
+            this.label7.Location = new System.Drawing.Point(399, 85);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 23);
             this.label7.TabIndex = 7;
@@ -184,7 +184,7 @@
             // 
             // txtGiaBan
             // 
-            this.txtGiaBan.Location = new System.Drawing.Point(497, 39);
+            this.txtGiaBan.Location = new System.Drawing.Point(497, 33);
             this.txtGiaBan.Name = "txtGiaBan";
             this.txtGiaBan.Size = new System.Drawing.Size(173, 32);
             this.txtGiaBan.TabIndex = 11;
@@ -192,7 +192,7 @@
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.Location = new System.Drawing.Point(497, 94);
+            this.txtSoLuong.Location = new System.Drawing.Point(497, 82);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(173, 32);
             this.txtSoLuong.TabIndex = 12;
@@ -206,14 +206,6 @@
             this.cbbDVT.Name = "cbbDVT";
             this.cbbDVT.Size = new System.Drawing.Size(173, 32);
             this.cbbDVT.TabIndex = 13;
-            // 
-            // pcbHangHoa
-            // 
-            this.pcbHangHoa.Location = new System.Drawing.Point(707, 42);
-            this.pcbHangHoa.Name = "pcbHangHoa";
-            this.pcbHangHoa.Size = new System.Drawing.Size(233, 153);
-            this.pcbHangHoa.TabIndex = 14;
-            this.pcbHangHoa.TabStop = false;
             // 
             // btnNhapHang
             // 
@@ -390,6 +382,14 @@
             this.panel3.Size = new System.Drawing.Size(994, 616);
             this.panel3.TabIndex = 12;
             // 
+            // pcbHangHoa
+            // 
+            this.pcbHangHoa.Location = new System.Drawing.Point(711, 19);
+            this.pcbHangHoa.Name = "pcbHangHoa";
+            this.pcbHangHoa.Size = new System.Drawing.Size(233, 153);
+            this.pcbHangHoa.TabIndex = 14;
+            this.pcbHangHoa.TabStop = false;
+            // 
             // UC_KhoHang
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -403,10 +403,10 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatHang)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbHangHoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHangHoa)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbHangHoa)).EndInit();
             this.ResumeLayout(false);
 
         }
