@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,16 +29,33 @@ namespace WindowsFormsApp
             luumanv = manv;
             this.tennv = tennv;
             luutennv = tennv;
+
+            
         }
 
         public void loadData()
         {
+            /*dgvHangHoa.View = View.Details;
+            dgvHangHoa.GridLines = true;
+            dgvHangHoa.FullRowSelect = true;
+
+            dgvHangHoa.Columns.Add("Mã Mặt Hàng", 150);   //0
+            dgvHangHoa.Columns.Add("Tên mặt hàng", 200);  //1
+            dgvHangHoa.Columns.Add("Số lượng,", 100);   //2
+            dgvHangHoa.Columns.Add("Đơn Vị Tính", 200);  // 3
+            dgvHangHoa.Columns.Add("Tổng tiền", 220);  // 4*/
+
+
+
+
             dgvHangHoa.DataSource = MatHangBUS.Intance.getListSanPham();
             dgvHangHoa.Columns[0].HeaderText = "Mã Mặt Hàng";
             dgvHangHoa.Columns["DonVi"].HeaderText = "Đơn Vị Tính";
             dgvHangHoa.Columns["SoLuong"].HeaderText = "Số Lượng";
             dgvHangHoa.Columns["GiaBan"].HeaderText = "Giá Bán";
             dgvHangHoa.Columns[1].HeaderText = "Tên Mặt Hàng";
+
+
 
             DataTable dataDVTinh = DataProvider.Instance.ExecuteQuery("select * from DonViTinh");
             cbbDVT.DataSource = dataDVTinh;
@@ -106,10 +124,10 @@ namespace WindowsFormsApp
 
         void ClearBinding()
         {
-            txtMaHang.DataBindings.Clear();
+           /* txtMaHang.DataBindings.Clear();
             txtTenMH.DataBindings.Clear();
             txtSoLuong.DataBindings.Clear();
-            txtGiaBan.DataBindings.Clear();
+            txtGiaBan.DataBindings.Clear();*/
         }
 
 
@@ -122,11 +140,6 @@ namespace WindowsFormsApp
         }
 
 
-
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
@@ -166,15 +179,6 @@ namespace WindowsFormsApp
             }
         }
 
-        private void btnHuy_Click(object sender, EventArgs e)
-        {
-            check = !check;
-            btnSua.Enabled = true;
-            btnXoa.Enabled = true;
-            btnNhapHang.Text = "Thêm";
-            loadData();
-        }
-
 
         private void dgvHangHoa_SelectionChanged_1(object sender, EventArgs e)
         {
@@ -203,6 +207,12 @@ namespace WindowsFormsApp
         }
 
         string imgLocation = Application.StartupPath + "\\Resources\\hanghoa.png";
+
+        private void dgvMatHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void btnTaiAnh_Click(object sender, EventArgs e)
         {
             OpenFileDialog dlgOpen = new OpenFileDialog();
@@ -216,11 +226,6 @@ namespace WindowsFormsApp
             }
         }
 
-        private void btnDVT_Click(object sender, EventArgs e)
-        {
-            /*FormDVT form_DVT = new Form_DVT(this);
-            form_DVT.ShowDialog();*/
-        }
 
         private void btnNhapHang_Click(object sender, EventArgs e)
         {

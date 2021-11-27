@@ -118,17 +118,19 @@ namespace WindowsFormsApp
                 MessageBox.Show("Tên mặt hàng không được trống");
             }
             else
-                cmbMaĐVT.SelectedIndex = -1;
-
-
-            if (LuuHH(txtMaHang.Text, txtTenmh.Text, cmbMaĐVT.Text, 0, 1))
             {
-                MessageBox.Show("Lưu thông tin hàng thành công");
-                txtMaHang.Text = Matudong();
-                Lammoi();
+                if (LuuHH(txtMaHang.Text, txtTenmh.Text, cmbMaĐVT.Text, 0, 1))
+                {
+                    MessageBox.Show("Lưu thông tin hàng thành công");
+                    txtMaHang.Text = Matudong();
+                    Lammoi();
+                }
+                else
+                    MessageBox.Show("Không thể lưu thông tin này");
             }
-            else
-                MessageBox.Show("Không thể lưu thông tin này");
+
+
+            
         }
 
 
