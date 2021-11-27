@@ -239,7 +239,7 @@
             this.lvSanPhamBan.HideSelection = false;
             this.lvSanPhamBan.Location = new System.Drawing.Point(3, 123);
             this.lvSanPhamBan.Name = "lvSanPhamBan";
-            this.lvSanPhamBan.Size = new System.Drawing.Size(516, 245);
+            this.lvSanPhamBan.Size = new System.Drawing.Size(516, 241);
             this.lvSanPhamBan.TabIndex = 5;
             this.lvSanPhamBan.UseCompatibleStateImageBehavior = false;
             this.lvSanPhamBan.View = System.Windows.Forms.View.Details;
@@ -418,7 +418,7 @@
             this.txtSoLuong.ShadowDecoration.Parent = this.txtSoLuong;
             this.txtSoLuong.Size = new System.Drawing.Size(284, 36);
             this.txtSoLuong.TabIndex = 93;
-            this.txtSoLuong.UpDownButtonFillColor = System.Drawing.Color.SteelBlue;
+            this.txtSoLuong.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.txtSoLuong.UpDownButtonForeColor = System.Drawing.Color.White;
             this.txtSoLuong.Value = new decimal(new int[] {
             1,
