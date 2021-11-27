@@ -118,6 +118,11 @@ namespace WindowsFormsApp
             }
         }
 
+        private void lblCanhbao_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnX_Click(object sender, EventArgs e)
         {
             Application.Exit();
