@@ -273,7 +273,7 @@ namespace WindowsFormsApp
             // UC_ThongKeHoaDon
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtTongtienhoadon);
@@ -284,7 +284,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dpkNgaykt);
             this.Controls.Add(this.dpkNgaybd);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKeHoaDon";
             this.Size = new System.Drawing.Size(1010, 593);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongkehd)).EndInit();

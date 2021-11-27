@@ -458,11 +458,8 @@ C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\bin\Debug\z
 C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\QuanLySieuThi.csproj.AssemblyReference.cache
 C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormDangKy.resources
 C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormDangNhap.resources
-C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormDonViTinh.resources
 C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormReport.resources
 C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormSDT.resources
-C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThemCaLamViec.resources
-C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThemSanPham.resources
 C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormTrangChu.resources
 C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
 C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_BanHang.resources

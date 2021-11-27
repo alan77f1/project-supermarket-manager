@@ -32,11 +32,6 @@ namespace WindowsFormsApp
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.panelTrangChu = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btnDangKy = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblCanhbao = new System.Windows.Forms.Label();
@@ -55,6 +50,11 @@ namespace WindowsFormsApp
             this.errtxtTaikhoan = new System.Windows.Forms.ErrorProvider(this.components);
             this.errMatkhau = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnX = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panelTrangChu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errtxtTaikhoan)).BeginInit();
@@ -87,51 +87,6 @@ namespace WindowsFormsApp
             this.panelTrangChu.Name = "panelTrangChu";
             this.panelTrangChu.Size = new System.Drawing.Size(537, 733);
             this.panelTrangChu.TabIndex = 7;
-            // 
-            // panel8
-            // 
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel8.Location = new System.Drawing.Point(246, 512);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(30, 32);
-            this.panel8.TabIndex = 35;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel6.Location = new System.Drawing.Point(210, 512);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(30, 32);
-            this.panel6.TabIndex = 36;
-            // 
-            // panel5
-            // 
-            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel5.Location = new System.Drawing.Point(282, 512);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(30, 32);
-            this.panel5.TabIndex = 37;
-            // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel4.Location = new System.Drawing.Point(318, 512);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(30, 32);
-            this.panel4.TabIndex = 38;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Location = new System.Drawing.Point(174, 512);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(30, 32);
-            this.panel3.TabIndex = 39;
             // 
             // btnDangKy
             // 
@@ -193,7 +148,7 @@ namespace WindowsFormsApp
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(66)))));
             this.panel1.Controls.Add(this.btnX);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -233,8 +188,8 @@ namespace WindowsFormsApp
             this.btnDangNhap.CheckedState.Parent = this.btnDangNhap;
             this.btnDangNhap.CustomImages.Parent = this.btnDangNhap;
             this.btnDangNhap.DisabledState.Parent = this.btnDangNhap;
-            this.btnDangNhap.FillColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnDangNhap.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
+            this.btnDangNhap.FillColor = System.Drawing.Color.Pink;
+            this.btnDangNhap.FillColor2 = System.Drawing.Color.DeepSkyBlue;
             this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
             this.btnDangNhap.HoverState.Parent = this.btnDangNhap;
@@ -368,6 +323,52 @@ namespace WindowsFormsApp
             this.btnX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnX.UseVisualStyleBackColor = false;
             this.btnX.Click += new System.EventHandler(this.btnX_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel8.Location = new System.Drawing.Point(227, 499);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(52, 46);
+            this.panel8.TabIndex = 35;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel6.Location = new System.Drawing.Point(168, 499);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(52, 46);
+            this.panel6.TabIndex = 36;
+            // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel5.Location = new System.Drawing.Point(285, 499);
+            this.panel5.Name = "panel5";
+            this.panel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panel5.Size = new System.Drawing.Size(52, 46);
+            this.panel5.TabIndex = 37;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel4.Location = new System.Drawing.Point(343, 499);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(52, 46);
+            this.panel4.TabIndex = 38;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel3.Location = new System.Drawing.Point(110, 499);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(52, 46);
+            this.panel3.TabIndex = 39;
             // 
             // FormDangNhap
             // 

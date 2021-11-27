@@ -31,14 +31,10 @@ namespace WindowsFormsApp
         {
             this.components = new System.ComponentModel.Container();
             this.pnlButton = new System.Windows.Forms.Panel();
-            this.pnldichuyenphieunhap = new System.Windows.Forms.Panel();
             this.btnphieunhap = new System.Windows.Forms.Button();
             this.btnKhachhang = new System.Windows.Forms.Button();
             this.btnHanghoa = new System.Windows.Forms.Button();
             this.btnHoadon = new System.Windows.Forms.Button();
-            this.pnldichuyenkhachhang = new System.Windows.Forms.Panel();
-            this.pnldichuyenhoadon = new System.Windows.Forms.Panel();
-            this.pnldichuyenHanghoa = new System.Windows.Forms.Panel();
             this.pnlTK = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -54,10 +50,6 @@ namespace WindowsFormsApp
             this.pnlButton.Controls.Add(this.btnHoadon);
             this.pnlButton.Controls.Add(this.btnKhachhang);
             this.pnlButton.Controls.Add(this.btnHanghoa);
-            this.pnlButton.Controls.Add(this.pnldichuyenphieunhap);
-            this.pnlButton.Controls.Add(this.pnldichuyenkhachhang);
-            this.pnlButton.Controls.Add(this.pnldichuyenhoadon);
-            this.pnlButton.Controls.Add(this.pnldichuyenHanghoa);
             this.pnlButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlButton.Location = new System.Drawing.Point(0, 0);
             this.pnlButton.Margin = new System.Windows.Forms.Padding(4);
@@ -66,18 +58,9 @@ namespace WindowsFormsApp
             this.pnlButton.TabIndex = 24;
             this.pnlButton.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlButton_Paint);
             // 
-            // pnldichuyenphieunhap
-            // 
-            this.pnldichuyenphieunhap.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pnldichuyenphieunhap.Location = new System.Drawing.Point(784, 62);
-            this.pnldichuyenphieunhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnldichuyenphieunhap.Name = "pnldichuyenphieunhap";
-            this.pnldichuyenphieunhap.Size = new System.Drawing.Size(130, 2);
-            this.pnldichuyenphieunhap.TabIndex = 6;
-            // 
             // btnphieunhap
             // 
-            this.btnphieunhap.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnphieunhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnphieunhap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnphieunhap.FlatAppearance.BorderSize = 0;
             this.btnphieunhap.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
@@ -85,9 +68,9 @@ namespace WindowsFormsApp
             this.btnphieunhap.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnphieunhap.ForeColor = System.Drawing.Color.White;
             this.btnphieunhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnphieunhap.Location = new System.Drawing.Point(767, 8);
+            this.btnphieunhap.Location = new System.Drawing.Point(489, 0);
             this.btnphieunhap.Name = "btnphieunhap";
-            this.btnphieunhap.Size = new System.Drawing.Size(157, 49);
+            this.btnphieunhap.Size = new System.Drawing.Size(157, 66);
             this.btnphieunhap.TabIndex = 24;
             this.btnphieunhap.Text = "  Phiếu nhập";
             this.btnphieunhap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -96,7 +79,7 @@ namespace WindowsFormsApp
             // 
             // btnKhachhang
             // 
-            this.btnKhachhang.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnKhachhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnKhachhang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKhachhang.FlatAppearance.BorderSize = 0;
             this.btnKhachhang.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
@@ -104,9 +87,9 @@ namespace WindowsFormsApp
             this.btnKhachhang.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhachhang.ForeColor = System.Drawing.Color.White;
             this.btnKhachhang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachhang.Location = new System.Drawing.Point(518, 8);
+            this.btnKhachhang.Location = new System.Drawing.Point(326, 0);
             this.btnKhachhang.Name = "btnKhachhang";
-            this.btnKhachhang.Size = new System.Drawing.Size(157, 49);
+            this.btnKhachhang.Size = new System.Drawing.Size(157, 66);
             this.btnKhachhang.TabIndex = 23;
             this.btnKhachhang.Text = "   Khách hàng";
             this.btnKhachhang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -115,7 +98,7 @@ namespace WindowsFormsApp
             // 
             // btnHanghoa
             // 
-            this.btnHanghoa.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnHanghoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnHanghoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHanghoa.FlatAppearance.BorderSize = 0;
             this.btnHanghoa.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
@@ -123,9 +106,9 @@ namespace WindowsFormsApp
             this.btnHanghoa.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHanghoa.ForeColor = System.Drawing.Color.White;
             this.btnHanghoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHanghoa.Location = new System.Drawing.Point(289, 8);
+            this.btnHanghoa.Location = new System.Drawing.Point(163, 1);
             this.btnHanghoa.Name = "btnHanghoa";
-            this.btnHanghoa.Size = new System.Drawing.Size(157, 49);
+            this.btnHanghoa.Size = new System.Drawing.Size(157, 66);
             this.btnHanghoa.TabIndex = 5;
             this.btnHanghoa.Text = "   Hàng hóa";
             this.btnHanghoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -134,7 +117,7 @@ namespace WindowsFormsApp
             // 
             // btnHoadon
             // 
-            this.btnHoadon.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnHoadon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHoadon.FlatAppearance.BorderSize = 0;
             this.btnHoadon.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
@@ -142,43 +125,14 @@ namespace WindowsFormsApp
             this.btnHoadon.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoadon.ForeColor = System.Drawing.Color.White;
             this.btnHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoadon.Location = new System.Drawing.Point(46, 8);
+            this.btnHoadon.Location = new System.Drawing.Point(0, 0);
             this.btnHoadon.Name = "btnHoadon";
-            this.btnHoadon.Size = new System.Drawing.Size(157, 49);
+            this.btnHoadon.Size = new System.Drawing.Size(157, 66);
             this.btnHoadon.TabIndex = 6;
             this.btnHoadon.Text = "   Hóa đơn";
             this.btnHoadon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHoadon.UseVisualStyleBackColor = false;
             this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click_1);
-            // 
-            // pnldichuyenkhachhang
-            // 
-            this.pnldichuyenkhachhang.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pnldichuyenkhachhang.Location = new System.Drawing.Point(535, 62);
-            this.pnldichuyenkhachhang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnldichuyenkhachhang.Name = "pnldichuyenkhachhang";
-            this.pnldichuyenkhachhang.Size = new System.Drawing.Size(130, 2);
-            this.pnldichuyenkhachhang.TabIndex = 6;
-            // 
-            // pnldichuyenhoadon
-            // 
-            this.pnldichuyenhoadon.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pnldichuyenhoadon.ForeColor = System.Drawing.Color.White;
-            this.pnldichuyenhoadon.Location = new System.Drawing.Point(305, 62);
-            this.pnldichuyenhoadon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnldichuyenhoadon.Name = "pnldichuyenhoadon";
-            this.pnldichuyenhoadon.Size = new System.Drawing.Size(130, 2);
-            this.pnldichuyenhoadon.TabIndex = 6;
-            // 
-            // pnldichuyenHanghoa
-            // 
-            this.pnldichuyenHanghoa.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pnldichuyenHanghoa.ForeColor = System.Drawing.Color.White;
-            this.pnldichuyenHanghoa.Location = new System.Drawing.Point(55, 62);
-            this.pnldichuyenHanghoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnldichuyenHanghoa.Name = "pnldichuyenHanghoa";
-            this.pnldichuyenHanghoa.Size = new System.Drawing.Size(130, 2);
-            this.pnldichuyenHanghoa.TabIndex = 5;
             // 
             // pnlTK
             // 
@@ -223,14 +177,10 @@ namespace WindowsFormsApp
         #endregion
 
         private System.Windows.Forms.Panel pnlButton;
-        private System.Windows.Forms.Panel pnldichuyenphieunhap;
         private System.Windows.Forms.Button btnphieunhap;
         private System.Windows.Forms.Button btnKhachhang;
         private System.Windows.Forms.Button btnHanghoa;
         private System.Windows.Forms.Button btnHoadon;
-        private System.Windows.Forms.Panel pnldichuyenkhachhang;
-        private System.Windows.Forms.Panel pnldichuyenhoadon;
-        private System.Windows.Forms.Panel pnldichuyenHanghoa;
         private System.Windows.Forms.Panel pnlTK;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;

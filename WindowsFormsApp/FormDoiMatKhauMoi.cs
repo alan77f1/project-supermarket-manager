@@ -46,6 +46,28 @@ namespace WindowsFormsApp
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void chkHienThiMK_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHienThiMK.Checked == true)
+            {
+                txtMKcu.PasswordChar = '\0';
+                txtmkMoi.PasswordChar = '\0';
+                txtXacnhan.PasswordChar = '\0';
+            }
+            else
+            {
+                txtMKcu.PasswordChar = '*';
+                txtmkMoi.PasswordChar = '*';
+                txtXacnhan.PasswordChar = '*';
+            }
+
+        }
+
+        private void btnLuu_Click_1(object sender, EventArgs e)
+        {
             if (check_data() == true)
             {
                 string tenDangNhap = txTentaikhoan.Text;
@@ -72,23 +94,6 @@ namespace WindowsFormsApp
             {
                 MessageBox.Show("Mật khẩu mới không được trống", "Thông báo");
             }
-        }
-
-        private void chkHienThiMK_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkHienThiMK.Checked == true)
-            {
-                txtMKcu.PasswordChar = '\0';
-                txtmkMoi.PasswordChar = '\0';
-                txtXacnhan.PasswordChar = '\0';
-            }
-            else
-            {
-                txtMKcu.PasswordChar = '*';
-                txtmkMoi.PasswordChar = '*';
-                txtXacnhan.PasswordChar = '*';
-            }
-
         }
     }
 }

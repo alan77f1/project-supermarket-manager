@@ -27,40 +27,27 @@ namespace WindowsFormsApp
 
         private void btnHoadon_Click_1(object sender, EventArgs e)
         {
-            pnldichuyenHanghoa.BackColor = Color.LightSteelBlue;
-            pnldichuyenhoadon.BackColor = Color.Maroon;
-            pnldichuyenkhachhang.BackColor = Color.LightSteelBlue;
-            pnldichuyenphieunhap.BackColor = Color.LightSteelBlue;
+           
             UC_ThongKeHoaDon uC_Thongkehoadon = new UC_ThongKeHoaDon();
             addUC(uC_Thongkehoadon);
         }
 
         private void btnHanghoa_Click_1(object sender, EventArgs e)
         {
-            pnldichuyenHanghoa.BackColor = Color.Maroon;
-            pnldichuyenhoadon.BackColor = Color.LightSteelBlue;
-            pnldichuyenkhachhang.BackColor = Color.LightSteelBlue;
-            pnldichuyenphieunhap.BackColor = Color.LightSteelBlue;
+           
             UC_ThongKeHangHoa uC_ThongKehanghoa = new UC_ThongKeHangHoa();
             addUC(uC_ThongKehanghoa);
         }
 
         private void btnKhachhang_Click_1(object sender, EventArgs e)
         {
-            pnldichuyenHanghoa.BackColor = Color.LightSteelBlue;
-            pnldichuyenhoadon.BackColor = Color.LightSteelBlue;
-            pnldichuyenkhachhang.BackColor = Color.Maroon;
-            pnldichuyenphieunhap.BackColor = Color.LightSteelBlue;
+          
             UC_ThongKeKhachHang uC_Thongkekhachhang = new UC_ThongKeKhachHang();
             addUC(uC_Thongkekhachhang);
         }
 
         private void btnphieunhap_Click_1(object sender, EventArgs e)
         {
-            pnldichuyenHanghoa.BackColor = Color.LightSteelBlue;
-            pnldichuyenhoadon.BackColor = Color.LightSteelBlue;
-            pnldichuyenkhachhang.BackColor = Color.LightSteelBlue;
-            pnldichuyenphieunhap.BackColor = Color.Maroon;
             UC_ThongKePhieuNhap uC_Thongkephieunhap = new UC_ThongKePhieuNhap();
             addUC(uC_Thongkephieunhap);
         }

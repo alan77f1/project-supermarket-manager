@@ -36,8 +36,8 @@ namespace WindowsFormsApp
             this.txtXacnhan = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.chkHienThiMK = new System.Windows.Forms.CheckBox();
-            this.btnLuu = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txTentaikhoan = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtMKcu
@@ -167,24 +167,6 @@ namespace WindowsFormsApp
             this.chkHienThiMK.UseVisualStyleBackColor = true;
             this.chkHienThiMK.CheckedChanged += new System.EventHandler(this.chkHienThiMK_CheckedChanged);
             // 
-            // btnLuu
-            // 
-            this.btnLuu.CheckedState.Parent = this.btnLuu;
-            this.btnLuu.CustomImages.Parent = this.btnLuu;
-            this.btnLuu.DisabledState.Parent = this.btnLuu;
-            this.btnLuu.FillColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnLuu.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.HoverState.Parent = this.btnLuu;
-            this.btnLuu.Location = new System.Drawing.Point(505, 247);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.ShadowDecoration.Parent = this.btnLuu;
-            this.btnLuu.Size = new System.Drawing.Size(139, 47);
-            this.btnLuu.TabIndex = 202;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
             // txTentaikhoan
             // 
             this.txTentaikhoan.BorderColor = System.Drawing.Color.Black;
@@ -214,13 +196,35 @@ namespace WindowsFormsApp
             this.txTentaikhoan.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txTentaikhoan.TabIndex = 203;
             // 
+            // btnLuu
+            // 
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(66)))));
+            this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLuu.FlatAppearance.BorderSize = 0;
+            this.btnLuu.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Sitka Banner", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(500, 236);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Padding = new System.Windows.Forms.Padding(1);
+            this.btnLuu.Size = new System.Drawing.Size(166, 58);
+            this.btnLuu.TabIndex = 204;
+            this.btnLuu.Text = "  Lưu";
+            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click_1);
+            // 
             // FormDoiMatKhauMoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(707, 315);
-            this.Controls.Add(this.txTentaikhoan);
             this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.txTentaikhoan);
             this.Controls.Add(this.chkHienThiMK);
             this.Controls.Add(this.txtXacnhan);
             this.Controls.Add(this.label2);
@@ -246,7 +250,7 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2TextBox txtXacnhan;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox chkHienThiMK;
-        private Guna.UI2.WinForms.Guna2GradientButton btnLuu;
         private Guna.UI2.WinForms.Guna2TextBox txTentaikhoan;
+        private System.Windows.Forms.Button btnLuu;
     }
 }

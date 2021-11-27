@@ -109,8 +109,8 @@ namespace WindowsFormsApp
 
         private void btnThemDVT_Click(object sender, EventArgs e)
         {
-            FormDonViTinh tdvt = new FormDonViTinh();
-            tdvt.ShowDialog();
+            /*FormDonViTinh tdvt = new FormDonViTinh();
+            tdvt.ShowDialog();*/
         }
         List<Models.MatHang> list;
 
