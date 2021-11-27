@@ -45,15 +45,15 @@
             this.txtTenMH = new System.Windows.Forms.TextBox();
             this.txtGiaBan = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
-            this.cbbDVT = new System.Windows.Forms.ComboBox();
             this.btnNhapHang = new Guna.UI2.WinForms.Guna2Button();
             this.btnSua = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDVT = new Guna.UI2.WinForms.Guna2Button();
             this.btnTaiAnh = new Guna.UI2.WinForms.Guna2Button();
             this.dgvHangHoa = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pcbHangHoa = new System.Windows.Forms.PictureBox();
+            this.cbbDVT = new System.Windows.Forms.ComboBox();
+            this.btnDVT = new Guna.UI2.WinForms.Guna2Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHangHoa)).BeginInit();
@@ -84,7 +84,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.txtTimKiem);
             this.panel2.Controls.Add(this.label1);
@@ -198,21 +198,12 @@
             this.txtSoLuong.TabIndex = 12;
             this.txtSoLuong.Text = "0";
             // 
-            // cbbDVT
-            // 
-            this.cbbDVT.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbDVT.FormattingEnabled = true;
-            this.cbbDVT.Location = new System.Drawing.Point(165, 169);
-            this.cbbDVT.Name = "cbbDVT";
-            this.cbbDVT.Size = new System.Drawing.Size(173, 32);
-            this.cbbDVT.TabIndex = 13;
-            // 
             // btnNhapHang
             // 
             this.btnNhapHang.CheckedState.Parent = this.btnNhapHang;
             this.btnNhapHang.CustomImages.Parent = this.btnNhapHang;
             this.btnNhapHang.DisabledState.Parent = this.btnNhapHang;
-            this.btnNhapHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnNhapHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnNhapHang.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhapHang.ForeColor = System.Drawing.Color.White;
             this.btnNhapHang.HoverState.Parent = this.btnNhapHang;
@@ -229,7 +220,7 @@
             this.btnSua.CheckedState.Parent = this.btnSua;
             this.btnSua.CustomImages.Parent = this.btnSua;
             this.btnSua.DisabledState.Parent = this.btnSua;
-            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.White;
             this.btnSua.HoverState.Parent = this.btnSua;
@@ -246,7 +237,7 @@
             this.btnXoa.CheckedState.Parent = this.btnXoa;
             this.btnXoa.CustomImages.Parent = this.btnXoa;
             this.btnXoa.DisabledState.Parent = this.btnXoa;
-            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.HoverState.Parent = this.btnXoa;
@@ -258,32 +249,16 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // btnDVT
-            // 
-            this.btnDVT.CheckedState.Parent = this.btnDVT;
-            this.btnDVT.CustomImages.Parent = this.btnDVT;
-            this.btnDVT.DisabledState.Parent = this.btnDVT;
-            this.btnDVT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnDVT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnDVT.ForeColor = System.Drawing.Color.White;
-            this.btnDVT.HoverState.Parent = this.btnDVT;
-            this.btnDVT.Location = new System.Drawing.Point(347, 168);
-            this.btnDVT.Name = "btnDVT";
-            this.btnDVT.ShadowDecoration.Parent = this.btnDVT;
-            this.btnDVT.Size = new System.Drawing.Size(34, 32);
-            this.btnDVT.TabIndex = 6;
-            this.btnDVT.Text = "+";
-            // 
             // btnTaiAnh
             // 
             this.btnTaiAnh.CheckedState.Parent = this.btnTaiAnh;
             this.btnTaiAnh.CustomImages.Parent = this.btnTaiAnh;
             this.btnTaiAnh.DisabledState.Parent = this.btnTaiAnh;
-            this.btnTaiAnh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnTaiAnh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnTaiAnh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTaiAnh.ForeColor = System.Drawing.Color.White;
             this.btnTaiAnh.HoverState.Parent = this.btnTaiAnh;
-            this.btnTaiAnh.Location = new System.Drawing.Point(784, 206);
+            this.btnTaiAnh.Location = new System.Drawing.Point(789, 196);
             this.btnTaiAnh.Name = "btnTaiAnh";
             this.btnTaiAnh.ShadowDecoration.Parent = this.btnTaiAnh;
             this.btnTaiAnh.Size = new System.Drawing.Size(89, 25);
@@ -390,6 +365,31 @@
             this.pcbHangHoa.TabIndex = 14;
             this.pcbHangHoa.TabStop = false;
             // 
+            // cbbDVT
+            // 
+            this.cbbDVT.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbDVT.FormattingEnabled = true;
+            this.cbbDVT.Location = new System.Drawing.Point(165, 169);
+            this.cbbDVT.Name = "cbbDVT";
+            this.cbbDVT.Size = new System.Drawing.Size(173, 32);
+            this.cbbDVT.TabIndex = 13;
+            // 
+            // btnDVT
+            // 
+            this.btnDVT.CheckedState.Parent = this.btnDVT;
+            this.btnDVT.CustomImages.Parent = this.btnDVT;
+            this.btnDVT.DisabledState.Parent = this.btnDVT;
+            this.btnDVT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
+            this.btnDVT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnDVT.ForeColor = System.Drawing.Color.White;
+            this.btnDVT.HoverState.Parent = this.btnDVT;
+            this.btnDVT.Location = new System.Drawing.Point(359, 169);
+            this.btnDVT.Name = "btnDVT";
+            this.btnDVT.ShadowDecoration.Parent = this.btnDVT;
+            this.btnDVT.Size = new System.Drawing.Size(34, 32);
+            this.btnDVT.TabIndex = 6;
+            this.btnDVT.Text = "+";
+            // 
             // UC_KhoHang
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -426,14 +426,14 @@
         private System.Windows.Forms.TextBox txtTenMH;
         private System.Windows.Forms.TextBox txtGiaBan;
         private System.Windows.Forms.TextBox txtSoLuong;
-        public System.Windows.Forms.ComboBox cbbDVT;
         private System.Windows.Forms.PictureBox pcbHangHoa;
         private Guna.UI2.WinForms.Guna2Button btnNhapHang;
         private Guna.UI2.WinForms.Guna2Button btnSua;
         private Guna.UI2.WinForms.Guna2Button btnXoa;
-        private Guna.UI2.WinForms.Guna2Button btnDVT;
         private Guna.UI2.WinForms.Guna2Button btnTaiAnh;
         private Guna.UI2.WinForms.Guna2DataGridView dgvHangHoa;
         private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2Button btnDVT;
+        public System.Windows.Forms.ComboBox cbbDVT;
     }
 }

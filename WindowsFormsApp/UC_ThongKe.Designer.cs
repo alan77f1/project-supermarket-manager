@@ -29,6 +29,7 @@ namespace WindowsFormsApp
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnlButton = new System.Windows.Forms.Panel();
             this.pnldichuyenphieunhap = new System.Windows.Forms.Panel();
             this.btnphieunhap = new System.Windows.Forms.Button();
@@ -39,17 +40,21 @@ namespace WindowsFormsApp
             this.pnldichuyenhoadon = new System.Windows.Forms.Panel();
             this.pnldichuyenHanghoa = new System.Windows.Forms.Panel();
             this.pnlTK = new System.Windows.Forms.Panel();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlButton.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlButton
             // 
-            this.pnlButton.BackColor = System.Drawing.Color.SkyBlue;
-            this.pnlButton.Controls.Add(this.pnldichuyenphieunhap);
+            this.pnlButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.pnlButton.Controls.Add(this.btnphieunhap);
+            this.pnlButton.Controls.Add(this.btnHoadon);
             this.pnlButton.Controls.Add(this.btnKhachhang);
             this.pnlButton.Controls.Add(this.btnHanghoa);
-            this.pnlButton.Controls.Add(this.btnHoadon);
+            this.pnlButton.Controls.Add(this.pnldichuyenphieunhap);
             this.pnlButton.Controls.Add(this.pnldichuyenkhachhang);
             this.pnlButton.Controls.Add(this.pnldichuyenhoadon);
             this.pnlButton.Controls.Add(this.pnldichuyenHanghoa);
@@ -57,13 +62,14 @@ namespace WindowsFormsApp
             this.pnlButton.Location = new System.Drawing.Point(0, 0);
             this.pnlButton.Margin = new System.Windows.Forms.Padding(4);
             this.pnlButton.Name = "pnlButton";
-            this.pnlButton.Size = new System.Drawing.Size(1010, 59);
+            this.pnlButton.Size = new System.Drawing.Size(1010, 66);
             this.pnlButton.TabIndex = 24;
+            this.pnlButton.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlButton_Paint);
             // 
             // pnldichuyenphieunhap
             // 
             this.pnldichuyenphieunhap.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pnldichuyenphieunhap.Location = new System.Drawing.Point(756, 49);
+            this.pnldichuyenphieunhap.Location = new System.Drawing.Point(784, 62);
             this.pnldichuyenphieunhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnldichuyenphieunhap.Name = "pnldichuyenphieunhap";
             this.pnldichuyenphieunhap.Size = new System.Drawing.Size(130, 2);
@@ -79,10 +85,8 @@ namespace WindowsFormsApp
             this.btnphieunhap.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnphieunhap.ForeColor = System.Drawing.Color.White;
             this.btnphieunhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnphieunhap.Location = new System.Drawing.Point(740, 0);
-            this.btnphieunhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnphieunhap.Location = new System.Drawing.Point(767, 8);
             this.btnphieunhap.Name = "btnphieunhap";
-            this.btnphieunhap.Padding = new System.Windows.Forms.Padding(1);
             this.btnphieunhap.Size = new System.Drawing.Size(157, 49);
             this.btnphieunhap.TabIndex = 24;
             this.btnphieunhap.Text = "  Phiếu nhập";
@@ -100,8 +104,7 @@ namespace WindowsFormsApp
             this.btnKhachhang.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhachhang.ForeColor = System.Drawing.Color.White;
             this.btnKhachhang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachhang.Location = new System.Drawing.Point(503, 0);
-            this.btnKhachhang.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKhachhang.Location = new System.Drawing.Point(518, 8);
             this.btnKhachhang.Name = "btnKhachhang";
             this.btnKhachhang.Size = new System.Drawing.Size(157, 49);
             this.btnKhachhang.TabIndex = 23;
@@ -120,10 +123,8 @@ namespace WindowsFormsApp
             this.btnHanghoa.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHanghoa.ForeColor = System.Drawing.Color.White;
             this.btnHanghoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHanghoa.Location = new System.Drawing.Point(290, 0);
-            this.btnHanghoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHanghoa.Location = new System.Drawing.Point(289, 8);
             this.btnHanghoa.Name = "btnHanghoa";
-            this.btnHanghoa.Padding = new System.Windows.Forms.Padding(1);
             this.btnHanghoa.Size = new System.Drawing.Size(157, 49);
             this.btnHanghoa.TabIndex = 5;
             this.btnHanghoa.Text = "   Hàng hóa";
@@ -133,7 +134,7 @@ namespace WindowsFormsApp
             // 
             // btnHoadon
             // 
-            this.btnHoadon.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnHoadon.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHoadon.FlatAppearance.BorderSize = 0;
             this.btnHoadon.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
@@ -141,10 +142,8 @@ namespace WindowsFormsApp
             this.btnHoadon.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoadon.ForeColor = System.Drawing.Color.White;
             this.btnHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoadon.Location = new System.Drawing.Point(66, -4);
-            this.btnHoadon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHoadon.Location = new System.Drawing.Point(46, 8);
             this.btnHoadon.Name = "btnHoadon";
-            this.btnHoadon.Padding = new System.Windows.Forms.Padding(1);
             this.btnHoadon.Size = new System.Drawing.Size(157, 49);
             this.btnHoadon.TabIndex = 6;
             this.btnHoadon.Text = "   Hóa đơn";
@@ -155,7 +154,7 @@ namespace WindowsFormsApp
             // pnldichuyenkhachhang
             // 
             this.pnldichuyenkhachhang.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pnldichuyenkhachhang.Location = new System.Drawing.Point(519, 49);
+            this.pnldichuyenkhachhang.Location = new System.Drawing.Point(535, 62);
             this.pnldichuyenkhachhang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnldichuyenkhachhang.Name = "pnldichuyenkhachhang";
             this.pnldichuyenkhachhang.Size = new System.Drawing.Size(130, 2);
@@ -165,7 +164,7 @@ namespace WindowsFormsApp
             // 
             this.pnldichuyenhoadon.BackColor = System.Drawing.Color.LightSteelBlue;
             this.pnldichuyenhoadon.ForeColor = System.Drawing.Color.White;
-            this.pnldichuyenhoadon.Location = new System.Drawing.Point(305, 49);
+            this.pnldichuyenhoadon.Location = new System.Drawing.Point(305, 62);
             this.pnldichuyenhoadon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnldichuyenhoadon.Name = "pnldichuyenhoadon";
             this.pnldichuyenhoadon.Size = new System.Drawing.Size(130, 2);
@@ -175,7 +174,7 @@ namespace WindowsFormsApp
             // 
             this.pnldichuyenHanghoa.BackColor = System.Drawing.Color.LightSteelBlue;
             this.pnldichuyenHanghoa.ForeColor = System.Drawing.Color.White;
-            this.pnldichuyenHanghoa.Location = new System.Drawing.Point(80, 49);
+            this.pnldichuyenHanghoa.Location = new System.Drawing.Point(55, 62);
             this.pnldichuyenHanghoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnldichuyenHanghoa.Name = "pnldichuyenHanghoa";
             this.pnldichuyenHanghoa.Size = new System.Drawing.Size(130, 2);
@@ -183,10 +182,30 @@ namespace WindowsFormsApp
             // 
             // pnlTK
             // 
-            this.pnlTK.Location = new System.Drawing.Point(0, 56);
+            this.pnlTK.Location = new System.Drawing.Point(0, 73);
             this.pnlTK.Name = "pnlTK";
-            this.pnlTK.Size = new System.Drawing.Size(1010, 606);
+            this.pnlTK.Size = new System.Drawing.Size(1010, 589);
             this.pnlTK.TabIndex = 25;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 25;
+            this.bunifuElipse1.TargetControl = this.btnHoadon;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 25;
+            this.bunifuElipse2.TargetControl = this.btnHanghoa;
+            // 
+            // bunifuElipse3
+            // 
+            this.bunifuElipse3.ElipseRadius = 25;
+            this.bunifuElipse3.TargetControl = this.btnKhachhang;
+            // 
+            // bunifuElipse4
+            // 
+            this.bunifuElipse4.ElipseRadius = 25;
+            this.bunifuElipse4.TargetControl = this.btnphieunhap;
             // 
             // UC_ThongKe
             // 
@@ -213,5 +232,9 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Panel pnldichuyenhoadon;
         private System.Windows.Forms.Panel pnldichuyenHanghoa;
         private System.Windows.Forms.Panel pnlTK;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
     }
 }

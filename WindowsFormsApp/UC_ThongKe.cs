@@ -64,5 +64,10 @@ namespace WindowsFormsApp
             UC_ThongKePhieuNhap uC_Thongkephieunhap = new UC_ThongKePhieuNhap();
             addUC(uC_Thongkephieunhap);
         }
+
+        private void pnlButton_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
