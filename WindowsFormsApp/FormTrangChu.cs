@@ -25,15 +25,13 @@ namespace WindowsFormsApp
             Phanquyen();
 
             TTnguoiban();
-                
         }
-
 
         private void TTnguoiban()
         {
-            string name = lbNguoiDung.Text;
+            string name = lblNguoidung.Text;
             string query = "select MaNV,TenHienThi from Nhanvien where TenDangNhap = '" + tk + "'";
-            if (!string.IsNullOrEmpty(lbNguoiDung.Text))
+            if (!string.IsNullOrEmpty(lblNguoidung.Text))
             {
                 DataTable dt = DataProvider.Instance.ExecuteQuery(query);
                 lblManv.Text = dt.Rows[0]["MaNV"].ToString();
@@ -42,7 +40,6 @@ namespace WindowsFormsApp
         }
         private void Phanquyen()
         {
-
             string Name = lblNguoidung.Text;
             string query = "select Quyen as [Quyen] from NhanVien where TenDangNhap = N'" + Name + "'";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
@@ -77,29 +74,10 @@ namespace WindowsFormsApp
             panelControl.Controls.Add(uc);
             uc.BringToFront();
         }
-        private void diChuyenPanel(Control control)
-        {
-            panelDiChuyen.Top = control.Top;
-            panelDiChuyen.Height = control.Height;
-        }
-
-
-        private void timerTime_Tick(object sender, EventArgs e)
-        {
-            DateTime dt = DateTime.Now;
-            lbTime.Text = dt.ToString("HH:MM:ss");
-        }
-
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Start();
-        }
-
-        private void movesidePannel(Control btn)
-        {
-            panelDiChuyen.Top = btn.Top;
-            panelDiChuyen.Height = btn.Height;
         }
 
         private void addControlsToPanel(Control c)
@@ -109,39 +87,53 @@ namespace WindowsFormsApp
             panelControl.Controls.Add(c);
         }
 
-        private void btnNhanVien_Click_1(object sender, EventArgs e)
-        {
-            movesidePannel(btnNhanVien);
-            UC_NhanVien nv = new UC_NhanVien();
-            addControlsToPanel(nv);
-        }
 
-        private void btnBanHang_Click(object sender, EventArgs e)
+        private void lblNguoidung_Click(object sender, EventArgs e)
         {
-            movesidePannel(btnBanHang);
-            UC_BanHang bh = new UC_BanHang(lblManv.Text,lblTennv.Text);
-            addControlsToPanel(bh);
+            FormThongTinNhanVien formThongTinNhanVien = new FormThongTinNhanVien(lblNguoidung.Text);
+            formThongTinNhanVien.Show();
+        }
+  
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {
+            UC_TrangChu tc = new UC_TrangChu();
+            addControlsToPanel(tc);
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
-            movesidePannel(btnKhachHang);
-            UC_KhachHang khh = new UC_KhachHang();
-            addControlsToPanel(khh);
+            UC_KhachHang kh = new UC_KhachHang();
+            addControlsToPanel(kh);
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            UC_NhanVien nv = new UC_NhanVien();
+            addControlsToPanel(nv);
         }
 
         private void btnNCC_Click(object sender, EventArgs e)
         {
-            movesidePannel(btnNCC);
             UC_NhaCungCap ncc = new UC_NhaCungCap();
             addControlsToPanel(ncc);
         }
 
         private void btnKhoHang_Click(object sender, EventArgs e)
         {
-            movesidePannel(btnKhoHang);
             UC_KhoHang kh = new UC_KhoHang(lblManv.Text, lblTennv.Text);
             addControlsToPanel(kh);
+        }
+
+        private void btnBanHang_Click(object sender, EventArgs e)
+        {
+            UC_BanHang bh = new UC_BanHang(lblManv.Text, lblTennv.Text);
+            addControlsToPanel(bh);
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            UC_ThongKe tk = new UC_ThongKe();
+            addControlsToPanel(tk);
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
@@ -149,38 +141,6 @@ namespace WindowsFormsApp
             FormDangNhap dn = new FormDangNhap();
             dn.Show();
             this.Hide();
-        }
-
-        private void btnTrangChu_Click(object sender, EventArgs e)
-        {
-            movesidePannel(btnTrangChu);
-            UC_TrangChu tc = new UC_TrangChu();
-            addControlsToPanel(tc);
-        }
-
-        private void btnThongKe_Click(object sender, EventArgs e)
-        {
-            movesidePannel(btnThongKe);
-            UC_ThongKe tk = new UC_ThongKe();
-            addControlsToPanel(tk);
-
-
-        }
-
-        private void lblNguoidung_Click(object sender, EventArgs e)
-        {
-            FormThongTinNhanVien formThongTinNhanVien = new FormThongTinNhanVien(lblNguoidung.Text);
-            formThongTinNhanVien.Show();
-        }
-
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
