@@ -98,7 +98,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(168, 57);
+            this.pictureBox2.Location = new System.Drawing.Point(163, 57);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(86, 70);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -108,7 +108,7 @@
             // lbSoKH
             // 
             this.lbSoKH.AutoSize = true;
-            this.lbSoKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(59)))));
+            this.lbSoKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(80)))), ((int)(((byte)(192)))));
             this.lbSoKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoKH.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbSoKH.Location = new System.Drawing.Point(16, 57);
@@ -120,7 +120,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(59)))));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(80)))), ((int)(((byte)(192)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(22, 14);
@@ -141,7 +141,7 @@
             // lbHangHoa
             // 
             this.lbHangHoa.AutoSize = true;
-            this.lbHangHoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(134)))), ((int)(((byte)(197)))));
+            this.lbHangHoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(172)))));
             this.lbHangHoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHangHoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbHangHoa.Location = new System.Drawing.Point(25, 57);
@@ -153,7 +153,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(134)))), ((int)(((byte)(197)))));
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(172)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(31, 14);
@@ -201,9 +201,9 @@
             this.guna2GradientPanel2.Controls.Add(this.label3);
             this.guna2GradientPanel2.Controls.Add(this.lbHangHoa);
             this.guna2GradientPanel2.Controls.Add(this.pictureBox3);
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(134)))), ((int)(((byte)(197)))));
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(172)))));
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(329, 51);
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(172)))));
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(640, 51);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
             this.guna2GradientPanel2.Size = new System.Drawing.Size(267, 140);
@@ -214,9 +214,9 @@
             this.guna2GradientPanel3.Controls.Add(this.pictureBox2);
             this.guna2GradientPanel3.Controls.Add(this.lbSoKH);
             this.guna2GradientPanel3.Controls.Add(this.label2);
-            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(59)))));
-            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.guna2GradientPanel3.Location = new System.Drawing.Point(648, 51);
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(80)))), ((int)(((byte)(192)))));
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(332, 51);
             this.guna2GradientPanel3.Name = "guna2GradientPanel3";
             this.guna2GradientPanel3.ShadowDecoration.Parent = this.guna2GradientPanel3;
             this.guna2GradientPanel3.Size = new System.Drawing.Size(267, 140);
