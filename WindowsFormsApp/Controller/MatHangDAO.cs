@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WindowsFormsApp.Models;
 
-namespace WindowsFormsApp.DAO
+namespace WindowsFormsApp.Controller
 {
     class MatHangDAO
     {

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsFormsApp.Models;
-using WindowsFormsApp.DAO;
+using WindowsFormsApp.Controller;
 using System.Data;
 
-namespace WindowsFormsApp.BUS
+namespace WindowsFormsApp.Views
 {
     public class MatHangBUS
     {

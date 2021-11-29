@@ -120,9 +120,10 @@
             // lblTennv
             // 
             this.lblTennv.AutoSize = true;
+            this.lblTennv.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblTennv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTennv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(247)))));
-            this.lblTennv.Location = new System.Drawing.Point(443, 25);
+            this.lblTennv.Location = new System.Drawing.Point(0, 0);
             this.lblTennv.Name = "lblTennv";
             this.lblTennv.Size = new System.Drawing.Size(64, 22);
             this.lblTennv.TabIndex = 29;
@@ -215,9 +216,9 @@
             // 
             // panelControl
             // 
-            this.panelControl.Location = new System.Drawing.Point(328, 72);
+            this.panelControl.Location = new System.Drawing.Point(217, 75);
             this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(745, 694);
+            this.panelControl.Size = new System.Drawing.Size(983, 685);
             this.panelControl.TabIndex = 5;
             // 
             // guna2Panel1
@@ -308,7 +309,7 @@
             this.btnDangXuat.BackColor = System.Drawing.Color.Transparent;
             this.btnDangXuat.BorderRadius = 26;
             this.btnDangXuat.CheckedState.Parent = this.btnDangXuat;
-            this.btnDangXuat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDangXuat.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnDangXuat.CustomImages.Parent = this.btnDangXuat;
             this.btnDangXuat.CustomizableEdges.BottomRight = false;
             this.btnDangXuat.CustomizableEdges.TopRight = false;
@@ -341,7 +342,7 @@
             this.btnNhanVien.BackColor = System.Drawing.Color.Transparent;
             this.btnNhanVien.BorderRadius = 26;
             this.btnNhanVien.CheckedState.Parent = this.btnNhanVien;
-            this.btnNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNhanVien.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnNhanVien.CustomImages.Parent = this.btnNhanVien;
             this.btnNhanVien.CustomizableEdges.BottomRight = false;
             this.btnNhanVien.CustomizableEdges.TopRight = false;
@@ -374,7 +375,7 @@
             this.btnThongKe.BackColor = System.Drawing.Color.Transparent;
             this.btnThongKe.BorderRadius = 26;
             this.btnThongKe.CheckedState.Parent = this.btnThongKe;
-            this.btnThongKe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThongKe.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnThongKe.CustomImages.Parent = this.btnThongKe;
             this.btnThongKe.CustomizableEdges.BottomRight = false;
             this.btnThongKe.CustomizableEdges.TopRight = false;
@@ -407,7 +408,7 @@
             this.btnBanHang.BackColor = System.Drawing.Color.Transparent;
             this.btnBanHang.BorderRadius = 26;
             this.btnBanHang.CheckedState.Parent = this.btnBanHang;
-            this.btnBanHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBanHang.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnBanHang.CustomImages.Parent = this.btnBanHang;
             this.btnBanHang.CustomizableEdges.BottomRight = false;
             this.btnBanHang.CustomizableEdges.TopRight = false;
@@ -440,7 +441,7 @@
             this.btnKhoHang.BackColor = System.Drawing.Color.Transparent;
             this.btnKhoHang.BorderRadius = 26;
             this.btnKhoHang.CheckedState.Parent = this.btnKhoHang;
-            this.btnKhoHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKhoHang.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnKhoHang.CustomImages.Parent = this.btnKhoHang;
             this.btnKhoHang.CustomizableEdges.BottomRight = false;
             this.btnKhoHang.CustomizableEdges.TopRight = false;
@@ -473,7 +474,7 @@
             this.btnNCC.BackColor = System.Drawing.Color.Transparent;
             this.btnNCC.BorderRadius = 26;
             this.btnNCC.CheckedState.Parent = this.btnNCC;
-            this.btnNCC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNCC.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnNCC.CustomImages.Parent = this.btnNCC;
             this.btnNCC.CustomizableEdges.BottomRight = false;
             this.btnNCC.CustomizableEdges.TopRight = false;
@@ -506,7 +507,7 @@
             this.btnKhachHang.BackColor = System.Drawing.Color.Transparent;
             this.btnKhachHang.BorderRadius = 26;
             this.btnKhachHang.CheckedState.Parent = this.btnKhachHang;
-            this.btnKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKhachHang.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnKhachHang.CustomImages.Parent = this.btnKhachHang;
             this.btnKhachHang.CustomizableEdges.BottomRight = false;
             this.btnKhachHang.CustomizableEdges.TopRight = false;
@@ -539,7 +540,7 @@
             this.btnTrangChu.BackColor = System.Drawing.Color.Transparent;
             this.btnTrangChu.BorderRadius = 26;
             this.btnTrangChu.CheckedState.Parent = this.btnTrangChu;
-            this.btnTrangChu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTrangChu.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnTrangChu.CustomImages.Parent = this.btnTrangChu;
             this.btnTrangChu.CustomizableEdges.BottomRight = false;
             this.btnTrangChu.CustomizableEdges.TopRight = false;

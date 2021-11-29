@@ -190,16 +190,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\MatHangBUS.cs" />
-    <Compile Include="DAO\Chuoiketnoi.cs" />
-    <Compile Include="DAO\ChuyenDoiTien.cs" />
-    <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="DAO\QuanLyChiTietHD.cs" />
-    <Compile Include="DAO\QuanLyHoaDon.cs" />
-    <Compile Include="DAO\QuanLyKhachHang.cs" />
-    <Compile Include="DAO\MatHangDAO.cs" />
-    <Compile Include="DAO\QuanLyNhaCC.cs" />
-    <Compile Include="DAO\QuanLyNhanVien.cs" />
-    <Compile Include="DAO\QuanLySanPham.cs" />
+    <Compile Include="Controller\Chuoiketnoi.cs" />
+    <Compile Include="Controller\ChuyenDoiTien.cs" />
+    <Compile Include="Controller\DataProvider.cs" />
+    <Compile Include="Controller\QuanLyChiTietHD.cs" />
+    <Compile Include="Controller\QuanLyHoaDon.cs" />
+    <Compile Include="Controller\QuanLyKhachHang.cs" />
+    <Compile Include="Controller\MatHangDAO.cs" />
+    <Compile Include="Controller\QuanLyNhaCC.cs" />
+    <Compile Include="Controller\QuanLyNhanVien.cs" />
+    <Compile Include="Controller\QuanLySanPham.cs" />
     <Compile Include="DataSet\DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

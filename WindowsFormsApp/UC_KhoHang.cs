@@ -3,8 +3,8 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using WindowsFormsApp.BUS;
-using WindowsFormsApp.DAO;
+using WindowsFormsApp.Views;
+using WindowsFormsApp.Controller;
 
 
 namespace WindowsFormsApp

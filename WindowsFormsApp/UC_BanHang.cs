@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
-using WindowsFormsApp.DAO;
+using WindowsFormsApp.Controller;
 using WindowsFormsApp.Models;
 
 namespace WindowsFormsApp
