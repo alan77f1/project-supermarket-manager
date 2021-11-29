@@ -30,20 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblTennv = new System.Windows.Forms.Label();
-            this.lblQuyen = new System.Windows.Forms.Label();
-            this.lblManv = new System.Windows.Forms.Label();
-            this.lblNguoidung = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.btnX = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblTennv = new System.Windows.Forms.Label();
+            this.lblManv = new System.Windows.Forms.Label();
+            this.lblQuyen = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblNguoidung = new System.Windows.Forms.Label();
             this.timerTime = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelControl = new System.Windows.Forms.Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.btnBanHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,56 +49,112 @@
             this.btnDangXuat = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnNhanVien = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnThongKe = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnBanHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnKhoHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnNCC = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnKhachHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnTrangChu = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.pannelLeft1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelControl = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.panel2.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panelLeft.SuspendLayout();
+            this.pannelLeft1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // panel2
+            // panel3
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(247)))));
-            this.panel2.Controls.Add(this.guna2DateTimePicker1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.lblTennv);
-            this.panel2.Controls.Add(this.lblQuyen);
-            this.panel2.Controls.Add(this.lblManv);
-            this.panel2.Controls.Add(this.lblNguoidung);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.guna2ControlBox1);
-            this.panel2.Location = new System.Drawing.Point(216, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(984, 66);
-            this.panel2.TabIndex = 7;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.panel3.Controls.Add(this.btnX);
+            this.panel3.Controls.Add(this.lblTennv);
+            this.panel3.Controls.Add(this.lblManv);
+            this.panel3.Controls.Add(this.lblQuyen);
+            this.panel3.Controls.Add(this.panel1);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.lblNguoidung);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(230, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(970, 66);
+            this.panel3.TabIndex = 4;
             // 
-            // guna2DateTimePicker1
+            // btnX
             // 
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.FocusedColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(676, 18);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(257, 36);
-            this.guna2DateTimePicker1.TabIndex = 32;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2021, 11, 28, 15, 7, 30, 961);
+            this.btnX.BackColor = System.Drawing.Color.Transparent;
+            this.btnX.CheckedState.Parent = this.btnX;
+            this.btnX.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnX.CustomImages.Parent = this.btnX;
+            this.btnX.CustomizableEdges.BottomRight = false;
+            this.btnX.CustomizableEdges.TopRight = false;
+            this.btnX.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnX.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnX.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnX.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnX.DisabledState.Parent = this.btnX;
+            this.btnX.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.btnX.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.btnX.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnX.ForeColor = System.Drawing.Color.White;
+            this.btnX.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
+            this.btnX.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.btnX.HoverState.Parent = this.btnX;
+            this.btnX.Location = new System.Drawing.Point(914, 0);
+            this.btnX.Name = "btnX";
+            this.btnX.ShadowDecoration.Parent = this.btnX;
+            this.btnX.Size = new System.Drawing.Size(56, 71);
+            this.btnX.TabIndex = 26;
+            this.btnX.Text = "X";
+            this.btnX.Click += new System.EventHandler(this.btnX_Click);
+            // 
+            // lblTennv
+            // 
+            this.lblTennv.AutoSize = true;
+            this.lblTennv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTennv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(247)))));
+            this.lblTennv.Location = new System.Drawing.Point(591, 24);
+            this.lblTennv.Name = "lblTennv";
+            this.lblTennv.Size = new System.Drawing.Size(64, 22);
+            this.lblTennv.TabIndex = 36;
+            this.lblTennv.Text = "chi123";
+            // 
+            // lblManv
+            // 
+            this.lblManv.AutoSize = true;
+            this.lblManv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(247)))));
+            this.lblManv.Location = new System.Drawing.Point(495, 22);
+            this.lblManv.Name = "lblManv";
+            this.lblManv.Size = new System.Drawing.Size(64, 22);
+            this.lblManv.TabIndex = 35;
+            this.lblManv.Text = "chi123";
+            // 
+            // lblQuyen
+            // 
+            this.lblQuyen.AutoSize = true;
+            this.lblQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(247)))));
+            this.lblQuyen.Location = new System.Drawing.Point(683, 19);
+            this.lblQuyen.Name = "lblQuyen";
+            this.lblQuyen.Size = new System.Drawing.Size(96, 25);
+            this.lblQuyen.TabIndex = 34;
+            this.lblQuyen.Text = "Miễn Phí";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel1.Location = new System.Drawing.Point(112, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(45, 37);
+            this.panel1.TabIndex = 33;
             // 
             // label2
             // 
@@ -110,46 +163,12 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(28)))), ((int)(((byte)(97)))));
-            this.label2.Location = new System.Drawing.Point(19, 19);
+            this.label2.Location = new System.Drawing.Point(14, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 29);
-            this.label2.TabIndex = 31;
+            this.label2.TabIndex = 32;
             this.label2.Text = "Xin Chào";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTennv
-            // 
-            this.lblTennv.AutoSize = true;
-            this.lblTennv.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblTennv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTennv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(247)))));
-            this.lblTennv.Location = new System.Drawing.Point(0, 0);
-            this.lblTennv.Name = "lblTennv";
-            this.lblTennv.Size = new System.Drawing.Size(64, 22);
-            this.lblTennv.TabIndex = 29;
-            this.lblTennv.Text = "chi123";
-            // 
-            // lblQuyen
-            // 
-            this.lblQuyen.AutoSize = true;
-            this.lblQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(247)))));
-            this.lblQuyen.Location = new System.Drawing.Point(528, 24);
-            this.lblQuyen.Name = "lblQuyen";
-            this.lblQuyen.Size = new System.Drawing.Size(96, 25);
-            this.lblQuyen.TabIndex = 4;
-            this.lblQuyen.Text = "Miễn Phí";
-            // 
-            // lblManv
-            // 
-            this.lblManv.AutoSize = true;
-            this.lblManv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(247)))));
-            this.lblManv.Location = new System.Drawing.Point(373, 18);
-            this.lblManv.Name = "lblManv";
-            this.lblManv.Size = new System.Drawing.Size(64, 22);
-            this.lblManv.TabIndex = 30;
-            this.lblManv.Text = "chi123";
             // 
             // lblNguoidung
             // 
@@ -158,103 +177,80 @@
             this.lblNguoidung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblNguoidung.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.lblNguoidung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(28)))), ((int)(((byte)(97)))));
-            this.lblNguoidung.Location = new System.Drawing.Point(215, 21);
+            this.lblNguoidung.Location = new System.Drawing.Point(203, 19);
             this.lblNguoidung.Name = "lblNguoidung";
             this.lblNguoidung.Size = new System.Drawing.Size(92, 29);
-            this.lblNguoidung.TabIndex = 6;
+            this.lblNguoidung.TabIndex = 7;
             this.lblNguoidung.Text = "ADMIN";
             this.lblNguoidung.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblNguoidung.Click += new System.EventHandler(this.lblNguoidung_Click);
             // 
-            // panel3
+            // panelLeft
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel3.Location = new System.Drawing.Point(164, 12);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(45, 37);
-            this.panel3.TabIndex = 5;
+            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.panelLeft.Controls.Add(this.btnBanHang);
+            this.panelLeft.Controls.Add(this.label8);
+            this.panelLeft.Controls.Add(this.label7);
+            this.panelLeft.Controls.Add(this.label6);
+            this.panelLeft.Controls.Add(this.label5);
+            this.panelLeft.Controls.Add(this.label4);
+            this.panelLeft.Controls.Add(this.btnDangXuat);
+            this.panelLeft.Controls.Add(this.btnNhanVien);
+            this.panelLeft.Controls.Add(this.btnThongKe);
+            this.panelLeft.Controls.Add(this.btnKhoHang);
+            this.panelLeft.Controls.Add(this.btnNCC);
+            this.panelLeft.Controls.Add(this.btnKhachHang);
+            this.panelLeft.Controls.Add(this.btnTrangChu);
+            this.panelLeft.Controls.Add(this.label3);
+            this.panelLeft.Controls.Add(this.pannelLeft1);
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(230, 750);
+            this.panelLeft.TabIndex = 3;
             // 
-            // guna2ControlBox1
+            // btnBanHang
             // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Teal;
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(939, 0);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 63);
-            this.guna2ControlBox1.TabIndex = 4;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Pacifico", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label11.Location = new System.Drawing.Point(13, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 56);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Co.op";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Pacifico", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DeepPink;
-            this.label1.Location = new System.Drawing.Point(122, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 56);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "mart";
-            // 
-            // panelControl
-            // 
-            this.panelControl.Location = new System.Drawing.Point(217, 75);
-            this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(983, 685);
-            this.panelControl.TabIndex = 5;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.label8);
-            this.guna2Panel1.Controls.Add(this.label7);
-            this.guna2Panel1.Controls.Add(this.label6);
-            this.guna2Panel1.Controls.Add(this.label5);
-            this.guna2Panel1.Controls.Add(this.label4);
-            this.guna2Panel1.Controls.Add(this.btnDangXuat);
-            this.guna2Panel1.Controls.Add(this.btnNhanVien);
-            this.guna2Panel1.Controls.Add(this.btnThongKe);
-            this.guna2Panel1.Controls.Add(this.btnBanHang);
-            this.guna2Panel1.Controls.Add(this.btnKhoHang);
-            this.guna2Panel1.Controls.Add(this.btnNCC);
-            this.guna2Panel1.Controls.Add(this.btnKhachHang);
-            this.guna2Panel1.Controls.Add(this.label11);
-            this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Controls.Add(this.btnTrangChu);
-            this.guna2Panel1.Controls.Add(this.label3);
-            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(-1, 3);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(211, 757);
-            this.guna2Panel1.TabIndex = 2;
+            this.btnBanHang.Animated = true;
+            this.btnBanHang.AutoRoundedCorners = true;
+            this.btnBanHang.BackColor = System.Drawing.Color.Transparent;
+            this.btnBanHang.BorderRadius = 26;
+            this.btnBanHang.CheckedState.Parent = this.btnBanHang;
+            this.btnBanHang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnBanHang.CustomImages.Parent = this.btnBanHang;
+            this.btnBanHang.CustomizableEdges.BottomRight = false;
+            this.btnBanHang.CustomizableEdges.TopRight = false;
+            this.btnBanHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBanHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBanHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBanHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBanHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBanHang.DisabledState.Parent = this.btnBanHang;
+            this.btnBanHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.btnBanHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.btnBanHang.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnBanHang.ForeColor = System.Drawing.Color.White;
+            this.btnBanHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
+            this.btnBanHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.btnBanHang.HoverState.Parent = this.btnBanHang;
+            this.btnBanHang.Location = new System.Drawing.Point(68, 244);
+            this.btnBanHang.Name = "btnBanHang";
+            this.btnBanHang.ShadowDecoration.Parent = this.btnBanHang;
+            this.btnBanHang.Size = new System.Drawing.Size(162, 55);
+            this.btnBanHang.TabIndex = 18;
+            this.btnBanHang.Text = "   Bán hàng";
+            this.btnBanHang.UseTransparentBackground = true;
+            this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click_1);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.label8.Font = new System.Drawing.Font("Segoe UI", 7.8F);
-            this.label8.Location = new System.Drawing.Point(96, 706);
+            this.label8.Location = new System.Drawing.Point(117, 707);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 19);
-            this.label8.TabIndex = 20;
+            this.label8.TabIndex = 25;
             this.label8.Text = "19001508";
             // 
             // label7
@@ -262,10 +258,10 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 7.8F);
-            this.label7.Location = new System.Drawing.Point(34, 706);
+            this.label7.Location = new System.Drawing.Point(41, 707);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 19);
-            this.label7.TabIndex = 19;
+            this.label7.TabIndex = 24;
             this.label7.Text = "Liên hệ:";
             // 
             // label6
@@ -273,10 +269,10 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F);
-            this.label6.Location = new System.Drawing.Point(13, 675);
+            this.label6.Location = new System.Drawing.Point(12, 675);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(224, 19);
-            this.label6.TabIndex = 18;
+            this.label6.TabIndex = 23;
             this.label6.Text = "72 Đường Tăng Phú, Quận 9, HCM";
             // 
             // label5
@@ -284,10 +280,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.8F);
-            this.label5.Location = new System.Drawing.Point(79, 639);
+            this.label5.Location = new System.Drawing.Point(81, 647);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 19);
-            this.label5.TabIndex = 17;
+            this.label5.TabIndex = 22;
             this.label5.Text = "Địa chỉ: ";
             // 
             // label4
@@ -296,10 +292,10 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label4.Location = new System.Drawing.Point(3, 544);
+            this.label4.Location = new System.Drawing.Point(-4, 546);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 23);
-            this.label4.TabIndex = 16;
+            this.label4.TabIndex = 21;
             this.label4.Text = "label4";
             // 
             // btnDangXuat
@@ -326,14 +322,14 @@
             this.btnDangXuat.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.btnDangXuat.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.btnDangXuat.HoverState.Parent = this.btnDangXuat;
-            this.btnDangXuat.Location = new System.Drawing.Point(56, 581);
+            this.btnDangXuat.Location = new System.Drawing.Point(68, 573);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.ShadowDecoration.Parent = this.btnDangXuat;
-            this.btnDangXuat.Size = new System.Drawing.Size(156, 55);
-            this.btnDangXuat.TabIndex = 11;
-            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.Size = new System.Drawing.Size(159, 55);
+            this.btnDangXuat.TabIndex = 20;
+            this.btnDangXuat.Text = "   Đăng xuất";
             this.btnDangXuat.UseTransparentBackground = true;
-            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click_1);
             // 
             // btnNhanVien
             // 
@@ -359,14 +355,14 @@
             this.btnNhanVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.btnNhanVien.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.btnNhanVien.HoverState.Parent = this.btnNhanVien;
-            this.btnNhanVien.Location = new System.Drawing.Point(56, 239);
+            this.btnNhanVien.Location = new System.Drawing.Point(68, 305);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.ShadowDecoration.Parent = this.btnNhanVien;
-            this.btnNhanVien.Size = new System.Drawing.Size(156, 55);
-            this.btnNhanVien.TabIndex = 5;
-            this.btnNhanVien.Text = "Nhân viên";
+            this.btnNhanVien.Size = new System.Drawing.Size(162, 55);
+            this.btnNhanVien.TabIndex = 14;
+            this.btnNhanVien.Text = "   Nhân viên";
             this.btnNhanVien.UseTransparentBackground = true;
-            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click_1);
             // 
             // btnThongKe
             // 
@@ -392,47 +388,14 @@
             this.btnThongKe.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.btnThongKe.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.btnThongKe.HoverState.Parent = this.btnThongKe;
-            this.btnThongKe.Location = new System.Drawing.Point(56, 483);
+            this.btnThongKe.Location = new System.Drawing.Point(68, 488);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.ShadowDecoration.Parent = this.btnThongKe;
-            this.btnThongKe.Size = new System.Drawing.Size(156, 55);
-            this.btnThongKe.TabIndex = 10;
-            this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.Size = new System.Drawing.Size(162, 55);
+            this.btnThongKe.TabIndex = 19;
+            this.btnThongKe.Text = "   Thống kê";
             this.btnThongKe.UseTransparentBackground = true;
-            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
-            // 
-            // btnBanHang
-            // 
-            this.btnBanHang.Animated = true;
-            this.btnBanHang.AutoRoundedCorners = true;
-            this.btnBanHang.BackColor = System.Drawing.Color.Transparent;
-            this.btnBanHang.BorderRadius = 26;
-            this.btnBanHang.CheckedState.Parent = this.btnBanHang;
-            this.btnBanHang.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnBanHang.CustomImages.Parent = this.btnBanHang;
-            this.btnBanHang.CustomizableEdges.BottomRight = false;
-            this.btnBanHang.CustomizableEdges.TopRight = false;
-            this.btnBanHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBanHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBanHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBanHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBanHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBanHang.DisabledState.Parent = this.btnBanHang;
-            this.btnBanHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.btnBanHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.btnBanHang.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnBanHang.ForeColor = System.Drawing.Color.White;
-            this.btnBanHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
-            this.btnBanHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.btnBanHang.HoverState.Parent = this.btnBanHang;
-            this.btnBanHang.Location = new System.Drawing.Point(56, 422);
-            this.btnBanHang.Name = "btnBanHang";
-            this.btnBanHang.ShadowDecoration.Parent = this.btnBanHang;
-            this.btnBanHang.Size = new System.Drawing.Size(156, 55);
-            this.btnBanHang.TabIndex = 9;
-            this.btnBanHang.Text = "Bán hàng";
-            this.btnBanHang.UseTransparentBackground = true;
-            this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click_1);
             // 
             // btnKhoHang
             // 
@@ -458,14 +421,14 @@
             this.btnKhoHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.btnKhoHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.btnKhoHang.HoverState.Parent = this.btnKhoHang;
-            this.btnKhoHang.Location = new System.Drawing.Point(56, 361);
+            this.btnKhoHang.Location = new System.Drawing.Point(68, 427);
             this.btnKhoHang.Name = "btnKhoHang";
             this.btnKhoHang.ShadowDecoration.Parent = this.btnKhoHang;
-            this.btnKhoHang.Size = new System.Drawing.Size(156, 55);
-            this.btnKhoHang.TabIndex = 8;
-            this.btnKhoHang.Text = "Kho hàng";
+            this.btnKhoHang.Size = new System.Drawing.Size(162, 55);
+            this.btnKhoHang.TabIndex = 17;
+            this.btnKhoHang.Text = "   Kho hàng";
             this.btnKhoHang.UseTransparentBackground = true;
-            this.btnKhoHang.Click += new System.EventHandler(this.btnKhoHang_Click);
+            this.btnKhoHang.Click += new System.EventHandler(this.btnKhoHang_Click_1);
             // 
             // btnNCC
             // 
@@ -491,14 +454,14 @@
             this.btnNCC.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.btnNCC.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.btnNCC.HoverState.Parent = this.btnNCC;
-            this.btnNCC.Location = new System.Drawing.Point(56, 300);
+            this.btnNCC.Location = new System.Drawing.Point(68, 366);
             this.btnNCC.Name = "btnNCC";
             this.btnNCC.ShadowDecoration.Parent = this.btnNCC;
-            this.btnNCC.Size = new System.Drawing.Size(156, 55);
-            this.btnNCC.TabIndex = 7;
-            this.btnNCC.Text = "Nhà C.Cấp";
+            this.btnNCC.Size = new System.Drawing.Size(162, 55);
+            this.btnNCC.TabIndex = 16;
+            this.btnNCC.Text = "   Nhà C.Cấp";
             this.btnNCC.UseTransparentBackground = true;
-            this.btnNCC.Click += new System.EventHandler(this.btnNCC_Click);
+            this.btnNCC.Click += new System.EventHandler(this.btnNCC_Click_1);
             // 
             // btnKhachHang
             // 
@@ -524,14 +487,14 @@
             this.btnKhachHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.btnKhachHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.btnKhachHang.HoverState.Parent = this.btnKhachHang;
-            this.btnKhachHang.Location = new System.Drawing.Point(56, 178);
+            this.btnKhachHang.Location = new System.Drawing.Point(65, 183);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.ShadowDecoration.Parent = this.btnKhachHang;
-            this.btnKhachHang.Size = new System.Drawing.Size(156, 55);
-            this.btnKhachHang.TabIndex = 6;
-            this.btnKhachHang.Text = "Khách hàng";
+            this.btnKhachHang.Size = new System.Drawing.Size(162, 55);
+            this.btnKhachHang.TabIndex = 15;
+            this.btnKhachHang.Text = "    Khách hàng";
             this.btnKhachHang.UseTransparentBackground = true;
-            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click_1);
             // 
             // btnTrangChu
             // 
@@ -557,14 +520,14 @@
             this.btnTrangChu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.btnTrangChu.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.btnTrangChu.HoverState.Parent = this.btnTrangChu;
-            this.btnTrangChu.Location = new System.Drawing.Point(56, 117);
+            this.btnTrangChu.Location = new System.Drawing.Point(68, 122);
             this.btnTrangChu.Name = "btnTrangChu";
             this.btnTrangChu.ShadowDecoration.Parent = this.btnTrangChu;
-            this.btnTrangChu.Size = new System.Drawing.Size(156, 55);
-            this.btnTrangChu.TabIndex = 2;
-            this.btnTrangChu.Text = "Trang chủ";
+            this.btnTrangChu.Size = new System.Drawing.Size(162, 55);
+            this.btnTrangChu.TabIndex = 13;
+            this.btnTrangChu.Text = "   Trang chủ";
             this.btnTrangChu.UseTransparentBackground = true;
-            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click_1);
             // 
             // label3
             // 
@@ -572,11 +535,54 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label3.Location = new System.Drawing.Point(-4, 93);
+            this.label3.Location = new System.Drawing.Point(3, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 23);
-            this.label3.TabIndex = 0;
+            this.label3.TabIndex = 12;
             this.label3.Text = "label3";
+            // 
+            // pannelLeft1
+            // 
+            this.pannelLeft1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.pannelLeft1.Controls.Add(this.label11);
+            this.pannelLeft1.Controls.Add(this.label1);
+            this.pannelLeft1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pannelLeft1.Location = new System.Drawing.Point(0, 0);
+            this.pannelLeft1.Name = "pannelLeft1";
+            this.pannelLeft1.Size = new System.Drawing.Size(230, 87);
+            this.pannelLeft1.TabIndex = 0;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Pacifico", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label11.Location = new System.Drawing.Point(18, 15);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(103, 56);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Co.op";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Pacifico", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DeepPink;
+            this.label1.Location = new System.Drawing.Point(127, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 56);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "mart";
+            // 
+            // panelControl
+            // 
+            this.panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl.Location = new System.Drawing.Point(230, 66);
+            this.panelControl.Name = "panelControl";
+            this.panelControl.Size = new System.Drawing.Size(970, 684);
+            this.panelControl.TabIndex = 5;
             // 
             // bunifuElipse1
             // 
@@ -587,20 +593,22 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1200, 760);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.guna2Panel1);
+            this.ClientSize = new System.Drawing.Size(1200, 750);
             this.Controls.Add(this.panelControl);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelLeft);
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panelLeft.ResumeLayout(false);
+            this.panelLeft.PerformLayout();
+            this.pannelLeft1.ResumeLayout(false);
+            this.pannelLeft1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -608,34 +616,34 @@
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Timer timerTime;
-        private System.Windows.Forms.Panel panelControl;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblTennv;
-        private System.Windows.Forms.Label lblQuyen;
-        private System.Windows.Forms.Label lblManv;
-        private System.Windows.Forms.Label lblNguoidung;
         private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2GradientButton btnTrangChu;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Timer timerTime;
+        private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.Panel panelControl;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2GradientButton btnDangXuat;
+        private Guna.UI2.WinForms.Guna2GradientButton btnNhanVien;
         private Guna.UI2.WinForms.Guna2GradientButton btnThongKe;
         private Guna.UI2.WinForms.Guna2GradientButton btnBanHang;
         private Guna.UI2.WinForms.Guna2GradientButton btnKhoHang;
         private Guna.UI2.WinForms.Guna2GradientButton btnNCC;
         private Guna.UI2.WinForms.Guna2GradientButton btnKhachHang;
-        private Guna.UI2.WinForms.Guna2GradientButton btnNhanVien;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnTrangChu;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel pannelLeft1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNguoidung;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTennv;
+        private System.Windows.Forms.Label lblManv;
+        private System.Windows.Forms.Label lblQuyen;
+        private Guna.UI2.WinForms.Guna2GradientButton btnX;
     }
 }

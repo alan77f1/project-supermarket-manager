@@ -66,7 +66,7 @@ namespace WindowsFormsApp
             }
 
         }
-      
+
         private void themUC(Control uc)
         {
             uc.Dock = DockStyle.Fill;
@@ -88,59 +88,66 @@ namespace WindowsFormsApp
         }
 
 
+
         private void lblNguoidung_Click(object sender, EventArgs e)
         {
             FormThongTinNhanVien formThongTinNhanVien = new FormThongTinNhanVien(lblNguoidung.Text);
             formThongTinNhanVien.Show();
         }
-  
-        private void btnTrangChu_Click(object sender, EventArgs e)
+
+        private void btnTrangChu_Click_1(object sender, EventArgs e)
         {
             UC_TrangChu tc = new UC_TrangChu();
             addControlsToPanel(tc);
         }
 
-        private void btnKhachHang_Click(object sender, EventArgs e)
+        private void btnKhachHang_Click_1(object sender, EventArgs e)
         {
             UC_KhachHang kh = new UC_KhachHang();
             addControlsToPanel(kh);
         }
 
-        private void btnNhanVien_Click(object sender, EventArgs e)
+        private void btnNhanVien_Click_1(object sender, EventArgs e)
         {
             UC_NhanVien nv = new UC_NhanVien();
             addControlsToPanel(nv);
         }
 
-        private void btnNCC_Click(object sender, EventArgs e)
+        private void btnNCC_Click_1(object sender, EventArgs e)
         {
             UC_NhaCungCap ncc = new UC_NhaCungCap();
             addControlsToPanel(ncc);
         }
 
-        private void btnKhoHang_Click(object sender, EventArgs e)
+        private void btnKhoHang_Click_1(object sender, EventArgs e)
         {
             UC_KhoHang kh = new UC_KhoHang(lblManv.Text, lblTennv.Text);
             addControlsToPanel(kh);
         }
 
-        private void btnBanHang_Click(object sender, EventArgs e)
+        private void btnBanHang_Click_1(object sender, EventArgs e)
         {
             UC_BanHang bh = new UC_BanHang(lblManv.Text, lblTennv.Text);
             addControlsToPanel(bh);
         }
 
-        private void btnThongKe_Click(object sender, EventArgs e)
+        private void btnThongKe_Click_1(object sender, EventArgs e)
         {
             UC_ThongKe tk = new UC_ThongKe();
             addControlsToPanel(tk);
         }
 
-        private void btnDangXuat_Click(object sender, EventArgs e)
+
+        private void btnDangXuat_Click_1(object sender, EventArgs e)
         {
             FormDangNhap dn = new FormDangNhap();
             dn.Show();
             this.Hide();
+        }
+
+        private void btnX_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
