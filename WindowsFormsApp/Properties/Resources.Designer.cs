@@ -93,6 +93,26 @@ namespace WindowsFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_rounded_left_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-rounded-left-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_shutdown_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-shutdown-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap KhachHang {
             get {
                 object obj = ResourceManager.GetObject("KhachHang", resourceCulture);

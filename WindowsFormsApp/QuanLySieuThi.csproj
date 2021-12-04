@@ -500,6 +500,8 @@
     <None Include="Resources\Sua.png" />
     <None Include="Resources\Xoa.png" />
     <None Include="Resources\LamMoi.png" />
+    <None Include="Resources\icons8-shutdown-24.png" />
+    <None Include="Resources\icons8-logout-rounded-left-64.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

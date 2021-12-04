@@ -27,6 +27,12 @@ namespace WindowsFormsApp
             TTnguoiban();
         }
 
+        private void movesidePannel(Control btn)
+        {
+            panelSide.Top = btn.Top;
+            panelSide.Height = btn.Height;
+        }
+
         private void TTnguoiban()
         {
             string name = lblNguoidung.Text;
@@ -97,42 +103,49 @@ namespace WindowsFormsApp
 
         private void btnTrangChu_Click_1(object sender, EventArgs e)
         {
+            movesidePannel(btnTrangChu);
             UC_TrangChu tc = new UC_TrangChu();
             addControlsToPanel(tc);
         }
 
         private void btnKhachHang_Click_1(object sender, EventArgs e)
         {
+            movesidePannel(btnKhachHang);
             UC_KhachHang kh = new UC_KhachHang();
             addControlsToPanel(kh);
         }
 
         private void btnNhanVien_Click_1(object sender, EventArgs e)
         {
+            movesidePannel(btnNhanVien);
             UC_NhanVien nv = new UC_NhanVien();
             addControlsToPanel(nv);
         }
 
         private void btnNCC_Click_1(object sender, EventArgs e)
         {
+            movesidePannel(btnNCC);
             UC_NhaCungCap ncc = new UC_NhaCungCap();
             addControlsToPanel(ncc);
         }
 
         private void btnKhoHang_Click_1(object sender, EventArgs e)
         {
+            movesidePannel(btnKhoHang);
             UC_KhoHang kh = new UC_KhoHang(lblManv.Text, lblTennv.Text);
             addControlsToPanel(kh);
         }
 
         private void btnBanHang_Click_1(object sender, EventArgs e)
         {
+            movesidePannel(btnBanHang);
             UC_BanHang bh = new UC_BanHang(lblManv.Text, lblTennv.Text);
             addControlsToPanel(bh);
         }
 
         private void btnThongKe_Click_1(object sender, EventArgs e)
         {
+            movesidePannel(btnThongKe);
             UC_ThongKe tk = new UC_ThongKe();
             addControlsToPanel(tk);
         }
@@ -143,11 +156,6 @@ namespace WindowsFormsApp
             FormDangNhap dn = new FormDangNhap();
             dn.Show();
             this.Hide();
-        }
-
-        private void btnX_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
