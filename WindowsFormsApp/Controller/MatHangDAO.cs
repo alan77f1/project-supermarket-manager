@@ -37,9 +37,9 @@ namespace WindowsFormsApp.Controller
         }
 
 
-        public bool suaHH(string MaHang, string TenHH, string DVT, int SoLuong, int GiaBan)
+        public bool suaHH(string MaHang, string TenHH,  int SoLuong, int GiaBan)
         {
-            string query = String.Format("update MatHang set SoLuong = {0},  GiaBan = {1}, TenMH = N'{2}', DonVi = '{3}'  where MaHang = '{4}'", SoLuong, GiaBan, TenHH, DVT, MaHang);
+            string query = String.Format("update MatHang set SoLuong = {0},  GiaBan = {1}, TenMH = N'{2}', DonVi = '{3}'  where MaHang = '{4}'", SoLuong, GiaBan, TenHH,  MaHang);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

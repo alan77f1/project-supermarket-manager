@@ -50,6 +50,8 @@ namespace WindowsFormsApp
         {
             lblCanhbao.Text = "";
         }
+
+        
     }
 }
 

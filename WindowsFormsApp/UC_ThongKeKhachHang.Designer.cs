@@ -143,7 +143,7 @@ namespace WindowsFormsApp
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(3, 0);
             this.panel2.Name = "panel2";
@@ -169,7 +169,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtTimkiemkhachhang);
             this.Controls.Add(this.dgvThongkekh);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKeKhachHang";
             this.Size = new System.Drawing.Size(1010, 593);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongkekh)).EndInit();

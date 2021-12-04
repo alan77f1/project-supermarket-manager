@@ -33,7 +33,6 @@ namespace WindowsFormsApp
             this.label3 = new System.Windows.Forms.Label();
             this.txtxacnhan = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtmatkhaumoi = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnQuaylai = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@ namespace WindowsFormsApp
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.txtmatkhaumoi = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +64,7 @@ namespace WindowsFormsApp
             // txtxacnhan
             // 
             this.txtxacnhan.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtxacnhan.BorderRadius = 10;
             this.txtxacnhan.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtxacnhan.DefaultText = "";
             this.txtxacnhan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -77,7 +78,7 @@ namespace WindowsFormsApp
             this.txtxacnhan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.txtxacnhan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtxacnhan.HoverState.Parent = this.txtxacnhan;
-            this.txtxacnhan.Location = new System.Drawing.Point(267, 182);
+            this.txtxacnhan.Location = new System.Drawing.Point(267, 195);
             this.txtxacnhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtxacnhan.Name = "txtxacnhan";
             this.txtxacnhan.PasswordChar = '\0';
@@ -85,7 +86,6 @@ namespace WindowsFormsApp
             this.txtxacnhan.SelectedText = "";
             this.txtxacnhan.ShadowDecoration.Parent = this.txtxacnhan;
             this.txtxacnhan.Size = new System.Drawing.Size(317, 46);
-            this.txtxacnhan.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtxacnhan.TabIndex = 124;
             this.txtxacnhan.TextChanged += new System.EventHandler(this.txtxacnhan_TextChanged);
             // 
@@ -98,34 +98,6 @@ namespace WindowsFormsApp
             this.label5.Size = new System.Drawing.Size(153, 27);
             this.label5.TabIndex = 120;
             this.label5.Text = "Mật khẩu mới:";
-            // 
-            // txtmatkhaumoi
-            // 
-            this.txtmatkhaumoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtmatkhaumoi.BorderThickness = 0;
-            this.txtmatkhaumoi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtmatkhaumoi.DefaultText = "";
-            this.txtmatkhaumoi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtmatkhaumoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtmatkhaumoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtmatkhaumoi.DisabledState.Parent = this.txtmatkhaumoi;
-            this.txtmatkhaumoi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtmatkhaumoi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtmatkhaumoi.FocusedState.Parent = this.txtmatkhaumoi;
-            this.txtmatkhaumoi.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.txtmatkhaumoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.txtmatkhaumoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtmatkhaumoi.HoverState.Parent = this.txtmatkhaumoi;
-            this.txtmatkhaumoi.Location = new System.Drawing.Point(267, 126);
-            this.txtmatkhaumoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtmatkhaumoi.Name = "txtmatkhaumoi";
-            this.txtmatkhaumoi.PasswordChar = '\0';
-            this.txtmatkhaumoi.PlaceholderText = "";
-            this.txtmatkhaumoi.SelectedText = "";
-            this.txtmatkhaumoi.ShadowDecoration.Parent = this.txtmatkhaumoi;
-            this.txtmatkhaumoi.Size = new System.Drawing.Size(317, 48);
-            this.txtmatkhaumoi.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txtmatkhaumoi.TabIndex = 119;
             // 
             // btnLuu
             // 
@@ -206,7 +178,7 @@ namespace WindowsFormsApp
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(204, 70);
+            this.label4.Location = new System.Drawing.Point(206, 73);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 23);
             this.label4.TabIndex = 130;
@@ -248,7 +220,7 @@ namespace WindowsFormsApp
             this.txtSđtnv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.txtSđtnv.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSđtnv.HoverState.Parent = this.txtSđtnv;
-            this.txtSđtnv.Location = new System.Drawing.Point(257, 57);
+            this.txtSđtnv.Location = new System.Drawing.Point(253, 57);
             this.txtSđtnv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSđtnv.Name = "txtSđtnv";
             this.txtSđtnv.PasswordChar = '\0';
@@ -259,10 +231,6 @@ namespace WindowsFormsApp
             this.txtSđtnv.Size = new System.Drawing.Size(317, 48);
             this.txtSđtnv.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtSđtnv.TabIndex = 127;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this.txtmatkhaumoi;
             // 
             // errorProvider2
             // 
@@ -277,11 +245,39 @@ namespace WindowsFormsApp
             this.guna2Elipse2.BorderRadius = 15;
             this.guna2Elipse2.TargetControl = this.btnQuaylai;
             // 
+            // txtmatkhaumoi
+            // 
+            this.txtmatkhaumoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtmatkhaumoi.BorderRadius = 10;
+            this.txtmatkhaumoi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtmatkhaumoi.DefaultText = "";
+            this.txtmatkhaumoi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtmatkhaumoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtmatkhaumoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtmatkhaumoi.DisabledState.Parent = this.txtmatkhaumoi;
+            this.txtmatkhaumoi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtmatkhaumoi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtmatkhaumoi.FocusedState.Parent = this.txtmatkhaumoi;
+            this.txtmatkhaumoi.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.txtmatkhaumoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtmatkhaumoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtmatkhaumoi.HoverState.Parent = this.txtmatkhaumoi;
+            this.txtmatkhaumoi.Location = new System.Drawing.Point(267, 128);
+            this.txtmatkhaumoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmatkhaumoi.Name = "txtmatkhaumoi";
+            this.txtmatkhaumoi.PasswordChar = '\0';
+            this.txtmatkhaumoi.PlaceholderText = "";
+            this.txtmatkhaumoi.SelectedText = "";
+            this.txtmatkhaumoi.ShadowDecoration.Parent = this.txtmatkhaumoi;
+            this.txtmatkhaumoi.Size = new System.Drawing.Size(317, 46);
+            this.txtmatkhaumoi.TabIndex = 132;
+            // 
             // UC_DoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.txtmatkhaumoi);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel3);
@@ -291,11 +287,10 @@ namespace WindowsFormsApp
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtxacnhan);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtmatkhaumoi);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnQuaylai);
             this.Controls.Add(this.label8);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_DoiMatKhau";
             this.Size = new System.Drawing.Size(711, 360);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -309,7 +304,6 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtxacnhan;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox txtmatkhaumoi;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnQuaylai;
         private System.Windows.Forms.Label label8;
@@ -323,5 +317,6 @@ namespace WindowsFormsApp
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2TextBox txtmatkhaumoi;
     }
 }
