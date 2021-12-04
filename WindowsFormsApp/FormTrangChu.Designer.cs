@@ -56,6 +56,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelControl = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btnCLV = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel3.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.pannelLeft1.SuspendLayout();
@@ -175,16 +176,17 @@
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.panelLeft.Controls.Add(this.btnThongKe);
+            this.panelLeft.Controls.Add(this.btnCLV);
+            this.panelLeft.Controls.Add(this.btnKhoHang);
             this.panelLeft.Controls.Add(this.panelSide);
+            this.panelLeft.Controls.Add(this.btnNCC);
             this.panelLeft.Controls.Add(this.btnBanHang);
             this.panelLeft.Controls.Add(this.label8);
             this.panelLeft.Controls.Add(this.label7);
+            this.panelLeft.Controls.Add(this.btnNhanVien);
             this.panelLeft.Controls.Add(this.label6);
             this.panelLeft.Controls.Add(this.label5);
-            this.panelLeft.Controls.Add(this.btnNhanVien);
-            this.panelLeft.Controls.Add(this.btnThongKe);
-            this.panelLeft.Controls.Add(this.btnKhoHang);
-            this.panelLeft.Controls.Add(this.btnNCC);
             this.panelLeft.Controls.Add(this.btnKhachHang);
             this.panelLeft.Controls.Add(this.btnTrangChu);
             this.panelLeft.Controls.Add(this.pannelLeft1);
@@ -197,9 +199,9 @@
             // panelSide
             // 
             this.panelSide.BackColor = System.Drawing.Color.White;
-            this.panelSide.Location = new System.Drawing.Point(12, 123);
+            this.panelSide.Location = new System.Drawing.Point(-1, 88);
             this.panelSide.Name = "panelSide";
-            this.panelSide.Size = new System.Drawing.Size(10, 54);
+            this.panelSide.Size = new System.Drawing.Size(10, 60);
             this.panelSide.TabIndex = 26;
             // 
             // btnBanHang
@@ -226,10 +228,10 @@
             this.btnBanHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
             this.btnBanHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnBanHang.HoverState.Parent = this.btnBanHang;
-            this.btnBanHang.Location = new System.Drawing.Point(28, 244);
+            this.btnBanHang.Location = new System.Drawing.Point(12, 215);
             this.btnBanHang.Name = "btnBanHang";
             this.btnBanHang.ShadowDecoration.Parent = this.btnBanHang;
-            this.btnBanHang.Size = new System.Drawing.Size(162, 55);
+            this.btnBanHang.Size = new System.Drawing.Size(178, 55);
             this.btnBanHang.TabIndex = 18;
             this.btnBanHang.Text = "   Bán hàng";
             this.btnBanHang.UseTransparentBackground = true;
@@ -303,10 +305,10 @@
             this.btnNhanVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
             this.btnNhanVien.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnNhanVien.HoverState.Parent = this.btnNhanVien;
-            this.btnNhanVien.Location = new System.Drawing.Point(28, 305);
+            this.btnNhanVien.Location = new System.Drawing.Point(12, 276);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.ShadowDecoration.Parent = this.btnNhanVien;
-            this.btnNhanVien.Size = new System.Drawing.Size(162, 55);
+            this.btnNhanVien.Size = new System.Drawing.Size(178, 55);
             this.btnNhanVien.TabIndex = 14;
             this.btnNhanVien.Text = "   Nhân viên";
             this.btnNhanVien.UseTransparentBackground = true;
@@ -336,10 +338,10 @@
             this.btnThongKe.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
             this.btnThongKe.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnThongKe.HoverState.Parent = this.btnThongKe;
-            this.btnThongKe.Location = new System.Drawing.Point(28, 488);
+            this.btnThongKe.Location = new System.Drawing.Point(12, 520);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.ShadowDecoration.Parent = this.btnThongKe;
-            this.btnThongKe.Size = new System.Drawing.Size(162, 55);
+            this.btnThongKe.Size = new System.Drawing.Size(178, 55);
             this.btnThongKe.TabIndex = 19;
             this.btnThongKe.Text = "   Thống kê";
             this.btnThongKe.UseTransparentBackground = true;
@@ -369,10 +371,10 @@
             this.btnKhoHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
             this.btnKhoHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnKhoHang.HoverState.Parent = this.btnKhoHang;
-            this.btnKhoHang.Location = new System.Drawing.Point(28, 427);
+            this.btnKhoHang.Location = new System.Drawing.Point(12, 459);
             this.btnKhoHang.Name = "btnKhoHang";
             this.btnKhoHang.ShadowDecoration.Parent = this.btnKhoHang;
-            this.btnKhoHang.Size = new System.Drawing.Size(162, 55);
+            this.btnKhoHang.Size = new System.Drawing.Size(178, 55);
             this.btnKhoHang.TabIndex = 17;
             this.btnKhoHang.Text = "   Kho hàng";
             this.btnKhoHang.UseTransparentBackground = true;
@@ -402,10 +404,10 @@
             this.btnNCC.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
             this.btnNCC.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnNCC.HoverState.Parent = this.btnNCC;
-            this.btnNCC.Location = new System.Drawing.Point(28, 366);
+            this.btnNCC.Location = new System.Drawing.Point(12, 398);
             this.btnNCC.Name = "btnNCC";
             this.btnNCC.ShadowDecoration.Parent = this.btnNCC;
-            this.btnNCC.Size = new System.Drawing.Size(162, 55);
+            this.btnNCC.Size = new System.Drawing.Size(178, 55);
             this.btnNCC.TabIndex = 16;
             this.btnNCC.Text = "   Nhà C.Cấp";
             this.btnNCC.UseTransparentBackground = true;
@@ -435,10 +437,10 @@
             this.btnKhachHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
             this.btnKhachHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnKhachHang.HoverState.Parent = this.btnKhachHang;
-            this.btnKhachHang.Location = new System.Drawing.Point(28, 183);
+            this.btnKhachHang.Location = new System.Drawing.Point(12, 154);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.ShadowDecoration.Parent = this.btnKhachHang;
-            this.btnKhachHang.Size = new System.Drawing.Size(162, 55);
+            this.btnKhachHang.Size = new System.Drawing.Size(178, 55);
             this.btnKhachHang.TabIndex = 15;
             this.btnKhachHang.Text = "    Khách hàng";
             this.btnKhachHang.UseTransparentBackground = true;
@@ -468,10 +470,10 @@
             this.btnTrangChu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
             this.btnTrangChu.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnTrangChu.HoverState.Parent = this.btnTrangChu;
-            this.btnTrangChu.Location = new System.Drawing.Point(28, 122);
+            this.btnTrangChu.Location = new System.Drawing.Point(12, 93);
             this.btnTrangChu.Name = "btnTrangChu";
             this.btnTrangChu.ShadowDecoration.Parent = this.btnTrangChu;
-            this.btnTrangChu.Size = new System.Drawing.Size(162, 55);
+            this.btnTrangChu.Size = new System.Drawing.Size(178, 55);
             this.btnTrangChu.TabIndex = 13;
             this.btnTrangChu.Text = "   Trang chủ";
             this.btnTrangChu.UseTransparentBackground = true;
@@ -524,6 +526,39 @@
             // 
             this.bunifuElipse1.ElipseRadius = 40;
             this.bunifuElipse1.TargetControl = this;
+            // 
+            // btnCLV
+            // 
+            this.btnCLV.Animated = true;
+            this.btnCLV.AutoRoundedCorners = true;
+            this.btnCLV.BackColor = System.Drawing.Color.Transparent;
+            this.btnCLV.BorderRadius = 26;
+            this.btnCLV.CheckedState.Parent = this.btnCLV;
+            this.btnCLV.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCLV.CustomImages.Parent = this.btnCLV;
+            this.btnCLV.CustomizableEdges.BottomLeft = false;
+            this.btnCLV.CustomizableEdges.TopLeft = false;
+            this.btnCLV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCLV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCLV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCLV.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCLV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCLV.DisabledState.Parent = this.btnCLV;
+            this.btnCLV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnCLV.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnCLV.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnCLV.ForeColor = System.Drawing.Color.White;
+            this.btnCLV.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnCLV.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnCLV.HoverState.Parent = this.btnCLV;
+            this.btnCLV.Location = new System.Drawing.Point(12, 337);
+            this.btnCLV.Name = "btnCLV";
+            this.btnCLV.ShadowDecoration.Parent = this.btnCLV;
+            this.btnCLV.Size = new System.Drawing.Size(178, 55);
+            this.btnCLV.TabIndex = 27;
+            this.btnCLV.Text = "   Ca làm việc";
+            this.btnCLV.UseTransparentBackground = true;
+            this.btnCLV.Click += new System.EventHandler(this.btnCLV_Click);
             // 
             // FormTrangChu
             // 
@@ -578,5 +613,6 @@
         private System.Windows.Forms.Label lblManv;
         private System.Windows.Forms.Label lblQuyen;
         private System.Windows.Forms.Panel panelSide;
+        private Guna.UI2.WinForms.Guna2GradientButton btnCLV;
     }
 }

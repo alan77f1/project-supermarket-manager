@@ -129,7 +129,7 @@ namespace WindowsFormsApp.Controller
             BinaryReader brs = new BinaryReader(stream);
             images = brs.ReadBytes((int)stream.Length);
 
-            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-RNOPI29;Initial Catalog=QLSieuThi;User ID=sa;Password=123"))
+            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-RNOPI29;Initial Catalog=QuanLySieuThi;User ID=sa;Password=123"))
             {
                 string query = String.Format("Insert into MatHang Values('{0}', N'{1}', '{2}', {3}, {4}, {5}, @hinh) ", data.MaMH, data.TenMH, data.DonVi, data.GiaBan, data.SoLuong);
                 SqlCommand cmd = new SqlCommand(query, connection);
@@ -153,7 +153,7 @@ namespace WindowsFormsApp.Controller
             BinaryReader brs = new BinaryReader(stream);
             images = brs.ReadBytes((int)stream.Length);
             // Update hình nếu có
-            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-RNOPI29;Initial Catalog=QLSieuThi;User ID=sa;Password=123"))
+            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-RNOPI29;Initial Catalog=QuanLySieuThi;User ID=sa;Password=123"))
             {
                 string query = String.Format("Update MatHang set Anh = @hinh where MaMH = '{0}'", maHang);
                 SqlCommand cmd = new SqlCommand(query, connection);

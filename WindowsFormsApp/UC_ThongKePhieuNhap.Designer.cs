@@ -118,6 +118,7 @@ namespace WindowsFormsApp
             // 
             this.txtTimkiemphieunhap.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.txtTimkiemphieunhap.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTimkiemphieunhap.BorderRadius = 10;
             this.txtTimkiemphieunhap.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTimkiemphieunhap.DefaultText = "";
             this.txtTimkiemphieunhap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -132,15 +133,14 @@ namespace WindowsFormsApp
             this.txtTimkiemphieunhap.ForeColor = System.Drawing.Color.Black;
             this.txtTimkiemphieunhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimkiemphieunhap.HoverState.Parent = this.txtTimkiemphieunhap;
-            this.txtTimkiemphieunhap.Location = new System.Drawing.Point(111, 78);
+            this.txtTimkiemphieunhap.Location = new System.Drawing.Point(120, 89);
             this.txtTimkiemphieunhap.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTimkiemphieunhap.Name = "txtTimkiemphieunhap";
             this.txtTimkiemphieunhap.PasswordChar = '\0';
             this.txtTimkiemphieunhap.PlaceholderText = "";
             this.txtTimkiemphieunhap.SelectedText = "";
             this.txtTimkiemphieunhap.ShadowDecoration.Parent = this.txtTimkiemphieunhap;
-            this.txtTimkiemphieunhap.Size = new System.Drawing.Size(270, 40);
-            this.txtTimkiemphieunhap.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtTimkiemphieunhap.Size = new System.Drawing.Size(295, 40);
             this.txtTimkiemphieunhap.TabIndex = 19;
             this.txtTimkiemphieunhap.TextChanged += new System.EventHandler(this.txtTimkiemphieunhap_TextChanged);
             // 
@@ -158,7 +158,7 @@ namespace WindowsFormsApp
             this.btnXemchitietpn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXemchitietpn.Name = "btnXemchitietpn";
             this.btnXemchitietpn.Padding = new System.Windows.Forms.Padding(1);
-            this.btnXemchitietpn.Size = new System.Drawing.Size(160, 43);
+            this.btnXemchitietpn.Size = new System.Drawing.Size(152, 43);
             this.btnXemchitietpn.TabIndex = 44;
             this.btnXemchitietpn.Text = "  Xem chi tiết";
             this.btnXemchitietpn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -169,6 +169,7 @@ namespace WindowsFormsApp
             // 
             this.txtmapn.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.txtmapn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtmapn.BorderRadius = 10;
             this.txtmapn.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtmapn.DefaultText = "";
             this.txtmapn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -183,7 +184,7 @@ namespace WindowsFormsApp
             this.txtmapn.ForeColor = System.Drawing.Color.Black;
             this.txtmapn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtmapn.HoverState.Parent = this.txtmapn;
-            this.txtmapn.Location = new System.Drawing.Point(169, 505);
+            this.txtmapn.Location = new System.Drawing.Point(195, 515);
             this.txtmapn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmapn.Name = "txtmapn";
             this.txtmapn.PasswordChar = '\0';
@@ -191,7 +192,6 @@ namespace WindowsFormsApp
             this.txtmapn.SelectedText = "";
             this.txtmapn.ShadowDecoration.Parent = this.txtmapn;
             this.txtmapn.Size = new System.Drawing.Size(100, 33);
-            this.txtmapn.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtmapn.TabIndex = 43;
             // 
             // panel2
@@ -224,7 +224,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.txtmapn);
             this.Controls.Add(this.txtTimkiemphieunhap);
             this.Controls.Add(this.dgvThongkepn);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKePhieuNhap";
             this.Size = new System.Drawing.Size(1010, 593);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongkepn)).EndInit();

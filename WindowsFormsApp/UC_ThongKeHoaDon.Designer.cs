@@ -32,8 +32,6 @@ namespace WindowsFormsApp
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dpkNgaybd = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.dpkNgaykt = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvThongkehd = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -43,51 +41,11 @@ namespace WindowsFormsApp
             this.txtTongtienhoadon = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.dpkNgaybd = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dpkNgaykt = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongkehd)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dpkNgaybd
-            // 
-            this.dpkNgaybd.BorderColor = System.Drawing.Color.Maroon;
-            this.dpkNgaybd.BorderRadius = 3;
-            this.dpkNgaybd.BorderThickness = 2;
-            this.dpkNgaybd.Checked = true;
-            this.dpkNgaybd.CheckedState.Parent = this.dpkNgaybd;
-            this.dpkNgaybd.FillColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.dpkNgaybd.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.dpkNgaybd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dpkNgaybd.HoverState.Parent = this.dpkNgaybd;
-            this.dpkNgaybd.Location = new System.Drawing.Point(186, 85);
-            this.dpkNgaybd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dpkNgaybd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dpkNgaybd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dpkNgaybd.Name = "dpkNgaybd";
-            this.dpkNgaybd.ShadowDecoration.Parent = this.dpkNgaybd;
-            this.dpkNgaybd.Size = new System.Drawing.Size(187, 37);
-            this.dpkNgaybd.TabIndex = 3;
-            this.dpkNgaybd.Value = new System.DateTime(2021, 10, 25, 21, 55, 52, 140);
-            // 
-            // dpkNgaykt
-            // 
-            this.dpkNgaykt.BorderColor = System.Drawing.Color.Maroon;
-            this.dpkNgaykt.BorderRadius = 3;
-            this.dpkNgaykt.BorderThickness = 2;
-            this.dpkNgaykt.Checked = true;
-            this.dpkNgaykt.CheckedState.Parent = this.dpkNgaykt;
-            this.dpkNgaykt.FillColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.dpkNgaykt.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.dpkNgaykt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dpkNgaykt.HoverState.Parent = this.dpkNgaykt;
-            this.dpkNgaykt.Location = new System.Drawing.Point(523, 84);
-            this.dpkNgaykt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dpkNgaykt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dpkNgaykt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dpkNgaykt.Name = "dpkNgaykt";
-            this.dpkNgaykt.ShadowDecoration.Parent = this.dpkNgaykt;
-            this.dpkNgaykt.Size = new System.Drawing.Size(172, 37);
-            this.dpkNgaykt.TabIndex = 4;
-            this.dpkNgaykt.Value = new System.DateTime(2021, 10, 25, 21, 55, 52, 140);
             // 
             // label2
             // 
@@ -270,10 +228,52 @@ namespace WindowsFormsApp
             this.label4.TabIndex = 226;
             this.label4.Text = "THỐNG KÊ HÓA ĐƠN";
             // 
+            // dpkNgaybd
+            // 
+            this.dpkNgaybd.BorderRadius = 10;
+            this.dpkNgaybd.BorderThickness = 1;
+            this.dpkNgaybd.Checked = true;
+            this.dpkNgaybd.CheckedState.Parent = this.dpkNgaybd;
+            this.dpkNgaybd.FillColor = System.Drawing.Color.White;
+            this.dpkNgaybd.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.dpkNgaybd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dpkNgaybd.HoverState.Parent = this.dpkNgaybd;
+            this.dpkNgaybd.Location = new System.Drawing.Point(168, 84);
+            this.dpkNgaybd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dpkNgaybd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dpkNgaybd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dpkNgaybd.Name = "dpkNgaybd";
+            this.dpkNgaybd.ShadowDecoration.Parent = this.dpkNgaybd;
+            this.dpkNgaybd.Size = new System.Drawing.Size(202, 37);
+            this.dpkNgaybd.TabIndex = 225;
+            this.dpkNgaybd.Value = new System.DateTime(2021, 10, 25, 21, 55, 52, 140);
+            // 
+            // dpkNgaykt
+            // 
+            this.dpkNgaykt.BorderRadius = 10;
+            this.dpkNgaykt.BorderThickness = 1;
+            this.dpkNgaykt.Checked = true;
+            this.dpkNgaykt.CheckedState.Parent = this.dpkNgaykt;
+            this.dpkNgaykt.FillColor = System.Drawing.Color.White;
+            this.dpkNgaykt.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.dpkNgaykt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dpkNgaykt.HoverState.Parent = this.dpkNgaykt;
+            this.dpkNgaykt.Location = new System.Drawing.Point(503, 85);
+            this.dpkNgaykt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dpkNgaykt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dpkNgaykt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dpkNgaykt.Name = "dpkNgaykt";
+            this.dpkNgaykt.ShadowDecoration.Parent = this.dpkNgaykt;
+            this.dpkNgaykt.Size = new System.Drawing.Size(202, 37);
+            this.dpkNgaykt.TabIndex = 226;
+            this.dpkNgaykt.Value = new System.DateTime(2021, 10, 25, 21, 55, 52, 140);
+            // 
             // UC_ThongKeHoaDon
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Controls.Add(this.dpkNgaykt);
+            this.Controls.Add(this.dpkNgaybd);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtTongtienhoadon);
@@ -282,8 +282,6 @@ namespace WindowsFormsApp
             this.Controls.Add(this.btnXem);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dpkNgaykt);
-            this.Controls.Add(this.dpkNgaybd);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKeHoaDon";
             this.Size = new System.Drawing.Size(1010, 593);
@@ -296,8 +294,6 @@ namespace WindowsFormsApp
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2DateTimePicker dpkNgaybd;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dpkNgaykt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnXem;
@@ -307,5 +303,7 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2TextBox txtTongtienhoadon;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dpkNgaybd;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dpkNgaykt;
     }
 }

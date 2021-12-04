@@ -70,7 +70,7 @@ namespace WindowsFormsApp
             this.dgvThongkehh.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvThongkehh.EnableHeadersVisualStyles = false;
             this.dgvThongkehh.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvThongkehh.Location = new System.Drawing.Point(16, 123);
+            this.dgvThongkehh.Location = new System.Drawing.Point(15, 157);
             this.dgvThongkehh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvThongkehh.Name = "dgvThongkehh";
             this.dgvThongkehh.ReadOnly = true;
@@ -126,7 +126,7 @@ namespace WindowsFormsApp
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(20, 75);
+            this.label7.Location = new System.Drawing.Point(26, 86);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 29);
             this.label7.TabIndex = 20;
@@ -136,6 +136,7 @@ namespace WindowsFormsApp
             // 
             this.txtTimkiemhanghoa.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.txtTimkiemhanghoa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTimkiemhanghoa.BorderRadius = 10;
             this.txtTimkiemhanghoa.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTimkiemhanghoa.DefaultText = "";
             this.txtTimkiemhanghoa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -150,7 +151,7 @@ namespace WindowsFormsApp
             this.txtTimkiemhanghoa.ForeColor = System.Drawing.Color.Black;
             this.txtTimkiemhanghoa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimkiemhanghoa.HoverState.Parent = this.txtTimkiemhanghoa;
-            this.txtTimkiemhanghoa.Location = new System.Drawing.Point(114, 64);
+            this.txtTimkiemhanghoa.Location = new System.Drawing.Point(130, 75);
             this.txtTimkiemhanghoa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTimkiemhanghoa.Name = "txtTimkiemhanghoa";
             this.txtTimkiemhanghoa.PasswordChar = '\0';
@@ -158,7 +159,6 @@ namespace WindowsFormsApp
             this.txtTimkiemhanghoa.SelectedText = "";
             this.txtTimkiemhanghoa.ShadowDecoration.Parent = this.txtTimkiemhanghoa;
             this.txtTimkiemhanghoa.Size = new System.Drawing.Size(305, 40);
-            this.txtTimkiemhanghoa.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTimkiemhanghoa.TabIndex = 19;
             this.txtTimkiemhanghoa.TextChanged += new System.EventHandler(this.txtTimkiemhanghoa_TextChanged);
             // 
