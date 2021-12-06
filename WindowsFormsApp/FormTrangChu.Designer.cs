@@ -374,7 +374,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.label8.Font = new System.Drawing.Font("Segoe UI", 7.8F);
             this.label8.Location = new System.Drawing.Point(117, 707);
             this.label8.Name = "label8";
@@ -385,7 +385,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 7.8F);
             this.label7.Location = new System.Drawing.Point(41, 707);
             this.label7.Name = "label7";
@@ -429,7 +429,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F);
             this.label6.Location = new System.Drawing.Point(12, 675);
             this.label6.Name = "label6";
@@ -440,7 +440,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.8F);
             this.label5.Location = new System.Drawing.Point(90, 639);
             this.label5.Name = "label5";
