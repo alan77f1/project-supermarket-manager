@@ -50,5 +50,10 @@ namespace WindowsFormsApp
             chart1.ChartAreas[0].AxisX.Minimum = 1;
             chart1.Series[0].ChartType = SeriesChartType.Spline;
         }
+
+        private void UC_TrangChu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

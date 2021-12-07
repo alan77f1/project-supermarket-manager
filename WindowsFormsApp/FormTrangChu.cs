@@ -164,5 +164,10 @@ namespace WindowsFormsApp
             UC_CaLamViec ncc = new UC_CaLamViec();
             addControlsToPanel(ncc);
         }
+
+        private void btnNhapHang_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

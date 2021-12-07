@@ -189,6 +189,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UC_NhapHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_NhapHang.Designer.cs">
+      <DependentUpon>UC_NhapHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\MatHangBUS.cs" />
     <Compile Include="Controller\Chuoiketnoi.cs" />
     <Compile Include="Controller\ChuyenDoiTien.cs" />
@@ -440,6 +446,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_NhanVien.resx">
       <DependentUpon>UC_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_NhapHang.resx">
+      <DependentUpon>UC_NhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_ThongKe.resx">
       <DependentUpon>UC_ThongKe.cs</DependentUpon>

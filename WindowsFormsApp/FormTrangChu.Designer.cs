@@ -57,6 +57,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelControl = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btnNhapHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel3.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.pannelLeft1.SuspendLayout();
@@ -78,7 +79,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(230, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(970, 38);
+            this.panel3.Size = new System.Drawing.Size(970, 41);
             this.panel3.TabIndex = 4;
             // 
             // btnDangXuat
@@ -109,7 +110,7 @@
             this.btnDangXuat.HoverState.Parent = this.btnDangXuat;
             this.btnDangXuat.Image = global::WindowsFormsApp.Properties.Resources.icons8_shutdown_24;
             this.btnDangXuat.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnDangXuat.Location = new System.Drawing.Point(918, 0);
+            this.btnDangXuat.Location = new System.Drawing.Point(918, 4);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.ShadowDecoration.Parent = this.btnDangXuat;
             this.btnDangXuat.Size = new System.Drawing.Size(52, 37);
@@ -167,7 +168,7 @@
             this.lblNguoidung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblNguoidung.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.lblNguoidung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
-            this.lblNguoidung.Location = new System.Drawing.Point(776, 3);
+            this.lblNguoidung.Location = new System.Drawing.Point(776, 4);
             this.lblNguoidung.Name = "lblNguoidung";
             this.lblNguoidung.Size = new System.Drawing.Size(92, 29);
             this.lblNguoidung.TabIndex = 7;
@@ -178,6 +179,7 @@
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.panelLeft.Controls.Add(this.btnNhapHang);
             this.panelLeft.Controls.Add(this.btnThongKe);
             this.panelLeft.Controls.Add(this.btnCLV);
             this.panelLeft.Controls.Add(this.btnKhoHang);
@@ -222,7 +224,7 @@
             this.btnThongKe.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
             this.btnThongKe.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnThongKe.HoverState.Parent = this.btnThongKe;
-            this.btnThongKe.Location = new System.Drawing.Point(12, 520);
+            this.btnThongKe.Location = new System.Drawing.Point(12, 581);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.ShadowDecoration.Parent = this.btnThongKe;
             this.btnThongKe.Size = new System.Drawing.Size(178, 55);
@@ -376,7 +378,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.label8.Font = new System.Drawing.Font("Segoe UI", 7.8F);
-            this.label8.Location = new System.Drawing.Point(117, 707);
+            this.label8.Location = new System.Drawing.Point(117, 722);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 19);
             this.label8.TabIndex = 25;
@@ -387,7 +389,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 7.8F);
-            this.label7.Location = new System.Drawing.Point(41, 707);
+            this.label7.Location = new System.Drawing.Point(55, 722);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 19);
             this.label7.TabIndex = 24;
@@ -431,7 +433,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F);
-            this.label6.Location = new System.Drawing.Point(12, 675);
+            this.label6.Location = new System.Drawing.Point(8, 691);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(224, 19);
             this.label6.TabIndex = 23;
@@ -442,7 +444,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.8F);
-            this.label5.Location = new System.Drawing.Point(90, 639);
+            this.label5.Location = new System.Drawing.Point(87, 672);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 19);
             this.label5.TabIndex = 22;
@@ -552,15 +554,48 @@
             // panelControl
             // 
             this.panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl.Location = new System.Drawing.Point(230, 38);
+            this.panelControl.Location = new System.Drawing.Point(230, 41);
             this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(970, 712);
+            this.panelControl.Size = new System.Drawing.Size(970, 709);
             this.panelControl.TabIndex = 5;
             // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 40;
             this.bunifuElipse1.TargetControl = this;
+            // 
+            // btnNhapHang
+            // 
+            this.btnNhapHang.Animated = true;
+            this.btnNhapHang.AutoRoundedCorners = true;
+            this.btnNhapHang.BackColor = System.Drawing.Color.Transparent;
+            this.btnNhapHang.BorderRadius = 26;
+            this.btnNhapHang.CheckedState.Parent = this.btnNhapHang;
+            this.btnNhapHang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnNhapHang.CustomImages.Parent = this.btnNhapHang;
+            this.btnNhapHang.CustomizableEdges.BottomLeft = false;
+            this.btnNhapHang.CustomizableEdges.TopLeft = false;
+            this.btnNhapHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhapHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhapHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNhapHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNhapHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNhapHang.DisabledState.Parent = this.btnNhapHang;
+            this.btnNhapHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.btnNhapHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnNhapHang.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnNhapHang.ForeColor = System.Drawing.Color.White;
+            this.btnNhapHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
+            this.btnNhapHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.btnNhapHang.HoverState.Parent = this.btnNhapHang;
+            this.btnNhapHang.Location = new System.Drawing.Point(12, 520);
+            this.btnNhapHang.Name = "btnNhapHang";
+            this.btnNhapHang.ShadowDecoration.Parent = this.btnNhapHang;
+            this.btnNhapHang.Size = new System.Drawing.Size(178, 55);
+            this.btnNhapHang.TabIndex = 28;
+            this.btnNhapHang.Text = "   Nhập hàng";
+            this.btnNhapHang.UseTransparentBackground = true;
+            this.btnNhapHang.Click += new System.EventHandler(this.btnNhapHang_Click);
             // 
             // FormTrangChu
             // 
@@ -616,5 +651,6 @@
         private System.Windows.Forms.Label lblQuyen;
         private System.Windows.Forms.Panel panelSide;
         private Guna.UI2.WinForms.Guna2GradientButton btnCLV;
+        private Guna.UI2.WinForms.Guna2GradientButton btnNhapHang;
     }
 }
