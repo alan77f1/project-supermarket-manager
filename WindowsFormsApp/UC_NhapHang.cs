@@ -9,8 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using BUS;
-using DTO;
+using WindowsFormsApp.Controller;
+using WindowsFormsApp.Models;
 
 namespace WindowsFormsApp
 {
@@ -98,37 +98,37 @@ namespace WindowsFormsApp
 
 
 
-        public List<MatHangDTO> getListSanPham()
+        public List<MatHang> getListSanPham()
         {
             string query = "select * from MatHang";
-            List<MatHangDTO> list = new List<MatHangDTO>();
+            List<MatHang> list = new List<MatHang>();
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow item in dt.Rows)
             {
-                MatHangDTO product = new MatHangDTO(item);
+                MatHang product = new MatHang(item);
                 list.Add(product);
             }
             return list;
         }
 
-        List<MatHangDTO> list;
+        List<MatHang> list;
 
 
 
-        public List<NhaCungCapDTO> getListNhaCungCap()
+        public List<NhaCungCap> getListNhaCungCap()
         {
             string query = "select * from NhaCungCap";
-            List<NhaCungCapDTO> list = new List<NhaCungCapDTO>();
+            List<NhaCungCap> list = new List<NhaCungCap>();
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow item in dt.Rows)
             {
-                NhaCungCapDTO TTncc = new NhaCungCapDTO(item);
+                NhaCungCap TTncc = new NhaCungCap(item);
                 list.Add(TTncc);
             }
             return list;
 
         }
-        List<NhaCungCapDTO> list1;
+        List<NhaCungCap> list1;
 
         int i;
         private void cmbTensp_SelectedIndexChanged(object sender, EventArgs e)
@@ -190,7 +190,7 @@ namespace WindowsFormsApp
         //
         // Lưu phiếu nhập
         //
-        private bool LuuPN(PhieuNhapDTO pn)
+        private bool LuuPN(PhieuNhap pn)
         {
             // Convert datetime to date SQL Server 
             string query = String.Format("insert into PhieuNhap values('{0}','{1}','{2}','{3}')", pn.MaPN, pn.MaNCC, pn.NgayNhap, pn.MaNV);
@@ -297,7 +297,7 @@ namespace WindowsFormsApp
         {
             if (lsvNhaphang.Items.Count > 0)
             {
-                PhieuNhapDTO pn = new PhieuNhapDTO();
+                PhieuNhap pn = new PhieuNhap();
                 pn.MaPN = lblMapn.Text;
                 pn.NgayNhap = dtpkNgaynhap.Value;
                 pn.MaNCC = lblMancc.Text;
