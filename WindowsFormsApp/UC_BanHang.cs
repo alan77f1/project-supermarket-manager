@@ -308,19 +308,6 @@ namespace WindowsFormsApp
             }
         }
 
-        private void txtSDT_TextChanged(object sender, EventArgs e)
-        {
-            khachHang = GetTenBySDT(txtSDT.Text);
-            txtTenKH.Text = khachHang.TenKH;
-            lblMakh.Text = khachHang.MaKH;
-            lblMakh.ForeColor = Color.Red;
-            if (txtSDT.Text.Length == 10 && txtTenKH.Text == "")
-            {
-                txtTenKH.Text = "Khách hàng mới";
-            }
-        }
-
-
 
         private void btnok_Click(object sender, EventArgs e)
         {
@@ -350,6 +337,22 @@ namespace WindowsFormsApp
             }
             else
                 txtTienhoantra.Text = "";
+        }
+
+        private void txtTienhoantra_TextChanged(object sender, EventArgs e)
+        {
+              }
+
+        private void txtSDT_TextChanged_1(object sender, EventArgs e)
+        {
+            khachHang = GetTenBySDT(txtSDT.Text);
+            txtTenKH.Text = khachHang.TenKH;
+            lblMakh.Text = khachHang.MaKH;
+            lblMakh.ForeColor = Color.Red;
+            if (txtSDT.Text.Length == 10 && txtTenKH.Text == "")
+            {
+                txtTenKH.Text = "Khách hàng mới";
+            }
         }
 
         private void btnThemMoiKH_Click(object sender, EventArgs e)

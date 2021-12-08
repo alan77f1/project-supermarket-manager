@@ -151,14 +151,14 @@ namespace WindowsFormsApp
             this.txtTimkiemhanghoa.ForeColor = System.Drawing.Color.Black;
             this.txtTimkiemhanghoa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimkiemhanghoa.HoverState.Parent = this.txtTimkiemhanghoa;
-            this.txtTimkiemhanghoa.Location = new System.Drawing.Point(130, 75);
+            this.txtTimkiemhanghoa.Location = new System.Drawing.Point(130, 86);
             this.txtTimkiemhanghoa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTimkiemhanghoa.Name = "txtTimkiemhanghoa";
             this.txtTimkiemhanghoa.PasswordChar = '\0';
             this.txtTimkiemhanghoa.PlaceholderText = "";
             this.txtTimkiemhanghoa.SelectedText = "";
             this.txtTimkiemhanghoa.ShadowDecoration.Parent = this.txtTimkiemhanghoa;
-            this.txtTimkiemhanghoa.Size = new System.Drawing.Size(305, 40);
+            this.txtTimkiemhanghoa.Size = new System.Drawing.Size(292, 35);
             this.txtTimkiemhanghoa.TabIndex = 19;
             this.txtTimkiemhanghoa.TextChanged += new System.EventHandler(this.txtTimkiemhanghoa_TextChanged);
             // 

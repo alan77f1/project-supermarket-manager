@@ -78,14 +78,14 @@ namespace WindowsFormsApp
             this.txtxacnhan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.txtxacnhan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtxacnhan.HoverState.Parent = this.txtxacnhan;
-            this.txtxacnhan.Location = new System.Drawing.Point(267, 195);
+            this.txtxacnhan.Location = new System.Drawing.Point(266, 204);
             this.txtxacnhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtxacnhan.Name = "txtxacnhan";
             this.txtxacnhan.PasswordChar = '\0';
             this.txtxacnhan.PlaceholderText = "";
             this.txtxacnhan.SelectedText = "";
             this.txtxacnhan.ShadowDecoration.Parent = this.txtxacnhan;
-            this.txtxacnhan.Size = new System.Drawing.Size(317, 46);
+            this.txtxacnhan.Size = new System.Drawing.Size(292, 35);
             this.txtxacnhan.TabIndex = 124;
             this.txtxacnhan.TextChanged += new System.EventHandler(this.txtxacnhan_TextChanged);
             // 
@@ -188,6 +188,10 @@ namespace WindowsFormsApp
             this.txtSđtnv.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtSđtnv.TabIndex = 127;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // errorProvider2
             // 
             this.errorProvider2.ContainerControl = this.txtxacnhan;
@@ -213,14 +217,14 @@ namespace WindowsFormsApp
             this.txtmatkhaumoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.txtmatkhaumoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtmatkhaumoi.HoverState.Parent = this.txtmatkhaumoi;
-            this.txtmatkhaumoi.Location = new System.Drawing.Point(267, 128);
+            this.txtmatkhaumoi.Location = new System.Drawing.Point(266, 139);
             this.txtmatkhaumoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmatkhaumoi.Name = "txtmatkhaumoi";
             this.txtmatkhaumoi.PasswordChar = '\0';
             this.txtmatkhaumoi.PlaceholderText = "";
             this.txtmatkhaumoi.SelectedText = "";
             this.txtmatkhaumoi.ShadowDecoration.Parent = this.txtmatkhaumoi;
-            this.txtmatkhaumoi.Size = new System.Drawing.Size(317, 46);
+            this.txtmatkhaumoi.Size = new System.Drawing.Size(292, 35);
             this.txtmatkhaumoi.TabIndex = 132;
             // 
             // btnQuaylai

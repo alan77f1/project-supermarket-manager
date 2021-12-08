@@ -133,14 +133,14 @@ namespace WindowsFormsApp
             this.txtTimkiemphieunhap.ForeColor = System.Drawing.Color.Black;
             this.txtTimkiemphieunhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimkiemphieunhap.HoverState.Parent = this.txtTimkiemphieunhap;
-            this.txtTimkiemphieunhap.Location = new System.Drawing.Point(120, 78);
+            this.txtTimkiemphieunhap.Location = new System.Drawing.Point(120, 89);
             this.txtTimkiemphieunhap.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTimkiemphieunhap.Name = "txtTimkiemphieunhap";
             this.txtTimkiemphieunhap.PasswordChar = '\0';
             this.txtTimkiemphieunhap.PlaceholderText = "";
             this.txtTimkiemphieunhap.SelectedText = "";
             this.txtTimkiemphieunhap.ShadowDecoration.Parent = this.txtTimkiemphieunhap;
-            this.txtTimkiemphieunhap.Size = new System.Drawing.Size(295, 40);
+            this.txtTimkiemphieunhap.Size = new System.Drawing.Size(292, 35);
             this.txtTimkiemphieunhap.TabIndex = 19;
             this.txtTimkiemphieunhap.TextChanged += new System.EventHandler(this.txtTimkiemphieunhap_TextChanged);
             // 
@@ -184,14 +184,14 @@ namespace WindowsFormsApp
             this.txtmapn.ForeColor = System.Drawing.Color.Black;
             this.txtmapn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtmapn.HoverState.Parent = this.txtmapn;
-            this.txtmapn.Location = new System.Drawing.Point(195, 515);
+            this.txtmapn.Location = new System.Drawing.Point(179, 513);
             this.txtmapn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmapn.Name = "txtmapn";
             this.txtmapn.PasswordChar = '\0';
             this.txtmapn.PlaceholderText = "";
             this.txtmapn.SelectedText = "";
             this.txtmapn.ShadowDecoration.Parent = this.txtmapn;
-            this.txtmapn.Size = new System.Drawing.Size(100, 33);
+            this.txtmapn.Size = new System.Drawing.Size(100, 35);
             this.txtmapn.TabIndex = 43;
             // 
             // panel2

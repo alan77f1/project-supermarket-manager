@@ -167,7 +167,9 @@ namespace WindowsFormsApp
 
         private void btnNhapHang_Click(object sender, EventArgs e)
         {
-
+            movesidePannel(btnNhapHang);
+            UC_NhapHang nh = new UC_NhapHang();
+            addControlsToPanel(nh);
         }
     }
 }

@@ -68,6 +68,10 @@ namespace WindowsFormsApp
             this.label2 = new System.Windows.Forms.Label();
             this.cmbTensp = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtSDT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cmbChucVu = new Guna.UI2.WinForms.Guna2ComboBox();
             this.SuspendLayout();
             // 
             // btnXoa
@@ -89,7 +93,7 @@ namespace WindowsFormsApp
             this.btnXoa.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.btnXoa.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnXoa.HoverState.Parent = this.btnXoa;
-            this.btnXoa.Location = new System.Drawing.Point(705, 612);
+            this.btnXoa.Location = new System.Drawing.Point(554, 612);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.ShadowDecoration.Parent = this.btnXoa;
             this.btnXoa.Size = new System.Drawing.Size(148, 46);
@@ -115,7 +119,7 @@ namespace WindowsFormsApp
             this.btnLammoi.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.btnLammoi.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnLammoi.HoverState.Parent = this.btnLammoi;
-            this.btnLammoi.Location = new System.Drawing.Point(541, 612);
+            this.btnLammoi.Location = new System.Drawing.Point(390, 612);
             this.btnLammoi.Name = "btnLammoi";
             this.btnLammoi.ShadowDecoration.Parent = this.btnLammoi;
             this.btnLammoi.Size = new System.Drawing.Size(148, 46);
@@ -141,7 +145,7 @@ namespace WindowsFormsApp
             this.btnLuu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.btnLuu.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnLuu.HoverState.Parent = this.btnLuu;
-            this.btnLuu.Location = new System.Drawing.Point(386, 612);
+            this.btnLuu.Location = new System.Drawing.Point(235, 612);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.ShadowDecoration.Parent = this.btnLuu;
             this.btnLuu.Size = new System.Drawing.Size(148, 46);
@@ -167,7 +171,7 @@ namespace WindowsFormsApp
             this.btnThem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.btnThem.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnThem.HoverState.Parent = this.btnThem;
-            this.btnThem.Location = new System.Drawing.Point(214, 612);
+            this.btnThem.Location = new System.Drawing.Point(63, 612);
             this.btnThem.Name = "btnThem";
             this.btnThem.ShadowDecoration.Parent = this.btnThem;
             this.btnThem.Size = new System.Drawing.Size(148, 46);
@@ -179,7 +183,7 @@ namespace WindowsFormsApp
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblEmail.Location = new System.Drawing.Point(572, 249);
+            this.lblEmail.Location = new System.Drawing.Point(651, 236);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(55, 21);
             this.lblEmail.TabIndex = 171;
@@ -189,7 +193,7 @@ namespace WindowsFormsApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(483, 235);
+            this.label1.Location = new System.Drawing.Point(562, 222);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 35);
             this.label1.TabIndex = 170;
@@ -220,7 +224,7 @@ namespace WindowsFormsApp
             this.btnThemSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.btnThemSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemSP.ForeColor = System.Drawing.Color.White;
-            this.btnThemSP.Location = new System.Drawing.Point(386, 130);
+            this.btnThemSP.Location = new System.Drawing.Point(437, 129);
             this.btnThemSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemSP.Name = "btnThemSP";
             this.btnThemSP.Size = new System.Drawing.Size(45, 34);
@@ -285,7 +289,7 @@ namespace WindowsFormsApp
             this.lblSĐT.AutoSize = true;
             this.lblSĐT.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSĐT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblSĐT.Location = new System.Drawing.Point(572, 197);
+            this.lblSĐT.Location = new System.Drawing.Point(651, 184);
             this.lblSĐT.Name = "lblSĐT";
             this.lblSĐT.Size = new System.Drawing.Size(49, 21);
             this.lblSĐT.TabIndex = 161;
@@ -295,7 +299,7 @@ namespace WindowsFormsApp
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(483, 197);
+            this.label9.Location = new System.Drawing.Point(562, 184);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 35);
             this.label9.TabIndex = 160;
@@ -306,7 +310,7 @@ namespace WindowsFormsApp
             this.lblDiachi.AutoSize = true;
             this.lblDiachi.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDiachi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblDiachi.Location = new System.Drawing.Point(585, 156);
+            this.lblDiachi.Location = new System.Drawing.Point(664, 143);
             this.lblDiachi.Name = "lblDiachi";
             this.lblDiachi.Size = new System.Drawing.Size(65, 21);
             this.lblDiachi.TabIndex = 159;
@@ -316,7 +320,7 @@ namespace WindowsFormsApp
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(480, 146);
+            this.label4.Location = new System.Drawing.Point(559, 133);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 35);
             this.label4.TabIndex = 158;
@@ -326,7 +330,7 @@ namespace WindowsFormsApp
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(502, 93);
+            this.label17.Location = new System.Drawing.Point(546, 84);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(100, 35);
             this.label17.TabIndex = 157;
@@ -337,7 +341,7 @@ namespace WindowsFormsApp
             this.cmbTenncc.Font = new System.Drawing.Font("Sitka Banner", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTenncc.ForeColor = System.Drawing.Color.Maroon;
             this.cmbTenncc.FormattingEnabled = true;
-            this.cmbTenncc.Location = new System.Drawing.Point(627, 93);
+            this.cmbTenncc.Location = new System.Drawing.Point(656, 85);
             this.cmbTenncc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbTenncc.Name = "cmbTenncc";
             this.cmbTenncc.Size = new System.Drawing.Size(197, 34);
@@ -348,7 +352,7 @@ namespace WindowsFormsApp
             this.lblTenncc.AutoSize = true;
             this.lblTenncc.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenncc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblTenncc.Location = new System.Drawing.Point(926, 249);
+            this.lblTenncc.Location = new System.Drawing.Point(735, 295);
             this.lblTenncc.Name = "lblTenncc";
             this.lblTenncc.Size = new System.Drawing.Size(81, 21);
             this.lblTenncc.TabIndex = 155;
@@ -358,7 +362,7 @@ namespace WindowsFormsApp
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(785, 239);
+            this.label15.Location = new System.Drawing.Point(629, 285);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(100, 35);
             this.label15.TabIndex = 154;
@@ -369,7 +373,7 @@ namespace WindowsFormsApp
             this.lblMancc.AutoSize = true;
             this.lblMancc.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMancc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblMancc.Location = new System.Drawing.Point(623, 61);
+            this.lblMancc.Location = new System.Drawing.Point(652, 51);
             this.lblMancc.Name = "lblMancc";
             this.lblMancc.Size = new System.Drawing.Size(77, 21);
             this.lblMancc.TabIndex = 153;
@@ -379,7 +383,7 @@ namespace WindowsFormsApp
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(507, 51);
+            this.label14.Location = new System.Drawing.Point(551, 37);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(95, 35);
             this.label14.TabIndex = 152;
@@ -389,7 +393,7 @@ namespace WindowsFormsApp
             // 
             this.dtpkNgaynhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpkNgaynhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpkNgaynhap.Location = new System.Drawing.Point(785, 325);
+            this.dtpkNgaynhap.Location = new System.Drawing.Point(756, 334);
             this.dtpkNgaynhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpkNgaynhap.Name = "dtpkNgaynhap";
             this.dtpkNgaynhap.Size = new System.Drawing.Size(222, 28);
@@ -399,7 +403,7 @@ namespace WindowsFormsApp
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(867, 612);
+            this.label12.Location = new System.Drawing.Point(750, 612);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(66, 35);
             this.label12.TabIndex = 150;
@@ -424,7 +428,7 @@ namespace WindowsFormsApp
             this.lsvNhaphang.Location = new System.Drawing.Point(50, 382);
             this.lsvNhaphang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lsvNhaphang.Name = "lsvNhaphang";
-            this.lsvNhaphang.Size = new System.Drawing.Size(965, 214);
+            this.lsvNhaphang.Size = new System.Drawing.Size(957, 214);
             this.lsvNhaphang.TabIndex = 148;
             this.lsvNhaphang.UseCompatibleStateImageBehavior = false;
             // 
@@ -433,7 +437,7 @@ namespace WindowsFormsApp
             this.lbltong.AutoSize = true;
             this.lbltong.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbltong.Location = new System.Drawing.Point(992, 622);
+            this.lbltong.Location = new System.Drawing.Point(838, 622);
             this.lbltong.Name = "lbltong";
             this.lbltong.Size = new System.Drawing.Size(15, 21);
             this.lbltong.TabIndex = 147;
@@ -444,7 +448,7 @@ namespace WindowsFormsApp
             this.lbltensp.AutoSize = true;
             this.lbltensp.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltensp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbltensp.Location = new System.Drawing.Point(964, 207);
+            this.lbltensp.Location = new System.Drawing.Point(735, 266);
             this.lbltensp.Name = "lbltensp";
             this.lbltensp.Size = new System.Drawing.Size(64, 21);
             this.lbltensp.TabIndex = 146;
@@ -485,7 +489,7 @@ namespace WindowsFormsApp
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(785, 204);
+            this.label8.Location = new System.Drawing.Point(594, 331);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(148, 35);
             this.label8.TabIndex = 142;
@@ -495,7 +499,7 @@ namespace WindowsFormsApp
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(33, 79);
+            this.label7.Location = new System.Drawing.Point(24, 79);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(143, 35);
             this.label7.TabIndex = 141;
@@ -505,7 +509,7 @@ namespace WindowsFormsApp
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 127);
+            this.label6.Location = new System.Drawing.Point(24, 127);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(148, 35);
             this.label6.TabIndex = 140;
@@ -515,7 +519,7 @@ namespace WindowsFormsApp
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(822, 274);
+            this.label2.Location = new System.Drawing.Point(799, 170);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 35);
             this.label2.TabIndex = 139;
@@ -526,10 +530,10 @@ namespace WindowsFormsApp
             this.cmbTensp.Font = new System.Drawing.Font("Sitka Banner", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTensp.ForeColor = System.Drawing.Color.Maroon;
             this.cmbTensp.FormattingEnabled = true;
-            this.cmbTensp.Location = new System.Drawing.Point(180, 129);
+            this.cmbTensp.Location = new System.Drawing.Point(178, 129);
             this.cmbTensp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbTensp.Name = "cmbTensp";
-            this.cmbTensp.Size = new System.Drawing.Size(200, 34);
+            this.cmbTensp.Size = new System.Drawing.Size(253, 34);
             this.cmbTensp.TabIndex = 138;
             // 
             // label3
@@ -542,10 +546,111 @@ namespace WindowsFormsApp
             this.label3.TabIndex = 137;
             this.label3.Text = "Mã phiếu nhập:";
             // 
+            // txtSDT
+            // 
+            this.txtSDT.BorderColor = System.Drawing.Color.Black;
+            this.txtSDT.BorderRadius = 10;
+            this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSDT.DefaultText = "";
+            this.txtSDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSDT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSDT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSDT.DisabledState.Parent = this.txtSDT;
+            this.txtSDT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSDT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSDT.FocusedState.Parent = this.txtSDT;
+            this.txtSDT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSDT.HoverState.Parent = this.txtSDT;
+            this.txtSDT.Location = new System.Drawing.Point(127, 400);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.PasswordChar = '\0';
+            this.txtSDT.PlaceholderText = "";
+            this.txtSDT.SelectedText = "";
+            this.txtSDT.ShadowDecoration.Parent = this.txtSDT;
+            this.txtSDT.Size = new System.Drawing.Size(247, 36);
+            this.txtSDT.TabIndex = 225;
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.Black;
+            this.guna2TextBox1.BorderRadius = 10;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Location = new System.Drawing.Point(127, 442);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(247, 37);
+            this.guna2TextBox1.TabIndex = 226;
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.BorderColor = System.Drawing.Color.Black;
+            this.guna2TextBox2.BorderRadius = 10;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.Location = new System.Drawing.Point(127, 522);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.Size = new System.Drawing.Size(247, 31);
+            this.guna2TextBox2.TabIndex = 227;
+            // 
+            // cmbChucVu
+            // 
+            this.cmbChucVu.BackColor = System.Drawing.Color.Transparent;
+            this.cmbChucVu.BorderColor = System.Drawing.Color.Black;
+            this.cmbChucVu.BorderRadius = 10;
+            this.cmbChucVu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbChucVu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbChucVu.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbChucVu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbChucVu.FocusedState.Parent = this.cmbChucVu;
+            this.cmbChucVu.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbChucVu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbChucVu.HoverState.Parent = this.cmbChucVu;
+            this.cmbChucVu.ItemHeight = 30;
+            this.cmbChucVu.ItemsAppearance.Parent = this.cmbChucVu;
+            this.cmbChucVu.Location = new System.Drawing.Point(380, 400);
+            this.cmbChucVu.Name = "cmbChucVu";
+            this.cmbChucVu.ShadowDecoration.Parent = this.cmbChucVu;
+            this.cmbChucVu.Size = new System.Drawing.Size(288, 36);
+            this.cmbChucVu.TabIndex = 228;
+            // 
             // UC_NhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.cmbChucVu);
+            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnLammoi);
             this.Controls.Add(this.btnLuu);
@@ -585,8 +690,9 @@ namespace WindowsFormsApp
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbTensp);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_NhapHang";
-            this.Size = new System.Drawing.Size(1052, 684);
+            this.Size = new System.Drawing.Size(1032, 712);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -633,5 +739,9 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbTensp;
         private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2TextBox txtSDT;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbChucVu;
     }
 }

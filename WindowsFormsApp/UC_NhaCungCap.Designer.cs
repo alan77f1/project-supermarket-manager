@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -132,14 +132,14 @@
             this.dgvThongTinNCC.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvThongTinNCC.BackgroundColor = System.Drawing.Color.White;
             this.dgvThongTinNCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvThongTinNCC.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvThongTinNCC.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvThongTinNCC.Location = new System.Drawing.Point(13, 298);
             this.dgvThongTinNCC.Name = "dgvThongTinNCC";
             this.dgvThongTinNCC.ReadOnly = true;
@@ -170,7 +170,7 @@
             this.txtMaNCC.PlaceholderText = "";
             this.txtMaNCC.SelectedText = "";
             this.txtMaNCC.ShadowDecoration.Parent = this.txtMaNCC;
-            this.txtMaNCC.Size = new System.Drawing.Size(301, 36);
+            this.txtMaNCC.Size = new System.Drawing.Size(292, 35);
             this.txtMaNCC.TabIndex = 216;
             // 
             // txtDiaChi
@@ -195,7 +195,7 @@
             this.txtDiaChi.PlaceholderText = "";
             this.txtDiaChi.SelectedText = "";
             this.txtDiaChi.ShadowDecoration.Parent = this.txtDiaChi;
-            this.txtDiaChi.Size = new System.Drawing.Size(301, 36);
+            this.txtDiaChi.Size = new System.Drawing.Size(292, 35);
             this.txtDiaChi.TabIndex = 218;
             // 
             // panel3
@@ -240,7 +240,7 @@
             this.txtSDT.PlaceholderText = "";
             this.txtSDT.SelectedText = "";
             this.txtSDT.ShadowDecoration.Parent = this.txtSDT;
-            this.txtSDT.Size = new System.Drawing.Size(301, 36);
+            this.txtSDT.Size = new System.Drawing.Size(292, 35);
             this.txtSDT.TabIndex = 227;
             // 
             // txtTimKiem
@@ -265,7 +265,7 @@
             this.txtTimKiem.PlaceholderText = "";
             this.txtTimKiem.SelectedText = "";
             this.txtTimKiem.ShadowDecoration.Parent = this.txtTimKiem;
-            this.txtTimKiem.Size = new System.Drawing.Size(301, 36);
+            this.txtTimKiem.Size = new System.Drawing.Size(292, 35);
             this.txtTimKiem.TabIndex = 228;
             // 
             // txtTenNCC
@@ -290,7 +290,7 @@
             this.txtTenNCC.PlaceholderText = "";
             this.txtTenNCC.SelectedText = "";
             this.txtTenNCC.ShadowDecoration.Parent = this.txtTenNCC;
-            this.txtTenNCC.Size = new System.Drawing.Size(301, 36);
+            this.txtTenNCC.Size = new System.Drawing.Size(292, 35);
             this.txtTenNCC.TabIndex = 229;
             // 
             // txtEmail
@@ -315,7 +315,7 @@
             this.txtEmail.PlaceholderText = "";
             this.txtEmail.SelectedText = "";
             this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
-            this.txtEmail.Size = new System.Drawing.Size(301, 36);
+            this.txtEmail.Size = new System.Drawing.Size(292, 35);
             this.txtEmail.TabIndex = 230;
             // 
             // btnXoa
