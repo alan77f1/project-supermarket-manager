@@ -160,12 +160,5 @@ namespace WindowsFormsApp
             dn.Show();
             this.Hide();
         }
-
-        private void btnCLV_Click(object sender, EventArgs e)
-        {
-            movesidePannel(btnCLV);
-            UC_CaLamViec ncc = new UC_CaLamViec();
-            addControlsToPanel(ncc);
-        }
     }
 }

@@ -41,7 +41,6 @@
             this.timerTime = new System.Windows.Forms.Timer(this.components);
             this.panelLeft = new System.Windows.Forms.Panel();
             this.btnThongKe = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnCLV = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnKhoHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panelSide = new System.Windows.Forms.Panel();
             this.btnNCC = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -192,7 +191,6 @@
             // 
             this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.panelLeft.Controls.Add(this.btnThongKe);
-            this.panelLeft.Controls.Add(this.btnCLV);
             this.panelLeft.Controls.Add(this.btnKhoHang);
             this.panelLeft.Controls.Add(this.panelSide);
             this.panelLeft.Controls.Add(this.btnNCC);
@@ -235,7 +233,7 @@
             this.btnThongKe.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
             this.btnThongKe.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnThongKe.HoverState.Parent = this.btnThongKe;
-            this.btnThongKe.Location = new System.Drawing.Point(12, 520);
+            this.btnThongKe.Location = new System.Drawing.Point(12, 459);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.ShadowDecoration.Parent = this.btnThongKe;
             this.btnThongKe.Size = new System.Drawing.Size(178, 55);
@@ -243,39 +241,6 @@
             this.btnThongKe.Text = "   Thống kê";
             this.btnThongKe.UseTransparentBackground = true;
             this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click_1);
-            // 
-            // btnCLV
-            // 
-            this.btnCLV.Animated = true;
-            this.btnCLV.AutoRoundedCorners = true;
-            this.btnCLV.BackColor = System.Drawing.Color.Transparent;
-            this.btnCLV.BorderRadius = 26;
-            this.btnCLV.CheckedState.Parent = this.btnCLV;
-            this.btnCLV.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCLV.CustomImages.Parent = this.btnCLV;
-            this.btnCLV.CustomizableEdges.BottomLeft = false;
-            this.btnCLV.CustomizableEdges.TopLeft = false;
-            this.btnCLV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCLV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCLV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCLV.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCLV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCLV.DisabledState.Parent = this.btnCLV;
-            this.btnCLV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnCLV.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnCLV.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnCLV.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCLV.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
-            this.btnCLV.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.btnCLV.HoverState.Parent = this.btnCLV;
-            this.btnCLV.Location = new System.Drawing.Point(12, 337);
-            this.btnCLV.Name = "btnCLV";
-            this.btnCLV.ShadowDecoration.Parent = this.btnCLV;
-            this.btnCLV.Size = new System.Drawing.Size(178, 55);
-            this.btnCLV.TabIndex = 27;
-            this.btnCLV.Text = "   Ca làm việc";
-            this.btnCLV.UseTransparentBackground = true;
-            this.btnCLV.Click += new System.EventHandler(this.btnCLV_Click);
             // 
             // btnKhoHang
             // 
@@ -301,7 +266,7 @@
             this.btnKhoHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
             this.btnKhoHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnKhoHang.HoverState.Parent = this.btnKhoHang;
-            this.btnKhoHang.Location = new System.Drawing.Point(12, 459);
+            this.btnKhoHang.Location = new System.Drawing.Point(12, 398);
             this.btnKhoHang.Name = "btnKhoHang";
             this.btnKhoHang.ShadowDecoration.Parent = this.btnKhoHang;
             this.btnKhoHang.Size = new System.Drawing.Size(178, 55);
@@ -342,7 +307,7 @@
             this.btnNCC.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
             this.btnNCC.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnNCC.HoverState.Parent = this.btnNCC;
-            this.btnNCC.Location = new System.Drawing.Point(12, 398);
+            this.btnNCC.Location = new System.Drawing.Point(12, 337);
             this.btnNCC.Name = "btnNCC";
             this.btnNCC.ShadowDecoration.Parent = this.btnNCC;
             this.btnNCC.Size = new System.Drawing.Size(178, 55);
@@ -632,7 +597,6 @@
         private System.Windows.Forms.Label lblManv;
         private System.Windows.Forms.Label lblQuyen;
         private System.Windows.Forms.Panel panelSide;
-        private Guna.UI2.WinForms.Guna2GradientButton btnCLV;
         private System.Windows.Forms.Label lblTentk;
     }
 }
