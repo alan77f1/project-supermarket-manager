@@ -104,43 +104,6 @@ namespace WindowsFormsApp
             dgvHangHoa.Columns["Anh"].Visible = false;
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            if (dgvHangHoa.SelectedCells.Count > 0)
-            {
-                if (MatHangBUS.Intance.suaHH(txtMaHang.Text, txtTenMH.Text, int.Parse(txtSoLuong.Text), int.Parse(txtGiaBan.Text)))
-                {
-                    if (imgLocation != Application.StartupPath + "\\Resources\\hanghoa.png")
-                    {
-                        MatHangBUS.Intance.capNhatHinh(imgLocation, txtMaHang.Text);
-                    }
-                    loadData();
-                    imgLocation = Application.StartupPath + "\\Resources\\hanghoa.png";
-                    MessageBox.Show("Sửa Thành Công");
-                }
-            }
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            DialogResult dlr = MessageBox.Show("Bạn có muốn xóa không?",
-            "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dlr == DialogResult.Yes)
-            {
-                if (MatHangBUS.Intance.kiemtraXoa(txtMaHang.Text))
-                {
-                    MatHangBUS.Intance.xoaHang(txtMaHang.Text);
-                    MessageBox.Show("Xóa thành công!", "Thông báo");
-                    loadData();
-                }
-                else
-                {
-                    MessageBox.Show("Bạn không được xóa bản ghi này!", "Thông báo");
-                }
-
-            }
-        }
-
         private void dgvHangHoa_SelectionChanged_1(object sender, EventArgs e)
         {
             if (dgvHangHoa.SelectedCells.Count > 0)
@@ -170,6 +133,49 @@ namespace WindowsFormsApp
 
         }
 
+        private void btnSua_Click_1(object sender, EventArgs e)
+        {
+            if (dgvHangHoa.SelectedCells.Count > 0)
+            {
+                if (MatHangBUS.Intance.suaHH(txtMaHang.Text, txtTenMH.Text, int.Parse(txtSoLuong.Text), int.Parse(txtGiaBan.Text)))
+                {
+                    if (imgLocation != Application.StartupPath + "\\Resources\\hanghoa.png")
+                    {
+                        MatHangBUS.Intance.capNhatHinh(imgLocation, txtMaHang.Text);
+                    }
+                    loadData();
+                    imgLocation = Application.StartupPath + "\\Resources\\hanghoa.png";
+                    MessageBox.Show("Sửa Thành Công");
+                }
+            }
+        }
+
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            DialogResult dlr = MessageBox.Show("Bạn có muốn xóa không?",
+            "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.Yes)
+            {
+                if (MatHangBUS.Intance.kiemtraXoa(txtMaHang.Text))
+                {
+                    MatHangBUS.Intance.xoaHang(txtMaHang.Text);
+                    MessageBox.Show("Xóa thành công!", "Thông báo");
+                    loadData();
+                }
+                else
+                {
+                    MessageBox.Show("Bạn không được xóa bản ghi này!", "Thông báo");
+                }
+
+            }
+        }
+
+        private void btnNhapHang_Click_1(object sender, EventArgs e)
+        {
+            FormNhapHang formNhaphang = new FormNhapHang(luumanv, luutennv);
+            formNhaphang.Show();
+        }
+
         private void btnTaiAnh_Click(object sender, EventArgs e)
         {
             OpenFileDialog dlgOpen = new OpenFileDialog();
@@ -182,10 +188,6 @@ namespace WindowsFormsApp
             }
         }
 
-        private void btnNhapHang_Click(object sender, EventArgs e)
-        {
-            FormNhapHang formNhaphang = new FormNhapHang(luumanv, luutennv);
-            formNhaphang.Show();
-        }
+
     }
 }

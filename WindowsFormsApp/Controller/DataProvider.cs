@@ -79,7 +79,7 @@ namespace WindowsFormsApp.Controller
                     }
                 }
 
-                data = command.ExecuteNonQuery();
+                ////data = command.ExecuteNonQuery();
 
                 connection.Close();
             }

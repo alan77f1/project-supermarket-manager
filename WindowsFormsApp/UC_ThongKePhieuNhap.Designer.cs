@@ -79,7 +79,7 @@ namespace WindowsFormsApp
             this.dgvThongkepn.RowHeadersWidth = 62;
             this.dgvThongkepn.RowTemplate.Height = 28;
             this.dgvThongkepn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvThongkepn.Size = new System.Drawing.Size(967, 353);
+            this.dgvThongkepn.Size = new System.Drawing.Size(935, 353);
             this.dgvThongkepn.TabIndex = 5;
             this.dgvThongkepn.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvThongkepn.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -162,7 +162,7 @@ namespace WindowsFormsApp
             this.txtmapn.ForeColor = System.Drawing.Color.Black;
             this.txtmapn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtmapn.HoverState.Parent = this.txtmapn;
-            this.txtmapn.Location = new System.Drawing.Point(179, 513);
+            this.txtmapn.Location = new System.Drawing.Point(184, 513);
             this.txtmapn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmapn.Name = "txtmapn";
             this.txtmapn.PasswordChar = '\0';
@@ -178,7 +178,7 @@ namespace WindowsFormsApp
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1010, 62);
+            this.panel2.Size = new System.Drawing.Size(970, 48);
             this.panel2.TabIndex = 185;
             // 
             // label4
@@ -186,7 +186,7 @@ namespace WindowsFormsApp
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(333, 9);
+            this.label4.Location = new System.Drawing.Point(320, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(305, 40);
             this.label4.TabIndex = 226;
@@ -205,7 +205,7 @@ namespace WindowsFormsApp
             this.btnXemchitietpn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnXemchitietpn.DisabledState.Parent = this.btnXemchitietpn;
             this.btnXemchitietpn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnXemchitietpn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnXemchitietpn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnXemchitietpn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnXemchitietpn.ForeColor = System.Drawing.Color.White;
             this.btnXemchitietpn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
@@ -231,7 +231,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.dgvThongkepn);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKePhieuNhap";
-            this.Size = new System.Drawing.Size(1010, 593);
+            this.Size = new System.Drawing.Size(971, 593);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongkepn)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

@@ -32,6 +32,7 @@ namespace WindowsFormsApp
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.panelTrangChu = new System.Windows.Forms.Panel();
+            this.btnDangKy = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnDangNhap = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -51,7 +52,6 @@ namespace WindowsFormsApp
             this.errMatkhau = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btnDangKy = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panelTrangChu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errtxtTaikhoan)).BeginInit();
@@ -79,6 +79,27 @@ namespace WindowsFormsApp
             this.panelTrangChu.Name = "panelTrangChu";
             this.panelTrangChu.Size = new System.Drawing.Size(508, 580);
             this.panelTrangChu.TabIndex = 7;
+            // 
+            // btnDangKy
+            // 
+            this.btnDangKy.AutoRoundedCorners = true;
+            this.btnDangKy.BorderRadius = 33;
+            this.btnDangKy.CheckedState.Parent = this.btnDangKy;
+            this.btnDangKy.CustomImages.Parent = this.btnDangKy;
+            this.btnDangKy.DisabledState.Parent = this.btnDangKy;
+            this.btnDangKy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(53)))), ((int)(((byte)(172)))));
+            this.btnDangKy.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnDangKy.FocusedColor = System.Drawing.Color.White;
+            this.btnDangKy.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold);
+            this.btnDangKy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(66)))));
+            this.btnDangKy.HoverState.Parent = this.btnDangKy;
+            this.btnDangKy.Location = new System.Drawing.Point(268, 325);
+            this.btnDangKy.Name = "btnDangKy";
+            this.btnDangKy.ShadowDecoration.Parent = this.btnDangKy;
+            this.btnDangKy.Size = new System.Drawing.Size(209, 69);
+            this.btnDangKy.TabIndex = 40;
+            this.btnDangKy.Text = "ĐĂNG KÝ";
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click_1);
             // 
             // btnDangNhap
             // 
@@ -315,27 +336,6 @@ namespace WindowsFormsApp
             // 
             this.bunifuElipse1.ElipseRadius = 50;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // btnDangKy
-            // 
-            this.btnDangKy.AutoRoundedCorners = true;
-            this.btnDangKy.BorderRadius = 33;
-            this.btnDangKy.CheckedState.Parent = this.btnDangKy;
-            this.btnDangKy.CustomImages.Parent = this.btnDangKy;
-            this.btnDangKy.DisabledState.Parent = this.btnDangKy;
-            this.btnDangKy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(53)))), ((int)(((byte)(172)))));
-            this.btnDangKy.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
-            this.btnDangKy.FocusedColor = System.Drawing.Color.White;
-            this.btnDangKy.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold);
-            this.btnDangKy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(66)))));
-            this.btnDangKy.HoverState.Parent = this.btnDangKy;
-            this.btnDangKy.Location = new System.Drawing.Point(268, 325);
-            this.btnDangKy.Name = "btnDangKy";
-            this.btnDangKy.ShadowDecoration.Parent = this.btnDangKy;
-            this.btnDangKy.Size = new System.Drawing.Size(209, 69);
-            this.btnDangKy.TabIndex = 40;
-            this.btnDangKy.Text = "ĐĂNG KÝ";
-            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click_1);
             // 
             // FormDangNhap
             // 

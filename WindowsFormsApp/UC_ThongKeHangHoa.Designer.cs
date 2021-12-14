@@ -78,7 +78,7 @@ namespace WindowsFormsApp
             this.dgvThongkehh.RowHeadersWidth = 62;
             this.dgvThongkehh.RowTemplate.Height = 28;
             this.dgvThongkehh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvThongkehh.Size = new System.Drawing.Size(976, 361);
+            this.dgvThongkehh.Size = new System.Drawing.Size(933, 361);
             this.dgvThongkehh.TabIndex = 2;
             this.dgvThongkehh.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvThongkehh.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -144,7 +144,6 @@ namespace WindowsFormsApp
             this.txtTimkiemhanghoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTimkiemhanghoa.DisabledState.Parent = this.txtTimkiemhanghoa;
             this.txtTimkiemhanghoa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTimkiemhanghoa.FillColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtTimkiemhanghoa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTimkiemhanghoa.FocusedState.Parent = this.txtTimkiemhanghoa;
             this.txtTimkiemhanghoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
@@ -159,6 +158,7 @@ namespace WindowsFormsApp
             this.txtTimkiemhanghoa.SelectedText = "";
             this.txtTimkiemhanghoa.ShadowDecoration.Parent = this.txtTimkiemhanghoa;
             this.txtTimkiemhanghoa.Size = new System.Drawing.Size(292, 35);
+            this.txtTimkiemhanghoa.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTimkiemhanghoa.TabIndex = 19;
             this.txtTimkiemhanghoa.TextChanged += new System.EventHandler(this.txtTimkiemhanghoa_TextChanged);
             // 
@@ -168,7 +168,7 @@ namespace WindowsFormsApp
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1013, 62);
+            this.panel2.Size = new System.Drawing.Size(970, 48);
             this.panel2.TabIndex = 185;
             // 
             // label4
@@ -176,7 +176,7 @@ namespace WindowsFormsApp
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(349, 9);
+            this.label4.Location = new System.Drawing.Point(328, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(284, 40);
             this.label4.TabIndex = 226;
@@ -193,7 +193,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.dgvThongkehh);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKeHangHoa";
-            this.Size = new System.Drawing.Size(1010, 593);
+            this.Size = new System.Drawing.Size(971, 593);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongkehh)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

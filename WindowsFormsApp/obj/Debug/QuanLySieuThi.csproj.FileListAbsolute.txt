@@ -795,15 +795,12 @@ C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\D
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormInHoaDon.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormNhapHang.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormReport.resources
-C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormSDT.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThongTinHangMoi.resources
-C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThongTinNhanVien.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormTrangChu.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormReportThongKe.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_BanHang.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_CaLamViec.resources
-C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_DoiMatKhau.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_KhachHang.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_KhoHang.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_NhaCungCap.resources
@@ -814,7 +811,6 @@ C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\D
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_ThongKeKhachHang.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_ThongKePhieuNhap.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_TrangChu.resources
-C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_XacNhanSDT.resources
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\QuanLySieuThi.csproj.GenerateResource.cache
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\RdlCompile.cache
 C:\Users\buiva\OneDrive\Máy tính\supermarket-manager-chi\WindowsFormsApp\obj\Debug\RdlCompile.compiled

@@ -242,23 +242,11 @@
     <Compile Include="FormReport.Designer.cs">
       <DependentUpon>FormReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSDT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSDT.Designer.cs">
-      <DependentUpon>FormSDT.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormThongTinHangMoi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormThongTinHangMoi.Designer.cs">
       <DependentUpon>FormThongTinHangMoi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormThongTinNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormThongTinNhanVien.Designer.cs">
-      <DependentUpon>FormThongTinNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTrangChu.cs">
       <SubType>Form</SubType>
@@ -303,12 +291,6 @@
     </Compile>
     <Compile Include="UC_CaLamViec.Designer.cs">
       <DependentUpon>UC_CaLamViec.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC_DoiMatKhau.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_DoiMatKhau.Designer.cs">
-      <DependentUpon>UC_DoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_KhachHang.cs">
       <SubType>UserControl</SubType>
@@ -370,12 +352,6 @@
     <Compile Include="UC_TrangChu.Designer.cs">
       <DependentUpon>UC_TrangChu.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_XacNhanSDT.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_XacNhanSDT.Designer.cs">
-      <DependentUpon>UC_XacNhanSDT.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="FormDangKy.resx">
       <DependentUpon>FormDangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -394,14 +370,8 @@
     <EmbeddedResource Include="FormReport.resx">
       <DependentUpon>FormReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSDT.resx">
-      <DependentUpon>FormSDT.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormThongTinHangMoi.resx">
       <DependentUpon>FormThongTinHangMoi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormThongTinNhanVien.resx">
-      <DependentUpon>FormThongTinNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTrangChu.resx">
       <DependentUpon>FormTrangChu.cs</DependentUpon>
@@ -420,9 +390,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_CaLamViec.resx">
       <DependentUpon>UC_CaLamViec.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_DoiMatKhau.resx">
-      <DependentUpon>UC_DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_KhachHang.resx">
       <DependentUpon>UC_KhachHang.cs</DependentUpon>
@@ -453,9 +420,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_TrangChu.resx">
       <DependentUpon>UC_TrangChu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_XacNhanSDT.resx">
-      <DependentUpon>UC_XacNhanSDT.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
