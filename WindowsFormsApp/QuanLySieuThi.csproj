@@ -286,12 +286,6 @@
     <Compile Include="UC_BanHang.Designer.cs">
       <DependentUpon>UC_BanHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_CaLamViec.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_CaLamViec.Designer.cs">
-      <DependentUpon>UC_CaLamViec.cs</DependentUpon>
-    </Compile>
     <Compile Include="UC_KhachHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -387,9 +381,6 @@
     <EmbeddedResource Include="Report\ReportXemchitietphieunhap.rdlc" />
     <EmbeddedResource Include="UC_BanHang.resx">
       <DependentUpon>UC_BanHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_CaLamViec.resx">
-      <DependentUpon>UC_CaLamViec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_KhachHang.resx">
       <DependentUpon>UC_KhachHang.cs</DependentUpon>
