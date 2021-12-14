@@ -48,17 +48,18 @@ namespace WindowsFormsApp
             txtmapn.Text = dgvThongkepn.Rows[index].Cells[0].Value.ToString();
         }
 
-        private void btnXemchitietpn_Click(object sender, EventArgs e)
-        {
-            FormReportThongKe formXemchitietphieunhap = new FormReportThongKe(txtmapn.Text);
-            formXemchitietphieunhap.Show();
-        }
 
         private void btnQuaylai_Click(object sender, EventArgs e)
         {
             UC_ThongKe tk = new UC_ThongKe();
             tk.Show();
             this.Hide();
+        }
+
+        private void btnXemchitietpn_Click_1(object sender, EventArgs e)
+        {
+            FormReportThongKe formXemchitietphieunhap = new FormReportThongKe(txtmapn.Text);
+            formXemchitietphieunhap.Show();
         }
     }
 }

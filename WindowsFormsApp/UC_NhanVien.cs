@@ -31,7 +31,6 @@ namespace WindowsFormsApp
             txtHoTen.DataBindings.Add(new Binding("Text", dgvThongTinNhanVien.DataSource, "TenHienThi", true, DataSourceUpdateMode.Never));
             txtSDT.DataBindings.Add(new Binding("Text", dgvThongTinNhanVien.DataSource, "SDT", true, DataSourceUpdateMode.Never));
             txtDiaChi.DataBindings.Add(new Binding("Text", dgvThongTinNhanVien.DataSource, "DiaChi", true, DataSourceUpdateMode.Never));
-            cmbChucVu.DataBindings.Add(new Binding("Text", dgvThongTinNhanVien.DataSource, "Quyen", true, DataSourceUpdateMode.Never));
         }
      
         void LoadData()
@@ -70,7 +69,6 @@ namespace WindowsFormsApp
             txtHoTen.DataBindings.Clear();
             txtSDT.DataBindings.Clear();
             txtDiaChi.DataBindings.Clear();
-            cmbChucVu.DataBindings.Clear();
         }
 
         public void lamMoi()
@@ -87,7 +85,6 @@ namespace WindowsFormsApp
         {
             if (dgvThongTinNhanVien.SelectedCells.Count > 0)
             {
-                cmbChucVu.SelectedItem = dgvThongTinNhanVien.SelectedCells[3].Value;
                 ClearBinding();
                 loadBinding();
             }
@@ -137,8 +134,14 @@ namespace WindowsFormsApp
             txtHoTen.Text = "";
         }
 
+        private void lblquyen_Click(object sender, EventArgs e)
+        {
 
+        }
 
-       
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

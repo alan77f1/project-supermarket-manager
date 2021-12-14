@@ -39,7 +39,6 @@
             this.lblNguoidung = new System.Windows.Forms.Label();
             this.timerTime = new System.Windows.Forms.Timer(this.components);
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.btnNhapHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnThongKe = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnCLV = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnKhoHang = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -58,6 +57,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelControl = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.lblTentk = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.pannelLeft1.SuspendLayout();
@@ -70,6 +70,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
+            this.panel3.Controls.Add(this.lblTentk);
             this.panel3.Controls.Add(this.btnDangXuat);
             this.panel3.Controls.Add(this.lblTennv);
             this.panel3.Controls.Add(this.lblManv);
@@ -134,7 +135,7 @@
             this.lblManv.AutoSize = true;
             this.lblManv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(247)))));
-            this.lblManv.Location = new System.Drawing.Point(651, 3);
+            this.lblManv.Location = new System.Drawing.Point(637, 11);
             this.lblManv.Name = "lblManv";
             this.lblManv.Size = new System.Drawing.Size(64, 22);
             this.lblManv.TabIndex = 35;
@@ -145,7 +146,7 @@
             this.lblQuyen.AutoSize = true;
             this.lblQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(237)))), ((int)(((byte)(247)))));
-            this.lblQuyen.Location = new System.Drawing.Point(442, 8);
+            this.lblQuyen.Location = new System.Drawing.Point(467, 8);
             this.lblQuyen.Name = "lblQuyen";
             this.lblQuyen.Size = new System.Drawing.Size(96, 25);
             this.lblQuyen.TabIndex = 34;
@@ -156,7 +157,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel1.Location = new System.Drawing.Point(688, 0);
+            this.panel1.Location = new System.Drawing.Point(707, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(45, 37);
             this.panel1.TabIndex = 33;
@@ -179,7 +180,6 @@
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.panelLeft.Controls.Add(this.btnNhapHang);
             this.panelLeft.Controls.Add(this.btnThongKe);
             this.panelLeft.Controls.Add(this.btnCLV);
             this.panelLeft.Controls.Add(this.btnKhoHang);
@@ -200,39 +200,6 @@
             this.panelLeft.Size = new System.Drawing.Size(230, 750);
             this.panelLeft.TabIndex = 3;
             // 
-            // btnNhapHang
-            // 
-            this.btnNhapHang.Animated = true;
-            this.btnNhapHang.AutoRoundedCorners = true;
-            this.btnNhapHang.BackColor = System.Drawing.Color.Transparent;
-            this.btnNhapHang.BorderRadius = 26;
-            this.btnNhapHang.CheckedState.Parent = this.btnNhapHang;
-            this.btnNhapHang.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnNhapHang.CustomImages.Parent = this.btnNhapHang;
-            this.btnNhapHang.CustomizableEdges.BottomLeft = false;
-            this.btnNhapHang.CustomizableEdges.TopLeft = false;
-            this.btnNhapHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNhapHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNhapHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNhapHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNhapHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNhapHang.DisabledState.Parent = this.btnNhapHang;
-            this.btnNhapHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
-            this.btnNhapHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.btnNhapHang.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnNhapHang.ForeColor = System.Drawing.Color.White;
-            this.btnNhapHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
-            this.btnNhapHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.btnNhapHang.HoverState.Parent = this.btnNhapHang;
-            this.btnNhapHang.Location = new System.Drawing.Point(12, 520);
-            this.btnNhapHang.Name = "btnNhapHang";
-            this.btnNhapHang.ShadowDecoration.Parent = this.btnNhapHang;
-            this.btnNhapHang.Size = new System.Drawing.Size(178, 55);
-            this.btnNhapHang.TabIndex = 28;
-            this.btnNhapHang.Text = "   Nhập hàng";
-            this.btnNhapHang.UseTransparentBackground = true;
-            this.btnNhapHang.Click += new System.EventHandler(this.btnNhapHang_Click);
-            // 
             // btnThongKe
             // 
             this.btnThongKe.Animated = true;
@@ -250,14 +217,14 @@
             this.btnThongKe.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnThongKe.DisabledState.Parent = this.btnThongKe;
-            this.btnThongKe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.btnThongKe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnThongKe.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnThongKe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnThongKe.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.ForeColor = System.Drawing.SystemColors.Control;
             this.btnThongKe.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
             this.btnThongKe.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnThongKe.HoverState.Parent = this.btnThongKe;
-            this.btnThongKe.Location = new System.Drawing.Point(12, 581);
+            this.btnThongKe.Location = new System.Drawing.Point(12, 520);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.ShadowDecoration.Parent = this.btnThongKe;
             this.btnThongKe.Size = new System.Drawing.Size(178, 55);
@@ -283,10 +250,10 @@
             this.btnCLV.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCLV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCLV.DisabledState.Parent = this.btnCLV;
-            this.btnCLV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.btnCLV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnCLV.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnCLV.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnCLV.ForeColor = System.Drawing.Color.White;
+            this.btnCLV.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCLV.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
             this.btnCLV.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnCLV.HoverState.Parent = this.btnCLV;
@@ -316,10 +283,10 @@
             this.btnKhoHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnKhoHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnKhoHang.DisabledState.Parent = this.btnKhoHang;
-            this.btnKhoHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.btnKhoHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnKhoHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnKhoHang.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnKhoHang.ForeColor = System.Drawing.Color.White;
+            this.btnKhoHang.ForeColor = System.Drawing.SystemColors.Control;
             this.btnKhoHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
             this.btnKhoHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnKhoHang.HoverState.Parent = this.btnKhoHang;
@@ -357,10 +324,10 @@
             this.btnNCC.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnNCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnNCC.DisabledState.Parent = this.btnNCC;
-            this.btnNCC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.btnNCC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnNCC.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnNCC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnNCC.ForeColor = System.Drawing.Color.White;
+            this.btnNCC.ForeColor = System.Drawing.SystemColors.Control;
             this.btnNCC.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
             this.btnNCC.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnNCC.HoverState.Parent = this.btnNCC;
@@ -390,10 +357,10 @@
             this.btnBanHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBanHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBanHang.DisabledState.Parent = this.btnBanHang;
-            this.btnBanHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.btnBanHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnBanHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnBanHang.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnBanHang.ForeColor = System.Drawing.Color.White;
+            this.btnBanHang.ForeColor = System.Drawing.SystemColors.Control;
             this.btnBanHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
             this.btnBanHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnBanHang.HoverState.Parent = this.btnBanHang;
@@ -411,6 +378,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.label8.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.label8.ForeColor = System.Drawing.SystemColors.Control;
             this.label8.Location = new System.Drawing.Point(117, 722);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 19);
@@ -422,6 +390,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.label7.ForeColor = System.Drawing.SystemColors.Control;
             this.label7.Location = new System.Drawing.Point(55, 722);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 19);
@@ -445,10 +414,10 @@
             this.btnNhanVien.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnNhanVien.DisabledState.Parent = this.btnNhanVien;
-            this.btnNhanVien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.btnNhanVien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnNhanVien.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btnNhanVien.ForeColor = System.Drawing.SystemColors.Control;
             this.btnNhanVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
             this.btnNhanVien.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnNhanVien.HoverState.Parent = this.btnNhanVien;
@@ -466,6 +435,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
             this.label6.Location = new System.Drawing.Point(8, 691);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(224, 19);
@@ -477,6 +447,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
             this.label5.Location = new System.Drawing.Point(87, 672);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 19);
@@ -500,10 +471,10 @@
             this.btnKhachHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnKhachHang.DisabledState.Parent = this.btnKhachHang;
-            this.btnKhachHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.btnKhachHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnKhachHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnKhachHang.ForeColor = System.Drawing.Color.White;
+            this.btnKhachHang.ForeColor = System.Drawing.SystemColors.Control;
             this.btnKhachHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
             this.btnKhachHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnKhachHang.HoverState.Parent = this.btnKhachHang;
@@ -533,10 +504,10 @@
             this.btnTrangChu.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnTrangChu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnTrangChu.DisabledState.Parent = this.btnTrangChu;
-            this.btnTrangChu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(74)))), ((int)(((byte)(76)))));
+            this.btnTrangChu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnTrangChu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
             this.btnTrangChu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnTrangChu.ForeColor = System.Drawing.Color.White;
+            this.btnTrangChu.ForeColor = System.Drawing.SystemColors.Control;
             this.btnTrangChu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
             this.btnTrangChu.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnTrangChu.HoverState.Parent = this.btnTrangChu;
@@ -597,6 +568,16 @@
             this.bunifuElipse1.ElipseRadius = 40;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // lblTentk
+            // 
+            this.lblTentk.AutoSize = true;
+            this.lblTentk.Font = new System.Drawing.Font("Sitka Banner", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTentk.Location = new System.Drawing.Point(313, 3);
+            this.lblTentk.Name = "lblTentk";
+            this.lblTentk.Size = new System.Drawing.Size(115, 32);
+            this.lblTentk.TabIndex = 194;
+            this.lblTentk.Text = "Mã của bạn:";
+            // 
             // FormTrangChu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -651,6 +632,6 @@
         private System.Windows.Forms.Label lblQuyen;
         private System.Windows.Forms.Panel panelSide;
         private Guna.UI2.WinForms.Guna2GradientButton btnCLV;
-        private Guna.UI2.WinForms.Guna2GradientButton btnNhapHang;
+        private System.Windows.Forms.Label lblTentk;
     }
 }

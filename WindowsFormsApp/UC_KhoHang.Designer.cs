@@ -40,7 +40,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnTaiAnh = new Guna.UI2.WinForms.Guna2Button();
             this.dgvHangHoa = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnXoa = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -50,12 +49,10 @@
             this.txtGiaBan = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTenMH = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMaHang = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pcbHangHoa = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHangHoa)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbHangHoa)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -142,7 +139,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(41, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 23);
+            this.label2.Size = new System.Drawing.Size(81, 28);
             this.label2.TabIndex = 2;
             this.label2.Text = "Mã MH:";
             // 
@@ -151,16 +148,16 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(41, 85);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 23);
+            this.label3.Size = new System.Drawing.Size(82, 28);
             this.label3.TabIndex = 3;
             this.label3.Text = "Tên MH:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(388, 41);
+            this.label6.Location = new System.Drawing.Point(388, 40);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 23);
+            this.label6.Size = new System.Drawing.Size(82, 28);
             this.label6.TabIndex = 6;
             this.label6.Text = "Giá Bán:";
             // 
@@ -169,26 +166,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(388, 85);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 23);
+            this.label7.Size = new System.Drawing.Size(100, 28);
             this.label7.TabIndex = 7;
             this.label7.Text = "Số Lượng:";
-            // 
-            // btnTaiAnh
-            // 
-            this.btnTaiAnh.CheckedState.Parent = this.btnTaiAnh;
-            this.btnTaiAnh.CustomImages.Parent = this.btnTaiAnh;
-            this.btnTaiAnh.DisabledState.Parent = this.btnTaiAnh;
-            this.btnTaiAnh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
-            this.btnTaiAnh.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTaiAnh.ForeColor = System.Drawing.Color.White;
-            this.btnTaiAnh.HoverState.Parent = this.btnTaiAnh;
-            this.btnTaiAnh.Location = new System.Drawing.Point(838, 183);
-            this.btnTaiAnh.Name = "btnTaiAnh";
-            this.btnTaiAnh.ShadowDecoration.Parent = this.btnTaiAnh;
-            this.btnTaiAnh.Size = new System.Drawing.Size(89, 25);
-            this.btnTaiAnh.TabIndex = 19;
-            this.btnTaiAnh.Text = "Upload";
-            this.btnTaiAnh.Click += new System.EventHandler(this.btnTaiAnh_Click);
             // 
             // dgvHangHoa
             // 
@@ -207,7 +187,7 @@
             this.dgvHangHoa.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -216,7 +196,7 @@
             this.dgvHangHoa.ColumnHeadersHeight = 40;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -224,13 +204,13 @@
             this.dgvHangHoa.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvHangHoa.EnableHeadersVisualStyles = false;
             this.dgvHangHoa.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvHangHoa.Location = new System.Drawing.Point(21, 224);
+            this.dgvHangHoa.Location = new System.Drawing.Point(21, 158);
             this.dgvHangHoa.Name = "dgvHangHoa";
             this.dgvHangHoa.RowHeadersVisible = false;
             this.dgvHangHoa.RowHeadersWidth = 51;
             this.dgvHangHoa.RowTemplate.Height = 30;
             this.dgvHangHoa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHangHoa.Size = new System.Drawing.Size(950, 279);
+            this.dgvHangHoa.Size = new System.Drawing.Size(950, 345);
             this.dgvHangHoa.TabIndex = 20;
             this.dgvHangHoa.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvHangHoa.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -265,8 +245,6 @@
             this.panel3.Controls.Add(this.txtTenMH);
             this.panel3.Controls.Add(this.txtMaHang);
             this.panel3.Controls.Add(this.dgvHangHoa);
-            this.panel3.Controls.Add(this.btnTaiAnh);
-            this.panel3.Controls.Add(this.pcbHangHoa);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label3);
@@ -290,12 +268,12 @@
             this.btnXoa.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnXoa.DisabledState.Parent = this.btnXoa;
-            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
-            this.btnXoa.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnXoa.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnXoa.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnXoa.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
+            this.btnXoa.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnXoa.HoverState.Parent = this.btnXoa;
             this.btnXoa.Location = new System.Drawing.Point(847, 530);
             this.btnXoa.Name = "btnXoa";
@@ -316,12 +294,12 @@
             this.btnSua.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSua.DisabledState.Parent = this.btnSua;
-            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
-            this.btnSua.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnSua.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnSua.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnSua.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
+            this.btnSua.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnSua.HoverState.Parent = this.btnSua;
             this.btnSua.Location = new System.Drawing.Point(697, 530);
             this.btnSua.Name = "btnSua";
@@ -342,12 +320,12 @@
             this.btnNhapHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnNhapHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnNhapHang.DisabledState.Parent = this.btnNhapHang;
-            this.btnNhapHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
-            this.btnNhapHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnNhapHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnNhapHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnNhapHang.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnNhapHang.ForeColor = System.Drawing.Color.White;
-            this.btnNhapHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnNhapHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnNhapHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
+            this.btnNhapHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnNhapHang.HoverState.Parent = this.btnNhapHang;
             this.btnNhapHang.Location = new System.Drawing.Point(548, 530);
             this.btnNhapHang.Name = "btnNhapHang";
@@ -380,6 +358,7 @@
             this.txtSoLuong.SelectedText = "";
             this.txtSoLuong.ShadowDecoration.Parent = this.txtSoLuong;
             this.txtSoLuong.Size = new System.Drawing.Size(206, 35);
+            this.txtSoLuong.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtSoLuong.TabIndex = 199;
             // 
             // txtGiaBan
@@ -406,6 +385,7 @@
             this.txtGiaBan.SelectedText = "";
             this.txtGiaBan.ShadowDecoration.Parent = this.txtGiaBan;
             this.txtGiaBan.Size = new System.Drawing.Size(206, 35);
+            this.txtGiaBan.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtGiaBan.TabIndex = 198;
             // 
             // txtTenMH
@@ -432,6 +412,7 @@
             this.txtTenMH.SelectedText = "";
             this.txtTenMH.ShadowDecoration.Parent = this.txtTenMH;
             this.txtTenMH.Size = new System.Drawing.Size(220, 35);
+            this.txtTenMH.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTenMH.TabIndex = 197;
             // 
             // txtMaHang
@@ -458,15 +439,8 @@
             this.txtMaHang.SelectedText = "";
             this.txtMaHang.ShadowDecoration.Parent = this.txtMaHang;
             this.txtMaHang.Size = new System.Drawing.Size(220, 35);
+            this.txtMaHang.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtMaHang.TabIndex = 196;
-            // 
-            // pcbHangHoa
-            // 
-            this.pcbHangHoa.Location = new System.Drawing.Point(737, 6);
-            this.pcbHangHoa.Name = "pcbHangHoa";
-            this.pcbHangHoa.Size = new System.Drawing.Size(249, 171);
-            this.pcbHangHoa.TabIndex = 14;
-            this.pcbHangHoa.TabStop = false;
             // 
             // UC_KhoHang
             // 
@@ -474,7 +448,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "UC_KhoHang";
             this.Size = new System.Drawing.Size(994, 694);
@@ -484,7 +458,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvHangHoa)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbHangHoa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -498,8 +471,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pcbHangHoa;
-        private Guna.UI2.WinForms.Guna2Button btnTaiAnh;
         private Guna.UI2.WinForms.Guna2DataGridView dgvHangHoa;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2TextBox txtMaHang;

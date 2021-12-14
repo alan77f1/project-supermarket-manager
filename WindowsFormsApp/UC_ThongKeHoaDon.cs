@@ -28,16 +28,6 @@ namespace WindowsFormsApp
             TongtienHoadon();
         }
 
-        private void btnXem_Click(object sender, EventArgs e)
-        {
-            DateTime ngaybd = dpkNgaybd.Value;
-            DateTime ngaykt = dpkNgaykt.Value;
-            string query = "select HoaDon.MaHD as [Mã hóa đơn],KhachHang.TenKH as [Tên khách hàng],NgayTao as [Ngày tạo],TongTien[Tổng tiền],TenHienThi as [Nhân viên tạo] from HoaDon inner join KhachHang on HoaDon.MaKH = KhachHang.MaKH inner join NhanVien on NhanVien.MaNV = HoaDon.MaNV where  NgayTao between '" + ngaybd + "' and '" + ngaykt + "'";
-            DataTable dt = DataProvider.Instance.Thongkehoadon(ngaybd, ngaykt, query);
-            dgvThongkehd.DataSource = dt;
-            TongtienHoadontheongay();
-        }
-
 
         private void TongtienHoadon()
         {
@@ -67,6 +57,16 @@ namespace WindowsFormsApp
             UC_ThongKe tk = new UC_ThongKe();
             tk.Show();
             this.Hide();
+        }
+
+        private void btnXem_Click_1(object sender, EventArgs e)
+        {
+            DateTime ngaybd = dpkNgaybd.Value;
+            DateTime ngaykt = dpkNgaykt.Value;
+            string query = "select HoaDon.MaHD as [Mã hóa đơn],KhachHang.TenKH as [Tên khách hàng],NgayTao as [Ngày tạo],TongTien[Tổng tiền],TenHienThi as [Nhân viên tạo] from HoaDon inner join KhachHang on HoaDon.MaKH = KhachHang.MaKH inner join NhanVien on NhanVien.MaNV = HoaDon.MaNV where  NgayTao between '" + ngaybd + "' and '" + ngaykt + "'";
+            DataTable dt = DataProvider.Instance.Thongkehoadon(ngaybd, ngaykt, query);
+            dgvThongkehd.DataSource = dt;
+            TongtienHoadontheongay();
         }
     }
 

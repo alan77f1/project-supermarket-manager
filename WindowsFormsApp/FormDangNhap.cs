@@ -76,22 +76,7 @@ namespace WindowsFormsApp
             return QuanLyNhanVien.Intance.Login(userName, passWord);
         }
 
-
-
-        private void btnDangKy_Click(object sender, EventArgs e)
-        {
-            FormDangKy FormDangKy = new FormDangKy();
-            FormDangKy.Show();
-            this.Hide();
-        }
-
-
-        private void lbQuenMK_Click(object sender, EventArgs e)
-        {
-            FormSDT FormSDT = new FormSDT();
-            FormSDT.Show();
-            this.Hide();
-        }
+      
 
         private void lblThoat_Click(object sender, EventArgs e)
         {
@@ -121,6 +106,13 @@ namespace WindowsFormsApp
         private void lblCanhbao_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDangKy_Click_1(object sender, EventArgs e)
+        {
+            FormDangKy FormDangKy = new FormDangKy();
+            FormDangKy.Show();
+            this.Hide();
         }
 
         private void btnX_Click(object sender, EventArgs e)

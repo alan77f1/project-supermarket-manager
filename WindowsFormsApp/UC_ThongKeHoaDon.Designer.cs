@@ -36,13 +36,13 @@ namespace WindowsFormsApp
             this.label3 = new System.Windows.Forms.Label();
             this.dgvThongkehd = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnTangngay = new System.Windows.Forms.Button();
-            this.btnXem = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTongtienhoadon = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.dpkNgaybd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dpkNgaykt = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.btnXem = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongkehd)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -147,27 +147,6 @@ namespace WindowsFormsApp
             this.btnTangngay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTangngay.UseVisualStyleBackColor = false;
             // 
-            // btnXem
-            // 
-            this.btnXem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnXem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXem.FlatAppearance.BorderSize = 0;
-            this.btnXem.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btnXem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXem.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXem.ForeColor = System.Drawing.Color.Black;
-            this.btnXem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXem.Location = new System.Drawing.Point(747, 84);
-            this.btnXem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnXem.Name = "btnXem";
-            this.btnXem.Padding = new System.Windows.Forms.Padding(1);
-            this.btnXem.Size = new System.Drawing.Size(126, 43);
-            this.btnXem.TabIndex = 7;
-            this.btnXem.Text = " Xem";
-            this.btnXem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnXem.UseVisualStyleBackColor = false;
-            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -210,7 +189,7 @@ namespace WindowsFormsApp
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -268,10 +247,38 @@ namespace WindowsFormsApp
             this.dpkNgaykt.TabIndex = 226;
             this.dpkNgaykt.Value = new System.DateTime(2021, 10, 25, 21, 55, 52, 140);
             // 
+            // btnXem
+            // 
+            this.btnXem.AutoRoundedCorners = true;
+            this.btnXem.BorderRadius = 23;
+            this.btnXem.CheckedState.Parent = this.btnXem;
+            this.btnXem.CustomImages.Parent = this.btnXem;
+            this.btnXem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXem.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXem.DisabledState.Parent = this.btnXem;
+            this.btnXem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnXem.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnXem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnXem.ForeColor = System.Drawing.Color.White;
+            this.btnXem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
+            this.btnXem.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.btnXem.HoverState.Parent = this.btnXem;
+            this.btnXem.Location = new System.Drawing.Point(785, 78);
+            this.btnXem.Name = "btnXem";
+            this.btnXem.ShadowDecoration.Parent = this.btnXem;
+            this.btnXem.Size = new System.Drawing.Size(124, 48);
+            this.btnXem.TabIndex = 237;
+            this.btnXem.Text = "Xem";
+            this.btnXem.Click += new System.EventHandler(this.btnXem_Click_1);
+            // 
             // UC_ThongKeHoaDon
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnXem);
             this.Controls.Add(this.dpkNgaykt);
             this.Controls.Add(this.dpkNgaybd);
             this.Controls.Add(this.panel2);
@@ -279,7 +286,6 @@ namespace WindowsFormsApp
             this.Controls.Add(this.txtTongtienhoadon);
             this.Controls.Add(this.btnTangngay);
             this.Controls.Add(this.dgvThongkehd);
-            this.Controls.Add(this.btnXem);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -296,7 +302,6 @@ namespace WindowsFormsApp
         #endregion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnXem;
         private Guna.UI2.WinForms.Guna2DataGridView dgvThongkehd;
         private System.Windows.Forms.Button btnTangngay;
         private System.Windows.Forms.Label label7;
@@ -305,5 +310,6 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2DateTimePicker dpkNgaybd;
         private Guna.UI2.WinForms.Guna2DateTimePicker dpkNgaykt;
+        private Guna.UI2.WinForms.Guna2GradientButton btnXem;
     }
 }

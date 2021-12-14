@@ -103,6 +103,7 @@ namespace WindowsFormsApp
             this.txtMaKH.SelectedText = "";
             this.txtMaKH.ShadowDecoration.Parent = this.txtMaKH;
             this.txtMaKH.Size = new System.Drawing.Size(292, 35);
+            this.txtMaKH.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtMaKH.TabIndex = 195;
             // 
             // txtTenKH
@@ -128,6 +129,7 @@ namespace WindowsFormsApp
             this.txtTenKH.SelectedText = "";
             this.txtTenKH.ShadowDecoration.Parent = this.txtTenKH;
             this.txtTenKH.Size = new System.Drawing.Size(292, 35);
+            this.txtTenKH.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTenKH.TabIndex = 196;
             // 
             // txtTimKiem
@@ -153,6 +155,7 @@ namespace WindowsFormsApp
             this.txtTimKiem.SelectedText = "";
             this.txtTimKiem.ShadowDecoration.Parent = this.txtTimKiem;
             this.txtTimKiem.Size = new System.Drawing.Size(292, 35);
+            this.txtTimKiem.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTimKiem.TabIndex = 197;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
@@ -179,6 +182,7 @@ namespace WindowsFormsApp
             this.txtSDT.SelectedText = "";
             this.txtSDT.ShadowDecoration.Parent = this.txtSDT;
             this.txtSDT.Size = new System.Drawing.Size(292, 35);
+            this.txtSDT.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtSDT.TabIndex = 199;
             // 
             // txtEmail
@@ -204,6 +208,7 @@ namespace WindowsFormsApp
             this.txtEmail.SelectedText = "";
             this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
             this.txtEmail.Size = new System.Drawing.Size(292, 35);
+            this.txtEmail.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtEmail.TabIndex = 200;
             // 
             // txtDiaChi
@@ -229,6 +234,7 @@ namespace WindowsFormsApp
             this.txtDiaChi.SelectedText = "";
             this.txtDiaChi.ShadowDecoration.Parent = this.txtDiaChi;
             this.txtDiaChi.Size = new System.Drawing.Size(292, 35);
+            this.txtDiaChi.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtDiaChi.TabIndex = 198;
             // 
             // guna2ToggleSwitch1
@@ -286,6 +292,7 @@ namespace WindowsFormsApp
             this.cmbGioiTinh.Name = "cmbGioiTinh";
             this.cmbGioiTinh.ShadowDecoration.Parent = this.cmbGioiTinh;
             this.cmbGioiTinh.Size = new System.Drawing.Size(292, 36);
+            this.cmbGioiTinh.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cmbGioiTinh.TabIndex = 217;
             // 
             // label6
@@ -384,12 +391,12 @@ namespace WindowsFormsApp
             this.btnXoa.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnXoa.DisabledState.Parent = this.btnXoa;
-            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
-            this.btnXoa.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnXoa.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnXoa.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
+            this.btnXoa.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
+            this.btnXoa.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnXoa.HoverState.Parent = this.btnXoa;
             this.btnXoa.Location = new System.Drawing.Point(814, 621);
             this.btnXoa.Name = "btnXoa";
@@ -411,12 +418,12 @@ namespace WindowsFormsApp
             this.btnSua.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSua.DisabledState.Parent = this.btnSua;
-            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
-            this.btnSua.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnSua.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnSua.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
+            this.btnSua.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
+            this.btnSua.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnSua.HoverState.Parent = this.btnSua;
             this.btnSua.Location = new System.Drawing.Point(664, 621);
             this.btnSua.Name = "btnSua";
@@ -438,12 +445,12 @@ namespace WindowsFormsApp
             this.btnThem.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnThem.DisabledState.Parent = this.btnThem;
-            this.btnThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
-            this.btnThem.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnThem.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnThem.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
+            this.btnThem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
+            this.btnThem.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnThem.HoverState.Parent = this.btnThem;
             this.btnThem.Location = new System.Drawing.Point(515, 621);
             this.btnThem.Name = "btnThem";
@@ -465,12 +472,12 @@ namespace WindowsFormsApp
             this.btnLamMoi.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLamMoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLamMoi.DisabledState.Parent = this.btnLamMoi;
-            this.btnLamMoi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
-            this.btnLamMoi.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(59)))));
+            this.btnLamMoi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnLamMoi.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnLamMoi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnLamMoi.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
+            this.btnLamMoi.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(223)))), ((int)(((byte)(189)))));
+            this.btnLamMoi.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.btnLamMoi.HoverState.Parent = this.btnLamMoi;
             this.btnLamMoi.Location = new System.Drawing.Point(361, 621);
             this.btnLamMoi.Name = "btnLamMoi";
@@ -497,7 +504,7 @@ namespace WindowsFormsApp
             this.dgvThongTinKhachHang.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -506,7 +513,7 @@ namespace WindowsFormsApp
             this.dgvThongTinKhachHang.ColumnHeadersHeight = 40;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -514,14 +521,14 @@ namespace WindowsFormsApp
             this.dgvThongTinKhachHang.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvThongTinKhachHang.EnableHeadersVisualStyles = false;
             this.dgvThongTinKhachHang.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvThongTinKhachHang.Location = new System.Drawing.Point(28, 309);
+            this.dgvThongTinKhachHang.Location = new System.Drawing.Point(22, 283);
             this.dgvThongTinKhachHang.Name = "dgvThongTinKhachHang";
             this.dgvThongTinKhachHang.RowHeadersVisible = false;
             this.dgvThongTinKhachHang.RowHeadersWidth = 51;
             this.dgvThongTinKhachHang.RowTemplate.Height = 30;
             this.dgvThongTinKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvThongTinKhachHang.Size = new System.Drawing.Size(910, 288);
-            this.dgvThongTinKhachHang.TabIndex = 237;
+            this.dgvThongTinKhachHang.Size = new System.Drawing.Size(916, 313);
+            this.dgvThongTinKhachHang.TabIndex = 268;
             this.dgvThongTinKhachHang.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvThongTinKhachHang.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dgvThongTinKhachHang.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -570,6 +577,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.txtTenKH);
             this.Controls.Add(this.txtMaKH);
             this.Controls.Add(this.panel3);
+            this.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_KhachHang";
             this.Size = new System.Drawing.Size(970, 712);

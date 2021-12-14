@@ -35,6 +35,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnThemMatMH = new System.Windows.Forms.Button();
             this.panelRight = new System.Windows.Forms.Panel();
+            this.txtSDT = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.lblMakh = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,6 +47,8 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txtTienhoantra = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTienkhachdua = new Guna.UI2.WinForms.Guna2TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.lbTienBangChu = new System.Windows.Forms.Label();
@@ -70,9 +73,6 @@
             this.txtGia = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbMaMH = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbTenmh = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtTienkhachdua = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtTienhoantra = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtSDT = new System.Windows.Forms.TextBox();
             this.panelRight.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong)).BeginInit();
@@ -160,6 +160,17 @@
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(522, 606);
             this.panelRight.TabIndex = 8;
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtSDT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtSDT.Location = new System.Drawing.Point(189, 26);
+            this.txtSDT.MaxLength = 10;
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(284, 30);
+            this.txtSDT.TabIndex = 196;
+            this.txtSDT.TextChanged += new System.EventHandler(this.txtSDT_TextChanged_1);
             // 
             // label9
             // 
@@ -264,6 +275,59 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(516, 224);
             this.panel4.TabIndex = 4;
+            // 
+            // txtTienhoantra
+            // 
+            this.txtTienhoantra.BorderColor = System.Drawing.Color.Black;
+            this.txtTienhoantra.BorderRadius = 10;
+            this.txtTienhoantra.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTienhoantra.DefaultText = "";
+            this.txtTienhoantra.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTienhoantra.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTienhoantra.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTienhoantra.DisabledState.Parent = this.txtTienhoantra;
+            this.txtTienhoantra.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTienhoantra.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTienhoantra.FocusedState.Parent = this.txtTienhoantra;
+            this.txtTienhoantra.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTienhoantra.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTienhoantra.HoverState.Parent = this.txtTienhoantra;
+            this.txtTienhoantra.Location = new System.Drawing.Point(186, 113);
+            this.txtTienhoantra.Name = "txtTienhoantra";
+            this.txtTienhoantra.PasswordChar = '\0';
+            this.txtTienhoantra.PlaceholderText = "";
+            this.txtTienhoantra.ReadOnly = true;
+            this.txtTienhoantra.SelectedText = "";
+            this.txtTienhoantra.ShadowDecoration.Parent = this.txtTienhoantra;
+            this.txtTienhoantra.Size = new System.Drawing.Size(292, 35);
+            this.txtTienhoantra.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtTienhoantra.TabIndex = 225;
+            // 
+            // txtTienkhachdua
+            // 
+            this.txtTienkhachdua.BorderColor = System.Drawing.Color.Black;
+            this.txtTienkhachdua.BorderRadius = 10;
+            this.txtTienkhachdua.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTienkhachdua.DefaultText = "";
+            this.txtTienkhachdua.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTienkhachdua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTienkhachdua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTienkhachdua.DisabledState.Parent = this.txtTienkhachdua;
+            this.txtTienkhachdua.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTienkhachdua.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTienkhachdua.FocusedState.Parent = this.txtTienkhachdua;
+            this.txtTienkhachdua.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTienkhachdua.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTienkhachdua.HoverState.Parent = this.txtTienkhachdua;
+            this.txtTienkhachdua.Location = new System.Drawing.Point(186, 74);
+            this.txtTienkhachdua.Name = "txtTienkhachdua";
+            this.txtTienkhachdua.PasswordChar = '\0';
+            this.txtTienkhachdua.PlaceholderText = "";
+            this.txtTienkhachdua.SelectedText = "";
+            this.txtTienkhachdua.ShadowDecoration.Parent = this.txtTienkhachdua;
+            this.txtTienkhachdua.Size = new System.Drawing.Size(292, 35);
+            this.txtTienkhachdua.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtTienkhachdua.TabIndex = 224;
             // 
             // label14
             // 
@@ -388,7 +452,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.panel3.Controls.Add(this.label7);
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
@@ -544,6 +608,7 @@
             this.txtMaHĐ.SelectedText = "";
             this.txtMaHĐ.ShadowDecoration.Parent = this.txtMaHĐ;
             this.txtMaHĐ.Size = new System.Drawing.Size(292, 35);
+            this.txtMaHĐ.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtMaHĐ.TabIndex = 220;
             // 
             // txtGia
@@ -569,6 +634,7 @@
             this.txtGia.SelectedText = "";
             this.txtGia.ShadowDecoration.Parent = this.txtGia;
             this.txtGia.Size = new System.Drawing.Size(292, 35);
+            this.txtGia.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtGia.TabIndex = 221;
             // 
             // cmbMaMH
@@ -590,6 +656,7 @@
             this.cmbMaMH.Name = "cmbMaMH";
             this.cmbMaMH.ShadowDecoration.Parent = this.cmbMaMH;
             this.cmbMaMH.Size = new System.Drawing.Size(292, 36);
+            this.cmbMaMH.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cmbMaMH.TabIndex = 222;
             // 
             // cmbTenmh
@@ -611,69 +678,8 @@
             this.cmbTenmh.Name = "cmbTenmh";
             this.cmbTenmh.ShadowDecoration.Parent = this.cmbTenmh;
             this.cmbTenmh.Size = new System.Drawing.Size(292, 36);
+            this.cmbTenmh.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cmbTenmh.TabIndex = 223;
-            // 
-            // txtTienkhachdua
-            // 
-            this.txtTienkhachdua.BorderColor = System.Drawing.Color.Black;
-            this.txtTienkhachdua.BorderRadius = 10;
-            this.txtTienkhachdua.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTienkhachdua.DefaultText = "";
-            this.txtTienkhachdua.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTienkhachdua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTienkhachdua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTienkhachdua.DisabledState.Parent = this.txtTienkhachdua;
-            this.txtTienkhachdua.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTienkhachdua.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTienkhachdua.FocusedState.Parent = this.txtTienkhachdua;
-            this.txtTienkhachdua.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTienkhachdua.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTienkhachdua.HoverState.Parent = this.txtTienkhachdua;
-            this.txtTienkhachdua.Location = new System.Drawing.Point(186, 74);
-            this.txtTienkhachdua.Name = "txtTienkhachdua";
-            this.txtTienkhachdua.PasswordChar = '\0';
-            this.txtTienkhachdua.PlaceholderText = "";
-            this.txtTienkhachdua.SelectedText = "";
-            this.txtTienkhachdua.ShadowDecoration.Parent = this.txtTienkhachdua;
-            this.txtTienkhachdua.Size = new System.Drawing.Size(292, 35);
-            this.txtTienkhachdua.TabIndex = 224;
-            // 
-            // txtTienhoantra
-            // 
-            this.txtTienhoantra.BorderColor = System.Drawing.Color.Black;
-            this.txtTienhoantra.BorderRadius = 10;
-            this.txtTienhoantra.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTienhoantra.DefaultText = "";
-            this.txtTienhoantra.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTienhoantra.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTienhoantra.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTienhoantra.DisabledState.Parent = this.txtTienhoantra;
-            this.txtTienhoantra.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTienhoantra.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTienhoantra.FocusedState.Parent = this.txtTienhoantra;
-            this.txtTienhoantra.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTienhoantra.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTienhoantra.HoverState.Parent = this.txtTienhoantra;
-            this.txtTienhoantra.Location = new System.Drawing.Point(186, 113);
-            this.txtTienhoantra.Name = "txtTienhoantra";
-            this.txtTienhoantra.PasswordChar = '\0';
-            this.txtTienhoantra.PlaceholderText = "";
-            this.txtTienhoantra.ReadOnly = true;
-            this.txtTienhoantra.SelectedText = "";
-            this.txtTienhoantra.ShadowDecoration.Parent = this.txtTienhoantra;
-            this.txtTienhoantra.Size = new System.Drawing.Size(292, 35);
-            this.txtTienhoantra.TabIndex = 225;
-            // 
-            // txtSDT
-            // 
-            this.txtSDT.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtSDT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtSDT.Location = new System.Drawing.Point(189, 26);
-            this.txtSDT.MaxLength = 10;
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(284, 30);
-            this.txtSDT.TabIndex = 196;
-            this.txtSDT.TextChanged += new System.EventHandler(this.txtSDT_TextChanged_1);
             // 
             // UC_BanHang
             // 

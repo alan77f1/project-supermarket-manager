@@ -14,9 +14,12 @@ namespace WindowsFormsApp
     public partial class FormTrangChu : Form
     {
         private string tk;
+        private string Tentk;
         public FormTrangChu(string tk)  // string tk
         {
             InitializeComponent();
+            this.Tentk = Tentk;
+            lblTentk.Text = Tentk;
             /*hiển thị trang chủ*/
             UC_TrangChu tc = new UC_TrangChu();
             themUC(tc);
@@ -97,8 +100,8 @@ namespace WindowsFormsApp
 
         private void lblNguoidung_Click(object sender, EventArgs e)
         {
-            FormThongTinNhanVien formThongTinNhanVien = new FormThongTinNhanVien(lblNguoidung.Text);
-            formThongTinNhanVien.Show();
+            FormDoiMatKhauMoi f = new FormDoiMatKhauMoi(lblTentk.Text);
+            f.Show();
         }
 
         private void btnTrangChu_Click_1(object sender, EventArgs e)
@@ -163,13 +166,6 @@ namespace WindowsFormsApp
             movesidePannel(btnCLV);
             UC_CaLamViec ncc = new UC_CaLamViec();
             addControlsToPanel(ncc);
-        }
-
-        private void btnNhapHang_Click(object sender, EventArgs e)
-        {
-            movesidePannel(btnNhapHang);
-            UC_NhapHang nh = new UC_NhapHang();
-            addControlsToPanel(nh);
         }
     }
 }

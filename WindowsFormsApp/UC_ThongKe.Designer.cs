@@ -32,9 +32,9 @@ namespace WindowsFormsApp
             this.components = new System.ComponentModel.Container();
             this.pnlButton = new System.Windows.Forms.Panel();
             this.btnphieunhap = new System.Windows.Forms.Button();
+            this.btnHoadon = new System.Windows.Forms.Button();
             this.btnKhachhang = new System.Windows.Forms.Button();
             this.btnHanghoa = new System.Windows.Forms.Button();
-            this.btnHoadon = new System.Windows.Forms.Button();
             this.pnlTK = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -45,7 +45,7 @@ namespace WindowsFormsApp
             // 
             // pnlButton
             // 
-            this.pnlButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
+            this.pnlButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.pnlButton.Controls.Add(this.btnphieunhap);
             this.pnlButton.Controls.Add(this.btnHoadon);
             this.pnlButton.Controls.Add(this.btnKhachhang);
@@ -76,6 +76,25 @@ namespace WindowsFormsApp
             this.btnphieunhap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnphieunhap.UseVisualStyleBackColor = false;
             this.btnphieunhap.Click += new System.EventHandler(this.btnphieunhap_Click_1);
+            // 
+            // btnHoadon
+            // 
+            this.btnHoadon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
+            this.btnHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHoadon.FlatAppearance.BorderSize = 0;
+            this.btnHoadon.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btnHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoadon.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoadon.ForeColor = System.Drawing.Color.White;
+            this.btnHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoadon.Location = new System.Drawing.Point(0, 0);
+            this.btnHoadon.Name = "btnHoadon";
+            this.btnHoadon.Size = new System.Drawing.Size(157, 66);
+            this.btnHoadon.TabIndex = 6;
+            this.btnHoadon.Text = "   Hóa đơn";
+            this.btnHoadon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHoadon.UseVisualStyleBackColor = false;
+            this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click_1);
             // 
             // btnKhachhang
             // 
@@ -114,25 +133,6 @@ namespace WindowsFormsApp
             this.btnHanghoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHanghoa.UseVisualStyleBackColor = false;
             this.btnHanghoa.Click += new System.EventHandler(this.btnHanghoa_Click_1);
-            // 
-            // btnHoadon
-            // 
-            this.btnHoadon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
-            this.btnHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHoadon.FlatAppearance.BorderSize = 0;
-            this.btnHoadon.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btnHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoadon.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoadon.ForeColor = System.Drawing.Color.White;
-            this.btnHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoadon.Location = new System.Drawing.Point(0, 0);
-            this.btnHoadon.Name = "btnHoadon";
-            this.btnHoadon.Size = new System.Drawing.Size(157, 66);
-            this.btnHoadon.TabIndex = 6;
-            this.btnHoadon.Text = "   Hóa đơn";
-            this.btnHoadon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHoadon.UseVisualStyleBackColor = false;
-            this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click_1);
             // 
             // pnlTK
             // 

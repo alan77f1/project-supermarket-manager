@@ -47,7 +47,6 @@ namespace WindowsFormsApp
             dgvHangHoa.AllowUserToAddRows = false;
             dgvHangHoa.EditMode = DataGridViewEditMode.EditProgrammatically;
 
-            pcbHangHoa.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
 
@@ -56,7 +55,6 @@ namespace WindowsFormsApp
             txtTenMH.Text = "";
             txtSoLuong.Text = "0";
             txtGiaBan.Text = "0";
-            pcbHangHoa.Image = null;
         }
         public bool check = true;
 
@@ -155,12 +153,10 @@ namespace WindowsFormsApp
                     string maMH = row.Cells["MaMH"].Value.ToString();
                     if (MatHangBUS.Intance.getAnhByID(maMH) == null)
                     {
-                        pcbHangHoa.Image = null;
                     }
                     else
                     {
                         MemoryStream ms = new MemoryStream(MatHangBUS.Intance.getAnhByID(maMH));
-                        pcbHangHoa.Image = Image.FromStream(ms);
                     }
                 }
                 catch (Exception) { }
@@ -183,7 +179,6 @@ namespace WindowsFormsApp
             if (dlgOpen.ShowDialog() == DialogResult.OK)
             {
                 imgLocation = dlgOpen.FileName.ToString();
-                pcbHangHoa.Image = Image.FromFile(dlgOpen.FileName);
             }
         }
 

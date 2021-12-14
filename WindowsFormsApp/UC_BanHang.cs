@@ -357,8 +357,8 @@ namespace WindowsFormsApp
 
         private void btnThemMoiKH_Click(object sender, EventArgs e)
         {
-            FormThemKhachHang form = new FormThemKhachHang(QuanLyKhachHang.Intance.loadMaKH(), txtSDT.Text, this);
-            form.ShowDialog();
+          /*  FormThemKhachHang form = new FormThemKhachHang(QuanLyKhachHang.Intance.loadMaKH(), txtSDT.Text, this);
+            form.ShowDialog();*/
         }
 
 

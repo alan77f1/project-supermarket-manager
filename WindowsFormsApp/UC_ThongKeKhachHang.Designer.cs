@@ -123,7 +123,6 @@ namespace WindowsFormsApp
             this.txtTimkiemkhachhang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTimkiemkhachhang.DisabledState.Parent = this.txtTimkiemkhachhang;
             this.txtTimkiemkhachhang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTimkiemkhachhang.FillColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtTimkiemkhachhang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTimkiemkhachhang.FocusedState.Parent = this.txtTimkiemkhachhang;
             this.txtTimkiemkhachhang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
@@ -137,7 +136,8 @@ namespace WindowsFormsApp
             this.txtTimkiemkhachhang.PlaceholderText = "";
             this.txtTimkiemkhachhang.SelectedText = "";
             this.txtTimkiemkhachhang.ShadowDecoration.Parent = this.txtTimkiemkhachhang;
-            this.txtTimkiemkhachhang.Size = new System.Drawing.Size(292, 35);
+            this.txtTimkiemkhachhang.Size = new System.Drawing.Size(292, 29);
+            this.txtTimkiemkhachhang.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTimkiemkhachhang.TabIndex = 19;
             this.txtTimkiemkhachhang.TextChanged += new System.EventHandler(this.txtTimkiemkhachhang_TextChanged);
             // 
@@ -164,7 +164,7 @@ namespace WindowsFormsApp
             // UC_ThongKeKhachHang
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtTimkiemkhachhang);

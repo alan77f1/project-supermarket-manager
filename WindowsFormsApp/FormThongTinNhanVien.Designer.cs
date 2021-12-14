@@ -55,7 +55,7 @@ namespace WindowsFormsApp
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(79, 26);
+            this.label7.Location = new System.Drawing.Point(70, 9);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(214, 35);
             this.label7.TabIndex = 179;
@@ -115,7 +115,7 @@ namespace WindowsFormsApp
             // 
             this.lblMa.AutoSize = true;
             this.lblMa.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMa.Location = new System.Drawing.Point(170, 101);
+            this.lblMa.Location = new System.Drawing.Point(180, 91);
             this.lblMa.Name = "lblMa";
             this.lblMa.Size = new System.Drawing.Size(123, 35);
             this.lblMa.TabIndex = 185;
@@ -179,6 +179,7 @@ namespace WindowsFormsApp
             this.lblTentk.Size = new System.Drawing.Size(115, 32);
             this.lblTentk.TabIndex = 193;
             this.lblTentk.Text = "Mã của bạn:";
+            this.lblTentk.Click += new System.EventHandler(this.lblTentk_Click);
             // 
             // label13
             // 
@@ -189,6 +190,7 @@ namespace WindowsFormsApp
             this.label13.Size = new System.Drawing.Size(133, 32);
             this.label13.TabIndex = 192;
             this.label13.Text = "Tên tài khoản:";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // lblquyen
             // 
@@ -199,6 +201,7 @@ namespace WindowsFormsApp
             this.lblquyen.Size = new System.Drawing.Size(115, 32);
             this.lblquyen.TabIndex = 195;
             this.lblquyen.Text = "Mã của bạn:";
+            this.lblquyen.Click += new System.EventHandler(this.lblquyen_Click);
             // 
             // label15
             // 
@@ -209,6 +212,7 @@ namespace WindowsFormsApp
             this.label15.Size = new System.Drawing.Size(169, 32);
             this.label15.TabIndex = 194;
             this.label15.Text = "Quyền đăng nhập:";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // btnDoimatkhau
             // 
@@ -228,23 +232,25 @@ namespace WindowsFormsApp
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(574, 76);
+            this.pictureBox1.Location = new System.Drawing.Point(570, 63);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(170, 134);
+            this.pictureBox1.Size = new System.Drawing.Size(202, 149);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 191;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(535, 26);
+            this.label6.Location = new System.Drawing.Point(582, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(209, 35);
             this.label6.TabIndex = 207;
             this.label6.Text = "Thông tin tài khoản";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // FormThongTinNhanVien
             // 
