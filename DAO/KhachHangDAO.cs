@@ -24,7 +24,7 @@ namespace DAO
 
         public DataTable getListKH()
         {
-            string query = "select KhachHang.MaKH,TenKH, DiaChi, SDT, Email from KhachHang";
+            string query = "select KhachHang.MaKH as [Mã khách hàng],TenKH as [Tên khách hàng], DiaChi as [Địa chỉ], SDT as [Số điện thoại], Email from KhachHang";
             return DataProvider.Instance.ExecuteQuery(query);
         }
 

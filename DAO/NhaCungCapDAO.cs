@@ -89,5 +89,13 @@ namespace DAO
             DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { maPN });
             return data;
         }
+
+
+        public DataTable HienThi()
+        {
+            string query = "select MaNCC as [Mã NCC], TenNCC as [Tên NCC], DiaChi as [Địa chỉ], SDT as [Số điện thoại] from NhaCungCap";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            return data;
+        }
     }
 }

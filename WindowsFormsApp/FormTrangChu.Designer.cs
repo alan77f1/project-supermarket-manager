@@ -53,11 +53,11 @@
             this.btnNCC = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnKhachHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnTrangChu = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.pannelLeft1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelControl = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pannelLeft1 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.pannelLeft1.SuspendLayout();
@@ -125,7 +125,7 @@
             this.lblTennv.ForeColor = System.Drawing.SystemColors.Control;
             this.lblTennv.Location = new System.Drawing.Point(672, 11);
             this.lblTennv.Name = "lblTennv";
-            this.lblTennv.Size = new System.Drawing.Size(64, 22);
+            this.lblTennv.Size = new System.Drawing.Size(77, 27);
             this.lblTennv.TabIndex = 36;
             this.lblTennv.Text = "chi123";
             // 
@@ -137,7 +137,7 @@
             this.lblManv.ForeColor = System.Drawing.SystemColors.Control;
             this.lblManv.Location = new System.Drawing.Point(602, 12);
             this.lblManv.Name = "lblManv";
-            this.lblManv.Size = new System.Drawing.Size(64, 22);
+            this.lblManv.Size = new System.Drawing.Size(77, 27);
             this.lblManv.TabIndex = 35;
             this.lblManv.Text = "chi123";
             // 
@@ -149,7 +149,7 @@
             this.lblQuyen.ForeColor = System.Drawing.SystemColors.Control;
             this.lblQuyen.Location = new System.Drawing.Point(742, 9);
             this.lblQuyen.Name = "lblQuyen";
-            this.lblQuyen.Size = new System.Drawing.Size(96, 25);
+            this.lblQuyen.Size = new System.Drawing.Size(115, 29);
             this.lblQuyen.TabIndex = 34;
             this.lblQuyen.Text = "Miễn Phí";
             // 
@@ -173,7 +173,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
             this.label2.Location = new System.Drawing.Point(14, 5);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 29);
+            this.label2.Size = new System.Drawing.Size(137, 33);
             this.label2.TabIndex = 32;
             this.label2.Text = "Xin Chào";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -188,7 +188,7 @@
             this.lblNguoidung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
             this.lblNguoidung.Location = new System.Drawing.Point(209, 7);
             this.lblNguoidung.Name = "lblNguoidung";
-            this.lblNguoidung.Size = new System.Drawing.Size(92, 29);
+            this.lblNguoidung.Size = new System.Drawing.Size(107, 33);
             this.lblNguoidung.TabIndex = 7;
             this.lblNguoidung.Text = "ADMIN";
             this.lblNguoidung.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -215,6 +215,7 @@
             this.panelLeft.ForeColor = System.Drawing.SystemColors.Control;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
+            this.panelLeft.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panelLeft.Size = new System.Drawing.Size(230, 750);
             this.panelLeft.TabIndex = 3;
             // 
@@ -325,7 +326,7 @@
             this.label8.ForeColor = System.Drawing.SystemColors.Control;
             this.label8.Location = new System.Drawing.Point(120, 722);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 19);
+            this.label8.Size = new System.Drawing.Size(82, 21);
             this.label8.TabIndex = 25;
             this.label8.Text = "19001508";
             // 
@@ -337,7 +338,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
             this.label7.Location = new System.Drawing.Point(49, 722);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 19);
+            this.label7.Size = new System.Drawing.Size(63, 21);
             this.label7.TabIndex = 24;
             this.label7.Text = "Liên hệ:";
             // 
@@ -349,7 +350,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
             this.label6.Location = new System.Drawing.Point(12, 703);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(224, 19);
+            this.label6.Size = new System.Drawing.Size(247, 21);
             this.label6.TabIndex = 23;
             this.label6.Text = "72 Đường Tăng Phú, Quận 9, HCM";
             // 
@@ -361,7 +362,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
             this.label5.Location = new System.Drawing.Point(90, 675);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 19);
+            this.label5.Size = new System.Drawing.Size(64, 21);
             this.label5.TabIndex = 22;
             this.label5.Text = "Địa chỉ: ";
             // 
@@ -563,6 +564,43 @@
             this.btnTrangChu.UseTransparentBackground = true;
             this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click_1);
             // 
+            // pannelLeft1
+            // 
+            this.pannelLeft1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.pannelLeft1.Controls.Add(this.label11);
+            this.pannelLeft1.Controls.Add(this.label1);
+            this.pannelLeft1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pannelLeft1.Location = new System.Drawing.Point(0, 0);
+            this.pannelLeft1.Name = "pannelLeft1";
+            this.pannelLeft1.Size = new System.Drawing.Size(230, 86);
+            this.pannelLeft1.TabIndex = 0;
+            this.pannelLeft1.Paint += new System.Windows.Forms.PaintEventHandler(this.pannelLeft1_Paint);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.Control;
+            this.label11.Location = new System.Drawing.Point(22, 12);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(113, 40);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Co.op";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.label1.Location = new System.Drawing.Point(114, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 40);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "mart";
+            // 
             // panelControl
             // 
             this.panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -575,43 +613,6 @@
             // 
             this.bunifuElipse1.ElipseRadius = 30;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.label1.Font = new System.Drawing.Font("Pacifico", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.label1.Location = new System.Drawing.Point(114, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 56);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "mart";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.label11.Font = new System.Drawing.Font("Pacifico", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.Control;
-            this.label11.Location = new System.Drawing.Point(22, 12);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(98, 56);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Co.op";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // pannelLeft1
-            // 
-            this.pannelLeft1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.pannelLeft1.Controls.Add(this.label11);
-            this.pannelLeft1.Controls.Add(this.label1);
-            this.pannelLeft1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pannelLeft1.Location = new System.Drawing.Point(0, 0);
-            this.pannelLeft1.Name = "pannelLeft1";
-            this.pannelLeft1.Size = new System.Drawing.Size(230, 86);
-            this.pannelLeft1.TabIndex = 0;
-            this.pannelLeft1.Paint += new System.Windows.Forms.PaintEventHandler(this.pannelLeft1_Paint);
             // 
             // FormTrangChu
             // 

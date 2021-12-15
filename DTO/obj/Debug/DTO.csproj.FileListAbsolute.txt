@@ -46,3 +46,11 @@ C:\Users\buiva\OneDrive\Máy tính\new\fashion-shop-manager\DTO\obj\Debug\DTO.cs
 C:\Users\buiva\OneDrive\Máy tính\new\fashion-shop-manager\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\buiva\OneDrive\Máy tính\new\fashion-shop-manager\DTO\obj\Debug\DTO.dll
 C:\Users\buiva\OneDrive\Máy tính\new\fashion-shop-manager\DTO\obj\Debug\DTO.pdb
+C:\Users\Nguyen Cong Chi\Documents\supermarket-manager\DTO\bin\Debug\DTO.dll
+C:\Users\Nguyen Cong Chi\Documents\supermarket-manager\DTO\bin\Debug\DTO.pdb
+C:\Users\Nguyen Cong Chi\Documents\supermarket-manager\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Nguyen Cong Chi\Documents\supermarket-manager\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\Nguyen Cong Chi\Documents\supermarket-manager\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+C:\Users\Nguyen Cong Chi\Documents\supermarket-manager\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Cong Chi\Documents\supermarket-manager\DTO\obj\Debug\DTO.dll
+C:\Users\Nguyen Cong Chi\Documents\supermarket-manager\DTO\obj\Debug\DTO.pdb

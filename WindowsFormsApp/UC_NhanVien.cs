@@ -37,7 +37,7 @@ namespace WindowsFormsApp
         {
             ClearBinding();
             dgvThongTinNhanVien.DataSource = NhanVienBUS.Intance.getListNV();
-            loadBinding();
+            //loadBinding();
         }
 
         bool KiemTraNhap()
