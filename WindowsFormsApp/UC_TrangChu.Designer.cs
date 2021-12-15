@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbSoHoaDon = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,7 +75,7 @@
             // lbSoHoaDon
             // 
             this.lbSoHoaDon.AutoSize = true;
-            this.lbSoHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(117)))), ((int)(((byte)(220)))));
+            this.lbSoHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.lbSoHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoHoaDon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbSoHoaDon.Location = new System.Drawing.Point(17, 54);
@@ -87,7 +87,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(117)))), ((int)(((byte)(220)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(25, 14);
@@ -108,7 +108,7 @@
             // lbSoKH
             // 
             this.lbSoKH.AutoSize = true;
-            this.lbSoKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(117)))), ((int)(((byte)(220)))));
+            this.lbSoKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(80)))), ((int)(((byte)(192)))));
             this.lbSoKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoKH.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbSoKH.Location = new System.Drawing.Point(16, 57);
@@ -120,7 +120,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(117)))), ((int)(((byte)(220)))));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(80)))), ((int)(((byte)(192)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(22, 14);
@@ -141,7 +141,7 @@
             // lbHangHoa
             // 
             this.lbHangHoa.AutoSize = true;
-            this.lbHangHoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(117)))), ((int)(((byte)(220)))));
+            this.lbHangHoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(172)))));
             this.lbHangHoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHangHoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbHangHoa.Location = new System.Drawing.Point(25, 57);
@@ -153,7 +153,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(117)))), ((int)(((byte)(220)))));
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(172)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(31, 14);
@@ -164,16 +164,16 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(32, 235);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Doanh Thu";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Doanh Thu";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(901, 365);
             this.chart1.TabIndex = 11;
             this.chart1.Text = "chart1";
@@ -188,8 +188,8 @@
             this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.Controls.Add(this.pictureBox1);
             this.guna2GradientPanel1.Controls.Add(this.lbSoHoaDon);
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(222)))), ((int)(((byte)(193)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(207)))), ((int)(((byte)(246)))));
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(84)))), ((int)(((byte)(127)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.guna2GradientPanel1.Location = new System.Drawing.Point(21, 51);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
@@ -201,8 +201,8 @@
             this.guna2GradientPanel2.Controls.Add(this.label3);
             this.guna2GradientPanel2.Controls.Add(this.lbHangHoa);
             this.guna2GradientPanel2.Controls.Add(this.pictureBox3);
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(222)))), ((int)(((byte)(193)))));
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(207)))), ((int)(((byte)(246)))));
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(172)))));
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.guna2GradientPanel2.Location = new System.Drawing.Point(640, 51);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
@@ -214,8 +214,8 @@
             this.guna2GradientPanel3.Controls.Add(this.pictureBox2);
             this.guna2GradientPanel3.Controls.Add(this.lbSoKH);
             this.guna2GradientPanel3.Controls.Add(this.label2);
-            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(222)))), ((int)(((byte)(193)))));
-            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(207)))), ((int)(((byte)(246)))));
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(80)))), ((int)(((byte)(192)))));
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.guna2GradientPanel3.Location = new System.Drawing.Point(332, 51);
             this.guna2GradientPanel3.Name = "guna2GradientPanel3";
             this.guna2GradientPanel3.ShadowDecoration.Parent = this.guna2GradientPanel3;
@@ -249,17 +249,17 @@
             // 
             // bunifuElipse4
             // 
-            this.bunifuElipse4.ElipseRadius = 15;
+            this.bunifuElipse4.ElipseRadius = 22;
             this.bunifuElipse4.TargetControl = this.lbHangHoa;
             // 
             // bunifuElipse5
             // 
-            this.bunifuElipse5.ElipseRadius = 15;
+            this.bunifuElipse5.ElipseRadius = 22;
             this.bunifuElipse5.TargetControl = this.lbSoHoaDon;
             // 
             // bunifuElipse6
             // 
-            this.bunifuElipse6.ElipseRadius = 15;
+            this.bunifuElipse6.ElipseRadius = 22;
             this.bunifuElipse6.TargetControl = this.lbSoKH;
             // 
             // UC_TrangChu
@@ -274,7 +274,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_TrangChu";
             this.Size = new System.Drawing.Size(990, 690);
-            this.Load += new System.EventHandler(this.UC_TrangChu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

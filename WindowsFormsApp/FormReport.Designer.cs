@@ -29,26 +29,55 @@ namespace WindowsFormsApp
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.uSPGetHoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.USP_GetHoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.uSPGetHoaDonBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.USP_GetHoaDonBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // uSPGetHoaDonBindingSource
+            // 
+            this.uSPGetHoaDonBindingSource.DataMember = "USP_GetHoaDon";
             // 
             // reportViewer1
             // 
-            this.reportViewer1.Location = new System.Drawing.Point(-2, 1);
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.USP_GetHoaDonBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApp3.Report_HoaDon.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(3, 1);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(820, 500);
+            this.reportViewer1.Size = new System.Drawing.Size(897, 491);
             this.reportViewer1.TabIndex = 0;
             // 
-            // FormReport
+            // QuanLyCuaHangThoiTrangDataSet
+            // 
+      
+            // 
+            // USP_GetHoaDonBindingSource
+            // 
+            this.USP_GetHoaDonBindingSource.DataMember = "USP_GetHoaDon";
+    
+            // 
+            // USP_GetHoaDonTableAdapter
+            // 
+
+            // 
+            // Form_Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 513);
+            this.ClientSize = new System.Drawing.Size(904, 495);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "FormReport";
-            this.Text = "FormReport";
-            this.Load += new System.EventHandler(this.FormReport_Load);
+            this.Name = "Form_Report";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form_Report";
+            ((System.ComponentModel.ISupportInitialize)(this.uSPGetHoaDonBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.USP_GetHoaDonBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -56,5 +85,7 @@ namespace WindowsFormsApp
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource uSPGetHoaDonBindingSource;
+        private System.Windows.Forms.BindingSource USP_GetHoaDonBindingSource;
     }
 }

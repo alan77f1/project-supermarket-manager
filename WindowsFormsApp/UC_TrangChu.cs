@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
-using WindowsFormsApp.Controller;
+using BUS;
 
 namespace WindowsFormsApp
 {
@@ -17,8 +17,8 @@ namespace WindowsFormsApp
         public UC_TrangChu()
         {
             InitializeComponent();
-            fillChart();
-            loadDashboard();
+            //fillChart();
+            //loadDashboard();
         }
 
         void loadDashboard()
@@ -49,11 +49,6 @@ namespace WindowsFormsApp
             chart1.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = false;
             chart1.ChartAreas[0].AxisX.Minimum = 1;
             chart1.Series[0].ChartType = SeriesChartType.Spline;
-        }
-
-        private void UC_TrangChu_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

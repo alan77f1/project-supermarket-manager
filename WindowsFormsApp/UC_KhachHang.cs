@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp.Controller;
+using BUS;
 
 namespace WindowsFormsApp
 {
@@ -21,7 +21,7 @@ namespace WindowsFormsApp
 
         public void LoadListKH()
         {
-            DataTable dt = QuanLyKhachHang.Intance.getListKH();
+            DataTable dt = KhachHangBUS.Intance.getListKH();
             dgvThongTinKhachHang.DataSource = dt;
             loadBinding();
         }
@@ -42,11 +42,13 @@ namespace WindowsFormsApp
             txtSDT.DataBindings.Clear();
             txtEmail.DataBindings.Clear();
             txtDiaChi.DataBindings.Clear();
-        }        
+        }
+
+        
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
-            dgvThongTinKhachHang.DataSource = QuanLyKhachHang.Intance.TimKiemKH(txtTimKiem.Text);
+            dgvThongTinKhachHang.DataSource = KhachHangBUS.Intance.TimKiemKH(txtTimKiem.Text);
             ClearBinding();
             loadBinding();
         }
@@ -57,7 +59,6 @@ namespace WindowsFormsApp
             LoadListKH();
         }
 
-        public bool check = false;
         private void btnThem_Click(object sender, EventArgs e)
         {
             check = !check;
@@ -91,7 +92,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    if (QuanLyKhachHang.Intance.themKH(txtMaKH.Text, txtTenKH.Text, txtDiaChi.Text, txtSDT.Text, txtEmail.Text))
+                    if (KhachHangBUS.Intance.themKH(txtMaKH.Text, txtTenKH.Text, txtDiaChi.Text, txtSDT.Text, txtEmail.Text))
                     {
                         MessageBox.Show("Thêm khách hàng thành công!", "Thông báo");
                         ClearBinding();
@@ -102,6 +103,7 @@ namespace WindowsFormsApp
             }
         }
 
+        public bool check = false;
         private void btnSua_Click_1(object sender, EventArgs e)
         {
             check = !check;
@@ -120,7 +122,7 @@ namespace WindowsFormsApp
                 txtSDT.Enabled = false;
                 txtEmail.Enabled = false;
                 txtDiaChi.Enabled = false;
-                if (QuanLyKhachHang.Intance.suaKH(txtMaKH.Text, txtTenKH.Text, txtDiaChi.Text, Convert.ToInt32(txtSDT.Text), txtEmail.Text))
+                if (KhachHangBUS.Intance.suaKH(txtMaKH.Text, txtTenKH.Text, txtDiaChi.Text, Convert.ToInt32(txtSDT.Text), txtEmail.Text))
                 {
                     MessageBox.Show("Sửa thành công!", "Thông báo");
                     btnThem.Enabled = true;
@@ -132,7 +134,7 @@ namespace WindowsFormsApp
 
         private void btnXoa_Click_1(object sender, EventArgs e)
         {
-            if (QuanLyKhachHang.Intance.xoaKH(txtMaKH.Text))
+            if (KhachHangBUS.Intance.xoaKH(txtMaKH.Text))
             {
                 MessageBox.Show("Xóa thành công!", "Thông báo");
                 ClearBinding();

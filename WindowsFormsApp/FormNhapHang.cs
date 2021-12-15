@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp.Controller;
 using System.IO;
-using WindowsFormsApp.Models;
+using BUS;
+using DTO;
 
 namespace WindowsFormsApp
 {
@@ -42,7 +42,7 @@ namespace WindowsFormsApp
             cmbTensp.DisplayMember = "TenMH";
 
 
-            list1 = getListNhacungcap();
+            list1 = getListNhaCungCap();
             cmbTenncc.DataSource = list1;
             cmbTenncc.ValueMember = "MaNCC";
             cmbTenncc.DisplayMember = "TenNCC";
@@ -61,6 +61,8 @@ namespace WindowsFormsApp
             lblManv.Text = manv;
             this.tennv = tennv;
             lblTennv.Text = tennv;
+
+            
 
         }
 
@@ -102,37 +104,37 @@ namespace WindowsFormsApp
 
 
 
-        public List<MatHang> getListSanPham()
+        public List<MatHangDTO> getListSanPham()
         {
             string query = "select * from MatHang";
-            List<MatHang> list = new List<MatHang>();
+            List<MatHangDTO> list = new List<MatHangDTO>();
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow item in dt.Rows)
             {
-                MatHang product = new MatHang(item);
+                MatHangDTO product = new MatHangDTO(item);
                 list.Add(product);
             }
             return list;
         }
 
-        List<MatHang> list;
+        List<MatHangDTO> list;
 
 
 
-        public List<NhaCungCap> getListNhacungcap()
+        public List<NhaCungCapDTO> getListNhaCungCap()
         {
             string query = "select * from NhaCungCap";
-            List<NhaCungCap> list = new List<NhaCungCap>();
+            List<NhaCungCapDTO> list = new List<NhaCungCapDTO>();
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow item in dt.Rows)
             {
-                NhaCungCap TTncc = new NhaCungCap(item);
+                NhaCungCapDTO TTncc = new NhaCungCapDTO(item);
                 list.Add(TTncc);
             }
             return list;
 
         }
-        List<NhaCungCap> list1;
+        List<NhaCungCapDTO> list1;
 
 
 
@@ -169,12 +171,11 @@ namespace WindowsFormsApp
         private void btnThem_Click(object sender, EventArgs e)
         {
             bool check = false;
-
             if (check_data() == true)
             {
-
                 string query = "update MatHang set GiaBan = '" + txtGiaban.Text + "'  where MaMH = '" + lblmasp.Text + "'";  // cập nhật lại số lượng 
                 DataProvider.Instance.ExecuteQuery(query);
+               
                 if (Int32.Parse(txtSoLuong.Text.ToString()) <= 0)
                 {
                     MessageBox.Show("Số lượng nhập phải lớn hơn 0");
@@ -183,6 +184,7 @@ namespace WindowsFormsApp
                 {
                     MessageBox.Show("Giá nhập phải lớn hơn 0");
                 }
+                
                 else
                if (cmbTensp.SelectedIndex >= 0 && cmbTenncc.SelectedIndex >= 0)
                 {
@@ -192,7 +194,6 @@ namespace WindowsFormsApp
                         {
                             check = true;
                         }
-
                         if (check == true)
                         {
                             int temp = Int32.Parse(N.SubItems[2].Text) + Int32.Parse(txtSoLuong.Text.ToString());
@@ -201,7 +202,6 @@ namespace WindowsFormsApp
                             break;
                         }
                     }
-
 
                     int gia = Int32.Parse(txtGia.Text) * Int32.Parse(txtSoLuong.Text.ToString());
                     if (!check)
@@ -215,13 +215,9 @@ namespace WindowsFormsApp
                         ListViewItem listViewItem = new ListViewItem(arr);
                         lsvNhaphang.Items.Add(listViewItem);
                     }
-
                     tongTien += gia;
                     lbltong.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", tongTien) + "VNĐ";
                     Lammoi();
-
-
-
                 }
                 else
                 {
@@ -230,6 +226,7 @@ namespace WindowsFormsApp
             }
         }
 
+       
 
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -252,10 +249,11 @@ namespace WindowsFormsApp
         private void Lammoi()
         {
             cmbTensp.SelectedIndex = -1;
-            txtSoLuong.Text = "";
-            txtGia.Text = "";
+            txtSoLuong.Text = "0";
+            txtGia.Text = "0";  
             lblmasp.Text = "";
             lbltensp.Text = "";
+            pcbHangHoa.Image = null;
         }
 
 
@@ -280,7 +278,7 @@ namespace WindowsFormsApp
         {
             if (lsvNhaphang.Items.Count > 0)
             {
-                PhieuNhap pn = new PhieuNhap();
+                PhieuNhapDTO pn = new PhieuNhapDTO();
                 pn.MaPN = lblMapn.Text;
                 pn.NgayNhap = dtpkNgaynhap.Value;
                 pn.MaNCC = lblMancc.Text;
@@ -320,7 +318,7 @@ namespace WindowsFormsApp
         //
         // Lưu phiếu nhập
         //
-        private bool LuuPN(PhieuNhap pn)
+        private bool LuuPN(PhieuNhapDTO pn)
         {
             // Convert datetime to date SQL Server 
             string query = String.Format("insert into PhieuNhap values('{0}','{1}','{2}','{3}')", pn.MaPN, pn.MaNCC, pn.NgayNhap, pn.MaNV);
@@ -363,7 +361,7 @@ namespace WindowsFormsApp
             cmbTensp.DisplayMember = "TenMH";
 
 
-            list1 = getListNhacungcap();
+            list1 = getListNhaCungCap();
             cmbTenncc.DataSource = list1;
             cmbTenncc.ValueMember = "MaNCC";
             cmbTenncc.DisplayMember = "TenNCC";
@@ -385,7 +383,22 @@ namespace WindowsFormsApp
             DataProvider.Instance.ExecuteQuery(query);
         }
 
-        private void txtGiaban_TextChanged(object sender, EventArgs e)
+        string imgLocation = Application.StartupPath + "\\Resources\\hanghoa.png";
+
+        private void btnTaiAnh_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlgOpen = new OpenFileDialog();
+            dlgOpen.Filter = "PNG files(*.png)|*.png|JPEG(*.jpg)|*.jpg|GIF(*.gif)|*.gif|All files(*.*)|*.*";
+            dlgOpen.FilterIndex = 2;
+            dlgOpen.Title = "Chọn ảnh minh hoạ cho sản phẩm";
+            if (dlgOpen.ShowDialog() == DialogResult.OK)
+            {
+                imgLocation = dlgOpen.FileName.ToString();
+                pcbHangHoa.Image = Image.FromFile(dlgOpen.FileName);
+            }
+        }
+
+        private void label15_Click(object sender, EventArgs e)
         {
 
         }

@@ -9,8 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp.Controller;
-using WindowsFormsApp.DataSet;
+using BUS;
 
 namespace WindowsFormsApp
 {
@@ -19,12 +18,14 @@ namespace WindowsFormsApp
         private string mahd;
         private string Tienkhachdua;
         private string Tienhoantra;
-        public FormInHoaDon(string mahd, string Tienkhachdua, string Tienhoantra)
+        private string Tiendagiam;
+        public FormInHoaDon(string mahd, string Tienkhachdua, string Tienhoantra, string Tiendagiam)
         {
             InitializeComponent();
             this.mahd = mahd;
             this.Tienkhachdua = Tienkhachdua;
             this.Tienhoantra = Tienhoantra;
+            this.Tiendagiam = Tiendagiam;
         }
 
 
@@ -33,7 +34,7 @@ namespace WindowsFormsApp
         {
             SqlConnection con = chuoiketnoi.sqlConnection();
             con.Open();
-            string query = "USP_Inhoadon'" + mahd + "'";
+            string query = "USP_Inhoadonn'" + mahd + "'";
             SqlDataAdapter dta = new SqlDataAdapter(query, con);
             DataSet1 dataSet1 = new DataSet1();
             dta.Fill(dataSet1, "DataTable2");
@@ -42,7 +43,8 @@ namespace WindowsFormsApp
             ReportParameter[] rptParams = new ReportParameter[]
            {
                 new ReportParameter("Tienkhachdua", Tienkhachdua),
-                new ReportParameter("Tienhoantra", Tienhoantra)
+                new ReportParameter("Tienhoantra", Tienhoantra),
+                new ReportParameter("Tiendagiam", Tiendagiam)
            };
             this.reportViewer1.LocalReport.SetParameters(rptParams);
             this.reportViewer1.LocalReport.DataSources.Clear();

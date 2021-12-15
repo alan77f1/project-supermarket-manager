@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp.Controller;
+using BUS;
 
 namespace WindowsFormsApp
 {
@@ -73,17 +73,37 @@ namespace WindowsFormsApp
 
         bool Login(string userName, string passWord)
         {
-            return QuanLyNhanVien.Intance.Login(userName, passWord);
+            return NhanVienBUS.Intance.Login(userName, passWord);
         }
 
-      
+
+
+        private void btnDangKy_Click(object sender, EventArgs e)
+        {
+            FormDangKy FormDangKy = new FormDangKy();
+            FormDangKy.Show();
+            this.Hide();
+        }
+
+
+        private void lbQuenMK_Click(object sender, EventArgs e)
+        {
+            FormSDT FormSDT = new FormSDT();
+            FormSDT.Show();
+            this.Hide();
+        }
 
         private void lblThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnDangNhap_Click(object sender, EventArgs e)
+        private void lblCanhbao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDangNhap_Click_1(object sender, EventArgs e)
         {
             if (check_data() == true)
             {
@@ -91,8 +111,8 @@ namespace WindowsFormsApp
                 string passWord = txtMatKhau.Text;
                 if (Login(tenDangNhap, passWord))
                 {
-                    tenHienThi = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).TenHienThi;
-                    quyen = QuanLyNhanVien.Intance.getNVByID(tenDangNhap).Quyen;
+                    //tenHienThi = NhanVienBUS.Intance.getNVByID(tenDangNhap).TenHienThi;
+                    //quyen = NhanVienBUS.Intance.getNVByID(tenDangNhap).Quyen;
                     FormTrangChu f = new FormTrangChu(txtTenDangNhap.Text); // txtTenDangNhap.Text
                     f.Show();
                     this.Hide();
@@ -103,21 +123,25 @@ namespace WindowsFormsApp
             }
         }
 
-        private void lblCanhbao_Click(object sender, EventArgs e)
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnDangKy_Click_1(object sender, EventArgs e)
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
         {
-            FormDangKy FormDangKy = new FormDangKy();
-            FormDangKy.Show();
-            this.Hide();
+
         }
 
-        private void btnX_Click(object sender, EventArgs e)
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnX_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
     }
 }

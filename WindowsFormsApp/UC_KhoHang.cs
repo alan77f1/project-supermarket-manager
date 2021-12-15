@@ -3,8 +3,8 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using WindowsFormsApp.Views;
-using WindowsFormsApp.Controller;
+using BUS;
+using DTO;
 
 
 namespace WindowsFormsApp
@@ -25,21 +25,11 @@ namespace WindowsFormsApp
 
         public void loadData()
         {
-            /*dgvHangHoa.View = View.Details;
-            dgvHangHoa.GridLines = true;
-            dgvHangHoa.FullRowSelect = true;
-
-            dgvHangHoa.Columns.Add("Mã Mặt Hàng", 150);   //0
-            dgvHangHoa.Columns.Add("Tên mặt hàng", 200);  //1
-            dgvHangHoa.Columns.Add("Số lượng,", 100);   //2
-            dgvHangHoa.Columns.Add("Đơn Vị Tính", 200);  // 3
-            dgvHangHoa.Columns.Add("Tổng tiền", 220);  // 4*/
-
 
             dgvHangHoa.DataSource = MatHangBUS.Intance.getListSanPham();
             dgvHangHoa.Columns["MaMH"].HeaderText = "Mã Mặt Hàng";
             dgvHangHoa.Columns["TenMH"].HeaderText = "Tên mặt hàng ";
-            dgvHangHoa.Columns["DonVi"].HeaderText = "Đơn Vị Tính";        
+            dgvHangHoa.Columns["DonVi"].HeaderText = "Đơn Vị Tính";
             dgvHangHoa.Columns["GiaBan"].HeaderText = "Giá Bán";
             dgvHangHoa.Columns["SoLuong"].HeaderText = "Số Lượng";
 
@@ -47,6 +37,7 @@ namespace WindowsFormsApp
             dgvHangHoa.AllowUserToAddRows = false;
             dgvHangHoa.EditMode = DataGridViewEditMode.EditProgrammatically;
 
+            pcbHangHoa.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
 
@@ -55,6 +46,7 @@ namespace WindowsFormsApp
             txtTenMH.Text = "";
             txtSoLuong.Text = "0";
             txtGiaBan.Text = "0";
+            pcbHangHoa.Image = null;
         }
         public bool check = true;
 
@@ -97,12 +89,13 @@ namespace WindowsFormsApp
             txtSoLuong.DataBindings.Clear();
             txtGiaBan.DataBindings.Clear();
         }
-   
+
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
             dgvHangHoa.DataSource = MatHangBUS.Intance.TimKiemHH(txtTimKiem.Text);
             dgvHangHoa.Columns["Anh"].Visible = false;
         }
+
 
         private void dgvHangHoa_SelectionChanged_1(object sender, EventArgs e)
         {
@@ -116,10 +109,12 @@ namespace WindowsFormsApp
                     string maMH = row.Cells["MaMH"].Value.ToString();
                     if (MatHangBUS.Intance.getAnhByID(maMH) == null)
                     {
+                        pcbHangHoa.Image = null;
                     }
                     else
                     {
                         MemoryStream ms = new MemoryStream(MatHangBUS.Intance.getAnhByID(maMH));
+                        pcbHangHoa.Image = Image.FromStream(ms);
                     }
                 }
                 catch (Exception) { }
@@ -128,10 +123,6 @@ namespace WindowsFormsApp
 
         string imgLocation = Application.StartupPath + "\\Resources\\hanghoa.png";
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btnSua_Click_1(object sender, EventArgs e)
         {
@@ -166,17 +157,10 @@ namespace WindowsFormsApp
                 {
                     MessageBox.Show("Bạn không được xóa bản ghi này!", "Thông báo");
                 }
-
             }
         }
 
-        private void btnNhapHang_Click_1(object sender, EventArgs e)
-        {
-            FormNhapHang formNhaphang = new FormNhapHang(luumanv, luutennv);
-            formNhaphang.Show();
-        }
-
-        private void btnTaiAnh_Click(object sender, EventArgs e)
+        private void btnTaiAnh_Click_1(object sender, EventArgs e)
         {
             OpenFileDialog dlgOpen = new OpenFileDialog();
             dlgOpen.Filter = "PNG files(*.png)|*.png|JPEG(*.jpg)|*.jpg|GIF(*.gif)|*.gif|All files(*.*)|*.*";
@@ -185,9 +169,24 @@ namespace WindowsFormsApp
             if (dlgOpen.ShowDialog() == DialogResult.OK)
             {
                 imgLocation = dlgOpen.FileName.ToString();
+                pcbHangHoa.Image = Image.FromFile(dlgOpen.FileName);
             }
         }
 
+        private void btnLuu_Click_1(object sender, EventArgs e)
+        {
+            if (imgLocation != Application.StartupPath + "\\Resources\\hanghoa.png")
+            {
+                MatHangBUS.Intance.capNhatHinh(imgLocation, txtMaHang.Text);
+            }
+            loadData();
+            imgLocation = Application.StartupPath + "\\Resources\\hanghoa.png";
+        }
 
+        private void btnNhapHang_Click(object sender, EventArgs e)
+        {
+            FormNhapHang formNhaphang = new FormNhapHang(luumanv, luutennv);
+            formNhaphang.Show();
+        }
     }
 }

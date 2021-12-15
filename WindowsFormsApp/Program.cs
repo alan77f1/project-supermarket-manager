@@ -18,7 +18,5 @@ namespace WindowsFormsApp
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormDangNhap());
         }
-
-
     }
 }

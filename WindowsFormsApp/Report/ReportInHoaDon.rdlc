@@ -7,7 +7,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>031bdcbf-8b29-465a-83f8-08b483d80682</rd:DataSourceID>
+      <rd:DataSourceID>d0d88e47-0289-4343-bb45-ae90037e1dcc</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -64,7 +64,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet1</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\buiva\OneDrive\Máy tính\store-manager-app\WindowsFormsApp\DataSet\DataSet1.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Nguyen Cong Chi\Desktop\fashion-shop-manager\WindowsFormsApp\DataSet1.xsd</rd:SchemaPath>
         <rd:TableName>DataTable2</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -93,7 +93,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>COOP</Value>
+                    <Value>CỬA HÀNG THỜI TRANG</Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>12pt</FontSize>
@@ -101,23 +101,14 @@
                       <Color>Blue</Color>
                     </Style>
                   </TextRun>
-                  <TextRun>
-                    <Value>MART</Value>
-                    <Style>
-                      <FontFamily>Sitka Banner</FontFamily>
-                      <FontSize>12pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <Color>Maroon</Color>
-                    </Style>
-                  </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Left>1.42583in</Left>
+            <Left>0.9675in</Left>
             <Height>0.31944in</Height>
-            <Width>0.89583in</Width>
+            <Width>2.01166in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -170,7 +161,15 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>334</Value>
+                    <Value>449</Value>
+                    <Style>
+                      <FontFamily>Times New Roman</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value> Lê Văn Việt, Phường Tăng Nhơn Phú A, Quận </Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>12pt</FontSize>
@@ -178,14 +177,15 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value xml:space="preserve"> </Value>
+                    <Value>9</Value>
                     <Style>
+                      <FontFamily>Times New Roman</FontFamily>
                       <FontSize>12pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>Lê Văn Việt, Phường Tăng Nhơn Phú A, Quận 9,                                      TP.HCM</Value>
+                    <Value>,                                      TP.HCM</Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>12pt</FontSize>
@@ -219,7 +219,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>  HÓA ĐƠN BÁN LẺ</Value>
+                    <Value>  HÓA ĐƠN BÁN HÀNG</Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>14pt</FontSize>
@@ -231,10 +231,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>1.17013in</Top>
-            <Left>1.06375in</Left>
+            <Top>1.11584in</Top>
+            <Left>0.89707in</Left>
             <Height>0.32638in</Height>
-            <Width>1.84375in</Width>
+            <Width>2.08209in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -347,8 +347,8 @@
                   <TextRun>
                     <Value>=Fields!SDT.Value</Value>
                     <Style>
-                      <FontFamily>Sitka Banner</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
@@ -431,7 +431,7 @@
                   <TextRun>
                     <Value>=Fields!NgayTao.Value</Value>
                     <Style>
-                      <FontFamily>Sitka Banner</FontFamily>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>12pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
@@ -473,7 +473,7 @@
                   <TextRun>
                     <Value>=Fields!MaNV.Value</Value>
                     <Style>
-                      <FontFamily>Sitka Banner</FontFamily>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>12pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
@@ -531,7 +531,7 @@
                   <TextRun>
                     <Value>=Fields!MaHD.Value</Value>
                     <Style>
-                      <FontFamily>Sitka Banner</FontFamily>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>12pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
@@ -597,7 +597,7 @@
                   <TextRun>
                     <Value>=Parameters!Tienkhachdua.Value</Value>
                     <Style>
-                      <FontFamily>Sitka Display</FontFamily>
+                      <FontFamily>Cambria</FontFamily>
                       <FontSize>12pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                       <Format>#,0.00'VND';(#,0.00'VND')</Format>
@@ -608,8 +608,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>4.06028in</Top>
-            <Left>0.28472in</Left>
+            <Top>4.38667in</Top>
+            <Left>0.25917in</Left>
             <Height>0.31944in</Height>
             <Width>3.15277in</Width>
             <ZIndex>14</ZIndex>
@@ -640,7 +640,7 @@
                   <TextRun>
                     <Value>=Sum(Fields!SoLuong.Value*Fields!DonGia.Value,"DataSet1")</Value>
                     <Style>
-                      <FontFamily>Sitka Display</FontFamily>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>12pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                       <Format>#,0.00'VND';(#,0.00'VND')</Format>
@@ -651,8 +651,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>4.37972in</Top>
-            <Left>0.28472in</Left>
+            <Top>4.60889in</Top>
+            <Left>0.25917in</Left>
             <Height>0.31944in</Height>
             <Width>3.15277in</Width>
             <ZIndex>15</ZIndex>
@@ -683,7 +683,7 @@
                   <TextRun>
                     <Value>=Parameters!Tienhoantra.Value</Value>
                     <Style>
-                      <FontFamily>Sitka Display</FontFamily>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>12pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
@@ -693,8 +693,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>4.69916in</Top>
-            <Left>0.28472in</Left>
+            <Top>4.87972in</Top>
+            <Left>0.25917in</Left>
             <Height>0.31944in</Height>
             <Width>3.15277in</Width>
             <ZIndex>16</ZIndex>
@@ -709,8 +709,7 @@
             </Style>
           </Textbox>
           <Line Name="Line4">
-            <Top>5.0186in</Top>
-            <Left>0.02555in</Left>
+            <Top>5.19916in</Top>
             <Height>0in</Height>
             <Width>3.79861in</Width>
             <ZIndex>17</ZIndex>
@@ -739,8 +738,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>5.08804in</Top>
-            <Left>1.17833in</Left>
+            <Top>5.2686in</Top>
+            <Left>0.9675in</Left>
             <Height>0.3125in</Height>
             <Width>1.56249in</Width>
             <ZIndex>18</ZIndex>
@@ -1063,11 +1062,53 @@
               </Border>
             </Style>
           </Tablix>
+          <Textbox Name="Textbox16">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Đã giảm:  </Value>
+                    <Style>
+                      <FontFamily>Sitka Banner</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!Tiendagiam.Value</Value>
+                    <Style>
+                      <FontFamily>Cambria</FontFamily>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>4.06723in</Top>
+            <Left>0.28473in</Left>
+            <Height>0.31944in</Height>
+            <Width>3.15277in</Width>
+            <ZIndex>20</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>5.40054in</Height>
+        <Height>5.85417in</Height>
         <Style />
       </Body>
-      <Width>3.82416in</Width>
+      <Width>3.82417in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -1083,6 +1124,10 @@
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="Tienhoantra">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Tiendagiam">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
@@ -1102,9 +1147,14 @@
           <RowIndex>0</RowIndex>
           <ParameterName>Tienhoantra</ParameterName>
         </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Tiendagiam</ParameterName>
+        </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>44ee7b2c-770a-499e-94d9-b33d83453018</rd:ReportID>
+  <rd:ReportID>210dcf90-b96e-4243-ba7d-6b0f850f24bf</rd:ReportID>
 </Report>

@@ -63,9 +63,9 @@ namespace WindowsFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BanHang {
+        internal static System.Drawing.Bitmap _03_CircleK_Favor_1 {
             get {
-                object obj = ResourceManager.GetObject("BanHang", resourceCulture);
+                object obj = ResourceManager.GetObject("03_CircleK_Favor_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace WindowsFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DangXuat {
+        internal static System.Drawing.Bitmap dzcqynvgag7q {
             get {
-                object obj = ResourceManager.GetObject("DangXuat", resourceCulture);
+                object obj = ResourceManager.GetObject("dzcqynvgag7q", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace WindowsFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap home_icon {
+        internal static System.Drawing.Bitmap home_page {
             get {
-                object obj = ResourceManager.GetObject("home-icon", resourceCulture);
+                object obj = ResourceManager.GetObject("home-page", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace WindowsFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_logout_rounded_left_64 {
+        internal static System.Drawing.Bitmap icon_user {
             get {
-                object obj = ResourceManager.GetObject("icons8-logout-rounded-left-64", resourceCulture);
+                object obj = ResourceManager.GetObject("icon-user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace WindowsFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_shutdown_24 {
+        internal static System.Drawing.Bitmap oto_giaohang {
             get {
-                object obj = ResourceManager.GetObject("icons8-shutdown-24", resourceCulture);
+                object obj = ResourceManager.GetObject("oto-giaohang", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace WindowsFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap KhachHang {
+        internal static System.Drawing.Bitmap unnamed {
             get {
-                object obj = ResourceManager.GetObject("KhachHang", resourceCulture);
+                object obj = ResourceManager.GetObject("unnamed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,69 +123,9 @@ namespace WindowsFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap KhoHang {
+        internal static System.Drawing.Bitmap z26684059V_Stacja_paliw_Circle_K {
             get {
-                object obj = ResourceManager.GetObject("KhoHang", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap LamMoi {
-            get {
-                object obj = ResourceManager.GetObject("LamMoi", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap NhanVien {
-            get {
-                object obj = ResourceManager.GetObject("NhanVien", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sua {
-            get {
-                object obj = ResourceManager.GetObject("Sua", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Them {
-            get {
-                object obj = ResourceManager.GetObject("Them", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ThongKe {
-            get {
-                object obj = ResourceManager.GetObject("ThongKe", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Xoa {
-            get {
-                object obj = ResourceManager.GetObject("Xoa", resourceCulture);
+                object obj = ResourceManager.GetObject("z26684059V,Stacja-paliw-Circle-K", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

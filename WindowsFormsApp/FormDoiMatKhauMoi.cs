@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp.Controller;
+using BUS;
 
 namespace WindowsFormsApp
 {
@@ -20,7 +20,6 @@ namespace WindowsFormsApp
             this.tk = tk;
             txTentaikhoan.Text = tk;
         }
-
         private bool check_data()
         {
             if (string.IsNullOrEmpty(txtmkMoi.Text))
@@ -30,16 +29,14 @@ namespace WindowsFormsApp
             return true;
         }
 
-
-
         bool Login(string userName, string passWord)
         {
-            return QuanLyNhanVien.Intance.Login(userName, passWord);
+            return NhanVienBUS.Intance.Login(userName, passWord);
         }
 
         bool Doimkmoi(string userName, string passWord)
         {
-            return QuanLyNhanVien.Intance.capnhatmk1(userName, passWord);
+            return NhanVienBUS.Intance.capnhatmk1(userName, passWord);
         }
 
 
@@ -60,8 +57,7 @@ namespace WindowsFormsApp
 
         }
 
-
-        private void btnLuu_Click(object sender, EventArgs e)
+        private void btnLuu_Click_2(object sender, EventArgs e)
         {
             if (check_data() == true)
             {

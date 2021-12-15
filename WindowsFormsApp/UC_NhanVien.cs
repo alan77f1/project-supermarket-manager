@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
-using WindowsFormsApp.Controller;
+using BUS;
 
 
 namespace WindowsFormsApp
@@ -24,19 +24,19 @@ namespace WindowsFormsApp
             LoadData();
         }
 
-
         void loadBinding()
         {
             txtMaNV.DataBindings.Add(new Binding("Text", dgvThongTinNhanVien.DataSource, "MaNV", true, DataSourceUpdateMode.Never));
             txtHoTen.DataBindings.Add(new Binding("Text", dgvThongTinNhanVien.DataSource, "TenHienThi", true, DataSourceUpdateMode.Never));
             txtSDT.DataBindings.Add(new Binding("Text", dgvThongTinNhanVien.DataSource, "SDT", true, DataSourceUpdateMode.Never));
             txtDiaChi.DataBindings.Add(new Binding("Text", dgvThongTinNhanVien.DataSource, "DiaChi", true, DataSourceUpdateMode.Never));
+            cmbChucVu.DataBindings.Add(new Binding("Text", dgvThongTinNhanVien.DataSource, "Quyen", true, DataSourceUpdateMode.Never));
         }
-     
+
         void LoadData()
         {
             ClearBinding();
-            dgvThongTinNhanVien.DataSource = QuanLyNhanVien.Intance.getListNV();
+            dgvThongTinNhanVien.DataSource = NhanVienBUS.Intance.getListNV();
             loadBinding();
         }
 
@@ -69,6 +69,7 @@ namespace WindowsFormsApp
             txtHoTen.DataBindings.Clear();
             txtSDT.DataBindings.Clear();
             txtDiaChi.DataBindings.Clear();
+            cmbChucVu.DataBindings.Clear();
         }
 
         public void lamMoi()
@@ -80,11 +81,11 @@ namespace WindowsFormsApp
         }
         public bool check = true;
 
-
         private void guna2dgvThongTinNhanVien_SelectionChanged(object sender, EventArgs e)
         {
             if (dgvThongTinNhanVien.SelectedCells.Count > 0)
             {
+                cmbChucVu.SelectedItem = dgvThongTinNhanVien.SelectedCells[3].Value;
                 ClearBinding();
                 loadBinding();
             }
@@ -92,21 +93,45 @@ namespace WindowsFormsApp
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
-            dgvThongTinNhanVien.DataSource = QuanLyNhanVien.Intance.TimKiemNV(txtTimKiem.Text);
+            dgvThongTinNhanVien.DataSource = NhanVienBUS.Intance.TimKiemNV(txtTimKiem.Text);
         }
 
 
-       
-        private void txtTimKiem_TextChanged_1(object sender, EventArgs e)
+        private void btnCapNhap_Click(object sender, EventArgs e)
+        {
+            check = !check;
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+            LoadData();
+        }
+
+
+        private void dgvThongTinNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void themUC(Control uc)
+        {
+            uc.Dock = DockStyle.Fill;
+            pnlNhanVien.Controls.Clear();
+            pnlNhanVien.Controls.Add(uc);
+            uc.BringToFront();
+        }
+
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            txtMaNV.Text = "";
+            txtSDT.Text = "";
+            txtHoTen.Text = "";
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (dgvThongTinNhanVien.SelectedCells.Count > 0)
             {
-                if (QuanLyNhanVien.Intance.suaNV(txtMaNV.Text, txtHoTen.Text, txtDiaChi.Text, txtSDT.Text))
+                if (NhanVienBUS.Intance.suaNV(txtMaNV.Text, txtHoTen.Text, txtDiaChi.Text, txtSDT.Text))
                 {
                     MessageBox.Show("Sửa thành công!", "Thông báo");
                     LoadData();
@@ -116,7 +141,7 @@ namespace WindowsFormsApp
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (QuanLyNhanVien.Intance.xoaNV(txtMaNV.Text))
+            if (NhanVienBUS.Intance.xoaNV(txtMaNV.Text))
             {
                 MessageBox.Show("Xóa thành công!", "Thông báo");
                 ClearBinding();
@@ -124,14 +149,10 @@ namespace WindowsFormsApp
             }
         }
 
-
-
-
-        private void btnLamMoi_Click(object sender, EventArgs e)
+        private void btnGiaoCa_Click_1(object sender, EventArgs e)
         {
-            txtMaNV.Text = "";
-            txtSDT.Text = "";
-            txtHoTen.Text = "";
+            UC_CaLamViecNhanVien f = new UC_CaLamViecNhanVien();
+            themUC(f);
         }
     }
 }

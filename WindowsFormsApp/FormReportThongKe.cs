@@ -9,8 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp.Controller;
-using WindowsFormsApp.DataSet;
+using BUS;
 
 namespace WindowsFormsApp
 {
@@ -28,7 +27,7 @@ namespace WindowsFormsApp
         {
             SqlConnection con = chuoiketnoi.sqlConnection();
             con.Open();
-            string query = "USP_Chitietpn '" + Mapn + "'";
+            string query = "USP_XemChiTietPN '" + Mapn + "'";
             SqlDataAdapter dta = new SqlDataAdapter(query, con);
             DataSet1 dataSet1 = new DataSet1();
             dta.Fill(dataSet1, "DataTable1");

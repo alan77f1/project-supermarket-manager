@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp.Controller;
+using BUS;
 
 namespace WindowsFormsApp
 {
@@ -31,21 +31,21 @@ namespace WindowsFormsApp
             string ma = "";
             if (dt.Rows.Count <= 0)
             {
-                ma = "NV01";
+                ma = "NV001";
             }
             else
             {
                 int k;
                 ma = "NV";
-                k = Convert.ToInt32(dt.Rows.Count - 1);
+                k = Convert.ToInt32(dt.Rows.Count);
                 k++;
                 if (k < 10)
                 {
-                    ma = ma + "0";
+                    ma = ma + "00";
                 }
                 else if (k >= 10 && k < 100)
                 {
-                    ma = ma + " ";
+                    ma = ma + "0";
                 }
                 else if (k >= 100 && k < 1000)
                 {
@@ -57,41 +57,6 @@ namespace WindowsFormsApp
             return ma;
         }
 
-
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-            string query = "select TenDangNhap as [TenDangNhap] from Nhanvien where TenDangnhap = '" + txtTendangnhap.Text + "'";
-            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-            int i = dt.Rows.Count;
-            if (check_data() == true)
-            {
-                if (i > 0)
-                {
-                    lblThongbao.Text = "Tên đăng nhập đã tồn tại";
-                    lblThongbao.ForeColor = Color.Brown;
-                }
-                else
-                {
-
-
-                    if (txtMatkhau.Text == txtXacnhanmk.Text)
-                    {
-                        if (QuanLyNhanVien.Intance.themNV(txtManv.Text, txtTennv.Text, txtGioitinh.Text, txtDiachi.Text, txtDienthoai.Text, txtTendangnhap.Text, txtMatkhau.Text))
-                        {
-                            lblThongbao.Text = "Đăng ký tài khoản thành công";
-                            lblThongbao.ForeColor = Color.Brown;
-                            txtManv.Text = Matudong();
-                        }
-                        else
-                            lblThongbao.Text = "Đăng ký tài khoản thất bại";
-                        lblThongbao.ForeColor = Color.Brown;
-                    }
-                    else
-                        lblThongbao.Text = "Mật khẩu xác nhận không đúng";
-                    lblThongbao.ForeColor = Color.Brown;
-                }
-            }
-        }
 
         private void txtTendangnhap_TextChanged(object sender, EventArgs e)
         {
@@ -174,11 +139,72 @@ namespace WindowsFormsApp
             return true;
         }
 
-        private void btnQuaylai_Click(object sender, EventArgs e)
+
+        private void FormDangKy_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGioitinh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQuaylai_Click_1(object sender, EventArgs e)
         {
             FormDangNhap formDangNhap = new FormDangNhap();
             formDangNhap.Show();
             this.Hide();
+        }
+
+        private void btnLuu_Click_1(object sender, EventArgs e)
+        {
+            string query = "select TenDangNhap as [TenDangNhap] from Nhanvien where TenDangnhap = '" + txtTendangnhap.Text + "'";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            int i = dt.Rows.Count;
+            if (check_data() == true)
+            {
+                if (i > 0)
+                {
+                    lblThongbao.Text = "Tên đăng nhập đã tồn tại";
+                    lblThongbao.ForeColor = Color.Brown;
+                }
+                else
+                {
+
+
+                    if (txtMatkhau.Text == txtXacnhanmk.Text)
+                    {
+                        if (NhanVienBUS.Intance.themNV(txtManv.Text, txtTennv.Text, txtGioitinh.Text, txtDiachi.Text, txtDienthoai.Text, txtTendangnhap.Text, txtMatkhau.Text))
+                        {
+                            lblThongbao.Text = "Đăng ký tài khoản thành công";
+                            lblThongbao.ForeColor = Color.Brown;
+                            txtManv.Text = Matudong();
+                        }
+                        else
+                            lblThongbao.Text = "Đăng ký tài khoản thất bại";
+                        lblThongbao.ForeColor = Color.Brown;
+                    }
+                    else
+                        lblThongbao.Text = "Mật khẩu xác nhận không đúng";
+                    lblThongbao.ForeColor = Color.Brown;
+                }
+            }
         }
     }
 }

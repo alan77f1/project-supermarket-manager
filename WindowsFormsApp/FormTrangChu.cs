@@ -7,46 +7,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp.Controller;
+
 
 namespace WindowsFormsApp
 {
     public partial class FormTrangChu : Form
     {
         private string tk;
-        private string Tentk;
+        private string luumanv, luutennv;
         public FormTrangChu(string tk)  // string tk
         {
             InitializeComponent();
-            this.Tentk = Tentk;
-            lblTentk.Text = Tentk;
             /*hiển thị trang chủ*/
-            UC_TrangChu tc = new UC_TrangChu();
-            themUC(tc);
+            //UC_TrangChu tc = new UC_TrangChu();
+            //themUC(tc);
             this.tk = tk;
             lblNguoidung.Text = tk;
-            Phanquyen();
+           Phanquyen();
 
             TTnguoiban();
-        }
-
-        private void movesidePannel(Control btn)
-        {
-            panelSide.Top = btn.Top;
-            panelSide.Height = btn.Height;
         }
 
         private void TTnguoiban()
         {
             string name = lblNguoidung.Text;
             string query = "select MaNV,TenHienThi from Nhanvien where TenDangNhap = '" + tk + "'";
+            
             if (!string.IsNullOrEmpty(lblNguoidung.Text))
             {
                 DataTable dt = DataProvider.Instance.ExecuteQuery(query);
                 lblManv.Text = dt.Rows[0]["MaNV"].ToString();
                 lblTennv.Text = dt.Rows[0]["TenHienThi"].ToString();
+                
             }
         }
+
+
         private void Phanquyen()
         {
             string Name = lblNguoidung.Text;
@@ -58,22 +54,20 @@ namespace WindowsFormsApp
             {
 
             }
-            else if (lblQuyen.Text == "Thủ kho")
+            else if (lblQuyen.Text == "Nhân viên")
             {
-                btnTrangChu.Enabled = false;
-                btnKhachHang.Enabled = false;
+
+                btnKhuyenMai.Enabled = false;
                 btnNhanVien.Enabled = false;
                 btnThongKe.Enabled = false;
-                btnBanHang.Enabled = false;
-            }
-            else if (lblQuyen.Text == "Bán hàng")
-            {
                 btnNhanVien.Enabled = false;
                 btnThongKe.Enabled = false;
                 btnKhoHang.Enabled = false;
                 btnNCC.Enabled = false;
-            }
+                btnNhapHang.Enabled = false;
 
+            }
+           
         }
 
         private void themUC(Control uc)
@@ -100,55 +94,48 @@ namespace WindowsFormsApp
 
         private void lblNguoidung_Click(object sender, EventArgs e)
         {
-            FormDoiMatKhauMoi f = new FormDoiMatKhauMoi(lblTentk.Text);
-            f.Show();
+            FormThongTinNhanVien formThongTinNhanVien = new FormThongTinNhanVien(lblNguoidung.Text);
+            formThongTinNhanVien.Show();
         }
 
         private void btnTrangChu_Click_1(object sender, EventArgs e)
         {
-            movesidePannel(btnTrangChu);
             UC_TrangChu tc = new UC_TrangChu();
             addControlsToPanel(tc);
         }
 
         private void btnKhachHang_Click_1(object sender, EventArgs e)
         {
-            movesidePannel(btnKhachHang);
             UC_KhachHang kh = new UC_KhachHang();
             addControlsToPanel(kh);
         }
 
         private void btnNhanVien_Click_1(object sender, EventArgs e)
         {
-            movesidePannel(btnNhanVien);
             UC_NhanVien nv = new UC_NhanVien();
             addControlsToPanel(nv);
         }
 
         private void btnNCC_Click_1(object sender, EventArgs e)
         {
-            movesidePannel(btnNCC);
             UC_NhaCungCap ncc = new UC_NhaCungCap();
             addControlsToPanel(ncc);
         }
 
         private void btnKhoHang_Click_1(object sender, EventArgs e)
         {
-            movesidePannel(btnKhoHang);
             UC_KhoHang kh = new UC_KhoHang(lblManv.Text, lblTennv.Text);
             addControlsToPanel(kh);
         }
 
         private void btnBanHang_Click_1(object sender, EventArgs e)
         {
-            movesidePannel(btnBanHang);
-            UC_BanHang bh = new UC_BanHang(lblManv.Text, lblTennv.Text);
+            UC_BanHang bh = new UC_BanHang(lblManv.Text,lblTennv.Text);  //lblManv.Text, lblTennv.Text
             addControlsToPanel(bh);
         }
 
         private void btnThongKe_Click_1(object sender, EventArgs e)
         {
-            movesidePannel(btnThongKe);
             UC_ThongKe tk = new UC_ThongKe();
             addControlsToPanel(tk);
         }
@@ -159,6 +146,35 @@ namespace WindowsFormsApp
             FormDangNhap dn = new FormDangNhap();
             dn.Show();
             this.Hide();
+        }
+
+        private void btnX_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnKhuyenMai_Click(object sender, EventArgs e)
+        {
+            UC_KhuyenMai uC_KhuyenMai = new UC_KhuyenMai();
+            themUC(uC_KhuyenMai);
+        }
+
+        private void pannelLeft1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNhapHang_Click(object sender, EventArgs e)
+        {
+            //FormNhapHang formNhaphang = new FormNhapHang(luumanv, luutennv);
+            //formNhaphang.Show();
+            UC_NhapHang f = new UC_NhapHang(lblManv.Text,lblTennv.Text);
+            addControlsToPanel(f);
         }
     }
 }
