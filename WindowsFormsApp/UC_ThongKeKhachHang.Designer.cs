@@ -48,7 +48,7 @@ namespace WindowsFormsApp
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(39, 81);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 35);
+            this.label7.Size = new System.Drawing.Size(97, 29);
             this.label7.TabIndex = 20;
             this.label7.Text = "Tìm kiếm:";
             // 
@@ -85,7 +85,8 @@ namespace WindowsFormsApp
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(3, 0);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1010, 48);
             this.panel2.TabIndex = 185;
@@ -97,7 +98,7 @@ namespace WindowsFormsApp
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(329, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(379, 48);
+            this.label4.Size = new System.Drawing.Size(318, 40);
             this.label4.TabIndex = 226;
             this.label4.Text = "THỐNG KÊ KHÁCH HÀNG";
             // 

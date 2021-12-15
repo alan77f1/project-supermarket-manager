@@ -96,10 +96,9 @@ namespace WindowsFormsApp
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.panel2.Controls.Add(this.label4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1010, 48);
@@ -112,7 +111,7 @@ namespace WindowsFormsApp
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(345, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(338, 48);
+            this.label4.Size = new System.Drawing.Size(284, 40);
             this.label4.TabIndex = 226;
             this.label4.Text = "THỐNG KÊ HÀNG HÓA";
             // 
@@ -193,7 +192,7 @@ namespace WindowsFormsApp
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label15.Location = new System.Drawing.Point(3, 76);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(107, 26);
+            this.label15.Size = new System.Drawing.Size(92, 24);
             this.label15.TabIndex = 261;
             this.label15.Text = "Tìm kiếm:";
             // 

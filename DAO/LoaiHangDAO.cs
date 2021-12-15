@@ -27,7 +27,7 @@ namespace DAO
         public List<LoaiHangDTO> getListLoaiHang()
         {
             List<LoaiHangDTO> list = new List<LoaiHangDTO>();
-            DataTable data = DataProvider.Instance.ExecuteQuery("select * from LoaiHang");
+            DataTable data = DataProvider.Instance.ExecuteQuery("select * from DonViTinh");
             foreach (DataRow item in data.Rows)
             {
                 LoaiHangDTO loaihang = new LoaiHangDTO(item);

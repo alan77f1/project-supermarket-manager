@@ -111,9 +111,10 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             this.panel3.Controls.Add(this.label4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1010, 48);
+            this.panel3.Size = new System.Drawing.Size(990, 48);
             this.panel3.TabIndex = 226;
             // 
             // label4
@@ -123,7 +124,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(330, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(369, 48);
+            this.label4.Size = new System.Drawing.Size(311, 40);
             this.label4.TabIndex = 183;
             this.label4.Text = "QUẢN LÝ NHÀ CUNG CẤP";
             // 
@@ -347,7 +348,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(29, 267);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 29);
+            this.label5.Size = new System.Drawing.Size(106, 25);
             this.label5.TabIndex = 250;
             this.label5.Text = "Tìm Kiếm :";
             // 
@@ -359,7 +360,7 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.Location = new System.Drawing.Point(537, 100);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 29);
+            this.label9.Size = new System.Drawing.Size(87, 25);
             this.label9.TabIndex = 252;
             this.label9.Text = "Địa Chỉ :";
             // 
@@ -371,7 +372,7 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label10.Location = new System.Drawing.Point(21, 206);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(143, 29);
+            this.label10.Size = new System.Drawing.Size(118, 25);
             this.label10.TabIndex = 251;
             this.label10.Text = "Điện Thoại :";
             // 
@@ -383,7 +384,7 @@
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label11.Location = new System.Drawing.Point(29, 100);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(116, 29);
+            this.label11.Size = new System.Drawing.Size(100, 25);
             this.label11.TabIndex = 249;
             this.label11.Text = "Mã NCC :";
             // 
@@ -395,7 +396,7 @@
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label12.Location = new System.Drawing.Point(558, 143);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(80, 29);
+            this.label12.Size = new System.Drawing.Size(66, 25);
             this.label12.TabIndex = 248;
             this.label12.Text = "Email:";
             // 
@@ -407,7 +408,7 @@
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label13.Location = new System.Drawing.Point(32, 156);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(126, 29);
+            this.label13.Size = new System.Drawing.Size(107, 25);
             this.label13.TabIndex = 253;
             this.label13.Text = "Tên NCC :";
             // 

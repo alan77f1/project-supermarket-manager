@@ -257,7 +257,7 @@ namespace WindowsFormsApp
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblEmail.Location = new System.Drawing.Point(703, 274);
+            this.lblEmail.Location = new System.Drawing.Point(696, 283);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(66, 25);
             this.lblEmail.TabIndex = 130;
@@ -359,10 +359,10 @@ namespace WindowsFormsApp
             this.cmbTensp.Font = new System.Drawing.Font("Sitka Banner", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTensp.ForeColor = System.Drawing.Color.Maroon;
             this.cmbTensp.FormattingEnabled = true;
-            this.cmbTensp.Location = new System.Drawing.Point(184, 170);
+            this.cmbTensp.Location = new System.Drawing.Point(175, 158);
             this.cmbTensp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbTensp.Name = "cmbTensp";
-            this.cmbTensp.Size = new System.Drawing.Size(200, 34);
+            this.cmbTensp.Size = new System.Drawing.Size(209, 34);
             this.cmbTensp.TabIndex = 93;
             this.cmbTensp.SelectedIndexChanged += new System.EventHandler(this.cmbTensp_SelectedIndexChanged);
             // 
@@ -420,7 +420,7 @@ namespace WindowsFormsApp
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label18.Location = new System.Drawing.Point(71, 95);
+            this.label18.Location = new System.Drawing.Point(71, 85);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(83, 25);
             this.label18.TabIndex = 253;
@@ -432,7 +432,7 @@ namespace WindowsFormsApp
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label19.Location = new System.Drawing.Point(71, 128);
+            this.label19.Location = new System.Drawing.Point(70, 128);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(83, 25);
             this.label19.TabIndex = 254;
@@ -444,7 +444,7 @@ namespace WindowsFormsApp
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label20.Location = new System.Drawing.Point(64, 174);
+            this.label20.Location = new System.Drawing.Point(63, 167);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(90, 25);
             this.label20.TabIndex = 255;
@@ -456,7 +456,7 @@ namespace WindowsFormsApp
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label21.Location = new System.Drawing.Point(57, 221);
+            this.label21.Location = new System.Drawing.Point(57, 213);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(97, 25);
             this.label21.TabIndex = 256;
@@ -468,7 +468,7 @@ namespace WindowsFormsApp
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label22.Location = new System.Drawing.Point(57, 258);
+            this.label22.Location = new System.Drawing.Point(63, 258);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(91, 25);
             this.label22.TabIndex = 257;
@@ -480,7 +480,7 @@ namespace WindowsFormsApp
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label23.Location = new System.Drawing.Point(57, 305);
+            this.label23.Location = new System.Drawing.Point(64, 305);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(90, 25);
             this.label23.TabIndex = 258;
@@ -504,7 +504,7 @@ namespace WindowsFormsApp
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label25.Location = new System.Drawing.Point(539, 111);
+            this.label25.Location = new System.Drawing.Point(541, 104);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(100, 25);
             this.label25.TabIndex = 260;

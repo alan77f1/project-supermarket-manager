@@ -54,3 +54,11 @@ C:\Users\Nguyen Cong Chi\Documents\supermarket-manager\DTO\obj\Debug\DTO.csproj.
 C:\Users\Nguyen Cong Chi\Documents\supermarket-manager\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Nguyen Cong Chi\Documents\supermarket-manager\DTO\obj\Debug\DTO.dll
 C:\Users\Nguyen Cong Chi\Documents\supermarket-manager\DTO\obj\Debug\DTO.pdb
+C:\Users\buiva\OneDrive\Máy tính\new\supermarket-manager\DTO\bin\Debug\DTO.dll
+C:\Users\buiva\OneDrive\Máy tính\new\supermarket-manager\DTO\bin\Debug\DTO.pdb
+C:\Users\buiva\OneDrive\Máy tính\new\supermarket-manager\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\buiva\OneDrive\Máy tính\new\supermarket-manager\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\buiva\OneDrive\Máy tính\new\supermarket-manager\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+C:\Users\buiva\OneDrive\Máy tính\new\supermarket-manager\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\buiva\OneDrive\Máy tính\new\supermarket-manager\DTO\obj\Debug\DTO.dll
+C:\Users\buiva\OneDrive\Máy tính\new\supermarket-manager\DTO\obj\Debug\DTO.pdb

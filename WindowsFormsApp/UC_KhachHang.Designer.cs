@@ -64,6 +64,7 @@ namespace WindowsFormsApp
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.panel3.Controls.Add(this.label2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1010, 48);
@@ -76,7 +77,7 @@ namespace WindowsFormsApp
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(329, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(390, 48);
+            this.label2.Size = new System.Drawing.Size(328, 40);
             this.label2.TabIndex = 183;
             this.label2.Text = "THÔNG TIN KHÁCH HÀNG";
             // 
@@ -285,7 +286,7 @@ namespace WindowsFormsApp
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.Location = new System.Drawing.Point(13, 276);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(125, 29);
+            this.label9.Size = new System.Drawing.Size(102, 25);
             this.label9.TabIndex = 239;
             this.label9.Text = "Tìm kiếm :";
             // 
@@ -296,7 +297,7 @@ namespace WindowsFormsApp
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label8.Location = new System.Drawing.Point(525, 221);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 29);
+            this.label8.Size = new System.Drawing.Size(71, 25);
             this.label8.TabIndex = 238;
             this.label8.Text = "Email :";
             // 
@@ -307,7 +308,7 @@ namespace WindowsFormsApp
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(512, 148);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 29);
+            this.label5.Size = new System.Drawing.Size(110, 25);
             this.label5.TabIndex = 237;
             this.label5.Text = "Điện thoại :";
             // 
@@ -318,7 +319,7 @@ namespace WindowsFormsApp
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(525, 79);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 29);
+            this.label7.Size = new System.Drawing.Size(82, 25);
             this.label7.TabIndex = 236;
             this.label7.Text = "Địa chỉ :";
             // 
@@ -329,7 +330,7 @@ namespace WindowsFormsApp
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(13, 212);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 29);
+            this.label3.Size = new System.Drawing.Size(93, 25);
             this.label3.TabIndex = 235;
             this.label3.Text = "Giới tính :";
             // 
@@ -340,7 +341,7 @@ namespace WindowsFormsApp
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(13, 150);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 29);
+            this.label1.Size = new System.Drawing.Size(91, 25);
             this.label1.TabIndex = 234;
             this.label1.Text = "Tên KH :";
             // 
@@ -351,7 +352,7 @@ namespace WindowsFormsApp
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(23, 79);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 29);
+            this.label6.Size = new System.Drawing.Size(84, 25);
             this.label6.TabIndex = 233;
             this.label6.Text = "Mã KH :";
             // 
