@@ -138,6 +138,11 @@ namespace WindowsFormsApp
 
         }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnX_Click_1(object sender, EventArgs e)
         {
             Application.Exit();

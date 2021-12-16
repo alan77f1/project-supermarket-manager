@@ -19,6 +19,8 @@ namespace WindowsFormsApp
             InitializeComponent();
             LoadData();
         }
+
+        /*
         void loadBinding()
         {
             txtMaNCC.DataBindings.Add(new Binding("Text", dgvThongTinNCC.DataSource, "MaNCC", true, DataSourceUpdateMode.Never));
@@ -26,12 +28,12 @@ namespace WindowsFormsApp
             txtDiaChi.DataBindings.Add(new Binding("Text", dgvThongTinNCC.DataSource, "DiaChi", true, DataSourceUpdateMode.Never));
             txtSDT.DataBindings.Add(new Binding("Text", dgvThongTinNCC.DataSource, "SDT", true, DataSourceUpdateMode.Never));
             txtEmail.DataBindings.Add(new Binding("Text", dgvThongTinNCC.DataSource, "Email", true, DataSourceUpdateMode.Never));
-        }
+        } */
         void LoadData()
         {
             ClearBinding();
-            dgvThongTinNCC.DataSource = NhaCungCapBUS.Intance.getListNCC();
-            loadBinding();
+            dgvThongkeNCC.DataSource = NhaCungCapBUS.Intance.HienThi();
+            //loadBinding();
         }
 
         void ClearBinding()

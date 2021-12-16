@@ -32,77 +32,17 @@ namespace WindowsFormsApp
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgvThongkepn = new Guna.UI2.WinForms.Guna2DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTimkiemphieunhap = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnXemchitietpn = new System.Windows.Forms.Button();
             this.txtmapn = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvThongkepn)).BeginInit();
+            this.dgvThongkepn = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThongkepn)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvThongkepn
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvThongkepn.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvThongkepn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvThongkepn.BackgroundColor = System.Drawing.Color.White;
-            this.dgvThongkepn.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvThongkepn.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvThongkepn.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvThongkepn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvThongkepn.ColumnHeadersHeight = 35;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvThongkepn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvThongkepn.EnableHeadersVisualStyles = false;
-            this.dgvThongkepn.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvThongkepn.Location = new System.Drawing.Point(21, 139);
-            this.dgvThongkepn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvThongkepn.Name = "dgvThongkepn";
-            this.dgvThongkepn.ReadOnly = true;
-            this.dgvThongkepn.RowHeadersVisible = false;
-            this.dgvThongkepn.RowHeadersWidth = 62;
-            this.dgvThongkepn.RowTemplate.Height = 28;
-            this.dgvThongkepn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvThongkepn.Size = new System.Drawing.Size(967, 353);
-            this.dgvThongkepn.TabIndex = 5;
-            this.dgvThongkepn.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvThongkepn.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvThongkepn.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvThongkepn.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvThongkepn.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvThongkepn.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvThongkepn.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvThongkepn.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.SteelBlue;
-            this.dgvThongkepn.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvThongkepn.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgvThongkepn.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvThongkepn.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvThongkepn.ThemeStyle.HeaderStyle.Height = 35;
-            this.dgvThongkepn.ThemeStyle.ReadOnly = true;
-            this.dgvThongkepn.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvThongkepn.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvThongkepn.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgvThongkepn.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvThongkepn.ThemeStyle.RowsStyle.Height = 28;
-            this.dgvThongkepn.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvThongkepn.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvThongkepn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongkepn_CellContentClick);
             // 
             // label7
             // 
@@ -198,6 +138,7 @@ namespace WindowsFormsApp
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
             this.panel2.Controls.Add(this.label4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1010, 48);
@@ -214,34 +155,104 @@ namespace WindowsFormsApp
             this.label4.TabIndex = 226;
             this.label4.Text = "THỐNG KÊ PHIẾU NHẬP";
             // 
+            // dgvThongkepn
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvThongkepn.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvThongkepn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvThongkepn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvThongkepn.BackgroundColor = System.Drawing.Color.White;
+            this.dgvThongkepn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvThongkepn.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvThongkepn.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvThongkepn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvThongkepn.ColumnHeadersHeight = 35;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvThongkepn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvThongkepn.EnableHeadersVisualStyles = false;
+            this.dgvThongkepn.GridColor = System.Drawing.Color.Black;
+            this.dgvThongkepn.Location = new System.Drawing.Point(21, 127);
+            this.dgvThongkepn.Name = "dgvThongkepn";
+            this.dgvThongkepn.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvThongkepn.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvThongkepn.RowHeadersVisible = false;
+            this.dgvThongkepn.RowHeadersWidth = 62;
+            this.dgvThongkepn.RowTemplate.Height = 30;
+            this.dgvThongkepn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvThongkepn.Size = new System.Drawing.Size(969, 383);
+            this.dgvThongkepn.TabIndex = 262;
+            this.dgvThongkepn.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvThongkepn.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvThongkepn.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvThongkepn.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvThongkepn.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvThongkepn.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvThongkepn.ThemeStyle.GridColor = System.Drawing.Color.Black;
+            this.dgvThongkepn.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.dgvThongkepn.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvThongkepn.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvThongkepn.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvThongkepn.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvThongkepn.ThemeStyle.HeaderStyle.Height = 35;
+            this.dgvThongkepn.ThemeStyle.ReadOnly = true;
+            this.dgvThongkepn.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvThongkepn.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvThongkepn.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvThongkepn.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvThongkepn.ThemeStyle.RowsStyle.Height = 30;
+            this.dgvThongkepn.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvThongkepn.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
             // UC_ThongKePhieuNhap
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.dgvThongkepn);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnXemchitietpn);
             this.Controls.Add(this.txtmapn);
             this.Controls.Add(this.txtTimkiemphieunhap);
-            this.Controls.Add(this.dgvThongkepn);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_ThongKePhieuNhap";
             this.Size = new System.Drawing.Size(1010, 593);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvThongkepn)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThongkepn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2DataGridView dgvThongkepn;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txtTimkiemphieunhap;
         private System.Windows.Forms.Button btnXemchitietpn;
         private Guna.UI2.WinForms.Guna2TextBox txtmapn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvThongkepn;
     }
 }

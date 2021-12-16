@@ -23,12 +23,12 @@ namespace WindowsFormsApp
         {
             DataTable dt = KhachHangBUS.Intance.getListKH();
             dgvThongTinKhachHang.DataSource = dt;
-            loadBinding();
+            //loadBinding();
         }
 
         void loadBinding()
         {
-            txtMaKH.DataBindings.Add(new Binding("Text", dgvThongTinKhachHang.DataSource, "MaKH", true, DataSourceUpdateMode.Never));
+            guna2TextBox1.DataBindings.Add(new Binding("Text", dgvThongTinKhachHang.DataSource, "MaKH", true, DataSourceUpdateMode.Never));
             txtTenKH.DataBindings.Add(new Binding("Text", dgvThongTinKhachHang.DataSource, "TenKH", true, DataSourceUpdateMode.Never));
             txtSDT.DataBindings.Add(new Binding("Text", dgvThongTinKhachHang.DataSource, "SDT", true, DataSourceUpdateMode.Never));
             txtEmail.DataBindings.Add(new Binding("Text", dgvThongTinKhachHang.DataSource, "Email", true, DataSourceUpdateMode.Never));
@@ -37,7 +37,7 @@ namespace WindowsFormsApp
 
         void ClearBinding()
         {
-            txtMaKH.DataBindings.Clear();
+            guna2TextBox1.DataBindings.Clear();
             txtTenKH.DataBindings.Clear();
             txtSDT.DataBindings.Clear();
             txtEmail.DataBindings.Clear();
@@ -64,12 +64,12 @@ namespace WindowsFormsApp
             check = !check;
             if (check == true)
             {
-                txtMaKH.Text = "";
+                guna2TextBox1.Text = "";
                 txtTenKH.Text = "";
                 txtSDT.Text = "";
                 txtEmail.Text = "";
                 txtDiaChi.Text = "";
-                txtMaKH.Enabled = true;
+                guna2TextBox1.Enabled = true;
                 txtTenKH.Enabled = true;
                 txtSDT.Enabled = true;
                 txtEmail.Enabled = true;
@@ -80,19 +80,19 @@ namespace WindowsFormsApp
             else
             {
                 btnThem.Text = "Thêm Mới";
-                txtMaKH.Enabled = false;
+                guna2TextBox1.Enabled = false;
                 txtTenKH.Enabled = false;
                 txtSDT.Enabled = false;
                 txtEmail.Enabled = false;
                 txtDiaChi.Enabled = false;
                 dgvThongTinKhachHang.Enabled = true;
-                if (txtMaKH.Text == "")
+                if (guna2TextBox1.Text == "")
                 {
                     MessageBox.Show("Nhập thiếu thông tin! Vui lòng thử lại");
                 }
                 else
                 {
-                    if (KhachHangBUS.Intance.themKH(txtMaKH.Text, txtTenKH.Text, txtDiaChi.Text, txtSDT.Text, txtEmail.Text))
+                    if (KhachHangBUS.Intance.themKH(guna2TextBox1.Text, txtTenKH.Text, txtDiaChi.Text, txtSDT.Text, txtEmail.Text))
                     {
                         MessageBox.Show("Thêm khách hàng thành công!", "Thông báo");
                         ClearBinding();
@@ -117,12 +117,12 @@ namespace WindowsFormsApp
             }
             else
             {
-                txtMaKH.Enabled = false;
+                guna2TextBox1.Enabled = false;
                 txtTenKH.Enabled = false;
                 txtSDT.Enabled = false;
                 txtEmail.Enabled = false;
                 txtDiaChi.Enabled = false;
-                if (KhachHangBUS.Intance.suaKH(txtMaKH.Text, txtTenKH.Text, txtDiaChi.Text, Convert.ToInt32(txtSDT.Text), txtEmail.Text))
+                if (KhachHangBUS.Intance.suaKH(guna2TextBox1.Text, txtTenKH.Text, txtDiaChi.Text, Convert.ToInt32(txtSDT.Text), txtEmail.Text))
                 {
                     MessageBox.Show("Sửa thành công!", "Thông báo");
                     btnThem.Enabled = true;
@@ -134,7 +134,7 @@ namespace WindowsFormsApp
 
         private void btnXoa_Click_1(object sender, EventArgs e)
         {
-            if (KhachHangBUS.Intance.xoaKH(txtMaKH.Text))
+            if (KhachHangBUS.Intance.xoaKH(guna2TextBox1.Text))
             {
                 MessageBox.Show("Xóa thành công!", "Thông báo");
                 ClearBinding();

@@ -33,12 +33,14 @@ namespace WindowsFormsApp
             this.BoFormDangnhap = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Bopanelchinh = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panelTrangChu = new System.Windows.Forms.Panel();
+            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnDangNhap = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btnDangKy = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.lblCanhbao = new System.Windows.Forms.Label();
+            this.lbQuenMK = new System.Windows.Forms.Label();
             this.chkHienThiMK = new System.Windows.Forms.CheckBox();
             this.txtMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTenDangNhap = new Guna.UI2.WinForms.Guna2TextBox();
@@ -46,22 +48,23 @@ namespace WindowsFormsApp
             this.errMatkhau = new System.Windows.Forms.ErrorProvider(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnX = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.lbQuenMK = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnX = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTrangChu.SuspendLayout();
+            this.guna2GradientPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errtxtTaikhoan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errMatkhau)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
-            this.guna2GradientPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BoFormDangnhap
@@ -77,11 +80,11 @@ namespace WindowsFormsApp
             // panelTrangChu
             // 
             this.panelTrangChu.BackColor = System.Drawing.Color.White;
+            this.panelTrangChu.Controls.Add(this.pictureBox3);
+            this.panelTrangChu.Controls.Add(this.pictureBox2);
+            this.panelTrangChu.Controls.Add(this.pictureBox1);
             this.panelTrangChu.Controls.Add(this.guna2GradientPanel3);
             this.panelTrangChu.Controls.Add(this.btnDangNhap);
-            this.panelTrangChu.Controls.Add(this.panel8);
-            this.panelTrangChu.Controls.Add(this.panel6);
-            this.panelTrangChu.Controls.Add(this.panel3);
             this.panelTrangChu.Controls.Add(this.btnDangKy);
             this.panelTrangChu.Controls.Add(this.label5);
             this.panelTrangChu.Controls.Add(this.lblCanhbao);
@@ -94,6 +97,43 @@ namespace WindowsFormsApp
             this.panelTrangChu.Name = "panelTrangChu";
             this.panelTrangChu.Size = new System.Drawing.Size(502, 537);
             this.panelTrangChu.TabIndex = 7;
+            // 
+            // guna2GradientPanel3
+            // 
+            this.guna2GradientPanel3.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2GradientPanel3.Controls.Add(this.guna2HtmlLabel3);
+            this.guna2GradientPanel3.CustomizableEdges.BottomLeft = false;
+            this.guna2GradientPanel3.CustomizableEdges.BottomRight = false;
+            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+            this.guna2GradientPanel3.ShadowDecoration.Parent = this.guna2GradientPanel3;
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(502, 67);
+            this.guna2GradientPanel3.TabIndex = 215;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(72, 12);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(136, 43);
+            this.guna2HtmlLabel1.TabIndex = 23;
+            this.guna2HtmlLabel1.Text = "ĐĂNG KÝ";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(260, 12);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(159, 43);
+            this.guna2HtmlLabel3.TabIndex = 22;
+            this.guna2HtmlLabel3.Text = " HỆ THỐNG";
             // 
             // btnDangNhap
             // 
@@ -122,30 +162,6 @@ namespace WindowsFormsApp
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click_1);
             // 
-            // panel8
-            // 
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel8.Location = new System.Drawing.Point(286, 355);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(52, 46);
-            this.panel8.TabIndex = 35;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel6.Location = new System.Drawing.Point(227, 355);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(52, 46);
-            this.panel6.TabIndex = 36;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Location = new System.Drawing.Point(169, 355);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(52, 46);
-            this.panel3.TabIndex = 39;
-            // 
             // btnDangKy
             // 
             this.btnDangKy.AutoSize = true;
@@ -158,6 +174,17 @@ namespace WindowsFormsApp
             this.btnDangKy.Text = "Đăng ký";
             this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(66, 418);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(224, 35);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Bạn chưa có tài khoản?\r\n";
+            // 
             // lblCanhbao
             // 
             this.lblCanhbao.AutoSize = true;
@@ -169,6 +196,18 @@ namespace WindowsFormsApp
             this.lblCanhbao.TabIndex = 26;
             this.lblCanhbao.Text = "Vui lòng kiểm tra tài khoản và mật khẩu của bạn";
             this.lblCanhbao.Click += new System.EventHandler(this.lblCanhbao_Click);
+            // 
+            // lbQuenMK
+            // 
+            this.lbQuenMK.AutoSize = true;
+            this.lbQuenMK.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQuenMK.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lbQuenMK.Location = new System.Drawing.Point(78, 453);
+            this.lbQuenMK.Name = "lbQuenMK";
+            this.lbQuenMK.Size = new System.Drawing.Size(201, 35);
+            this.lbQuenMK.TabIndex = 20;
+            this.lbQuenMK.Text = "Bạn quên mật khẩu?";
+            this.lbQuenMK.Click += new System.EventHandler(this.lbQuenMK_Click);
             // 
             // chkHienThiMK
             // 
@@ -273,9 +312,19 @@ namespace WindowsFormsApp
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1150, 733);
             this.guna2GradientPanel1.TabIndex = 8;
             // 
-            // guna2Elipse1
+            // btnX
             // 
-            this.guna2Elipse1.BorderRadius = 20;
+            this.btnX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnX.BackColor = System.Drawing.Color.Gray;
+            this.btnX.FillColor = System.Drawing.Color.White;
+            this.btnX.HoverState.Parent = this.btnX;
+            this.btnX.IconColor = System.Drawing.Color.Black;
+            this.btnX.Location = new System.Drawing.Point(1097, 0);
+            this.btnX.Name = "btnX";
+            this.btnX.ShadowDecoration.Parent = this.btnX;
+            this.btnX.Size = new System.Drawing.Size(53, 43);
+            this.btnX.TabIndex = 109;
+            this.btnX.Click += new System.EventHandler(this.btnX_Click_1);
             // 
             // label1
             // 
@@ -301,6 +350,10 @@ namespace WindowsFormsApp
             this.label2.TabIndex = 108;
             this.label2.Text = "mart";
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 20;
+            // 
             // guna2Elipse2
             // 
             this.guna2Elipse2.BorderRadius = 25;
@@ -311,79 +364,36 @@ namespace WindowsFormsApp
             this.guna2Elipse3.BorderRadius = 25;
             this.guna2Elipse3.TargetControl = this.label2;
             // 
-            // lbQuenMK
+            // pictureBox3
             // 
-            this.lbQuenMK.AutoSize = true;
-            this.lbQuenMK.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbQuenMK.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lbQuenMK.Location = new System.Drawing.Point(78, 453);
-            this.lbQuenMK.Name = "lbQuenMK";
-            this.lbQuenMK.Size = new System.Drawing.Size(201, 35);
-            this.lbQuenMK.TabIndex = 20;
-            this.lbQuenMK.Text = "Bạn quên mật khẩu?";
-            this.lbQuenMK.Click += new System.EventHandler(this.lbQuenMK_Click);
+            this.pictureBox3.Image = global::WindowsFormsApp.Properties.Resources.icons8_instagram_48__1_;
+            this.pictureBox3.Location = new System.Drawing.Point(269, 366);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(33, 36);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 218;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // label5
+            // pictureBox2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(66, 418);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(224, 35);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "Bạn chưa có tài khoản?\r\n";
+            this.pictureBox2.Image = global::WindowsFormsApp.Properties.Resources.icons8_google_48__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(230, 366);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(33, 36);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 217;
+            this.pictureBox2.TabStop = false;
             // 
-            // guna2GradientPanel3
+            // pictureBox1
             // 
-            this.guna2GradientPanel3.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2GradientPanel3.Controls.Add(this.guna2HtmlLabel3);
-            this.guna2GradientPanel3.CustomizableEdges.BottomLeft = false;
-            this.guna2GradientPanel3.CustomizableEdges.BottomRight = false;
-            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(52)))), ((int)(((byte)(88)))));
-            this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
-            this.guna2GradientPanel3.ShadowDecoration.Parent = this.guna2GradientPanel3;
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(502, 67);
-            this.guna2GradientPanel3.TabIndex = 215;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(36, 3);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(167, 52);
-            this.guna2HtmlLabel1.TabIndex = 23;
-            this.guna2HtmlLabel1.Text = "ĐĂNG KÝ";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(220, 3);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(194, 52);
-            this.guna2HtmlLabel3.TabIndex = 22;
-            this.guna2HtmlLabel3.Text = " HỆ THỐNG";
-            // 
-            // btnX
-            // 
-            this.btnX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnX.BackColor = System.Drawing.Color.Gray;
-            this.btnX.FillColor = System.Drawing.Color.White;
-            this.btnX.HoverState.Parent = this.btnX;
-            this.btnX.IconColor = System.Drawing.Color.Black;
-            this.btnX.Location = new System.Drawing.Point(1097, 0);
-            this.btnX.Name = "btnX";
-            this.btnX.ShadowDecoration.Parent = this.btnX;
-            this.btnX.Size = new System.Drawing.Size(53, 43);
-            this.btnX.TabIndex = 109;
-            this.btnX.Click += new System.EventHandler(this.btnX_Click_1);
+            this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources.icons8_facebook_48__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(191, 366);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 216;
+            this.pictureBox1.TabStop = false;
             // 
             // FormDangNhap
             // 
@@ -399,12 +409,15 @@ namespace WindowsFormsApp
             this.Text = "Form1";
             this.panelTrangChu.ResumeLayout(false);
             this.panelTrangChu.PerformLayout();
+            this.guna2GradientPanel3.ResumeLayout(false);
+            this.guna2GradientPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errtxtTaikhoan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errMatkhau)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            this.guna2GradientPanel3.ResumeLayout(false);
-            this.guna2GradientPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -415,9 +428,6 @@ namespace WindowsFormsApp
         private System.Windows.Forms.ErrorProvider errtxtTaikhoan;
         private System.Windows.Forms.ErrorProvider errMatkhau;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label btnDangKy;
         private System.Windows.Forms.Label lblCanhbao;
         private System.Windows.Forms.CheckBox chkHienThiMK;
@@ -437,6 +447,9 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2ControlBox btnX;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
