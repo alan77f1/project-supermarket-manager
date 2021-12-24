@@ -93,12 +93,21 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>CỬA HÀNG THỜI TRANG</Value>
+                    <Value>Coop</Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontSize>15pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                       <Color>Blue</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Mart</Value>
+                    <Style>
+                      <FontFamily>Sitka Banner</FontFamily>
+                      <FontSize>15pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Color>Brown</Color>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -106,9 +115,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Left>0.9675in</Left>
+            <Left>1.42583in</Left>
             <Height>0.31944in</Height>
-            <Width>2.01166in</Width>
+            <Width>0.9561in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -185,7 +194,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>,                                      TP.HCM</Value>
+                    <Value>,                                        TP.HCM</Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>12pt</FontSize>
@@ -231,8 +240,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>1.11584in</Top>
-            <Left>0.89707in</Left>
+            <Top>1.10195in</Top>
+            <Left>0.875in</Left>
             <Height>0.32638in</Height>
             <Width>2.08209in</Width>
             <ZIndex>4</ZIndex>
@@ -347,7 +356,7 @@
                   <TextRun>
                     <Value>=Fields!SDT.Value</Value>
                     <Style>
-                      <FontFamily>Calibri</FontFamily>
+                      <FontFamily>Cambria</FontFamily>
                       <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
@@ -431,8 +440,8 @@
                   <TextRun>
                     <Value>=Fields!NgayTao.Value</Value>
                     <Style>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Cambria</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
@@ -473,8 +482,8 @@
                   <TextRun>
                     <Value>=Fields!MaNV.Value</Value>
                     <Style>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Cambria</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
@@ -531,8 +540,8 @@
                   <TextRun>
                     <Value>=Fields!MaHD.Value</Value>
                     <Style>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Cambria</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
@@ -587,7 +596,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Tiền khách đưa: </Value>
+                    <Value>Tiền khách đưa:  </Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>12pt</FontSize>
@@ -598,7 +607,7 @@
                     <Value>=Parameters!Tienkhachdua.Value</Value>
                     <Style>
                       <FontFamily>Cambria</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                       <Format>#,0.00'VND';(#,0.00'VND')</Format>
                     </Style>
@@ -608,8 +617,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>4.38667in</Top>
-            <Left>0.25917in</Left>
+            <Top>4.16445in</Top>
+            <Left>0.28472in</Left>
             <Height>0.31944in</Height>
             <Width>3.15277in</Width>
             <ZIndex>14</ZIndex>
@@ -630,7 +639,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Tổng tiền: </Value>
+                    <Value>Tổng tiền:  </Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>12pt</FontSize>
@@ -638,12 +647,11 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Sum(Fields!SoLuong.Value*Fields!DonGia.Value,"DataSet1")</Value>
+                    <Value>=Parameters!TongTien.Value</Value>
                     <Style>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Cambria</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
-                      <Format>#,0.00'VND';(#,0.00'VND')</Format>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -651,8 +659,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>4.60889in</Top>
-            <Left>0.25917in</Left>
+            <Top>4.38667in</Top>
+            <Left>0.28472in</Left>
             <Height>0.31944in</Height>
             <Width>3.15277in</Width>
             <ZIndex>15</ZIndex>
@@ -673,7 +681,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Tiền hoàn trả: </Value>
+                    <Value>Tiền hoàn trả:  </Value>
                     <Style>
                       <FontFamily>Sitka Banner</FontFamily>
                       <FontSize>12pt</FontSize>
@@ -683,8 +691,8 @@
                   <TextRun>
                     <Value>=Parameters!Tienhoantra.Value</Value>
                     <Style>
-                      <FontFamily>Calibri</FontFamily>
-                      <FontSize>12pt</FontSize>
+                      <FontFamily>Cambria</FontFamily>
+                      <FontSize>11pt</FontSize>
                       <FontWeight>Normal</FontWeight>
                     </Style>
                   </TextRun>
@@ -693,8 +701,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>4.87972in</Top>
-            <Left>0.25917in</Left>
+            <Top>4.6575in</Top>
+            <Left>0.28472in</Left>
             <Height>0.31944in</Height>
             <Width>3.15277in</Width>
             <ZIndex>16</ZIndex>
@@ -739,7 +747,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>5.2686in</Top>
-            <Left>0.9675in</Left>
+            <Left>1.15277in</Left>
             <Height>0.3125in</Height>
             <Width>1.56249in</Width>
             <ZIndex>18</ZIndex>
@@ -784,6 +792,8 @@
                                 <TextRun>
                                   <Value>Tên mặt hàng</Value>
                                   <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -816,6 +826,8 @@
                                 <TextRun>
                                   <Value>SL</Value>
                                   <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -848,6 +860,8 @@
                                 <TextRun>
                                   <Value>Đơn giá</Value>
                                   <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -880,6 +894,8 @@
                                 <TextRun>
                                   <Value>Thành tiền</Value>
                                   <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -915,8 +931,16 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
+                                  <Value xml:space="preserve">  </Value>
+                                  <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
                                   <Value>=Fields!TenMH.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -946,7 +970,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!SoLuong.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -975,8 +1001,16 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
+                                  <Value xml:space="preserve">   </Value>
+                                  <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
                                   <Value>=Fields!DonGia.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Cambria</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1007,7 +1041,8 @@
                                 <TextRun>
                                   <Value>=Fields!SoLuong.Value*Fields!DonGia.Value</Value>
                                   <Style>
-                                    <Format>#,0.00;(#,0.00)</Format>
+                                    <FontFamily>Cambria</FontFamily>
+                                    <Format>#,0;(#,0)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1062,48 +1097,6 @@
               </Border>
             </Style>
           </Tablix>
-          <Textbox Name="Textbox16">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Đã giảm:  </Value>
-                    <Style>
-                      <FontFamily>Sitka Banner</FontFamily>
-                      <FontSize>12pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>=Parameters!Tiendagiam.Value</Value>
-                    <Style>
-                      <FontFamily>Cambria</FontFamily>
-                      <FontSize>12pt</FontSize>
-                      <FontWeight>Normal</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>4.06723in</Top>
-            <Left>0.28473in</Left>
-            <Height>0.31944in</Height>
-            <Width>3.15277in</Width>
-            <ZIndex>20</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
         </ReportItems>
         <Height>5.85417in</Height>
         <Style />
@@ -1127,7 +1120,7 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="Tiendagiam">
+    <ReportParameter Name="TongTien">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
@@ -1148,9 +1141,9 @@
           <ParameterName>Tienhoantra</ParameterName>
         </CellDefinition>
         <CellDefinition>
-          <ColumnIndex>2</ColumnIndex>
+          <ColumnIndex>3</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>Tiendagiam</ParameterName>
+          <ParameterName>TongTien</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

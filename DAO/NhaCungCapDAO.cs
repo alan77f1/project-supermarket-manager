@@ -36,16 +36,25 @@ namespace DAO
             return list;
         }
 
-        public bool themNCC(NhaCungCapDTO data)
+
+        public DataTable HienThi()
         {
-            string query = String.Format("insert into NhaCungCap(MaNCC, TenNCC, DiaChi, SDT, Email) values ('{0}', N'{1}', N'{2}', N'{3}', N'{4}')", data.MaNCC, data.TenNCC, data.DiaChi, data.SDT, data.Email);
+            string query = "select MaNCC as [Mã nhà cung cấp], TenNCC as [Tên nhà cung cấp], SDT  as [Số điện thoại], DiaChi as [Địa chỉ], Email from NhaCungCap";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            return dt;
+
+        }
+
+        public bool themNCC(string mancc, string tenncc, string diachi, string sdt, string email)
+        {
+            string query = String.Format("insert into NhaCungCap(MaNCC, TenNCC, DiaChi, SDT, Email) values ('{0}', N'{1}', N'{2}', N'{3}', N'{4}')", mancc,tenncc,diachi,sdt,email);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
 
-        public bool suaNCC(NhaCungCapDTO data)
+        public bool suaNCC(string mancc, string tenncc, string diachi, string sdt, string email)
         {
-            string query = String.Format("update NhaCungCap set TenNCC = N'{0}', DiaChi = N'{1}', SDT = {2}, Email = '{3}' where MaNCC = '{4}'", data.TenNCC, data.DiaChi, data.SDT, data.Email, data.MaNCC);
+            string query = String.Format("update NhaCungCap set TenNCC = N'"+tenncc+"', DiaChi = N'"+diachi+"', SDT = '"+sdt+"', Email = '"+email+"' where MaNCC = '"+mancc+"'");
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
@@ -85,17 +94,13 @@ namespace DAO
 
         public DataTable TimKiemNCC(string maPN)
         {
-            string query = "exec usp_timNCC @maPN";
-            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { maPN });
-            return data;
-        }
-
-
-        public DataTable HienThi()
-        {
-            string query = "select MaNCC as [Mã NCC], TenNCC as [Tên NCC], DiaChi as [Địa chỉ], SDT as [Số điện thoại] from NhaCungCap";
+            string query = "select MaNCC as [Mã nhà cung cấp], TenNCC as [Tên nhà cung cấp], SDT  as [Số điện thoại], DiaChi as [Địa chỉ], Email from NhaCungCap where MaNCC like N'%"+maPN+ "%' or TenNCC like N'%" + maPN + "%'";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             return data;
         }
+
+
+
+
     }
 }

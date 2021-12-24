@@ -43,14 +43,16 @@ namespace BUS
             return MatHangDAO.Intance.getListSanPham();
         }
 
+
+        /*
         public MatHangDTO getSP(string maSP)
         {
-            return MatHangDAO.Intance.getSP(maSP);
-        }
+            return MatHangDAO.Intance.get(maSP);
+        } */
 
-        public bool suaHH(string MaHang, string TenHH, int SoLuong, int GiaBan)
+        public bool suaHH(string MaHang, string TenHH, string loai, string GiaBan, string DonVi, string Quayhang)
         {
-            return MatHangDAO.Intance.suaHH(MaHang, TenHH, SoLuong, GiaBan);
+            return MatHangDAO.Intance.suaHH(MaHang, TenHH, loai, GiaBan, DonVi,Quayhang);
         }
 
         public bool kiemtraXoa(string maHang)
@@ -95,6 +97,28 @@ namespace BUS
         public DataTable TimKiemGiaBan(string maMH)
         {
             return MatHangDAO.Intance.TimKiemGiaBan(maMH);
+        }
+
+
+        public DataTable HienThi()
+        {
+            return MatHangDAO.Intance.HienThi();
+        }
+
+
+        public DataTable TimKiemLH(string tk)
+        {
+            return MatHangDAO.Intance.TimKiemLH(tk);
+        }
+
+        public DataTable TimKiemMHTrongKH(string tk)
+        {
+            return MatHangDAO.Intance.TimKiemMHTrongKH(tk);
+        }
+
+        public DataTable TimKiemSL(string tk)
+        {
+            return MatHangDAO.Intance.TimKiemSL(tk);
         }
     }
 }

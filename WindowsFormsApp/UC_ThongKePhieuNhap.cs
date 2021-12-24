@@ -23,40 +23,55 @@ namespace WindowsFormsApp
         private void Hienthi()
         {
             DataTable dt = PhieuNhapBUS.Intance.TKPhieuNhap();
-            dgvThongkepn.DataSource = dt;
+            dgvPN.DataSource = dt;
         }
 
-        private void txtTimkiemphieunhap_TextChanged(object sender, EventArgs e)
-        {
-            string tk = txtTimkiemphieunhap.Text;     
-            if (!string.IsNullOrEmpty(txtTimkiemphieunhap.Text))
-            {
-                DataTable dt = PhieuNhapBUS.Intance.TimKiemPN(tk);
-                dgvThongkepn.DataSource = dt;
-            }
-            else
-                Hienthi();
-        }
-
-
-        private void dgvThongkepn_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int index;
-            index = e.RowIndex;
-            txtmapn.Text = dgvThongkepn.Rows[index].Cells[0].Value.ToString();
-        }
-
-        private void btnXemchitietpn_Click(object sender, EventArgs e)
-        {
-            FormReportThongKe formXemchitietphieunhap = new FormReportThongKe(txtmapn.Text);
-            formXemchitietphieunhap.Show();
-        }
+       
 
         private void btnQuaylai_Click(object sender, EventArgs e)
         {
             UC_ThongKe tk = new UC_ThongKe();
             tk.Show();
             this.Hide();
+        }
+
+
+
+        private string temp;
+        private void dgvPN_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index;
+            index = e.RowIndex;
+            
+            temp = dgvPN.Rows[index].Cells[0].Value.ToString();
+        }
+
+        private void txtTimkiem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void addUC(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(userControl);
+            userControl.BringToFront();
+        }
+
+        private void btnXemchitiet_Click(object sender, EventArgs e)
+        {
+            UC_ReportPhieuNhap f = new UC_ReportPhieuNhap(temp);
+            addUC(f);
+        }
+
+        private void dgvPN_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int index;
+            index = e.RowIndex;
+
+            temp = dgvPN.Rows[index].Cells[0].Value.ToString();
         }
     }
 }

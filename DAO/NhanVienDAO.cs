@@ -41,15 +41,15 @@ namespace DAO
 
         public DataTable getListNV()
         {
-            string query = "select MaNV as [Mã nhân viên],TenHienThi as [Tên nhân viên],GioiTinh as [Giới tính],DiaChi as [Địa chỉ],SDT as [SĐT] ,Quyen as [Chức vụ] from NhanVien";
+            string query = "select MaNV as [Mã nhân viên],TenHienThi as [Tên nhân viên],GioiTinh as [Giới tính],DiaChi as [Địa chỉ],SDT as [Số điện thoại],Quyen as [Chức vụ] from NhanVien";
             return DataProvider.Instance.ExecuteQuery(query);
         }
 
 
 
-        public bool suaNV(string maNV, string tenNV, string DiaChi, string SDT)
+        public bool suaNV(string maNV, string tenNV, string DiaChi, string GioiTinh, string SDT, string quyen)
         {
-            string query = String.Format("update NhanVien set TenHienThi = N'{0}', DiaChi = N'{1}', SDT = {2} where MaNV = '{3}'", tenNV, DiaChi, SDT, maNV);
+            string query = String.Format("update NhanVien set TenHienThi = N'"+tenNV+"', DiaChi = N'"+DiaChi+"', SDT = '"+SDT+"', GioiTinh = N'"+GioiTinh+"', Quyen = N'"+quyen+"' where MaNV = '"+maNV+"'");
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
@@ -63,7 +63,7 @@ namespace DAO
 
         public DataTable TimKiemNV(string name)
         {
-            string query = string.Format("SELECT MaNV,TenHienThi, DiaChi, SDT FROM NhanVien WHERE dbo.GetUnsignString(NhanVien.TenHienThi) LIKE N'%' + dbo.GetUnsignString(N'{0}') + '%'", name);
+            string query = string.Format("select MaNV as [Mã nhân viên],TenHienThi as [Tên nhân viên],GioiTinh as [Giới tính],DiaChi as [Địa chỉ],SDT as [Số điện thoại],Quyen as [Chức vụ] FROM NhanVien WHERE NhanVien.TenHienThi LIKE N'%"+name+"%' or MaNV LIKE '%"+name+"%'");
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             return data;
         }
@@ -81,7 +81,7 @@ namespace DAO
         public bool themNV(string maNV, string tenNV, string Gioitinh, string DiaChi, string SDT, string Tendangnhap, string Matkhau)
         {
 
-            string query = String.Format("insert into NhanVien(MaNV,TenHienThi,GioiTinh,DiaChi,SDT,TenDangNhap,MatKhau) values  ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", maNV, tenNV, Gioitinh, DiaChi, SDT, Tendangnhap, Matkhau);
+            string query = String.Format("insert into NhanVien(MaNV,TenHienThi,GioiTinh,DiaChi,SDT,TenDangNhap,MatKhau) values  ('{0}',N'{1}',N'{2}',N'{3}','{4}','{5}','{6}')", maNV, tenNV, Gioitinh, DiaChi, SDT, Tendangnhap, Matkhau);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
@@ -97,7 +97,7 @@ namespace DAO
 
         public bool capnhatmk1(string mk, string tk)
         {
-            string query = String.Format("update NhanVien set MatKhau = '{0}' where TenDangNhap = '{1}'", mk, tk);
+            string query = String.Format("update NhanVien set MatKhau = '{0}' where SDT = '{1}'", mk, tk);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
@@ -116,7 +116,29 @@ namespace DAO
         }
 
 
+        public DataTable getTTNV(string id)
+        {
+            string query = "SELECT * FROM NhanVien WHERE TenHienThi = N'" + id + "'";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            return dt;
+        }
 
 
+        public bool Loginn(string userName, string passWord)
+        {
+            string query = "SELECT * FROM NhanVien WHERE SDT = '" + userName + "' AND MatKhau = '" + passWord + "'";
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+
+            return result.Rows.Count > 0;
+        }
+
+
+        public DataTable CapLaiMK(string id)
+        {
+            string query = "SELECT SDT FROM NhanVien WHERE SDT = N'" + id + "'";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            return dt;
+        }
     }
 }

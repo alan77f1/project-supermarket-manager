@@ -13,28 +13,16 @@ using DTO;
 namespace WindowsFormsApp
 {
     public partial class UC_KhuyenMai : UserControl
-    {   
-        
+    {
+
         public UC_KhuyenMai()
-        { 
-            InitializeComponent();
-            list = GiamGiaBUS.Intance.getListGiamGia();
-            list1 = MatHangBUS.Intance.getListSanPham();
-            cmbTenmh.DataSource = list1;
-            cmbTenmh.DisplayMember = "TenMH";
-            cmbTenmh.ValueMember = "TenMH";
-            cmbMamh.DataSource = list1;
-            cmbMamh.DisplayMember = "MaMH";
-            cmbMamh.ValueMember = "MaMH";
-            cmbPhantram.DataSource = list;
-            cmbPhantram.DisplayMember = "PhanTram";
-            cmbPhantram.ValueMember = "PhanTram";
-            cmbMaPhantram.DataSource = list;
-            cmbMaPhantram.DisplayMember = "MaGG";
-            cmbMaPhantram.ValueMember = "MaGG";
-          
-            LamMoi();
+        {
+            InitializeComponent();         
             HienThi();
+            cmbTenMH.SelectedIndex = 0;
+            cmbPhanTram.SelectedIndex = 0;
+            cmbLuaChon.SelectedIndex = 0;
+
         }
         List<GiamGiaDTO> list;
         List<MatHangDTO> list1;
@@ -42,9 +30,27 @@ namespace WindowsFormsApp
         private void HienThi()
         {
             DataTable dt = GiamGiaBUS.Intance.Hienthi();
-            dgvGiamGia.DataSource = dt;
+            dgvKM.DataSource = dt;
         }
 
+        private void cmbTenMH_Click(object sender, EventArgs e)
+        {
+            list1 = MatHangBUS.Intance.getListSanPham();
+            cmbTenMH.DataSource = list1;
+            cmbTenMH.DisplayMember = "TenMH";
+            cmbTenMH.ValueMember = "TenMH";
+        }
+
+        private void cmbPhanTram_Click(object sender, EventArgs e)
+        {
+            list = GiamGiaBUS.Intance.getListGiamGia();
+            cmbPhanTram.DataSource = list;
+            cmbPhanTram.DisplayMember = "PhanTram";
+            cmbPhanTram.ValueMember = "PhanTram";
+        }
+
+
+        /*
         private void LamMoi()
         {
             cmbTenmh.SelectedIndex = -1;
@@ -64,31 +70,30 @@ namespace WindowsFormsApp
             dpkNgaykt.Value = Convert.ToDateTime(dgvGiamGia.Rows[indexx].Cells[5].Value);
         }
 
-        private bool CheckData()
+        private void btnSua_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(cmbTenmh.Text))
+
+            if (CheckData() == true)
             {
-                MessageBox.Show("Tên mặt hàng không được trống!", "Thông báo");
-                return false;
-            } else if (string.IsNullOrEmpty(cmbPhantram.Text))
-            {
-                MessageBox.Show("Phần trăm giảm giá không được trống!", "Thông báo");
-                return false;
-            }else if (string.IsNullOrEmpty(cmbMaPhantram.Text))
-            {
-                MessageBox.Show("Mã phần trăm giảm giá không được trống!", "Thông báo");
-                return false;
+                if (dgvGiamGia.SelectedCells.Count > 0)
+                {
+                    int phantram = Convert.ToInt32(cmbPhantram.Text);
+
+                    if (GiamGiaBUS.Intance.suaGiamGia(phantram, cmbMaPhantram.Text))
+                    {
+                        if (GiamGiaBUS.Intance.suaChitietGG(cmbMamh.Text, cmbMaPhantram.Text, dpkNgaybd.Value, dpkNgaykt.Value))
+                        {
+                            MessageBox.Show("Sửa thành công!", "Thông báo");
+                            LamMoi();
+                            HienThi();
+                        }
+                    }
+                }
             }
-
-            return true;
         }
 
-        private void btnLamMoi_Click_1(object sender, EventArgs e)
-        {
-            LamMoi();
-        }
 
-        private void btnThem_Click_1(object sender, EventArgs e)
+        private void btnThem_Click(object sender, EventArgs e)
         {
             if (CheckData() == true)
             {
@@ -100,8 +105,7 @@ namespace WindowsFormsApp
                     if (dpkNgaybd.Value < Ngaykt)
                     {
                         MessageBox.Show("Sản phẩm đang trong thời gian khuyến mãi, Bạn không thể thêm mới!", "Thông báo");
-                    }
-                    else
+                    }else
                     if (GiamGiaBUS.Intance.themChitietGG(cmbMamh.Text, cmbMaPhantram.Text, dpkNgaybd.Value, dpkNgaykt.Value) == true)
                     {
                         MessageBox.Show("Thêm thành công!", "Thông báo");
@@ -123,41 +127,55 @@ namespace WindowsFormsApp
                     else
                         MessageBox.Show("Sản phẩm đã tồn tại!", "Thông báo");
                 }
+                
             }
         }
 
-        private void btnSua_Click_1(object sender, EventArgs e)
+
+
+        private bool CheckData()
         {
-            if (CheckData() == true)
+            if (string.IsNullOrEmpty(cmbTenmh.Text))
             {
-                if (dgvGiamGia.SelectedCells.Count > 0)
-                {
-                    int phantram = Convert.ToInt32(cmbPhantram.Text);
-
-                    if (GiamGiaBUS.Intance.suaGiamGia(phantram, cmbMaPhantram.Text))
-                    {
-                        if (GiamGiaBUS.Intance.suaChitietGG(cmbMamh.Text, cmbMaPhantram.Text, dpkNgaybd.Value, dpkNgaykt.Value))
-                        {
-                            MessageBox.Show("Sửa thành công!", "Thông báo");
-                            LamMoi();
-                            HienThi();
-                        }
-                    }
-                }
+                MessageBox.Show("Tên mặt hàng không được trống!", "Thông báo");
+                return false;
+            } else if (string.IsNullOrEmpty(cmbPhantram.Text))
+            {
+                MessageBox.Show("Phần trăm giảm giá không được trống!", "Thông báo");
+                return false;
+            }else if (string.IsNullOrEmpty(cmbMaPhantram.Text))
+            {
+                MessageBox.Show("Mã phần trăm giảm giá không được trống!", "Thông báo");
+                return false;
             }
+
+            return true;
         }
 
-        private void btnXoa_Click_1(object sender, EventArgs e)
+
+        private void btnXoa_Click(object sender, EventArgs e)
         {
             if (GiamGiaBUS.Intance.xoaGiamGia(cmbMamh.Text, cmbMaPhantram.Text))
             {
                 MessageBox.Show("Xóa thành công!", "Thông báo");
                 LamMoi();
                 HienThi();
-            }
-            else
+            }else
                 MessageBox.Show("Không thể xóa", "Thông báo");
         }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            LamMoi();
+            list = GiamGiaBUS.Intance.getListGiamGia(); 
+            cmbPhantram.DataSource = list;
+            cmbPhantram.DisplayMember = "PhanTram";
+            cmbPhantram.ValueMember = "PhanTram";
+            cmbMaPhantram.DataSource = list;
+            cmbMaPhantram.DisplayMember = "MaGG";
+            cmbMaPhantram.ValueMember = "MaGG";
+        }
+    } */
     }
 }
 

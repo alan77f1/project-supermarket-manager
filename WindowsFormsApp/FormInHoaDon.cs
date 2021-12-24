@@ -18,14 +18,17 @@ namespace WindowsFormsApp
         private string mahd;
         private string Tienkhachdua;
         private string Tienhoantra;
-        private string Tiendagiam;
-        public FormInHoaDon(string mahd, string Tienkhachdua, string Tienhoantra, string Tiendagiam)
+       
+        private string TongTien;
+
+        public FormInHoaDon(string mahd, string Tienkhachdua, string Tienhoantra, string TongTien)
         {
             InitializeComponent();
             this.mahd = mahd;
             this.Tienkhachdua = Tienkhachdua;
             this.Tienhoantra = Tienhoantra;
-            this.Tiendagiam = Tiendagiam;
+           
+            this.TongTien = TongTien;
         }
 
 
@@ -43,8 +46,8 @@ namespace WindowsFormsApp
             ReportParameter[] rptParams = new ReportParameter[]
            {
                 new ReportParameter("Tienkhachdua", Tienkhachdua),
-                new ReportParameter("Tienhoantra", Tienhoantra),
-                new ReportParameter("Tiendagiam", Tiendagiam)
+                new ReportParameter("Tienhoantra", Tienhoantra),              
+                new ReportParameter("TongTien", TongTien)
            };
             this.reportViewer1.LocalReport.SetParameters(rptParams);
             this.reportViewer1.LocalReport.DataSources.Clear();

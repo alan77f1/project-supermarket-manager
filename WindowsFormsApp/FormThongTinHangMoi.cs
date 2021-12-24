@@ -17,16 +17,22 @@ namespace WindowsFormsApp
         public FormThongTinHangMoi()
         {
             InitializeComponent();
-            txtMaHang.Text = Matudong();
-            Lammoi();
-            list1 = LoaiHangBUS.Intance.getListLoaiHang();
-            cmbLoaiHang.DataSource = list1;
-            cmbLoaiHang.DisplayMember = "TenLH";
-            cmbLoaiHang.ValueMember = "MaLH";
-            cmbMaLoaiHang.DataSource = list1;
-            cmbMaLoaiHang.DisplayMember = "MaLH";
+            cmbLoaiHang.SelectedIndex = 0;
+            cmbĐVT.SelectedIndex = 0;
+            txtMaMH.Text = Matudong();
+            cmbQuayhang.SelectedIndex = 0;
         }
         List<LoaiHangDTO> list1;
+
+        private void btnX_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
 
 
@@ -34,14 +40,14 @@ namespace WindowsFormsApp
 
         private void Lammoi()
         {
-            txtTenmh.Text = "";
-            cmbDonvitinh.SelectedIndex = -1;
-            cmbDonvitinh.SelectedIndex = -1;
-            cmbLoaiHang.SelectedIndex = -1;
+            txtTenMH.Text = "Nhập tên mặt hàng";
+            txtTenMH.ForeColor = Color.Silver;
+            cmbLoaiHang.SelectedIndex = 0;
+            cmbĐVT.SelectedIndex = -1;
 
         }
 
-       
+
 
         private string Matudong()
         {
@@ -56,7 +62,7 @@ namespace WindowsFormsApp
             {
                 int k;
                 ma = "SP";
-                k = dt.Rows.Count;
+                k = dt.Rows.Count + 3;
                 k++;
                 if (k < 10)
                 {
@@ -76,50 +82,40 @@ namespace WindowsFormsApp
             return ma;
         }
 
-        
-
-
-        private bool LuuHH(string mh, string tenh, string madv, int sl, int dg, string maLH)
+        private void cmbLoaiHang_Click(object sender, EventArgs e)
         {
-            // Convert datetime to date SQL Server 
-            string query = String.Format(" insert into MatHang (MaMH,TenMH,DonVi,SoLuong,GiaBan,MaLH)  values('{0}',N'{1}',N'{2}','{3}','{4}','{5}')", mh, tenh, madv, sl, dg,maLH);
-            DataProvider.Instance.ExecuteQuery(query);
-            return true;
-        }
-
-        private void cmbLoaiHang_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            list1 = LoaiHangBUS.Intance.getListLoaiHang();
+            cmbLoaiHang.DataSource = list1;
+            cmbLoaiHang.DisplayMember = "TenLH";
+            cmbLoaiHang.ValueMember = "MaLH";
         }
 
 
-
-        private void themUC(Control uc)
-        {
-            uc.Dock = DockStyle.Fill;
-            panel1.Controls.Clear();
-            panel1.Controls.Add(uc);
-            uc.BringToFront();
-        }
-
-        private void btnThemLoaiHang_Click(object sender, EventArgs e)
-        {
-            UC_ThemLoaiHang f = new UC_ThemLoaiHang();
-            themUC(f);
-        }
-
+        string temp2;
+        string temp3;
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtMaHang.Text))
+            DataTable dt = QuayHangBUS.Intance.TimKiemQH(cmbQuayhang.Text);
+            if (dt.Rows.Count > 0)
+            {
+                temp3 = dt.Rows[0]["MaQH"].ToString();
+            }
+
+            DataTable dt1 = DonViTinhBUS.Intance.TimKiemDVT(cmbĐVT.Text);
+            if (dt1.Rows.Count > 0)
+            {
+                temp2 = dt1.Rows[0]["MaDVT"].ToString();
+            }
+            if (string.IsNullOrEmpty(txtMaMH.Text))
             {
                 MessageBox.Show("Tên mặt hàng không được trống");
             }
             else
             {
-                if (LuuHH(txtMaHang.Text, txtTenmh.Text, cmbDonvitinh.Text, 0, 1, cmbMaLoaiHang.Text))
+                if (LuuHH(txtMaMH.Text, txtTenMH.Text, temp2, 0, 1, temp,temp3))
                 {
                     MessageBox.Show("Lưu thông tin hàng thành công");
-                    txtMaHang.Text = Matudong();
+                    txtMaMH.Text = Matudong();
                     Lammoi();
                 }
                 else
@@ -127,7 +123,84 @@ namespace WindowsFormsApp
             }
         }
 
-        private void btnX_Click(object sender, EventArgs e)
+
+
+
+        private bool LuuHH(string mh, string tenh, string madv, int sl, int dg, string maLH,string MaQH)
+        {
+            // Convert datetime to date SQL Server 
+            string query = String.Format(" insert into MatHang (MaMH,TenMH,MaDVT,SoLuong,GiaBan,MaLH,MaQH)  values('{0}',N'{1}',N'{2}','{3}','{4}','{5}','{6}')", mh, tenh, madv, sl, dg, maLH,MaQH);
+            DataProvider.Instance.ExecuteQuery(query);
+            return true;
+        }
+
+
+        private string temp;
+        private void cmbLoaiHang_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+
+            DataTable dt = MatHangBUS.Intance.TimKiemLH(cmbLoaiHang.Text);
+            if (dt.Rows.Count > 0)
+            {
+                temp = dt.Rows[0]["MaLH"].ToString();
+            }
+
+        }
+
+        private void txtTenMH_Click(object sender, EventArgs e)
+        {
+            txtTenMH.Text = "";
+            txtTenMH.ForeColor = Color.Black;
+        }
+
+        private void cmbĐVT_Click(object sender, EventArgs e)
+        {
+            list2 = getListDVT();
+            cmbĐVT.DataSource = list2;
+            cmbĐVT.ValueMember = "MaDVT";
+            cmbĐVT.DisplayMember = "TenDVT";
+        }
+
+
+        public List<DonViTinhDTO> getListDVT()
+        {
+            string query = "select * from DonViTinh";
+            List<DonViTinhDTO> list = new List<DonViTinhDTO>();
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow item in dt.Rows)
+            {
+                DonViTinhDTO product = new DonViTinhDTO(item);
+                list.Add(product);
+            }
+            return list;
+        }
+        List<DonViTinhDTO> list2;
+
+        private void cmbQuayhang_Click(object sender, EventArgs e)
+        {
+            list3 = getListQuayHang();
+            cmbQuayhang.DataSource = list3;
+            cmbQuayhang.ValueMember = "MaQH";
+            cmbQuayhang.DisplayMember = "TenQH";
+        }
+
+
+        public List<QuayHangDTO> getListQuayHang()
+        {
+            string query = "select * from QuayHang";
+            List<QuayHangDTO> list = new List<QuayHangDTO>();
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow item in dt.Rows)
+            {
+                QuayHangDTO product = new QuayHangDTO(item);
+                list.Add(product);
+            }
+            return list;
+        }
+        List<QuayHangDTO> list3;
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
