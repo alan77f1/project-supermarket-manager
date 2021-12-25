@@ -106,7 +106,7 @@
             this.btnSua.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSua.IconSize = 30;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(643, 821);
+            this.btnSua.Location = new System.Drawing.Point(1036, 777);
             this.btnSua.Name = "btnSua";
             this.btnSua.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSua.Size = new System.Drawing.Size(167, 45);
@@ -128,7 +128,7 @@
             this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnXoa.IconSize = 30;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(434, 821);
+            this.btnXoa.Location = new System.Drawing.Point(863, 777);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnXoa.Size = new System.Drawing.Size(167, 45);
@@ -151,7 +151,7 @@
             this.btnThem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnThem.IconSize = 30;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(222, 821);
+            this.btnThem.Location = new System.Drawing.Point(690, 777);
             this.btnThem.Name = "btnThem";
             this.btnThem.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnThem.Size = new System.Drawing.Size(167, 45);
@@ -183,14 +183,14 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(23, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1065, 403);
+            this.panel1.Size = new System.Drawing.Size(1193, 321);
             this.panel1.TabIndex = 224;
             // 
             // txtKH
             // 
             this.txtKH.BorderColor = System.Drawing.Color.Silver;
             this.txtKH.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtKH.DefaultText = "Nhập tên";
+            this.txtKH.DefaultText = "Nhập tên nhà cung cấp";
             this.txtKH.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtKH.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtKH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -202,15 +202,14 @@
             this.txtKH.ForeColor = System.Drawing.Color.Gray;
             this.txtKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtKH.HoverState.Parent = this.txtKH;
-            this.txtKH.Location = new System.Drawing.Point(10, 123);
+            this.txtKH.Location = new System.Drawing.Point(14, 100);
             this.txtKH.Margin = new System.Windows.Forms.Padding(7);
             this.txtKH.Name = "txtKH";
             this.txtKH.PasswordChar = '\0';
             this.txtKH.PlaceholderText = "";
             this.txtKH.SelectedText = "";
-            this.txtKH.SelectionStart = 8;
             this.txtKH.ShadowDecoration.Parent = this.txtKH;
-            this.txtKH.Size = new System.Drawing.Size(1530, 49);
+            this.txtKH.Size = new System.Drawing.Size(1165, 40);
             this.txtKH.TabIndex = 233;
             this.txtKH.Enter += new System.EventHandler(this.txtKH_Enter);
             this.txtKH.Leave += new System.EventHandler(this.txtKH_Leave);
@@ -220,16 +219,16 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.panel4.Controls.Add(this.label1);
             this.panel4.ForeColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(10, 5);
+            this.panel4.Location = new System.Drawing.Point(14, 6);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1536, 49);
+            this.panel4.Size = new System.Drawing.Size(1333, 49);
             this.panel4.TabIndex = 232;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 11);
+            this.label1.Location = new System.Drawing.Point(549, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 22);
             this.label1.TabIndex = 15;
@@ -239,7 +238,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1039, 296);
+            this.label9.Location = new System.Drawing.Point(646, 225);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 29);
             this.label9.TabIndex = 220;
@@ -260,7 +259,7 @@
             this.txtTimkiem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimkiem.HoverState.Parent = this.txtTimkiem;
-            this.txtTimkiem.Location = new System.Drawing.Point(1045, 338);
+            this.txtTimkiem.Location = new System.Drawing.Point(640, 261);
             this.txtTimkiem.Margin = new System.Windows.Forms.Padding(7);
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.PasswordChar = '\0';
@@ -268,7 +267,7 @@
             this.txtTimkiem.SelectedText = "";
             this.txtTimkiem.SelectionStart = 21;
             this.txtTimkiem.ShadowDecoration.Parent = this.txtTimkiem;
-            this.txtTimkiem.Size = new System.Drawing.Size(495, 49);
+            this.txtTimkiem.Size = new System.Drawing.Size(539, 40);
             this.txtTimkiem.TabIndex = 222;
             this.txtTimkiem.TextChanged += new System.EventHandler(this.txtTimkiem_TextChanged);
             this.txtTimkiem.Enter += new System.EventHandler(this.txtTimkiem_Enter);
@@ -290,7 +289,7 @@
             this.txtDiachi.ForeColor = System.Drawing.Color.Gray;
             this.txtDiachi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiachi.HoverState.Parent = this.txtDiachi;
-            this.txtDiachi.Location = new System.Drawing.Point(15, 338);
+            this.txtDiachi.Location = new System.Drawing.Point(14, 261);
             this.txtDiachi.Margin = new System.Windows.Forms.Padding(7);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.PasswordChar = '\0';
@@ -298,7 +297,7 @@
             this.txtDiachi.SelectedText = "";
             this.txtDiachi.SelectionStart = 12;
             this.txtDiachi.ShadowDecoration.Parent = this.txtDiachi;
-            this.txtDiachi.Size = new System.Drawing.Size(1003, 49);
+            this.txtDiachi.Size = new System.Drawing.Size(594, 40);
             this.txtDiachi.TabIndex = 221;
             this.txtDiachi.Enter += new System.EventHandler(this.txtDiachi_Enter);
             this.txtDiachi.Leave += new System.EventHandler(this.txtDiachi_Leave);
@@ -319,7 +318,7 @@
             this.txtEmail.ForeColor = System.Drawing.Color.Gray;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.HoverState.Parent = this.txtEmail;
-            this.txtEmail.Location = new System.Drawing.Point(1045, 231);
+            this.txtEmail.Location = new System.Drawing.Point(640, 178);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(7);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
@@ -327,7 +326,7 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.SelectionStart = 18;
             this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
-            this.txtEmail.Size = new System.Drawing.Size(495, 49);
+            this.txtEmail.Size = new System.Drawing.Size(539, 40);
             this.txtEmail.TabIndex = 221;
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
@@ -348,7 +347,7 @@
             this.txtSĐT.ForeColor = System.Drawing.Color.Gray;
             this.txtSĐT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSĐT.HoverState.Parent = this.txtSĐT;
-            this.txtSĐT.Location = new System.Drawing.Point(538, 231);
+            this.txtSĐT.Location = new System.Drawing.Point(324, 178);
             this.txtSĐT.Margin = new System.Windows.Forms.Padding(7);
             this.txtSĐT.Name = "txtSĐT";
             this.txtSĐT.PasswordChar = '\0';
@@ -356,7 +355,7 @@
             this.txtSĐT.SelectedText = "";
             this.txtSĐT.SelectionStart = 18;
             this.txtSĐT.ShadowDecoration.Parent = this.txtSĐT;
-            this.txtSĐT.Size = new System.Drawing.Size(480, 49);
+            this.txtSĐT.Size = new System.Drawing.Size(284, 40);
             this.txtSĐT.TabIndex = 221;
             this.txtSĐT.Enter += new System.EventHandler(this.txtSĐT_Enter);
             this.txtSĐT.Leave += new System.EventHandler(this.txtSĐT_Leave);
@@ -377,7 +376,7 @@
             this.txtMaKH.ForeColor = System.Drawing.Color.Gray;
             this.txtMaKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaKH.HoverState.Parent = this.txtMaKH;
-            this.txtMaKH.Location = new System.Drawing.Point(10, 231);
+            this.txtMaKH.Location = new System.Drawing.Point(14, 178);
             this.txtMaKH.Margin = new System.Windows.Forms.Padding(7);
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.PasswordChar = '\0';
@@ -386,14 +385,14 @@
             this.txtMaKH.SelectedText = "";
             this.txtMaKH.SelectionStart = 22;
             this.txtMaKH.ShadowDecoration.Parent = this.txtMaKH;
-            this.txtMaKH.Size = new System.Drawing.Size(490, 49);
+            this.txtMaKH.Size = new System.Drawing.Size(282, 40);
             this.txtMaKH.TabIndex = 220;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(9, 296);
+            this.label8.Location = new System.Drawing.Point(13, 225);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(67, 29);
             this.label8.TabIndex = 220;
@@ -404,7 +403,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(662, 189);
+            this.label7.Location = new System.Drawing.Point(427, 147);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(22, 29);
             this.label7.TabIndex = 26;
@@ -414,7 +413,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1039, 189);
+            this.label6.Location = new System.Drawing.Point(645, 147);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 29);
             this.label6.TabIndex = 25;
@@ -424,7 +423,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(532, 189);
+            this.label5.Location = new System.Drawing.Point(319, 147);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(114, 29);
             this.label5.TabIndex = 24;
@@ -434,7 +433,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 189);
+            this.label4.Location = new System.Drawing.Point(13, 147);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(145, 29);
             this.label4.TabIndex = 23;
@@ -445,7 +444,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(171, 81);
+            this.label3.Location = new System.Drawing.Point(164, 64);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(22, 29);
             this.label3.TabIndex = 19;
@@ -455,7 +454,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 81);
+            this.label2.Location = new System.Drawing.Point(9, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(149, 29);
             this.label2.TabIndex = 18;
@@ -473,9 +472,9 @@
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.dgvNCC);
-            this.panel5.Location = new System.Drawing.Point(23, 502);
+            this.panel5.Location = new System.Drawing.Point(23, 404);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(787, 313);
+            this.panel5.Size = new System.Drawing.Size(1193, 356);
             this.panel5.TabIndex = 229;
             // 
             // dgvNCC
@@ -489,7 +488,7 @@
             this.dgvNCC.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -498,7 +497,7 @@
             this.dgvNCC.ColumnHeadersHeight = 45;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -521,7 +520,7 @@
             this.dgvNCC.RowHeadersWidth = 62;
             this.dgvNCC.RowTemplate.Height = 45;
             this.dgvNCC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNCC.Size = new System.Drawing.Size(879, 243);
+            this.dgvNCC.Size = new System.Drawing.Size(1185, 348);
             this.dgvNCC.TabIndex = 228;
             this.dgvNCC.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvNCC.ThemeStyle.AlternatingRowsStyle.Font = null;

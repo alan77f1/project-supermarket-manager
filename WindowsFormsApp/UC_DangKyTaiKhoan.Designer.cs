@@ -54,6 +54,10 @@ namespace WindowsFormsApp
             this.label21 = new System.Windows.Forms.Label();
             this.txtTenDangNhap = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -77,10 +81,6 @@ namespace WindowsFormsApp
             this.btnQuaylai = new FontAwesome.Sharp.IconButton();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnDangKy = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
@@ -518,6 +518,54 @@ namespace WindowsFormsApp
             this.panel2.Size = new System.Drawing.Size(379, 810);
             this.panel2.TabIndex = 323;
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label26.Font = new System.Drawing.Font("Pacifico", 10F);
+            this.label26.ForeColor = System.Drawing.SystemColors.Control;
+            this.label26.Location = new System.Drawing.Point(269, 767);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(56, 32);
+            this.label26.TabIndex = 315;
+            this.label26.Text = "Co.op";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label27.Font = new System.Drawing.Font("Pacifico", 10F);
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.label27.Location = new System.Drawing.Point(320, 767);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(47, 32);
+            this.label27.TabIndex = 316;
+            this.label27.Text = "mart";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label24.Font = new System.Drawing.Font("Pacifico", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.Control;
+            this.label24.Location = new System.Drawing.Point(62, 36);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(138, 80);
+            this.label24.TabIndex = 313;
+            this.label24.Text = "Co.op";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label25.Font = new System.Drawing.Font("Pacifico", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.label25.Location = new System.Drawing.Point(190, 36);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(115, 80);
+            this.label25.TabIndex = 314;
+            this.label25.Text = "mart";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -805,54 +853,7 @@ namespace WindowsFormsApp
             this.btnDangKy.TabIndex = 349;
             this.btnDangKy.Text = "Đăng ký";
             this.btnDangKy.UseTransparentBackground = true;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label24.Font = new System.Drawing.Font("Pacifico", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.Control;
-            this.label24.Location = new System.Drawing.Point(62, 36);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(143, 82);
-            this.label24.TabIndex = 313;
-            this.label24.Text = "Co.op";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label25.Font = new System.Drawing.Font("Pacifico", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.label25.Location = new System.Drawing.Point(190, 36);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(119, 82);
-            this.label25.TabIndex = 314;
-            this.label25.Text = "mart";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label26.Font = new System.Drawing.Font("Pacifico", 10F);
-            this.label26.ForeColor = System.Drawing.SystemColors.Control;
-            this.label26.Location = new System.Drawing.Point(269, 767);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(56, 32);
-            this.label26.TabIndex = 315;
-            this.label26.Text = "Co.op";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label27.Font = new System.Drawing.Font("Pacifico", 10F);
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.label27.Location = new System.Drawing.Point(320, 767);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(47, 32);
-            this.label27.TabIndex = 316;
-            this.label27.Text = "mart";
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click_1);
             // 
             // UC_DangKyTaiKhoan
             // 

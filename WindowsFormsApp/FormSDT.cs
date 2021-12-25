@@ -36,7 +36,6 @@ namespace WindowsFormsApp
             this.Hide();
         }
 
-
         private void addUC(UserControl uc)
         {
             uc.Dock = DockStyle.Fill;
@@ -46,8 +45,19 @@ namespace WindowsFormsApp
         }
 
        
+        private void btnQuaylai_Click(object sender, EventArgs e)
+        {
+            FormLogin F = new FormLogin();
+            F.Show();
+            this.Hide();
+        }
 
-        private void btnTiepTuc_Click_1(object sender, EventArgs e)
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnTiepTuc_Click(object sender, EventArgs e)
         {
             string query = "select SDT as [TenDangNhap] from Nhanvien where SDT = '" + txtSDT.Text + "'";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
@@ -66,23 +76,6 @@ namespace WindowsFormsApp
                 }
 
             }
-        }
-
-        private void btnQuaylai_Click(object sender, EventArgs e)
-        {
-            FormLogin F = new FormLogin();
-            F.Show();
-            this.Hide();
-        }
-
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnTiepTuc_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

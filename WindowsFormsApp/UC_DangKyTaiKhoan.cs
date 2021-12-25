@@ -235,40 +235,33 @@ namespace WindowsFormsApp
             }
         }
 
-        private void btnDangKy_Click(object sender, EventArgs e)
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnDangKy_Click_1(object sender, EventArgs e)
         {
             string query = "select TenDangNhap as [TenDangNhap] from Nhanvien where TenDangnhap = '" + txtTenDangNhap.Text + "'";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-
-
 
             if (check_data() == true)
             {
                 if (dt.Rows.Count > 0)
                 {
-
-                    MessageBox.Show("Tên đăng nhập đã tồn tại","Thông báo");
-
+                    MessageBox.Show("Tên đăng nhập đã tồn tại", "Thông báo");
                 }
                 else
                 {
-
                     if (NhanVienBUS.Intance.themNV(MaNV, txtTennv.Text, cmbGioiTinh.Text, txtDiachi.Text, txtSĐT.Text, txtTenDangNhap.Text, txtMatkhau.Text))
                     {
                         MessageBox.Show("Đăng ký thành công", "Thông báo");
                         LamMoi();
                         MaNV = Matudong();
                     }
-
                     //lblThongbao.Text = "Đăng ký tài khoản thất bại";
-
                 }
             }
-        }
-
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

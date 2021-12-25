@@ -319,5 +319,15 @@ namespace WindowsFormsApp
             txtEmail.ForeColor = Color.Black;
             txtSĐT.ForeColor = Color.Black;
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

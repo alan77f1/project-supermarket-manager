@@ -78,7 +78,7 @@ namespace WindowsFormsApp
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1254, 920);
+            this.panel1.Size = new System.Drawing.Size(1234, 834);
             this.panel1.TabIndex = 0;
             // 
             // btnSua
@@ -93,7 +93,7 @@ namespace WindowsFormsApp
             this.btnSua.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSua.IconSize = 30;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(1083, 868);
+            this.btnSua.Location = new System.Drawing.Point(1052, 692);
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
@@ -115,7 +115,7 @@ namespace WindowsFormsApp
             this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnXoa.IconSize = 30;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(899, 868);
+            this.btnXoa.Location = new System.Drawing.Point(872, 692);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
@@ -138,7 +138,7 @@ namespace WindowsFormsApp
             this.btnThem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnThem.IconSize = 30;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(704, 868);
+            this.btnThem.Location = new System.Drawing.Point(708, 692);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
@@ -176,7 +176,7 @@ namespace WindowsFormsApp
             this.dgvKM.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvKM.EnableHeadersVisualStyles = false;
             this.dgvKM.GridColor = System.Drawing.Color.Gray;
-            this.dgvKM.Location = new System.Drawing.Point(16, 346);
+            this.dgvKM.Location = new System.Drawing.Point(16, 327);
             this.dgvKM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvKM.Name = "dgvKM";
             this.dgvKM.ReadOnly = true;
@@ -192,7 +192,7 @@ namespace WindowsFormsApp
             this.dgvKM.RowHeadersWidth = 62;
             this.dgvKM.RowTemplate.Height = 45;
             this.dgvKM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKM.Size = new System.Drawing.Size(1216, 506);
+            this.dgvKM.Size = new System.Drawing.Size(1197, 351);
             this.dgvKM.TabIndex = 223;
             this.dgvKM.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvKM.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -238,7 +238,7 @@ namespace WindowsFormsApp
             this.panel3.Location = new System.Drawing.Point(19, 59);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1216, 274);
+            this.panel3.Size = new System.Drawing.Size(1194, 253);
             this.panel3.TabIndex = 221;
             // 
             // cmbLuaChon
@@ -260,7 +260,7 @@ namespace WindowsFormsApp
             "Tuần",
             "Thàng"});
             this.cmbLuaChon.ItemsAppearance.Parent = this.cmbLuaChon;
-            this.cmbLuaChon.Location = new System.Drawing.Point(853, 94);
+            this.cmbLuaChon.Location = new System.Drawing.Point(765, 94);
             this.cmbLuaChon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbLuaChon.Name = "cmbLuaChon";
             this.cmbLuaChon.ShadowDecoration.Parent = this.cmbLuaChon;
@@ -271,7 +271,7 @@ namespace WindowsFormsApp
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(848, 64);
+            this.label6.Location = new System.Drawing.Point(760, 63);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 29);
             this.label6.TabIndex = 242;
@@ -282,7 +282,7 @@ namespace WindowsFormsApp
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(548, 161);
+            this.label7.Location = new System.Drawing.Point(548, 149);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(22, 29);
             this.label7.TabIndex = 239;
@@ -293,7 +293,7 @@ namespace WindowsFormsApp
             this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(433, 201);
+            this.dateTimePicker2.Location = new System.Drawing.Point(427, 189);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(287, 29);
@@ -303,7 +303,7 @@ namespace WindowsFormsApp
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(428, 161);
+            this.label8.Location = new System.Drawing.Point(422, 149);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(120, 29);
             this.label8.TabIndex = 240;
@@ -314,7 +314,7 @@ namespace WindowsFormsApp
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(132, 161);
+            this.label5.Location = new System.Drawing.Point(139, 149);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(22, 29);
             this.label5.TabIndex = 236;
@@ -325,7 +325,7 @@ namespace WindowsFormsApp
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(26, 201);
+            this.dateTimePicker1.Location = new System.Drawing.Point(26, 189);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(287, 29);
@@ -335,7 +335,7 @@ namespace WindowsFormsApp
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 161);
+            this.label3.Location = new System.Drawing.Point(21, 149);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 29);
             this.label3.TabIndex = 237;
@@ -346,7 +346,7 @@ namespace WindowsFormsApp
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(619, 64);
+            this.label2.Location = new System.Drawing.Point(580, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(22, 29);
             this.label2.TabIndex = 235;
@@ -360,7 +360,7 @@ namespace WindowsFormsApp
             this.panel4.Location = new System.Drawing.Point(9, 4);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1204, 39);
+            this.panel4.Size = new System.Drawing.Size(1172, 39);
             this.panel4.TabIndex = 234;
             // 
             // label1
@@ -389,7 +389,7 @@ namespace WindowsFormsApp
             this.cmbPhanTram.Items.AddRange(new object[] {
             "----- Chọn phần trăm khuyến mại -----"});
             this.cmbPhanTram.ItemsAppearance.Parent = this.cmbPhanTram;
-            this.cmbPhanTram.Location = new System.Drawing.Point(433, 94);
+            this.cmbPhanTram.Location = new System.Drawing.Point(394, 94);
             this.cmbPhanTram.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbPhanTram.Name = "cmbPhanTram";
             this.cmbPhanTram.ShadowDecoration.Parent = this.cmbPhanTram;
@@ -436,7 +436,7 @@ namespace WindowsFormsApp
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(428, 64);
+            this.label11.Location = new System.Drawing.Point(389, 64);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(189, 29);
             this.label11.TabIndex = 225;
@@ -469,7 +469,7 @@ namespace WindowsFormsApp
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1254, 50);
+            this.panel2.Size = new System.Drawing.Size(1234, 50);
             this.panel2.TabIndex = 220;
             // 
             // lblTk
@@ -489,7 +489,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC_KhuyenMai";
-            this.Size = new System.Drawing.Size(1254, 920);
+            this.Size = new System.Drawing.Size(1234, 834);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKM)).EndInit();
             this.panel3.ResumeLayout(false);
