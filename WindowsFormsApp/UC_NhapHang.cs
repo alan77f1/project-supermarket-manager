@@ -361,6 +361,11 @@ namespace WindowsFormsApp
             cmbLoaihang.ValueMember = "MaLH";
         }
 
+        private void UC_NhapHang_Load(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 

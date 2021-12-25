@@ -89,18 +89,6 @@ namespace WindowsFormsApp
             uc.BringToFront();
         }
 
-        private void btnThongKe_Click(object sender, EventArgs e)
-        {
-
-            Color myRgbColor = new Color();
-            myRgbColor = Color.FromArgb(0, 48, 135);
-            UC_ThongKe _ThongKe = new UC_ThongKe();
-            Phanquyen(_ThongKe, _HienThiQuyen,_HienThiQuyen);         
-            ButtonHide();
-
-            btnThongKe.BackColor = Color.White;
-        }
-
 
       
 
@@ -133,18 +121,6 @@ namespace WindowsFormsApp
 
         }
 
-        private void btnTrangChu_Click(object sender, EventArgs e)
-        {
-
-            Color myRgbColor = new Color();
-            myRgbColor = Color.FromArgb(0, 48, 135);
-            UC_TrangChu _TrangChu = new UC_TrangChu(lblTenNV.Text);
-            addUC(_TrangChu);
-           
-            ButtonHide();
-            btnTrangChu.BackColor = Color.White;
-     
-        }
 
         private void btnBanHang_Click(object sender, EventArgs e)
         {
@@ -157,70 +133,6 @@ namespace WindowsFormsApp
             btnBanHang.BackColor = Color.White;
         }
 
-        private void btnKhachHang_Click(object sender, EventArgs e)
-        {
-            Color myRgbColor = new Color();
-            myRgbColor = Color.FromArgb(0, 48, 135);
-            UC_KhachHang _KhachHang = new UC_KhachHang();
-            Phanquyen(_KhachHang, _HienThiQuyen,_KhachHang);
-
-            ButtonHide();
-            btnKhachHang.BackColor = Color.White;
-   
-        }
-
-
-
-
-        UC_HienThiQuyen _HienThiQuyen = new UC_HienThiQuyen();
-        private void btnNhanVien_Click(object sender, EventArgs e)
-        {
-            Color myRgbColor = new Color();
-            myRgbColor = Color.FromArgb(0, 48, 135);
-            UC_NhanVien _NhanVien = new UC_NhanVien();
-            UC_HienThiQuyen _HienThiQuyen = new UC_HienThiQuyen();
-            Phanquyen(_NhanVien, _HienThiQuyen,_HienThiQuyen);
-
-
-            ButtonHide();
-            btnNhanVien.BackColor = Color.White;
-        
-        }
-
-        private void btnNhaCungCap_Click(object sender, EventArgs e)
-        {
-            Color myRgbColor = new Color();
-            myRgbColor = Color.FromArgb(0, 48, 135);
-            UC_NhaCungCap _NhaCungCap = new UC_NhaCungCap();
-            Phanquyen(_NhaCungCap, _NhaCungCap,_HienThiQuyen);
-
-            ButtonHide();
-            btnNhaCungCap.BackColor = Color.White;
- 
-        }
-
-        private void btnKhoHang_Click(object sender, EventArgs e)
-        {
-            Color myRgbColor = new Color();
-            myRgbColor = Color.FromArgb(0, 48, 135);
-            UC_KhoHang _KhoHang = new UC_KhoHang(lblMaNV.Text,lblTenNV.Text);
-            Phanquyen(_KhoHang, _KhoHang,_HienThiQuyen);
-
-            ButtonHide();
-            btnKhoHang.BackColor = Color.White;
-      
-        }
-
-
-
-        private void btnKhuyenMai_Click(object sender, EventArgs e)
-        {
-            UC_KhuyenMai _KhuyenMai = new UC_KhuyenMai();
-           // Phanquyen(_KhuyenMai, _HienThiQuyen);
-        
-            ButtonHide();
-           
-        }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
@@ -238,6 +150,94 @@ namespace WindowsFormsApp
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnTrangChu_Click_1(object sender, EventArgs e)
+        {
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(0, 48, 135);
+            UC_TrangChu _TrangChu = new UC_TrangChu(lblTenNV.Text);
+            addUC(_TrangChu);
+
+            ButtonHide();
+            btnTrangChu.BackColor = Color.White;
+        }
+
+        private void btnKhachHang_Click_1(object sender, EventArgs e)
+        {
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(0, 48, 135);
+            UC_KhachHang _KhachHang = new UC_KhachHang();
+            Phanquyen(_KhachHang, _HienThiQuyen, _KhachHang);
+
+            ButtonHide();
+            btnKhachHang.BackColor = Color.White;
+        }
+
+        UC_HienThiQuyen _HienThiQuyen = new UC_HienThiQuyen();
+        private void btnBanHang_Click_1(object sender, EventArgs e)
+        {
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(0, 48, 135);
+            UC_BanHang _BanHang = new UC_BanHang(lblMaNV.Text, lblTenNV.Text);
+            Phanquyen(_BanHang, _HienThiQuyen, _BanHang);
+
+            ButtonHide();
+            btnBanHang.BackColor = Color.White;
+        }
+
+        private void btnNhanVien_Click_1(object sender, EventArgs e)
+        {
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(0, 48, 135);
+            UC_NhanVien _NhanVien = new UC_NhanVien();
+            UC_HienThiQuyen _HienThiQuyen = new UC_HienThiQuyen();
+            Phanquyen(_NhanVien, _HienThiQuyen, _HienThiQuyen);
+
+
+            ButtonHide();
+            btnNhanVien.BackColor = Color.White;
+        }
+
+        private void btnKhuyenMai_Click_1(object sender, EventArgs e)
+        {
+            UC_KhuyenMai _KhuyenMai = new UC_KhuyenMai();
+            // Phanquyen(_KhuyenMai, _HienThiQuyen);
+
+            ButtonHide();
+        }
+
+        private void btnNhaCungCap_Click_1(object sender, EventArgs e)
+        {
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(0, 48, 135);
+            UC_NhaCungCap _NhaCungCap = new UC_NhaCungCap();
+            Phanquyen(_NhaCungCap, _NhaCungCap, _HienThiQuyen);
+
+            ButtonHide();
+            btnNhaCungCap.BackColor = Color.White;
+        }
+
+        private void btnKhoHang_Click_1(object sender, EventArgs e)
+        {
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(0, 48, 135);
+            UC_KhoHang _KhoHang = new UC_KhoHang(lblMaNV.Text, lblTenNV.Text);
+            Phanquyen(_KhoHang, _KhoHang, _HienThiQuyen);
+
+            ButtonHide();
+            btnKhoHang.BackColor = Color.White;
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(0, 48, 135);
+            UC_ThongKe _ThongKe = new UC_ThongKe();
+            Phanquyen(_ThongKe, _HienThiQuyen, _HienThiQuyen);
+            ButtonHide();
+
+            btnThongKe.BackColor = Color.White;
         }
     }
 }

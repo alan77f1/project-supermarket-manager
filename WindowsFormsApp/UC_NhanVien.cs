@@ -283,5 +283,15 @@ namespace WindowsFormsApp
             cmbGioiTinh.ForeColor = Color.Black;
             cmbChucVu.ForeColor = Color.Black;
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

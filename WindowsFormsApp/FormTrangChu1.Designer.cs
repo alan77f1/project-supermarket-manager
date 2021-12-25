@@ -34,27 +34,27 @@ namespace WindowsFormsApp
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerTime = new System.Windows.Forms.Timer(this.components);
             this.pannelLeft1 = new System.Windows.Forms.Panel();
-            this.panelLeft = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnTrangChu = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnBanHang = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnNhanVien = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnKhuyenMai = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnNhaCungCap = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnKhoHang = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.panelLeft = new System.Windows.Forms.Panel();
             this.btnThongKe = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnKhachHang = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblQuyen = new System.Windows.Forms.Label();
+            this.lblTenNV = new System.Windows.Forms.Label();
+            this.btnKhoHang = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblMaNV = new System.Windows.Forms.Label();
+            this.btnNhaCungCap = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnKhuyenMai = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnNhanVien = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnBanHang = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnTrangChu = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTime = new System.Windows.Forms.Label();
-            this.lblQuyen = new System.Windows.Forms.Label();
-            this.lblMaNV = new System.Windows.Forms.Label();
-            this.lblTenNV = new System.Windows.Forms.Label();
-            this.btnKhachHang = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pannelLeft1.SuspendLayout();
             this.panelLeft.SuspendLayout();
@@ -81,94 +81,24 @@ namespace WindowsFormsApp
             this.pannelLeft1.Size = new System.Drawing.Size(266, 116);
             this.pannelLeft1.TabIndex = 0;
             // 
-            // panelLeft
+            // iconButton4
             // 
-            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.panelLeft.Controls.Add(this.btnThongKe);
-            this.panelLeft.Controls.Add(this.btnKhachHang);
-            this.panelLeft.Controls.Add(this.lblQuyen);
-            this.panelLeft.Controls.Add(this.lblTenNV);
-            this.panelLeft.Controls.Add(this.btnKhoHang);
-            this.panelLeft.Controls.Add(this.lblMaNV);
-            this.panelLeft.Controls.Add(this.btnNhaCungCap);
-            this.panelLeft.Controls.Add(this.btnKhuyenMai);
-            this.panelLeft.Controls.Add(this.btnNhanVien);
-            this.panelLeft.Controls.Add(this.btnBanHang);
-            this.panelLeft.Controls.Add(this.label4);
-            this.panelLeft.Controls.Add(this.btnTrangChu);
-            this.panelLeft.Controls.Add(this.label1);
-            this.panelLeft.Controls.Add(this.label2);
-            this.panelLeft.Controls.Add(this.pannelLeft1);
-            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft.Location = new System.Drawing.Point(0, 0);
-            this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(266, 882);
-            this.panelLeft.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(98, 786);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 23);
-            this.label4.TabIndex = 49;
-            this.label4.Text = "Địa Chỉ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(52, 858);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 23);
-            this.label1.TabIndex = 38;
-            this.label1.Text = "Hotline : 19001508";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(33, 821);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(216, 23);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "72 Tăng Phú, Quận 9, HCM";
-            // 
-            // btnTrangChu
-            // 
-            this.btnTrangChu.Animated = true;
-            this.btnTrangChu.AutoRoundedCorners = true;
-            this.btnTrangChu.BackColor = System.Drawing.Color.Transparent;
-            this.btnTrangChu.BorderRadius = 33;
-            this.btnTrangChu.CheckedState.Parent = this.btnTrangChu;
-            this.btnTrangChu.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnTrangChu.CustomImages.Parent = this.btnTrangChu;
-            this.btnTrangChu.CustomizableEdges.BottomRight = false;
-            this.btnTrangChu.CustomizableEdges.TopRight = false;
-            this.btnTrangChu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTrangChu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTrangChu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTrangChu.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTrangChu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTrangChu.DisabledState.Parent = this.btnTrangChu;
-            this.btnTrangChu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnTrangChu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnTrangChu.Font = new System.Drawing.Font("Sitka Banner", 12F);
-            this.btnTrangChu.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnTrangChu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
-            this.btnTrangChu.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnTrangChu.HoverState.Parent = this.btnTrangChu;
-            this.btnTrangChu.Location = new System.Drawing.Point(42, 143);
-            this.btnTrangChu.Name = "btnTrangChu";
-            this.btnTrangChu.ShadowDecoration.Parent = this.btnTrangChu;
-            this.btnTrangChu.Size = new System.Drawing.Size(195, 68);
-            this.btnTrangChu.TabIndex = 33;
-            this.btnTrangChu.Text = "Trang chủ";
-            this.btnTrangChu.UseTransparentBackground = true;
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton4.ForeColor = System.Drawing.Color.White;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Bars;
+            this.iconButton4.IconColor = System.Drawing.Color.White;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.IconSize = 40;
+            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.Location = new System.Drawing.Point(217, 5);
+            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(43, 44);
+            this.iconButton4.TabIndex = 45;
+            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -194,165 +124,29 @@ namespace WindowsFormsApp
             this.label5.TabIndex = 8;
             this.label5.Text = "mart";
             // 
-            // btnBanHang
+            // panelLeft
             // 
-            this.btnBanHang.Animated = true;
-            this.btnBanHang.AutoRoundedCorners = true;
-            this.btnBanHang.BackColor = System.Drawing.Color.Transparent;
-            this.btnBanHang.BorderRadius = 33;
-            this.btnBanHang.CheckedState.Parent = this.btnBanHang;
-            this.btnBanHang.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnBanHang.CustomImages.Parent = this.btnBanHang;
-            this.btnBanHang.CustomizableEdges.BottomRight = false;
-            this.btnBanHang.CustomizableEdges.TopRight = false;
-            this.btnBanHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBanHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBanHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBanHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBanHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBanHang.DisabledState.Parent = this.btnBanHang;
-            this.btnBanHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnBanHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnBanHang.Font = new System.Drawing.Font("Sitka Banner", 12F);
-            this.btnBanHang.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBanHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
-            this.btnBanHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnBanHang.HoverState.Parent = this.btnBanHang;
-            this.btnBanHang.Location = new System.Drawing.Point(42, 293);
-            this.btnBanHang.Name = "btnBanHang";
-            this.btnBanHang.ShadowDecoration.Parent = this.btnBanHang;
-            this.btnBanHang.Size = new System.Drawing.Size(195, 68);
-            this.btnBanHang.TabIndex = 50;
-            this.btnBanHang.Text = "Bán hàng";
-            this.btnBanHang.UseTransparentBackground = true;
-            // 
-            // btnNhanVien
-            // 
-            this.btnNhanVien.Animated = true;
-            this.btnNhanVien.AutoRoundedCorners = true;
-            this.btnNhanVien.BackColor = System.Drawing.Color.Transparent;
-            this.btnNhanVien.BorderRadius = 33;
-            this.btnNhanVien.CheckedState.Parent = this.btnNhanVien;
-            this.btnNhanVien.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnNhanVien.CustomImages.Parent = this.btnNhanVien;
-            this.btnNhanVien.CustomizableEdges.BottomRight = false;
-            this.btnNhanVien.CustomizableEdges.TopRight = false;
-            this.btnNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNhanVien.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNhanVien.DisabledState.Parent = this.btnNhanVien;
-            this.btnNhanVien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnNhanVien.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnNhanVien.Font = new System.Drawing.Font("Sitka Banner", 12F);
-            this.btnNhanVien.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnNhanVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
-            this.btnNhanVien.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnNhanVien.HoverState.Parent = this.btnNhanVien;
-            this.btnNhanVien.Location = new System.Drawing.Point(42, 368);
-            this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.ShadowDecoration.Parent = this.btnNhanVien;
-            this.btnNhanVien.Size = new System.Drawing.Size(195, 68);
-            this.btnNhanVien.TabIndex = 51;
-            this.btnNhanVien.Text = " Nhân viên";
-            this.btnNhanVien.UseTransparentBackground = true;
-            // 
-            // btnKhuyenMai
-            // 
-            this.btnKhuyenMai.Animated = true;
-            this.btnKhuyenMai.AutoRoundedCorners = true;
-            this.btnKhuyenMai.BackColor = System.Drawing.Color.Transparent;
-            this.btnKhuyenMai.BorderRadius = 33;
-            this.btnKhuyenMai.CheckedState.Parent = this.btnKhuyenMai;
-            this.btnKhuyenMai.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnKhuyenMai.CustomImages.Parent = this.btnKhuyenMai;
-            this.btnKhuyenMai.CustomizableEdges.BottomRight = false;
-            this.btnKhuyenMai.CustomizableEdges.TopRight = false;
-            this.btnKhuyenMai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnKhuyenMai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnKhuyenMai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnKhuyenMai.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnKhuyenMai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnKhuyenMai.DisabledState.Parent = this.btnKhuyenMai;
-            this.btnKhuyenMai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnKhuyenMai.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnKhuyenMai.Font = new System.Drawing.Font("Sitka Banner", 12F);
-            this.btnKhuyenMai.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnKhuyenMai.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
-            this.btnKhuyenMai.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnKhuyenMai.HoverState.Parent = this.btnKhuyenMai;
-            this.btnKhuyenMai.Location = new System.Drawing.Point(42, 443);
-            this.btnKhuyenMai.Name = "btnKhuyenMai";
-            this.btnKhuyenMai.ShadowDecoration.Parent = this.btnKhuyenMai;
-            this.btnKhuyenMai.Size = new System.Drawing.Size(195, 68);
-            this.btnKhuyenMai.TabIndex = 52;
-            this.btnKhuyenMai.Text = "    Khuyến mãi";
-            this.btnKhuyenMai.UseTransparentBackground = true;
-            // 
-            // btnNhaCungCap
-            // 
-            this.btnNhaCungCap.Animated = true;
-            this.btnNhaCungCap.AutoRoundedCorners = true;
-            this.btnNhaCungCap.BackColor = System.Drawing.Color.Transparent;
-            this.btnNhaCungCap.BorderRadius = 33;
-            this.btnNhaCungCap.CheckedState.Parent = this.btnNhaCungCap;
-            this.btnNhaCungCap.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnNhaCungCap.CustomImages.Parent = this.btnNhaCungCap;
-            this.btnNhaCungCap.CustomizableEdges.BottomRight = false;
-            this.btnNhaCungCap.CustomizableEdges.TopRight = false;
-            this.btnNhaCungCap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNhaCungCap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNhaCungCap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNhaCungCap.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNhaCungCap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNhaCungCap.DisabledState.Parent = this.btnNhaCungCap;
-            this.btnNhaCungCap.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnNhaCungCap.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnNhaCungCap.Font = new System.Drawing.Font("Sitka Banner", 12F);
-            this.btnNhaCungCap.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnNhaCungCap.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
-            this.btnNhaCungCap.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnNhaCungCap.HoverState.Parent = this.btnNhaCungCap;
-            this.btnNhaCungCap.Location = new System.Drawing.Point(42, 518);
-            this.btnNhaCungCap.Name = "btnNhaCungCap";
-            this.btnNhaCungCap.ShadowDecoration.Parent = this.btnNhaCungCap;
-            this.btnNhaCungCap.Size = new System.Drawing.Size(195, 68);
-            this.btnNhaCungCap.TabIndex = 53;
-            this.btnNhaCungCap.Text = "       Nhà cung cấp";
-            this.btnNhaCungCap.UseTransparentBackground = true;
-            // 
-            // btnKhoHang
-            // 
-            this.btnKhoHang.Animated = true;
-            this.btnKhoHang.AutoRoundedCorners = true;
-            this.btnKhoHang.BackColor = System.Drawing.Color.Transparent;
-            this.btnKhoHang.BorderRadius = 33;
-            this.btnKhoHang.CheckedState.Parent = this.btnKhoHang;
-            this.btnKhoHang.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnKhoHang.CustomImages.Parent = this.btnKhoHang;
-            this.btnKhoHang.CustomizableEdges.BottomRight = false;
-            this.btnKhoHang.CustomizableEdges.TopRight = false;
-            this.btnKhoHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnKhoHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnKhoHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnKhoHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnKhoHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnKhoHang.DisabledState.Parent = this.btnKhoHang;
-            this.btnKhoHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnKhoHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnKhoHang.Font = new System.Drawing.Font("Sitka Banner", 12F);
-            this.btnKhoHang.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnKhoHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
-            this.btnKhoHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnKhoHang.HoverState.Parent = this.btnKhoHang;
-            this.btnKhoHang.Location = new System.Drawing.Point(42, 593);
-            this.btnKhoHang.Name = "btnKhoHang";
-            this.btnKhoHang.ShadowDecoration.Parent = this.btnKhoHang;
-            this.btnKhoHang.Size = new System.Drawing.Size(195, 68);
-            this.btnKhoHang.TabIndex = 54;
-            this.btnKhoHang.Text = "  Kho hàng";
-            this.btnKhoHang.UseTransparentBackground = true;
+            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.panelLeft.Controls.Add(this.btnThongKe);
+            this.panelLeft.Controls.Add(this.btnKhachHang);
+            this.panelLeft.Controls.Add(this.lblQuyen);
+            this.panelLeft.Controls.Add(this.lblTenNV);
+            this.panelLeft.Controls.Add(this.btnKhoHang);
+            this.panelLeft.Controls.Add(this.lblMaNV);
+            this.panelLeft.Controls.Add(this.btnNhaCungCap);
+            this.panelLeft.Controls.Add(this.btnKhuyenMai);
+            this.panelLeft.Controls.Add(this.btnNhanVien);
+            this.panelLeft.Controls.Add(this.btnBanHang);
+            this.panelLeft.Controls.Add(this.label4);
+            this.panelLeft.Controls.Add(this.btnTrangChu);
+            this.panelLeft.Controls.Add(this.label1);
+            this.panelLeft.Controls.Add(this.label2);
+            this.panelLeft.Controls.Add(this.pannelLeft1);
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(266, 882);
+            this.panelLeft.TabIndex = 6;
             // 
             // btnThongKe
             // 
@@ -385,6 +179,304 @@ namespace WindowsFormsApp
             this.btnThongKe.TabIndex = 55;
             this.btnThongKe.Text = "  Thống kê";
             this.btnThongKe.UseTransparentBackground = true;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+            // 
+            // btnKhachHang
+            // 
+            this.btnKhachHang.Animated = true;
+            this.btnKhachHang.AutoRoundedCorners = true;
+            this.btnKhachHang.BackColor = System.Drawing.Color.Transparent;
+            this.btnKhachHang.BorderRadius = 33;
+            this.btnKhachHang.CheckedState.Parent = this.btnKhachHang;
+            this.btnKhachHang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnKhachHang.CustomImages.Parent = this.btnKhachHang;
+            this.btnKhachHang.CustomizableEdges.BottomRight = false;
+            this.btnKhachHang.CustomizableEdges.TopRight = false;
+            this.btnKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKhachHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKhachHang.DisabledState.Parent = this.btnKhachHang;
+            this.btnKhachHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnKhachHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnKhachHang.Font = new System.Drawing.Font("Sitka Banner", 12F);
+            this.btnKhachHang.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnKhachHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnKhachHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnKhachHang.HoverState.Parent = this.btnKhachHang;
+            this.btnKhachHang.Location = new System.Drawing.Point(42, 218);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.ShadowDecoration.Parent = this.btnKhachHang;
+            this.btnKhachHang.Size = new System.Drawing.Size(195, 68);
+            this.btnKhachHang.TabIndex = 59;
+            this.btnKhachHang.Text = "   Khách hàng";
+            this.btnKhachHang.UseTransparentBackground = true;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click_1);
+            // 
+            // lblQuyen
+            // 
+            this.lblQuyen.AutoSize = true;
+            this.lblQuyen.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.lblQuyen.Location = new System.Drawing.Point(29, 791);
+            this.lblQuyen.Name = "lblQuyen";
+            this.lblQuyen.Size = new System.Drawing.Size(46, 16);
+            this.lblQuyen.TabIndex = 58;
+            this.lblQuyen.Text = "label4";
+            // 
+            // lblTenNV
+            // 
+            this.lblTenNV.AutoSize = true;
+            this.lblTenNV.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.lblTenNV.Location = new System.Drawing.Point(29, 749);
+            this.lblTenNV.Name = "lblTenNV";
+            this.lblTenNV.Size = new System.Drawing.Size(46, 16);
+            this.lblTenNV.TabIndex = 56;
+            this.lblTenNV.Text = "label4";
+            // 
+            // btnKhoHang
+            // 
+            this.btnKhoHang.Animated = true;
+            this.btnKhoHang.AutoRoundedCorners = true;
+            this.btnKhoHang.BackColor = System.Drawing.Color.Transparent;
+            this.btnKhoHang.BorderRadius = 33;
+            this.btnKhoHang.CheckedState.Parent = this.btnKhoHang;
+            this.btnKhoHang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnKhoHang.CustomImages.Parent = this.btnKhoHang;
+            this.btnKhoHang.CustomizableEdges.BottomRight = false;
+            this.btnKhoHang.CustomizableEdges.TopRight = false;
+            this.btnKhoHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKhoHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKhoHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKhoHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKhoHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKhoHang.DisabledState.Parent = this.btnKhoHang;
+            this.btnKhoHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnKhoHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnKhoHang.Font = new System.Drawing.Font("Sitka Banner", 12F);
+            this.btnKhoHang.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnKhoHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnKhoHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnKhoHang.HoverState.Parent = this.btnKhoHang;
+            this.btnKhoHang.Location = new System.Drawing.Point(42, 593);
+            this.btnKhoHang.Name = "btnKhoHang";
+            this.btnKhoHang.ShadowDecoration.Parent = this.btnKhoHang;
+            this.btnKhoHang.Size = new System.Drawing.Size(195, 68);
+            this.btnKhoHang.TabIndex = 54;
+            this.btnKhoHang.Text = "  Kho hàng";
+            this.btnKhoHang.UseTransparentBackground = true;
+            this.btnKhoHang.Click += new System.EventHandler(this.btnKhoHang_Click_1);
+            // 
+            // lblMaNV
+            // 
+            this.lblMaNV.AutoSize = true;
+            this.lblMaNV.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.lblMaNV.Location = new System.Drawing.Point(29, 765);
+            this.lblMaNV.Name = "lblMaNV";
+            this.lblMaNV.Size = new System.Drawing.Size(46, 16);
+            this.lblMaNV.TabIndex = 57;
+            this.lblMaNV.Text = "label4";
+            // 
+            // btnNhaCungCap
+            // 
+            this.btnNhaCungCap.Animated = true;
+            this.btnNhaCungCap.AutoRoundedCorners = true;
+            this.btnNhaCungCap.BackColor = System.Drawing.Color.Transparent;
+            this.btnNhaCungCap.BorderRadius = 33;
+            this.btnNhaCungCap.CheckedState.Parent = this.btnNhaCungCap;
+            this.btnNhaCungCap.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnNhaCungCap.CustomImages.Parent = this.btnNhaCungCap;
+            this.btnNhaCungCap.CustomizableEdges.BottomRight = false;
+            this.btnNhaCungCap.CustomizableEdges.TopRight = false;
+            this.btnNhaCungCap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhaCungCap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhaCungCap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNhaCungCap.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNhaCungCap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNhaCungCap.DisabledState.Parent = this.btnNhaCungCap;
+            this.btnNhaCungCap.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnNhaCungCap.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnNhaCungCap.Font = new System.Drawing.Font("Sitka Banner", 12F);
+            this.btnNhaCungCap.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnNhaCungCap.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnNhaCungCap.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnNhaCungCap.HoverState.Parent = this.btnNhaCungCap;
+            this.btnNhaCungCap.Location = new System.Drawing.Point(42, 518);
+            this.btnNhaCungCap.Name = "btnNhaCungCap";
+            this.btnNhaCungCap.ShadowDecoration.Parent = this.btnNhaCungCap;
+            this.btnNhaCungCap.Size = new System.Drawing.Size(195, 68);
+            this.btnNhaCungCap.TabIndex = 53;
+            this.btnNhaCungCap.Text = "       Nhà cung cấp";
+            this.btnNhaCungCap.UseTransparentBackground = true;
+            this.btnNhaCungCap.Click += new System.EventHandler(this.btnNhaCungCap_Click_1);
+            // 
+            // btnKhuyenMai
+            // 
+            this.btnKhuyenMai.Animated = true;
+            this.btnKhuyenMai.AutoRoundedCorners = true;
+            this.btnKhuyenMai.BackColor = System.Drawing.Color.Transparent;
+            this.btnKhuyenMai.BorderRadius = 33;
+            this.btnKhuyenMai.CheckedState.Parent = this.btnKhuyenMai;
+            this.btnKhuyenMai.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnKhuyenMai.CustomImages.Parent = this.btnKhuyenMai;
+            this.btnKhuyenMai.CustomizableEdges.BottomRight = false;
+            this.btnKhuyenMai.CustomizableEdges.TopRight = false;
+            this.btnKhuyenMai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKhuyenMai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKhuyenMai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKhuyenMai.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKhuyenMai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKhuyenMai.DisabledState.Parent = this.btnKhuyenMai;
+            this.btnKhuyenMai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnKhuyenMai.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnKhuyenMai.Font = new System.Drawing.Font("Sitka Banner", 12F);
+            this.btnKhuyenMai.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnKhuyenMai.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnKhuyenMai.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnKhuyenMai.HoverState.Parent = this.btnKhuyenMai;
+            this.btnKhuyenMai.Location = new System.Drawing.Point(42, 443);
+            this.btnKhuyenMai.Name = "btnKhuyenMai";
+            this.btnKhuyenMai.ShadowDecoration.Parent = this.btnKhuyenMai;
+            this.btnKhuyenMai.Size = new System.Drawing.Size(195, 68);
+            this.btnKhuyenMai.TabIndex = 52;
+            this.btnKhuyenMai.Text = "    Khuyến mãi";
+            this.btnKhuyenMai.UseTransparentBackground = true;
+            this.btnKhuyenMai.Click += new System.EventHandler(this.btnKhuyenMai_Click_1);
+            // 
+            // btnNhanVien
+            // 
+            this.btnNhanVien.Animated = true;
+            this.btnNhanVien.AutoRoundedCorners = true;
+            this.btnNhanVien.BackColor = System.Drawing.Color.Transparent;
+            this.btnNhanVien.BorderRadius = 33;
+            this.btnNhanVien.CheckedState.Parent = this.btnNhanVien;
+            this.btnNhanVien.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnNhanVien.CustomImages.Parent = this.btnNhanVien;
+            this.btnNhanVien.CustomizableEdges.BottomRight = false;
+            this.btnNhanVien.CustomizableEdges.TopRight = false;
+            this.btnNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNhanVien.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNhanVien.DisabledState.Parent = this.btnNhanVien;
+            this.btnNhanVien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnNhanVien.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnNhanVien.Font = new System.Drawing.Font("Sitka Banner", 12F);
+            this.btnNhanVien.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnNhanVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnNhanVien.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnNhanVien.HoverState.Parent = this.btnNhanVien;
+            this.btnNhanVien.Location = new System.Drawing.Point(42, 368);
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.ShadowDecoration.Parent = this.btnNhanVien;
+            this.btnNhanVien.Size = new System.Drawing.Size(195, 68);
+            this.btnNhanVien.TabIndex = 51;
+            this.btnNhanVien.Text = " Nhân viên";
+            this.btnNhanVien.UseTransparentBackground = true;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click_1);
+            // 
+            // btnBanHang
+            // 
+            this.btnBanHang.Animated = true;
+            this.btnBanHang.AutoRoundedCorners = true;
+            this.btnBanHang.BackColor = System.Drawing.Color.Transparent;
+            this.btnBanHang.BorderRadius = 33;
+            this.btnBanHang.CheckedState.Parent = this.btnBanHang;
+            this.btnBanHang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnBanHang.CustomImages.Parent = this.btnBanHang;
+            this.btnBanHang.CustomizableEdges.BottomRight = false;
+            this.btnBanHang.CustomizableEdges.TopRight = false;
+            this.btnBanHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBanHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBanHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBanHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBanHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBanHang.DisabledState.Parent = this.btnBanHang;
+            this.btnBanHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnBanHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnBanHang.Font = new System.Drawing.Font("Sitka Banner", 12F);
+            this.btnBanHang.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnBanHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnBanHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnBanHang.HoverState.Parent = this.btnBanHang;
+            this.btnBanHang.Location = new System.Drawing.Point(42, 293);
+            this.btnBanHang.Name = "btnBanHang";
+            this.btnBanHang.ShadowDecoration.Parent = this.btnBanHang;
+            this.btnBanHang.Size = new System.Drawing.Size(195, 68);
+            this.btnBanHang.TabIndex = 50;
+            this.btnBanHang.Text = "Bán hàng";
+            this.btnBanHang.UseTransparentBackground = true;
+            this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click_1);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Silver;
+            this.label4.Location = new System.Drawing.Point(98, 786);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 23);
+            this.label4.TabIndex = 49;
+            this.label4.Text = "Địa Chỉ";
+            // 
+            // btnTrangChu
+            // 
+            this.btnTrangChu.Animated = true;
+            this.btnTrangChu.AutoRoundedCorners = true;
+            this.btnTrangChu.BackColor = System.Drawing.Color.Transparent;
+            this.btnTrangChu.BorderRadius = 33;
+            this.btnTrangChu.CheckedState.Parent = this.btnTrangChu;
+            this.btnTrangChu.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnTrangChu.CustomImages.Parent = this.btnTrangChu;
+            this.btnTrangChu.CustomizableEdges.BottomRight = false;
+            this.btnTrangChu.CustomizableEdges.TopRight = false;
+            this.btnTrangChu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTrangChu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTrangChu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTrangChu.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTrangChu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTrangChu.DisabledState.Parent = this.btnTrangChu;
+            this.btnTrangChu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnTrangChu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnTrangChu.Font = new System.Drawing.Font("Sitka Banner", 12F);
+            this.btnTrangChu.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnTrangChu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnTrangChu.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnTrangChu.HoverState.Parent = this.btnTrangChu;
+            this.btnTrangChu.Location = new System.Drawing.Point(42, 143);
+            this.btnTrangChu.Name = "btnTrangChu";
+            this.btnTrangChu.ShadowDecoration.Parent = this.btnTrangChu;
+            this.btnTrangChu.Size = new System.Drawing.Size(195, 68);
+            this.btnTrangChu.TabIndex = 33;
+            this.btnTrangChu.Text = "Trang chủ";
+            this.btnTrangChu.UseTransparentBackground = true;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(52, 858);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(151, 23);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Hotline : 19001508";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Location = new System.Drawing.Point(33, 821);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(216, 23);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "72 Tăng Phú, Quận 9, HCM";
             // 
             // guna2ControlBox1
             // 
@@ -424,90 +516,6 @@ namespace WindowsFormsApp
             this.lblTime.Size = new System.Drawing.Size(190, 45);
             this.lblTime.TabIndex = 5;
             this.lblTime.Text = "HH:MM:SS";
-            // 
-            // lblQuyen
-            // 
-            this.lblQuyen.AutoSize = true;
-            this.lblQuyen.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.lblQuyen.Location = new System.Drawing.Point(29, 791);
-            this.lblQuyen.Name = "lblQuyen";
-            this.lblQuyen.Size = new System.Drawing.Size(46, 16);
-            this.lblQuyen.TabIndex = 58;
-            this.lblQuyen.Text = "label4";
-            // 
-            // lblMaNV
-            // 
-            this.lblMaNV.AutoSize = true;
-            this.lblMaNV.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.lblMaNV.Location = new System.Drawing.Point(29, 765);
-            this.lblMaNV.Name = "lblMaNV";
-            this.lblMaNV.Size = new System.Drawing.Size(46, 16);
-            this.lblMaNV.TabIndex = 57;
-            this.lblMaNV.Text = "label4";
-            // 
-            // lblTenNV
-            // 
-            this.lblTenNV.AutoSize = true;
-            this.lblTenNV.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.lblTenNV.Location = new System.Drawing.Point(29, 749);
-            this.lblTenNV.Name = "lblTenNV";
-            this.lblTenNV.Size = new System.Drawing.Size(46, 16);
-            this.lblTenNV.TabIndex = 56;
-            this.lblTenNV.Text = "label4";
-            // 
-            // btnKhachHang
-            // 
-            this.btnKhachHang.Animated = true;
-            this.btnKhachHang.AutoRoundedCorners = true;
-            this.btnKhachHang.BackColor = System.Drawing.Color.Transparent;
-            this.btnKhachHang.BorderRadius = 33;
-            this.btnKhachHang.CheckedState.Parent = this.btnKhachHang;
-            this.btnKhachHang.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnKhachHang.CustomImages.Parent = this.btnKhachHang;
-            this.btnKhachHang.CustomizableEdges.BottomRight = false;
-            this.btnKhachHang.CustomizableEdges.TopRight = false;
-            this.btnKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnKhachHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnKhachHang.DisabledState.Parent = this.btnKhachHang;
-            this.btnKhachHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnKhachHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnKhachHang.Font = new System.Drawing.Font("Sitka Banner", 12F);
-            this.btnKhachHang.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnKhachHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
-            this.btnKhachHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnKhachHang.HoverState.Parent = this.btnKhachHang;
-            this.btnKhachHang.Location = new System.Drawing.Point(42, 218);
-            this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.ShadowDecoration.Parent = this.btnKhachHang;
-            this.btnKhachHang.Size = new System.Drawing.Size(195, 68);
-            this.btnKhachHang.TabIndex = 59;
-            this.btnKhachHang.Text = "   Khách hàng";
-            this.btnKhachHang.UseTransparentBackground = true;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Bars;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 40;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(217, 5);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(43, 44);
-            this.iconButton4.TabIndex = 45;
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.UseVisualStyleBackColor = true;
             // 
             // bunifuElipse1
             // 

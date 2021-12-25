@@ -62,10 +62,10 @@ namespace WindowsFormsApp
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnThemTT = new Guna.UI2.WinForms.Guna2Button();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.btnXacNhanNhap = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblDiachi = new System.Windows.Forms.Label();
@@ -82,10 +82,12 @@ namespace WindowsFormsApp
             this.lblNhanvIEN = new System.Windows.Forms.Label();
             this.lblTenNV = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -93,17 +95,18 @@ namespace WindowsFormsApp
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.lblTk);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1311, 50);
+            this.panel2.Size = new System.Drawing.Size(1234, 50);
             this.panel2.TabIndex = 220;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Silver;
             this.panel6.Location = new System.Drawing.Point(2, 56);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1308, 1);
             this.panel6.TabIndex = 227;
@@ -146,11 +149,11 @@ namespace WindowsFormsApp
             this.guna2Panel1.Controls.Add(this.lblMaSP);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.lsvNhaphang);
-            this.guna2Panel1.Location = new System.Drawing.Point(10, 61);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Location = new System.Drawing.Point(12, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(819, 651);
+            this.guna2Panel1.Size = new System.Drawing.Size(811, 651);
             this.guna2Panel1.TabIndex = 233;
             // 
             // cmbLoaihang
@@ -171,7 +174,7 @@ namespace WindowsFormsApp
             "----- Chọn loại hàng -----"});
             this.cmbLoaihang.ItemsAppearance.Parent = this.cmbLoaihang;
             this.cmbLoaihang.Location = new System.Drawing.Point(551, 89);
-            this.cmbLoaihang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbLoaihang.Margin = new System.Windows.Forms.Padding(2);
             this.cmbLoaihang.Name = "cmbLoaihang";
             this.cmbLoaihang.ShadowDecoration.Parent = this.cmbLoaihang;
             this.cmbLoaihang.Size = new System.Drawing.Size(249, 36);
@@ -185,7 +188,7 @@ namespace WindowsFormsApp
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(443, 89);
+            this.label1.Location = new System.Drawing.Point(439, 89);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 29);
@@ -419,7 +422,7 @@ namespace WindowsFormsApp
             this.dtpNgayban.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgayban.HoverState.Parent = this.dtpNgayban;
             this.dtpNgayban.Location = new System.Drawing.Point(634, 23);
-            this.dtpNgayban.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpNgayban.Margin = new System.Windows.Forms.Padding(2);
             this.dtpNgayban.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpNgayban.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpNgayban.Name = "dtpNgayban";
@@ -434,7 +437,7 @@ namespace WindowsFormsApp
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(514, 22);
+            this.label11.Location = new System.Drawing.Point(510, 22);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(102, 29);
@@ -460,7 +463,7 @@ namespace WindowsFormsApp
             ""});
             this.cmbTenHang.ItemsAppearance.Parent = this.cmbTenHang;
             this.cmbTenHang.Location = new System.Drawing.Point(119, 110);
-            this.cmbTenHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTenHang.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTenHang.Name = "cmbTenHang";
             this.cmbTenHang.ShadowDecoration.Parent = this.cmbTenHang;
             this.cmbTenHang.Size = new System.Drawing.Size(270, 36);
@@ -473,7 +476,7 @@ namespace WindowsFormsApp
             this.lblMaPN.AutoSize = true;
             this.lblMaPN.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaPN.ForeColor = System.Drawing.Color.Black;
-            this.lblMaPN.Location = new System.Drawing.Point(164, 33);
+            this.lblMaPN.Location = new System.Drawing.Point(160, 33);
             this.lblMaPN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMaPN.Name = "lblMaPN";
             this.lblMaPN.Size = new System.Drawing.Size(60, 20);
@@ -486,7 +489,7 @@ namespace WindowsFormsApp
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(26, 110);
+            this.label4.Location = new System.Drawing.Point(22, 110);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 29);
@@ -499,7 +502,7 @@ namespace WindowsFormsApp
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(26, 24);
+            this.label2.Location = new System.Drawing.Point(22, 24);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 29);
@@ -512,7 +515,7 @@ namespace WindowsFormsApp
             this.lblMaSP.AutoSize = true;
             this.lblMaSP.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaSP.ForeColor = System.Drawing.Color.Black;
-            this.lblMaSP.Location = new System.Drawing.Point(401, -35);
+            this.lblMaSP.Location = new System.Drawing.Point(397, -35);
             this.lblMaSP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMaSP.Name = "lblMaSP";
             this.lblMaSP.Size = new System.Drawing.Size(0, 20);
@@ -524,7 +527,7 @@ namespace WindowsFormsApp
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(244, 26);
+            this.label3.Location = new System.Drawing.Point(240, 26);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 29);
@@ -543,10 +546,10 @@ namespace WindowsFormsApp
             this.lsvNhaphang.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lsvNhaphang.GridLines = true;
             this.lsvNhaphang.HideSelection = false;
-            this.lsvNhaphang.Location = new System.Drawing.Point(8, 308);
-            this.lsvNhaphang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lsvNhaphang.Location = new System.Drawing.Point(10, 322);
+            this.lsvNhaphang.Margin = new System.Windows.Forms.Padding(2);
             this.lsvNhaphang.Name = "lsvNhaphang";
-            this.lsvNhaphang.Size = new System.Drawing.Size(799, 327);
+            this.lsvNhaphang.Size = new System.Drawing.Size(799, 313);
             this.lsvNhaphang.TabIndex = 255;
             this.lsvNhaphang.UseCompatibleStateImageBehavior = false;
             this.lsvNhaphang.View = System.Windows.Forms.View.Details;
@@ -585,8 +588,8 @@ namespace WindowsFormsApp
             this.guna2Panel2.Controls.Add(this.btnXacNhanNhap);
             this.guna2Panel2.Controls.Add(this.guna2Button2);
             this.guna2Panel2.Controls.Add(this.guna2Button1);
-            this.guna2Panel2.Location = new System.Drawing.Point(10, 727);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel2.Location = new System.Drawing.Point(12, 678);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1207, 93);
@@ -607,23 +610,14 @@ namespace WindowsFormsApp
             this.btnThemTT.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemTT.ForeColor = System.Drawing.Color.Black;
             this.btnThemTT.HoverState.Parent = this.btnThemTT;
-            this.btnThemTT.Location = new System.Drawing.Point(588, 12);
-            this.btnThemTT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThemTT.Location = new System.Drawing.Point(458, 12);
+            this.btnThemTT.Margin = new System.Windows.Forms.Padding(2);
             this.btnThemTT.Name = "btnThemTT";
             this.btnThemTT.ShadowDecoration.Parent = this.btnThemTT;
             this.btnThemTT.Size = new System.Drawing.Size(213, 54);
             this.btnThemTT.TabIndex = 238;
             this.btnThemTT.Text = "Thêm thông tin hàng";
             this.btnThemTT.Click += new System.EventHandler(this.btnThemTT_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Silver;
-            this.panel7.Location = new System.Drawing.Point(843, 726);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1, 92);
-            this.panel7.TabIndex = 237;
             // 
             // btnXacNhanNhap
             // 
@@ -641,7 +635,7 @@ namespace WindowsFormsApp
             this.btnXacNhanNhap.ForeColor = System.Drawing.Color.Black;
             this.btnXacNhanNhap.HoverState.Parent = this.btnXacNhanNhap;
             this.btnXacNhanNhap.Location = new System.Drawing.Point(942, 24);
-            this.btnXacNhanNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXacNhanNhap.Margin = new System.Windows.Forms.Padding(2);
             this.btnXacNhanNhap.Name = "btnXacNhanNhap";
             this.btnXacNhanNhap.ShadowDecoration.Parent = this.btnXacNhanNhap;
             this.btnXacNhanNhap.Size = new System.Drawing.Size(207, 54);
@@ -664,8 +658,8 @@ namespace WindowsFormsApp
             this.guna2Button2.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(300, 12);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button2.Location = new System.Drawing.Point(245, 12);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(167, 54);
@@ -689,13 +683,22 @@ namespace WindowsFormsApp
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(46, 12);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(167, 54);
             this.guna2Button1.TabIndex = 234;
             this.guna2Button1.Text = "Thêm hàng";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Silver;
+            this.panel7.Location = new System.Drawing.Point(843, 726);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1, 92);
+            this.panel7.TabIndex = 237;
             // 
             // guna2Panel3
             // 
@@ -717,11 +720,11 @@ namespace WindowsFormsApp
             this.guna2Panel3.Controls.Add(this.lblNhanvIEN);
             this.guna2Panel3.Controls.Add(this.lblTenNV);
             this.guna2Panel3.Controls.Add(this.label13);
-            this.guna2Panel3.Location = new System.Drawing.Point(843, 61);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel3.Location = new System.Drawing.Point(827, 4);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(374, 651);
+            this.guna2Panel3.Size = new System.Drawing.Size(392, 651);
             this.guna2Panel3.TabIndex = 235;
             // 
             // lblEmail
@@ -835,7 +838,7 @@ namespace WindowsFormsApp
             "----- Chọn tên nhà cung cấp -----"});
             this.cmbTenncc.ItemsAppearance.Parent = this.cmbTenncc;
             this.cmbTenncc.Location = new System.Drawing.Point(17, 110);
-            this.cmbTenncc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTenncc.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTenncc.Name = "cmbTenncc";
             this.cmbTenncc.ShadowDecoration.Parent = this.cmbTenncc;
             this.cmbTenncc.Size = new System.Drawing.Size(320, 36);
@@ -871,7 +874,7 @@ namespace WindowsFormsApp
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(184, 613);
+            this.label14.Location = new System.Drawing.Point(193, 613);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(27, 20);
@@ -884,7 +887,7 @@ namespace WindowsFormsApp
             this.lblNhanvIEN.AutoSize = true;
             this.lblNhanvIEN.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNhanvIEN.ForeColor = System.Drawing.Color.Black;
-            this.lblNhanvIEN.Location = new System.Drawing.Point(130, 613);
+            this.lblNhanvIEN.Location = new System.Drawing.Point(139, 613);
             this.lblNhanvIEN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNhanvIEN.Name = "lblNhanvIEN";
             this.lblNhanvIEN.Size = new System.Drawing.Size(49, 20);
@@ -897,7 +900,7 @@ namespace WindowsFormsApp
             this.lblTenNV.AutoSize = true;
             this.lblTenNV.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenNV.ForeColor = System.Drawing.Color.Black;
-            this.lblTenNV.Location = new System.Drawing.Point(215, 606);
+            this.lblTenNV.Location = new System.Drawing.Point(224, 606);
             this.lblTenNV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTenNV.Name = "lblTenNV";
             this.lblTenNV.Size = new System.Drawing.Size(122, 29);
@@ -910,25 +913,35 @@ namespace WindowsFormsApp
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(22, 606);
+            this.label13.Location = new System.Drawing.Point(31, 606);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(112, 29);
             this.label13.TabIndex = 277;
             this.label13.Text = "Người nhập:";
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.guna2Panel2);
+            this.panel3.Controls.Add(this.guna2Panel3);
+            this.panel3.Controls.Add(this.guna2Panel1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 50);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1234, 784);
+            this.panel3.TabIndex = 292;
+            // 
             // UC_NhapHang
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.guna2Panel3);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.guna2Panel2);
-            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_NhapHang";
             this.Size = new System.Drawing.Size(1234, 834);
+            this.Load += new System.EventHandler(this.UC_NhapHang_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
@@ -936,6 +949,7 @@ namespace WindowsFormsApp
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -995,5 +1009,6 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Label lblDiachi;
         private System.Windows.Forms.Label lblSDT;
         private System.Windows.Forms.Label lblMancc;
+        private System.Windows.Forms.Panel panel3;
     }
 }

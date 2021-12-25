@@ -277,7 +277,7 @@
             this.label14.ForeColor = System.Drawing.Color.Red;
             this.label14.Location = new System.Drawing.Point(1161, 305);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(26, 35);
+            this.label14.Size = new System.Drawing.Size(22, 29);
             this.label14.TabIndex = 240;
             this.label14.Text = "*";
             // 
@@ -332,7 +332,7 @@
             this.label13.ForeColor = System.Drawing.Color.Red;
             this.label13.Location = new System.Drawing.Point(131, 305);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(26, 35);
+            this.label13.Size = new System.Drawing.Size(22, 29);
             this.label13.TabIndex = 239;
             this.label13.Text = "*";
             // 
@@ -342,7 +342,7 @@
             this.label8.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(1055, 305);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 35);
+            this.label8.Size = new System.Drawing.Size(96, 29);
             this.label8.TabIndex = 237;
             this.label8.Text = "Quầy hàng";
             // 
@@ -435,7 +435,7 @@
             this.label1.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(14, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 26);
+            this.label1.Size = new System.Drawing.Size(140, 22);
             this.label1.TabIndex = 15;
             this.label1.Text = "Thông tin chung";
             // 
@@ -523,7 +523,7 @@
             this.label12.ForeColor = System.Drawing.Color.Red;
             this.label12.Location = new System.Drawing.Point(603, 305);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(26, 35);
+            this.label12.Size = new System.Drawing.Size(22, 29);
             this.label12.TabIndex = 227;
             this.label12.Text = "*";
             // 
@@ -533,7 +533,7 @@
             this.label11.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(507, 305);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(104, 35);
+            this.label11.Size = new System.Drawing.Size(89, 29);
             this.label11.TabIndex = 225;
             this.label11.Text = "Loại hàng";
             // 
@@ -543,7 +543,7 @@
             this.label10.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(9, 305);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(120, 35);
+            this.label10.Size = new System.Drawing.Size(101, 29);
             this.label10.TabIndex = 223;
             this.label10.Text = "Đơn vị tính";
             // 
@@ -553,7 +553,7 @@
             this.label9.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(1189, 200);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 25);
+            this.label9.Size = new System.Drawing.Size(82, 21);
             this.label9.TabIndex = 220;
             this.label9.Text = "Tìm kiếm";
             // 
@@ -647,7 +647,7 @@
             this.label7.ForeColor = System.Drawing.Color.Red;
             this.label7.Location = new System.Drawing.Point(453, 189);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(26, 35);
+            this.label7.Size = new System.Drawing.Size(22, 29);
             this.label7.TabIndex = 26;
             this.label7.Text = "*";
             // 
@@ -657,7 +657,7 @@
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(775, 189);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 35);
+            this.label6.Size = new System.Drawing.Size(84, 29);
             this.label6.TabIndex = 25;
             this.label6.Text = "Số lượng";
             // 
@@ -667,7 +667,7 @@
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(373, 189);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 35);
+            this.label5.Size = new System.Drawing.Size(72, 29);
             this.label5.TabIndex = 24;
             this.label5.Text = "Giá bán";
             // 
@@ -677,7 +677,7 @@
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(9, 189);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 35);
+            this.label4.Size = new System.Drawing.Size(115, 29);
             this.label4.TabIndex = 23;
             this.label4.Text = "Mã mặt hàng";
             // 
@@ -688,7 +688,7 @@
             this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(131, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 35);
+            this.label3.Size = new System.Drawing.Size(22, 29);
             this.label3.TabIndex = 19;
             this.label3.Text = "*";
             // 
@@ -698,7 +698,7 @@
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(4, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 35);
+            this.label2.Size = new System.Drawing.Size(119, 29);
             this.label2.TabIndex = 18;
             this.label2.Text = "Tên mặt hàng";
             // 
@@ -718,7 +718,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1573, 68);
+            this.panel2.Size = new System.Drawing.Size(1573, 50);
             this.panel2.TabIndex = 220;
             // 
             // panel7
@@ -735,7 +735,7 @@
             this.lblTk.Font = new System.Drawing.Font("Sitka Banner", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTk.Location = new System.Drawing.Point(15, 12);
             this.lblTk.Name = "lblTk";
-            this.lblTk.Size = new System.Drawing.Size(204, 38);
+            this.lblTk.Size = new System.Drawing.Size(173, 32);
             this.lblTk.TabIndex = 14;
             this.lblTk.Text = "Quản lý kho hàng";
             // 
