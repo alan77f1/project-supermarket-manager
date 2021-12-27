@@ -2065,7 +2065,6 @@ C:\Users\buiva\OneDrive\Máy tính\TKCSDL\WindowsFormsApp\obj\Debug\WindowsForms
 C:\Users\buiva\OneDrive\Máy tính\TKCSDL\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_HienThiQuyen.resources
 C:\Users\buiva\OneDrive\Máy tính\TKCSDL\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_KhachHang.resources
 C:\Users\buiva\OneDrive\Máy tính\TKCSDL\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_KhoHang.resources
-C:\Users\buiva\OneDrive\Máy tính\TKCSDL\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_KhuyenMai.resources
 C:\Users\buiva\OneDrive\Máy tính\TKCSDL\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_NhanVien.resources
 C:\Users\buiva\OneDrive\Máy tính\TKCSDL\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_NhapHang.resources
 C:\Users\buiva\OneDrive\Máy tính\TKCSDL\WindowsFormsApp\obj\Debug\WindowsFormsApp.UC_ReportHangTon.resources

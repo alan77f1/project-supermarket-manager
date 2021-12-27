@@ -324,12 +324,6 @@
     <Compile Include="UC_KhoHang.Designer.cs">
       <DependentUpon>UC_KhoHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_KhuyenMai.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_KhuyenMai.Designer.cs">
-      <DependentUpon>UC_KhuyenMai.cs</DependentUpon>
-    </Compile>
     <Compile Include="UC_NhanVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -451,9 +445,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_KhoHang.resx">
       <DependentUpon>UC_KhoHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_KhuyenMai.resx">
-      <DependentUpon>UC_KhuyenMai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_NhanVien.resx">
       <DependentUpon>UC_NhanVien.cs</DependentUpon>

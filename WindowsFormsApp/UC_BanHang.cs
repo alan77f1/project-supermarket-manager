@@ -350,6 +350,16 @@ namespace WindowsFormsApp
             txtTimkiem.ForeColor = Color.Black;
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblGiaban_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void resetInfoProduct()
         {
             lblMahh.Text = "";

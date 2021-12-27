@@ -199,14 +199,6 @@ namespace WindowsFormsApp
             btnNhanVien.BackColor = Color.White;
         }
 
-        private void btnKhuyenMai_Click_1(object sender, EventArgs e)
-        {
-            UC_KhuyenMai _KhuyenMai = new UC_KhuyenMai();
-            // Phanquyen(_KhuyenMai, _HienThiQuyen);
-
-            ButtonHide();
-        }
-
         private void btnNhaCungCap_Click_1(object sender, EventArgs e)
         {
             Color myRgbColor = new Color();

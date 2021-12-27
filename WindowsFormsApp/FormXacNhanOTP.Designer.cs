@@ -56,7 +56,6 @@ namespace WindowsFormsApp
             this.txtSDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnTiepTuc = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -65,6 +64,13 @@ namespace WindowsFormsApp
             this.btnQuaylai = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnXoa = new FontAwesome.Sharp.IconButton();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.btnTiepTuc = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
@@ -77,6 +83,12 @@ namespace WindowsFormsApp
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.panel2.Controls.Add(this.iconButton1);
+            this.panel2.Controls.Add(this.label21);
+            this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.btnXoa);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
@@ -385,7 +397,7 @@ namespace WindowsFormsApp
             this.txtXacNhan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtXacNhan.HoverState.Parent = this.txtXacNhan;
             this.txtXacNhan.Location = new System.Drawing.Point(564, 340);
-            this.txtXacNhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtXacNhan.Margin = new System.Windows.Forms.Padding(4);
             this.txtXacNhan.Name = "txtXacNhan";
             this.txtXacNhan.PasswordChar = '\0';
             this.txtXacNhan.PlaceholderText = "";
@@ -415,7 +427,7 @@ namespace WindowsFormsApp
             this.txtSDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSDT.HoverState.Parent = this.txtSDT;
             this.txtSDT.Location = new System.Drawing.Point(564, 273);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.PasswordChar = '\0';
             this.txtSDT.PlaceholderText = "";
@@ -459,26 +471,6 @@ namespace WindowsFormsApp
             this.guna2GradientButton1.TabIndex = 334;
             this.guna2GradientButton1.Text = "x";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
-            // 
-            // btnTiepTuc
-            // 
-            this.btnTiepTuc.BorderRadius = 9;
-            this.btnTiepTuc.CheckedState.Parent = this.btnTiepTuc;
-            this.btnTiepTuc.CustomImages.Parent = this.btnTiepTuc;
-            this.btnTiepTuc.DisabledState.Parent = this.btnTiepTuc;
-            this.btnTiepTuc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnTiepTuc.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
-            this.btnTiepTuc.FocusedColor = System.Drawing.Color.White;
-            this.btnTiepTuc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTiepTuc.ForeColor = System.Drawing.Color.White;
-            this.btnTiepTuc.HoverState.Parent = this.btnTiepTuc;
-            this.btnTiepTuc.Location = new System.Drawing.Point(708, 421);
-            this.btnTiepTuc.Name = "btnTiepTuc";
-            this.btnTiepTuc.ShadowDecoration.Parent = this.btnTiepTuc;
-            this.btnTiepTuc.Size = new System.Drawing.Size(215, 50);
-            this.btnTiepTuc.TabIndex = 339;
-            this.btnTiepTuc.Text = "Tiếp tục";
-            this.btnTiepTuc.Click += new System.EventHandler(this.btnTiepTuc_Click);
             // 
             // label12
             // 
@@ -573,15 +565,134 @@ namespace WindowsFormsApp
             this.guna2Elipse1.BorderRadius = 15;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // btnXoa
+            // 
+            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.btnXoa.FlatAppearance.BorderSize = 2;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXoa.IconChar = FontAwesome.Sharp.IconChar.HeartBroken;
+            this.btnXoa.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnXoa.IconSize = 50;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(159, 36);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnXoa.Size = new System.Drawing.Size(64, 50);
+            this.btnXoa.TabIndex = 311;
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.Control;
+            this.label16.Location = new System.Drawing.Point(98, 72);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(113, 46);
+            this.label16.TabIndex = 309;
+            this.label16.Text = "Co.op";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.label17.Location = new System.Drawing.Point(202, 75);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(90, 46);
+            this.label17.TabIndex = 310;
+            this.label17.Text = "mart";
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.iconButton1.FlatAppearance.BorderSize = 2;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.HeartBroken;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 20;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(301, 759);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.iconButton1.Size = new System.Drawing.Size(35, 22);
+            this.iconButton1.TabIndex = 323;
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.Control;
+            this.label21.Location = new System.Drawing.Point(279, 773);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(57, 23);
+            this.label21.TabIndex = 321;
+            this.label21.Text = "Co.op";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.label22.Location = new System.Drawing.Point(332, 773);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(46, 23);
+            this.label22.TabIndex = 322;
+            this.label22.Text = "mart";
+            // 
+            // btnTiepTuc
+            // 
+            this.btnTiepTuc.Animated = true;
+            this.btnTiepTuc.AutoRoundedCorners = true;
+            this.btnTiepTuc.BackColor = System.Drawing.Color.Transparent;
+            this.btnTiepTuc.BorderRadius = 27;
+            this.btnTiepTuc.CheckedState.Parent = this.btnTiepTuc;
+            this.btnTiepTuc.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnTiepTuc.CustomImages.Parent = this.btnTiepTuc;
+            this.btnTiepTuc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTiepTuc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTiepTuc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTiepTuc.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTiepTuc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTiepTuc.DisabledState.Parent = this.btnTiepTuc;
+            this.btnTiepTuc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnTiepTuc.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnTiepTuc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnTiepTuc.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnTiepTuc.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnTiepTuc.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnTiepTuc.HoverState.Parent = this.btnTiepTuc;
+            this.btnTiepTuc.Location = new System.Drawing.Point(710, 410);
+            this.btnTiepTuc.Name = "btnTiepTuc";
+            this.btnTiepTuc.ShadowDecoration.Parent = this.btnTiepTuc;
+            this.btnTiepTuc.Size = new System.Drawing.Size(220, 57);
+            this.btnTiepTuc.TabIndex = 350;
+            this.btnTiepTuc.Text = "Tiếp tục";
+            this.btnTiepTuc.UseTransparentBackground = true;
+            this.btnTiepTuc.Click += new System.EventHandler(this.btnTiepTuc_Click_1);
+            // 
             // FormXacNhanOTP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1220, 810);
+            this.Controls.Add(this.btnTiepTuc);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnTiepTuc);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
@@ -641,12 +752,18 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Label label15;
         private FontAwesome.Sharp.IconButton btnQuaylai;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton btnTiepTuc;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel7;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private FontAwesome.Sharp.IconButton btnXoa;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private Guna.UI2.WinForms.Guna2GradientButton btnTiepTuc;
     }
 }

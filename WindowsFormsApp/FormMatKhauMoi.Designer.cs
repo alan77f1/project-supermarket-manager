@@ -31,6 +31,8 @@ namespace WindowsFormsApp
         {
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -65,11 +67,10 @@ namespace WindowsFormsApp
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnTiepTuc = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnXoa = new FontAwesome.Sharp.IconButton();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.btnTiepTuc = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
@@ -81,10 +82,11 @@ namespace WindowsFormsApp
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label19);
+            this.panel2.Controls.Add(this.btnXoa);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.label18);
+            this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
@@ -111,6 +113,30 @@ namespace WindowsFormsApp
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(379, 810);
             this.panel2.TabIndex = 325;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label18.Font = new System.Drawing.Font("Pacifico", 10F);
+            this.label18.ForeColor = System.Drawing.SystemColors.Control;
+            this.label18.Location = new System.Drawing.Point(258, 760);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(56, 32);
+            this.label18.TabIndex = 311;
+            this.label18.Text = "Co.op";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label19.Font = new System.Drawing.Font("Pacifico", 10F);
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.label19.Location = new System.Drawing.Point(309, 760);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(47, 32);
+            this.label19.TabIndex = 312;
+            this.label19.Text = "mart";
             // 
             // label11
             // 
@@ -581,54 +607,6 @@ namespace WindowsFormsApp
             this.guna2Elipse1.BorderRadius = 15;
             this.guna2Elipse1.TargetControl = this;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label16.Font = new System.Drawing.Font("Pacifico", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.Control;
-            this.label16.Location = new System.Drawing.Point(71, 27);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(143, 82);
-            this.label16.TabIndex = 309;
-            this.label16.Text = "Co.op";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label17.Font = new System.Drawing.Font("Pacifico", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.label17.Location = new System.Drawing.Point(199, 27);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(119, 82);
-            this.label17.TabIndex = 310;
-            this.label17.Text = "mart";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label18.Font = new System.Drawing.Font("Pacifico", 10F);
-            this.label18.ForeColor = System.Drawing.SystemColors.Control;
-            this.label18.Location = new System.Drawing.Point(258, 760);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(56, 32);
-            this.label18.TabIndex = 311;
-            this.label18.Text = "Co.op";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label19.Font = new System.Drawing.Font("Pacifico", 10F);
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.label19.Location = new System.Drawing.Point(309, 760);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(47, 32);
-            this.label19.TabIndex = 312;
-            this.label19.Text = "mart";
-            // 
             // btnTiepTuc
             // 
             this.btnTiepTuc.Animated = true;
@@ -659,6 +637,50 @@ namespace WindowsFormsApp
             this.btnTiepTuc.Text = "Cập nhập";
             this.btnTiepTuc.UseTransparentBackground = true;
             this.btnTiepTuc.Click += new System.EventHandler(this.btnTiepTuc_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.btnXoa.FlatAppearance.BorderSize = 2;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXoa.IconChar = FontAwesome.Sharp.IconChar.HeartBroken;
+            this.btnXoa.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnXoa.IconSize = 50;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(145, 34);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnXoa.Size = new System.Drawing.Size(64, 50);
+            this.btnXoa.TabIndex = 315;
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.Control;
+            this.label16.Location = new System.Drawing.Point(84, 70);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(113, 46);
+            this.label16.TabIndex = 313;
+            this.label16.Text = "Co.op";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.label17.Location = new System.Drawing.Point(188, 73);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(90, 46);
+            this.label17.TabIndex = 314;
+            this.label17.Text = "mart";
             // 
             // FormMatKhauMoi
             // 
@@ -737,8 +759,9 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
+        private Guna.UI2.WinForms.Guna2GradientButton btnTiepTuc;
+        private FontAwesome.Sharp.IconButton btnXoa;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private Guna.UI2.WinForms.Guna2GradientButton btnTiepTuc;
     }
 }

@@ -17,16 +17,16 @@ namespace WindowsFormsApp
             InitializeComponent();
         }
 
-        private void btnTiepTuc_Click(object sender, EventArgs e)
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnTiepTuc_Click_1(object sender, EventArgs e)
         {
             FormMatKhauMoi f = new FormMatKhauMoi();
             f.Show();
             this.Hide();
-        }
-
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

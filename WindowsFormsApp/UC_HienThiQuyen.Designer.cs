@@ -51,7 +51,7 @@ namespace WindowsFormsApp
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1411, 54);
+            this.panel2.Size = new System.Drawing.Size(1411, 50);
             this.panel2.TabIndex = 219;
             // 
             // iconPictureBox1
@@ -114,10 +114,10 @@ namespace WindowsFormsApp
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(504, 540);
+            this.label3.Font = new System.Drawing.Font("Sitka Banner", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(495, 514);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(445, 70);
+            this.label3.Size = new System.Drawing.Size(559, 86);
             this.label3.TabIndex = 222;
             this.label3.Text = "Bạn không có quyền truy cập chức năng này\r\n\r\n";
             // 

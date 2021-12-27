@@ -26,15 +26,9 @@ namespace WindowsFormsApp
             cmbLoaiHang.SelectedIndex = 0;
             cmbQuayhang.SelectedIndex = 0;
             HienThi();
-            
-            
         }
 
-
-       
         List<LoaiHangDTO> list;
-
-
 
         private void txtKH_Enter(object sender, EventArgs e)
         {
@@ -53,10 +47,6 @@ namespace WindowsFormsApp
                 txtTimkiem.ForeColor = Color.Black;
             }
         }
-        
-
-       
-
 
         private void addUC(UserControl uc)
         {
@@ -65,43 +55,11 @@ namespace WindowsFormsApp
             panel1.Controls.Add(uc);
             uc.BringToFront();
         }
-        private void btnNhaphang_Click(object sender, EventArgs e)
-        {
-            UC_NhapHang _NhapHang = new UC_NhapHang(luumanv,luutennv);
-            addUC(_NhapHang);
-        }
 
        
 
         string temp1;
         string temp2;
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-           
-            DataTable dt = QuayHangBUS.Intance.TimKiemQH(cmbQuayhang.Text);
-            if (dt.Rows.Count > 0)
-            {
-                temp1 = dt.Rows[0]["MaQH"].ToString();
-            }
-
-            DataTable dt1 = DonViTinhBUS.Intance.TimKiemDVT(cmbĐVT.Text);
-            if (dt1.Rows.Count > 0)
-            {
-                temp2 = dt1.Rows[0]["MaDVT"].ToString();
-            }
-
-
-            if (check_data() == true) {
-                if (MatHangBUS.Intance.suaHH(txtMaMH.Text, txtTenMH.Text, temp, txtGiaBan.Text,temp2 ,temp1))
-                {
-                    MessageBox.Show("Sửa mặt hàng thành công", "Thông báo");
-                    HienThi();
-                    LamMoi();
-                }
-            }
-        }
-
 
 
         private string temp;
@@ -155,36 +113,6 @@ namespace WindowsFormsApp
             }
         }
 
-
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-            if (check_data() == true)
-            {
-                DataTable dt = MatHangBUS.Intance.TimKiemSL(txtMaMH.Text);
-                if (dt.Rows.Count > 0)
-                {
-                    string temp = dt.Rows[0]["SoLuong"].ToString();
-                    if (Int32.Parse(temp) <= 0)
-                    {
-                        if (MatHangBUS.Intance.xoaHang(txtMaMH.Text))
-                        {
-                            MessageBox.Show("Xóa mặt hàng thành công", "Thông báo");
-                            HienThi();
-                            LamMoi();
-                        }
-                    }
-                    else
-                        MessageBox.Show("Mặt hàng này còn tồn kho, bạn không thể xóa", "Thông báo");
-                    HienThi();
-                    LamMoi();
-                }
-            }
-        }
-
-
-
         private void LamMoi()
         {
             txtTenMH.Text = "Tên mặt hàng";
@@ -205,8 +133,6 @@ namespace WindowsFormsApp
             dgvHH.DataSource = dt;
         }
      
-
-
         private bool check_data()
         {
             if(txtMaMH.Text == "Mã mặt hàng")
@@ -220,11 +146,6 @@ namespace WindowsFormsApp
             }
             return true;
         }
-
-
-
-    
-
         private void dgvHH_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             int indexx;
@@ -243,11 +164,6 @@ namespace WindowsFormsApp
             cmbĐVT.ForeColor = Color.Black;
             cmbLoaiHang.ForeColor = Color.Black;
             cmbQuayhang.ForeColor = Color.Black;
-
-
-         
-
-          
         }
 
 
@@ -294,6 +210,63 @@ namespace WindowsFormsApp
         private void cmbĐVT_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSua_Click_1(object sender, EventArgs e)
+        {
+            DataTable dt = QuayHangBUS.Intance.TimKiemQH(cmbQuayhang.Text);
+            if (dt.Rows.Count > 0)
+            {
+                temp1 = dt.Rows[0]["MaQH"].ToString();
+            }
+
+            DataTable dt1 = DonViTinhBUS.Intance.TimKiemDVT(cmbĐVT.Text);
+            if (dt1.Rows.Count > 0)
+            {
+                temp2 = dt1.Rows[0]["MaDVT"].ToString();
+            }
+
+
+            if (check_data() == true)
+            {
+                if (MatHangBUS.Intance.suaHH(txtMaMH.Text, txtTenMH.Text, temp, txtGiaBan.Text, temp2, temp1))
+                {
+                    MessageBox.Show("Sửa mặt hàng thành công", "Thông báo");
+                    HienThi();
+                    LamMoi();
+                }
+            }
+        }
+
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            if (check_data() == true)
+            {
+                DataTable dt = MatHangBUS.Intance.TimKiemSL(txtMaMH.Text);
+                if (dt.Rows.Count > 0)
+                {
+                    string temp = dt.Rows[0]["SoLuong"].ToString();
+                    if (Int32.Parse(temp) <= 0)
+                    {
+                        if (MatHangBUS.Intance.xoaHang(txtMaMH.Text))
+                        {
+                            MessageBox.Show("Xóa mặt hàng thành công", "Thông báo");
+                            HienThi();
+                            LamMoi();
+                        }
+                    }
+                    else
+                        MessageBox.Show("Mặt hàng này còn tồn kho, bạn không thể xóa", "Thông báo");
+                    HienThi();
+                    LamMoi();
+                }
+            }
+        }
+
+        private void btnNhaphang_Click_1(object sender, EventArgs e)
+        {
+            UC_NhapHang _NhapHang = new UC_NhapHang(luumanv, luutennv);
+            addUC(_NhapHang);
         }
 
         public List<QuayHangDTO> getListQuayHang()

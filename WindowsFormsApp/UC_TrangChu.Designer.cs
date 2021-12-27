@@ -163,7 +163,7 @@ namespace WindowsFormsApp
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Red;
-            this.label23.Location = new System.Drawing.Point(1072, 179);
+            this.label23.Location = new System.Drawing.Point(1069, 179);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(20, 23);
             this.label23.TabIndex = 367;
@@ -173,7 +173,7 @@ namespace WindowsFormsApp
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(1071, 142);
+            this.label18.Location = new System.Drawing.Point(1069, 142);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(113, 29);
             this.label18.TabIndex = 366;
@@ -182,10 +182,10 @@ namespace WindowsFormsApp
             // pictureBox4
             // 
             this.pictureBox4.Image = global::WindowsFormsApp.Properties.Resources.Capture31;
-            this.pictureBox4.Location = new System.Drawing.Point(973, 124);
+            this.pictureBox4.Location = new System.Drawing.Point(969, 130);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(102, 97);
+            this.pictureBox4.Size = new System.Drawing.Size(95, 84);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 365;
             this.pictureBox4.TabStop = false;
@@ -195,7 +195,7 @@ namespace WindowsFormsApp
             this.lblTonghang.AutoSize = true;
             this.lblTonghang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTonghang.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.lblTonghang.Location = new System.Drawing.Point(743, 179);
+            this.lblTonghang.Location = new System.Drawing.Point(745, 179);
             this.lblTonghang.Name = "lblTonghang";
             this.lblTonghang.Size = new System.Drawing.Size(20, 23);
             this.lblTonghang.TabIndex = 364;
@@ -205,7 +205,7 @@ namespace WindowsFormsApp
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(742, 142);
+            this.label16.Location = new System.Drawing.Point(744, 142);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(136, 29);
             this.label16.TabIndex = 363;
@@ -214,10 +214,10 @@ namespace WindowsFormsApp
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WindowsFormsApp.Properties.Resources.Capture11;
-            this.pictureBox3.Location = new System.Drawing.Point(646, 124);
+            this.pictureBox3.Location = new System.Drawing.Point(650, 130);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(102, 97);
+            this.pictureBox3.Size = new System.Drawing.Size(95, 84);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 362;
             this.pictureBox3.TabStop = false;
@@ -663,7 +663,7 @@ namespace WindowsFormsApp
             this.lblDonhangMoi.AutoSize = true;
             this.lblDonhangMoi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDonhangMoi.ForeColor = System.Drawing.Color.Green;
-            this.lblDonhangMoi.Location = new System.Drawing.Point(419, 179);
+            this.lblDonhangMoi.Location = new System.Drawing.Point(437, 179);
             this.lblDonhangMoi.Name = "lblDonhangMoi";
             this.lblDonhangMoi.Size = new System.Drawing.Size(20, 23);
             this.lblDonhangMoi.TabIndex = 322;
@@ -673,7 +673,7 @@ namespace WindowsFormsApp
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(418, 142);
+            this.label5.Location = new System.Drawing.Point(436, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 29);
             this.label5.TabIndex = 321;
@@ -682,7 +682,7 @@ namespace WindowsFormsApp
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WindowsFormsApp.Properties.Resources.Capture6;
-            this.pictureBox2.Location = new System.Drawing.Point(333, 130);
+            this.pictureBox2.Location = new System.Drawing.Point(351, 130);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(95, 84);
@@ -695,7 +695,7 @@ namespace WindowsFormsApp
             this.lbldoanhthu.AutoSize = true;
             this.lbldoanhthu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldoanhthu.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lbldoanhthu.Location = new System.Drawing.Point(122, 179);
+            this.lbldoanhthu.Location = new System.Drawing.Point(123, 179);
             this.lbldoanhthu.Name = "lbldoanhthu";
             this.lbldoanhthu.Size = new System.Drawing.Size(20, 23);
             this.lbldoanhthu.TabIndex = 319;
@@ -717,7 +717,7 @@ namespace WindowsFormsApp
             this.pictureBox1.Location = new System.Drawing.Point(34, 130);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 81);
+            this.pictureBox1.Size = new System.Drawing.Size(95, 84);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 317;
             this.pictureBox1.TabStop = false;
@@ -726,7 +726,7 @@ namespace WindowsFormsApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 82);
+            this.label1.Location = new System.Drawing.Point(28, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(270, 29);
             this.label1.TabIndex = 316;
@@ -738,7 +738,7 @@ namespace WindowsFormsApp
             this.panel8.Location = new System.Drawing.Point(10, 118);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1384, 1);
+            this.panel8.Size = new System.Drawing.Size(1200, 1);
             this.panel8.TabIndex = 315;
             // 
             // txtTennv
@@ -758,7 +758,7 @@ namespace WindowsFormsApp
             this.txtTennv.ForeColor = System.Drawing.Color.Silver;
             this.txtTennv.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTennv.HoverState.Parent = this.txtTennv;
-            this.txtTennv.Location = new System.Drawing.Point(9, 61);
+            this.txtTennv.Location = new System.Drawing.Point(12, 57);
             this.txtTennv.Margin = new System.Windows.Forms.Padding(4);
             this.txtTennv.Name = "txtTennv";
             this.txtTennv.PasswordChar = '\0';
@@ -766,9 +766,10 @@ namespace WindowsFormsApp
             this.txtTennv.SelectedText = "";
             this.txtTennv.ShadowDecoration.BorderRadius = 10;
             this.txtTennv.ShadowDecoration.Parent = this.txtTennv;
-            this.txtTennv.Size = new System.Drawing.Size(1381, 157);
+            this.txtTennv.Size = new System.Drawing.Size(1208, 157);
             this.txtTennv.TabIndex = 303;
             this.txtTennv.TextOffset = new System.Drawing.Point(15, 0);
+            this.txtTennv.TextChanged += new System.EventHandler(this.txtTennv_TextChanged);
             // 
             // panel2
             // 

@@ -181,30 +181,6 @@ namespace WindowsFormsApp
             return ma;
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-
-            if (Check_data() == true)
-            {
-                string query = "select MaKH as [MaKhachHang] from KhachHang where MaKH = '" + txtMaKH.Text + "'";
-                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-                if (dt.Rows.Count > 0)
-                {
-                    MessageBox.Show("Khách hàng đã tồn tại bạn không thể thêm", "Thông báo");
-                    LamMoi();
-                    txtMaKH.Text = Matudong();
-                }
-                else
-                if (KhachHangBUS.Intance.themKH(txtMaKH.Text, txtKH.Text, txtDiachi.Text, txtSĐT.Text, txtEmail.Text))
-                {
-                    MessageBox.Show("Thêm khách hàng thành công", "Thông báo");
-                    LamMoi();
-                    HienThi();
-                    txtMaKH.Text = Matudong();
-                }
-            }
-        }
-
 
         private void LamMoi()
         {
@@ -217,57 +193,6 @@ namespace WindowsFormsApp
             txtEmail.Text = "Nhập địa chỉ email";
             txtEmail.ForeColor = Color.Gray;
         }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-
-            if (Check_data() == true)
-            {
-                if (KhachHangBUS.Intance.suaKH(txtMaKH.Text, txtKH.Text, txtDiachi.Text, txtSĐT.Text, txtEmail.Text))
-                {
-                    MessageBox.Show("Sửa khách hàng thành công", "Thông báo");
-                    LamMoi();
-                    HienThi();
-                    txtMaKH.Text = Matudong();
-                }
-            }
-        }
-
-        private void btnXoa_Click_1(object sender, EventArgs e)
-        {
-
-            if (Check_data() == true)
-            {
-                if (MessageBox.Show("Cảnh báo bạn có chắc chắn muốn xóa khách hàng này", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    string query = "select MaKH as [MaKhachHang] from HoaDon where MaKH = '" + txtMaKH.Text + "'";
-                    DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-                    if (dt.Rows.Count > 0)
-                    {
-                        MessageBox.Show("Không thể xóa khách hàng này. Vì khách hàng đã mua hàng ở cửa hàng", "Thông báo");
-                        LamMoi();
-                        txtMaKH.Text = Matudong();
-                    }
-                    else
-
-
-                      if (KhachHangBUS.Intance.xoaKH(txtMaKH.Text))
-                    {
-
-                        MessageBox.Show("Xóa khách hàng thành công", "Thông báo");
-                        LamMoi();
-                        HienThi();
-                        txtMaKH.Text = Matudong();
-                    }
-                }
-                else
-                    LamMoi();
-
-            }
-        }
-    
-
-
 
         private bool Check_data()
         {
@@ -320,14 +245,74 @@ namespace WindowsFormsApp
             txtSĐT.ForeColor = Color.Black;
         }
 
-        private void panel5_Paint(object sender, PaintEventArgs e)
+        private void btnThem_Click_1(object sender, EventArgs e)
         {
-
+            if (Check_data() == true)
+            {
+                string query = "select MaKH as [MaKhachHang] from KhachHang where MaKH = '" + txtMaKH.Text + "'";
+                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+                if (dt.Rows.Count > 0)
+                {
+                    MessageBox.Show("Khách hàng đã tồn tại bạn không thể thêm", "Thông báo");
+                    LamMoi();
+                    txtMaKH.Text = Matudong();
+                }
+                else
+                if (KhachHangBUS.Intance.themKH(txtMaKH.Text, txtKH.Text, txtDiachi.Text, txtSĐT.Text, txtEmail.Text))
+                {
+                    MessageBox.Show("Thêm khách hàng thành công", "Thông báo");
+                    LamMoi();
+                    HienThi();
+                    txtMaKH.Text = Matudong();
+                }
+            }
         }
 
-        private void label10_Click(object sender, EventArgs e)
+        private void btnXoa_Click_2(object sender, EventArgs e)
         {
 
+            if (Check_data() == true)
+            {
+                if (MessageBox.Show("Cảnh báo bạn có chắc chắn muốn xóa khách hàng này", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    string query = "select MaKH as [MaKhachHang] from HoaDon where MaKH = '" + txtMaKH.Text + "'";
+                    DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+                    if (dt.Rows.Count > 0)
+                    {
+                        MessageBox.Show("Không thể xóa khách hàng này. Vì khách hàng đã mua hàng ở cửa hàng", "Thông báo");
+                        LamMoi();
+                        txtMaKH.Text = Matudong();
+                    }
+                    else
+
+
+                      if (KhachHangBUS.Intance.xoaKH(txtMaKH.Text))
+                    {
+
+                        MessageBox.Show("Xóa khách hàng thành công", "Thông báo");
+                        LamMoi();
+                        HienThi();
+                        txtMaKH.Text = Matudong();
+                    }
+                }
+                else
+                    LamMoi();
+
+            }
+        }
+
+        private void btnSua_Click_1(object sender, EventArgs e)
+        {
+            if (Check_data() == true)
+            {
+                if (KhachHangBUS.Intance.suaKH(txtMaKH.Text, txtKH.Text, txtDiachi.Text, txtSĐT.Text, txtEmail.Text))
+                {
+                    MessageBox.Show("Sửa khách hàng thành công", "Thông báo");
+                    LamMoi();
+                    HienThi();
+                    txtMaKH.Text = Matudong();
+                }
+            }
         }
     }
 }

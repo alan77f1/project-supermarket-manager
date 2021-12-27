@@ -250,6 +250,11 @@ namespace WindowsFormsApp
 
         }
 
+        private void txtTennv_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
         /*
   private void getDataChart()

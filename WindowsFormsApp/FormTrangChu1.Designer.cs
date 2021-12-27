@@ -45,7 +45,6 @@ namespace WindowsFormsApp
             this.btnKhoHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblMaNV = new System.Windows.Forms.Label();
             this.btnNhaCungCap = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnKhuyenMai = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnNhanVien = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnBanHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,6 +55,8 @@ namespace WindowsFormsApp
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTime = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btnXoa = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.pannelLeft1.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -72,6 +73,7 @@ namespace WindowsFormsApp
             // pannelLeft1
             // 
             this.pannelLeft1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.pannelLeft1.Controls.Add(this.btnXoa);
             this.pannelLeft1.Controls.Add(this.iconButton4);
             this.pannelLeft1.Controls.Add(this.label3);
             this.pannelLeft1.Controls.Add(this.label5);
@@ -104,11 +106,11 @@ namespace WindowsFormsApp
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label3.Font = new System.Drawing.Font("Pacifico", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(21, 27);
+            this.label3.Location = new System.Drawing.Point(29, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 61);
+            this.label3.Size = new System.Drawing.Size(113, 46);
             this.label3.TabIndex = 7;
             this.label3.Text = "Co.op";
             // 
@@ -116,11 +118,11 @@ namespace WindowsFormsApp
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label5.Font = new System.Drawing.Font("Pacifico", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.label5.Location = new System.Drawing.Point(117, 29);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.label5.Location = new System.Drawing.Point(133, 51);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 61);
+            this.label5.Size = new System.Drawing.Size(90, 46);
             this.label5.TabIndex = 8;
             this.label5.Text = "mart";
             // 
@@ -134,7 +136,6 @@ namespace WindowsFormsApp
             this.panelLeft.Controls.Add(this.btnKhoHang);
             this.panelLeft.Controls.Add(this.lblMaNV);
             this.panelLeft.Controls.Add(this.btnNhaCungCap);
-            this.panelLeft.Controls.Add(this.btnKhuyenMai);
             this.panelLeft.Controls.Add(this.btnNhanVien);
             this.panelLeft.Controls.Add(this.btnBanHang);
             this.panelLeft.Controls.Add(this.label4);
@@ -169,10 +170,10 @@ namespace WindowsFormsApp
             this.btnThongKe.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnThongKe.Font = new System.Drawing.Font("Sitka Banner", 12F);
             this.btnThongKe.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnThongKe.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnThongKe.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnThongKe.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnThongKe.HoverState.Parent = this.btnThongKe;
-            this.btnThongKe.Location = new System.Drawing.Point(42, 667);
+            this.btnThongKe.Location = new System.Drawing.Point(42, 591);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.ShadowDecoration.Parent = this.btnThongKe;
             this.btnThongKe.Size = new System.Drawing.Size(195, 68);
@@ -202,7 +203,7 @@ namespace WindowsFormsApp
             this.btnKhachHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnKhachHang.Font = new System.Drawing.Font("Sitka Banner", 12F);
             this.btnKhachHang.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnKhachHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnKhachHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnKhachHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnKhachHang.HoverState.Parent = this.btnKhachHang;
             this.btnKhachHang.Location = new System.Drawing.Point(42, 218);
@@ -257,10 +258,10 @@ namespace WindowsFormsApp
             this.btnKhoHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnKhoHang.Font = new System.Drawing.Font("Sitka Banner", 12F);
             this.btnKhoHang.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnKhoHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnKhoHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnKhoHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnKhoHang.HoverState.Parent = this.btnKhoHang;
-            this.btnKhoHang.Location = new System.Drawing.Point(42, 593);
+            this.btnKhoHang.Location = new System.Drawing.Point(42, 517);
             this.btnKhoHang.Name = "btnKhoHang";
             this.btnKhoHang.ShadowDecoration.Parent = this.btnKhoHang;
             this.btnKhoHang.Size = new System.Drawing.Size(195, 68);
@@ -301,10 +302,10 @@ namespace WindowsFormsApp
             this.btnNhaCungCap.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnNhaCungCap.Font = new System.Drawing.Font("Sitka Banner", 12F);
             this.btnNhaCungCap.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnNhaCungCap.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnNhaCungCap.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnNhaCungCap.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnNhaCungCap.HoverState.Parent = this.btnNhaCungCap;
-            this.btnNhaCungCap.Location = new System.Drawing.Point(42, 518);
+            this.btnNhaCungCap.Location = new System.Drawing.Point(42, 442);
             this.btnNhaCungCap.Name = "btnNhaCungCap";
             this.btnNhaCungCap.ShadowDecoration.Parent = this.btnNhaCungCap;
             this.btnNhaCungCap.Size = new System.Drawing.Size(195, 68);
@@ -312,39 +313,6 @@ namespace WindowsFormsApp
             this.btnNhaCungCap.Text = "       Nhà cung cấp";
             this.btnNhaCungCap.UseTransparentBackground = true;
             this.btnNhaCungCap.Click += new System.EventHandler(this.btnNhaCungCap_Click_1);
-            // 
-            // btnKhuyenMai
-            // 
-            this.btnKhuyenMai.Animated = true;
-            this.btnKhuyenMai.AutoRoundedCorners = true;
-            this.btnKhuyenMai.BackColor = System.Drawing.Color.Transparent;
-            this.btnKhuyenMai.BorderRadius = 33;
-            this.btnKhuyenMai.CheckedState.Parent = this.btnKhuyenMai;
-            this.btnKhuyenMai.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnKhuyenMai.CustomImages.Parent = this.btnKhuyenMai;
-            this.btnKhuyenMai.CustomizableEdges.BottomRight = false;
-            this.btnKhuyenMai.CustomizableEdges.TopRight = false;
-            this.btnKhuyenMai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnKhuyenMai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnKhuyenMai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnKhuyenMai.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnKhuyenMai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnKhuyenMai.DisabledState.Parent = this.btnKhuyenMai;
-            this.btnKhuyenMai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnKhuyenMai.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnKhuyenMai.Font = new System.Drawing.Font("Sitka Banner", 12F);
-            this.btnKhuyenMai.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnKhuyenMai.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
-            this.btnKhuyenMai.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnKhuyenMai.HoverState.Parent = this.btnKhuyenMai;
-            this.btnKhuyenMai.Location = new System.Drawing.Point(42, 443);
-            this.btnKhuyenMai.Name = "btnKhuyenMai";
-            this.btnKhuyenMai.ShadowDecoration.Parent = this.btnKhuyenMai;
-            this.btnKhuyenMai.Size = new System.Drawing.Size(195, 68);
-            this.btnKhuyenMai.TabIndex = 52;
-            this.btnKhuyenMai.Text = "    Khuyến mãi";
-            this.btnKhuyenMai.UseTransparentBackground = true;
-            this.btnKhuyenMai.Click += new System.EventHandler(this.btnKhuyenMai_Click_1);
             // 
             // btnNhanVien
             // 
@@ -367,7 +335,7 @@ namespace WindowsFormsApp
             this.btnNhanVien.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnNhanVien.Font = new System.Drawing.Font("Sitka Banner", 12F);
             this.btnNhanVien.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnNhanVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnNhanVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnNhanVien.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnNhanVien.HoverState.Parent = this.btnNhanVien;
             this.btnNhanVien.Location = new System.Drawing.Point(42, 368);
@@ -400,7 +368,7 @@ namespace WindowsFormsApp
             this.btnBanHang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnBanHang.Font = new System.Drawing.Font("Sitka Banner", 12F);
             this.btnBanHang.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBanHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnBanHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnBanHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnBanHang.HoverState.Parent = this.btnBanHang;
             this.btnBanHang.Location = new System.Drawing.Point(42, 293);
@@ -444,7 +412,7 @@ namespace WindowsFormsApp
             this.btnTrangChu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnTrangChu.Font = new System.Drawing.Font("Sitka Banner", 12F);
             this.btnTrangChu.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnTrangChu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
+            this.btnTrangChu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnTrangChu.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnTrangChu.HoverState.Parent = this.btnTrangChu;
             this.btnTrangChu.Location = new System.Drawing.Point(42, 143);
@@ -496,6 +464,7 @@ namespace WindowsFormsApp
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
+            this.panel3.Controls.Add(this.iconButton1);
             this.panel3.Controls.Add(this.lblTime);
             this.panel3.Controls.Add(this.guna2ControlBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -521,6 +490,46 @@ namespace WindowsFormsApp
             // 
             this.bunifuElipse1.ElipseRadius = 30;
             this.bunifuElipse1.TargetControl = this;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.btnXoa.FlatAppearance.BorderSize = 2;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXoa.IconChar = FontAwesome.Sharp.IconChar.HeartBroken;
+            this.btnXoa.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnXoa.IconSize = 50;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(90, 12);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnXoa.Size = new System.Drawing.Size(64, 50);
+            this.btnXoa.TabIndex = 227;
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.iconButton1.FlatAppearance.BorderSize = 2;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Image;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(152, -3);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.iconButton1.Size = new System.Drawing.Size(48, 45);
+            this.iconButton1.TabIndex = 228;
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // FormTrangChu1
             // 
@@ -564,7 +573,6 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2GradientButton btnKhoHang;
         private System.Windows.Forms.Label lblMaNV;
         private Guna.UI2.WinForms.Guna2GradientButton btnNhaCungCap;
-        private Guna.UI2.WinForms.Guna2GradientButton btnKhuyenMai;
         private Guna.UI2.WinForms.Guna2GradientButton btnNhanVien;
         private Guna.UI2.WinForms.Guna2GradientButton btnBanHang;
         private Guna.UI2.WinForms.Guna2GradientButton btnTrangChu;
@@ -574,5 +582,7 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2GradientButton btnKhachHang;
         private FontAwesome.Sharp.IconButton iconButton4;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private FontAwesome.Sharp.IconButton btnXoa;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
