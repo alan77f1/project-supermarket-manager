@@ -51,7 +51,6 @@ namespace WindowsFormsApp
 
         }
 
-
         private void addUC(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
@@ -60,18 +59,18 @@ namespace WindowsFormsApp
             userControl.BringToFront();
         }
 
-        private void btnXemchitiet_Click(object sender, EventArgs e)
-        {
-            UC_ReportPhieuNhap f = new UC_ReportPhieuNhap(temp);
-            addUC(f);
-        }
-
         private void dgvPN_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             int index;
             index = e.RowIndex;
 
             temp = dgvPN.Rows[index].Cells[0].Value.ToString();
+        }
+
+        private void btnXemchitiet_Click_1(object sender, EventArgs e)
+        {
+            UC_ReportPhieuNhap f = new UC_ReportPhieuNhap(temp);
+            addUC(f);
         }
     }
 }

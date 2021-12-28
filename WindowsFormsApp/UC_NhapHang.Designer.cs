@@ -61,10 +61,10 @@ namespace WindowsFormsApp
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnThemTT = new Guna.UI2.WinForms.Guna2Button();
-            this.btnXacNhanNhap = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnXacNhanNhap = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnThemTT = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnXoa = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnThem = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -83,10 +83,6 @@ namespace WindowsFormsApp
             this.lblTenNV = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnSua = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnXoa = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnThem = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -162,9 +158,10 @@ namespace WindowsFormsApp
             // 
             // cmbLoaihang
             // 
+            this.cmbLoaihang.AutoRoundedCorners = true;
             this.cmbLoaihang.BackColor = System.Drawing.Color.Transparent;
             this.cmbLoaihang.BorderColor = System.Drawing.Color.Black;
-            this.cmbLoaihang.BorderRadius = 3;
+            this.cmbLoaihang.BorderRadius = 17;
             this.cmbLoaihang.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbLoaihang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLoaihang.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -201,8 +198,9 @@ namespace WindowsFormsApp
             // 
             // txtformatGiaban
             // 
+            this.txtformatGiaban.AutoRoundedCorners = true;
             this.txtformatGiaban.BorderColor = System.Drawing.Color.Gainsboro;
-            this.txtformatGiaban.BorderRadius = 7;
+            this.txtformatGiaban.BorderRadius = 17;
             this.txtformatGiaban.BorderThickness = 0;
             this.txtformatGiaban.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtformatGiaban.DefaultText = "0 đ";
@@ -232,8 +230,9 @@ namespace WindowsFormsApp
             // 
             // txtformatgianhap
             // 
+            this.txtformatgianhap.AutoRoundedCorners = true;
             this.txtformatgianhap.BorderColor = System.Drawing.Color.Gainsboro;
-            this.txtformatgianhap.BorderRadius = 7;
+            this.txtformatgianhap.BorderRadius = 17;
             this.txtformatgianhap.BorderThickness = 0;
             this.txtformatgianhap.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtformatgianhap.DefaultText = "0 đ";
@@ -263,8 +262,9 @@ namespace WindowsFormsApp
             // 
             // txtSL
             // 
+            this.txtSL.AutoRoundedCorners = true;
             this.txtSL.BorderColor = System.Drawing.Color.Silver;
-            this.txtSL.BorderRadius = 7;
+            this.txtSL.BorderRadius = 17;
             this.txtSL.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSL.DefaultText = "0";
             this.txtSL.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -291,8 +291,9 @@ namespace WindowsFormsApp
             // 
             // txtGiaBan
             // 
+            this.txtGiaBan.AutoRoundedCorners = true;
             this.txtGiaBan.BorderColor = System.Drawing.Color.Silver;
-            this.txtGiaBan.BorderRadius = 7;
+            this.txtGiaBan.BorderRadius = 17;
             this.txtGiaBan.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGiaBan.DefaultText = "0";
             this.txtGiaBan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -389,8 +390,9 @@ namespace WindowsFormsApp
             // 
             // txtGiaNhap
             // 
+            this.txtGiaNhap.AutoRoundedCorners = true;
             this.txtGiaNhap.BorderColor = System.Drawing.Color.Silver;
-            this.txtGiaNhap.BorderRadius = 7;
+            this.txtGiaNhap.BorderRadius = 17;
             this.txtGiaNhap.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGiaNhap.DefaultText = "0";
             this.txtGiaNhap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -418,7 +420,8 @@ namespace WindowsFormsApp
             // 
             // dtpNgayban
             // 
-            this.dtpNgayban.BorderRadius = 5;
+            this.dtpNgayban.AutoRoundedCorners = true;
+            this.dtpNgayban.BorderRadius = 14;
             this.dtpNgayban.BorderThickness = 1;
             this.dtpNgayban.CheckedState.Parent = this.dtpNgayban;
             this.dtpNgayban.FillColor = System.Drawing.Color.White;
@@ -450,9 +453,10 @@ namespace WindowsFormsApp
             // 
             // cmbTenHang
             // 
+            this.cmbTenHang.AutoRoundedCorners = true;
             this.cmbTenHang.BackColor = System.Drawing.Color.Transparent;
             this.cmbTenHang.BorderColor = System.Drawing.Color.Black;
-            this.cmbTenHang.BorderRadius = 3;
+            this.cmbTenHang.BorderRadius = 17;
             this.cmbTenHang.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbTenHang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTenHang.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -466,7 +470,7 @@ namespace WindowsFormsApp
             "----- Chọn tên hàng -----",
             ""});
             this.cmbTenHang.ItemsAppearance.Parent = this.cmbTenHang;
-            this.cmbTenHang.Location = new System.Drawing.Point(119, 110);
+            this.cmbTenHang.Location = new System.Drawing.Point(115, 71);
             this.cmbTenHang.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTenHang.Name = "cmbTenHang";
             this.cmbTenHang.ShadowDecoration.Parent = this.cmbTenHang;
@@ -493,7 +497,7 @@ namespace WindowsFormsApp
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(22, 110);
+            this.label4.Location = new System.Drawing.Point(22, 78);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 29);
@@ -588,14 +592,10 @@ namespace WindowsFormsApp
             this.guna2Panel2.BorderColor = System.Drawing.Color.Black;
             this.guna2Panel2.BorderRadius = 7;
             this.guna2Panel2.BorderThickness = 1;
-            this.guna2Panel2.Controls.Add(this.guna2GradientButton1);
-            this.guna2Panel2.Controls.Add(this.btnSua);
+            this.guna2Panel2.Controls.Add(this.btnXacNhanNhap);
+            this.guna2Panel2.Controls.Add(this.btnThemTT);
             this.guna2Panel2.Controls.Add(this.btnXoa);
             this.guna2Panel2.Controls.Add(this.btnThem);
-            this.guna2Panel2.Controls.Add(this.btnThemTT);
-            this.guna2Panel2.Controls.Add(this.btnXacNhanNhap);
-            this.guna2Panel2.Controls.Add(this.guna2Button2);
-            this.guna2Panel2.Controls.Add(this.guna2Button1);
             this.guna2Panel2.Location = new System.Drawing.Point(12, 678);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -603,101 +603,129 @@ namespace WindowsFormsApp
             this.guna2Panel2.Size = new System.Drawing.Size(1207, 93);
             this.guna2Panel2.TabIndex = 234;
             // 
-            // btnThemTT
-            // 
-            this.btnThemTT.BorderRadius = 10;
-            this.btnThemTT.BorderThickness = 1;
-            this.btnThemTT.CheckedState.Parent = this.btnThemTT;
-            this.btnThemTT.CustomImages.Parent = this.btnThemTT;
-            this.btnThemTT.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThemTT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThemTT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThemTT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThemTT.DisabledState.Parent = this.btnThemTT;
-            this.btnThemTT.FillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnThemTT.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemTT.ForeColor = System.Drawing.Color.Black;
-            this.btnThemTT.HoverState.Parent = this.btnThemTT;
-            this.btnThemTT.Location = new System.Drawing.Point(458, 12);
-            this.btnThemTT.Margin = new System.Windows.Forms.Padding(2);
-            this.btnThemTT.Name = "btnThemTT";
-            this.btnThemTT.ShadowDecoration.Parent = this.btnThemTT;
-            this.btnThemTT.Size = new System.Drawing.Size(213, 54);
-            this.btnThemTT.TabIndex = 238;
-            this.btnThemTT.Text = "Thêm thông tin hàng";
-            this.btnThemTT.Click += new System.EventHandler(this.btnThemTT_Click);
-            // 
             // btnXacNhanNhap
             // 
-            this.btnXacNhanNhap.BorderRadius = 10;
-            this.btnXacNhanNhap.BorderThickness = 1;
+            this.btnXacNhanNhap.Animated = true;
+            this.btnXacNhanNhap.AutoRoundedCorners = true;
+            this.btnXacNhanNhap.BackColor = System.Drawing.Color.Transparent;
+            this.btnXacNhanNhap.BorderRadius = 26;
             this.btnXacNhanNhap.CheckedState.Parent = this.btnXacNhanNhap;
+            this.btnXacNhanNhap.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnXacNhanNhap.CustomImages.Parent = this.btnXacNhanNhap;
             this.btnXacNhanNhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXacNhanNhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXacNhanNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXacNhanNhap.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnXacNhanNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnXacNhanNhap.DisabledState.Parent = this.btnXacNhanNhap;
-            this.btnXacNhanNhap.FillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnXacNhanNhap.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXacNhanNhap.ForeColor = System.Drawing.Color.Black;
+            this.btnXacNhanNhap.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnXacNhanNhap.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnXacNhanNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnXacNhanNhap.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnXacNhanNhap.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXacNhanNhap.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnXacNhanNhap.HoverState.Parent = this.btnXacNhanNhap;
-            this.btnXacNhanNhap.Location = new System.Drawing.Point(942, 24);
-            this.btnXacNhanNhap.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXacNhanNhap.Location = new System.Drawing.Point(977, 11);
             this.btnXacNhanNhap.Name = "btnXacNhanNhap";
             this.btnXacNhanNhap.ShadowDecoration.Parent = this.btnXacNhanNhap;
-            this.btnXacNhanNhap.Size = new System.Drawing.Size(207, 54);
-            this.btnXacNhanNhap.TabIndex = 236;
+            this.btnXacNhanNhap.Size = new System.Drawing.Size(184, 55);
+            this.btnXacNhanNhap.TabIndex = 358;
             this.btnXacNhanNhap.Text = "Xác nhận nhập";
-            this.btnXacNhanNhap.Click += new System.EventHandler(this.btnXacNhanNhap_Click);
+            this.btnXacNhanNhap.UseTransparentBackground = true;
+            this.btnXacNhanNhap.Click += new System.EventHandler(this.btnXacNhanNhap_Click_1);
             // 
-            // guna2Button2
+            // btnThemTT
             // 
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.DisabledState.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.guna2Button2.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(245, 12);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(167, 54);
-            this.guna2Button2.TabIndex = 235;
-            this.guna2Button2.Text = "Xóa hàng";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.btnThemTT.Animated = true;
+            this.btnThemTT.AutoRoundedCorners = true;
+            this.btnThemTT.BackColor = System.Drawing.Color.Transparent;
+            this.btnThemTT.BorderRadius = 26;
+            this.btnThemTT.CheckedState.Parent = this.btnThemTT;
+            this.btnThemTT.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnThemTT.CustomImages.Parent = this.btnThemTT;
+            this.btnThemTT.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThemTT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThemTT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThemTT.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThemTT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThemTT.DisabledState.Parent = this.btnThemTT;
+            this.btnThemTT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnThemTT.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnThemTT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnThemTT.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnThemTT.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnThemTT.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnThemTT.HoverState.Parent = this.btnThemTT;
+            this.btnThemTT.Location = new System.Drawing.Point(552, 11);
+            this.btnThemTT.Name = "btnThemTT";
+            this.btnThemTT.ShadowDecoration.Parent = this.btnThemTT;
+            this.btnThemTT.Size = new System.Drawing.Size(257, 55);
+            this.btnThemTT.TabIndex = 357;
+            this.btnThemTT.Text = "Thêm thông tin hàng";
+            this.btnThemTT.UseTransparentBackground = true;
+            this.btnThemTT.Click += new System.EventHandler(this.btnThemTT_Click_1);
             // 
-            // guna2Button1
+            // btnXoa
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.guna2Button1.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(46, 12);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(167, 54);
-            this.guna2Button1.TabIndex = 234;
-            this.guna2Button1.Text = "Thêm hàng";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btnXoa.Animated = true;
+            this.btnXoa.AutoRoundedCorners = true;
+            this.btnXoa.BackColor = System.Drawing.Color.Transparent;
+            this.btnXoa.BorderRadius = 26;
+            this.btnXoa.CheckedState.Parent = this.btnXoa;
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnXoa.CustomImages.Parent = this.btnXoa;
+            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoa.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXoa.DisabledState.Parent = this.btnXoa;
+            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnXoa.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnXoa.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnXoa.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXoa.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnXoa.HoverState.Parent = this.btnXoa;
+            this.btnXoa.Location = new System.Drawing.Point(199, 11);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.ShadowDecoration.Parent = this.btnXoa;
+            this.btnXoa.Size = new System.Drawing.Size(159, 55);
+            this.btnXoa.TabIndex = 356;
+            this.btnXoa.Text = "Xóa hàng";
+            this.btnXoa.UseTransparentBackground = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Animated = true;
+            this.btnThem.AutoRoundedCorners = true;
+            this.btnThem.BackColor = System.Drawing.Color.Transparent;
+            this.btnThem.BorderRadius = 26;
+            this.btnThem.CheckedState.Parent = this.btnThem;
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnThem.CustomImages.Parent = this.btnThem;
+            this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThem.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThem.DisabledState.Parent = this.btnThem;
+            this.btnThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnThem.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnThem.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnThem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnThem.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnThem.HoverState.Parent = this.btnThem;
+            this.btnThem.Location = new System.Drawing.Point(27, 11);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.ShadowDecoration.Parent = this.btnThem;
+            this.btnThem.Size = new System.Drawing.Size(159, 55);
+            this.btnThem.TabIndex = 355;
+            this.btnThem.Text = "Thêm hàng";
+            this.btnThem.UseTransparentBackground = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // panel7
             // 
@@ -830,9 +858,10 @@ namespace WindowsFormsApp
             // 
             // cmbTenncc
             // 
+            this.cmbTenncc.AutoRoundedCorners = true;
             this.cmbTenncc.BackColor = System.Drawing.Color.Transparent;
             this.cmbTenncc.BorderColor = System.Drawing.Color.Black;
-            this.cmbTenncc.BorderRadius = 3;
+            this.cmbTenncc.BorderRadius = 17;
             this.cmbTenncc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbTenncc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTenncc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -939,126 +968,6 @@ namespace WindowsFormsApp
             this.panel3.Size = new System.Drawing.Size(1234, 784);
             this.panel3.TabIndex = 292;
             // 
-            // btnSua
-            // 
-            this.btnSua.Animated = true;
-            this.btnSua.AutoRoundedCorners = true;
-            this.btnSua.BackColor = System.Drawing.Color.Transparent;
-            this.btnSua.BorderRadius = 26;
-            this.btnSua.CheckedState.Parent = this.btnSua;
-            this.btnSua.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnSua.CustomImages.Parent = this.btnSua;
-            this.btnSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSua.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSua.DisabledState.Parent = this.btnSua;
-            this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnSua.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSua.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnSua.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.btnSua.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnSua.HoverState.Parent = this.btnSua;
-            this.btnSua.Location = new System.Drawing.Point(778, 1);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.ShadowDecoration.Parent = this.btnSua;
-            this.btnSua.Size = new System.Drawing.Size(159, 55);
-            this.btnSua.TabIndex = 357;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseTransparentBackground = true;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Animated = true;
-            this.btnXoa.AutoRoundedCorners = true;
-            this.btnXoa.BackColor = System.Drawing.Color.Transparent;
-            this.btnXoa.BorderRadius = 26;
-            this.btnXoa.CheckedState.Parent = this.btnXoa;
-            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnXoa.CustomImages.Parent = this.btnXoa;
-            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXoa.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXoa.DisabledState.Parent = this.btnXoa;
-            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnXoa.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnXoa.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnXoa.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.btnXoa.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnXoa.HoverState.Parent = this.btnXoa;
-            this.btnXoa.Location = new System.Drawing.Point(604, 1);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.ShadowDecoration.Parent = this.btnXoa;
-            this.btnXoa.Size = new System.Drawing.Size(159, 55);
-            this.btnXoa.TabIndex = 356;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseTransparentBackground = true;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Animated = true;
-            this.btnThem.AutoRoundedCorners = true;
-            this.btnThem.BackColor = System.Drawing.Color.Transparent;
-            this.btnThem.BorderRadius = 26;
-            this.btnThem.CheckedState.Parent = this.btnThem;
-            this.btnThem.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnThem.CustomImages.Parent = this.btnThem;
-            this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThem.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThem.DisabledState.Parent = this.btnThem;
-            this.btnThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnThem.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnThem.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnThem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.btnThem.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnThem.HoverState.Parent = this.btnThem;
-            this.btnThem.Location = new System.Drawing.Point(430, 1);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.ShadowDecoration.Parent = this.btnThem;
-            this.btnThem.Size = new System.Drawing.Size(159, 55);
-            this.btnThem.TabIndex = 355;
-            this.btnThem.Text = "Thêm ";
-            this.btnThem.UseTransparentBackground = true;
-            // 
-            // guna2GradientButton1
-            // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.AutoRoundedCorners = true;
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderRadius = 26;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.DisabledState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton1.ForeColor = System.Drawing.SystemColors.Control;
-            this.guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(942, 1);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(159, 55);
-            this.guna2GradientButton1.TabIndex = 358;
-            this.guna2GradientButton1.Text = "Sửa";
-            this.guna2GradientButton1.UseTransparentBackground = true;
-            // 
             // UC_NhapHang
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1116,11 +1025,7 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2ComboBox cmbLoaihang;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Button btnThemTT;
         private System.Windows.Forms.Panel panel7;
-        private Guna.UI2.WinForms.Guna2Button btnXacNhanNhap;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -1138,8 +1043,8 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Label lblSDT;
         private System.Windows.Forms.Label lblMancc;
         private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton btnSua;
+        private Guna.UI2.WinForms.Guna2GradientButton btnXacNhanNhap;
+        private Guna.UI2.WinForms.Guna2GradientButton btnThemTT;
         private Guna.UI2.WinForms.Guna2GradientButton btnXoa;
         private Guna.UI2.WinForms.Guna2GradientButton btnThem;
     }

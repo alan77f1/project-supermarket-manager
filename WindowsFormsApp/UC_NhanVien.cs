@@ -165,22 +165,6 @@ namespace WindowsFormsApp
             uc.BringToFront();
         }
 
-        
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            if (Check_data() == true)
-            {
-                if (NhanVienBUS.Intance.suaNV(txtMaNV.Text, txtKH.Text, txtDiachi.Text, cmbGioiTinh.Text, txtSĐT.Text, cmbChucVu.Text))
-                {
-                    MessageBox.Show("Sửa nhân viên thành công", "Thông báo");
-                    LamMoi();
-                    HienThi();
-                }
-            }
-        }
-
-
 
 
         private void LamMoi()
@@ -214,38 +198,6 @@ namespace WindowsFormsApp
         }
 
 
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-            if (Check_data() == true)
-            {
-                if (MessageBox.Show("Cảnh báo bạn có chắc chắn muốn xóa nhân viên này", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    string query = "select MaNV as [MaNhanVien] from HoaDon where MaNV = '" + txtMaNV.Text + "'";
-                    DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-                    if (dt.Rows.Count > 0)
-                    {
-                        MessageBox.Show("Không thể xóa nhân viên này. Vì nhân viên đã tham gia vào cửa hàng", "Thông báo");
-                        LamMoi();
-                        //txtMaKH.Text = Matudong();
-                    }
-                    else
-
-
-                      if (NhanVienBUS.Intance.xoaNV(txtMaNV.Text))
-                    {
-
-                        MessageBox.Show("Xóa nhân viên thành công", "Thông báo");
-                        LamMoi();
-                        HienThi();
-                        //txtMaKH.Text = Matudong();
-                    }
-                }
-                else
-                    LamMoi();
-            }
-        }
 
         private void txtTimkiem_TextChanged(object sender, EventArgs e)
         {
@@ -284,14 +236,51 @@ namespace WindowsFormsApp
             cmbChucVu.ForeColor = Color.Black;
         }
 
-        private void label11_Click(object sender, EventArgs e)
-        {
 
+        
+
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            if (Check_data() == true)
+            {
+                if (MessageBox.Show("Cảnh báo bạn có chắc chắn muốn xóa nhân viên này", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    string query = "select MaNV as [MaNhanVien] from HoaDon where MaNV = '" + txtMaNV.Text + "'";
+                    DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+                    if (dt.Rows.Count > 0)
+                    {
+                        MessageBox.Show("Không thể xóa nhân viên này. Vì nhân viên đã tham gia vào cửa hàng", "Thông báo");
+                        LamMoi();
+                        //txtMaKH.Text = Matudong();
+                    }
+                    else
+
+
+                      if (NhanVienBUS.Intance.xoaNV(txtMaNV.Text))
+                    {
+
+                        MessageBox.Show("Xóa nhân viên thành công", "Thông báo");
+                        LamMoi();
+                        HienThi();
+                        //txtMaKH.Text = Matudong();
+                    }
+                }
+                else
+                    LamMoi();
+            }
         }
 
-        private void label12_Click(object sender, EventArgs e)
+        private void btnSua_Click_1(object sender, EventArgs e)
         {
-
+            if (Check_data() == true)
+            {
+                if (NhanVienBUS.Intance.suaNV(txtMaNV.Text, txtKH.Text, txtDiachi.Text, cmbGioiTinh.Text, txtSĐT.Text, cmbChucVu.Text))
+                {
+                    MessageBox.Show("Sửa nhân viên thành công", "Thông báo");
+                    LamMoi();
+                    HienThi();
+                }
+            }
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using BUS;
 
 namespace WindowsFormsApp
 {
@@ -28,22 +29,39 @@ namespace WindowsFormsApp
             cmbDoanhthu.SelectedIndex = 0;
             TopSP();
             DoanhThuTrongNgay();
+            getTT();
+            HidesubMenu();
         }
 
+        private void getTT()
+        {
+            DataTable dt = NhanVienBUS.Intance.getTTNV(txtHoVaTen.Text);
+            if (dt.Rows.Count > 0)
+            {
+                txtSĐT.Text = dt.Rows[0]["SDT"].ToString();
+            }
+        }
 
+        private void addUC(UserControl uc)
+        {
+            uc.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(uc);
+            uc.BringToFront();
+        }
 
         private void getDataChart()
         {
             chart1.Titles.Clear();
             DateTime today = DateTime.Now;
             DateTime bd = new DateTime(today.Year);
-            
+
             string query = "select Year(NgayTao) as [Nam],sum(HoaDon.TongTien) AS 'TongTien' from HoaDon where Year(NgayTao) between  '2020' and '2021'  group by  Year(NgayTao) order by TongTien asc";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             chart1.DataSource = data;
             chart1.Series["Doanh Thu"].XValueMember = "Nam";
             chart1.Series["Doanh Thu"].YValueMembers = "TongTien";
-           // chart1.Titles.Add("THỐNG KÊ DOANH THU");
+            // chart1.Titles.Add("THỐNG KÊ DOANH THU");
             chart1.Series["Doanh Thu"].Color = System.Drawing.Color.FromArgb(0, 48, 135);
             //chart1.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = false;
             //chart1.ChartAreas[0].AxisX.Minimum = 0;
@@ -54,7 +72,7 @@ namespace WindowsFormsApp
 
 
 
-       
+
         private void getdataLable()
         {
             string tkKH = "select count(*) AS [SoLuong] from KhachHang";
@@ -67,7 +85,7 @@ namespace WindowsFormsApp
 
             tkKH = "select count(*) AS [SoLuong] from Nhanvien";
             kh = DataProvider.Instance.ExecuteQuery(tkKH);
-           // lblNhanvien.Text = kh.Rows[0]["SoLuong"].ToString();
+            // lblNhanvien.Text = kh.Rows[0]["SoLuong"].ToString();
 
             tkKH = "select(sum(Tongtien) / count(MaHD)) as [Doanh thu] from HoaDon";
             kh = DataProvider.Instance.ExecuteQuery(tkKH);
@@ -78,7 +96,7 @@ namespace WindowsFormsApp
 
             tkKH = "select count(SoLuong) as [Duoidinhmuc] from MatHang Where SoLuong <= 50";
             kh = DataProvider.Instance.ExecuteQuery(tkKH);
-            if(kh.Rows.Count > 0)
+            if (kh.Rows.Count > 0)
             {
                 lbldinhmuc.Text = kh.Rows[0]["Duoidinhmuc"].ToString();
             }
@@ -107,8 +125,8 @@ namespace WindowsFormsApp
         {
 
             DateTime ngbd = new DateTime(today.Year, 1, 1);
-            DateTime ngkt = new DateTime(today.Year, 12,30);
-            string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '"+ngbd+"' and '"+ngkt+"' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
+            DateTime ngkt = new DateTime(today.Year, 12, 30);
+            string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             if (dt.Rows.Count >= 4)
             {
@@ -118,14 +136,17 @@ namespace WindowsFormsApp
                 lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
                 lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
                 lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
+                lbltop4.Text = dt.Rows[3]["TenMH"].ToString();
+                lblsltop4.Text = dt.Rows[3]["Top 1"].ToString();
+
             }
         }
 
         private void cmbTonKho_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cmbTonKho.Text == "Hôm nay")
+            if (cmbTonKho.Text == "Hôm nay")
             {
-                DateTime ngbd = new DateTime(today.Year, today.Month,today.Day);
+                DateTime ngbd = new DateTime(today.Year, today.Month, today.Day);
                 DateTime ngkt = new DateTime(today.Year, today.Month, today.Day);
                 string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
                 DataTable dt = DataProvider.Instance.ExecuteQuery(query);
@@ -137,13 +158,17 @@ namespace WindowsFormsApp
                     lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
                     lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
                     lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
+                    lbltop4.Text = dt.Rows[3]["TenMH"].ToString();
+                    lblsltop4.Text = dt.Rows[3]["Top 1"].ToString();
+
                 }
                 else
-                
+
                     LamMoi();
-                
-                   
-            }else if (cmbTonKho.Text == "Hôm qua")
+
+
+            }
+            else if (cmbTonKho.Text == "Hôm qua")
             {
                 DateTime ngbd = new DateTime(today.Year, today.Month, today.Day - 1);
                 DateTime ngkt = new DateTime(today.Year, today.Month, today.Day - 1);
@@ -157,13 +182,17 @@ namespace WindowsFormsApp
                     lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
                     lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
                     lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
+                    lbltop4.Text = dt.Rows[3]["TenMH"].ToString();
+                    lblsltop4.Text = dt.Rows[3]["Top 1"].ToString();
+
                 }
                 else
-                
+
                     LamMoi();
-                
-                   
-            }else if(cmbTonKho.Text == "Tuần này")
+
+
+            }
+            else if (cmbTonKho.Text == "Tuần này")
             {
                 DateTime ngbd = new DateTime(today.Year, today.Month, today.Day);
                 DateTime ngkt = new DateTime(today.Year, today.Month, today.Day + 7);
@@ -177,13 +206,17 @@ namespace WindowsFormsApp
                     lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
                     lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
                     lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
+                    lbltop4.Text = dt.Rows[3]["TenMH"].ToString();
+                    lblsltop4.Text = dt.Rows[3]["Top 1"].ToString();
+
                 }
                 else
-                
+
                     LamMoi();
-                
-                 
-            }else if(cmbTonKho.Text == "Tháng này")
+
+
+            }
+            else if (cmbTonKho.Text == "Tháng này")
             {
                 DateTime ngbd = new DateTime(today.Year, today.Month, 1);
                 DateTime ngkt = new DateTime(today.Year, today.Month, 30);
@@ -197,12 +230,16 @@ namespace WindowsFormsApp
                     lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
                     lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
                     lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
+                    lbltop4.Text = dt.Rows[3]["TenMH"].ToString();
+                    lblsltop4.Text = dt.Rows[3]["Top 1"].ToString();
+
                 }
                 else
-                
+
                     LamMoi();
-                
-            }else if(cmbTonKho.Text == "Năm nay")
+
+            }
+            else if (cmbTonKho.Text == "Năm nay")
             {
                 TopSP();
             }
@@ -216,9 +253,12 @@ namespace WindowsFormsApp
             lblsltop2.Text = "";
             lbltop3.Text = "";
             lblsltop3.Text = "";
+            lbltop4.Text = "";
+            lblsltop4.Text = "";
             labeltop1.Text = "";
             labeltop2.Text = "";
             labeltop3.Text = "";
+            labeltop4.Text = "";
         }
 
 
@@ -239,81 +279,54 @@ namespace WindowsFormsApp
                     lbldoanhthu.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", TongTien) + " đ";
                     lblDonhangMoi.Text = data.Rows[0]["LuotMuaSam"].ToString();
 
-                   lblTonghang.        Text = data1.Rows[0]["HangBan"].ToString();
-                   
+                    lblTonghang.Text = data1.Rows[0]["HangBan"].ToString();
+
                 }
             }
         }
 
-        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
+        private void HidesubMenu()
         {
-
+            if (pnlTTTaiKhoan.Visible == true)
+            {
+                pnlTTTaiKhoan.Visible = false;
+            }
         }
 
-        private void txtTennv_TextChanged(object sender, EventArgs e)
-        {
 
+        private void showsubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                HidesubMenu();
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
         }
 
+        private void btnTK_Click(object sender, EventArgs e)
+        {
+            UC_ThongTinhTaiKhoan f = new UC_ThongTinhTaiKhoan(lblTenNhanVien.Text);
+            addUC(f);
+        }
 
-        /*
-  private void getDataChart()
-  {
-   chart1.Titles.Clear();
-   DateTime today = DateTime.Now;
-   DateTime bd = new DateTime(today.Year, today.Month, 1);
-   DateTime kt = bd.AddMonths(1).AddDays(-1);
-   string query = "EXEC USP_ThongKeDoanhThuTrongThang @ngaybd , @ngaykt";
-   DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { bd, kt });
-   chart1.DataSource = data;
-   chart1.Series["Doanh Thu"].XValueMember =  "NGAY";
-   chart1.Series["Doanh Thu"].YValueMembers = "TongTien";
-   chart1.Titles.Add("THỐNG KÊ DOANH THU");
-   chart1.Series["Doanh Thu"].Color = System.Drawing.Color.FromArgb(59, 82, 132);
-   //chart1.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = false;
-   //chart1.ChartAreas[0].AxisX.Minimum = 0;
-   //chart1.Series[0].ChartType = SeriesChartType.Column;
-}
+        private void btnDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            FormDoiMatKhauMoi f = new FormDoiMatKhauMoi(txtSĐT.Text);
+            f.Show();
+        }
 
-private void lblTenNhanVien_Click(object sender, EventArgs e)
-{
-   showsubMenu(pnlTTTaiKhoan);
-}
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            FormLogin f = new FormLogin();
+            f.Show();
+            this.Hide();
+        }
 
-
-private void addUC(UserControl uc)
-{
-   uc.Dock = DockStyle.Fill;
-   panel1.Controls.Clear();
-   panel1.Controls.Add(uc);
-   uc.BringToFront();
-}
-
-private void btnTK_Click(object sender, EventArgs e)
-{
-   UC_ThongTinhTaiKhoan f = new UC_ThongTinhTaiKhoan(lblTenNhanVien.Text);
-   addUC(f);
-}
-
-
-private void HidesubMenu()
-{
-   if (pnlTTTaiKhoan.Visible == true)
-   {
-       pnlTTTaiKhoan.Visible = false;
-   }
-}
-
-
-private void showsubMenu(Panel subMenu)
-{
-   if (subMenu.Visible == false)
-   {
-       HidesubMenu();
-       subMenu.Visible = true;
-   }
-   else
-       subMenu.Visible = false;
-} */
+        private void lblTenNhanVien_Click(object sender, EventArgs e)
+        {
+            showsubMenu(pnlTTTaiKhoan);
+        }
     }
 }

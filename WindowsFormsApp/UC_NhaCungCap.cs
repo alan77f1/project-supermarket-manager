@@ -161,27 +161,6 @@ namespace WindowsFormsApp
             return ma;
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            string query = "select MaNCC from NhaCungCap where MaNCC = '" + txtMaKH.Text + "'";
-            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-            if (dt.Rows.Count > 0)
-            {
-                MessageBox.Show("Nhà cung cấp đã tồn tại bạn không thể thêm", "Thông báo");
-                HienThi();
-                LamMoi();
-            }
-            else
-
-            if (NhaCungCapBUS.Intance.themNCC(txtMaKH.Text, txtKH.Text, txtDiachi.Text, txtSĐT.Text, txtEmail.Text))
-            {
-                MessageBox.Show("Thêm nhà cung cấp thành công", "Thông báo");
-                HienThi();
-                LamMoi();
-            }
-        }
-
-
 
         private void LamMoi()
         {
@@ -194,25 +173,6 @@ namespace WindowsFormsApp
             txtDiachi.Text = "Nhập địa chỉ";
             txtDiachi.ForeColor = Color.Gray;
             txtMaKH.Text = Matudong();
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-            string query = "select MaNCC from PhieuNhap where MaNCC = '" + txtMaKH.Text + "'";
-            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-            if (dt.Rows.Count > 0)
-            {
-                MessageBox.Show("Bạn không thể xóa  nhà cung cấp này!", "Thông báo");
-                HienThi();
-                LamMoi();
-            }else
-            if (NhaCungCapBUS.Intance.xoaNCC(txtMaKH.Text))
-            {
-                MessageBox.Show("Xóa nhà cung cấp thành công", "Thông báo");
-                HienThi();
-                LamMoi();
-            }
         }
 
         private void dgvNCC_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -230,15 +190,6 @@ namespace WindowsFormsApp
             txtDiachi.ForeColor = Color.Black;
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            if(NhaCungCapBUS.Intance.suaNCC(txtMaKH.Text, txtKH.Text, txtDiachi.Text, txtSĐT.Text, txtEmail.Text))
-            {
-                MessageBox.Show("Sửa nhà cung cấp thành công", "Thông báo");
-                HienThi();
-                LamMoi();
-            }
-        }
 
         private void txtTimkiem_TextChanged(object sender, EventArgs e)
         {
@@ -270,6 +221,55 @@ namespace WindowsFormsApp
             txtSĐT.ForeColor = Color.Black;
             txtEmail.ForeColor = Color.Black;
             txtDiachi.ForeColor = Color.Black;
+        }
+
+        private void btnThem_Click_1(object sender, EventArgs e)
+        {
+            string query = "select MaNCC from NhaCungCap where MaNCC = '" + txtMaKH.Text + "'";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            if (dt.Rows.Count > 0)
+            {
+                MessageBox.Show("Nhà cung cấp đã tồn tại bạn không thể thêm", "Thông báo");
+                HienThi();
+                LamMoi();
+            }
+            else
+
+            if (NhaCungCapBUS.Intance.themNCC(txtMaKH.Text, txtKH.Text, txtDiachi.Text, txtSĐT.Text, txtEmail.Text))
+            {
+                MessageBox.Show("Thêm nhà cung cấp thành công", "Thông báo");
+                HienThi();
+                LamMoi();
+            }
+        }
+
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            string query = "select MaNCC from PhieuNhap where MaNCC = '" + txtMaKH.Text + "'";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            if (dt.Rows.Count > 0)
+            {
+                MessageBox.Show("Bạn không thể xóa  nhà cung cấp này!", "Thông báo");
+                HienThi();
+                LamMoi();
+            }
+            else
+            if (NhaCungCapBUS.Intance.xoaNCC(txtMaKH.Text))
+            {
+                MessageBox.Show("Xóa nhà cung cấp thành công", "Thông báo");
+                HienThi();
+                LamMoi();
+            }
+        }
+
+        private void btnSua_Click_1(object sender, EventArgs e)
+        {
+            if (NhaCungCapBUS.Intance.suaNCC(txtMaKH.Text, txtKH.Text, txtDiachi.Text, txtSĐT.Text, txtEmail.Text))
+            {
+                MessageBox.Show("Sửa nhà cung cấp thành công", "Thông báo");
+                HienThi();
+                LamMoi();
+            }
         }
     }
 }

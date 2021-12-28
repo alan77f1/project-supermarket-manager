@@ -360,6 +360,16 @@ namespace WindowsFormsApp
 
         }
 
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoaHang_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void resetInfoProduct()
         {
             lblMahh.Text = "";

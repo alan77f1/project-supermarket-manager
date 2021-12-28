@@ -228,7 +228,9 @@ namespace WindowsFormsApp
             // 
             // txtKH
             // 
+            this.txtKH.AutoRoundedCorners = true;
             this.txtKH.BorderColor = System.Drawing.Color.Silver;
+            this.txtKH.BorderRadius = 19;
             this.txtKH.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtKH.DefaultText = "Nhập tên khách hàng";
             this.txtKH.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -257,7 +259,9 @@ namespace WindowsFormsApp
             // 
             // txtTimkiem
             // 
+            this.txtTimkiem.AutoRoundedCorners = true;
             this.txtTimkiem.BorderColor = System.Drawing.Color.Silver;
+            this.txtTimkiem.BorderRadius = 19;
             this.txtTimkiem.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTimkiem.DefaultText = "Tìm kiếm theo mã, tên, sđt khách hàng";
             this.txtTimkiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -286,7 +290,9 @@ namespace WindowsFormsApp
             // 
             // txtDiachi
             // 
+            this.txtDiachi.AutoRoundedCorners = true;
             this.txtDiachi.BorderColor = System.Drawing.Color.Silver;
+            this.txtDiachi.BorderRadius = 19;
             this.txtDiachi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDiachi.DefaultText = "Nhập địa chỉ";
             this.txtDiachi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -315,7 +321,9 @@ namespace WindowsFormsApp
             // 
             // txtEmail
             // 
+            this.txtEmail.AutoRoundedCorners = true;
             this.txtEmail.BorderColor = System.Drawing.Color.Silver;
+            this.txtEmail.BorderRadius = 19;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.DefaultText = "Nhập địa chỉ email";
             this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -344,7 +352,9 @@ namespace WindowsFormsApp
             // 
             // txtSĐT
             // 
+            this.txtSĐT.AutoRoundedCorners = true;
             this.txtSĐT.BorderColor = System.Drawing.Color.Silver;
+            this.txtSĐT.BorderRadius = 19;
             this.txtSĐT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSĐT.DefaultText = "Nhập số điện thoại";
             this.txtSĐT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -373,7 +383,9 @@ namespace WindowsFormsApp
             // 
             // txtMaKH
             // 
+            this.txtMaKH.AutoRoundedCorners = true;
             this.txtMaKH.BorderColor = System.Drawing.Color.Silver;
+            this.txtMaKH.BorderRadius = 19;
             this.txtMaKH.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMaKH.DefaultText = "Nhập mã khách hàng";
             this.txtMaKH.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

@@ -36,13 +36,13 @@ namespace WindowsFormsApp
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dgvPN = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnXemchitiet = new FontAwesome.Sharp.IconButton();
             this.txtTimkiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.pcbSearch = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblTk = new System.Windows.Forms.Label();
             this.txtmapn = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnXemchitiet = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPN)).BeginInit();
@@ -52,8 +52,8 @@ namespace WindowsFormsApp
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.btnXemchitiet);
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.txtTimkiem);
             this.panel1.Controls.Add(this.pcbSearch);
             this.panel1.Controls.Add(this.label2);
@@ -141,28 +141,6 @@ namespace WindowsFormsApp
             this.dgvPN.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPN.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvPN.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPN_CellContentClick_1);
-            // 
-            // btnXemchitiet
-            // 
-            this.btnXemchitiet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnXemchitiet.FlatAppearance.BorderSize = 0;
-            this.btnXemchitiet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXemchitiet.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXemchitiet.ForeColor = System.Drawing.Color.White;
-            this.btnXemchitiet.IconChar = FontAwesome.Sharp.IconChar.PaperPlane;
-            this.btnXemchitiet.IconColor = System.Drawing.Color.White;
-            this.btnXemchitiet.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnXemchitiet.IconSize = 28;
-            this.btnXemchitiet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXemchitiet.Location = new System.Drawing.Point(849, 79);
-            this.btnXemchitiet.Name = "btnXemchitiet";
-            this.btnXemchitiet.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnXemchitiet.Size = new System.Drawing.Size(217, 48);
-            this.btnXemchitiet.TabIndex = 201;
-            this.btnXemchitiet.Text = "           Xem Chi Tiết";
-            this.btnXemchitiet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXemchitiet.UseVisualStyleBackColor = false;
-            this.btnXemchitiet.Click += new System.EventHandler(this.btnXemchitiet_Click);
             // 
             // txtTimkiem
             // 
@@ -266,6 +244,37 @@ namespace WindowsFormsApp
             this.txtmapn.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtmapn.TabIndex = 45;
             // 
+            // btnXemchitiet
+            // 
+            this.btnXemchitiet.Animated = true;
+            this.btnXemchitiet.AutoRoundedCorners = true;
+            this.btnXemchitiet.BackColor = System.Drawing.Color.Transparent;
+            this.btnXemchitiet.BorderRadius = 26;
+            this.btnXemchitiet.CheckedState.Parent = this.btnXemchitiet;
+            this.btnXemchitiet.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnXemchitiet.CustomImages.Parent = this.btnXemchitiet;
+            this.btnXemchitiet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXemchitiet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXemchitiet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXemchitiet.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXemchitiet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXemchitiet.DisabledState.Parent = this.btnXemchitiet;
+            this.btnXemchitiet.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnXemchitiet.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnXemchitiet.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnXemchitiet.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnXemchitiet.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXemchitiet.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnXemchitiet.HoverState.Parent = this.btnXemchitiet;
+            this.btnXemchitiet.Location = new System.Drawing.Point(1028, 79);
+            this.btnXemchitiet.Name = "btnXemchitiet";
+            this.btnXemchitiet.ShadowDecoration.Parent = this.btnXemchitiet;
+            this.btnXemchitiet.Size = new System.Drawing.Size(184, 55);
+            this.btnXemchitiet.TabIndex = 359;
+            this.btnXemchitiet.Text = "Xem chi tiết";
+            this.btnXemchitiet.UseTransparentBackground = true;
+            this.btnXemchitiet.Click += new System.EventHandler(this.btnXemchitiet_Click_1);
+            // 
             // UC_ThongKePhieuNhap
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -294,8 +303,8 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2TextBox txtTimkiem;
         private FontAwesome.Sharp.IconPictureBox pcbSearch;
         private System.Windows.Forms.Label label2;
-        private FontAwesome.Sharp.IconButton btnXemchitiet;
         private System.Windows.Forms.Panel panel5;
         private Guna.UI2.WinForms.Guna2DataGridView dgvPN;
+        private Guna.UI2.WinForms.Guna2GradientButton btnXemchitiet;
     }
 }

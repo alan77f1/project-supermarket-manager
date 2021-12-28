@@ -58,5 +58,25 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void txtGioiTinh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        string imgLocation = Application.StartupPath + "\\Resources\\hanghoa.png";
+
+
+        private void btnTaiAnh_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlgOpen = new OpenFileDialog();
+            dlgOpen.Filter = "PNG files(*.png)|*.png|JPEG(*.jpg)|*.jpg|GIF(*.gif)|*.gif|All files(*.*)|*.*";
+            dlgOpen.FilterIndex = 2;
+            dlgOpen.Title = "Chọn ảnh minh hoạ cho sản phẩm";
+            if (dlgOpen.ShowDialog() == DialogResult.OK)
+            {
+                imgLocation = dlgOpen.FileName.ToString();
+                pcbAnh.Image = Image.FromFile(dlgOpen.FileName);
+            }
+        }
     }
 }

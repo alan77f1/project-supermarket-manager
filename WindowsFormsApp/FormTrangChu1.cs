@@ -18,16 +18,25 @@ namespace WindowsFormsApp
         public FormTrangChu1(string tk)
         {
             InitializeComponent();
+            timerTime.Start();
             this.tk = tk;
             tempTK = tk;
             TTnguoiban();
             UC_TrangChu _TrangChu = new UC_TrangChu(lblTenNV.Text);
             addUC(_TrangChu);
-            
-            
         }
 
 
+        private void timerTime_Tick_1(object sender, EventArgs e)
+        {
+            DateTime dt = DateTime.Now;
+            lblTime.Text = dt.ToString("HH:MM:ss");
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
 
 
         private void TTnguoiban()
@@ -47,7 +56,6 @@ namespace WindowsFormsApp
         }
 
 
-
         private void Phanquyen(UserControl us1, UserControl us2, UserControl us3)
         {
             string Name = tempTK;
@@ -63,7 +71,6 @@ namespace WindowsFormsApp
                 }
                 else if (lblQuyen.Text == "Thủ kho")
                 {
-
                     addUC(us2);
 
                 }else if (lblQuyen.Text == "Bán hàng")
@@ -75,12 +82,6 @@ namespace WindowsFormsApp
 
 
 
-        
-
-
-
-
-
         private void addUC(UserControl uc)
         {
             uc.Dock = DockStyle.Fill;
@@ -88,9 +89,6 @@ namespace WindowsFormsApp
             panelControls.Controls.Add(uc);
             uc.BringToFront();
         }
-
-
-      
 
 
         private void ButtonHide()
@@ -120,7 +118,6 @@ namespace WindowsFormsApp
             btnThongKe.BackColor = myRgbColor;
 
         }
-
 
         private void btnBanHang_Click(object sender, EventArgs e)
         {
@@ -231,5 +228,7 @@ namespace WindowsFormsApp
 
             btnThongKe.BackColor = Color.White;
         }
+
+       
     }
 }

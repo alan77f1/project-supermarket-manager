@@ -148,9 +148,100 @@ namespace WindowsFormsApp
             }
         }
 
+        private void Lammoi()
+        {
+            cmbTenHang.SelectedIndex = 0;
+            txtSL.Text = "0";
+            txtGiaNhap.Text = "0";
+            lblMaSP.Text = "";
+            txtGiaBan.Text = "0";
+            cmbTenncc.SelectedIndex = 0;
 
-        // btnThem
-        private void guna2Button1_Click(object sender, EventArgs e)
+        }
+
+
+        private void cmbTenncc_Click(object sender, EventArgs e)
+        {
+            list1 = getListNhaCungCap();
+            cmbTenncc.DataSource = list1;
+            cmbTenncc.ValueMember = "MaNCC";
+            cmbTenncc.DisplayMember = "TenNCC";
+
+
+        }
+
+        private void cmbTenncc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbTenncc.SelectedIndex > 0)
+            {
+                i = cmbTenncc.SelectedIndex;
+                lblMancc.Text = list1[i].MaNCC;
+                //.Text = list1[i].TenNCC;
+                lblDiachi.Text = list1[i].DiaChi;
+                lblSDT.Text = list1[i].SDT;
+                lblEmail.Text = list1[i].Email;
+                lblDiachi.ForeColor = Color.Black;
+                lblEmail.ForeColor = Color.Black;
+                lblSDT.ForeColor = Color.Black;
+                lblMancc.ForeColor = Color.Black;
+            }
+        }
+
+
+        //
+        // Lưu phiếu nhập
+        //
+        private bool LuuPN(PhieuNhapDTO pn)
+        {
+            // Convert datetime to date SQL Server 
+            string query = String.Format("insert into PhieuNhap values('{0}','{1}','{2}','{3}')", pn.MaPN, pn.MaNCC, pn.NgayNhap, pn.MaNV);
+
+            DataProvider.Instance.ExecuteQuery(query);
+            return true;
+        }
+
+
+
+        //
+        // Lưu chi tiết phiếu nhập
+        //
+        private bool LuuChitietPN(string mapn, string mahh, int sl, int dongia)
+        {
+            // Convert datetime to date SQL Server 
+            string query = String.Format("insert into ChiTietPN values('{0}','{1}','{2}','{3}')", mapn, mahh, sl, dongia);
+            DataProvider.Instance.ExecuteQuery(query);
+            return true;
+        }
+
+
+
+        private void cmbLoaihang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string tk = cmbLoaihang.Text;
+            DataTable dt = LoaiHangBUS.Intance.TimKiemGG(tk);
+            DataTable dt1 = LoaiHangBUS.Intance.TimKiemMaMH(tk);
+            if (dt.Rows.Count > 0 && dt.Rows.Count > 0)
+            {
+                cmbTenHang.DataSource = dt;
+            }
+        }
+
+
+        List<LoaiHangDTO> list4;
+        private void cmbLoaihang_Click(object sender, EventArgs e)
+        {
+            list4 = LoaiHangBUS.Intance.getListLoaiHang();
+            cmbLoaihang.DataSource = list4;
+            cmbLoaihang.DisplayMember = "TenLH";
+            cmbLoaihang.ValueMember = "MaLH";
+        }
+
+        private void UC_NhapHang_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
         {
             bool check = false;
 
@@ -206,22 +297,7 @@ namespace WindowsFormsApp
             }
         }
 
-
-
-        private void Lammoi()
-        {
-            cmbTenHang.SelectedIndex = 0;
-            txtSL.Text = "0";
-            txtGiaNhap.Text = "0";
-            lblMaSP.Text = "";
-            txtGiaBan.Text = "0";
-            cmbTenncc.SelectedIndex = 0;
-
-        }
-
-
-        // btnXoahang
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btnXoa_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < lsvNhaphang.Items.Count; i++) //duyệt tất cả các item trong list
             {
@@ -236,34 +312,13 @@ namespace WindowsFormsApp
             }
         }
 
-        private void cmbTenncc_Click(object sender, EventArgs e)
+        private void btnThemTT_Click_1(object sender, EventArgs e)
         {
-            list1 = getListNhaCungCap();
-            cmbTenncc.DataSource = list1;
-            cmbTenncc.ValueMember = "MaNCC";
-            cmbTenncc.DisplayMember = "TenNCC";
-
-
+            FormThongTinHangMoi f = new FormThongTinHangMoi();
+            f.Show();
         }
 
-        private void cmbTenncc_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbTenncc.SelectedIndex > 0)
-            {
-                i = cmbTenncc.SelectedIndex;
-                lblMancc.Text = list1[i].MaNCC;
-                //.Text = list1[i].TenNCC;
-                lblDiachi.Text = list1[i].DiaChi;
-                lblSDT.Text = list1[i].SDT;
-                lblEmail.Text = list1[i].Email;
-                lblDiachi.ForeColor = Color.Black;
-                lblEmail.ForeColor = Color.Black;
-                lblSDT.ForeColor = Color.Black;
-                lblMancc.ForeColor = Color.Black;
-            }
-        }
-
-        private void btnXacNhanNhap_Click(object sender, EventArgs e)
+        private void btnXacNhanNhap_Click_1(object sender, EventArgs e)
         {
             if (lsvNhaphang.Items.Count > 0)
             {
@@ -272,10 +327,6 @@ namespace WindowsFormsApp
                 pn.NgayNhap = dtpNgayban.Value;
                 pn.MaNCC = lblMancc.Text;
                 pn.MaNV = lblNhanvIEN.Text;
-
-
-
-
 
                 if (LuuPN(pn))   // lưu hóa đơn
                 {
@@ -297,73 +348,11 @@ namespace WindowsFormsApp
                     lblDiachi.Text = "";
                     lblEmail.Text = "";
                     lblSDT.Text = "";
-
-
                 }
 
             }
             else
-                MessageBox.Show("Bạn chưa có sản phẩm để nhập","Thông báo");
-        }
-
-
-
-
-        //
-        // Lưu phiếu nhập
-        //
-        private bool LuuPN(PhieuNhapDTO pn)
-        {
-            // Convert datetime to date SQL Server 
-            string query = String.Format("insert into PhieuNhap values('{0}','{1}','{2}','{3}')", pn.MaPN, pn.MaNCC, pn.NgayNhap, pn.MaNV);
-
-            DataProvider.Instance.ExecuteQuery(query);
-            return true;
-        }
-
-
-
-        //
-        // Lưu chi tiết phiếu nhập
-        //
-        private bool LuuChitietPN(string mapn, string mahh, int sl, int dongia)
-        {
-            // Convert datetime to date SQL Server 
-            string query = String.Format("insert into ChiTietPN values('{0}','{1}','{2}','{3}')", mapn, mahh, sl, dongia);
-            DataProvider.Instance.ExecuteQuery(query);
-            return true;
-        }
-
-        private void btnThemTT_Click(object sender, EventArgs e)
-        {
-            FormThongTinHangMoi f = new FormThongTinHangMoi();
-            f.Show();
-        }
-
-        private void cmbLoaihang_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string tk = cmbLoaihang.Text;
-            DataTable dt = LoaiHangBUS.Intance.TimKiemGG(tk);
-            DataTable dt1 = LoaiHangBUS.Intance.TimKiemMaMH(tk);
-            if (dt.Rows.Count > 0 && dt.Rows.Count > 0)
-            {
-                cmbTenHang.DataSource = dt;
-            }
-        }
-
-
-        List<LoaiHangDTO> list4;
-        private void cmbLoaihang_Click(object sender, EventArgs e)
-        {
-            list4 = LoaiHangBUS.Intance.getListLoaiHang();
-            cmbLoaihang.DataSource = list4;
-            cmbLoaihang.DisplayMember = "TenLH";
-            cmbLoaihang.ValueMember = "MaLH";
-        }
-
-        private void UC_NhapHang_Load(object sender, EventArgs e)
-        {
-
+                MessageBox.Show("Bạn chưa có sản phẩm để nhập", "Thông báo");
         }
 
 

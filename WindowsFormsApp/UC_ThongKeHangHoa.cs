@@ -63,13 +63,10 @@ namespace WindowsFormsApp
             userControl.BringToFront();
         }
 
-
-        private void btnXuatBaoGia_Click(object sender, EventArgs e)
+        private void btnXuatBaoGia_Click_1(object sender, EventArgs e)
         {
- 
             UC_ReportHangTon f = new UC_ReportHangTon();
             addUC(f);
-            
         }
     }
 }

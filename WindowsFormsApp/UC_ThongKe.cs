@@ -28,14 +28,7 @@ namespace WindowsFormsApp
             pnlTK.Controls.Clear();
             pnlTK.Controls.Add(userControl);
             userControl.BringToFront();
-
         }
-
-
-      
-
-       
-      
 
         string query = "USP_ThongKeDoanhThuTrongThang @ngaybd , @ngaykt";
 
@@ -51,43 +44,6 @@ namespace WindowsFormsApp
             //chart1.Series[0].ChartType = SeriesChartType.Column;
 
         }
-
-        private void btnXem_Click(object sender, EventArgs e)
-        {
-            chart1.Titles.Clear();
-            ThucThi();
-           
-            
-        }
-
-        private void btnTKHangHoa_CheckedChanged(object sender, EventArgs e)
-        {
-            UC_ThongKeHangHoa _ThongKeHangHoa = new UC_ThongKeHangHoa();
-            addUC(_ThongKeHangHoa);
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            UC_ThongKeKhachHang _ThongKeKhachHang = new UC_ThongKeKhachHang();
-            addUC(_ThongKeKhachHang);
-        }
-
-        private void rdoHoadon_CheckedChanged(object sender, EventArgs e)
-        {
-            UC_ThongKeHoaDon _ThongKeHoaDon = new UC_ThongKeHoaDon();
-            addUC(_ThongKeHoaDon);
-        }
-
-        private void rdoTkpn_CheckedChanged(object sender, EventArgs e)
-        {
-            UC_ThongKePhieuNhap _ThongKePhieuNhap = new UC_ThongKePhieuNhap();
-            addUC(_ThongKePhieuNhap);
-        }
-
-
-
-        
-
 
         private void ThucThi()
         {
@@ -139,6 +95,36 @@ namespace WindowsFormsApp
                 ThucThi();
                // TongtienHoadontheongay();
             }
+        }
+
+        private void btnHanghoa_Click(object sender, EventArgs e)
+        {
+            UC_ThongKeHangHoa _ThongKeHangHoa = new UC_ThongKeHangHoa();
+            addUC(_ThongKeHangHoa);
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            UC_ThongKeHoaDon _ThongKeHoaDon = new UC_ThongKeHoaDon();
+            addUC(_ThongKeHoaDon);
+        }
+
+        private void btnphieunhap_Click(object sender, EventArgs e)
+        {
+            UC_ThongKePhieuNhap _ThongKePhieuNhap = new UC_ThongKePhieuNhap();
+            addUC(_ThongKePhieuNhap);
+        }
+
+        private void btnKhachhang_Click(object sender, EventArgs e)
+        {
+            UC_ThongKeKhachHang _ThongKeKhachHang = new UC_ThongKeKhachHang();
+            addUC(_ThongKeKhachHang);
+        }
+
+        private void btnXem_Click_1(object sender, EventArgs e)
+        {
+            chart1.Titles.Clear();
+            ThucThi();
         }
     }
 }

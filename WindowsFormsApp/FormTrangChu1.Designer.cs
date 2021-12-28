@@ -34,6 +34,7 @@ namespace WindowsFormsApp
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerTime = new System.Windows.Forms.Timer(this.components);
             this.pannelLeft1 = new System.Windows.Forms.Panel();
+            this.btnXoa = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@ namespace WindowsFormsApp
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTime = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btnXoa = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.pannelLeft1.SuspendLayout();
             this.panelLeft.SuspendLayout();
@@ -70,6 +70,10 @@ namespace WindowsFormsApp
             this.panelControls.Size = new System.Drawing.Size(1234, 834);
             this.panelControls.TabIndex = 8;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // pannelLeft1
             // 
             this.pannelLeft1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
@@ -82,6 +86,26 @@ namespace WindowsFormsApp
             this.pannelLeft1.Name = "pannelLeft1";
             this.pannelLeft1.Size = new System.Drawing.Size(266, 116);
             this.pannelLeft1.TabIndex = 0;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.btnXoa.FlatAppearance.BorderSize = 2;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXoa.IconChar = FontAwesome.Sharp.IconChar.HeartBroken;
+            this.btnXoa.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnXoa.IconSize = 50;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(90, 12);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnXoa.Size = new System.Drawing.Size(64, 50);
+            this.btnXoa.TabIndex = 227;
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.UseVisualStyleBackColor = true;
             // 
             // iconButton4
             // 
@@ -110,7 +134,7 @@ namespace WindowsFormsApp
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
             this.label3.Location = new System.Drawing.Point(29, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 46);
+            this.label3.Size = new System.Drawing.Size(110, 45);
             this.label3.TabIndex = 7;
             this.label3.Text = "Co.op";
             // 
@@ -122,7 +146,7 @@ namespace WindowsFormsApp
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.label5.Location = new System.Drawing.Point(133, 51);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 46);
+            this.label5.Size = new System.Drawing.Size(87, 45);
             this.label5.TabIndex = 8;
             this.label5.Text = "mart";
             // 
@@ -480,7 +504,7 @@ namespace WindowsFormsApp
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.lblTime.Location = new System.Drawing.Point(984, 0);
+            this.lblTime.Location = new System.Drawing.Point(56, 1);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(190, 45);
             this.lblTime.TabIndex = 5;
@@ -491,43 +515,22 @@ namespace WindowsFormsApp
             this.bunifuElipse1.ElipseRadius = 30;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // btnXoa
-            // 
-            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnXoa.FlatAppearance.BorderSize = 2;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.btnXoa.IconChar = FontAwesome.Sharp.IconChar.HeartBroken;
-            this.btnXoa.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnXoa.IconSize = 50;
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(90, 12);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnXoa.Size = new System.Drawing.Size(64, 50);
-            this.btnXoa.TabIndex = 227;
-            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
             // iconButton1
             // 
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.iconButton1.FlatAppearance.BorderSize = 2;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Image;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.iconButton1.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.History;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 30;
+            this.iconButton1.IconSize = 35;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(152, -3);
+            this.iconButton1.Location = new System.Drawing.Point(22, 7);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(48, 45);
-            this.iconButton1.TabIndex = 228;
+            this.iconButton1.Size = new System.Drawing.Size(43, 39);
+            this.iconButton1.TabIndex = 42;
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.UseVisualStyleBackColor = true;
             // 

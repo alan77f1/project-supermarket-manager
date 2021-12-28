@@ -46,6 +46,12 @@ namespace WindowsFormsApp
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.btnXoa = new FontAwesome.Sharp.IconButton();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -66,12 +72,6 @@ namespace WindowsFormsApp
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.btnXoa = new FontAwesome.Sharp.IconButton();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.pnlSDT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -128,7 +128,7 @@ namespace WindowsFormsApp
             this.btnTiepTuc.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnTiepTuc.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnTiepTuc.HoverState.Parent = this.btnTiepTuc;
-            this.btnTiepTuc.Location = new System.Drawing.Point(303, 330);
+            this.btnTiepTuc.Location = new System.Drawing.Point(307, 355);
             this.btnTiepTuc.Name = "btnTiepTuc";
             this.btnTiepTuc.ShadowDecoration.Parent = this.btnTiepTuc;
             this.btnTiepTuc.Size = new System.Drawing.Size(220, 57);
@@ -163,7 +163,7 @@ namespace WindowsFormsApp
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Location = new System.Drawing.Point(25, 617);
+            this.panel1.Location = new System.Drawing.Point(26, 672);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 1);
@@ -202,8 +202,9 @@ namespace WindowsFormsApp
             // 
             // txtSDT
             // 
+            this.txtSDT.AutoRoundedCorners = true;
             this.txtSDT.BorderColor = System.Drawing.Color.Silver;
-            this.txtSDT.BorderRadius = 5;
+            this.txtSDT.BorderRadius = 22;
             this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSDT.DefaultText = "";
             this.txtSDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -217,7 +218,7 @@ namespace WindowsFormsApp
             this.txtSDT.ForeColor = System.Drawing.Color.Black;
             this.txtSDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSDT.HoverState.Parent = this.txtSDT;
-            this.txtSDT.Location = new System.Drawing.Point(266, 253);
+            this.txtSDT.Location = new System.Drawing.Point(224, 283);
             this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.PasswordChar = '\0';
@@ -234,7 +235,7 @@ namespace WindowsFormsApp
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(178, 490);
+            this.label8.Location = new System.Drawing.Point(170, 582);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(487, 21);
             this.label8.TabIndex = 264;
@@ -245,7 +246,7 @@ namespace WindowsFormsApp
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(497, 445);
+            this.label7.Location = new System.Drawing.Point(489, 537);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 22);
             this.label7.TabIndex = 263;
@@ -256,7 +257,7 @@ namespace WindowsFormsApp
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(261, 448);
+            this.label6.Location = new System.Drawing.Point(253, 540);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(220, 21);
             this.label6.TabIndex = 262;
@@ -267,7 +268,7 @@ namespace WindowsFormsApp
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(209, 268);
+            this.label5.Location = new System.Drawing.Point(176, 298);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 22);
             this.label5.TabIndex = 24;
@@ -276,7 +277,7 @@ namespace WindowsFormsApp
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources._8b814fa66a3676d9f1090a4e8df515ba;
-            this.pictureBox1.Location = new System.Drawing.Point(166, 262);
+            this.pictureBox1.Location = new System.Drawing.Point(133, 292);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(38, 28);
@@ -288,6 +289,7 @@ namespace WindowsFormsApp
             // 
             this.txtTenDangNhap.BorderColor = System.Drawing.Color.Silver;
             this.txtTenDangNhap.BorderRadius = 5;
+            this.txtTenDangNhap.BorderThickness = 0;
             this.txtTenDangNhap.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenDangNhap.DefaultText = "                  \r\n";
             this.txtTenDangNhap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -301,7 +303,7 @@ namespace WindowsFormsApp
             this.txtTenDangNhap.ForeColor = System.Drawing.Color.Black;
             this.txtTenDangNhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenDangNhap.HoverState.Parent = this.txtTenDangNhap;
-            this.txtTenDangNhap.Location = new System.Drawing.Point(157, 253);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(124, 283);
             this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.PasswordChar = '\0';
@@ -319,7 +321,7 @@ namespace WindowsFormsApp
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(315, 170);
+            this.label4.Location = new System.Drawing.Point(301, 210);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(226, 36);
             this.label4.TabIndex = 21;
@@ -365,6 +367,94 @@ namespace WindowsFormsApp
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(379, 810);
             this.panel2.TabIndex = 2;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.iconButton1.FlatAppearance.BorderSize = 2;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.HeartBroken;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 20;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(294, 758);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.iconButton1.Size = new System.Drawing.Size(35, 22);
+            this.iconButton1.TabIndex = 320;
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.Control;
+            this.label21.Location = new System.Drawing.Point(272, 772);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(57, 23);
+            this.label21.TabIndex = 318;
+            this.label21.Text = "Co.op";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.label22.Location = new System.Drawing.Point(325, 772);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(46, 23);
+            this.label22.TabIndex = 319;
+            this.label22.Text = "mart";
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
+            this.btnXoa.FlatAppearance.BorderSize = 2;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXoa.IconChar = FontAwesome.Sharp.IconChar.HeartBroken;
+            this.btnXoa.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnXoa.IconSize = 50;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(130, 31);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnXoa.Size = new System.Drawing.Size(64, 50);
+            this.btnXoa.TabIndex = 317;
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.Control;
+            this.label17.Location = new System.Drawing.Point(69, 67);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(110, 45);
+            this.label17.TabIndex = 315;
+            this.label17.Text = "Co.op";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.label20.Location = new System.Drawing.Point(173, 70);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(87, 45);
+            this.label20.TabIndex = 316;
+            this.label20.Text = "mart";
             // 
             // label11
             // 
@@ -596,94 +686,6 @@ namespace WindowsFormsApp
             this.iconPictureBox1.Size = new System.Drawing.Size(40, 39);
             this.iconPictureBox1.TabIndex = 285;
             this.iconPictureBox1.TabStop = false;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnXoa.FlatAppearance.BorderSize = 2;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.btnXoa.IconChar = FontAwesome.Sharp.IconChar.HeartBroken;
-            this.btnXoa.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnXoa.IconSize = 50;
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(130, 31);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnXoa.Size = new System.Drawing.Size(64, 50);
-            this.btnXoa.TabIndex = 317;
-            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.Control;
-            this.label17.Location = new System.Drawing.Point(69, 67);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(113, 46);
-            this.label17.TabIndex = 315;
-            this.label17.Text = "Co.op";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.label20.Location = new System.Drawing.Point(173, 70);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(90, 46);
-            this.label20.TabIndex = 316;
-            this.label20.Text = "mart";
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.iconButton1.FlatAppearance.BorderSize = 2;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.HeartBroken;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 20;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(294, 758);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(35, 22);
-            this.iconButton1.TabIndex = 320;
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.Control;
-            this.label21.Location = new System.Drawing.Point(272, 772);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(57, 23);
-            this.label21.TabIndex = 318;
-            this.label21.Text = "Co.op";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.label22.Location = new System.Drawing.Point(325, 772);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(46, 23);
-            this.label22.TabIndex = 319;
-            this.label22.Text = "mart";
             // 
             // FormSDT
             // 

@@ -34,7 +34,6 @@ namespace WindowsFormsApp
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblDoiMatKhau = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -51,7 +50,7 @@ namespace WindowsFormsApp
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtDiaChi = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pcbAnh = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
@@ -65,11 +64,13 @@ namespace WindowsFormsApp
             this.txtHoVaTen = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtChucvu = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSĐT = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnTiepTuc = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.btnTaiAnh = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbAnh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -96,11 +97,11 @@ namespace WindowsFormsApp
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.lblDoiMatKhau);
-            this.panel1.Controls.Add(this.btnTiepTuc);
+            this.panel1.Controls.Add(this.btnTaiAnh);
+            this.panel1.Controls.Add(this.iconPictureBox1);
             this.panel1.Controls.Add(this.guna2Panel2);
             this.panel1.Controls.Add(this.txtDiaChi);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.pcbAnh);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtEmail);
@@ -148,19 +149,6 @@ namespace WindowsFormsApp
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1174, 303);
             this.guna2Panel2.TabIndex = 20;
-            // 
-            // lblDoiMatKhau
-            // 
-            this.lblDoiMatKhau.AutoSize = true;
-            this.lblDoiMatKhau.BackColor = System.Drawing.Color.White;
-            this.lblDoiMatKhau.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDoiMatKhau.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lblDoiMatKhau.Location = new System.Drawing.Point(89, 420);
-            this.lblDoiMatKhau.Name = "lblDoiMatKhau";
-            this.lblDoiMatKhau.Size = new System.Drawing.Size(124, 29);
-            this.lblDoiMatKhau.TabIndex = 250;
-            this.lblDoiMatKhau.Text = "Đổi mật khẩu";
-            this.lblDoiMatKhau.Click += new System.EventHandler(this.lblDoiMatKhau_Click);
             // 
             // label22
             // 
@@ -338,15 +326,15 @@ namespace WindowsFormsApp
             this.txtDiaChi.Size = new System.Drawing.Size(846, 41);
             this.txtDiaChi.TabIndex = 249;
             // 
-            // pictureBox1
+            // pcbAnh
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources.icon_user;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(279, 316);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
+            this.pcbAnh.Image = global::WindowsFormsApp.Properties.Resources.icon_user;
+            this.pcbAnh.Location = new System.Drawing.Point(37, 28);
+            this.pcbAnh.Name = "pcbAnh";
+            this.pcbAnh.Size = new System.Drawing.Size(290, 316);
+            this.pcbAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbAnh.TabIndex = 21;
+            this.pcbAnh.TabStop = false;
             // 
             // label11
             // 
@@ -363,7 +351,7 @@ namespace WindowsFormsApp
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(403, 122);
+            this.label5.Location = new System.Drawing.Point(406, 113);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(114, 29);
             this.label5.TabIndex = 239;
@@ -371,8 +359,9 @@ namespace WindowsFormsApp
             // 
             // txtEmail
             // 
+            this.txtEmail.AutoRoundedCorners = true;
             this.txtEmail.BorderColor = System.Drawing.Color.Silver;
-            this.txtEmail.BorderRadius = 2;
+            this.txtEmail.BorderRadius = 19;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.DefaultText = "Nhập mã nhân viên\r\n";
             this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -386,7 +375,7 @@ namespace WindowsFormsApp
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.HoverState.Parent = this.txtEmail;
-            this.txtEmail.Location = new System.Drawing.Point(411, 408);
+            this.txtEmail.Location = new System.Drawing.Point(408, 400);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
@@ -412,7 +401,7 @@ namespace WindowsFormsApp
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(413, 377);
+            this.label10.Location = new System.Drawing.Point(410, 369);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 29);
             this.label10.TabIndex = 246;
@@ -432,8 +421,9 @@ namespace WindowsFormsApp
             // 
             // txtGioiTinh
             // 
+            this.txtGioiTinh.AutoRoundedCorners = true;
             this.txtGioiTinh.BorderColor = System.Drawing.Color.Silver;
-            this.txtGioiTinh.BorderRadius = 2;
+            this.txtGioiTinh.BorderRadius = 19;
             this.txtGioiTinh.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGioiTinh.DefaultText = "Nhập mã nhân viên\r\n";
             this.txtGioiTinh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -447,7 +437,7 @@ namespace WindowsFormsApp
             this.txtGioiTinh.ForeColor = System.Drawing.Color.Black;
             this.txtGioiTinh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGioiTinh.HoverState.Parent = this.txtGioiTinh;
-            this.txtGioiTinh.Location = new System.Drawing.Point(411, 243);
+            this.txtGioiTinh.Location = new System.Drawing.Point(408, 235);
             this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.PasswordChar = '\0';
@@ -458,12 +448,13 @@ namespace WindowsFormsApp
             this.txtGioiTinh.ShadowDecoration.Parent = this.txtGioiTinh;
             this.txtGioiTinh.Size = new System.Drawing.Size(760, 41);
             this.txtGioiTinh.TabIndex = 245;
+            this.txtGioiTinh.TextChanged += new System.EventHandler(this.txtGioiTinh_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(412, 290);
+            this.label4.Location = new System.Drawing.Point(409, 282);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 29);
             this.label4.TabIndex = 238;
@@ -473,7 +464,7 @@ namespace WindowsFormsApp
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(406, 208);
+            this.label9.Location = new System.Drawing.Point(403, 200);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 29);
             this.label9.TabIndex = 244;
@@ -484,7 +475,7 @@ namespace WindowsFormsApp
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(511, 123);
+            this.label7.Location = new System.Drawing.Point(514, 114);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(22, 29);
             this.label7.TabIndex = 240;
@@ -492,9 +483,10 @@ namespace WindowsFormsApp
             // 
             // txtHoVaTen
             // 
+            this.txtHoVaTen.AutoRoundedCorners = true;
             this.txtHoVaTen.BackColor = System.Drawing.SystemColors.Window;
             this.txtHoVaTen.BorderColor = System.Drawing.Color.Silver;
-            this.txtHoVaTen.BorderRadius = 2;
+            this.txtHoVaTen.BorderRadius = 19;
             this.txtHoVaTen.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtHoVaTen.DefaultText = "Nhập tên nv";
             this.txtHoVaTen.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -521,8 +513,9 @@ namespace WindowsFormsApp
             // 
             // txtChucvu
             // 
+            this.txtChucvu.AutoRoundedCorners = true;
             this.txtChucvu.BorderColor = System.Drawing.Color.Silver;
-            this.txtChucvu.BorderRadius = 2;
+            this.txtChucvu.BorderRadius = 19;
             this.txtChucvu.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtChucvu.DefaultText = "Nhập mã nhân viên\r\n";
             this.txtChucvu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -536,7 +529,7 @@ namespace WindowsFormsApp
             this.txtChucvu.ForeColor = System.Drawing.Color.Black;
             this.txtChucvu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChucvu.HoverState.Parent = this.txtChucvu;
-            this.txtChucvu.Location = new System.Drawing.Point(411, 325);
+            this.txtChucvu.Location = new System.Drawing.Point(408, 317);
             this.txtChucvu.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.txtChucvu.Name = "txtChucvu";
             this.txtChucvu.PasswordChar = '\0';
@@ -550,8 +543,9 @@ namespace WindowsFormsApp
             // 
             // txtSĐT
             // 
+            this.txtSĐT.AutoRoundedCorners = true;
             this.txtSĐT.BorderColor = System.Drawing.Color.Silver;
-            this.txtSĐT.BorderRadius = 2;
+            this.txtSĐT.BorderRadius = 19;
             this.txtSĐT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSĐT.DefaultText = "Nhập số điện thoại";
             this.txtSĐT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -565,7 +559,7 @@ namespace WindowsFormsApp
             this.txtSĐT.ForeColor = System.Drawing.Color.Black;
             this.txtSĐT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSĐT.HoverState.Parent = this.txtSĐT;
-            this.txtSĐT.Location = new System.Drawing.Point(408, 158);
+            this.txtSĐT.Location = new System.Drawing.Point(411, 152);
             this.txtSĐT.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.txtSĐT.Name = "txtSĐT";
             this.txtSĐT.PasswordChar = '\0';
@@ -576,24 +570,51 @@ namespace WindowsFormsApp
             this.txtSĐT.Size = new System.Drawing.Size(763, 41);
             this.txtSĐT.TabIndex = 242;
             // 
-            // btnTiepTuc
+            // iconPictureBox1
             // 
-            this.btnTiepTuc.BorderRadius = 9;
-            this.btnTiepTuc.CheckedState.Parent = this.btnTiepTuc;
-            this.btnTiepTuc.CustomImages.Parent = this.btnTiepTuc;
-            this.btnTiepTuc.DisabledState.Parent = this.btnTiepTuc;
-            this.btnTiepTuc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnTiepTuc.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(254)))));
-            this.btnTiepTuc.FocusedColor = System.Drawing.Color.White;
-            this.btnTiepTuc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTiepTuc.ForeColor = System.Drawing.Color.White;
-            this.btnTiepTuc.HoverState.Parent = this.btnTiepTuc;
-            this.btnTiepTuc.Location = new System.Drawing.Point(20, 356);
-            this.btnTiepTuc.Name = "btnTiepTuc";
-            this.btnTiepTuc.ShadowDecoration.Parent = this.btnTiepTuc;
-            this.btnTiepTuc.Size = new System.Drawing.Size(274, 50);
-            this.btnTiepTuc.TabIndex = 341;
-            this.btnTiepTuc.Text = "Upload";
+            this.iconPictureBox1.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Image;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 70;
+            this.iconPictureBox1.Location = new System.Drawing.Point(40, 350);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(70, 70);
+            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.iconPictureBox1.TabIndex = 343;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // btnTaiAnh
+            // 
+            this.btnTaiAnh.Animated = true;
+            this.btnTaiAnh.AutoRoundedCorners = true;
+            this.btnTaiAnh.BackColor = System.Drawing.Color.Transparent;
+            this.btnTaiAnh.BorderRadius = 20;
+            this.btnTaiAnh.CheckedState.Parent = this.btnTaiAnh;
+            this.btnTaiAnh.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnTaiAnh.CustomImages.Parent = this.btnTaiAnh;
+            this.btnTaiAnh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTaiAnh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTaiAnh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTaiAnh.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTaiAnh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTaiAnh.DisabledState.Parent = this.btnTaiAnh;
+            this.btnTaiAnh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnTaiAnh.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnTaiAnh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnTaiAnh.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnTaiAnh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnTaiAnh.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnTaiAnh.HoverState.Parent = this.btnTaiAnh;
+            this.btnTaiAnh.Location = new System.Drawing.Point(126, 363);
+            this.btnTaiAnh.Name = "btnTaiAnh";
+            this.btnTaiAnh.ShadowDecoration.Parent = this.btnTaiAnh;
+            this.btnTaiAnh.Size = new System.Drawing.Size(176, 43);
+            this.btnTaiAnh.TabIndex = 351;
+            this.btnTaiAnh.Text = "Upload ảnh";
+            this.btnTaiAnh.UseTransparentBackground = true;
+            this.btnTaiAnh.Click += new System.EventHandler(this.btnTaiAnh_Click);
             // 
             // UC_ThongTinhTaiKhoan
             // 
@@ -610,7 +631,8 @@ namespace WindowsFormsApp
             this.panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbAnh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -634,7 +656,6 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lblDoiMatKhau;
         private Guna.UI2.WinForms.Guna2TextBox txtDiaChi;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
@@ -651,7 +672,8 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2GradientButton btnTiepTuc;
+        private System.Windows.Forms.PictureBox pcbAnh;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnTaiAnh;
     }
 }
