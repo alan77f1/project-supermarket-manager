@@ -192,30 +192,7 @@ namespace WindowsFormsApp
 
 
             }
-            else if (cmbTonKho.Text == "Tuần này")
-            {
-                DateTime ngbd = new DateTime(today.Year, today.Month, today.Day);
-                DateTime ngkt = new DateTime(today.Year, today.Month, today.Day + 7);
-                string query = "select top 4 sum(ChiTietHD.SoLuong) as [Top 1], ChiTietHD.MaMH,TenMH from ChiTietHD inner join HoaDon on HoaDon.MaHD = ChiTietHD.MaHD inner join MatHang on MatHang.MaMH = ChiTietHD.MaMH where NgayTao between '" + ngbd + "' and '" + ngkt + "' group by ChiTietHD.MaMH,TenMH order by[Top 1] desc";
-                DataTable dt = DataProvider.Instance.ExecuteQuery(query);
-                if (dt.Rows.Count >= 4)
-                {
-                    lblSPTOP1.Text = dt.Rows[0]["TenMH"].ToString();
-                    lblsanpham.Text = dt.Rows[0]["Top 1"].ToString();
-                    lbltop2.Text = dt.Rows[1]["TenMH"].ToString();
-                    lblsltop2.Text = dt.Rows[1]["Top 1"].ToString();
-                    lbltop3.Text = dt.Rows[2]["TenMH"].ToString();
-                    lblsltop3.Text = dt.Rows[2]["Top 1"].ToString();
-                    lbltop4.Text = dt.Rows[3]["TenMH"].ToString();
-                    lblsltop4.Text = dt.Rows[3]["Top 1"].ToString();
-
-                }
-                else
-
-                    LamMoi();
-
-
-            }
+          
             else if (cmbTonKho.Text == "Tháng này")
             {
                 DateTime ngbd = new DateTime(today.Year, today.Month, 1);
@@ -322,6 +299,7 @@ namespace WindowsFormsApp
             FormLogin f = new FormLogin();
             f.Show();
             this.Hide();
+
         }
 
         private void lblTenNhanVien_Click(object sender, EventArgs e)

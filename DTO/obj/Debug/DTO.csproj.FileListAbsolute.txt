@@ -54,3 +54,11 @@ C:\Users\Nguyen Cong Chi\Downloads\MarketShop\DTO\obj\Debug\DTO.csproj.GenerateR
 C:\Users\Nguyen Cong Chi\Downloads\MarketShop\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Nguyen Cong Chi\Downloads\MarketShop\DTO\obj\Debug\DTO.dll
 C:\Users\Nguyen Cong Chi\Downloads\MarketShop\DTO\obj\Debug\DTO.pdb
+C:\Users\buiva\OneDrive\Máy tính\TKCSDL\DTO\bin\Debug\DTO.dll
+C:\Users\buiva\OneDrive\Máy tính\TKCSDL\DTO\bin\Debug\DTO.pdb
+C:\Users\buiva\OneDrive\Máy tính\TKCSDL\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\buiva\OneDrive\Máy tính\TKCSDL\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\buiva\OneDrive\Máy tính\TKCSDL\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+C:\Users\buiva\OneDrive\Máy tính\TKCSDL\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\buiva\OneDrive\Máy tính\TKCSDL\DTO\obj\Debug\DTO.dll
+C:\Users\buiva\OneDrive\Máy tính\TKCSDL\DTO\obj\Debug\DTO.pdb

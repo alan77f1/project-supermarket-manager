@@ -90,7 +90,7 @@ namespace WindowsFormsApp
 
                 if (dt1.Rows.Count > 0)
                 {
-                    lblMaSP.Text = dt1.Rows[0]["MaMH"].ToString();
+                    lblMaSP1.Text = dt1.Rows[0]["MaMH"].ToString();
                     txtGiaBan.Text = dt1.Rows[0]["GiaBan"].ToString();
                     
                 }
@@ -153,7 +153,7 @@ namespace WindowsFormsApp
             cmbTenHang.SelectedIndex = 0;
             txtSL.Text = "0";
             txtGiaNhap.Text = "0";
-            lblMaSP.Text = "";
+            lblMaSP1.Text = "";
             txtGiaBan.Text = "0";
             cmbTenncc.SelectedIndex = 0;
 
@@ -245,7 +245,7 @@ namespace WindowsFormsApp
         {
             bool check = false;
 
-            string query = "update MatHang set GiaBan = '" + txtGiaBan.Text + "'  where MaMH = '" + lblMaSP.Text + "'";  // cập nhật lại số lượng 
+            string query = "update MatHang set GiaBan = '" + txtGiaBan.Text + "'  where MaMH = '" + lblMaSP1.Text + "'";  // cập nhật lại số lượng 
             DataProvider.Instance.ExecuteQuery(query);
 
             if (Int32.Parse(txtSL.Text.ToString()) <= 0)
@@ -279,7 +279,7 @@ namespace WindowsFormsApp
                 if (!check)
                 {
                     string[] arr = new string[5];
-                    arr[0] = lblMaSP.Text.ToString();
+                    arr[0] = lblMaSP1.Text.ToString();
                     arr[1] = cmbTenHang.Text;
                     arr[2] = txtSL.Text.ToString();
                     arr[3] = txtGiaNhap.Text;

@@ -33,6 +33,8 @@ namespace WindowsFormsApp
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTaiAnh = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -64,13 +66,11 @@ namespace WindowsFormsApp
             this.txtHoVaTen = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtChucvu = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSĐT = new Guna.UI2.WinForms.Guna2TextBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.btnTaiAnh = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAnh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -115,12 +115,58 @@ namespace WindowsFormsApp
             this.panel1.Controls.Add(this.txtHoVaTen);
             this.panel1.Controls.Add(this.txtChucvu);
             this.panel1.Controls.Add(this.txtSĐT);
-            this.panel1.Location = new System.Drawing.Point(19, 66);
+            this.panel1.Location = new System.Drawing.Point(16, 54);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1215, 835);
+            this.panel1.Size = new System.Drawing.Size(1201, 755);
             this.panel1.TabIndex = 221;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnTaiAnh
+            // 
+            this.btnTaiAnh.Animated = true;
+            this.btnTaiAnh.AutoRoundedCorners = true;
+            this.btnTaiAnh.BackColor = System.Drawing.Color.Transparent;
+            this.btnTaiAnh.BorderRadius = 20;
+            this.btnTaiAnh.CheckedState.Parent = this.btnTaiAnh;
+            this.btnTaiAnh.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnTaiAnh.CustomImages.Parent = this.btnTaiAnh;
+            this.btnTaiAnh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTaiAnh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTaiAnh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTaiAnh.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTaiAnh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTaiAnh.DisabledState.Parent = this.btnTaiAnh;
+            this.btnTaiAnh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnTaiAnh.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnTaiAnh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnTaiAnh.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnTaiAnh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnTaiAnh.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnTaiAnh.HoverState.Parent = this.btnTaiAnh;
+            this.btnTaiAnh.Location = new System.Drawing.Point(126, 363);
+            this.btnTaiAnh.Name = "btnTaiAnh";
+            this.btnTaiAnh.ShadowDecoration.Parent = this.btnTaiAnh;
+            this.btnTaiAnh.Size = new System.Drawing.Size(176, 43);
+            this.btnTaiAnh.TabIndex = 351;
+            this.btnTaiAnh.Text = "Upload ảnh";
+            this.btnTaiAnh.UseTransparentBackground = true;
+            this.btnTaiAnh.Click += new System.EventHandler(this.btnTaiAnh_Click);
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Image;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 70;
+            this.iconPictureBox1.Location = new System.Drawing.Point(40, 350);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(70, 70);
+            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.iconPictureBox1.TabIndex = 343;
+            this.iconPictureBox1.TabStop = false;
             // 
             // guna2Panel2
             // 
@@ -147,7 +193,7 @@ namespace WindowsFormsApp
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1174, 303);
+            this.guna2Panel2.Size = new System.Drawing.Size(1163, 266);
             this.guna2Panel2.TabIndex = 20;
             // 
             // label22
@@ -155,7 +201,7 @@ namespace WindowsFormsApp
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Sitka Banner", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label22.Location = new System.Drawing.Point(953, 231);
+            this.label22.Location = new System.Drawing.Point(953, 219);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(147, 28);
             this.label22.TabIndex = 29;
@@ -198,7 +244,7 @@ namespace WindowsFormsApp
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Sitka Banner", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(79, 233);
+            this.label18.Location = new System.Drawing.Point(79, 221);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(387, 28);
             this.label18.TabIndex = 25;
@@ -208,7 +254,7 @@ namespace WindowsFormsApp
             // 
             this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel9.Location = new System.Drawing.Point(20, 230);
+            this.panel9.Location = new System.Drawing.Point(20, 218);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(56, 28);
             this.panel9.TabIndex = 24;
@@ -570,52 +616,6 @@ namespace WindowsFormsApp
             this.txtSĐT.Size = new System.Drawing.Size(763, 41);
             this.txtSĐT.TabIndex = 242;
             // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.White;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Image;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 70;
-            this.iconPictureBox1.Location = new System.Drawing.Point(40, 350);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(70, 70);
-            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.iconPictureBox1.TabIndex = 343;
-            this.iconPictureBox1.TabStop = false;
-            // 
-            // btnTaiAnh
-            // 
-            this.btnTaiAnh.Animated = true;
-            this.btnTaiAnh.AutoRoundedCorners = true;
-            this.btnTaiAnh.BackColor = System.Drawing.Color.Transparent;
-            this.btnTaiAnh.BorderRadius = 20;
-            this.btnTaiAnh.CheckedState.Parent = this.btnTaiAnh;
-            this.btnTaiAnh.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnTaiAnh.CustomImages.Parent = this.btnTaiAnh;
-            this.btnTaiAnh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTaiAnh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTaiAnh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTaiAnh.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTaiAnh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTaiAnh.DisabledState.Parent = this.btnTaiAnh;
-            this.btnTaiAnh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnTaiAnh.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnTaiAnh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnTaiAnh.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnTaiAnh.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.btnTaiAnh.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnTaiAnh.HoverState.Parent = this.btnTaiAnh;
-            this.btnTaiAnh.Location = new System.Drawing.Point(126, 363);
-            this.btnTaiAnh.Name = "btnTaiAnh";
-            this.btnTaiAnh.ShadowDecoration.Parent = this.btnTaiAnh;
-            this.btnTaiAnh.Size = new System.Drawing.Size(176, 43);
-            this.btnTaiAnh.TabIndex = 351;
-            this.btnTaiAnh.Text = "Upload ảnh";
-            this.btnTaiAnh.UseTransparentBackground = true;
-            this.btnTaiAnh.Click += new System.EventHandler(this.btnTaiAnh_Click);
-            // 
             // UC_ThongTinhTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -629,10 +629,10 @@ namespace WindowsFormsApp
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAnh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

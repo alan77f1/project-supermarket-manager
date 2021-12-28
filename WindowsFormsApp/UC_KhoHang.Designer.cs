@@ -40,12 +40,9 @@
             this.dgvHH = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.btnThemQuayHang = new FontAwesome.Sharp.IconButton();
             this.cmbQuayhang = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnThemHang = new FontAwesome.Sharp.IconButton();
-            this.btnThem = new FontAwesome.Sharp.IconButton();
             this.txtTimkiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -267,12 +264,9 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.btnThemQuayHang);
             this.panel3.Controls.Add(this.cmbQuayhang);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.btnThemHang);
-            this.panel3.Controls.Add(this.btnThem);
             this.panel3.Controls.Add(this.txtTimkiem);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.txtTenMH);
@@ -308,27 +302,6 @@
             this.label14.TabIndex = 240;
             this.label14.Text = "*";
             // 
-            // btnThemQuayHang
-            // 
-            this.btnThemQuayHang.BackColor = System.Drawing.Color.White;
-            this.btnThemQuayHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnThemQuayHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemQuayHang.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemQuayHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnThemQuayHang.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnThemQuayHang.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnThemQuayHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnThemQuayHang.IconSize = 20;
-            this.btnThemQuayHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemQuayHang.Location = new System.Drawing.Point(1145, 255);
-            this.btnThemQuayHang.Name = "btnThemQuayHang";
-            this.btnThemQuayHang.Padding = new System.Windows.Forms.Padding(4, 3, 0, 0);
-            this.btnThemQuayHang.Size = new System.Drawing.Size(41, 36);
-            this.btnThemQuayHang.TabIndex = 237;
-            this.btnThemQuayHang.Text = "        ";
-            this.btnThemQuayHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemQuayHang.UseVisualStyleBackColor = false;
-            // 
             // cmbQuayhang
             // 
             this.cmbQuayhang.AutoRoundedCorners = true;
@@ -350,7 +323,7 @@
             this.cmbQuayhang.Location = new System.Drawing.Point(817, 257);
             this.cmbQuayhang.Name = "cmbQuayhang";
             this.cmbQuayhang.ShadowDecoration.Parent = this.cmbQuayhang;
-            this.cmbQuayhang.Size = new System.Drawing.Size(322, 36);
+            this.cmbQuayhang.Size = new System.Drawing.Size(364, 36);
             this.cmbQuayhang.TabIndex = 232;
             this.cmbQuayhang.Click += new System.EventHandler(this.cmbQuayhang_Click);
             // 
@@ -374,48 +347,6 @@
             this.label8.Size = new System.Drawing.Size(96, 29);
             this.label8.TabIndex = 237;
             this.label8.Text = "Quầy hàng";
-            // 
-            // btnThemHang
-            // 
-            this.btnThemHang.BackColor = System.Drawing.Color.White;
-            this.btnThemHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnThemHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemHang.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnThemHang.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnThemHang.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnThemHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnThemHang.IconSize = 20;
-            this.btnThemHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemHang.Location = new System.Drawing.Point(738, 257);
-            this.btnThemHang.Name = "btnThemHang";
-            this.btnThemHang.Padding = new System.Windows.Forms.Padding(4, 3, 0, 0);
-            this.btnThemHang.Size = new System.Drawing.Size(41, 36);
-            this.btnThemHang.TabIndex = 236;
-            this.btnThemHang.Text = "        ";
-            this.btnThemHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemHang.UseVisualStyleBackColor = false;
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.White;
-            this.btnThem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnThem.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnThem.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(82)))), ((int)(((byte)(132)))));
-            this.btnThem.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnThem.IconSize = 20;
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(338, 257);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Padding = new System.Windows.Forms.Padding(4, 3, 0, 0);
-            this.btnThem.Size = new System.Drawing.Size(41, 36);
-            this.btnThem.TabIndex = 229;
-            this.btnThem.Text = "        ";
-            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.UseVisualStyleBackColor = false;
             // 
             // txtTimkiem
             // 
@@ -464,7 +395,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 11);
+            this.label1.Location = new System.Drawing.Point(529, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 22);
             this.label1.TabIndex = 15;
@@ -522,7 +453,7 @@
             this.cmbLoaiHang.Location = new System.Drawing.Point(410, 257);
             this.cmbLoaiHang.Name = "cmbLoaiHang";
             this.cmbLoaiHang.ShadowDecoration.Parent = this.cmbLoaiHang;
-            this.cmbLoaiHang.Size = new System.Drawing.Size(322, 36);
+            this.cmbLoaiHang.Size = new System.Drawing.Size(369, 36);
             this.cmbLoaiHang.TabIndex = 231;
             this.cmbLoaiHang.SelectedIndexChanged += new System.EventHandler(this.cmbLoaiHang_SelectedIndexChanged);
             this.cmbLoaiHang.Click += new System.EventHandler(this.cmbLoaiHang_Click);
@@ -548,7 +479,7 @@
             this.cmbĐVT.Location = new System.Drawing.Point(10, 257);
             this.cmbĐVT.Name = "cmbĐVT";
             this.cmbĐVT.ShadowDecoration.Parent = this.cmbĐVT;
-            this.cmbĐVT.Size = new System.Drawing.Size(322, 36);
+            this.cmbĐVT.Size = new System.Drawing.Size(369, 36);
             this.cmbĐVT.TabIndex = 230;
             this.cmbĐVT.SelectedIndexChanged += new System.EventHandler(this.cmbĐVT_SelectedIndexChanged);
             this.cmbĐVT.Click += new System.EventHandler(this.cmbĐVT_Click);
@@ -831,13 +762,10 @@
         private Guna.UI2.WinForms.Guna2TextBox txtTimkiem;
         private System.Windows.Forms.Panel panel6;
         private Guna.UI2.WinForms.Guna2DataGridView dgvHH;
-        private FontAwesome.Sharp.IconButton btnThemHang;
-        private FontAwesome.Sharp.IconButton btnThem;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label14;
-        private FontAwesome.Sharp.IconButton btnThemQuayHang;
         private Guna.UI2.WinForms.Guna2ComboBox cmbQuayhang;
         private Guna.UI2.WinForms.Guna2GradientButton btnNhaphang;
         private Guna.UI2.WinForms.Guna2GradientButton btnXoa;

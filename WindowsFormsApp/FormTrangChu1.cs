@@ -81,7 +81,6 @@ namespace WindowsFormsApp
         }
 
 
-
         private void addUC(UserControl uc)
         {
             uc.Dock = DockStyle.Fill;
@@ -229,6 +228,16 @@ namespace WindowsFormsApp
             btnThongKe.BackColor = Color.White;
         }
 
-       
+        private void btnDangXuat_Click_1(object sender, EventArgs e)
+        {
+            FormLogin f = new FormLogin();
+            f.Show();
+            this.Hide();
+        }
+
+        private void lblTime_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -200,7 +200,7 @@
             this.lblGiaban.AutoSize = true;
             this.lblGiaban.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGiaban.ForeColor = System.Drawing.Color.Black;
-            this.lblGiaban.Location = new System.Drawing.Point(672, 150);
+            this.lblGiaban.Location = new System.Drawing.Point(466, 150);
             this.lblGiaban.Name = "lblGiaban";
             this.lblGiaban.Size = new System.Drawing.Size(35, 20);
             this.lblGiaban.TabIndex = 269;
@@ -217,7 +217,7 @@
             this.dtpNgayban.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpNgayban.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgayban.HoverState.Parent = this.dtpNgayban;
-            this.dtpNgayban.Location = new System.Drawing.Point(562, 42);
+            this.dtpNgayban.Location = new System.Drawing.Point(534, 14);
             this.dtpNgayban.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpNgayban.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpNgayban.Name = "dtpNgayban";
@@ -232,7 +232,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(477, 35);
+            this.label11.Location = new System.Drawing.Point(410, 14);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(91, 29);
             this.label11.TabIndex = 267;
@@ -244,7 +244,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(550, 141);
+            this.label1.Location = new System.Drawing.Point(378, 143);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 29);
             this.label1.TabIndex = 266;
@@ -269,7 +269,7 @@
             this.cmbLoaiHang.Items.AddRange(new object[] {
             "----- Chọn loại hàng -----"});
             this.cmbLoaiHang.ItemsAppearance.Parent = this.cmbLoaiHang;
-            this.cmbLoaiHang.Location = new System.Drawing.Point(490, 200);
+            this.cmbLoaiHang.Location = new System.Drawing.Point(479, 65);
             this.cmbLoaiHang.Name = "cmbLoaiHang";
             this.cmbLoaiHang.ShadowDecoration.Parent = this.cmbLoaiHang;
             this.cmbLoaiHang.Size = new System.Drawing.Size(255, 36);
@@ -297,10 +297,10 @@
             "Chiếc",
             "Bộ"});
             this.cmbTenHang.ItemsAppearance.Parent = this.cmbTenHang;
-            this.cmbTenHang.Location = new System.Drawing.Point(118, 164);
+            this.cmbTenHang.Location = new System.Drawing.Point(115, 65);
             this.cmbTenHang.Name = "cmbTenHang";
             this.cmbTenHang.ShadowDecoration.Parent = this.cmbTenHang;
-            this.cmbTenHang.Size = new System.Drawing.Size(168, 36);
+            this.cmbTenHang.Size = new System.Drawing.Size(201, 36);
             this.cmbTenHang.TabIndex = 264;
             this.cmbTenHang.SelectedIndexChanged += new System.EventHandler(this.cmbTensp_SelectedIndexChanged);
             // 
@@ -310,7 +310,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(388, 200);
+            this.label17.Location = new System.Drawing.Point(361, 72);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(94, 29);
             this.label17.TabIndex = 263;
@@ -322,7 +322,7 @@
             this.lblMahh.AutoSize = true;
             this.lblMahh.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMahh.ForeColor = System.Drawing.Color.Black;
-            this.lblMahh.Location = new System.Drawing.Point(385, 42);
+            this.lblMahh.Location = new System.Drawing.Point(311, 21);
             this.lblMahh.Name = "lblMahh";
             this.lblMahh.Size = new System.Drawing.Size(60, 20);
             this.lblMahh.TabIndex = 262;
@@ -334,7 +334,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(10, 116);
+            this.label7.Location = new System.Drawing.Point(20, 134);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 29);
             this.label7.TabIndex = 261;
@@ -358,10 +358,10 @@
             this.txtSoLuong.FocusedState.Parent = this.txtSoLuong;
             this.txtSoLuong.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSoLuong.ForeColor = System.Drawing.Color.Black;
-            this.txtSoLuong.Location = new System.Drawing.Point(118, 116);
+            this.txtSoLuong.Location = new System.Drawing.Point(115, 134);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.ShadowDecoration.Parent = this.txtSoLuong;
-            this.txtSoLuong.Size = new System.Drawing.Size(146, 36);
+            this.txtSoLuong.Size = new System.Drawing.Size(201, 36);
             this.txtSoLuong.TabIndex = 260;
             this.txtSoLuong.UpDownButtonFillColor = System.Drawing.Color.Navy;
             this.txtSoLuong.UpDownButtonForeColor = System.Drawing.Color.White;
@@ -377,7 +377,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(33, 65);
+            this.label4.Location = new System.Drawing.Point(20, 65);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 29);
             this.label4.TabIndex = 259;
@@ -389,7 +389,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(280, 33);
+            this.label2.Location = new System.Drawing.Point(220, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 29);
             this.label2.TabIndex = 258;
@@ -401,7 +401,7 @@
             this.lblMahd.AutoSize = true;
             this.lblMahd.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMahd.ForeColor = System.Drawing.Color.Black;
-            this.lblMahd.Location = new System.Drawing.Point(152, 32);
+            this.lblMahd.Location = new System.Drawing.Point(126, 23);
             this.lblMahd.Name = "lblMahd";
             this.lblMahd.Size = new System.Drawing.Size(59, 20);
             this.lblMahd.TabIndex = 257;
@@ -413,7 +413,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(33, 23);
+            this.label3.Location = new System.Drawing.Point(20, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 29);
             this.label3.TabIndex = 256;
@@ -432,9 +432,9 @@
             this.lvSanPhamBan.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvSanPhamBan.GridLines = true;
             this.lvSanPhamBan.HideSelection = false;
-            this.lvSanPhamBan.Location = new System.Drawing.Point(15, 256);
+            this.lvSanPhamBan.Location = new System.Drawing.Point(15, 201);
             this.lvSanPhamBan.Name = "lvSanPhamBan";
-            this.lvSanPhamBan.Size = new System.Drawing.Size(730, 354);
+            this.lvSanPhamBan.Size = new System.Drawing.Size(730, 409);
             this.lvSanPhamBan.TabIndex = 255;
             this.lvSanPhamBan.UseCompatibleStateImageBehavior = false;
             this.lvSanPhamBan.View = System.Windows.Forms.View.Details;
@@ -477,6 +477,7 @@
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1201, 109);
             this.guna2Panel2.TabIndex = 233;
+            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
             // btnThanhToan
             // 
@@ -507,6 +508,7 @@
             this.btnThanhToan.TabIndex = 357;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.UseTransparentBackground = true;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click_1);
             // 
             // btnXoaHang
             // 
@@ -530,7 +532,7 @@
             this.btnXoaHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnXoaHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnXoaHang.HoverState.Parent = this.btnXoaHang;
-            this.btnXoaHang.Location = new System.Drawing.Point(296, 22);
+            this.btnXoaHang.Location = new System.Drawing.Point(383, 22);
             this.btnXoaHang.Name = "btnXoaHang";
             this.btnXoaHang.ShadowDecoration.Parent = this.btnXoaHang;
             this.btnXoaHang.Size = new System.Drawing.Size(159, 55);
@@ -561,7 +563,7 @@
             this.btnThem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnThem.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnThem.HoverState.Parent = this.btnThem;
-            this.btnThem.Location = new System.Drawing.Point(88, 22);
+            this.btnThem.Location = new System.Drawing.Point(104, 22);
             this.btnThem.Name = "btnThem";
             this.btnThem.ShadowDecoration.Parent = this.btnThem;
             this.btnThem.Size = new System.Drawing.Size(159, 55);
@@ -690,7 +692,7 @@
             this.txtTienkhachdua.ForeColor = System.Drawing.Color.Black;
             this.txtTienkhachdua.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTienkhachdua.HoverState.Parent = this.txtTienkhachdua;
-            this.txtTienkhachdua.Location = new System.Drawing.Point(185, 225);
+            this.txtTienkhachdua.Location = new System.Drawing.Point(185, 222);
             this.txtTienkhachdua.Margin = new System.Windows.Forms.Padding(4);
             this.txtTienkhachdua.Name = "txtTienkhachdua";
             this.txtTienkhachdua.PasswordChar = '\0';
@@ -755,7 +757,7 @@
             this.lblTienKhachDua.AutoSize = true;
             this.lblTienKhachDua.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTienKhachDua.ForeColor = System.Drawing.Color.Black;
-            this.lblTienKhachDua.Location = new System.Drawing.Point(290, 234);
+            this.lblTienKhachDua.Location = new System.Drawing.Point(290, 231);
             this.lblTienKhachDua.Name = "lblTienKhachDua";
             this.lblTienKhachDua.Size = new System.Drawing.Size(35, 20);
             this.lblTienKhachDua.TabIndex = 274;
@@ -767,7 +769,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(22, 215);
+            this.label8.Location = new System.Drawing.Point(22, 222);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(139, 29);
             this.label8.TabIndex = 272;
@@ -794,7 +796,7 @@
             this.lblTienbangso.AutoSize = true;
             this.lblTienbangso.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTienbangso.ForeColor = System.Drawing.Color.Black;
-            this.lblTienbangso.Location = new System.Drawing.Point(281, 178);
+            this.lblTienbangso.Location = new System.Drawing.Point(248, 178);
             this.lblTienbangso.Name = "lblTienbangso";
             this.lblTienbangso.Size = new System.Drawing.Size(35, 20);
             this.lblTienbangso.TabIndex = 271;
@@ -830,7 +832,7 @@
             this.lblTienHoanTra.AutoSize = true;
             this.lblTienHoanTra.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTienHoanTra.ForeColor = System.Drawing.Color.Black;
-            this.lblTienHoanTra.Location = new System.Drawing.Point(281, 285);
+            this.lblTienHoanTra.Location = new System.Drawing.Point(272, 285);
             this.lblTienHoanTra.Name = "lblTienHoanTra";
             this.lblTienHoanTra.Size = new System.Drawing.Size(35, 20);
             this.lblTienHoanTra.TabIndex = 276;

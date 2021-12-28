@@ -269,6 +269,11 @@ namespace WindowsFormsApp
             addUC(_NhapHang);
         }
 
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public List<QuayHangDTO> getListQuayHang()
         {
             string query = "select * from QuayHang";

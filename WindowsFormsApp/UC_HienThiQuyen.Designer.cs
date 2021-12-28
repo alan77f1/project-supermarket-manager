@@ -45,13 +45,14 @@ namespace WindowsFormsApp
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.iconPictureBox1);
             this.panel2.Controls.Add(this.lblTk);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1411, 50);
+            this.panel2.Size = new System.Drawing.Size(1215, 50);
             this.panel2.TabIndex = 219;
             // 
             // iconPictureBox1
@@ -83,7 +84,7 @@ namespace WindowsFormsApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(258, 619);
+            this.label1.Location = new System.Drawing.Point(185, 600);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(905, 28);
             this.label1.TabIndex = 220;
@@ -94,7 +95,7 @@ namespace WindowsFormsApp
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(593, 690);
+            this.label2.Location = new System.Drawing.Point(534, 686);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(208, 20);
             this.label2.TabIndex = 221;
@@ -102,9 +103,8 @@ namespace WindowsFormsApp
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources.Capture7;
-            this.pictureBox1.Location = new System.Drawing.Point(164, 126);
+            this.pictureBox1.Location = new System.Drawing.Point(56, 132);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1079, 629);
@@ -124,7 +124,7 @@ namespace WindowsFormsApp
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Silver;
-            this.panel6.Location = new System.Drawing.Point(3, 54);
+            this.panel6.Location = new System.Drawing.Point(3, 49);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1396, 1);
@@ -132,10 +132,8 @@ namespace WindowsFormsApp
             // 
             // UC_HienThiQuyen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -143,7 +141,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC_HienThiQuyen";
-            this.Size = new System.Drawing.Size(1411, 920);
+            this.Size = new System.Drawing.Size(1215, 835);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();

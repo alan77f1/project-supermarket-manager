@@ -54,9 +54,10 @@ namespace WindowsFormsApp
             this.label2 = new System.Windows.Forms.Label();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.lblTime = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btnDangXuat = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pannelLeft1.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -153,6 +154,7 @@ namespace WindowsFormsApp
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.panelLeft.Controls.Add(this.btnDangXuat);
             this.panelLeft.Controls.Add(this.btnThongKe);
             this.panelLeft.Controls.Add(this.btnKhachHang);
             this.panelLeft.Controls.Add(this.lblQuyen);
@@ -497,24 +499,6 @@ namespace WindowsFormsApp
             this.panel3.Size = new System.Drawing.Size(1234, 48);
             this.panel3.TabIndex = 7;
             // 
-            // lblTime
-            // 
-            this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.lblTime.Location = new System.Drawing.Point(56, 1);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(190, 45);
-            this.lblTime.TabIndex = 5;
-            this.lblTime.Text = "HH:MM:SS";
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 30;
-            this.bunifuElipse1.TargetControl = this;
-            // 
             // iconButton1
             // 
             this.iconButton1.FlatAppearance.BorderSize = 0;
@@ -533,6 +517,58 @@ namespace WindowsFormsApp
             this.iconButton1.TabIndex = 42;
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // lblTime
+            // 
+            this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.lblTime.Location = new System.Drawing.Point(56, 1);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(190, 45);
+            this.lblTime.TabIndex = 5;
+            this.lblTime.Text = "HH:MM:SS";
+            this.lblTime.Click += new System.EventHandler(this.lblTime_Click);
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 30;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.Animated = true;
+            this.btnDangXuat.AutoRoundedCorners = true;
+            this.btnDangXuat.BackColor = System.Drawing.Color.Transparent;
+            this.btnDangXuat.BorderRadius = 33;
+            this.btnDangXuat.CheckedState.Parent = this.btnDangXuat;
+            this.btnDangXuat.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnDangXuat.CustomImages.Parent = this.btnDangXuat;
+            this.btnDangXuat.CustomizableEdges.BottomRight = false;
+            this.btnDangXuat.CustomizableEdges.TopRight = false;
+            this.btnDangXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDangXuat.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDangXuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDangXuat.DisabledState.Parent = this.btnDangXuat;
+            this.btnDangXuat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnDangXuat.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnDangXuat.Font = new System.Drawing.Font("Sitka Banner", 12F);
+            this.btnDangXuat.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDangXuat.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnDangXuat.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnDangXuat.HoverState.Parent = this.btnDangXuat;
+            this.btnDangXuat.Location = new System.Drawing.Point(42, 678);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.ShadowDecoration.Parent = this.btnDangXuat;
+            this.btnDangXuat.Size = new System.Drawing.Size(195, 68);
+            this.btnDangXuat.TabIndex = 60;
+            this.btnDangXuat.Text = "  Đăng xuất";
+            this.btnDangXuat.UseTransparentBackground = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click_1);
             // 
             // FormTrangChu1
             // 
@@ -587,5 +623,6 @@ namespace WindowsFormsApp
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private FontAwesome.Sharp.IconButton btnXoa;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDangXuat;
     }
 }

@@ -34,6 +34,7 @@ namespace WindowsFormsApp
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHangHoa = new System.Windows.Forms.Panel();
+            this.btnXuatBaoGia = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dgvHd = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txtTimkiem = new Guna.UI2.WinForms.Guna2TextBox();
@@ -43,7 +44,6 @@ namespace WindowsFormsApp
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblTk = new System.Windows.Forms.Label();
             this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
-            this.btnXuatBaoGia = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pnlHangHoa.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHd)).BeginInit();
@@ -65,13 +65,44 @@ namespace WindowsFormsApp
             this.pnlHangHoa.Size = new System.Drawing.Size(1234, 834);
             this.pnlHangHoa.TabIndex = 0;
             // 
+            // btnXuatBaoGia
+            // 
+            this.btnXuatBaoGia.Animated = true;
+            this.btnXuatBaoGia.AutoRoundedCorners = true;
+            this.btnXuatBaoGia.BackColor = System.Drawing.Color.Transparent;
+            this.btnXuatBaoGia.BorderRadius = 26;
+            this.btnXuatBaoGia.CheckedState.Parent = this.btnXuatBaoGia;
+            this.btnXuatBaoGia.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnXuatBaoGia.CustomImages.Parent = this.btnXuatBaoGia;
+            this.btnXuatBaoGia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXuatBaoGia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXuatBaoGia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXuatBaoGia.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXuatBaoGia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXuatBaoGia.DisabledState.Parent = this.btnXuatBaoGia;
+            this.btnXuatBaoGia.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnXuatBaoGia.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnXuatBaoGia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnXuatBaoGia.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnXuatBaoGia.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnXuatBaoGia.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnXuatBaoGia.HoverState.Parent = this.btnXuatBaoGia;
+            this.btnXuatBaoGia.Location = new System.Drawing.Point(1027, 56);
+            this.btnXuatBaoGia.Name = "btnXuatBaoGia";
+            this.btnXuatBaoGia.ShadowDecoration.Parent = this.btnXuatBaoGia;
+            this.btnXuatBaoGia.Size = new System.Drawing.Size(184, 55);
+            this.btnXuatBaoGia.TabIndex = 360;
+            this.btnXuatBaoGia.Text = "Xem chi tiết";
+            this.btnXuatBaoGia.UseTransparentBackground = true;
+            this.btnXuatBaoGia.Click += new System.EventHandler(this.btnXuatBaoGia_Click_1);
+            // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.dgvHd);
-            this.panel5.Location = new System.Drawing.Point(23, 164);
+            this.panel5.Location = new System.Drawing.Point(23, 117);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1188, 652);
+            this.panel5.Size = new System.Drawing.Size(1188, 699);
             this.panel5.TabIndex = 229;
             // 
             // dgvHd
@@ -158,14 +189,14 @@ namespace WindowsFormsApp
             this.txtTimkiem.ForeColor = System.Drawing.Color.Black;
             this.txtTimkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimkiem.HoverState.Parent = this.txtTimkiem;
-            this.txtTimkiem.Location = new System.Drawing.Point(135, 91);
+            this.txtTimkiem.Location = new System.Drawing.Point(135, 61);
             this.txtTimkiem.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.PasswordChar = '\0';
             this.txtTimkiem.PlaceholderText = "";
             this.txtTimkiem.SelectedText = "";
             this.txtTimkiem.ShadowDecoration.Parent = this.txtTimkiem;
-            this.txtTimkiem.Size = new System.Drawing.Size(296, 48);
+            this.txtTimkiem.Size = new System.Drawing.Size(296, 34);
             this.txtTimkiem.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTimkiem.TabIndex = 46;
             this.txtTimkiem.TextChanged += new System.EventHandler(this.txtTimkiem_TextChanged);
@@ -178,7 +209,7 @@ namespace WindowsFormsApp
             this.pcbSearch.IconColor = System.Drawing.SystemColors.ControlText;
             this.pcbSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.pcbSearch.IconSize = 34;
-            this.pcbSearch.Location = new System.Drawing.Point(427, 105);
+            this.pcbSearch.Location = new System.Drawing.Point(427, 61);
             this.pcbSearch.Name = "pcbSearch";
             this.pcbSearch.Size = new System.Drawing.Size(36, 34);
             this.pcbSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -189,7 +220,7 @@ namespace WindowsFormsApp
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 105);
+            this.label2.Location = new System.Drawing.Point(16, 61);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 32);
             this.label2.TabIndex = 44;
@@ -231,37 +262,6 @@ namespace WindowsFormsApp
             this.entityCommand1.Connection = null;
             this.entityCommand1.EnablePlanCaching = true;
             this.entityCommand1.Transaction = null;
-            // 
-            // btnXuatBaoGia
-            // 
-            this.btnXuatBaoGia.Animated = true;
-            this.btnXuatBaoGia.AutoRoundedCorners = true;
-            this.btnXuatBaoGia.BackColor = System.Drawing.Color.Transparent;
-            this.btnXuatBaoGia.BorderRadius = 26;
-            this.btnXuatBaoGia.CheckedState.Parent = this.btnXuatBaoGia;
-            this.btnXuatBaoGia.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnXuatBaoGia.CustomImages.Parent = this.btnXuatBaoGia;
-            this.btnXuatBaoGia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnXuatBaoGia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnXuatBaoGia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXuatBaoGia.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXuatBaoGia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXuatBaoGia.DisabledState.Parent = this.btnXuatBaoGia;
-            this.btnXuatBaoGia.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnXuatBaoGia.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnXuatBaoGia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnXuatBaoGia.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnXuatBaoGia.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.btnXuatBaoGia.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnXuatBaoGia.HoverState.Parent = this.btnXuatBaoGia;
-            this.btnXuatBaoGia.Location = new System.Drawing.Point(1027, 91);
-            this.btnXuatBaoGia.Name = "btnXuatBaoGia";
-            this.btnXuatBaoGia.ShadowDecoration.Parent = this.btnXuatBaoGia;
-            this.btnXuatBaoGia.Size = new System.Drawing.Size(184, 55);
-            this.btnXuatBaoGia.TabIndex = 360;
-            this.btnXuatBaoGia.Text = "Xem chi tiết";
-            this.btnXuatBaoGia.UseTransparentBackground = true;
-            this.btnXuatBaoGia.Click += new System.EventHandler(this.btnXuatBaoGia_Click_1);
             // 
             // UC_ThongKeHangHoa
             // 
