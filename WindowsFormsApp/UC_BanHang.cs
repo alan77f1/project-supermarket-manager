@@ -252,7 +252,7 @@ namespace WindowsFormsApp
                     {
                         int temp = Int32.Parse(item.SubItems[2].Text) + Int32.Parse(txtSoLuong.Value.ToString());
                         item.SubItems[2].Text = temp.ToString();
-                        item.SubItems[3].Text = (Int32.Parse(item.SubItems[2].Text) * Int32.Parse(lblGiaban.Text)).ToString();
+                        item.SubItems[4].Text = (Int32.Parse(item.SubItems[2].Text) * Int32.Parse(lblGiaban.Text)).ToString();
                         break;
                     }
                 }

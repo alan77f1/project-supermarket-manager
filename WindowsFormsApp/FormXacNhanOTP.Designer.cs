@@ -59,7 +59,6 @@ namespace WindowsFormsApp
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtXacNhan = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtSDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label12 = new System.Windows.Forms.Label();
@@ -487,7 +486,7 @@ namespace WindowsFormsApp
             this.txtXacNhan.ForeColor = System.Drawing.Color.Black;
             this.txtXacNhan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtXacNhan.HoverState.Parent = this.txtXacNhan;
-            this.txtXacNhan.Location = new System.Drawing.Point(549, 401);
+            this.txtXacNhan.Location = new System.Drawing.Point(549, 330);
             this.txtXacNhan.Margin = new System.Windows.Forms.Padding(4);
             this.txtXacNhan.Name = "txtXacNhan";
             this.txtXacNhan.PasswordChar = '\0';
@@ -499,44 +498,12 @@ namespace WindowsFormsApp
             this.txtXacNhan.TabIndex = 331;
             this.txtXacNhan.TextOffset = new System.Drawing.Point(15, 0);
             // 
-            // txtSDT
-            // 
-            this.txtSDT.AutoRoundedCorners = true;
-            this.txtSDT.BorderColor = System.Drawing.Color.Silver;
-            this.txtSDT.BorderRadius = 20;
-            this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSDT.DefaultText = "";
-            this.txtSDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSDT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSDT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSDT.DisabledState.Parent = this.txtSDT;
-            this.txtSDT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSDT.Enabled = false;
-            this.txtSDT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSDT.FocusedState.Parent = this.txtSDT;
-            this.txtSDT.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.ForeColor = System.Drawing.Color.Black;
-            this.txtSDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSDT.HoverState.Parent = this.txtSDT;
-            this.txtSDT.Location = new System.Drawing.Point(549, 334);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.PasswordChar = '\0';
-            this.txtSDT.PlaceholderText = "";
-            this.txtSDT.ReadOnly = true;
-            this.txtSDT.SelectedText = "";
-            this.txtSDT.ShadowDecoration.BorderRadius = 10;
-            this.txtSDT.ShadowDecoration.Parent = this.txtSDT;
-            this.txtSDT.Size = new System.Drawing.Size(516, 42);
-            this.txtSDT.TabIndex = 330;
-            this.txtSDT.TextOffset = new System.Drawing.Point(15, 0);
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Sitka Banner", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(674, 186);
+            this.label15.Location = new System.Drawing.Point(702, 191);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(215, 35);
             this.label15.TabIndex = 325;
@@ -679,7 +646,7 @@ namespace WindowsFormsApp
             this.btnTiepTuc.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnTiepTuc.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnTiepTuc.HoverState.Parent = this.btnTiepTuc;
-            this.btnTiepTuc.Location = new System.Drawing.Point(695, 471);
+            this.btnTiepTuc.Location = new System.Drawing.Point(697, 421);
             this.btnTiepTuc.Name = "btnTiepTuc";
             this.btnTiepTuc.ShadowDecoration.Parent = this.btnTiepTuc;
             this.btnTiepTuc.Size = new System.Drawing.Size(220, 57);
@@ -705,7 +672,6 @@ namespace WindowsFormsApp
             this.Controls.Add(this.iconPictureBox6);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.txtXacNhan);
-            this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -752,7 +718,6 @@ namespace WindowsFormsApp
         private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2TextBox txtXacNhan;
-        private Guna.UI2.WinForms.Guna2TextBox txtSDT;
         private System.Windows.Forms.Label label15;
         private FontAwesome.Sharp.IconButton btnQuaylai;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;

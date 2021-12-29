@@ -139,7 +139,7 @@ namespace WindowsFormsApp
             this.txtSĐT.BorderColor = System.Drawing.Color.Silver;
             this.txtSĐT.BorderRadius = 21;
             this.txtSĐT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSĐT.DefaultText = "Nhập tên nv";
+            this.txtSĐT.DefaultText = "0333533893";
             this.txtSĐT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtSĐT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtSĐT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -158,7 +158,6 @@ namespace WindowsFormsApp
             this.txtSĐT.PlaceholderText = "";
             this.txtSĐT.ReadOnly = true;
             this.txtSĐT.SelectedText = "";
-            this.txtSĐT.SelectionStart = 11;
             this.txtSĐT.ShadowDecoration.Parent = this.txtSĐT;
             this.txtSĐT.Size = new System.Drawing.Size(430, 45);
             this.txtSĐT.TabIndex = 248;

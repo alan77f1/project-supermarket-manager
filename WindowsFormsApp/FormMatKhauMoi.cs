@@ -26,5 +26,11 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void btnQuaylai_Click(object sender, EventArgs e)
+        {
+            FormLogin formDangNhap = new FormLogin();
+            formDangNhap.ShowDialog();
+        }
     }
 }
