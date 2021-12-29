@@ -262,7 +262,7 @@ namespace WindowsFormsApp
             {
                 foreach (ListViewItem N in lsvNhaphang.Items)
                 {
-                    if (N.SubItems[0].Text == cmbTenHang.SelectedValue.ToString())
+                    if (N.SubItems[0].Text == lblMaSP1.Text)
                     {
                         check = true;
                     }

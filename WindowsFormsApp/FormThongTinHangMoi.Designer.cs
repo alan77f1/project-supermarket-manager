@@ -31,6 +31,8 @@ namespace WindowsFormsApp
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnHuy = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnLuu = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbQuayhang = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -48,8 +50,6 @@ namespace WindowsFormsApp
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnLuu = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnHuy = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -95,6 +95,68 @@ namespace WindowsFormsApp
             this.panel3.Size = new System.Drawing.Size(780, 307);
             this.panel3.TabIndex = 222;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Animated = true;
+            this.btnHuy.AutoRoundedCorners = true;
+            this.btnHuy.BackColor = System.Drawing.Color.Transparent;
+            this.btnHuy.BorderRadius = 21;
+            this.btnHuy.CheckedState.Parent = this.btnHuy;
+            this.btnHuy.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnHuy.CustomImages.Parent = this.btnHuy;
+            this.btnHuy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHuy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHuy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHuy.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHuy.DisabledState.Parent = this.btnHuy;
+            this.btnHuy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnHuy.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnHuy.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHuy.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnHuy.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnHuy.HoverState.Parent = this.btnHuy;
+            this.btnHuy.Location = new System.Drawing.Point(468, 249);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.ShadowDecoration.Parent = this.btnHuy;
+            this.btnHuy.Size = new System.Drawing.Size(142, 45);
+            this.btnHuy.TabIndex = 359;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseTransparentBackground = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click_1);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Animated = true;
+            this.btnLuu.AutoRoundedCorners = true;
+            this.btnLuu.BackColor = System.Drawing.Color.Transparent;
+            this.btnLuu.BorderRadius = 21;
+            this.btnLuu.CheckedState.Parent = this.btnLuu;
+            this.btnLuu.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnLuu.CustomImages.Parent = this.btnLuu;
+            this.btnLuu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLuu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLuu.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLuu.DisabledState.Parent = this.btnLuu;
+            this.btnLuu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnLuu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLuu.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnLuu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnLuu.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnLuu.HoverState.Parent = this.btnLuu;
+            this.btnLuu.Location = new System.Drawing.Point(625, 249);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.ShadowDecoration.Parent = this.btnLuu;
+            this.btnLuu.Size = new System.Drawing.Size(142, 45);
+            this.btnLuu.TabIndex = 358;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseTransparentBackground = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click_1);
             // 
             // label7
             // 
@@ -247,7 +309,7 @@ namespace WindowsFormsApp
             this.txtTenMH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenMH.HoverState.Parent = this.txtTenMH;
             this.txtTenMH.Location = new System.Drawing.Point(17, 88);
-            this.txtTenMH.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtTenMH.Margin = new System.Windows.Forms.Padding(6);
             this.txtTenMH.Name = "txtTenMH";
             this.txtTenMH.PasswordChar = '\0';
             this.txtTenMH.PlaceholderText = "";
@@ -287,7 +349,7 @@ namespace WindowsFormsApp
             this.txtMaMH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaMH.HoverState.Parent = this.txtMaMH;
             this.txtMaMH.Location = new System.Drawing.Point(533, 91);
-            this.txtMaMH.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtMaMH.Margin = new System.Windows.Forms.Padding(6);
             this.txtMaMH.Name = "txtMaMH";
             this.txtMaMH.PasswordChar = '\0';
             this.txtMaMH.PlaceholderText = "";
@@ -358,66 +420,6 @@ namespace WindowsFormsApp
             this.label1.Size = new System.Drawing.Size(181, 20);
             this.label1.TabIndex = 16;
             this.label1.Text = "Thông tin mặt hàng mới";
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Animated = true;
-            this.btnLuu.AutoRoundedCorners = true;
-            this.btnLuu.BackColor = System.Drawing.Color.Transparent;
-            this.btnLuu.BorderRadius = 21;
-            this.btnLuu.CheckedState.Parent = this.btnLuu;
-            this.btnLuu.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnLuu.CustomImages.Parent = this.btnLuu;
-            this.btnLuu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLuu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLuu.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLuu.DisabledState.Parent = this.btnLuu;
-            this.btnLuu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnLuu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLuu.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLuu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.btnLuu.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnLuu.HoverState.Parent = this.btnLuu;
-            this.btnLuu.Location = new System.Drawing.Point(625, 249);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.ShadowDecoration.Parent = this.btnLuu;
-            this.btnLuu.Size = new System.Drawing.Size(142, 45);
-            this.btnLuu.TabIndex = 358;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseTransparentBackground = true;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Animated = true;
-            this.btnHuy.AutoRoundedCorners = true;
-            this.btnHuy.BackColor = System.Drawing.Color.Transparent;
-            this.btnHuy.BorderRadius = 21;
-            this.btnHuy.CheckedState.Parent = this.btnHuy;
-            this.btnHuy.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnHuy.CustomImages.Parent = this.btnHuy;
-            this.btnHuy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHuy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHuy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHuy.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHuy.DisabledState.Parent = this.btnHuy;
-            this.btnHuy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnHuy.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnHuy.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnHuy.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.btnHuy.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnHuy.HoverState.Parent = this.btnHuy;
-            this.btnHuy.Location = new System.Drawing.Point(468, 249);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.ShadowDecoration.Parent = this.btnHuy;
-            this.btnHuy.Size = new System.Drawing.Size(142, 45);
-            this.btnHuy.TabIndex = 359;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseTransparentBackground = true;
             // 
             // FormThongTinHangMoi
             // 

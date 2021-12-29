@@ -29,10 +29,7 @@ namespace WindowsFormsApp
             this.Close();
         }
 
-        private void btnHuy_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+
 
 
 
@@ -93,35 +90,8 @@ namespace WindowsFormsApp
 
         string temp2;
         string temp3;
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-            DataTable dt = QuayHangBUS.Intance.TimKiemQH(cmbQuayhang.Text);
-            if (dt.Rows.Count > 0)
-            {
-                temp3 = dt.Rows[0]["MaQH"].ToString();
-            }
 
-            DataTable dt1 = DonViTinhBUS.Intance.TimKiemDVT(cmbĐVT.Text);
-            if (dt1.Rows.Count > 0)
-            {
-                temp2 = dt1.Rows[0]["MaDVT"].ToString();
-            }
-            if (string.IsNullOrEmpty(txtMaMH.Text))
-            {
-                MessageBox.Show("Tên mặt hàng không được trống");
-            }
-            else
-            {
-                if (LuuHH(txtMaMH.Text, txtTenMH.Text, temp2, 0, 1, temp,temp3))
-                {
-                    MessageBox.Show("Lưu thông tin hàng thành công");
-                    txtMaMH.Text = Matudong();
-                    Lammoi();
-                }
-                else
-                    MessageBox.Show("Không thể lưu thông tin này");
-            }
-        }
+
 
 
 
@@ -203,6 +173,41 @@ namespace WindowsFormsApp
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnHuy_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnLuu_Click_1(object sender, EventArgs e)
+        {
+            DataTable dt = QuayHangBUS.Intance.TimKiemQH(cmbQuayhang.Text);
+            if (dt.Rows.Count > 0)
+            {
+                temp3 = dt.Rows[0]["MaQH"].ToString();
+            }
+
+            DataTable dt1 = DonViTinhBUS.Intance.TimKiemDVT(cmbĐVT.Text);
+            if (dt1.Rows.Count > 0)
+            {
+                temp2 = dt1.Rows[0]["MaDVT"].ToString();
+            }
+            if (string.IsNullOrEmpty(txtMaMH.Text))
+            {
+                MessageBox.Show("Tên mặt hàng không được trống");
+            }
+            else
+            {
+                if (LuuHH(txtMaMH.Text, txtTenMH.Text, temp2, 0, 1, temp, temp3))
+                {
+                    MessageBox.Show("Lưu thông tin hàng thành công");
+                    txtMaMH.Text = Matudong();
+                    Lammoi();
+                }
+                else
+                    MessageBox.Show("Không thể lưu thông tin này");
+            }
         }
     }
 }

@@ -178,8 +178,8 @@ namespace WindowsFormsApp
             cmbGioiTinh.Text = dgvNV.Rows[indexx].Cells[2].Value.ToString();
             txtDiachi.Text = dgvNV.Rows[indexx].Cells[3].Value.ToString();
             txtSĐT.Text = dgvNV.Rows[indexx].Cells[4].Value.ToString();
-            txtEmail.Text = dgvNV.Rows[indexx].Cells[5].Value.ToString();
-            cmbChucVu.Text = dgvNV.Rows[indexx].Cells[6].Value.ToString();
+            txtEmail.Text = dgvNV.Rows[indexx].Cells[6].Value.ToString();
+            cmbChucVu.Text = dgvNV.Rows[indexx].Cells[5].Value.ToString();
             txtKH.ForeColor = Color.Black;
             txtDiachi.ForeColor = Color.Black;
             txtMaNV.ForeColor = Color.Black;
@@ -261,8 +261,8 @@ namespace WindowsFormsApp
             cmbGioiTinh.Text = dgvNV.Rows[indexx].Cells[2].Value.ToString();
             txtDiachi.Text = dgvNV.Rows[indexx].Cells[3].Value.ToString();
             txtSĐT.Text = dgvNV.Rows[indexx].Cells[4].Value.ToString();
-            txtEmail.Text = dgvNV.Rows[indexx].Cells[5].Value.ToString();
-            cmbChucVu.Text = dgvNV.Rows[indexx].Cells[6].Value.ToString();
+            txtEmail.Text = dgvNV.Rows[indexx].Cells[6].Value.ToString();
+            cmbChucVu.Text = dgvNV.Rows[indexx].Cells[5].Value.ToString();
             txtKH.ForeColor = Color.Black;
             txtDiachi.ForeColor = Color.Black;
             txtMaNV.ForeColor = Color.Black;

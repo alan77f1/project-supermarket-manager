@@ -41,7 +41,7 @@ namespace DAO
 
         public DataTable getListNV()
         {
-            string query = "select MaNV as [Mã nhân viên],TenHienThi as [Tên nhân viên],GioiTinh as [Giới tính],DiaChi as [Địa chỉ],SDT as [Số điện thoại],Quyen as [Chức vụ] from NhanVien";
+            string query = "select MaNV as [Mã nhân viên],TenHienThi as [Tên nhân viên],GioiTinh as [Giới tính],DiaChi as [Địa chỉ],SDT as [Số điện thoại],Quyen as [Chức vụ], Email as [Email] from NhanVien";
             return DataProvider.Instance.ExecuteQuery(query);
         }
 
@@ -63,7 +63,7 @@ namespace DAO
 
         public DataTable TimKiemNV(string name)
         {
-            string query = string.Format("select MaNV as [Mã nhân viên],TenHienThi as [Tên nhân viên],GioiTinh as [Giới tính],DiaChi as [Địa chỉ],SDT as [Số điện thoại],Quyen as [Chức vụ] FROM NhanVien WHERE NhanVien.TenHienThi LIKE N'%"+name+"%' or MaNV LIKE '%"+name+"%'");
+            string query = string.Format("select MaNV as [Mã nhân viên],TenHienThi as [Tên nhân viên],GioiTinh as [Giới tính],DiaChi as [Địa chỉ],SDT as [Số điện thoại],Quyen as [Chức vụ], Email as [Email] FROM NhanVien WHERE NhanVien.TenHienThi LIKE N'%" + name+"%' or MaNV LIKE '%"+name+"%'");
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             return data;
         }
@@ -78,10 +78,10 @@ namespace DAO
         }
 
 
-        public bool themNV(string maNV, string tenNV, string Gioitinh, string DiaChi, string SDT, string Tendangnhap, string Matkhau)
+        public bool themNV(string maNV, string tenNV, string Gioitinh, string DiaChi, string SDT, string Tendangnhap, string Matkhau, string Email)
         {
 
-            string query = String.Format("insert into NhanVien(MaNV,TenHienThi,GioiTinh,DiaChi,SDT,TenDangNhap,MatKhau) values  ('{0}',N'{1}',N'{2}',N'{3}','{4}','{5}','{6}')", maNV, tenNV, Gioitinh, DiaChi, SDT, Tendangnhap, Matkhau);
+            string query = String.Format("insert into NhanVien(MaNV,TenHienThi,GioiTinh,DiaChi,SDT,TenDangNhap,MatKhau,Email) values  ('{0}',N'{1}',N'{2}',N'{3}','{4}','{5}','{6}','{7}')", maNV, tenNV, Gioitinh, DiaChi, SDT, Tendangnhap, Matkhau, Email);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

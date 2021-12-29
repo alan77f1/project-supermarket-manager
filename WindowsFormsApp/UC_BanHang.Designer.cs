@@ -532,7 +532,7 @@
             this.btnXoaHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnXoaHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnXoaHang.HoverState.Parent = this.btnXoaHang;
-            this.btnXoaHang.Location = new System.Drawing.Point(383, 22);
+            this.btnXoaHang.Location = new System.Drawing.Point(315, 22);
             this.btnXoaHang.Name = "btnXoaHang";
             this.btnXoaHang.ShadowDecoration.Parent = this.btnXoaHang;
             this.btnXoaHang.Size = new System.Drawing.Size(159, 55);

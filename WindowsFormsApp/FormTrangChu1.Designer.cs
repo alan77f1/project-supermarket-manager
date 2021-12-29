@@ -55,11 +55,11 @@ namespace WindowsFormsApp
             this.label2 = new System.Windows.Forms.Label();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.pcbBell = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.lblTime = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.pcbBell = new FontAwesome.Sharp.IconPictureBox();
             this.pannelLeft1.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -486,7 +486,7 @@ namespace WindowsFormsApp
             this.btnTrangChu.ShadowDecoration.Parent = this.btnTrangChu;
             this.btnTrangChu.Size = new System.Drawing.Size(209, 68);
             this.btnTrangChu.TabIndex = 33;
-            this.btnTrangChu.Text = "Trang chủ";
+            this.btnTrangChu.Text = "Tổng quan";
             this.btnTrangChu.UseTransparentBackground = true;
             this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click_1);
             // 
@@ -541,6 +541,37 @@ namespace WindowsFormsApp
             this.panel3.Size = new System.Drawing.Size(1234, 48);
             this.panel3.TabIndex = 7;
             // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 30;
+            this.iconPictureBox1.Location = new System.Drawing.Point(1145, 12);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(38, 30);
+            this.iconPictureBox1.TabIndex = 44;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // pcbBell
+            // 
+            this.pcbBell.BackColor = System.Drawing.SystemColors.Control;
+            this.pcbBell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.pcbBell.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.pcbBell.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.pcbBell.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pcbBell.IconSize = 30;
+            this.pcbBell.Location = new System.Drawing.Point(1092, 14);
+            this.pcbBell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbBell.Name = "pcbBell";
+            this.pcbBell.Size = new System.Drawing.Size(38, 30);
+            this.pcbBell.TabIndex = 43;
+            this.pcbBell.TabStop = false;
+            this.pcbBell.Click += new System.EventHandler(this.pcbBell_Click);
+            // 
             // iconButton1
             // 
             this.iconButton1.FlatAppearance.BorderSize = 0;
@@ -578,37 +609,6 @@ namespace WindowsFormsApp
             // 
             this.bunifuElipse1.ElipseRadius = 30;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Heart;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 30;
-            this.iconPictureBox1.Location = new System.Drawing.Point(1145, 12);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(38, 30);
-            this.iconPictureBox1.TabIndex = 44;
-            this.iconPictureBox1.TabStop = false;
-            // 
-            // pcbBell
-            // 
-            this.pcbBell.BackColor = System.Drawing.SystemColors.Control;
-            this.pcbBell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.pcbBell.IconChar = FontAwesome.Sharp.IconChar.Bell;
-            this.pcbBell.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.pcbBell.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pcbBell.IconSize = 30;
-            this.pcbBell.Location = new System.Drawing.Point(1092, 14);
-            this.pcbBell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pcbBell.Name = "pcbBell";
-            this.pcbBell.Size = new System.Drawing.Size(38, 30);
-            this.pcbBell.TabIndex = 43;
-            this.pcbBell.TabStop = false;
-            this.pcbBell.Click += new System.EventHandler(this.pcbBell_Click);
             // 
             // FormTrangChu1
             // 

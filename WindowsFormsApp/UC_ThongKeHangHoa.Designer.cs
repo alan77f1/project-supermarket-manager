@@ -92,7 +92,7 @@ namespace WindowsFormsApp
             this.btnXuatBaoGia.ShadowDecoration.Parent = this.btnXuatBaoGia;
             this.btnXuatBaoGia.Size = new System.Drawing.Size(184, 55);
             this.btnXuatBaoGia.TabIndex = 360;
-            this.btnXuatBaoGia.Text = "Xem chi tiết";
+            this.btnXuatBaoGia.Text = "Xuất báo giá";
             this.btnXuatBaoGia.UseTransparentBackground = true;
             this.btnXuatBaoGia.Click += new System.EventHandler(this.btnXuatBaoGia_Click_1);
             // 

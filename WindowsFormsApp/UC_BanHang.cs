@@ -130,9 +130,6 @@ namespace WindowsFormsApp
         {
             MaKH = null
         };
-
-
-
       
 
         private void txtTimkiem_TextChanged(object sender, EventArgs e)
@@ -153,16 +150,12 @@ namespace WindowsFormsApp
                     lblMaKH.Text = "KH00";
                 }
 
-
-               
                 lblMaKH.ForeColor = Color.Black;           
                 lblTenkh.ForeColor = Color.Black;
                 
             }
             else
             {
-
-
                 lblTenkh.Text = "Khách hàng mới";
                 lblMaKH.Text = "KH00";
                 lblTenkh.ForeColor = Color.Black;
@@ -251,7 +244,7 @@ namespace WindowsFormsApp
                 bool check = false;
                 foreach (ListViewItem item in lvSanPhamBan.Items)
                 {
-                    if (item.SubItems[0].Text == cmbTenHang.SelectedValue.ToString())
+                    if (item.SubItems[0].Text == lblMahh.Text)
                     {
                         check = true;
                     }

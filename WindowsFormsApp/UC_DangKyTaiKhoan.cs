@@ -1,12 +1,7 @@
 ﻿using BUS;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp
@@ -73,14 +68,16 @@ namespace WindowsFormsApp
 
         private void LamMoi()
         {
-            txtTenDangNhap.Text = "VD: chi";
-            txtTennv.Text = "VD: Nguyễn Công Chí";
+            txtTenDangNhap.Text = "VD: ten";
+            txtTennv.Text = "VD: Nguyen Van A";
             txtDiachi.Text = "An Chấn, Tuy An, Phú Yên";
             txtMatkhau.Text = "****";
             txtSĐT.Text = "VD: 0328644258";
+            txtEmail.Text = "VD: @gmail.com";
             cmbGioiTinh.SelectedIndex = 0;
             txtTennv.ForeColor = Color.Silver;
             txtSĐT.ForeColor = Color.Silver;
+            txtEmail.ForeColor = Color.Silver;
             txtDiachi.ForeColor = Color.Silver;
             txtTenDangNhap.ForeColor = Color.Silver;
             txtMatkhau.ForeColor = Color.Silver;
@@ -248,7 +245,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    if (NhanVienBUS.Intance.themNV(MaNV, txtTennv.Text, cmbGioiTinh.Text, txtDiachi.Text, txtSĐT.Text, txtTenDangNhap.Text, txtMatkhau.Text))
+                    if (NhanVienBUS.Intance.themNV(MaNV, txtTennv.Text, cmbGioiTinh.Text, txtDiachi.Text, txtSĐT.Text, txtTenDangNhap.Text, txtMatkhau.Text, txtEmail.Text))
                     {
                         MessageBox.Show("Đăng ký thành công", "Thông báo");
                         LamMoi();
@@ -257,6 +254,17 @@ namespace WindowsFormsApp
                     //lblThongbao.Text = "Đăng ký tài khoản thất bại";
                 }
             }
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtEmail_Click(object sender, EventArgs e)
+        {
+            txtEmail.Text = "";
+            txtEmail.ForeColor = Color.Black;
         }
     }
 }

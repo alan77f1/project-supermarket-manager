@@ -55,9 +55,7 @@ namespace WindowsFormsApp
             this.pcbAnh = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtGioiTinh = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -104,9 +102,7 @@ namespace WindowsFormsApp
             this.panel1.Controls.Add(this.pcbAnh);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtGioiTinh);
             this.panel1.Controls.Add(this.label4);
@@ -403,36 +399,6 @@ namespace WindowsFormsApp
             this.label5.TabIndex = 239;
             this.label5.Text = "Số điện thoại";
             // 
-            // txtEmail
-            // 
-            this.txtEmail.AutoRoundedCorners = true;
-            this.txtEmail.BorderColor = System.Drawing.Color.Silver;
-            this.txtEmail.BorderRadius = 19;
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.DefaultText = "Nhập mã nhân viên\r\n";
-            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.DisabledState.Parent = this.txtEmail;
-            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.FocusedState.Parent = this.txtEmail;
-            this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.HoverState.Parent = this.txtEmail;
-            this.txtEmail.Location = new System.Drawing.Point(408, 400);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.PasswordChar = '\0';
-            this.txtEmail.PlaceholderText = "";
-            this.txtEmail.ReadOnly = true;
-            this.txtEmail.SelectedText = "";
-            this.txtEmail.SelectionStart = 19;
-            this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
-            this.txtEmail.Size = new System.Drawing.Size(760, 41);
-            this.txtEmail.TabIndex = 247;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -442,17 +408,6 @@ namespace WindowsFormsApp
             this.label8.Size = new System.Drawing.Size(87, 29);
             this.label8.TabIndex = 236;
             this.label8.Text = "Họ và tên";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(410, 369);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 29);
-            this.label10.TabIndex = 246;
-            this.label10.Text = "Email";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label6
             // 
@@ -658,8 +613,6 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2TextBox txtDiaChi;
         private System.Windows.Forms.Label label11;
-        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;

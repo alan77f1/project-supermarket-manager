@@ -57,9 +57,9 @@ namespace BUS
             return NhanVienDAO.Intance.loadMaNV();
         }
 
-        public bool themNV(string maNV, string tenNV, string Gioitinh, string DiaChi, string SDT, string Tendangnhap, string Matkhau)
+        public bool themNV(string maNV, string tenNV, string Gioitinh, string DiaChi, string SDT, string Tendangnhap, string Matkhau, string Email)
         {
-            return NhanVienDAO.Intance.themNV(maNV, tenNV, Gioitinh, DiaChi, SDT, Tendangnhap, Matkhau);
+            return NhanVienDAO.Intance.themNV(maNV, tenNV, Gioitinh, DiaChi, SDT, Tendangnhap, Matkhau, Email);
         }
 
         public bool capnhatmk(string mk, string sdt)
