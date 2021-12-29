@@ -380,9 +380,8 @@ namespace WindowsFormsApp
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 20;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(294, 758);
+            this.iconButton1.Location = new System.Drawing.Point(306, 757);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.iconButton1.Size = new System.Drawing.Size(35, 22);
             this.iconButton1.TabIndex = 320;
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -426,7 +425,6 @@ namespace WindowsFormsApp
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.Location = new System.Drawing.Point(130, 31);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnXoa.Size = new System.Drawing.Size(64, 50);
             this.btnXoa.TabIndex = 317;
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

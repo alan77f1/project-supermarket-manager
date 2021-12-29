@@ -129,7 +129,39 @@ namespace WindowsFormsApp
             }
         }
 
+        private string Matudong()
+        {
+            string query = "select MaKH from KhachHang";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            string ma = "";
+            if (dt.Rows.Count <= 0)
+            {
+                ma = "KH001";
+            }
+            else
+            {
+                int k;
+                ma = "KH";
+                k = Convert.ToInt32(dt.Rows[dt.Rows.Count - 1][0].ToString().Substring(2, 2));
+                /*k = dt.Rows.Count;*/
+                k++;
+                if (k < 10)
+                {
+                    ma = ma + "0";
+                }
+                else if (k >= 10 && k < 100)
+                {
+                    ma = ma + "";
+                }
+                else if (k >= 100 && k < 1000)
+                {
+                    ma = ma + "";
+                }
+                ma = ma + k.ToString();
 
+            }
+            return ma;
+        }
 
         private void HienThi()
         {   

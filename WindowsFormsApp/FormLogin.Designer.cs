@@ -255,7 +255,7 @@ namespace WindowsFormsApp
             this.txtMatKhau.BorderColor = System.Drawing.Color.Silver;
             this.txtMatKhau.BorderRadius = 23;
             this.txtMatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMatKhau.DefaultText = "321";
+            this.txtMatKhau.DefaultText = "123";
             this.txtMatKhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -273,7 +273,6 @@ namespace WindowsFormsApp
             this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.PlaceholderText = "";
             this.txtMatKhau.SelectedText = "";
-            this.txtMatKhau.SelectionStart = 3;
             this.txtMatKhau.ShadowDecoration.BorderRadius = 10;
             this.txtMatKhau.ShadowDecoration.Parent = this.txtMatKhau;
             this.txtMatKhau.Size = new System.Drawing.Size(486, 48);
@@ -299,7 +298,7 @@ namespace WindowsFormsApp
             this.txtTenDangNhap.BorderColor = System.Drawing.Color.Silver;
             this.txtTenDangNhap.BorderRadius = 24;
             this.txtTenDangNhap.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTenDangNhap.DefaultText = "tan";
+            this.txtTenDangNhap.DefaultText = "admin";
             this.txtTenDangNhap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtTenDangNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtTenDangNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -317,7 +316,6 @@ namespace WindowsFormsApp
             this.txtTenDangNhap.PasswordChar = '\0';
             this.txtTenDangNhap.PlaceholderText = "";
             this.txtTenDangNhap.SelectedText = "";
-            this.txtTenDangNhap.SelectionStart = 3;
             this.txtTenDangNhap.ShadowDecoration.BorderRadius = 10;
             this.txtTenDangNhap.ShadowDecoration.Parent = this.txtTenDangNhap;
             this.txtTenDangNhap.Size = new System.Drawing.Size(486, 50);
@@ -419,13 +417,12 @@ namespace WindowsFormsApp
             this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnXoa.IconSize = 50;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(150, 38);
+            this.btnXoa.Location = new System.Drawing.Point(167, 41);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnXoa.Size = new System.Drawing.Size(64, 50);
             this.btnXoa.TabIndex = 317;
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             // 
             // label15
             // 
@@ -750,11 +747,11 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2GradientButton btnDangNhap;
-        private FontAwesome.Sharp.IconButton btnXoa;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
+        private FontAwesome.Sharp.IconButton btnXoa;
     }
 }

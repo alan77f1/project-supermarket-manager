@@ -30,9 +30,9 @@ namespace WindowsFormsApp
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblsltop4 = new System.Windows.Forms.Label();
             this.labeltop4 = new System.Windows.Forms.Label();
@@ -61,7 +61,6 @@ namespace WindowsFormsApp
             this.label19 = new System.Windows.Forms.Label();
             this.lblGiatri = new System.Windows.Forms.Label();
             this.lblslton = new System.Windows.Forms.Label();
-            this.cmbDoanhthu = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbTonKho = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lbldinhmuc = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -99,6 +98,7 @@ namespace WindowsFormsApp
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.cmbDoanhthu = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             this.pnlTTTaiKhoan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -475,35 +475,6 @@ namespace WindowsFormsApp
             this.lblslton.TabIndex = 344;
             this.lblslton.Text = "0";
             // 
-            // cmbDoanhthu
-            // 
-            this.cmbDoanhthu.AutoRoundedCorners = true;
-            this.cmbDoanhthu.BackColor = System.Drawing.Color.Transparent;
-            this.cmbDoanhthu.BorderColor = System.Drawing.Color.Silver;
-            this.cmbDoanhthu.BorderRadius = 17;
-            this.cmbDoanhthu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbDoanhthu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbDoanhthu.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbDoanhthu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbDoanhthu.FocusedState.Parent = this.cmbDoanhthu;
-            this.cmbDoanhthu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cmbDoanhthu.ForeColor = System.Drawing.Color.Black;
-            this.cmbDoanhthu.HoverState.Parent = this.cmbDoanhthu;
-            this.cmbDoanhthu.ItemHeight = 30;
-            this.cmbDoanhthu.Items.AddRange(new object[] {
-            "---- Xem trong ----",
-            "Hôm nay",
-            "Hôm qua",
-            "Tuần này",
-            "Tháng này"});
-            this.cmbDoanhthu.ItemsAppearance.Parent = this.cmbDoanhthu;
-            this.cmbDoanhthu.Location = new System.Drawing.Point(1039, 243);
-            this.cmbDoanhthu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbDoanhthu.Name = "cmbDoanhthu";
-            this.cmbDoanhthu.ShadowDecoration.Parent = this.cmbDoanhthu;
-            this.cmbDoanhthu.Size = new System.Drawing.Size(185, 36);
-            this.cmbDoanhthu.TabIndex = 343;
-            // 
             // cmbTonKho
             // 
             this.cmbTonKho.AutoRoundedCorners = true;
@@ -622,9 +593,9 @@ namespace WindowsFormsApp
             this.label8.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(28, 612);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(128, 29);
+            this.label8.Size = new System.Drawing.Size(205, 29);
             this.label8.TabIndex = 331;
-            this.label8.Text = "Top sản phẩm";
+            this.label8.Text = "Top sản phẩm bán chạy";
             // 
             // panel5
             // 
@@ -723,20 +694,20 @@ namespace WindowsFormsApp
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(18, 297);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series1.BorderWidth = 3;
-            series1.ChartArea = "ChartArea1";
-            series1.LabelBorderWidth = 3;
-            series1.Legend = "Legend1";
-            series1.Name = "Doanh Thu";
-            this.chart1.Series.Add(series1);
+            series3.BorderWidth = 3;
+            series3.ChartArea = "ChartArea1";
+            series3.LabelBorderWidth = 3;
+            series3.Legend = "Legend1";
+            series3.Name = "Doanh Thu";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(1213, 281);
             this.chart1.TabIndex = 324;
             this.chart1.Text = "chart1";
@@ -1016,6 +987,35 @@ namespace WindowsFormsApp
             this.bunifuElipse6.ElipseRadius = 10;
             this.bunifuElipse6.TargetControl = this.pnlTTTaiKhoan;
             // 
+            // cmbDoanhthu
+            // 
+            this.cmbDoanhthu.AutoRoundedCorners = true;
+            this.cmbDoanhthu.BackColor = System.Drawing.Color.Transparent;
+            this.cmbDoanhthu.BorderColor = System.Drawing.Color.Silver;
+            this.cmbDoanhthu.BorderRadius = 17;
+            this.cmbDoanhthu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbDoanhthu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDoanhthu.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbDoanhthu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbDoanhthu.FocusedState.Parent = this.cmbDoanhthu;
+            this.cmbDoanhthu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbDoanhthu.ForeColor = System.Drawing.Color.Black;
+            this.cmbDoanhthu.HoverState.Parent = this.cmbDoanhthu;
+            this.cmbDoanhthu.ItemHeight = 30;
+            this.cmbDoanhthu.Items.AddRange(new object[] {
+            "---- Xem trong ----",
+            "Hôm nay",
+            "Hôm qua",
+            "Tuần này",
+            "Tháng này"});
+            this.cmbDoanhthu.ItemsAppearance.Parent = this.cmbDoanhthu;
+            this.cmbDoanhthu.Location = new System.Drawing.Point(1039, 243);
+            this.cmbDoanhthu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbDoanhthu.Name = "cmbDoanhthu";
+            this.cmbDoanhthu.ShadowDecoration.Parent = this.cmbDoanhthu;
+            this.cmbDoanhthu.Size = new System.Drawing.Size(185, 36);
+            this.cmbDoanhthu.TabIndex = 343;
+            // 
             // UC_TrangChu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1077,7 +1077,6 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2ComboBox cmbTonKho;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbDoanhthu;
         private System.Windows.Forms.Label lblGiatri;
         private System.Windows.Forms.Label lblslton;
         private System.Windows.Forms.Label label21;
@@ -1108,5 +1107,6 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Label labeltop4;
         private System.Windows.Forms.Label lbltop4;
         private System.Windows.Forms.Label label22;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbDoanhthu;
     }
 }

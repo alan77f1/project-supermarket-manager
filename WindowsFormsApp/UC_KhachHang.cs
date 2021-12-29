@@ -160,16 +160,16 @@ namespace WindowsFormsApp
             {
                 int k;
                 ma = "KH";
-                //k = Convert.ToInt32(dt.Rows[dt.Rows.Count - 1][0].ToString().Substring(2, 3));
-                k = dt.Rows.Count;
+                k = Convert.ToInt32(dt.Rows[dt.Rows.Count - 1][0].ToString().Substring(2, 2));
+                /*k = dt.Rows.Count;*/
                 k++;
                 if (k < 10)
                 {
-                    ma = ma + "00";
+                    ma = ma + "0";
                 }
                 else if (k >= 10 && k < 100)
                 {
-                    ma = ma + "0";
+                    ma = ma + "";
                 }
                 else if (k >= 100 && k < 1000)
                 {

@@ -35,7 +35,6 @@ namespace WindowsFormsApp
         string query = "select Manv from Nhanvien";
         private string Matudong()
         {
-
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             string ma = "";
             if (dt.Rows.Count <= 0)
@@ -70,10 +69,6 @@ namespace WindowsFormsApp
         {
 
         }
-
-   
-
-
 
 
         private void LamMoi()

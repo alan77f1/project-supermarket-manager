@@ -39,6 +39,7 @@ namespace WindowsFormsApp
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.btnDangXuat = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnThongKe = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnKhachHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblQuyen = new System.Windows.Forms.Label();
@@ -57,10 +58,13 @@ namespace WindowsFormsApp
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.lblTime = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btnDangXuat = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.pcbBell = new FontAwesome.Sharp.IconPictureBox();
             this.pannelLeft1.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbBell)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControls
@@ -74,6 +78,10 @@ namespace WindowsFormsApp
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
+            // timerTime
+            // 
+            this.timerTime.Tick += new System.EventHandler(this.timerTime_Tick);
             // 
             // pannelLeft1
             // 
@@ -100,9 +108,8 @@ namespace WindowsFormsApp
             this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnXoa.IconSize = 50;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(90, 12);
+            this.btnXoa.Location = new System.Drawing.Point(99, 12);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnXoa.Size = new System.Drawing.Size(64, 50);
             this.btnXoa.TabIndex = 227;
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,6 +182,39 @@ namespace WindowsFormsApp
             this.panelLeft.Size = new System.Drawing.Size(266, 882);
             this.panelLeft.TabIndex = 6;
             // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.Animated = true;
+            this.btnDangXuat.AutoRoundedCorners = true;
+            this.btnDangXuat.BackColor = System.Drawing.Color.Transparent;
+            this.btnDangXuat.BorderRadius = 33;
+            this.btnDangXuat.CheckedState.Parent = this.btnDangXuat;
+            this.btnDangXuat.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnDangXuat.CustomImages.Parent = this.btnDangXuat;
+            this.btnDangXuat.CustomizableEdges.BottomRight = false;
+            this.btnDangXuat.CustomizableEdges.TopRight = false;
+            this.btnDangXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDangXuat.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDangXuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDangXuat.DisabledState.Parent = this.btnDangXuat;
+            this.btnDangXuat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnDangXuat.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnDangXuat.Font = new System.Drawing.Font("Sitka Banner", 12F);
+            this.btnDangXuat.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDangXuat.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
+            this.btnDangXuat.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.btnDangXuat.HoverState.Parent = this.btnDangXuat;
+            this.btnDangXuat.Location = new System.Drawing.Point(28, 678);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.ShadowDecoration.Parent = this.btnDangXuat;
+            this.btnDangXuat.Size = new System.Drawing.Size(209, 68);
+            this.btnDangXuat.TabIndex = 60;
+            this.btnDangXuat.Text = "  Đăng xuất";
+            this.btnDangXuat.UseTransparentBackground = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click_1);
+            // 
             // btnThongKe
             // 
             this.btnThongKe.Animated = true;
@@ -199,10 +239,10 @@ namespace WindowsFormsApp
             this.btnThongKe.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnThongKe.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnThongKe.HoverState.Parent = this.btnThongKe;
-            this.btnThongKe.Location = new System.Drawing.Point(42, 591);
+            this.btnThongKe.Location = new System.Drawing.Point(28, 591);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.ShadowDecoration.Parent = this.btnThongKe;
-            this.btnThongKe.Size = new System.Drawing.Size(195, 68);
+            this.btnThongKe.Size = new System.Drawing.Size(209, 68);
             this.btnThongKe.TabIndex = 55;
             this.btnThongKe.Text = "  Thống kê";
             this.btnThongKe.UseTransparentBackground = true;
@@ -232,10 +272,10 @@ namespace WindowsFormsApp
             this.btnKhachHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnKhachHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnKhachHang.HoverState.Parent = this.btnKhachHang;
-            this.btnKhachHang.Location = new System.Drawing.Point(42, 218);
+            this.btnKhachHang.Location = new System.Drawing.Point(28, 218);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.ShadowDecoration.Parent = this.btnKhachHang;
-            this.btnKhachHang.Size = new System.Drawing.Size(195, 68);
+            this.btnKhachHang.Size = new System.Drawing.Size(209, 68);
             this.btnKhachHang.TabIndex = 59;
             this.btnKhachHang.Text = "   Khách hàng";
             this.btnKhachHang.UseTransparentBackground = true;
@@ -287,10 +327,10 @@ namespace WindowsFormsApp
             this.btnKhoHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnKhoHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnKhoHang.HoverState.Parent = this.btnKhoHang;
-            this.btnKhoHang.Location = new System.Drawing.Point(42, 517);
+            this.btnKhoHang.Location = new System.Drawing.Point(28, 517);
             this.btnKhoHang.Name = "btnKhoHang";
             this.btnKhoHang.ShadowDecoration.Parent = this.btnKhoHang;
-            this.btnKhoHang.Size = new System.Drawing.Size(195, 68);
+            this.btnKhoHang.Size = new System.Drawing.Size(209, 68);
             this.btnKhoHang.TabIndex = 54;
             this.btnKhoHang.Text = "  Kho hàng";
             this.btnKhoHang.UseTransparentBackground = true;
@@ -331,10 +371,10 @@ namespace WindowsFormsApp
             this.btnNhaCungCap.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnNhaCungCap.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnNhaCungCap.HoverState.Parent = this.btnNhaCungCap;
-            this.btnNhaCungCap.Location = new System.Drawing.Point(42, 442);
+            this.btnNhaCungCap.Location = new System.Drawing.Point(28, 442);
             this.btnNhaCungCap.Name = "btnNhaCungCap";
             this.btnNhaCungCap.ShadowDecoration.Parent = this.btnNhaCungCap;
-            this.btnNhaCungCap.Size = new System.Drawing.Size(195, 68);
+            this.btnNhaCungCap.Size = new System.Drawing.Size(209, 68);
             this.btnNhaCungCap.TabIndex = 53;
             this.btnNhaCungCap.Text = "       Nhà cung cấp";
             this.btnNhaCungCap.UseTransparentBackground = true;
@@ -364,10 +404,10 @@ namespace WindowsFormsApp
             this.btnNhanVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnNhanVien.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnNhanVien.HoverState.Parent = this.btnNhanVien;
-            this.btnNhanVien.Location = new System.Drawing.Point(42, 368);
+            this.btnNhanVien.Location = new System.Drawing.Point(28, 368);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.ShadowDecoration.Parent = this.btnNhanVien;
-            this.btnNhanVien.Size = new System.Drawing.Size(195, 68);
+            this.btnNhanVien.Size = new System.Drawing.Size(209, 68);
             this.btnNhanVien.TabIndex = 51;
             this.btnNhanVien.Text = " Nhân viên";
             this.btnNhanVien.UseTransparentBackground = true;
@@ -397,10 +437,10 @@ namespace WindowsFormsApp
             this.btnBanHang.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnBanHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnBanHang.HoverState.Parent = this.btnBanHang;
-            this.btnBanHang.Location = new System.Drawing.Point(42, 293);
+            this.btnBanHang.Location = new System.Drawing.Point(28, 293);
             this.btnBanHang.Name = "btnBanHang";
             this.btnBanHang.ShadowDecoration.Parent = this.btnBanHang;
-            this.btnBanHang.Size = new System.Drawing.Size(195, 68);
+            this.btnBanHang.Size = new System.Drawing.Size(209, 68);
             this.btnBanHang.TabIndex = 50;
             this.btnBanHang.Text = "Bán hàng";
             this.btnBanHang.UseTransparentBackground = true;
@@ -441,10 +481,10 @@ namespace WindowsFormsApp
             this.btnTrangChu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
             this.btnTrangChu.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
             this.btnTrangChu.HoverState.Parent = this.btnTrangChu;
-            this.btnTrangChu.Location = new System.Drawing.Point(42, 143);
+            this.btnTrangChu.Location = new System.Drawing.Point(28, 143);
             this.btnTrangChu.Name = "btnTrangChu";
             this.btnTrangChu.ShadowDecoration.Parent = this.btnTrangChu;
-            this.btnTrangChu.Size = new System.Drawing.Size(195, 68);
+            this.btnTrangChu.Size = new System.Drawing.Size(209, 68);
             this.btnTrangChu.TabIndex = 33;
             this.btnTrangChu.Text = "Trang chủ";
             this.btnTrangChu.UseTransparentBackground = true;
@@ -490,6 +530,8 @@ namespace WindowsFormsApp
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
+            this.panel3.Controls.Add(this.iconPictureBox1);
+            this.panel3.Controls.Add(this.pcbBell);
             this.panel3.Controls.Add(this.iconButton1);
             this.panel3.Controls.Add(this.lblTime);
             this.panel3.Controls.Add(this.guna2ControlBox1);
@@ -510,7 +552,7 @@ namespace WindowsFormsApp
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 35;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(22, 7);
+            this.iconButton1.Location = new System.Drawing.Point(13, 7);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(43, 39);
@@ -523,11 +565,11 @@ namespace WindowsFormsApp
             this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.lblTime.Location = new System.Drawing.Point(56, 1);
+            this.lblTime.Location = new System.Drawing.Point(62, 5);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(190, 45);
+            this.lblTime.Size = new System.Drawing.Size(172, 41);
             this.lblTime.TabIndex = 5;
             this.lblTime.Text = "HH:MM:SS";
             this.lblTime.Click += new System.EventHandler(this.lblTime_Click);
@@ -537,38 +579,36 @@ namespace WindowsFormsApp
             this.bunifuElipse1.ElipseRadius = 30;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // btnDangXuat
+            // iconPictureBox1
             // 
-            this.btnDangXuat.Animated = true;
-            this.btnDangXuat.AutoRoundedCorners = true;
-            this.btnDangXuat.BackColor = System.Drawing.Color.Transparent;
-            this.btnDangXuat.BorderRadius = 33;
-            this.btnDangXuat.CheckedState.Parent = this.btnDangXuat;
-            this.btnDangXuat.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnDangXuat.CustomImages.Parent = this.btnDangXuat;
-            this.btnDangXuat.CustomizableEdges.BottomRight = false;
-            this.btnDangXuat.CustomizableEdges.TopRight = false;
-            this.btnDangXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDangXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDangXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDangXuat.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDangXuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDangXuat.DisabledState.Parent = this.btnDangXuat;
-            this.btnDangXuat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnDangXuat.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnDangXuat.Font = new System.Drawing.Font("Sitka Banner", 12F);
-            this.btnDangXuat.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDangXuat.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(1)))), ((int)(((byte)(139)))));
-            this.btnDangXuat.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
-            this.btnDangXuat.HoverState.Parent = this.btnDangXuat;
-            this.btnDangXuat.Location = new System.Drawing.Point(42, 678);
-            this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.ShadowDecoration.Parent = this.btnDangXuat;
-            this.btnDangXuat.Size = new System.Drawing.Size(195, 68);
-            this.btnDangXuat.TabIndex = 60;
-            this.btnDangXuat.Text = "  Đăng xuất";
-            this.btnDangXuat.UseTransparentBackground = true;
-            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click_1);
+            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 30;
+            this.iconPictureBox1.Location = new System.Drawing.Point(1145, 12);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(38, 30);
+            this.iconPictureBox1.TabIndex = 44;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // pcbBell
+            // 
+            this.pcbBell.BackColor = System.Drawing.SystemColors.Control;
+            this.pcbBell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.pcbBell.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.pcbBell.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(135)))));
+            this.pcbBell.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pcbBell.IconSize = 30;
+            this.pcbBell.Location = new System.Drawing.Point(1092, 14);
+            this.pcbBell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbBell.Name = "pcbBell";
+            this.pcbBell.Size = new System.Drawing.Size(38, 30);
+            this.pcbBell.TabIndex = 43;
+            this.pcbBell.TabStop = false;
+            this.pcbBell.Click += new System.EventHandler(this.pcbBell_Click);
             // 
             // FormTrangChu1
             // 
@@ -590,6 +630,8 @@ namespace WindowsFormsApp
             this.panelLeft.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbBell)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -624,5 +666,7 @@ namespace WindowsFormsApp
         private FontAwesome.Sharp.IconButton btnXoa;
         private FontAwesome.Sharp.IconButton iconButton1;
         private Guna.UI2.WinForms.Guna2GradientButton btnDangXuat;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox pcbBell;
     }
 }

@@ -30,13 +30,13 @@ namespace WindowsFormsApp
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.lblTk = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,6 +54,15 @@ namespace WindowsFormsApp
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1215, 50);
             this.panel2.TabIndex = 219;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Silver;
+            this.panel6.Location = new System.Drawing.Point(3, 49);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1396, 1);
+            this.panel6.TabIndex = 226;
             // 
             // iconPictureBox1
             // 
@@ -84,7 +93,7 @@ namespace WindowsFormsApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(185, 600);
+            this.label1.Location = new System.Drawing.Point(165, 569);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(905, 28);
             this.label1.TabIndex = 220;
@@ -95,7 +104,7 @@ namespace WindowsFormsApp
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(534, 686);
+            this.label2.Location = new System.Drawing.Point(535, 624);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(208, 20);
             this.label2.TabIndex = 221;
@@ -104,10 +113,10 @@ namespace WindowsFormsApp
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources.Capture7;
-            this.pictureBox1.Location = new System.Drawing.Point(56, 132);
+            this.pictureBox1.Location = new System.Drawing.Point(39, 91);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1079, 629);
+            this.pictureBox1.Size = new System.Drawing.Size(1129, 629);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -115,20 +124,11 @@ namespace WindowsFormsApp
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(495, 514);
+            this.label3.Location = new System.Drawing.Point(341, 483);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(559, 86);
             this.label3.TabIndex = 222;
             this.label3.Text = "Bạn không có quyền truy cập chức năng này\r\n\r\n";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Silver;
-            this.panel6.Location = new System.Drawing.Point(3, 49);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1396, 1);
-            this.panel6.TabIndex = 226;
             // 
             // UC_HienThiQuyen
             // 

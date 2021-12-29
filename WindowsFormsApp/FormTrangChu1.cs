@@ -27,12 +27,6 @@ namespace WindowsFormsApp
         }
 
 
-        private void timerTime_Tick_1(object sender, EventArgs e)
-        {
-            DateTime dt = DateTime.Now;
-            lblTime.Text = dt.ToString("HH:MM:ss");
-        }
-
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             timer1.Start();
@@ -236,6 +230,17 @@ namespace WindowsFormsApp
         }
 
         private void lblTime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timerTime_Tick(object sender, EventArgs e)
+        {
+            DateTime dt = DateTime.Now;
+            lblTime.Text = dt.ToString("HH:MM:ss");
+        }
+
+        private void pcbBell_Click(object sender, EventArgs e)
         {
 
         }

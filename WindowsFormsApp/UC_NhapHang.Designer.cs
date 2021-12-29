@@ -33,6 +33,7 @@ namespace WindowsFormsApp
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblTk = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblMaSP1 = new System.Windows.Forms.Label();
             this.cmbLoaihang = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtformatGiaban = new Guna.UI2.WinForms.Guna2TextBox();
@@ -83,7 +84,6 @@ namespace WindowsFormsApp
             this.lblTenNV = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lblMaSP1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -102,6 +102,7 @@ namespace WindowsFormsApp
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1234, 50);
             this.panel2.TabIndex = 220;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel6
             // 
@@ -157,6 +158,19 @@ namespace WindowsFormsApp
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(811, 651);
             this.guna2Panel1.TabIndex = 233;
+            // 
+            // lblMaSP1
+            // 
+            this.lblMaSP1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblMaSP1.AutoSize = true;
+            this.lblMaSP1.Font = new System.Drawing.Font("Cambria", 10F);
+            this.lblMaSP1.ForeColor = System.Drawing.Color.Black;
+            this.lblMaSP1.Location = new System.Drawing.Point(329, 33);
+            this.lblMaSP1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMaSP1.Name = "lblMaSP1";
+            this.lblMaSP1.Size = new System.Drawing.Size(73, 20);
+            this.lblMaSP1.TabIndex = 283;
+            this.lblMaSP1.Text = "Mã hàng:";
             // 
             // cmbLoaihang
             // 
@@ -969,19 +983,6 @@ namespace WindowsFormsApp
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1234, 784);
             this.panel3.TabIndex = 292;
-            // 
-            // lblMaSP1
-            // 
-            this.lblMaSP1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblMaSP1.AutoSize = true;
-            this.lblMaSP1.Font = new System.Drawing.Font("Cambria", 10F);
-            this.lblMaSP1.ForeColor = System.Drawing.Color.Black;
-            this.lblMaSP1.Location = new System.Drawing.Point(329, 33);
-            this.lblMaSP1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblMaSP1.Name = "lblMaSP1";
-            this.lblMaSP1.Size = new System.Drawing.Size(73, 20);
-            this.lblMaSP1.TabIndex = 283;
-            this.lblMaSP1.Text = "Mã hàng:";
             // 
             // UC_NhapHang
             // 

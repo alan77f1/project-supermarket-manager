@@ -72,11 +72,6 @@ namespace BUS
         }
 
 
-        public DataTable TimKiemDiemTichLuy(string tk)
-        {
-            return KhachHangDAO.Intance.TimKiemDiemTichLuy(tk);
-        }
-
 
         public DataTable TimKiem(string tk)
         {
