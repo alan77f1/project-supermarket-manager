@@ -16,7 +16,6 @@ namespace WindowsFormsApp
     public partial class UC_BanHang : UserControl
     {
         private string manv, tennv;
-
  
         int i;
         private void cmbTensp_SelectedIndexChanged(object sender, EventArgs e)
@@ -256,7 +255,6 @@ namespace WindowsFormsApp
                         break;
                     }
                 }
-
 
                 int gia = Int32.Parse(lblGiaban.Text) * Int32.Parse(txtSoLuong.Value.ToString());
                 if (!check)

@@ -300,7 +300,7 @@
             this.cmbTenHang.Location = new System.Drawing.Point(115, 65);
             this.cmbTenHang.Name = "cmbTenHang";
             this.cmbTenHang.ShadowDecoration.Parent = this.cmbTenHang;
-            this.cmbTenHang.Size = new System.Drawing.Size(201, 36);
+            this.cmbTenHang.Size = new System.Drawing.Size(240, 36);
             this.cmbTenHang.TabIndex = 264;
             this.cmbTenHang.SelectedIndexChanged += new System.EventHandler(this.cmbTensp_SelectedIndexChanged);
             // 
@@ -361,7 +361,7 @@
             this.txtSoLuong.Location = new System.Drawing.Point(115, 134);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.ShadowDecoration.Parent = this.txtSoLuong;
-            this.txtSoLuong.Size = new System.Drawing.Size(201, 36);
+            this.txtSoLuong.Size = new System.Drawing.Size(240, 36);
             this.txtSoLuong.TabIndex = 260;
             this.txtSoLuong.UpDownButtonFillColor = System.Drawing.Color.Navy;
             this.txtSoLuong.UpDownButtonForeColor = System.Drawing.Color.White;
