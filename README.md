@@ -12,7 +12,7 @@
 >+ ##### User authorization
 >+ ##### ...
 
-# Demo UI
+### Demo UI
 #### Home page
 ![image](https://user-images.githubusercontent.com/67332180/147843023-777d8b45-1d27-4734-abd0-4f836719b83f.png)
 
@@ -40,7 +40,7 @@
 
 
 
-## :computer: How to run
+### :computer: How to run
 
 ### Step 1. Clone the repository:
 
@@ -60,5 +60,5 @@ $ at Manage Nuget Packages...
 
 
 
-#### Author: Bui Van Tan, Nguyen Cong Chi
+### Author: Bui Van Tan, Nguyen Cong Chi
 
